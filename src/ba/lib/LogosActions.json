@@ -1,0 +1,1272 @@
+{
+  "logosActions": {
+    "Wisdom of the Aetherweaver": {
+      "full": "Wisdom of the Aetherweaver",
+      "short": "Aetherweaver",
+      "image": "aetherweaver",
+      "type": "wisdom",
+      "code": "a",
+      "recipes": [
+        [
+          "Wisdom of the Aetherweaver"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ]
+    },
+    "Wisdom of the Martialist": {
+      "full": "Wisdom of the Martialist",
+      "short": "Martialist",
+      "image": "martialist",
+      "type": "wisdom",
+      "code": "b",
+      "recipes": [
+        [
+          "Wisdom of the Martialist"
+        ]
+      ],
+      "allowedRoles": [
+        "tank"
+      ]
+    },
+    "Wisdom of the Platebearer": {
+      "full": "Wisdom of the Platebearer",
+      "short": "Platebearer",
+      "image": "platebearer",
+      "type": "wisdom",
+      "code": "c",
+      "recipes": [
+        [
+          "Wisdom of the Platebearer"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer"
+      ]
+    },
+    "Wisdom of the Guardian": {
+      "full": "Wisdom of the Guardian",
+      "short": "Guardian",
+      "image": "guardian",
+      "type": "wisdom",
+      "code": "d",
+      "recipes": [
+        [
+          "Wisdom of the Platebearer",
+          "Protect L"
+        ],
+        [
+          "Wisdom of the Guardian"
+        ],
+        [
+          "Wisdom of the Platebearer",
+          "Stoneskin L"
+        ]
+      ],
+      "allowedRoles": [
+        "tank"
+      ]
+    },
+    "Wisdom of the Ordained": {
+      "full": "Wisdom of the Ordained",
+      "short": "Ordained",
+      "image": "ordained",
+      "type": "wisdom",
+      "code": "e",
+      "recipes": [
+        [
+          "Wisdom of the Aetherweaver",
+          "Esuna L"
+        ],
+        [
+          "Wisdom of the Ordained"
+        ],
+        [
+          "Wisdom of the Aetherweaver",
+          "Cure L",
+          "Cure L"
+        ],
+        [
+          "Cure L II",
+          "Cure L II",
+          "Cure L II"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ]
+    },
+    "Wisdom of the Skirmisher": {
+      "full": "Wisdom of the Skirmisher",
+      "short": "Skirmisher",
+      "image": "skirmisher",
+      "type": "wisdom",
+      "code": "f",
+      "recipes": [
+        [
+          "Wisdom of the Martialist",
+          "Feint L"
+        ],
+        [
+          "Wisdom of the Skirmisher"
+        ],
+        [
+          "Wisdom of the Martialist",
+          "Wisdom of the Martialist",
+          "Wisdom of the Martialist"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee"
+      ]
+    },
+    "Wisdom of the Templar": {
+      "full": "Wisdom of the Templar",
+      "short": "Templar",
+      "image": "templar",
+      "type": "wisdom",
+      "code": "g",
+      "recipes": [
+        [
+          "Wisdom of the Skirmisher",
+          "Cure L II"
+        ],
+        [
+          "Wisdom of the Skirmisher",
+          "Stoneskin L"
+        ],
+        [
+          "Wisdom of the Platebearer",
+          "Cure L",
+          "Stoneskin L"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ]
+    },
+    "Wisdom of the Irregular": {
+      "full": "Wisdom of the Irregular",
+      "short": "Irregular",
+      "image": "irregular",
+      "type": "wisdom",
+      "code": "h",
+      "recipes": [
+        [
+          "Wisdom of the Martialist",
+          "Incense L",
+          "Wisdom of the Skirmisher"
+        ],
+        [
+          "Wisdom of the Skirmisher",
+          "Wisdom of the Guardian"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee"
+      ]
+    },
+    "Wisdom of the Breathtaker": {
+      "full": "Wisdom of the Breathtaker",
+      "short": "Breathtaker",
+      "image": "breathtaker",
+      "type": "wisdom",
+      "code": "i",
+      "recipes": [
+        [
+          "Wisdom of the Breathtaker"
+        ],
+        [
+          "Featherfoot L",
+          "Stealth L"
+        ],
+        [
+          "Stealth L",
+          "Stealth L",
+          "Stealth L"
+        ],
+        [
+          "Featherfoot L",
+          "Featherfoot L",
+          "Featherfoot L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Wisdom of the Elder": {
+      "full": "Wisdom of the Elder",
+      "short": "Elder",
+      "image": "elder",
+      "type": "wisdom",
+      "code": "j",
+      "recipes": [
+        [
+          "Wisdom of the Aetherweaver",
+          "Wisdom of the Ordained",
+          "Magic Burst L"
+        ],
+        [
+          "Wisdom of the Guardian",
+          "Stoneskin L",
+          "Magic Burst L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster"
+      ]
+    },
+    "Wisdom of the Duelist": {
+      "full": "Wisdom of the Duelist",
+      "short": "Duelist",
+      "image": "duelist",
+      "type": "wisdom",
+      "code": "k",
+      "recipes": [
+        [
+          "Backstep L",
+          "Bloodbath L",
+          "Double Edge L"
+        ],
+        [
+          "Wisdom of the Skirmisher",
+          "Wisdom of the Skirmisher",
+          "Double Edge L"
+        ]
+      ],
+      "allowedRoles": [
+        "melee"
+      ]
+    },
+    "Wisdom of the Fiendhunter": {
+      "full": "Wisdom of the Fiendhunter",
+      "short": "Fiendhunter",
+      "image": "fiendhunter",
+      "type": "wisdom",
+      "code": "l",
+      "recipes": [
+        [
+          "Featherfoot L",
+          "Spirit Dart L",
+          "Eagle Eye Shot L"
+        ],
+        [
+          "Feint L",
+          "Tranquilizer L",
+          "Eagle Eye Shot L"
+        ]
+      ],
+      "allowedRoles": [
+        "physicalRanged"
+      ]
+    },
+    "Wisdom of the Indomitable": {
+      "full": "Wisdom of the Indomitable",
+      "short": "Indomitable",
+      "image": "indomitable",
+      "type": "wisdom",
+      "code": "m",
+      "recipes": [
+        [
+          "Wisdom of the Platebearer",
+          "Incense L",
+          "Double Edge L"
+        ],
+        [
+          "Protect L",
+          "Spirit of the Remembered",
+          "Double Edge L"
+        ]
+      ],
+      "allowedRoles": [
+        "tank"
+      ]
+    },
+    "Spirit of the Remembered": {
+      "full": "Spirit of the Remembered",
+      "short": "Remembered",
+      "image": "remembered",
+      "type": "spirit",
+      "code": "n",
+      "recipes": [
+        [
+          "Wisdom of the Aetherweaver",
+          "Wisdom of the Martialist",
+          "Wisdom of the Platebearer"
+        ],
+        [
+          "Spirit of the Remembered"
+        ],
+        [
+          "Wisdom of the Martialist",
+          "Wisdom of the Guardian"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Catastrophe L": {
+      "full": "Catastrophe L",
+      "short": "Catastrophe",
+      "image": "catastrophe",
+      "type": "personalAction",
+      "code": "o",
+      "recipes": [
+        [
+          "Bloodbath L",
+          "Bloodbath L"
+        ],
+        [
+          "Wisdom of the Guardian",
+          "Spirit Dart L"
+        ],
+        [
+          "Spirit Dart L",
+          "Spirit Dart L",
+          "Spirit Dart L"
+        ]
+      ],
+      "allowedRoles": [
+        "physicalRanged",
+        "melee",
+        "tank"
+      ]
+    },
+    "Rejuvenate L": {
+      "full": "Rejuvenate L",
+      "short": "Rejuvenate",
+      "image": "rejuvenate",
+      "type": "personalAction",
+      "code": "p",
+      "recipes": [
+        [
+          "Bloodbath L",
+          "Shell L"
+        ],
+        [
+          "Spirit of the Remembered",
+          "Spirit Dart L"
+        ],
+        [
+          "Wisdom of the Aetherweaver",
+          "Wisdom of the Martialist",
+          "Cure L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Rapid Recast L": {
+      "full": "Rapid Recast L",
+      "short": "Rapid Recast",
+      "image": "rapidrecast",
+      "type": "personalAction",
+      "code": "q",
+      "recipes": [
+        [
+          "Esuna L",
+          "Dispel L"
+        ],
+        [
+          "Cure L",
+          "Esuna L",
+          "Feint L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "tank"
+      ]
+    },
+    "Focus L": {
+      "full": "Focus L",
+      "short": "Focus",
+      "image": "focus",
+      "type": "personalAction",
+      "code": "r",
+      "recipes": [
+        [
+          "Wisdom of the Skirmisher",
+          "Bloodbath L"
+        ],
+        [
+          "Bloodbath L",
+          "Bloodbath L",
+          "Bloodbath L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Magic Burst L": {
+      "full": "Magic Burst L",
+      "short": "Magic Burst",
+      "image": "magicburst",
+      "type": "personalAction",
+      "code": "s",
+      "recipes": [
+        [
+          "Magic Burst L"
+        ],
+        [
+          "Spirit of the Remembered",
+          "Wisdom of the Ordained",
+          "Stoneskin L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "healer"
+      ]
+    },
+    "Double Edge L": {
+      "full": "Double Edge L",
+      "short": "Double Edge",
+      "image": "doubleedge",
+      "type": "personalAction",
+      "code": "t",
+      "recipes": [
+        [
+          "Double Edge L"
+        ],
+        [
+          "Wisdom of the Skirmisher",
+          "Bloodbath L",
+          "Wisdom of the Guardian"
+        ]
+      ],
+      "allowedRoles": [
+        "melee",
+        "tank"
+      ]
+    },
+    "Eagle Eye Shot L": {
+      "full": "Eagle Eye Shot L",
+      "short": "EES",
+      "image": "eagleeyeshot",
+      "type": "personalAction",
+      "code": "u",
+      "recipes": [
+        [
+          "Eagle Eye Shot L"
+        ],
+        [
+          "Wisdom of the Skirmisher",
+          "Spirit of the Remembered",
+          "Spirit Dart L"
+        ]
+      ],
+      "allowedRoles": [
+        "physicalRanged"
+      ]
+    },
+    "Death L": {
+      "full": "Death L",
+      "short": "Death",
+      "image": "death",
+      "type": "beneficialAction",
+      "code": "v",
+      "recipes": [
+        [
+          "Raise L",
+          "Dispel L"
+        ],
+        [
+          "Raise L",
+          "Tranquilizer L",
+          "Tranquilizer L"
+        ],
+        [
+          "Wisdom of the Aetherweaver",
+          "Paralyze L",
+          "Raise L"
+        ],
+        [
+          "Dispel L",
+          "Dispel L",
+          "Dispel L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Feint L": {
+      "full": "Feint L",
+      "short": "Feint",
+      "image": "feint",
+      "type": "beneficialAction",
+      "code": "w",
+      "recipes": [
+        [
+          "Feint L"
+        ]
+      ],
+      "allowedRoles": [
+        "healer",
+        "tank"
+      ]
+    },
+    "Spirit Dart L": {
+      "full": "Spirit Dart L",
+      "short": "Spirit Dart",
+      "image": "spiritdart",
+      "type": "beneficialAction",
+      "code": "x",
+      "recipes": [
+        [
+          "Spirit Dart L"
+        ],
+        [
+          "Tranquilizer L",
+          "Wisdom of the Ordained"
+        ],
+        [
+          "Wisdom of the Aetherweaver",
+          "Paralyze L",
+          "Tranquilizer L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee"
+      ]
+    },
+    "Protect L": {
+      "full": "Protect L",
+      "short": "Protect",
+      "image": "protect",
+      "type": "beneficialAction",
+      "code": "y",
+      "recipes": [
+        [
+          "Protect L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Shell L": {
+      "full": "Shell L",
+      "short": "Shell",
+      "image": "shell",
+      "type": "beneficialAction",
+      "code": "z",
+      "recipes": [
+        [
+          "Shell L"
+        ],
+        [
+          "Protect L",
+          "Esuna L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Dispel L": {
+      "full": "Dispel L",
+      "short": "Dispel",
+      "image": "dispel",
+      "type": "beneficialAction",
+      "code": "A",
+      "recipes": [
+        [
+          "Dispel L"
+        ],
+        [
+          "Esuna L",
+          "Wisdom of the Ordained"
+        ],
+        [
+          "Esuna L",
+          "Esuna L",
+          "Esuna L"
+        ],
+        [
+          "Tranquilizer L",
+          "Tranquilizer L",
+          "Tranquilizer L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer"
+      ]
+    },
+    "Perception L": {
+      "full": "Perception L",
+      "short": "Perception",
+      "image": "perception",
+      "type": "beneficialAction",
+      "code": "B",
+      "recipes": [
+        [
+          "Wisdom of the Breathtaker",
+          "Wisdom of the Breathtaker"
+        ],
+        [
+          "Stealth L",
+          "Dispel L",
+          "Wisdom of the Breathtaker"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee"
+      ]
+    },
+    "Sacrifice L": {
+      "full": "Sacrifice L",
+      "short": "Sacrifice",
+      "image": "sacrifice",
+      "type": "beneficialAction",
+      "code": "C",
+      "recipes": [
+        [
+          "Esuna L",
+          "Raise L",
+          "Magic Burst L"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ]
+    },
+    "Refresh L": {
+      "full": "Refresh L",
+      "short": "Refresh",
+      "image": "refresh",
+      "type": "beneficialAction",
+      "code": "D",
+      "recipes": [
+        [
+          "Wisdom of the Aetherweaver",
+          "Wisdom of the Ordained",
+          "Cure L II"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ]
+    },
+    "Bravery L": {
+      "full": "Bravery L",
+      "short": "Bravery",
+      "image": "bravery",
+      "type": "beneficialAction",
+      "code": "E",
+      "recipes": [
+        [
+          "Wisdom of the Skirmisher",
+          "Wisdom of the Guardian",
+          "Wisdom of the Ordained"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "healer"
+      ]
+    },
+    "Paralyze L III": {
+      "full": "Paralyze L III",
+      "short": "Paralyze 3",
+      "image": "paralyze3",
+      "type": "beneficialAction",
+      "code": "F",
+      "recipes": [
+        [
+          "Paralyze L",
+          "Spirit Dart L"
+        ],
+        [
+          "Paralyze L",
+          "Paralyze L",
+          "Paralyze L"
+        ],
+        [
+          "Wisdom of the Aetherweaver",
+          "Paralyze L",
+          "Paralyze L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Swift L": {
+      "full": "Swift L",
+      "short": "Swift",
+      "image": "swift",
+      "type": "beneficialAction",
+      "code": "G",
+      "recipes": [
+        [
+          "Featherfoot L",
+          "Featherfoot L"
+        ],
+        [
+          "Backstep L",
+          "Backstep L",
+          "Featherfoot L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Cure L III": {
+      "full": "Cure L III",
+      "short": "Cure 3",
+      "image": "cure3",
+      "type": "beneficialAction",
+      "code": "H",
+      "recipes": [
+        [
+          "Cure L II",
+          "Cure L II"
+        ],
+        [
+          "Bloodbath L",
+          "Wisdom of the Ordained"
+        ],
+        [
+          "Cure L",
+          "Cure L",
+          "Wisdom of the Ordained"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "tank"
+      ]
+    },
+    "Incense L": {
+      "full": "Incense L",
+      "short": "Incense",
+      "image": "incense",
+      "type": "beneficialAction",
+      "code": "I",
+      "recipes": [
+        [
+          "Incense L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer"
+      ]
+    },
+    "Reflect L": {
+      "full": "Reflect L",
+      "short": "Reflect",
+      "image": "reflect",
+      "type": "beneficialAction",
+      "code": "J",
+      "recipes": [
+        [
+          "Protect L",
+          "Wisdom of the Ordained",
+          "Shell L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Banish L": {
+      "full": "Banish L",
+      "short": "Banish",
+      "image": "banish",
+      "type": "beneficialAction",
+      "code": "K",
+      "recipes": [
+        [
+          "Wisdom of the Aetherweaver",
+          "Dispel L",
+          "Dispel L"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ]
+    },
+    "Wisdom of the Watcher": {
+      "full": "Wisdom of the Watcher",
+      "short": "Watcher",
+      "image": "watcher",
+      "type": "otherAction",
+      "code": "L",
+      "recipes": [
+        [
+          "Stealth L",
+          "Stealth L"
+        ]
+      ],
+      "allowedRoles": [
+        "tank"
+      ]
+    },
+    "Paralyze L": {
+      "full": "Paralyze L",
+      "short": "Paralyze",
+      "image": "paralyze",
+      "type": "otherAction",
+      "code": "M",
+      "recipes": [
+        [
+          "Paralyze L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Banish L III": {
+      "full": "Banish L III",
+      "short": "Banish 3",
+      "image": "banish3",
+      "type": "otherAction",
+      "code": "N",
+      "recipes": [
+        [
+          "Wisdom of the Ordained",
+          "Dispel L",
+          "Dispel L"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ]
+    },
+    "Featherfoot L": {
+      "full": "Featherfoot L",
+      "short": "Featherfoot",
+      "image": "featherfoot",
+      "type": "otherAction",
+      "code": "O",
+      "recipes": [
+        [
+          "Featherfoot L"
+        ],
+        [
+          "Feint L",
+          "Feint L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Stealth L": {
+      "full": "Stealth L",
+      "short": "Stealth",
+      "image": "stealth",
+      "type": "otherAction",
+      "code": "P",
+      "recipes": [
+        [
+          "Stealth L"
+        ],
+        [
+          "Wisdom of the Ordained",
+          "Shell L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Aetherial Manipulation L": {
+      "full": "Aetherial Manipulation L",
+      "short": "Aetherial Manip",
+      "image": "aetherialmanipulation",
+      "type": "otherAction",
+      "code": "Q",
+      "recipes": [
+        [
+          "Backstep L",
+          "Stealth L"
+        ],
+        [
+          "Wisdom of the Martialist",
+          "Backstep L",
+          "Feint L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Backstep L": {
+      "full": "Backstep L",
+      "short": "Backstep",
+      "image": "backstep",
+      "type": "otherAction",
+      "code": "R",
+      "recipes": [
+        [
+          "Backstep L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Tranquilizer L": {
+      "full": "Tranquilizer L",
+      "short": "Tranquilizer",
+      "image": "tranquilizer",
+      "type": "otherAction",
+      "code": "S",
+      "recipes": [
+        [
+          "Tranquilizer L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Bloodbath L": {
+      "full": "Bloodbath L",
+      "short": "Bloodbath",
+      "image": "bloodbath",
+      "type": "otherAction",
+      "code": "T",
+      "recipes": [
+        [
+          "Bloodbath L"
+        ],
+        [
+          "Cure L",
+          "Wisdom of the Skirmisher"
+        ],
+        [
+          "Wisdom of the Martialist",
+          "Wisdom of the Martialist",
+          "Cure L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Haymaker L": {
+      "full": "Haymaker L",
+      "short": "Haymaker",
+      "image": "haymaker",
+      "type": "otherAction",
+      "code": "U",
+      "recipes": [
+        [
+          "Wisdom of the Skirmisher",
+          "Featherfoot L"
+        ],
+        [
+          "Wisdom of the Martialist",
+          "Incense L",
+          "Featherfoot L"
+        ]
+      ],
+      "allowedRoles": [
+        "tank"
+      ]
+    },
+    "Cure L": {
+      "full": "Cure L",
+      "short": "Cure",
+      "image": "cure",
+      "type": "otherAction",
+      "code": "V",
+      "recipes": [
+        [
+          "Cure L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "tank"
+      ]
+    },
+    "Cure L II": {
+      "full": "Cure L II",
+      "short": "Cure 2",
+      "image": "cure2",
+      "type": "otherAction",
+      "code": "W",
+      "recipes": [
+        [
+          "Cure L II"
+        ],
+        [
+          "Cure L",
+          "Wisdom of the Ordained"
+        ],
+        [
+          "Cure L",
+          "Cure L",
+          "Cure L"
+        ],
+        [
+          "Raise L",
+          "Raise L",
+          "Raise L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee"
+      ]
+    },
+    "Stoneskin L": {
+      "full": "Stoneskin L",
+      "short": "Stoneskin",
+      "image": "stoneskin",
+      "type": "otherAction",
+      "code": "X",
+      "recipes": [
+        [
+          "Stoneskin L"
+        ],
+        [
+          "Protect L",
+          "Shell L"
+        ],
+        [
+          "Protect L",
+          "Protect L",
+          "Protect L"
+        ],
+        [
+          "Shell L",
+          "Shell L",
+          "Shell L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ]
+    },
+    "Regen L": {
+      "full": "Regen L",
+      "short": "Regen",
+      "image": "regen",
+      "type": "otherAction",
+      "code": "Y",
+      "recipes": [
+        [
+          "Tranquilizer L",
+          "Cure L II"
+        ],
+        [
+          "Feint L",
+          "Cure L II"
+        ],
+        [
+          "Cure L",
+          "Cure L",
+          "Feint L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "tank"
+      ]
+    },
+    "Esuna L": {
+      "full": "Esuna L",
+      "short": "Esuna",
+      "image": "esuna",
+      "type": "otherAction",
+      "code": "Z",
+      "recipes": [
+        [
+          "Esuna L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "tank"
+      ]
+    },
+    "Raise L": {
+      "full": "Raise L",
+      "short": "Raise",
+      "image": "raise",
+      "type": "otherAction",
+      "code": "1",
+      "recipes": [
+        [
+          "Raise L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "tank"
+      ]
+    },
+    "Solid Shield L": {
+      "full": "Solid Shield L",
+      "short": "Solid Shield",
+      "image": "solidshield",
+      "type": "otherAction",
+      "code": "2",
+      "recipes": [
+        [
+          "Protect L",
+          "Wisdom of the Guardian",
+          "Stoneskin L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer"
+      ]
+    },
+    "Spell Shield L": {
+      "full": "Spell Shield L",
+      "short": "Spell Shield",
+      "image": "spellshield",
+      "type": "otherAction",
+      "code": "3",
+      "recipes": [
+        [
+          "Wisdom of the Guardian",
+          "Shell L",
+          "Stoneskin L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer"
+      ]
+    },
+    "Smite L": {
+      "full": "Smite L",
+      "short": "Smite",
+      "image": "smite",
+      "type": "otherAction",
+      "code": "4",
+      "recipes": [
+        [
+          "Tranquilizer",
+          "Wisdom of the Skirmisher",
+          "Spirit Dart L"
+        ]
+      ],
+      "allowedRoles": [
+        "tank"
+      ]
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "mnemes": {
+    "Wisdom of the Aetherweaver": {
+      "short": "aetherweaver",
+      "logogram": "conceptual",
+      "type": "offensive"
+    },
+    "Wisdom of the Martialist": {
+      "short": "martialist",
+      "logogram": "conceptual",
+      "type": "offensive"
+    },
+    "Wisdom of the Platebearer": {
+      "short": "platebearer",
+      "logogram": "conceptual",
+      "type": "protective"
+    },
+    "Incense L": {
+      "short": "incense",
+      "logogram": "conceptual",
+      "type": "protective"
+    },
+    "Cure L": {
+      "short": "cure",
+      "logogram": "conceptual",
+      "type": "curative"
+    },
+    "Backstep L": {
+      "short": "backstep",
+      "logogram": "conceptual",
+      "type": "tactical"
+    },
+    "Paralyze L": {
+      "short": "paralyze",
+      "logogram": "conceptual",
+      "type": "inimical"
+    },
+    "Esuna L": {
+      "short": "esuna",
+      "logogram": "fundamental",
+      "type": "curative"
+    },
+    "Raise L": {
+      "short": "raise",
+      "logogram": "fundamental",
+      "type": "curative"
+    },
+    "Feint L": {
+      "short": "feint",
+      "logogram": "fundamental",
+      "type": "tactical"
+    },
+    "Tranquilizer L": {
+      "short": "tranquilizer",
+      "logogram": "fundamental",
+      "type": "inimical"
+    },
+    "Protect L": {
+      "short": "protect",
+      "logogram": "fundamental",
+      "type": "mitigative"
+    },
+    "Wisdom of the Skirmisher": {
+      "short": "skirmisher",
+      "logogram": "offensive",
+      "type": "offensive"
+    },
+    "Bloodbath L": {
+      "short": "bloodbath",
+      "logogram": "offensive",
+      "type": "offensive"
+    },
+    "Wisdom of the Guardian": {
+      "short": "guardian",
+      "logogram": "protective",
+      "type": "protective"
+    },
+    "Spirit of the Remembered": {
+      "short": "remembered",
+      "logogram": "protective",
+      "type": "protective"
+    },
+    "Wisdom of the Ordained": {
+      "short": "ordained",
+      "logogram": "curative",
+      "type": "curative"
+    },
+    "Cure L II": {
+      "short": "cure2",
+      "logogram": "curative",
+      "type": "curative"
+    },
+    "Featherfoot L": {
+      "short": "featherfoot",
+      "logogram": "tactical",
+      "type": "tactical"
+    },
+    "Stealth L": {
+      "short": "stealth",
+      "logogram": "tactical",
+      "type": "tactical"
+    },
+    "Spirit Dart L": {
+      "short": "spiritdart",
+      "logogram": "inimical",
+      "type": "inimical"
+    },
+    "Dispel L": {
+      "short": "dispel",
+      "logogram": "inimical",
+      "type": "inimical"
+    },
+    "Shell L": {
+      "short": "shell",
+      "logogram": "mitigative",
+      "type": "mitigative"
+    },
+    "Stoneskin L": {
+      "short": "stoneskin",
+      "logogram": "mitigative",
+      "type": "mitigative"
+    },
+    "Magic Burst L": {
+      "short": "magicburst",
+      "logogram": "obscure",
+      "type": "offensive"
+    },
+    "Eagle Eye Shot L": {
+      "short": "ees",
+      "logogram": "obscure",
+      "type": "offensive"
+    },
+    "Double Edge L": {
+      "short": "doubleedge",
+      "logogram": "obscure",
+      "type": "offensive"
+    },
+    "Wisdom of the Breathtaker": {
+      "short": "breathtaker",
+      "logogram": "obscure",
+      "type": "tactical"
+    }
+  }
+}
