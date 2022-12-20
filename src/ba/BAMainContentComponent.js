@@ -34,13 +34,11 @@ class BAMainContentComponent extends Component {
     const roles = Object.keys(recommendedActions);
 
     return (
-      <Box margin='auto'>
-        <BALogosRecommender
-          workflow={this.state.workflow}
-          plates={this.state.plates}
-          handleWorkflowUpdate={this.handleWorkflowUpdate}
-        />
-      </Box>
+      <BALogosRecommender
+        workflow={this.state.workflow}
+        plates={this.state.plates}
+        handleWorkflowUpdate={this.handleWorkflowUpdate}
+      />
     );
   }
 }

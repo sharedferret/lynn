@@ -13,6 +13,10 @@ import {
 import MainPageComponent from './MainPageComponent';
 import ForecastMainComponent from './forecast/ForecastMainComponent';
 import BAMainComponent from './ba/BAMainComponent';
+import MainComponent from './MainComponent';
+import FavorableWeatherFinderComponent from './weather_finder/FavorableWeatherFinder';
+import BAPortalMapComponent from './BAPortalMapComponent';
+import ResultsFilter from './forecast/lib/ResultsFilter';
 
 const theme = createTheme({
   typography: {
@@ -24,44 +28,48 @@ const theme = createTheme({
 });
 
 const WrappedMainComponent = props => {
+  const params = useParams();
+  const forecastFilter = ResultsFilter.getFilter(params.forecastfilter);
+  console.log('params', forecastFilter);
+
   return (
-    <div className="App h-screen flex items-center justify-center">
-    <Drawer variant="permanent">
-      <SidebarComponent />
-    </Drawer>
-    
-    <Box flexGrow={1} height={'100%'} sx={{backgroundColor: '#ddd'}} >
-      {props.component}
-    </Box>
-  </div>
+    <MainComponent component={props.component} page={props.page} forecastfilter={forecastFilter} />
   )
 }
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <WrappedMainComponent component={<MainPageComponent />} />,
+    element: <WrappedMainComponent component={<MainPageComponent />} page='main' />,
   },
   {
     path: '/forecast',
-    element: <WrappedMainComponent component={<ForecastMainComponent />} />,
+    element: <WrappedMainComponent component={<ForecastMainComponent />} page='forecast' />,
     children: [
       {
-        path: '/forecast/:filter',
-        element: <WrappedMainComponent component={<ForecastMainComponent />} />,
+        path: '/forecast/:forecastfilter',
+        element: <WrappedMainComponent component={<ForecastMainComponent />} page='forecast' />,
       }
     ]
   },
   {
     path: '/ba',
-    element: <WrappedMainComponent component={<BAMainComponent />} />,
+    element: <WrappedMainComponent component={<BAMainComponent />} page='ba' />,
+  },
+  {
+    path: '/weather-finder',
+    element: <WrappedMainComponent component={<FavorableWeatherFinderComponent />} page='weatherfinder' />
+  },
+  {
+    path: '/portals',
+    element: <WrappedMainComponent component={<BAPortalMapComponent />} page='portals' />
   }
 ]);
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-          <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }

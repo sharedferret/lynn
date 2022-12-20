@@ -78,12 +78,15 @@ class BALogosHolsterComponent extends Component {
 
   render() {
     return (
-      <Paper variant='outlined' className='BALogosHolsterPaper'>
+      <Box maxWidth={1000}>
+        <Paper variant='outlined' className='BALogosHolsterPaper'>
         <Stack spacing={2} minHeight={100} p={1}>
           {this.state.plates.map((i, index) => <BALogosActionTrayComponent tray={i} index={index} handleLogosActionUpdate={this.handleLogosActionUpdate} />)}
           {this.state.plates.length < 7 ? this.renderAddPlateButton() : null}
         </Stack>
       </Paper>
+      </Box>
+      
     );
   }
 }

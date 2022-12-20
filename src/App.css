@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.IconImageBox {
+  width: 32px;
+  height: 32px;
+}
+
+.IconImage {
+  width: 100%;
+  object-fit: scale-down;
+}

@@ -7,7 +7,13 @@ class BAMainComponent extends Component {
 
   render() {
     return (
-      <BAMainContentComponent />
+      <Box
+        component="main"
+        margin="auto"
+        sx={{ flexGrow: 1, pt: { xs: 14, md: 5} }}>
+        <BAMainContentComponent />
+      </Box>
+      
     );
   }
 }

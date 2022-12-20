@@ -23,17 +23,19 @@ class BALogosRecommender extends Component {
 
     return (
       <Box className="BALogogramWorkflowContainer">
-        <Box position={'absolute'} top={30} left={40}>
-          <Fab variant="extended" onClick={(e) => this.props.handleWorkflowUpdate(e, {role: null, tray: null})}>
-            <ArrowBackIosNewIcon />
-            Start Over
-          </Fab>
-        </Box>
         <Stack alignItems={'center'} spacing={2}>
           <Typography variant='h4'>Here are your recommended logos actions!</Typography>
-          <Box width={600}>
+          <Box maxWidth={600}>
             <Typography>You can build these at a Logos Manipulator. Make sure to pop and activate your Spirit of the Remembered action before entering the Baldesion Arsenal.</Typography>
           </Box>
+            <Button
+            variant="outlined"
+            size="large"
+            startIcon={<ArrowBackIosNewIcon />}
+            onClick={(e) => this.props.handleWorkflowUpdate(e, {role: null, tray: null})}
+          >
+            Start Over
+          </Button>
           <Divider />
           <BALogosHolsterComponent tray={roleTrays[trayID]} />
         </Stack>
@@ -46,9 +48,9 @@ class BALogosRecommender extends Component {
     const roles = Object.keys(recommendedActions);
 
     return (
-      <Paper className="BALogogramWorkflowContainer">
+      <Box className="BALogogramWorkflowContainer">
         <Stack alignItems={'center'} spacing={2}>
-          <Box minWidth={600} width={1200}>
+          <Box>
             <Typography variant='h4' fontWeight={'700'}>Welcome!</Typography>
             <Typography variant='h4'>What role are you entering BA as?</Typography>
           </Box>
@@ -56,7 +58,7 @@ class BALogosRecommender extends Component {
           <Box>
             <Stack spacing={2} width={'100%'}>
               {roles.map(item => 
-                <Box width={400}>
+                <Box width={390}>
                   <Button
                     fullWidth={true}
                     variant='outlined'
@@ -71,7 +73,7 @@ class BALogosRecommender extends Component {
             </Stack>
           </Box>
         </Stack>
-      </Paper>
+      </Box>
     );
   }
 
@@ -80,16 +82,16 @@ class BALogosRecommender extends Component {
     const trays = recommendedActions[role].trays;
 
     return (
-      <Paper className="BALogogramWorkflowContainer">
+      <Box className="BALogogramWorkflowContainer">
         <Stack alignItems={'center'} spacing={2}>
-          <Box minWidth={600} width={1200}>
+          <Box>
             <Typography variant='h4'>Next, pick a loadout:</Typography>
           </Box>
           <Divider />
           <Box>
             <Stack spacing={2} width={'100%'}>
               {trays.map(item =>
-                  <Box width={400}>
+                  <Box width={390}>
                     <Button
                       fullWidth={true}
                       variant='outlined'
@@ -105,7 +107,7 @@ class BALogosRecommender extends Component {
             </Stack>
           </Box>
         </Stack>
-      </Paper>
+      </Box>
     )
   }
 }

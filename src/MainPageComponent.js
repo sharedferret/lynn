@@ -5,8 +5,11 @@ class MainPageComponent extends Component {
 
   render() {
     return (
-      <Box margin='auto'>
-        <Typography>Placeholder component for main page</Typography>
+      <Box flexGrow={1} height={'100%'} sx={{backgroundColor: '#ffb0a9'}} >
+        <Box maxWidth={600} margin='auto'>
+          <img src={`${process.env.PUBLIC_URL}/assets/lynn.jpg`} />
+        </Box>
+        
       </Box>
     );
   }
