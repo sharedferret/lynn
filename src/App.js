@@ -17,6 +17,7 @@ import MainComponent from './MainComponent';
 import FavorableWeatherFinderComponent from './weather_finder/FavorableWeatherFinder';
 import BAPortalMapComponent from './BAPortalMapComponent';
 import ResultsFilter from './forecast/lib/ResultsFilter';
+import LynnReferenceComponent from './reference/LynnReferenceComponent';
 
 const theme = createTheme({
   typography: {
@@ -29,11 +30,20 @@ const theme = createTheme({
 
 const WrappedMainComponent = props => {
   const params = useParams();
-  const forecastFilter = ResultsFilter.getFilter(params.forecastfilter);
-  console.log('params', forecastFilter);
+
+  if (props.page === 'forecast') {
+    const forecastFilter = ResultsFilter.getFilter(params.forecastfilter);
+    return (
+      <MainComponent component={props.component} page={props.page} forecastfilter={forecastFilter} />
+    );
+  } else if (props.page === 'reference') {
+    return (
+      <MainComponent component={props.component} page={props.page} type={params.type} />
+    );
+  }
 
   return (
-    <MainComponent component={props.component} page={props.page} forecastfilter={forecastFilter} />
+    <MainComponent component={props.component} page={props.page} />
   )
 }
 
@@ -63,6 +73,16 @@ const router = createBrowserRouter([
   {
     path: '/portals',
     element: <WrappedMainComponent component={<BAPortalMapComponent />} page='portals' />
+  },
+  {
+    path: '/reference',
+    element: <WrappedMainComponent component={<LynnReferenceComponent />} page='reference' />,
+    children: [
+      {
+        path: '/reference/:type',
+        element: <WrappedMainComponent component={<LynnReferenceComponent />} page='reference' />,
+      }
+    ]
   }
 ]);
 

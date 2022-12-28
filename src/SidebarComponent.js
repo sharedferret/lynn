@@ -94,7 +94,9 @@ function SidebarComponent(props) {
           ResultsFilter.EUREKA_NMS, 
           ResultsFilter.COPYCAT_CASSIE, 
           ResultsFilter.KING_ARTHO,
-          ResultsFilter.SKOLL
+          ResultsFilter.SKOLL,
+          ResultsFilter.PAZUZU,
+          ResultsFilter.PENTHESILEA,
         ].map((filter) => (
           <ListItem key={filter.name} disablePadding>
             <Button onClick={(e) => handleSidebarForecastClick(e, filter)} selected={props.filter === filter} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">

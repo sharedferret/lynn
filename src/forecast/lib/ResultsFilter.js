@@ -31,6 +31,24 @@ export default class ResultsFilter {
     image: 'skoll.png',
     uri: 'skoll',
   });
+  static PAZUZU = new ResultsFilter({
+    name: 'Pazuzu',
+    type: FarmType.EUREKA_NM,
+    zone: EorzeaWeather.ZONE_EUREKA_ANEMOS,
+    requiredWeather: [Weather.GALES],
+    collection: false,
+    image: 'pazuzu.png',
+    uri: 'pazuzu',
+  });
+  static PENTHESILEA = new ResultsFilter({
+    name: 'Penthesilea',
+    type: FarmType.EUREKA_NM,
+    zone: EorzeaWeather.ZONE_EUREKA_PYROS,
+    requiredWeather: [Weather.HEAT_WAVES],
+    collection: false,
+    image: 'penny.png',
+    uri: 'penny',
+  })
 
   // Eureka Farms
   static COLD_WARPED_LOCKBOX = new ResultsFilter({
@@ -119,6 +137,8 @@ export default class ResultsFilter {
       ResultsFilter.COPYCAT_CASSIE,
       ResultsFilter.KING_ARTHO,
       ResultsFilter.SKOLL,
+      ResultsFilter.PAZUZU,
+      ResultsFilter.PENTHESILEA,
     ],
     uri: 'nms',
   });
@@ -160,6 +180,8 @@ export default class ResultsFilter {
       ResultsFilter.COPYCAT_CASSIE,
       ResultsFilter.KING_ARTHO,
       ResultsFilter.SKOLL,
+      ResultsFilter.PAZUZU,
+      ResultsFilter.PENTHESILEA,
       ResultsFilter.COLD_WARPED_LOCKBOX,
       ResultsFilter.HEAT_WARPED_LOCKBOX,
       ResultsFilter.OFFENSIVE_LOGOGRAM,
@@ -179,6 +201,9 @@ export default class ResultsFilter {
       case 'kingartho':
       case 'crab': return ResultsFilter.KING_ARTHO;
       case 'skoll': return ResultsFilter.SKOLL;
+      case 'pazuzu': return ResultsFilter.PAZUZU;
+      case 'penthesilea':
+      case 'penny': return ResultsFilter.PENTHESILEA;
       case 'cold':
       case 'cold_lockbox':
       case 'coldbox':

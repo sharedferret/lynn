@@ -55,7 +55,8 @@ class MainComponent extends Component {
               handleDrawerToggle={this.handleDrawerToggle}
             />
             {React.cloneElement(this.props.component, {
-              forecastFilter: this.state.forecastFilter
+              forecastFilter: this.state.forecastFilter,
+              type: this.props.type
             })}
           </Box>
         </Box>
