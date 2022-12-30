@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Box, Divider, Stack, Typography } from '@mui/material';
+import { Helmet } from 'react-helmet';
 
 class LynnReferenceComponent extends Component {
 
@@ -13,6 +14,19 @@ class LynnReferenceComponent extends Component {
         component="main"
         margin="auto"
         sx={{ flexGrow: 1, pt: { xs: 14, md: 5} }}>
+
+        <Helmet>
+          <title>Lynn Kaneko Reference</title>
+          <meta name="description" content="Reference images for Lynn Kaneko @ Exodus" />
+          <meta property="og:title" content="Lynn Kaneko - Reference" />
+          <meta property="og:url" content="https://lynn.pet/reference" />
+          <meta property="og:image" content="https://lynn.pet/assets/reference/lynn/lynn-preview.jpg" />
+          <meta property="og:description" content="Reference images for Lynn Kaneko @ Exodus" />
+          <meta property="og:site_name" content="lynn.pet!" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:creator" content="@reflexyui" />
+        </Helmet>
+
         <Stack alignItems={'center'}>
           <Stack direction={'row'}>
             <Typography variant='h2' fontWeight={700} display='inline'>Lynn Kaneko </Typography>

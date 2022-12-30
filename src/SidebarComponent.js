@@ -208,7 +208,7 @@ function SidebarComponent(props) {
           '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
         }}
       >
-        <Scrollbars>
+        <Scrollbars universal={true}>
         {drawer}
         </Scrollbars>
         
@@ -227,6 +227,7 @@ function SidebarComponent(props) {
         open
       >
           <Scrollbars
+          universal={true}
           renderTrackVertical={({style, ...props}) =>
             <div {...props} style={{...style,  right: '2px', bottom: '2px', top: '2px', borderRadius: '3px', width: '5px'}}/>
           }
