@@ -27,7 +27,7 @@ class BALogosActionTrayLogosComponent extends Component {
       menuItems.push(
         <MenuItem value={action.full}>
           <Stack direction='row' spacing={2} alignItems='center'>
-            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>
           </Stack>
         </MenuItem>)
@@ -39,7 +39,7 @@ class BALogosActionTrayLogosComponent extends Component {
       menuItems.push(
         <MenuItem value={action.full}>
           <Stack direction='row' spacing={2} alignItems='center'>
-            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>
           </Stack>
         </MenuItem>)
@@ -51,7 +51,7 @@ class BALogosActionTrayLogosComponent extends Component {
       menuItems.push(
         <MenuItem value={action.full}>
           <Stack direction='row' spacing={2} alignItems='center'>
-            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>
           </Stack>
         </MenuItem>)
@@ -63,7 +63,7 @@ class BALogosActionTrayLogosComponent extends Component {
       menuItems.push(
         <MenuItem value={action.full}>
           <Stack direction='row' spacing={2} alignItems='center'>
-            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>
           </Stack>
         </MenuItem>)
@@ -75,7 +75,7 @@ class BALogosActionTrayLogosComponent extends Component {
       menuItems.push(
         <MenuItem value={action.full}>
           <Stack direction='row' spacing={2} alignItems='center'>
-            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>
           </Stack>
         </MenuItem>)
@@ -107,7 +107,7 @@ class BALogosActionTrayLogosComponent extends Component {
               })}
               renderValue={(selected) => {
                 const action = logosActions[selected];
-                if (selected == '') {
+                if (selected === '') {
                   return (
                     <Stack>
                     <Box width={64} height={64} />
@@ -117,7 +117,7 @@ class BALogosActionTrayLogosComponent extends Component {
                 }
                 return (
                   <Stack>
-                    <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} width={64} height={64} />
+                    <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} width={64} height={64} alt={action.name} />
                     <Typography variant='caption'>{action.short}</Typography>
                   </Stack>
                 )
@@ -140,7 +140,7 @@ class BALogosActionTrayLogosComponent extends Component {
               })}
               renderValue={(selected) => {
                 const action = logosActions[selected];
-                if (selected == '') {
+                if (selected === '') {
                   return (
                     <Stack>
                     <Box width={64} height={64} />
@@ -150,7 +150,7 @@ class BALogosActionTrayLogosComponent extends Component {
                 }
                 return (
                   <Stack>
-                    <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} width={64} height={64} />
+                    <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} width={64} height={64} alt={action.name} />
                     <Typography variant='caption'>{action.short}</Typography>
                   </Stack>
                 )

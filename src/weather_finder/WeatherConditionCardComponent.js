@@ -15,7 +15,7 @@ class WeatherConditionCardComponent extends Component {
             {this.props.data.condition}
           </Typography>
           <Box>
-          <img src={`${process.env.PUBLIC_URL}/assets/weathericons/${weather_icon}`} />
+          <img src={`${process.env.PUBLIC_URL}/assets/weathericons/${weather_icon}`} alt={weather_icon} />
           </Box>
           
           <Typography variant="h6">

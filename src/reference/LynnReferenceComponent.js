@@ -39,19 +39,19 @@ class LynnReferenceComponent extends Component {
 
         <Stack spacing={2} alignItems={'center'} mb={10} mt={5}>
           <Box maxWidth={1200} margin='auto'>
-            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}01.jpg`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}01.jpg`} alt='1' />
           </Box>
           <Box maxWidth={1200} margin='auto'>
-            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}02.jpg`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}02.jpg`} alt='2' />
           </Box>
           <Box maxWidth={1200} margin='auto'>
-            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}03.jpg`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}03.jpg`} alt='3' />
           </Box>
           <Box maxWidth={1200} margin='auto'>
-            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}04.jpg`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}04.jpg`} alt='4' />
           </Box>
           <Box maxWidth={1200} margin='auto'>
-            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}05.jpg`} />
+            <img src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${type}05.jpg`} alt='5' />
           </Box>
         </Stack>
       </Box>

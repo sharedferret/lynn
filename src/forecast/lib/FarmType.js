@@ -9,6 +9,6 @@ export default class FarmType {
   }
 
   toString() {
-    return 'FarmType.${this.name}';
+    return `FarmType.${this.name}`;
   }
 }

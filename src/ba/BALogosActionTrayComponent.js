@@ -22,7 +22,7 @@ class BALogosActionTrayComponent extends Component {
   }
 
   handleLogosActionUpdate(data) {
-    if (data.array == 'umbral') {
+    if (data.array === 'umbral') {
       this.setState({
         tray: {
           umbral: data.newAction,
@@ -30,7 +30,7 @@ class BALogosActionTrayComponent extends Component {
         }
       })
     }
-    if (data.array == 'astral') {
+    if (data.array === 'astral') {
       this.setState({
         tray: {
           umbral: this.state.tray.umbral,

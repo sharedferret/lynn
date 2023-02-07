@@ -4,7 +4,7 @@ import sortBy from 'underscore/modules/sortBy.js'
 const EORZEA_TIME_DILATION = 20.571428571428573;
 const EIGHT_HOURS_IN_MS = 8 * 1000 * 60 * 60;
 const EORZEA_WEATHER_DURATION_MS = (23 * 60000) + (20 * 1000);
-const WEATHER_CHANGES_PER_WEEK = 432;
+// const WEATHER_CHANGES_PER_WEEK = 432;
 
 // Zone mappings for EorzeaWeather
 const zone_mapping = {};
@@ -186,11 +186,13 @@ const generateConditionsForFavorableTimes = (favorability_scores, slice_duration
  * @param {*} favorability_ranking The ranking criteria for each weather condition, and a bonus applied to additional favorable weather conditions during a slice.
  * @returns 
  */
+/**
 const getFavorability = (slice_length, lookahead_segments, start_time = new Date(), location = EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT, favorability_ranking = favorability_ranking) => {
   const scores = calculateFavorabilityScoresForTimeSlice(calculateWeatherForTimePeriod(lookahead_segments, start_time, location), slice_length, favorability_ranking);
   const scores_to_display = sortAndReturnTopNTimeSlices(scores, 10);
   return generateConditionsForFavorableTimes(scores_to_display, slice_length, location);
 }
+*/
 
 class WeatherFavorability {
   static ZoneMapping = zone_mapping;

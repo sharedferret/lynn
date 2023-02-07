@@ -20,7 +20,7 @@ class ForecastResultsComponent extends Component {
     
     return (
       <div className="ForecastResults">
-        <Paper className="ForecastResultsPaper" elevation={1} sx={{ backgroundColor: '#f4f4f4', }}>
+        <Paper className="ForecastResultsPaper" elevation={1} >
           <ForecastResultsHeaderComponent
             location={this.props.location}
             searchDuration={this.props.searchDuration}

@@ -132,7 +132,7 @@
         },
         {
           "title": "Advanced",
-          "subtitle": "Duelist, Double Edge",
+          "subtitle": "Double Edge chaining",
           "buttonIcon": "doubleedge",
           "plates": [
             {
@@ -141,11 +141,19 @@
             },
             {
               "umbral": "Double Edge L",
-              "astral": "Wisdom of the Skirmisher"
+              "astral": "Focus L"
+            },
+            {
+              "umbral": "Double Edge L",
+              "astral": "Wisdom of the Duelist"
             },
             {
               "umbral": "Double Edge L",
               "astral": "Focus L"
+            },
+            {
+              "umbral": "Double Edge L",
+              "astral": "Wisdom of the Duelist"
             },
             {
               "umbral": "Double Edge L",

@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import SidebarComponent from './SidebarComponent';
-import { Box, Drawer } from '@mui/material';
 import { Helmet } from 'react-helmet';
+import * as React from 'react';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {
@@ -20,14 +18,7 @@ import BAPortalMapComponent from './BAPortalMapComponent';
 import ResultsFilter from './forecast/lib/ResultsFilter';
 import LynnReferenceComponent from './reference/LynnReferenceComponent';
 
-const theme = createTheme({
-  typography: {
-    fontFamily: [
-      'Noto Sans',
-      'sans-serif',
-    ].join(','),
-  }
-});
+export const ColorModeContext = React.createContext({ toggleColorMode: () => {}})
 
 const WrappedMainComponent = props => {
   const params = useParams();
@@ -87,22 +78,53 @@ const router = createBrowserRouter([
   }
 ]);
 
+
 function App() {
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  const [mode, setMode] = React.useState(darkThemeMq.matches ? 'dark' : 'light');
+  const colorMode = React.useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+      }
+    }),
+    []
+  );
+
+  const theme = React.useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode,
+        },
+        typography: {
+          fontFamily: [
+            'Noto Sans',
+            'sans-serif',
+          ].join(','),
+        }
+      }),
+    [mode],
+  );
+
   return (
-    <ThemeProvider theme={theme}>
-      <Helmet>
-          <title>lynn.pet!</title>
-          <meta name="description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
-          <meta property="og:title" content="lynn.pet!" />
-          <meta property="og:url" content="https://lynn.pet/" />
-          <meta property="og:image" content="https://lynn.pet/logo.png" />
-          <meta property="og:description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
-          <meta property="og:site_name" content="lynn.pet!" />
-          <meta name="twitter:card" content="summary" />
-          <meta name="twitter:creator" content="@reflexyui" />
-        </Helmet>
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <Helmet>
+            <title>lynn.pet!</title>
+            <meta name="description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
+            <meta property="og:title" content="lynn.pet!" />
+            <meta property="og:url" content="https://lynn.pet/" />
+            <meta property="og:image" content="https://lynn.pet/logo.png" />
+            <meta property="og:description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
+            <meta property="og:site_name" content="lynn.pet!" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:creator" content="@reflexyui" />
+          </Helmet>
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </ColorModeContext.Provider>
+    
   );
 }
 

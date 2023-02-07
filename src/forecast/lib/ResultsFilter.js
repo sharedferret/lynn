@@ -241,6 +241,6 @@ export default class ResultsFilter {
   }
 
   toString() {
-    return 'ResultsFilter.${this.name}';
+    return `ResultsFilter.${this.name}`;
   }
 }

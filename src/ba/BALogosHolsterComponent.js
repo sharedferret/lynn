@@ -32,14 +32,14 @@ class BALogosHolsterComponent extends Component {
   }
 
   handleLogosActionUpdate(data) {
-    if (data.array == 'umbral') {
+    if (data.array === 'umbral') {
       const newPlates = this.state.plates;
       newPlates[data.plate].umbral = data.newAction;
       this.setState({
         plates: newPlates
       });
     }
-    if (data.array == 'astral') {
+    if (data.array === 'astral') {
       const newPlates = this.state.plates;
       newPlates[data.plate].astral = data.newAction;
       this.setState({

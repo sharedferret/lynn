@@ -22,14 +22,14 @@ for (let i = 0; i < directories.length; i++) {
   // 3. Inject React include headers
   // 4. Write to file
 
-  if (!fs.existsSync('build/' + directory[i])) {
-    fs.mkdirSync('build/' + directory[i]);
+  if (!fs.existsSync('build/' + directories[i])) {
+    fs.mkdirSync('build/' + directories[i]);
   }
 
-  let unmodifiedSubdirIndex = fs.readFileSync('public/' + directory[i] + '/index.html').toString();
+  let unmodifiedSubdirIndex = fs.readFileSync('public/' + directories[i] + '/index.html').toString();
   const indexToInsert = unmodifiedSubdirIndex.indexOf('<meta name="end-tags" />');
   const modifiedIndexFile = unmodifiedSubdirIndex.slice(0, indexToInsert) + reactIncludes + unmodifiedSubdirIndex.slice(indexToInsert);
   
   // Write new file
-  fs.writeFileSync('build/' + directory[i] + '/index.html', modifiedIndexFile);
+  fs.writeFileSync('build/' + directories[i] + '/index.html', modifiedIndexFile);
 }

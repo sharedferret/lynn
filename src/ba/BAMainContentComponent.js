@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Box, Button, Paper, Stack, Typography } from '@mui/material';
 
 import BALogosRecommender from './BALogosRecommenderWorkflow';
 
@@ -30,9 +29,6 @@ class BAMainContentComponent extends Component {
   }
 
   render() {
-    const recommendedActions = require('./lib/RecommendedActions.json').actions;
-    const roles = Object.keys(recommendedActions);
-
     return (
       <BALogosRecommender
         workflow={this.state.workflow}

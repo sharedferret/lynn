@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Box, Button, Checkbox, FormControl, InputLabel, Grid, ListItemText, MenuItem, OutlinedInput, Paper, Select, Slider, TextField, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import EorzeaWeather from 'eorzea-weather';
 import WeatherFavorability from './weather-favorability';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -59,13 +58,13 @@ class ForecastOptionsSelectorComponent extends Component {
   }
 
   handleSessionLengthChange(event) {
-    if (event.target.value != this.state.session_length) {
+    if (event.target.value !== this.state.session_length) {
       this.setState({ session_length: event.target.value });
     }
   }
 
   handleSearchDurationChange(event) {
-    if (event.target.value != this.state.search_duration) {
+    if (event.target.value !== this.state.search_duration) {
       this.setState({ search_duration: event.target.value });
     }
   }
@@ -213,7 +212,7 @@ class ForecastOptionsSelectorComponent extends Component {
                   renderValue={(selected) => selected.join(', ')}
                   onChange={this.handleConditionSelectorChange}
                   MenuProps={MenuProps}
-                  disabled={this.state.ranking.type != 'custom'}
+                  disabled={this.state.ranking.type !== 'custom'}
                 >
                   {weather_conditions.map((condition) => {
                     return <MenuItem key={condition} value={condition}>

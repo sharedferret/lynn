@@ -22,6 +22,6 @@ export default class Weather {
   }
 
   toString() {
-    return 'Weather.${this.name}';
+    return `Weather.${this.name}`;
   }
 }

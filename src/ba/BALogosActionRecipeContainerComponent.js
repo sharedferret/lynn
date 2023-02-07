@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Box, Divider, FormControl, InputLabel, MenuItem, Select, Stack, Typography } from '@mui/material';
+import { Box, Divider, FormControl, InputLabel, MenuItem, Select, Stack } from '@mui/material';
 import BALogogramComponent from './BALogogramComponent';
 
 /**
@@ -8,8 +8,6 @@ import BALogogramComponent from './BALogogramComponent';
  */
 class BALogosActionRecipeContainerComponent extends Component {
   renderRecipes(recipes) {
-    const firstRecipe = recipes[0];
-
     const output = [];
     for (let i = 0; i < recipes.length; i++) {
       output.push(

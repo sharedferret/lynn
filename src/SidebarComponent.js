@@ -1,8 +1,13 @@
 import React from 'react';
-import { Box, Button, Divider, Drawer, List, ListItem, ListItemIcon } from '@mui/material';
+import { Box, Divider, Drawer, IconButton, List, Stack } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import { useNavigate } from "react-router-dom";
 import ResultsFilter from './forecast/lib/ResultsFilter';
 import { Scrollbars } from 'react-custom-scrollbars-2';
+import { ColorModeContext } from './App';
+
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 function SidebarComponent(props) {
   const { window } = props;
@@ -20,76 +25,81 @@ function SidebarComponent(props) {
     props.handleSidebarForecastClick(filter);
   }
 
+  const handleDarkModeClick = (event, colorMode) => {
+    colorMode.toggleColorMode();
+    props.handleSidebarClick();
+  }
+
   const mainSidebarContent = (
     <List class="flex flex-col py-4 overflow-x-hidden">
-      <ListItem disablePadding class="flex flex-row items-center h-12">
+      <li class="flex flex-row items-center h-12">
         <Box class="h-6 w-6"></Box>
         <span class="text-md uppercase font-semibold text-white">Baldesion Arsenal</span>
-      </ListItem>
-      <ListItem disablePadding>
-        <Button onClick={(e) => { handleSidebarClick(e, 'ba') }} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+      </li>
+      <li>
+        <div onClick={(e) => { handleSidebarClick(e, 'ba') }} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
           <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i class="bx bx-home"></i></span>
           <span class="text-md font-medium">Logos Action Helper</span>
-        </Button>
-      </ListItem>
-      <ListItem disablePadding>
-        <Button onClick={(e) => { handleSidebarClick(e, 'portals') }} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+        </div>
+      </li>
+      <li>
+        <div onClick={(e) => { handleSidebarClick(e, 'portals') }} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
           <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i class="bx bx-home"></i></span>
           <span class="text-md font-medium">Portal Map</span>
-        </Button>
-      </ListItem>
+        </div>
+      </li>
       
-      <ListItem disablePadding class="flex flex-row items-center h-12">
+      <li class="flex flex-row items-center h-12">
         <Box class="h-6 w-6"></Box>
         <span class="text-md uppercase font-semibold text-white">Forays</span>
-      </ListItem>
-      <ListItem disablePadding>
-        <Button onClick={(e) => { handleSidebarClick(e, 'forecast') }} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+      </li>
+      <li>
+        <div onClick={(e) => { handleSidebarClick(e, 'forecast') }} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
           <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i class="bx bx-home"></i></span>
           <span class="text-md font-medium">Expeditionary Forecast</span>
-        </Button>
-      </ListItem>
-      <ListItem disablePadding>
-        <Button onClick={(e) => { handleSidebarClick(e, 'weather-finder') }} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+        </div>
+      </li>
+      <li>
+        <div onClick={(e) => { handleSidebarClick(e, 'weather-finder') }} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
           <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i class="bx bx-home"></i></span>
           <span class="text-md font-medium">Advanced Weather Finder</span>
-        </Button>
-      </ListItem>
+        </div>
+      </li>
 
-      <ListItem disablePadding class="flex flex-row items-center h-12">
+      <li class="flex flex-row items-center h-12">
         <Box class="h-6 w-6"></Box>
         <span class="text-md uppercase font-semibold text-white">About</span>
-      </ListItem>
-      <ListItem disablePadding>
-        <Button onClick={(e) => { handleSidebarClick(e, '#') }} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+      </li>
+      <li>
+        <div onClick={(e) => { handleSidebarClick(e, '#') }} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
           <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i class="bx bx-home"></i></span>
           <span class="text-md font-medium">Lynn Kaneko @ Exodus</span>
-        </Button>
-      </ListItem>
+        </div>
+      </li>
     </List>
   );
 
   const forecastSidebarComponent = (
     <List class="flex flex-col py-4 overflow-x-hidden">
-      <ListItem disablePadding class="flex flex-row items-center h-12">
+      <li class="flex flex-row items-center h-12">
         <Box class="h-6 w-6"></Box>
         <span class="text-md uppercase font-semibold text-white">All</span>
-      </ListItem>
+      </li>
       {[
           ResultsFilter.ALL
         ].map((filter) => (
-          <ListItem key={filter.name} disablePadding>
-            <Button onClick={(e) => { handleSidebarForecastClick(e, filter) }} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+          <li key={filter.name}>
+            <div onClick={(e) => { handleSidebarForecastClick(e, filter) }} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
               <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i class="bx bx-home"></i></span>
               <span class="text-md font-medium">{filter.name}</span>
-            </Button>
-          </ListItem>
+            </div>
+          </li>
         ))}
 
-      <ListItem disablePadding class="flex flex-row items-center h-12">
+      <li class="flex flex-row items-center h-12">
         <Box class="h-6 w-6"></Box>
         <span class="text-md uppercase font-semibold text-white">Eureka NMs</span>
-      </ListItem>
+      </li>
       {[
           ResultsFilter.EUREKA_NMS, 
           ResultsFilter.COPYCAT_CASSIE, 
@@ -98,8 +108,8 @@ function SidebarComponent(props) {
           ResultsFilter.PAZUZU,
           ResultsFilter.PENTHESILEA,
         ].map((filter) => (
-          <ListItem key={filter.name} disablePadding>
-            <Button onClick={(e) => handleSidebarForecastClick(e, filter)} selected={props.filter === filter} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+          <li key={filter.name}>
+            <div onClick={(e) => handleSidebarForecastClick(e, filter)} selected={props.filter === filter} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
               <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
                 {filter.collection === false
                   ? 
@@ -110,22 +120,22 @@ function SidebarComponent(props) {
                 }
               </span>
               <span class="text-md font-medium">{filter.name}</span>
-            </Button>      
-          </ListItem>
+            </div>      
+          </li>
         ))}
 
-      <ListItem disablePadding class="flex flex-row items-center h-12">
+      <li class="flex flex-row items-center h-12">
         <Box class="h-6 w-6"></Box>
         <span class="text-md uppercase font-semibold text-white">Eureka Farms</span>
-      </ListItem>
+      </li>
       {[
           ResultsFilter.EUREKA_FARMS,
           ResultsFilter.COLD_WARPED_LOCKBOX,
           ResultsFilter.HEAT_WARPED_LOCKBOX,
           ResultsFilter.OFFENSIVE_LOGOGRAM,
         ].map((filter) => (
-          <ListItem key={filter.name} disablePadding>
-            <Button onClick={(e) => handleSidebarForecastClick(e, filter)} selected={props.filter === filter} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+          <li key={filter.name}>
+            <div onClick={(e) => handleSidebarForecastClick(e, filter)} selected={props.filter === filter} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
               <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
                 {filter.collection === false
                   ? 
@@ -136,14 +146,14 @@ function SidebarComponent(props) {
                 }
               </span>
               <span class="text-md font-medium">{filter.name}</span>
-            </Button>      
-          </ListItem>
+            </div>      
+          </li>
         ))}
 
-      <ListItem disablePadding class="flex flex-row items-center h-12">
+      <li class="flex flex-row items-center h-12">
         <Box class="h-6 w-6"></Box>
         <span class="text-md uppercase font-semibold text-white">Bozja Fragment Farms</span>
-      </ListItem>
+      </li>
       {[
           ResultsFilter.FRAGMENT_FARM,
           ResultsFilter.PREPARATION_FRAGMENT,
@@ -152,8 +162,8 @@ function SidebarComponent(props) {
           ResultsFilter.HISTORY_FRAGMENT,
           ResultsFilter.ARTISTRY_FRAGMENT,
         ].map((filter) => (
-          <ListItem key={filter.name} disablePadding>
-            <Button onClick={(e) => handleSidebarForecastClick(e, filter)} selected={props.filter === filter} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+          <li key={filter.name}>
+            <div onClick={(e) => handleSidebarForecastClick(e, filter)} selected={props.filter === filter} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
               <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
                 {filter.collection === false
                   ? 
@@ -164,25 +174,22 @@ function SidebarComponent(props) {
                 }
               </span>
               <span class="text-md font-medium">{filter.name}</span>
-            </Button>      
-          </ListItem>
+            </div>      
+          </li>
         ))}
     </List>
   );
 
   const drawer = (
     <div class="flex flex-col">
-      <div class="flex items-center justify-center h-20">
-        <a href="/">
-          <h1 class="text-3xl text-red-200">lynn.pet!</h1>
-        </a>
-      </div>
-      <Divider variant="middle" light={true} sx={{ bgcolor: "#999" }} />
       { props.page === 'forecast' ? forecastSidebarComponent : mainSidebarContent }
     </div>
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
+
+  const theme = useTheme();
+  const colorMode = React.useContext(ColorModeContext);
 
   return (
     <Box
@@ -208,10 +215,29 @@ function SidebarComponent(props) {
           '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
         }}
       >
-        <Scrollbars universal={true}>
-        {drawer}
-        </Scrollbars>
-        
+        <Stack width='100%' height='100%'>
+          <div class="flex items-center justify-center h-20" onClick={(e) => handleSidebarClick(e, '')} style={{cursor: 'pointer'}}>
+            <h1 class="text-3xl text-red-200">lynn.pet!</h1>
+          </div>
+          <Divider variant="middle" light={true} sx={{ bgcolor: "#999", mb: 1 }} />
+          <Box flexGrow={1}>
+            <Scrollbars universal={true}>
+              {drawer}
+            </Scrollbars>
+          </Box>
+          <Box>
+            <Stack width='100%' height='100%'>
+              <Divider variant="middle" light={true} sx={{ bgcolor: "#999", mt: 1 }} />
+              <Stack direction={'row'} flexGrow={1}>
+                <Box flexGrow={1}>
+                </Box>
+                <IconButton sx={{ m: 1 }} onClick={(e) => handleDarkModeClick(e, colorMode)} color="inherit">
+                  {theme.palette.mode === 'dark' ? <Brightness7Icon sx={{ color: 'white' }} /> : <Brightness4Icon sx={{ color: 'white' }} />}
+                </IconButton>
+              </Stack>
+            </Stack>
+          </Box>
+        </Stack>
       </Drawer>
       <Drawer
         variant="permanent"
@@ -226,20 +252,45 @@ function SidebarComponent(props) {
         }}
         open
       >
-          <Scrollbars
-          universal={true}
-          renderTrackVertical={({style, ...props}) =>
-            <div {...props} style={{...style,  right: '2px', bottom: '2px', top: '2px', borderRadius: '3px', width: '5px'}}/>
-          }
-          renderThumbVertical={({style, ...props}) =>
-            <div {...props} style={{...style, width: '4px', borderRadius: '4px', boxShadow: '0 2px 4px 0 rgba(0, 0, 0, 0.16)', backgroundColor: '#ddd'}}/>
-          }>
-        
-          {drawer}
-        </Scrollbars>
+        <Stack width="100%" height="100%">
+          <Box>
+            <div class="flex items-center justify-center h-20" onClick={(e) => handleSidebarClick(e, '')} style={{cursor: 'pointer'}}>
+                <h1 class="text-3xl text-red-200">lynn.pet!</h1>
+            </div>
+            <Divider variant="middle" light={true} sx={{ bgcolor: "#999", mb: 1 }} />
+          </Box>
+          <Box flexGrow={1}>
+            <Scrollbars
+              universal={true}
+              renderTrackVertical={({style, ...props}) =>
+                <div {...props} style={{...style,  right: '2px', bottom: '2px', top: '2px', borderRadius: '3px', width: '5px'}}/>
+              }
+              renderThumbVertical={({style, ...props}) =>
+                <div {...props} style={{...style, width: '4px', borderRadius: '4px', boxShadow: '0 2px 4px 0 rgba(0, 0, 0, 0.16)', backgroundColor: '#ddd'}}/>
+              }>
+            
+              {drawer}
+            </Scrollbars>
+          </Box>
+          <Box>
+            <Stack width='100%' height='100%'>
+              <Divider variant="middle" light={true} sx={{ bgcolor: "#999", mt: 1 }} />
+              <Stack direction={'row'} flexGrow={1}>
+                <Box flexGrow={1}>
+                </Box>
+                <IconButton sx={{ m: 1 }} onClick={(e) => handleDarkModeClick(e, colorMode)} color="inherit">
+                  {theme.palette.mode === 'dark' ? <Brightness7Icon sx={{ color: 'white' }} /> : <Brightness4Icon sx={{ color: 'white' }} />}
+                </IconButton>
+              </Stack>
+            </Stack>
+          </Box>
+        </Stack>   
+
+          
       </Drawer>
     </Box>
     );
 }
+
 
 export default SidebarComponent;

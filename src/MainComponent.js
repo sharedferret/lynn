@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SidebarComponent from './SidebarComponent';
 
-import { Box } from '@mui/material';
+import { Box, CssBaseline } from '@mui/material';
 import MobileTopbarComponent from './MobileTopbarComponent';
 import ResultsFilter from './forecast/lib/ResultsFilter';
 
@@ -50,6 +50,7 @@ class MainComponent extends Component {
           page={this.props.page}
         />
         <Box flexGrow={1} height={'100%'} sx={{width: { sm: `calc(100% - 280px)` }}}>
+          <CssBaseline />
           <Box display={'flex'}>
             <MobileTopbarComponent
               handleDrawerToggle={this.handleDrawerToggle}
