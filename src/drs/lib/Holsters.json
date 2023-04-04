@@ -1,0 +1,705 @@
+{
+  "learning": {
+    "holsters": {
+      "maintank": {
+        "name": "Main Tank",
+        "role": "tank",
+        "assignments": [
+          "dispel"
+        ],
+        "explanation": "As a main tank, you'll be responsible for using Lost Aethershield on the party during raidwides on Trinity Avowed and The Queen. Lost Sacrifice can be used to resurrect a player if the raid is low on Lost Arises.",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Indomitable",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Aethershield",
+            "quantity": 2
+          },
+          {
+            "name": "Lost Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          }
+        ]
+      },
+      "offtank": {
+        "name": "Off Tank",
+        "role": "tank",
+        "assignments": [],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Indomitable",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Aethershield",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          }
+        ]
+      },
+      "mainhealer": {
+        "name": "Main Healer",
+        "role": "healer",
+        "assignments": [
+          "protect",
+          "banish"
+        ],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Divine",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Protect II",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Shell II",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Arise",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Steelsting",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Seraph Strike",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 5
+          },
+          {
+            "name": "Lost Reflect",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Arise",
+            "quantity": 7
+          },
+          {
+            "name": "Lost Steelsting",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Spellforge",
+            "quantity": 1
+          }
+        ]
+      },
+      "offhealer": {
+        "name": "Off Healer",
+        "role": "healer",
+        "assignments": [
+          "banish"
+        ],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Divine",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Protect II",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Shell II",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Arise",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Steelsting",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Seraph Strike",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 5
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Arise",
+            "quantity": 8
+          },
+          {
+            "name": "Lost Dispel",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Steelsting",
+            "quantity": 1
+          }
+        ]
+      },
+      "melee-rend": {
+        "name": "Melee DPS (Rend)",
+        "role": "melee",
+        "assignments": [
+          "meleeexcellence"
+        ],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Duelist",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Perception",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Rend Armor",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 5
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Rend Armor",
+            "quantity": 3
+          }
+        ]
+      },
+      "melee-dps": {
+        "name": "Melee DPS",
+        "role": "melee",
+        "assignments": [
+          "meleeexcellence"
+        ],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Duelist",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Perception",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Rend Armor",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 5
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Rend Armor",
+            "quantity": 1
+          }
+        ]
+      },
+      "caster-c4": {
+        "name": "Caster (C4)",
+        "role": "caster",
+        "assignments": [
+          "c4excellence"
+        ],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Elder",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Chainspell",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Cure IV",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Magic",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 5
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Cure IV",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Chainspell",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Shell II",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Bubble",
+            "quantity": 1
+          }
+        ]
+      },
+      "caster-dps": {
+        "name": "Caster DPS",
+        "role": "caster",
+        "assignments": [
+          "casterexcellence"
+        ],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Elder",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Chainspell",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Cure IV",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Magic",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 4
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Cure IV",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Magic",
+            "quantity": 1
+          },
+          {
+            "name": "Resistance Ether Kit",
+            "quantity": 11
+          }
+        ]
+      },
+      "ranged-c2": {
+        "name": "Ranged DPS (C2)",
+        "role": "ranged",
+        "assignments": [
+          "incensemanawall",
+          "rangedexcellence"
+        ],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Fiendhunter",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Dervish",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Perception",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 5
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Cure II",
+            "quantity": 3
+          },
+          {
+            "name": "Lost Dervish",
+            "quantity": 3
+          }
+        ]
+      },
+      "ranged-dervish": {
+        "name": "Ranged DPS (Dervish)",
+        "role": "ranged",
+        "assignments": [
+          "incensemanawall",
+          "rangedexcellence"
+        ],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Fiendhunter",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Dervish",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Perception",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 5
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Dervish",
+            "quantity": 3
+          },
+          {
+            "name": "Lost Perception",
+            "quantity": 1
+          }
+        ]
+      },
+      "irregular-drk": {
+        "name": "Irregular (DRK)",
+        "role": "tank",
+        "assignments": [],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Deep Essence of the Savior",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Aethershield",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 4
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Aethershield",
+            "quantity": 2
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          }
+        ]
+      },
+      "savior-tank": {
+        "name": "Savior Tank",
+        "role": "tank",
+        "assignments": [],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Deep Essence of the Savior",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Cure IV",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Shell II",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Aethershield",
+            "quantity": 2
+          },
+          {
+            "name": "Lost Steelsting",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Spellforge",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Shell II",
+            "quantity": 2
+          },
+          {
+            "name": "Lost Reflect",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Cure IV",
+            "quantity": 5
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          }
+        ]
+      },
+      "profane-whm": {
+        "name": "Profane (WHM)",
+        "role": "healer",
+        "assignments": [],
+        "explanation": "TBD",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Deep Essence of the Profane",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Seraph Strike",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Chainspell",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Magic",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 6
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Chainspell",
+            "quantity": 1
+          },
+          {
+            "name": "Resistance Ether Kit",
+            "quantity": 9
+          }
+        ]
+      }
+    }
+  }
+}

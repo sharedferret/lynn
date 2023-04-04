@@ -1,0 +1,322 @@
+{
+  "fragments": {
+    "caution": {
+      "name": "Forgotten Fragment of Caution",
+      "short": "caution",
+      "contents": [
+        "Lost Manawall",
+        "Lost Incense",
+        "Lost Cure",
+        "Lost Cure III",
+        "Lost Protect",
+        "Lost Shell",
+        "Lost Stealth"
+      ]
+    },
+    "preparation": {
+      "name": "Forgotten Fragment of Preparation",
+      "short": "preparation",
+      "contents": [
+        "Resistance Phoenix",
+        "Resistance Potion"
+      ]
+    },
+    "skill": {
+      "name": "Forgotten Fragment of Skill",
+      "short": "skill",
+      "contents": [
+        "Essence of the Aetherweaver",
+        "Essence of the Martialist",
+        "Essence of the Savior",
+        "Essence of the Veteran",
+        "Essence of the Platebearer"
+      ]
+    },
+    "ingenuity": {
+      "name": "Forgotten Fragment of Ingenuity",
+      "short": "ingenuity",
+      "contents": [
+        "Lost Spellforge",
+        "Lost Steelsting",
+        "Lost Swift",
+        "Lost Paralyze III",
+        "Lost Banish III",
+        "Lost Dispel"
+      ]
+    },
+    "care": {
+      "name": "Forgotten Fragment of Care",
+      "short": "care",
+      "contents": [
+        "Resistance Reraiser",
+        "Resistance Potion Kit",
+        "Resistance Ether Kit"
+      ]
+    },
+    "awakening": {
+      "name": "Forgotten Fragment of Awakening",
+      "short": "awakening",
+      "contents": [
+        "Essence of the Guardian",
+        "Essence of the Ordained",
+        "Essence of the Skirmisher",
+        "Essence of the Watcher",
+        "Essence of the Profane",
+        "Essence of the Irregular",
+        "Essence of the Breathtaker"
+      ]
+    },
+    "support": {
+      "name": "Forgotten Fragment of Support",
+      "short": "support",
+      "contents": [
+        "Lost Reflect",
+        "Lost Stoneskin",
+        "Lost Bravery"
+      ]
+    },
+    "violence": {
+      "name": "Forgotten Fragment of Violence",
+      "short": "violence",
+      "contents": [
+        "Lost Focus",
+        "Lost Slash",
+        "Lost Death"
+      ]
+    },
+    "resolve": {
+      "name": "Forgotten Fragment of Resolve",
+      "short": "resolve",
+      "contents": [
+        "Banner of Noble Ends",
+        "Banner of Honored Sacrifice",
+        "Banner of Honed Acuity",
+        "Banner of Tireless Conviction",
+        "Banner of Firm Resolve",
+        "Banner of Solemn Clarity"
+      ]
+    },
+    "compassion": {
+      "name": "Forgotten Fragment of Compassion",
+      "short": "compassion",
+      "contents": [
+        "Lost Cure II",
+        "Lost Cure IV",
+        "Lost Arise",
+        "Resistance Medikit"
+      ]
+    },
+    "superstition": {
+      "name": "Forgotten Fragment of Superstition",
+      "short": "superstition",
+      "contents": [
+        "Essence of the Bloodsucker",
+        "Essence of the Beast",
+        "Essence of the Templar"
+      ]
+    },
+    "mastery": {
+      "name": "Forgotten Fragment of Mastery",
+      "short": "mastery",
+      "contents": [
+        "Deep Essence of the Aetherweaver",
+        "Deep Essence of the Martialist",
+        "Deep Essence of the Savior",
+        "Deep Essence of the Veteran",
+        "Deep Essence of the Platebearer"
+      ]
+    },
+    "sagacity": {
+      "name": "Forgotten Fragment of Sagacity",
+      "short": "sagacity",
+      "contents": [
+        "Lost Font of Magic",
+        "Lost Font of Power",
+        "Lost Font of Skill"
+      ]
+    },
+    "becoming": {
+      "name": "Forgotten Fragment of Becoming",
+      "short": "becoming",
+      "contents": [
+        "Deep Essence of the Guardian",
+        "Deep Essence of the Ordained",
+        "Deep Essence of the Skirmisher",
+        "Deep Essence of the Watcher",
+        "Deep Essence of the Profane",
+        "Deep Essence of the Irregular",
+        "Deep Essence of the Breathtaker"
+      ]
+    },
+    "transcendence": {
+      "name": "Forgotten Fragment of Transcendence",
+      "short": "transcendence",
+      "contents": [
+        "Deep Essence of the Bloodsucker",
+        "Deep Essence of the Beast",
+        "Deep Essence of the Templar"
+      ]
+    },
+    "caprice": {
+      "name": "Forgotten Fragment of Caprice",
+      "short": "caprice",
+      "contents": [
+        "Lost Fair Trade",
+        "Mimic",
+        "Dynamis Dice"
+      ]
+    },
+    "observation": {
+      "name": "Forgotten Fragment of Observation",
+      "short": "observation",
+      "contents": [
+        "Lost Perception"
+      ]
+    },
+    "deception": {
+      "name": "Forgotten Fragment of Deception",
+      "short": "deception",
+      "contents": [
+        "Pure Essence of the Gambler"
+      ]
+    },
+    "loss": {
+      "name": "Forgotten Fragment of Loss",
+      "short": "loss",
+      "contents": [
+        "Lost Sacrifice"
+      ]
+    },
+    "clarity": {
+      "name": "Forgotten Fragment of Clarity",
+      "short": "clarity",
+      "contents": [
+        "Lost Flare Star",
+        "Pure Essence of the Elder"
+      ]
+    },
+    "contention": {
+      "name": "Forgotten Fragment of Contention",
+      "short": "contention",
+      "contents": [
+        "Lost Rend Armor",
+        "Pure Essence of the Duelist"
+      ]
+    },
+    "finesse": {
+      "name": "Forgotten Fragment of Finesse",
+      "short": "finesse",
+      "contents": [
+        "Lost Dervish",
+        "Pure Essence of the Fiendhunter"
+      ]
+    },
+    "fortitude": {
+      "name": "Forgotten Fragment of Fortitude",
+      "short": "fortitude",
+      "contents": [
+        "Lost Aethershield",
+        "Pure Essence of the Indomitable"
+      ]
+    },
+    "divinity": {
+      "name": "Forgotten Fragment of Divinity",
+      "short": "divinity",
+      "contents": [
+        "Lost Seraph Strike",
+        "Pure Essence of the Divine"
+      ]
+    },
+    "history": {
+      "name": "Forgotten Fragment of History",
+      "short": "history",
+      "contents": [
+        "Lodestone"
+      ]
+    },
+    "rage": {
+      "name": "Forgotten Fragment of Rage",
+      "short": "rage",
+      "contents": [
+        "Lost Stoneskin II",
+        "Lost Burst"
+      ]
+    },
+    "ferocity": {
+      "name": "Forgotten Fragment of Ferocity",
+      "short": "ferocity",
+      "contents": [
+        "Lost Stoneskin II",
+        "Lost Rampage"
+      ]
+    },
+    "moonlight": {
+      "name": "Forgotten Fragment of Moonlight",
+      "short": "moonlight",
+      "contents": [
+        "Light Curtain"
+      ]
+    },
+    "hope": {
+      "name": "Forgotten Fragment of Hope",
+      "short": "hope",
+      "contents": [
+        "Lost Reraise"
+      ]
+    },
+    "artistry": {
+      "name": "Forgotten Fragment of Artistry",
+      "short": "artistry",
+      "contents": [
+        "Lost Chainspell",
+        "Lost Assassination"
+      ]
+    },
+    "desperation": {
+      "name": "Forgotten Fragment of Desperation",
+      "short": "desperation",
+      "contents": [
+        "Lost Protect II",
+        "Lost Shell II"
+      ]
+    },
+    "tenacity": {
+      "name": "Forgotten Fragment of Tenacity",
+      "short": "tenacity",
+      "contents": [
+        "Lost Bubble"
+      ]
+    },
+    "inspiration": {
+      "name": "Forgotten Fragment of Inspiration",
+      "short": "inspiration",
+      "contents": [
+        "Lost Impetus"
+      ]
+    },
+    "heroism": {
+      "name": "Forgotten Fragment of Heroism",
+      "short": "heroism",
+      "contents": [
+        "Lost Excellence",
+        "Resistance Elixir"
+      ]
+    },
+    "revelation": {
+      "name": "Forgotten Fragment of Revelation",
+      "short": "revelation",
+      "contents": [
+        "Lost Full Cure",
+        "Resistance Elixir"
+      ]
+    },
+    "cunning": {
+      "name": "Forgotten Fragment of Cunning",
+      "short": "cunning",
+      "contents": [
+        "Lost Blood Rage",
+        "Resistance Elixir"
+      ]
+    }
+  }
+}

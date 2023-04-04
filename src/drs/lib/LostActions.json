@@ -1,0 +1,994 @@
+{
+  "lostActions": {
+    "Lost Focus": {
+      "full": "Lost Focus",
+      "short": "Focus",
+      "image": "focus",
+      "type": "offensive",
+      "fragment": "violence",
+      "weight": 6,
+      "drsAction": true,
+      "code": "oa"
+    },
+    "Lost Font of Magic": {
+      "full": "Lost Font of Magic",
+      "short": "Font of Magic",
+      "image": "fontofmagic",
+      "type": "offensive",
+      "fragment": "sagacity",
+      "weight": 25,
+      "drsAction": true,
+      "code": "ob"
+    },
+    "Lost Font of Power": {
+      "full": "Lost Font of Power",
+      "short": "Font of Power",
+      "image": "fontofpower",
+      "type": "offensive",
+      "fragment": "sagacity",
+      "weight": 25,
+      "drsAction": true,
+      "code": "oc"
+    },
+    "Lost Slash": {
+      "full": "Lost Slash",
+      "short": "Slash",
+      "image": "slash",
+      "type": "offensive",
+      "fragment": "violence",
+      "weight": 10,
+      "drsAction": true,
+      "code": "od"
+    },
+    "Lost Death": {
+      "full": "Lost Death",
+      "short": "Death",
+      "image": "death",
+      "type": "offensive",
+      "fragment": "violence",
+      "weight": 6,
+      "drsAction": false,
+      "code": "oe"
+    },
+    "Banner of Noble Ends": {
+      "full": "Banner of Noble Ends",
+      "short": "Noble Ends",
+      "image": "nobleends",
+      "type": "offensive",
+      "fragment": "resolve",
+      "weight": 10,
+      "drsAction": false,
+      "code": "of"
+    },
+    "Banner of Honored Sacrifice": {
+      "full": "Banner of Honored Sacrifice",
+      "short": "HSac",
+      "image": "hsac",
+      "type": "offensive",
+      "fragment": "resolve",
+      "weight": 10,
+      "drsAction": true,
+      "code": "og"
+    },
+    "Banner of Honed Acuity": {
+      "full": "Banner of Honed Acuity",
+      "short": "Honed Acuity",
+      "image": "honedacuity",
+      "type": "offensive",
+      "fragment": "resolve",
+      "weight": 6,
+      "drsAction": true,
+      "code": "oh"
+    },
+    "Lost Fair Trade": {
+      "full": "Lost Fair Trade",
+      "short": "Fair Trade",
+      "image": "fairtrade",
+      "type": "offensive",
+      "fragment": "caprice",
+      "weight": 2,
+      "drsAction": false,
+      "code": "oi"
+    },
+    "Lost Flare Star": {
+      "full": "Lost Flare Star",
+      "short": "Flare Star",
+      "image": "lfs",
+      "type": "offensive",
+      "fragment": "clarity",
+      "weight": 20,
+      "drsAction": true,
+      "code": "oj"
+    },
+    "Lost Chainspell": {
+      "full": "Lost Chainspell",
+      "short": "Chainspell",
+      "image": "chainspell",
+      "type": "offensive",
+      "fragment": "aristry",
+      "weight": 20,
+      "drsAction": true,
+      "code": "ok"
+    },
+    "Lost Assassination": {
+      "full": "Lost Assassination",
+      "short": "Assassination",
+      "image": "assassination",
+      "type": "offensive",
+      "fragment": "artistry",
+      "weight": 8,
+      "drsAction": false,
+      "code": "ol"
+    },
+    "Lost Manawall": {
+      "full": "Lost Manawall",
+      "short": "Manawall",
+      "image": "manawall",
+      "type": "defensive",
+      "fragment": "caution",
+      "weight": 16,
+      "drsAction": true,
+      "code": "da"
+    },
+    "Banner of Tireless Conviction": {
+      "full": "Banner of Tireless Conviction",
+      "short": "Conviction",
+      "image": "conviction",
+      "type": "defensive",
+      "fragment": "resolve",
+      "weight": 6,
+      "drsAction": true,
+      "code": "db"
+    },
+    "Banner of Firm Resolve": {
+      "full": "Banner of Firm Resolve",
+      "short": "Resolve",
+      "image": "resolve",
+      "type": "defensive",
+      "fragment": "resolve",
+      "weight": 6,
+      "drsAction": true,
+      "code": "dc"
+    },
+    "Lost Incense": {
+      "full": "Lost Incense",
+      "short": "Incense",
+      "image": "incense",
+      "type": "defensive",
+      "fragment": "caution",
+      "weight": 2,
+      "drsAction": true,
+      "code": "dd"
+    },
+    "Lost Excellence": {
+      "full": "Lost Excellence",
+      "short": "Excellence",
+      "image": "excellence",
+      "type": "defensive",
+      "fragment": "heroism",
+      "weight": 25,
+      "drsAction": true,
+      "code": "de"
+    },
+    "Lost Blood Rage": {
+      "full": "Lost Blood Rage",
+      "short": "Blood Rage",
+      "image": "bloodrage",
+      "type": "defensive",
+      "fragment": "cunning",
+      "weight": 25,
+      "drsAction": true,
+      "code": "df"
+    },
+    "Banner of Solemn Clarity": {
+      "full": "Banner of Solemn Clarity",
+      "short": "Solemn Clarity",
+      "image": "solemnclarity",
+      "type": "restorative",
+      "fragment": "resolve",
+      "weight": 6,
+      "drsAction": true,
+      "code": "ra"
+    },
+    "Lost Cure": {
+      "full": "Lost Cure",
+      "short": "Cure",
+      "image": "cure",
+      "type": "restorative",
+      "fragment": "caution",
+      "weight": 2,
+      "drsAction": false,
+      "code": "rb"
+    },
+    "Lost Cure II": {
+      "full": "Lost Cure II",
+      "short": "Cure 2",
+      "image": "cure2",
+      "type": "restorative",
+      "fragment": "compassion",
+      "weight": 5,
+      "drsAction": true,
+      "code": "rc"
+    },
+    "Lost Cure III": {
+      "full": "Lost Cure III",
+      "short": "Cure 3",
+      "image": "cure3",
+      "type": "restorative",
+      "fragment": "caution",
+      "weight": 3,
+      "drsAction": false,
+      "code": "rd"
+    },
+    "Lost Cure IV": {
+      "full": "Lost Cure IV",
+      "short": "Cure 4",
+      "image": "c4",
+      "type": "restorative",
+      "fragment": "compassion",
+      "weight": 5,
+      "drsAction": true,
+      "code": "re"
+    },
+    "Lost Arise": {
+      "full": "Lost Arise",
+      "short": "Arise",
+      "image": "arise",
+      "type": "restorative",
+      "fragment": "compassion",
+      "weight": 6,
+      "drsAction": true,
+      "code": "rf"
+    },
+    "Lost Sacrifice": {
+      "full": "Lost Sacrifice",
+      "short": "Sacrifice",
+      "image": "sacrifice",
+      "type": "restorative",
+      "fragment": "loss",
+      "weight": 19,
+      "drsAction": true,
+      "code": "rg"
+    },
+    "Lost Reraise": {
+      "full": "Lost Reraise",
+      "short": "Reraise",
+      "image": "reraise",
+      "type": "restorative",
+      "fragment": "hope",
+      "weight": 12,
+      "drsAction": true,
+      "code": "rh"
+    },
+    "Lost Full Cure": {
+      "full": "Lost Full Cure",
+      "short": "Full Cure",
+      "image": "fullcure",
+      "type": "restorative",
+      "fragment": "revelation",
+      "weight": 15,
+      "drsAction": true,
+      "code": "ri"
+    },
+    "Lost Spellforge": {
+      "full": "Lost Spellforge",
+      "short": "Spellforge",
+      "image": "spellforge",
+      "type": "beneficial",
+      "fragment": "ingenuity",
+      "weight": 3,
+      "drsAction": true,
+      "code": "ba"
+    },
+    "Lost Steelsting": {
+      "full": "Lost Steelsting",
+      "short": "Steelsting",
+      "image": "steelsting",
+      "type": "beneficial",
+      "fragment": "ingenuity",
+      "weight": 3,
+      "drsAction": true,
+      "code": "bb"
+    },
+    "Lost Protect": {
+      "full": "Lost Protect",
+      "short": "Protect",
+      "image": "protect",
+      "type": "beneficial",
+      "fragment": "caution",
+      "weight": 2,
+      "drsAction": false,
+      "code": "bc"
+    },
+    "Lost Shell": {
+      "full": "Lost Shell",
+      "short": "Shell",
+      "image": "shell",
+      "type": "beneficial",
+      "fragment": "caution",
+      "weight": 2,
+      "drsAction": false,
+      "code": "bd"
+    },
+    "Lost Reflect": {
+      "full": "Lost Reflect",
+      "short": "Reflect",
+      "image": "reflect",
+      "type": "beneficial",
+      "fragment": "support",
+      "weight": 8,
+      "drsAction": true,
+      "code": "be"
+    },
+    "Lost Stoneskin": {
+      "full": "Lost Stoneskin",
+      "short": "Stoneskin",
+      "image": "stoneskin",
+      "type": "beneficial",
+      "fragment": "support",
+      "weight": 4,
+      "drsAction": false,
+      "code": "bf"
+    },
+    "Lost Bravery": {
+      "full": "Lost Bravery",
+      "short": "Bravery",
+      "image": "bravery",
+      "type": "beneficial",
+      "fragment": "support",
+      "weight": 8,
+      "drsAction": true,
+      "code": "bg"
+    },
+    "Lost Aethershield": {
+      "full": "Lost Aethershield",
+      "short": "Aethershield",
+      "image": "aethershield",
+      "type": "beneficial",
+      "fragment": "fortitude",
+      "weight": 8,
+      "drsAction": true,
+      "code": "bh"
+    },
+    "Lost Dervish": {
+      "full": "Lost Dervish",
+      "short": "Dervish",
+      "image": "dervish",
+      "type": "beneficial",
+      "fragment": "finesse",
+      "weight": 8,
+      "drsAction": true,
+      "code": "bi"
+    },
+    "Lost Stoneskin II": {
+      "full": "Lost Stoneskin II",
+      "short": "Stoneskin 2",
+      "image": "stoneskin2",
+      "type": "beneficial",
+      "fragment": "rage",
+      "weight": 5,
+      "drsAction": false,
+      "code": "bj"
+    },
+    "Lost Protect II": {
+      "full": "Lost Protect II",
+      "short": "Protect 2",
+      "image": "pro2",
+      "type": "beneficial",
+      "fragment": "desperation",
+      "weight": 3,
+      "drsAction": true,
+      "code": "bk"
+    },
+    "Lost Shell II": {
+      "full": "Lost Shell II",
+      "short": "Shell 2",
+      "image": "shell2",
+      "type": "beneficial",
+      "fragment": "desperation",
+      "weight": 3,
+      "drsAction": true,
+      "code": "bl"
+    },
+    "Lost Bubble": {
+      "full": "Lost Bubble",
+      "short": "Bubble",
+      "image": "bubble",
+      "type": "beneficial",
+      "fragment": "tenacity",
+      "weight": 3,
+      "drsAction": true,
+      "code": "bm"
+    },
+    "Lost Stealth": {
+      "full": "Lost Stealth",
+      "short": "Stealth",
+      "image": "stealth",
+      "type": "tactical",
+      "fragment": "caution",
+      "weight": 2,
+      "drsAction": false,
+      "code": "ta"
+    },
+    "Lost Swift": {
+      "full": "Lost Swift",
+      "short": "Swift",
+      "image": "swift",
+      "type": "tactical",
+      "fragment": "ingenuity",
+      "weight": 4,
+      "drsAction": false,
+      "code": "tb"
+    },
+    "Lost Font of Skill": {
+      "full": "Lost Font of Skill",
+      "short": "Font of Skill",
+      "image": "fontofskill",
+      "type": "tactical",
+      "fragment": "sagacity",
+      "weight": 20,
+      "drsAction": true,
+      "code": "tc"
+    },
+    "Mimic": {
+      "full": "Mimic",
+      "short": "Mimic",
+      "image": "mimic",
+      "type": "tactical",
+      "fragment": "caprice",
+      "weight": 12,
+      "drsAction": true,
+      "code": "td"
+    },
+    "Lost Perception": {
+      "full": "Lost Perception",
+      "short": "Perception",
+      "image": "perception",
+      "type": "tactical",
+      "fragment": "observation",
+      "weight": 4,
+      "drsAction": true,
+      "code": "te"
+    },
+    "Lost Impetus": {
+      "full": "Lost Impetus",
+      "short": "Impetus",
+      "image": "impetus",
+      "type": "tactical",
+      "fragment": "inspiration",
+      "weight": 10,
+      "drsAction": false,
+      "code": "tf"
+    },
+    "Lost Paralyze III": {
+      "full": "Lost Paralyze III",
+      "short": "Paralyze 3",
+      "image": "paralyze3",
+      "type": "detrimental",
+      "fragment": "ingenuity",
+      "weight": 3,
+      "drsAction": true,
+      "code": "ea"
+    },
+    "Lost Banish III": {
+      "full": "Lost Banish III",
+      "short": "Banish 3",
+      "image": "banish3",
+      "type": "detrimental",
+      "fragment": "ingenuity",
+      "weight": 3,
+      "drsAction": true,
+      "code": "eb"
+    },
+    "Lost Dispel": {
+      "full": "Lost Dispel",
+      "short": "Dispel",
+      "image": "dispel",
+      "type": "detrimental",
+      "fragment": "ingenuity",
+      "weight": 3,
+      "drsAction": true,
+      "code": "ec"
+    },
+    "Lost Rend Armor": {
+      "full": "Lost Rend Armor",
+      "short": "Rend",
+      "image": "rend",
+      "type": "detrimental",
+      "fragment": "contention",
+      "weight": 8,
+      "drsAction": true,
+      "code": "ed"
+    },
+    "Lost Seraph Strike": {
+      "full": "Lost Seraph Strike",
+      "short": "Seraph Strike",
+      "image": "seraphstrike",
+      "type": "detrimental",
+      "fragment": "divinity",
+      "weight": 8,
+      "drsAction": true,
+      "code": "ee"
+    },
+    "Lost Burst": {
+      "full": "Lost Burst",
+      "short": "Burst",
+      "image": "burst",
+      "type": "detrimental",
+      "fragment": "rage",
+      "weight": 5,
+      "drsAction": true,
+      "code": "ef"
+    },
+    "Lost Rampage": {
+      "full": "Lost Rampage",
+      "short": "Rampage",
+      "image": "rampage",
+      "type": "detrimental",
+      "fragment": "ferocity",
+      "weight": 5,
+      "drsAction": true,
+      "code": "eg"
+    },
+    "Dynamis Dice": {
+      "full": "Dynamis Dice",
+      "short": "Dynamis Dice",
+      "image": "dice",
+      "type": "item",
+      "fragment": "caprice",
+      "weight": 11,
+      "drsAction": true,
+      "code": "ia"
+    },
+    "Resistance Phoenix": {
+      "full": "Resistance Phoenix",
+      "short": "Phoenix",
+      "image": "phoenix",
+      "type": "item",
+      "fragment": "preparation",
+      "weight": 4,
+      "drsAction": false,
+      "code": "ib"
+    },
+    "Resistance Reraiser": {
+      "full": "Resistance Reraiser",
+      "short": "Reraiser",
+      "image": "reraiser",
+      "type": "item",
+      "fragment": "care",
+      "weight": 8,
+      "drsAction": true,
+      "code": "ic"
+    },
+    "Resistance Potion Kit": {
+      "full": "Resistance Potion Kit",
+      "short": "Potion Kit",
+      "image": "potionkit",
+      "type": "item",
+      "fragment": "care",
+      "weight": 3,
+      "drsAction": true,
+      "code": "id"
+    },
+    "Resistance Ether Kit": {
+      "full": "Resistance Ether Kit",
+      "short": "Ether Kit",
+      "image": "etherkit",
+      "type": "item",
+      "fragment": "care",
+      "weight": 3,
+      "drsAction": true,
+      "code": "ie"
+    },
+    "Resistance Medikit": {
+      "full": "Resistance Medikit",
+      "short": "Medikit",
+      "image": "medikit",
+      "type": "item",
+      "fragment": "compassion",
+      "weight": 3,
+      "drsAction": true,
+      "code": "if"
+    },
+    "Resistance Potion": {
+      "full": "Resistance Potion",
+      "short": "Potion",
+      "image": "potion",
+      "type": "item",
+      "fragment": "preparation",
+      "weight": 1,
+      "drsAction": false,
+      "code": "ig"
+    },
+    "Lodestone": {
+      "full": "Lodestone",
+      "short": "lodestone",
+      "image": "lodestone",
+      "type": "item",
+      "fragment": "history",
+      "weight": 1,
+      "drsAction": false,
+      "code": "ih"
+    },
+    "Light Curtain": {
+      "full": "Light Curtain",
+      "short": "Light Curtain",
+      "image": "lightcurtain",
+      "type": "item",
+      "fragment": "moonlight",
+      "weight": 1,
+      "drsAction": true,
+      "code": "ii"
+    },
+    "Resistance Elixer": {
+      "full": "Resistance Elixir",
+      "short": "Elixir",
+      "image": "elixir",
+      "type": "item",
+      "fragment": "heroism",
+      "weight": 4,
+      "drsAction": true,
+      "code": "ij"
+    },
+    "Essence of the Aetherweaver": {
+      "full": "Essence of the Aetherweaver",
+      "short": "Aetherweaver",
+      "image": "aetherweaver",
+      "type": "essence",
+      "fragment": "skill",
+      "weight": 4,
+      "drsAction": false,
+      "code": "sa"
+    },
+    "Essence of the Martialist": {
+      "full": "Essence of the Martialist",
+      "short": "Martialist",
+      "image": "martialist",
+      "type": "essence",
+      "fragment": "skill",
+      "weight": 4,
+      "drsAction": false,
+      "code": "sb"
+    },
+    "Essence of the Savior": {
+      "full": "Essence of the Savior",
+      "short": "Savior",
+      "image": "savior",
+      "type": "essence",
+      "fragment": "skill",
+      "weight": 4,
+      "drsAction": false,
+      "code": "sc"
+    },
+    "Essence of the Veteran": {
+      "full": "Essence of the Veteran",
+      "short": "Veteran",
+      "image": "veteran",
+      "type": "essence",
+      "fragment": "skill",
+      "weight": 4,
+      "drsAction": false,
+      "code": "sd"
+    },
+    "Essence of the Platebearer": {
+      "full": "Essence of the Platebearer",
+      "short": "Platebearer",
+      "image": "platebearer",
+      "type": "essence",
+      "fragment": "skill",
+      "weight": 4,
+      "drsAction": false,
+      "code": "se"
+    },
+    "Essence of the Guardian": {
+      "full": "Essence of the Guardian",
+      "short": "Guardian",
+      "image": "guardian",
+      "type": "essence",
+      "fragment": "awakening",
+      "weight": 6,
+      "drsAction": false,
+      "code": "sf"
+    },
+    "Essence of the Ordained": {
+      "full": "Essence of the Ordained",
+      "short": "Ordained",
+      "image": "ordained",
+      "type": "essence",
+      "fragment": "awakening",
+      "weight": 6,
+      "drsAction": false,
+      "code": "sg"
+    },
+    "Essence of the Skirmisher": {
+      "full": "Essence of the Skirmisher",
+      "short": "Skirmisher",
+      "image": "skirmisher",
+      "type": "essence",
+      "fragment": "awakening",
+      "weight": 6,
+      "drsAction": false,
+      "code": "sh"
+    },
+    "Essence of the Watcher": {
+      "full": "Essence of the Watcher",
+      "short": "Watcher",
+      "image": "watcher",
+      "type": "essence",
+      "fragment": "awakening",
+      "weight": 6,
+      "drsAction": false,
+      "code": "si"
+    },
+    "Essence of the Profane": {
+      "full": "Essence of the Profane",
+      "short": "Profane",
+      "image": "profane",
+      "type": "essence",
+      "fragment": "awakening",
+      "weight": 6,
+      "drsAction": false,
+      "code": "sj"
+    },
+    "Essence of the Irregular": {
+      "full": "Essence of the Irregular",
+      "short": "Irregular",
+      "image": "irregular",
+      "type": "essence",
+      "fragment": "awakening",
+      "weight": 6,
+      "drsAction": false,
+      "code": "sk"
+    },
+    "Essence of the Breathtaker": {
+      "full": "Essence of the Breathtaker",
+      "short": "Breathtaker",
+      "image": "breathtaker",
+      "type": "essence",
+      "fragment": "awakening",
+      "weight": 6,
+      "drsAction": false,
+      "code": "sl"
+    },
+    "Essence of the Bloodsucker": {
+      "full": "Essence of the Bloodsucker",
+      "short": "Bloodsucker",
+      "image": "bloodsucker",
+      "type": "essence",
+      "fragment": "superstition",
+      "weight": 6,
+      "drsAction": false,
+      "code": "sm"
+    },
+    "Essence of the Beast": {
+      "full": "Essence of the Beast",
+      "short": "Beast",
+      "image": "beast",
+      "type": "essence",
+      "fragment": "superstition",
+      "weight": 6,
+      "drsAction": false,
+      "code": "sn"
+    },
+    "Essence of the Templar": {
+      "full": "Essence of the Templar",
+      "short": "Templar",
+      "image": "templar",
+      "type": "essence",
+      "fragment": "superstition",
+      "weight": 6,
+      "drsAction": false,
+      "code": "so"
+    },
+    "Deep Essence of the Aetherweaver": {
+      "full": "Deep Essence of the Aetherweaver",
+      "short": "Deep Aetherweaver",
+      "image": "deepaetherweaver",
+      "type": "essence",
+      "fragment": "mastery",
+      "weight": 6,
+      "drsAction": false,
+      "code": "ka"
+    },
+    "Deep Essence of the Martialist": {
+      "full": "Deep Essence of the Martialist",
+      "short": "Martialist",
+      "image": "martialist",
+      "type": "essence",
+      "fragment": "mastery",
+      "weight": 6,
+      "drsAction": false,
+      "code": "kb"
+    },
+    "Deep Essence of the Savior": {
+      "full": "Deep Essence of the Savior",
+      "short": "Deep Savior",
+      "image": "deepsavior",
+      "type": "essence",
+      "fragment": "mastery",
+      "weight": 6,
+      "drsAction": true,
+      "code": "kc"
+    },
+    "Deep Essence of the Veteran": {
+      "full": "Deep Essence of the Veteran",
+      "short": "Deep Veteran",
+      "image": "deepveteran",
+      "type": "essence",
+      "fragment": "mastery",
+      "weight": 6,
+      "drsAction": true,
+      "code": "kd"
+    },
+    "Deep Essence of the Platebearer": {
+      "full": "Deep Essence of the Platebearer",
+      "short": "Deep Platebearer",
+      "image": "deepplatebearer",
+      "type": "essence",
+      "fragment": "mastery",
+      "weight": 6,
+      "drsAction": false,
+      "code": "ke"
+    },
+    "Deep Essence of the Guardian": {
+      "full": "Deep Essence of the Guardian",
+      "short": "Deep Guardian",
+      "image": "deepguardian",
+      "type": "essence",
+      "fragment": "becoming",
+      "weight": 10,
+      "drsAction": false,
+      "code": "kf"
+    },
+    "Deep Essence of the Ordained": {
+      "full": "Deep Essence of the Ordained",
+      "short": "Deep Ordained",
+      "image": "deepordained",
+      "type": "essence",
+      "fragment": "becoming",
+      "weight": 10,
+      "drsAction": false,
+      "code": "kg"
+    },
+    "Deep Essence of the Skirmisher": {
+      "full": "Deep Essence of the Skirmisher",
+      "short": "Deep Skirmisher",
+      "image": "deepskirmisher",
+      "type": "essence",
+      "fragment": "becoming",
+      "weight": 10,
+      "drsAction": false,
+      "code": "kh"
+    },
+    "Deep Essence of the Watcher": {
+      "full": "Deep Essence of the Watcher",
+      "short": "Deep Watcher",
+      "image": "deepwatcher",
+      "type": "essence",
+      "fragment": "becoming",
+      "weight": 10,
+      "drsAction": false,
+      "code": "ki"
+    },
+    "Deep Essence of the Profane": {
+      "full": "Deep Essence of the Profane",
+      "short": "Deep Profane",
+      "image": "deepprofane",
+      "type": "essence",
+      "fragment": "becoming",
+      "weight": 10,
+      "drsAction": true,
+      "code": "kj"
+    },
+    "Deep Essence of the Irregular": {
+      "full": "Deep Essence of the Irregular",
+      "short": "Deep Irregular",
+      "image": "deepirregular",
+      "type": "essence",
+      "fragment": "becoming",
+      "weight": 10,
+      "drsAction": true,
+      "code": "kk"
+    },
+    "Deep Essence of the Breathtaker": {
+      "full": "Deep Essence of the Breathtaker",
+      "short": "Deep Breathtaker",
+      "image": "deepbreathtaker",
+      "type": "essence",
+      "fragment": "becoming",
+      "weight": 10,
+      "drsAction": false,
+      "code": "kl"
+    },
+    "Deep Essence of the Bloodsucker": {
+      "full": "Deep Essence of the Bloodsucker",
+      "short": "Deep Bloodsucker",
+      "image": "deepbloodsucker",
+      "type": "essence",
+      "fragment": "transcendence",
+      "weight": 10,
+      "drsAction": false,
+      "code": "km"
+    },
+    "Deep Essence of the Beast": {
+      "full": "Deep Essence of the Beast",
+      "short": "Deep Beast",
+      "image": "deepbeast",
+      "type": "essence",
+      "fragment": "transcendence",
+      "weight": 10,
+      "drsAction": false,
+      "code": "kn"
+    },
+    "Deep Essence of the Templar": {
+      "full": "Deep Essence of the Templar",
+      "short": "Deep Templar",
+      "image": "deeptemplar",
+      "type": "essence",
+      "fragment": "transcendence",
+      "weight": 10,
+      "drsAction": true,
+      "code": "ko"
+    },
+    "Pure Essence of the Gambler": {
+      "full": "Pure Essence of the Gambler",
+      "short": "Gambler",
+      "image": "gambler",
+      "type": "essence",
+      "fragment": "deception",
+      "weight": 12,
+      "drsAction": false,
+      "code": "pa"
+    },
+    "Pure Essence of the Elder": {
+      "full": "Pure Essence of the Elder",
+      "short": "Pure Elder",
+      "image": "elder",
+      "type": "essence",
+      "fragment": "clarity",
+      "weight": 12,
+      "drsAction": true,
+      "code": "pb"
+    },
+    "Pure Essence of the Duelist": {
+      "full": "Pure Essence of the Duelist",
+      "short": "Pure Duelist",
+      "image": "duelist",
+      "type": "essence",
+      "fragment": "contention",
+      "weight": 12,
+      "drsAction": true,
+      "code": "pc"
+    },
+    "Pure Essence of the Fiendhunter": {
+      "full": "Pure Essence of the Fiendhunter",
+      "short": "Pure Fiendhunter",
+      "image": "fiendhunter",
+      "type": "essence",
+      "fragment": "finesse",
+      "weight": 12,
+      "drsAction": true,
+      "code": "pd"
+    },
+    "Pure Essence of the Indomitable": {
+      "full": "Pure Essence of the Indomitable",
+      "short": "Pure Indomitable",
+      "image": "indom",
+      "type": "essence",
+      "fragment": "fortitude",
+      "weight": 12,
+      "drsAction": true,
+      "code": "pe"
+    },
+    "Pure Essence of the Divine": {
+      "full": "Pure Essence of the Divine",
+      "short": "Pure Divine",
+      "image": "divine",
+      "type": "essence",
+      "fragment": "divinity",
+      "weight": 12,
+      "drsAction": true,
+      "code": "pf"
+    }
+  }
+}
