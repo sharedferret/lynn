@@ -46,15 +46,11 @@ class ForecastOptionsSelectorComponent extends Component {
   }
 
   handleLocationChange(event) {
-    console.log('e', event);
     this.setState({ location: event.target.value })
-    console.log('state', this.state);
   }
 
   handleDateChange(event) {
-    console.log('d', event.toDate());
     this.setState({ start_date: event.toDate() });
-    console.log(this.state.start_date);
   }
 
   handleSessionLengthChange(event) {

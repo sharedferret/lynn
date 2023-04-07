@@ -7,7 +7,7 @@
         "assignments": [
           "dispel"
         ],
-        "explanation": "As a main tank, you'll be responsible for using Lost Aethershield on the party during raidwides on Trinity Avowed and The Queen. Lost Sacrifice can be used to resurrect a player if the raid is low on Lost Arises.",
+        "explanation": "As a main tank, you'll be responsible for using Lost Aethershield on the party during raidwides on Trinity Avowed and The Queen. Lost Sacrifice can be used to resurrect a player if the raid is low on Lost Arises.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -53,7 +53,7 @@
         "name": "Off Tank",
         "role": "tank",
         "assignments": [],
-        "explanation": "TBD",
+        "explanation": "As an off-tank, you’ll mainly be doing damage with Lost Font of Power + Banner of Honored Sacrifice. Lost Aethershield is needed for Queen enrage - you’ll use it after the main tank uses both of their Aethershields. Lost Sacrifice can be used to resurrect a player if the raid is low on Lost Arises.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -106,7 +106,7 @@
           "protect",
           "banish"
         ],
-        "explanation": "TBD",
+        "explanation": "Main healers are responsible for applying Shell II to players at the box, as well as applying Protect II to any players standing on the north pad at the box.\nYour main role is to resurrect players by using the Lost Arise action. When Arising players, stand over them and jump to make sure that other healers don’t waste Arises on the same player.\nAt Queen’s Guard, you’ll slot Spellforge (if you’re the only healer in your party, you’ll need to slot both Steelsting and Spellforge). When the raid lead instructs you during Queen’s Guard, you’ll slot over Spellforge with Reflect, which you’ll carry with you through the rest of the raid, if possible (both Minotaur and Queen have reflect mechanics).",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -166,7 +166,7 @@
         "assignments": [
           "banish"
         ],
-        "explanation": "TBD",
+        "explanation": "Your main role is to resurrect players by using the Lost Arise action. When Arising players, stand over them and jump to make sure that other healers don’t waste Arises on the same player.\nAt Queen’s Guard, you’ll slot Steelsting for an upcoming mechanic. At Minotaur, you’ll slot Dispel for mechanics that require dispel on both Minotaur and Queen.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if your main healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -226,7 +226,7 @@
         "assignments": [
           "meleeexcellence"
         ],
-        "explanation": "TBD",
+        "explanation": "As a melee carrying Lost Rend Armor, you’re responsible for making sure that bosses have the Rend Armor debuff. You’ll be assigned first or second rend in the roster - if you’re first rend, you’ll apply Rend Armor at the start of the fight, and every 60 seconds after that. If you’re second rend, you’ll apply Rend Armor 30 seconds into the fight, and then every 60 seconds after that.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -278,7 +278,7 @@
         "assignments": [
           "meleeexcellence"
         ],
-        "explanation": "TBD",
+        "explanation": "As a melee DPS, your main job is to deal damage. There’s an extra Lost Rend Armor in your bag to use in case a primary or secondary Rend goes down, or for the initial phase of Queen’s Guard where all four bosses need Rend applied to them.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -334,7 +334,7 @@
         "assignments": [
           "c4excellence"
         ],
-        "explanation": "TBD",
+        "explanation": "As a Cure IV (C4) caster, your primary role is to apply Cure IV to the party every 60 seconds. Cure IV interacts with your Pure essence to apply a 10% bravery damage boost to your party. You can also use Cure IV to heal the party when your healers are busy (for example, using LB3) or dead.\nYour pre-pop bag has three options for a damage action alongside Cure IV. For first-timers, Chainspell is the easiest action of the three to use. Lost Font of Magic is the preferred action for Black Mages, and for casters that want to deal extra damage. Resistance Ether Kits are required for non-BLMs carrying Lost Font of Magic. Banner of Honored Sacrifice is an option for Red Mages, since your burst phase is mixed physical/magic damage.\nC4 Casters are also tasked with applying Shell II (and Bubble, if someone in the raid needs it) throughout the raid. If you’re assigned as Shell II for a fight in the roster, you’ll need to apply Shell II to players before we pull that boss. After applying Shell II, you can slot over it with Cure IV.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -394,7 +394,7 @@
         "assignments": [
           "casterexcellence"
         ],
-        "explanation": "TBD",
+        "explanation": "As a DPS caster, your main role is to deal damage. You should slot Lost Font of Magic as your first pre-pop action. You can choose either Lost Chainspell or Banner of Honored Sacrifice (RDM only) as your secondary action. HSac is useful for Red Mages since their burst phase is mixed physical/magic damage.\nYour main bag contains a Cure IV to use if your party’s C4 caster goes down during a fight. Resistance Ether Kits are required for this loadout, as FoM+CS will burn through your MP. If you’re comfortable with some of the fights in DRS, drop a Reraiser to bring more ether kits.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -451,7 +451,7 @@
           "incensemanawall",
           "rangedexcellence"
         ],
-        "explanation": "TBD",
+        "explanation": "As a Cure II ranged player, your primary role is to apply Cure II to the member of your party that requests it. Cure II interacts with your Pure essence to apply a MP regen over time to the player you cast Cure II on. This is useful for full-DPS casters, Profane White Mages, and the Duelist. Your second action can either be Lost Font of Power or Lost Dervish, depending on if your party has another Physical Ranged player in it.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -500,7 +500,7 @@
           "incensemanawall",
           "rangedexcellence"
         ],
-        "explanation": "TBD",
+        "explanation": "As a Dervish ranged player, your primary role is to apply Lost Dervish on cooldown during boss fights. Dervish is a party buff that increases critical hit rate and damage dealt, and reduces GCD and recast times. If you have two ranged players in your party, have one player offset their Dervish by 60 seconds to get full uptime.\nYou also have a Lost Perception in your bag. You can use this to percept traps after Phantom, and then slot a Lost Dervish over it once we get to Trinity Avowed.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -550,7 +550,7 @@
         "name": "Irregular (DRK)",
         "role": "tank",
         "assignments": [],
-        "explanation": "TBD",
+        "explanation": "If you’re looking at this loadout, you don’t need tooltips. 😀",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -600,7 +600,7 @@
         "name": "Savior Tank",
         "role": "tank",
         "assignments": [],
-        "explanation": "TBD",
+        "explanation": "If you’re looking at this loadout, you don’t need tooltips. 😀",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -658,7 +658,7 @@
         "name": "Profane (WHM)",
         "role": "healer",
         "assignments": [],
-        "explanation": "TBD",
+        "explanation": "If you’re looking at this loadout, you don’t need tooltips. 😀",
         "pre": [
           {
             "name": "Resistance Reraiser",

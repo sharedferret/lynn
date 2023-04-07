@@ -24,6 +24,18 @@ class DRSHolsterHelper {
   static getFragmentData(fragment) {
     return fragments.fragments[fragment];
   }
+
+  static calculateHolsterWeight(actionList) {
+    let weight = 0;
+    for (let i = 0; i < actionList.length; i++) {
+      const inputAction = actionList[i];
+      const action = lostActions.lostActions[inputAction.name];
+      if (action !== undefined) {
+        weight += action.weight * inputAction.quantity
+      }
+    }
+    return weight;
+  }
 }
 
 export default DRSHolsterHelper;

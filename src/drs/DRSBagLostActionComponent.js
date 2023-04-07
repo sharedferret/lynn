@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Box, Divider, InputAdornment, Stack, TextField, Typography } from '@mui/material';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import DRSLostActionSelectorComponent from './DRSLostActionSelectorComponent';
+import ClearIcon from '@mui/icons-material/Clear';
 
 class DRSBagLostActionComponent extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class DRSBagLostActionComponent extends Component {
 
     this.handleQuantityUpdate = this.handleQuantityUpdate.bind(this);
     this.handleActionUpdate = this.handleActionUpdate.bind(this);
+    this.handleDeleteAction = this.handleDeleteAction.bind(this);
   }
 
   handleQuantityUpdate(event) {
@@ -31,12 +33,16 @@ class DRSBagLostActionComponent extends Component {
     this.props.handleLostActionUpdate(newLostAction, this.props.index);
   }
 
+  handleDeleteAction(event) {
+    this.props.handleLostActionUpdate(null, this.props.index);
+  }
+
   render() {
     // Get lost action data
     const actionData = DRSHolsterHelper.getLostActionData(this.props.actionName);
 
     // Calculate total action weight
-    const combinedActionWeight = actionData.weight * this.props.actionQuantity;
+    const combinedActionWeight = actionData !== undefined ? (actionData.weight * this.props.actionQuantity) : 0;
 
     return (
       <Box>
@@ -48,6 +54,17 @@ class DRSBagLostActionComponent extends Component {
           alignItems={'center'}
           justifyContent={'center'}
         >
+          <Box width={10}>
+            <Box
+              style={{cursor: 'pointer'}}
+              onClick={ this.handleDeleteAction }
+            >
+              <ClearIcon
+                fontSize='small'
+                sx={{ color: 'red' }}
+              />
+            </Box>
+          </Box>
           <Box width={60}>
             <TextField
               type='number'
@@ -56,7 +73,7 @@ class DRSBagLostActionComponent extends Component {
               onChange={ this.handleQuantityUpdate }
             />
           </Box>
-          <Divider orientation='vertical' variant='middle' flexItem={true} />
+
           <Box flexItem={true} width={325}>
             <DRSLostActionSelectorComponent lostAction={ this.props.actionName } handleActionUpdate={ this.handleActionUpdate } />
           </Box>

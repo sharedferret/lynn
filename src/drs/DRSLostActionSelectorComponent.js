@@ -70,9 +70,9 @@ class DRSLostActionSelectorComponent extends Component {
   renderSelectedAction(actionName) {
     if (actionName === '') {
       return (
-        <Stack>
-          <Box width={64} height={64} />
-        <Typography variant='caption'>None</Typography>
+        <Stack direction={'row'} spacing={2} alignItems={'center'}>
+          <Box width={32} height={32} />
+          <Typography>None</Typography>
       </Stack>
       )
     }

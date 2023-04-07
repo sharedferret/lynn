@@ -5,28 +5,6 @@ import { Box, Stack } from '@mui/material';
 import DRSHolsterBagComponent from './DRSHolsterBagComponent';
 
 class DRSHolsterContainerComponent extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      pre: props.holsterData.pre,
-      main: props.holsterData.main
-    }
-
-    this.handleHolsterUpdate = this.handleHolsterUpdate.bind(this);
-  }
-
-  handleHolsterUpdate(data, bagType) {
-    if (bagType === 'prepop') {
-      this.setState({
-        pre: data
-      });
-    } else if (bagType === 'main') {
-      this.setState({
-        main: data
-      });
-    }
-  }
 
   render() {
     return (
@@ -36,14 +14,14 @@ class DRSHolsterContainerComponent extends Component {
           spacing={2}
         >
           <DRSHolsterBagComponent
-            holsterData={ this.state.pre }
+            holsterData={ this.props.holsterPrepop }
             bagType={ 'prepop' }
-            handleHolsterUpdate={ this.handleHolsterUpdate }
+            handleHolsterUpdate={ this.props.handleHolsterUpdate }
           />
           <DRSHolsterBagComponent
-            holsterData={ this.state.main }
+            holsterData={ this.props.holsterMain }
             bagType={ 'main' }
-            handleHolsterUpdate={ this.handleHolsterUpdate }
+            handleHolsterUpdate={ this.props.handleHolsterUpdate }
           />
         </Stack>
       </Box>
