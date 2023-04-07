@@ -17,6 +17,7 @@ import FavorableWeatherFinderComponent from './weather_finder/FavorableWeatherFi
 import BAPortalMapComponent from './BAPortalMapComponent';
 import ResultsFilter from './forecast/lib/ResultsFilter';
 import LynnReferenceComponent from './reference/LynnReferenceComponent';
+import DRSHolsterMainComponent from './drs/DRSHolsterMainComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => {}})
 
@@ -31,6 +32,18 @@ const WrappedMainComponent = props => {
   } else if (props.page === 'reference') {
     return (
       <MainComponent component={props.component} page={props.page} type={params.type} />
+    );
+  } else if (props.page === 'drsholster') {
+    return (
+      <MainComponent
+        component={props.component}
+        holster={
+          {
+            name: params.holstername,
+            type: params.holstertype
+          }
+        }
+      />
     );
   }
 
@@ -57,6 +70,16 @@ const router = createBrowserRouter([
   {
     path: '/ba',
     element: <WrappedMainComponent component={<BAMainComponent />} page='ba' />,
+  },
+  {
+    path: '/drs/holster',
+    element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page='drsholster' />,
+    children: [
+      {
+        path: '/drs/holster/:holstertype/:holstername',
+        element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page='drsholster' />,
+      }
+    ]
   },
   {
     path: '/weather-finder',

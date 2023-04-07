@@ -48,6 +48,17 @@ function SidebarComponent(props) {
           <span class="text-md font-medium">Portal Map</span>
         </div>
       </li>
+
+      <li class="flex flex-row items-center h-12">
+        <Box class="h-6 w-6"></Box>
+        <span class="text-md uppercase font-semibold text-white">DRS</span>
+      </li>
+      <li>
+        <div onClick={(e) => { handleSidebarClick(e, 'drs/holsters') }} style={{cursor: 'pointer'}} class="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i class="bx bx-home"></i></span>
+          <span class="text-md font-medium">Holsters</span>
+        </div>
+      </li>
       
       <li class="flex flex-row items-center h-12">
         <Box class="h-6 w-6"></Box>
