@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Button, Stack, Typography } from '@mui/material';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import DRSHolsterContainerComponent from './DRSHolsterContainerComponent';
 import DRSHolsterActionAcquisitionGuideComponent from './DRSHolsterActionAcquisitionGuideComponent';
@@ -9,22 +9,30 @@ class DRSHolsterMainComponent extends Component {
   constructor(props) {
     super(props);
 
-    const holster = this.props.holster;
-    const holsterData = DRSHolsterHelper.getHolsterData(holster.type, holster.name);
-    this.state = {
-      holsterName: holster.name,
-      holsterType: holster.type,
-      holsterMetadata: {
-        name: holsterData.name,
-        role: holsterData.role,
-        assignments: holsterData.assignments,
-        explanation: holsterData.explanation
-      },
-      holsterPrepop: holsterData.pre,
-      holsterMain: holsterData.main
-    }
+    console.log('holster', this.props.holster)
 
+    const holster = this.props.holster;
+    if (holster.name !== undefined) {
+      const holsterData = DRSHolsterHelper.getHolsterData(holster.type, holster.name);
+      if (holsterData !== undefined) {
+        this.state = {
+          holsterName: holster.name,
+          holsterType: holster.type,
+          holsterMetadata: {
+            name: holsterData.name,
+            role: holsterData.role,
+            assignments: holsterData.assignments,
+            explanation: holsterData.explanation
+          },
+          holsterPrepop: holsterData.pre,
+          holsterMain: holsterData.main
+        }
+      }
+    }
+    
+    
     this.handleHolsterUpdate = this.handleHolsterUpdate.bind(this);
+    this.renderHolsterSelectionPage = this.renderHolsterSelectionPage.bind(this);
   }
 
   handleHolsterUpdate(data, bagType) {
@@ -39,7 +47,60 @@ class DRSHolsterMainComponent extends Component {
     }
   }
 
+  renderHolsterSelectionPage() {
+    return (
+      <Box>
+        <Stack>
+          <Typography>Available Holsters</Typography>
+          <a href='/drs/holster/learning/maintank'>
+            <Button>Main Tank</Button>
+          </a>
+          <a href='/drs/holster/learning/offtank'>
+            <Button>Off Tank</Button>
+          </a>
+          <a href='/drs/holster/learning/mainhealer'>
+            <Button>Main Healer</Button>
+          </a>
+          <a href='/drs/holster/learning/offhealer'>
+            <Button>Off Healer</Button>
+          </a>
+          <a href='/drs/holster/learning/melee-rend'>
+            <Button>Melee (Rend)</Button>
+          </a>
+          <a href='/drs/holster/learning/melee-dps'>
+            <Button>Melee (DPS)</Button>
+          </a>
+          <a href='/drs/holster/learning/caster-c4'>
+            <Button>Caster (C4)</Button>
+          </a>
+          <a href='/drs/holster/learning/caster-dps'>
+            <Button>Caster (DPS)</Button>
+          </a>
+          <a href='/drs/holster/learning/ranged-c2'>
+            <Button>Ranged (C2)</Button>
+          </a>
+          <a href='/drs/holster/learning/ranged-dervish'>
+            <Button>Ranged (Dervish)</Button>
+          </a>
+          <a href='/drs/holster/learning/irregular-drk'>
+            <Button>Irregular (DRK)</Button>
+          </a>
+          <a href='/drs/holster/learning/savior-tank'>
+            <Button>Savior Tank</Button>
+          </a>
+          <a href='/drs/holster/learning/profane-whm'>
+            <Button>Profane (WHM)</Button>
+          </a>
+        </Stack>
+      </Box>
+    );
+  }
+
   render() {
+    console.log('state', this.state)
+    if (this.state === null) {
+      return this.renderHolsterSelectionPage();
+    }
     return (
       <Box maxWidth={1000}>
         <Stack spacing={2} minHeight={100} p={1}>
@@ -53,6 +114,7 @@ class DRSHolsterMainComponent extends Component {
             holsterMain={this.state.holsterMain}
             handleHolsterUpdate={this.handleHolsterUpdate}
           />
+          <Typography variant='caption' width={650} alignSelf={'center'}>Note: These holsters were created for Lynn Kaneko's DRS runs on The Help Lines. If you're running with a different group, your holsters may vary. Check with your raid lead to see what you need to bring.</Typography>
           <DRSHolsterActionAcquisitionGuideComponent />
         </Stack>
       </Box>
