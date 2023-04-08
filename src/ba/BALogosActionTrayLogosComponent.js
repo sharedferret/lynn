@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { groupBy } from 'underscore';
+import { v4 as uuidv4 } from 'uuid';
 
 import { Box, Divider, FormControl, MenuItem, Select, Stack, Typography } from '@mui/material';
 
@@ -19,13 +20,13 @@ class BALogosActionTrayLogosComponent extends Component {
 
     const menuItems = [];
 
-    menuItems.push(<MenuItem value=''>None</MenuItem>);
+    menuItems.push(<MenuItem value='' key={'action-' + uuidv4()}>None</MenuItem>);
 
-    menuItems.push(<Divider textAlign="left">Wisdoms</Divider>);
+    menuItems.push(<Divider textAlign="left" key={'action-' + uuidv4()}>Wisdoms</Divider>);
     for (let i = 0; i < actionsBySection['wisdom'].length; i++) {
       const action = actionsBySection['wisdom'][i];
       menuItems.push(
-        <MenuItem value={action.full}>
+        <MenuItem value={action.full} key={'action-' + uuidv4()}>
           <Stack direction='row' spacing={2} alignItems='center'>
             <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>
@@ -33,11 +34,11 @@ class BALogosActionTrayLogosComponent extends Component {
         </MenuItem>)
     }
 
-    menuItems.push(<Divider textAlign="left">Spirits</Divider>);
+    menuItems.push(<Divider textAlign="left" key={'action-' + uuidv4()}>Spirits</Divider>);
     for (let i = 0; i < actionsBySection['spirit'].length; i++) {
       const action = actionsBySection['spirit'][i];
       menuItems.push(
-        <MenuItem value={action.full}>
+        <MenuItem value={action.full} key={'action-' + uuidv4()}>
           <Stack direction='row' spacing={2} alignItems='center'>
             <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>
@@ -45,11 +46,11 @@ class BALogosActionTrayLogosComponent extends Component {
         </MenuItem>)
     }
 
-    menuItems.push(<Divider textAlign="left">Personal Actions</Divider>);
+    menuItems.push(<Divider textAlign="left" key={'action-' + uuidv4()}>Personal Actions</Divider>);
     for (let i = 0; i < actionsBySection['personalAction'].length; i++) {
       const action = actionsBySection['personalAction'][i];
       menuItems.push(
-        <MenuItem value={action.full}>
+        <MenuItem value={action.full} key={'action-' + uuidv4()}>
           <Stack direction='row' spacing={2} alignItems='center'>
             <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>
@@ -57,11 +58,11 @@ class BALogosActionTrayLogosComponent extends Component {
         </MenuItem>)
     }
 
-    menuItems.push(<Divider textAlign="left">Beneficial Actions</Divider>);
+    menuItems.push(<Divider textAlign="left" key={'action-' + uuidv4()}>Beneficial Actions</Divider>);
     for (let i = 0; i < actionsBySection['beneficialAction'].length; i++) {
       const action = actionsBySection['beneficialAction'][i];
       menuItems.push(
-        <MenuItem value={action.full}>
+        <MenuItem value={action.full} key={'action-' + uuidv4()}>
           <Stack direction='row' spacing={2} alignItems='center'>
             <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>
@@ -69,11 +70,11 @@ class BALogosActionTrayLogosComponent extends Component {
         </MenuItem>)
     }
 
-    menuItems.push(<Divider textAlign="left">Other Actions</Divider>);
+    menuItems.push(<Divider textAlign="left" key={'action-' + uuidv4()}>Other Actions</Divider>);
     for (let i = 0; i < actionsBySection['otherAction'].length; i++) {
       const action = actionsBySection['otherAction'][i];
       menuItems.push(
-        <MenuItem value={action.full}>
+        <MenuItem value={action.full} key={'action-' + uuidv4()}>
           <Stack direction='row' spacing={2} alignItems='center'>
             <img src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`} alt={action.name} />
             <Typography>{action.full}</Typography>

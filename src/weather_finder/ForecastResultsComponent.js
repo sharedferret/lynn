@@ -5,6 +5,7 @@ import './ForecastResults.css';
 import ForecastResultComponent from './ForecastResultComponent';
 import WeatherFavorability from './weather-favorability';
 import ForecastResultsHeaderComponent from './ForecastResultsHeaderComponent';
+import { v4 as uuidv4 } from 'uuid';
 
 class ForecastResultsComponent extends Component {
   render() {
@@ -29,7 +30,7 @@ class ForecastResultsComponent extends Component {
           />
           <div className="ForecastResultsContainer">
             {favorability_data.map(item => (
-              <ForecastResultComponent data={item} />
+              <ForecastResultComponent data={item} key={'favorability-' + uuidv4()} />
             ))}
           </div>
         </Paper>

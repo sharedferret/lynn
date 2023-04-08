@@ -12,6 +12,7 @@ class MainComponent extends Component {
     this.state = {
       mobileOpen: false,
       forecastFilter: this.props.forecastfilter ?? ResultsFilter.ALL,
+      timestamp: new Date()
     }
 
     this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
@@ -25,7 +26,7 @@ class MainComponent extends Component {
 
   handleSidebarClick() {
     this.setState({
-      mobileOpen: false,
+      mobileOpen: false
     });
   }
 

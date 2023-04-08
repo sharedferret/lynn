@@ -5,6 +5,7 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 import DRSBagLostActionComponent from './DRSBagLostActionComponent';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
+import { v4 as uuidv4 } from 'uuid';
 
 class DRSHolsterBagComponent extends Component {
   constructor(props) {
@@ -51,7 +52,7 @@ class DRSHolsterBagComponent extends Component {
         <Stack>
           <Typography fontSize={30} fontWeight={700}>{this.props.bagType === 'prepop' ? 'Pre-Pop' : 'Main'}</Typography>
           <Stack spacing={1} p={1}>
-            {actions.map((i, index) => <DRSBagLostActionComponent actionName={ i.name } actionQuantity={ i.quantity } index={ index } handleLostActionUpdate={ this.handleLostActionUpdate} />)}
+            {actions.map((i, index) => <DRSBagLostActionComponent actionName={ i.name } actionQuantity={ i.quantity } index={ index } handleLostActionUpdate={ this.handleLostActionUpdate} key={'action-' + uuidv4()} />)}
 
           </Stack>
           <Stack direction='row' p={1} width={475} alignItems={'middle'} justifyContent={'middle'}>

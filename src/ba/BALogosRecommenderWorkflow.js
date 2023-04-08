@@ -28,7 +28,7 @@ class BALogosRecommender extends Component {
           <Box maxWidth={600}>
             <Typography>You can build these at a Logos Manipulator. Make sure to pop and activate your Spirit of the Remembered action before entering the Baldesion Arsenal.</Typography>
           </Box>
-            <Button
+          <Button
             variant="outlined"
             size="large"
             startIcon={<ArrowBackIosNewIcon />}
@@ -58,7 +58,7 @@ class BALogosRecommender extends Component {
           <Box>
             <Stack spacing={2} width={'100%'}>
               {roles.map(item => 
-                <Box width={390}>
+                <Box width={390} key={'rolewf-' + item}>
                   <Button
                     fullWidth={true}
                     variant='outlined'
@@ -91,7 +91,7 @@ class BALogosRecommender extends Component {
           <Box>
             <Stack spacing={2} width={'100%'}>
               {trays.map(item =>
-                  <Box width={390}>
+                  <Box width={390} key={'baloadout-' + item.title}>
                     <Button
                       fullWidth={true}
                       variant='outlined'

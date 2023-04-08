@@ -59,9 +59,9 @@ class BALogosActionTrayComponent extends Component {
               }
             </Typography>
           </Box>
-          <Divider orientation="vertical" variant="middle" flexItem />
+          <Divider orientation="vertical" variant="middle" />
           <BALogosActionTrayLogosComponent tray={this.props.tray} index={this.props.index} handleLogosActionUpdate={this.props.handleLogosActionUpdate} />
-          <Box flexItem={true}>
+          <Box>
             <BALogosActionRecipeContainerComponent tray={this.props.tray} />
           </Box>
           

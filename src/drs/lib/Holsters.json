@@ -500,7 +500,7 @@
           "incensemanawall",
           "rangedexcellence"
         ],
-        "explanation": "As a Dervish ranged player, your primary role is to apply Lost Dervish on cooldown during boss fights. Dervish is a party buff that increases critical hit rate and damage dealt, and reduces GCD and recast times. If you have two ranged players in your party, have one player offset their Dervish by 60 seconds to get full uptime.\nYou also have a Lost Perception in your bag. You can use this to percept traps after Phantom, and then slot a Lost Dervish over it once we get to Trinity Avowed.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+        "explanation": "As a Dervish ranged player, your primary role is to apply Lost Dervish every two minutes (within burst windows) during boss fights. Dervish is a party buff that increases critical hit rate and damage dealt, and reduces GCD and recast times. If you have two ranged players in your party, have one player offset their Dervish by 60 seconds to get full uptime.\nYou also have a Lost Perception in your bag. You can use this to percept traps after Phantom, and then slot a Lost Dervish over it once we get to Trinity Avowed.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -550,49 +550,45 @@
         "name": "Irregular (DRK)",
         "role": "tank",
         "assignments": [],
-        "explanation": "If you’re looking at this loadout, you don’t need tooltips. 😀",
+        "explanation": "If you’re looking at this loadout, you probably don’t need tooltips. 😀",
         "pre": [
           {
             "name": "Resistance Reraiser",
             "quantity": 1
           },
           {
-            "name": "Deep Essence of the Savior",
-            "quantity": 1
-          },
-          {
-            "name": "Lost Aethershield",
-            "quantity": 1
-          },
-          {
-            "name": "Banner of Honored Sacrifice",
+            "name": "Deep Essence of the Irregular",
             "quantity": 1
           },
           {
             "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Blood Rage",
             "quantity": 1
           }
         ],
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
-          },
-          {
-            "name": "Light Curtain",
-            "quantity": 4
-          },
-          {
-            "name": "Lost Aethershield",
             "quantity": 2
-          },
-          {
-            "name": "Banner of Honored Sacrifice",
-            "quantity": 1
           },
           {
             "name": "Lost Font of Power",
             "quantity": 1
+          },
+          {
+            "name": "Lost Blood Rage",
+            "quantity": 1
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 3
+          },
+          {
+            "name": "Resistance Ether Kit",
+            "quantity": 10
           }
         ]
       },
@@ -600,7 +596,7 @@
         "name": "Savior Tank",
         "role": "tank",
         "assignments": [],
-        "explanation": "If you’re looking at this loadout, you don’t need tooltips. 😀",
+        "explanation": "If you’re looking at this loadout, you probably don’t need tooltips. 😀",
         "pre": [
           {
             "name": "Resistance Reraiser",
@@ -658,7 +654,7 @@
         "name": "Profane (WHM)",
         "role": "healer",
         "assignments": [],
-        "explanation": "If you’re looking at this loadout, you don’t need tooltips. 😀",
+        "explanation": "If you’re looking at this loadout, you probably don’t need tooltips. 😀",
         "pre": [
           {
             "name": "Resistance Reraiser",

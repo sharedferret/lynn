@@ -74,7 +74,7 @@ class DRSBagLostActionComponent extends Component {
             />
           </Box>
 
-          <Box flexItem={true} width={325}>
+          <Box width={325}>
             <DRSLostActionSelectorComponent lostAction={ this.props.actionName } handleActionUpdate={ this.handleActionUpdate } />
           </Box>
           <Divider orientation='vertical' variant='middle' />

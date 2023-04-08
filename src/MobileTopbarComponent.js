@@ -23,9 +23,9 @@ class MobileTopbarComponent extends Component {
           >
             <MenuIcon />
           </IconButton>
-          <div class="flex items-center justify-center h-20">
+          <div className="flex items-center justify-center h-20">
             <a href="./">
-              <h1 class="text-3xl text-red-200">lynn.pet!</h1>
+              <h1 className="text-3xl text-red-200">lynn.pet!</h1>
             </a>
           </div>
         </Toolbar>

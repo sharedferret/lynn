@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { Box, Divider, FormControl, InputLabel, MenuItem, Select, Stack } from '@mui/material';
+import { v4 as uuidv4 } from 'uuid';
 import BALogogramComponent from './BALogogramComponent';
 
 /**
@@ -11,7 +12,7 @@ class BALogosActionRecipeContainerComponent extends Component {
     const output = [];
     for (let i = 0; i < recipes.length; i++) {
       output.push(
-        <MenuItem value={i}>
+        <MenuItem value={i} key={'recipe-' + uuidv4()}>
           <Box>
             <Stack>
               <BALogogramComponent logogram={recipes[i][0]} />
@@ -21,7 +22,7 @@ class BALogosActionRecipeContainerComponent extends Component {
           </Box>
         </MenuItem>
       );
-      output.push(<Divider />)
+      output.push(<Divider key={'action-' + uuidv4()} />)
     }
 
     return output.splice(0, output.length - 1);
@@ -45,7 +46,7 @@ class BALogosActionRecipeContainerComponent extends Component {
                 defaultValue={0}
               >
                 {umbralAction != null ? this.renderRecipes(umbralAction.recipes) 
-                  : <MenuItem value='0'><Box height={60} /></MenuItem>}
+                  : <MenuItem value='0' key={'action-' + uuidv4()}><Box height={60} /></MenuItem>}
               </Select>
             </FormControl>
           </Box>
@@ -62,7 +63,7 @@ class BALogosActionRecipeContainerComponent extends Component {
                 defaultValue={0}
               >
                 {astralAction != null ? this.renderRecipes(astralAction.recipes) 
-                  : <MenuItem value='0'><Box height={60} /></MenuItem>}
+                  : <MenuItem value='0' key={'action-' + uuidv4()}><Box height={60} /></MenuItem>}
               </Select>
             </FormControl>
           </Box>

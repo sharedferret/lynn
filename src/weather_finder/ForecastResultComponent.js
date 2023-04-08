@@ -3,6 +3,7 @@ import { Container, Divider, Grid, Paper, Stack } from '@mui/material';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Typography from '@mui/material/Typography';
 import WeatherConditionCardComponent from './WeatherConditionCardComponent';
+import { v4 as uuidv4 } from 'uuid';
 import './ForecastResult.css';
 
 class ForecastResultComponent extends Component {
@@ -46,7 +47,7 @@ class ForecastResultComponent extends Component {
             divider={<ChevronRightIcon fontSize='large' />}
           >
             {this.props.data.conditions.map(item => (
-                <WeatherConditionCardComponent data={item} />
+                <WeatherConditionCardComponent data={item} key={'condition-' + uuidv4()} />
             ))}
           </Stack>
         </Stack>

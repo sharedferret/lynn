@@ -3,6 +3,7 @@ import DRSHolsterHelper from './lib/DRSHolsterHelper';
 
 import { Box, Divider, FormControl, MenuItem, Select, Stack, Typography } from '@mui/material';
 import { groupBy } from 'underscore';
+import { v4 as uuidv4 } from 'uuid';
 
 class DRSLostActionSelectorComponent extends Component {
   renderSelectorMenuSection(items) {
@@ -10,7 +11,7 @@ class DRSLostActionSelectorComponent extends Component {
     for (let i = 0; i < items.length; i++) {
       const action = items[i];
       menuItems.push(
-        <MenuItem value={action.full}>
+        <MenuItem value={action.full} key={ 'selector-' + uuidv4() }>
           <Stack direction={'row'} spacing={2} alignItems={'center'}>
             <img src={`${process.env.PUBLIC_URL}/assets/lostactions/${action.image}.jpg`} alt={action.full} />
             <Typography>{action.full}</Typography>
@@ -32,36 +33,36 @@ class DRSLostActionSelectorComponent extends Component {
 
     const menuItems = [];
 
-    menuItems.push(<MenuItem value=''>None</MenuItem>);
+    menuItems.push(<MenuItem value='' key={ 'selector-' + uuidv4() }>None</MenuItem>);
 
-    menuItems.push(<Divider textAlign='left'>Offensive</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Offensive</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['offensive'])));
 
-    menuItems.push(<Divider textAlign='left'>Defensive</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Defensive</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['defensive'])));
 
-    menuItems.push(<Divider textAlign='left'>Restorative</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Restorative</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['restorative'])));
 
-    menuItems.push(<Divider textAlign='left'>Beneficial</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Beneficial</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['beneficial'])));
 
-    menuItems.push(<Divider textAlign='left'>Tactical</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Tactical</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['tactical'])));
 
-    menuItems.push(<Divider textAlign='left'>Detrimental</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Detrimental</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['detrimental'])));
 
-    menuItems.push(<Divider textAlign='left'>Items</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Items</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['item'])));
 
-    menuItems.push(<Divider textAlign='left'>Essences</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Essences</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['essence'])));
 
-    menuItems.push(<Divider textAlign='left'>Deep Essences</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Deep Essences</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['deep_essence'])));
 
-    menuItems.push(<Divider textAlign='left'>Pure Essences</Divider>);
+    menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Pure Essences</Divider>);
     menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['pure_essence'])));
 
     return menuItems;
