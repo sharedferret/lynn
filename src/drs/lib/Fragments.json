@@ -11,6 +11,23 @@
         "Lost Protect",
         "Lost Shell",
         "Lost Stealth"
+      ],
+      "acquisition": [
+        {
+          "method": "star_mob",
+          "map": "bsf",
+          "zone": 1,
+          "mobs": [
+            "Tideborn Angel",
+            "Ink Claw",
+            "Fern Flower"
+          ]
+        },
+        {
+          "method": "cluster",
+          "quantity": 5,
+          "clusters": 1
+        }
       ]
     },
     "preparation": {
@@ -19,6 +36,35 @@
       "contents": [
         "Resistance Phoenix",
         "Resistance Potion"
+      ],
+      "acquisition": [
+        {
+          "method": "mob",
+          "map": "bsf",
+          "zone": 1,
+          "mobs": [
+            "Bozjan Geshunpest"
+          ]
+        },
+        {
+          "method": "reflect",
+          "map": "bsf",
+          "zone": 1,
+          "mob": "Wind Sprite",
+          "rank": 3,
+          "weather": "Wind"
+        },
+        {
+          "method": "skirmish",
+          "map": "bsf",
+          "zone": 1,
+          "fates": [
+            "All Pets Are Off",
+            "Brought to Heal",
+            "None of Them Knew They Were Robots",
+            "Unrest for the Wicked"
+          ]
+        }
       ]
     },
     "skill": {
@@ -30,6 +76,32 @@
         "Essence of the Savior",
         "Essence of the Veteran",
         "Essence of the Platebearer"
+      ],
+      "acquisition": [
+        {
+          "method": "mob",
+          "map": "bsf",
+          "zone": 1,
+          "mobs": [
+            "Bozjan Korrigan",
+            "Bozjan Matamata",
+            "Bozjan Mudpuppy",
+            "Bozjan Nepenthes",
+            "Bozjan Orobon"
+          ]
+        },
+        {
+          "method": "skirmish",
+          "map": "bsf",
+          "zone": 1,
+          "fates": [
+            "Conflicting with the First Law",
+            "More Machine Now than Man",
+            "Seeq and Destroy",
+            "Sneak & Spell",
+            "The Beasts Must Die"
+          ]
+        }
       ]
     },
     "ingenuity": {
@@ -42,6 +114,23 @@
         "Lost Paralyze III",
         "Lost Banish III",
         "Lost Dispel"
+      ],
+      "acquisition": [
+        {
+          "method": "star_mob",
+          "map": "bsf",
+          "zone": 2,
+          "mobs": [
+            "Viy",
+            "Smok",
+            "Psoglav"
+          ]
+        },
+        {
+          "method": "cluster",
+          "quantity": 4,
+          "clusters": 1
+        }
       ]
     },
     "care": {
@@ -51,6 +140,32 @@
         "Resistance Reraiser",
         "Resistance Potion Kit",
         "Resistance Ether Kit"
+      ],
+      "acquisition": [
+        {
+          "method": "reflect",
+          "map": "bsf",
+          "zone": 2,
+          "mob": "Earth Sprite",
+          "rank": 5,
+          "weather": "Dust Storms"
+        },
+        {
+          "method": "reflect",
+          "map": "bsf",
+          "zone": 2,
+          "mob": "Wind Sprite",
+          "rank": 4,
+          "weather": "Wind"
+        },
+        {
+          "method": "mob",
+          "map": "bsf",
+          "zone": 2,
+          "mobs": [
+            "Bozjan Wight"
+          ]
+        }
       ]
     },
     "awakening": {
@@ -64,6 +179,35 @@
         "Essence of the Profane",
         "Essence of the Irregular",
         "Essence of the Breathtaker"
+      ],
+      "acquisition": [
+        {
+          "method": "mob",
+          "map": "bsf",
+          "zone": 2,
+          "mobs": [
+            "Bozjan Antlion",
+            "Bozjan Bandersnatch",
+            "Bozjan Biast",
+            "Bozjan Doblyn",
+            "Bozjan Taipan",
+            "Bozjan Tormentor",
+            "Bozjan Worm",
+            "Red Chocobo"
+          ]
+        },
+        {
+          "method": "skirmish",
+          "map": "bsf",
+          "zone": 2,
+          "fates": [
+            "Help Wanted",
+            "No Camping Allowed",
+            "The Element of Supplies",
+            "The Monster Mash",
+            "Unicorn Flakes"
+          ]
+        }
       ]
     },
     "support": {
@@ -73,6 +217,16 @@
         "Lost Reflect",
         "Lost Stoneskin",
         "Lost Bravery"
+      ],
+      "acquisition": [
+        {
+          "method": "reflect",
+          "map": "bsf",
+          "zone": 3,
+          "mob": "Wind Sprite",
+          "rank": 5,
+          "weather": "Wind"
+        }
       ]
     },
     "violence": {
@@ -82,6 +236,27 @@
         "Lost Focus",
         "Lost Slash",
         "Lost Death"
+      ],
+      "acquisition": [
+        {
+          "method": "star_mob",
+          "map": "bsf",
+          "zone": 3,
+          "mobs": [
+            "Patty",
+            "Clingy Clare",
+            "Bird of Baranthrum"
+          ]
+        },
+        {
+          "method": "mob",
+          "map": "bsf",
+          "zone": 3,
+          "mobs": [
+            "Bozjan Gravekeeper",
+            "Bozjan Rider"
+          ]
+        }
       ]
     },
     "resolve": {
@@ -94,6 +269,18 @@
         "Banner of Tireless Conviction",
         "Banner of Firm Resolve",
         "Banner of Solemn Clarity"
+      ],
+      "acquisition": [
+        {
+          "method": "ce",
+          "map": "bsf",
+          "zone": 3,
+          "fates": [
+            "Metal Fox Chaos",
+            "Trampled Under Hoof",
+            "Where Strode the Behemoth"
+          ]
+        }
       ]
     },
     "compassion": {
@@ -104,6 +291,39 @@
         "Lost Cure IV",
         "Lost Arise",
         "Resistance Medikit"
+      ],
+      "acquisition": [
+        {
+          "method": "mob",
+          "map": "bsf",
+          "zone": 3,
+          "mobs": [
+            "Bozjan Elasmoth",
+            "Bozjan Monitor",
+            "Bozjan Ochu",
+            "Bozjan Phobosuchus",
+            "Bozjan Ranunculus",
+            "Bozjan Screamer",
+            "Bozjan Snake"
+          ]
+        },
+        {
+          "method": "skirmish",
+          "map": "bsf",
+          "zone": 3,
+          "fates": [
+            "Demonstrably Demonic",
+            "Desperately Seeking Something",
+            "For Absent Friends",
+            "I'm a Mechanical Man",
+            "Let Slip the Dogs of War",
+            "Murder Death Kill",
+            "My Family and Other Animals",
+            "Of Steel and Flame",
+            "The War Against the Machines",
+            "Waste the Rainbow"
+          ]
+        }
       ]
     },
     "superstition": {
@@ -113,6 +333,11 @@
         "Essence of the Bloodsucker",
         "Essence of the Beast",
         "Essence of the Templar"
+      ],
+      "acquisition": [
+        {
+          "method": "cll"
+        }
       ]
     },
     "mastery": {
@@ -124,6 +349,11 @@
         "Deep Essence of the Savior",
         "Deep Essence of the Veteran",
         "Deep Essence of the Platebearer"
+      ],
+      "acquisition": [
+        {
+          "method": "cll"
+        }
       ]
     },
     "sagacity": {
@@ -133,6 +363,14 @@
         "Lost Font of Magic",
         "Lost Font of Power",
         "Lost Font of Skill"
+      ],
+      "acquisition": [
+        {
+          "method": "cll"
+        },
+        {
+          "method": "dalriada"
+        }
       ]
     },
     "becoming": {
@@ -146,6 +384,14 @@
         "Deep Essence of the Profane",
         "Deep Essence of the Irregular",
         "Deep Essence of the Breathtaker"
+      ],
+      "acquisition": [
+        {
+          "method": "cll"
+        },
+        {
+          "method": "dalriada"
+        }
       ]
     },
     "transcendence": {
@@ -155,6 +401,11 @@
         "Deep Essence of the Bloodsucker",
         "Deep Essence of the Beast",
         "Deep Essence of the Templar"
+      ],
+      "acquisition": [
+        {
+          "method": "cll"
+        }
       ]
     },
     "caprice": {
@@ -164,6 +415,11 @@
         "Lost Fair Trade",
         "Mimic",
         "Dynamis Dice"
+      ],
+      "acquisition": [
+        {
+          "method": "cll"
+        }
       ]
     },
     "observation": {
@@ -171,6 +427,19 @@
       "short": "observation",
       "contents": [
         "Lost Perception"
+      ],
+      "acquisition": [
+        {
+          "method": "cluster",
+          "quantity": 1,
+          "clusters": 1
+        },
+        {
+          "method": "drn"
+        },
+        {
+          "method": "drs"
+        }
       ]
     },
     "deception": {
@@ -178,6 +447,11 @@
       "short": "deception",
       "contents": [
         "Pure Essence of the Gambler"
+      ],
+      "acquisition": [
+        {
+          "method": "drs"
+        }
       ]
     },
     "loss": {
@@ -185,6 +459,14 @@
       "short": "loss",
       "contents": [
         "Lost Sacrifice"
+      ],
+      "acquisition": [
+        {
+          "method": "drn"
+        },
+        {
+          "method": "drs"
+        }
       ]
     },
     "clarity": {
@@ -193,6 +475,19 @@
       "contents": [
         "Lost Flare Star",
         "Pure Essence of the Elder"
+      ],
+      "acquisition": [
+        {
+          "method": "cluster",
+          "quantity": 1,
+          "clusters": 1
+        },
+        {
+          "method": "drn"
+        },
+        {
+          "method": "drs"
+        }
       ]
     },
     "contention": {
@@ -201,6 +496,19 @@
       "contents": [
         "Lost Rend Armor",
         "Pure Essence of the Duelist"
+      ],
+      "acquisition": [
+        {
+          "method": "cluster",
+          "quantity": 1,
+          "clusters": 1
+        },
+        {
+          "method": "drn"
+        },
+        {
+          "method": "drs"
+        }
       ]
     },
     "finesse": {
@@ -209,6 +517,19 @@
       "contents": [
         "Lost Dervish",
         "Pure Essence of the Fiendhunter"
+      ],
+      "acquisition": [
+        {
+          "method": "cluster",
+          "quantity": 1,
+          "clusters": 1
+        },
+        {
+          "method": "drn"
+        },
+        {
+          "method": "drs"
+        }
       ]
     },
     "fortitude": {
@@ -217,6 +538,19 @@
       "contents": [
         "Lost Aethershield",
         "Pure Essence of the Indomitable"
+      ],
+      "acquisition": [
+        {
+          "method": "cluster",
+          "quantity": 1,
+          "clusters": 1
+        },
+        {
+          "method": "drn"
+        },
+        {
+          "method": "drs"
+        }
       ]
     },
     "divinity": {
@@ -225,6 +559,19 @@
       "contents": [
         "Lost Seraph Strike",
         "Pure Essence of the Divine"
+      ],
+      "acquisition": [
+        {
+          "method": "cluster",
+          "quantity": 1,
+          "clusters": 1
+        },
+        {
+          "method": "drn"
+        },
+        {
+          "method": "drs"
+        }
       ]
     },
     "history": {
@@ -232,6 +579,27 @@
       "short": "history",
       "contents": [
         "Lodestone"
+      ],
+      "acquisition": [
+        {
+          "method": "star_mob",
+          "map": "zadnor",
+          "zone": 1,
+          "mobs": [
+            "Vinegaroon Executioner",
+            "Stratogryph",
+            "Anancus"
+          ]
+        },
+        {
+          "method": "skirmish",
+          "map": "zadnor",
+          "zone": 1,
+          "fates": [
+            "Another Pilot Episode",
+            "Breaking the Ice"
+          ]
+        }
       ]
     },
     "rage": {
@@ -240,6 +608,18 @@
       "contents": [
         "Lost Stoneskin II",
         "Lost Burst"
+      ],
+      "acquisition": [
+        {
+          "method": "mob",
+          "map": "zadnor",
+          "zone": 1,
+          "mobs": [
+            "Zadnor Beetle",
+            "Zadnor Dhalmel",
+            "Zadnor Gaur"
+          ]
+        }
       ]
     },
     "ferocity": {
@@ -248,6 +628,16 @@
       "contents": [
         "Lost Stoneskin II",
         "Lost Rampage"
+      ],
+      "acquisition": [
+        {
+          "method": "mob",
+          "map": "zadnor",
+          "zone": 1,
+          "mobs": [
+            "Zadnor Ziz"
+          ]
+        }
       ]
     },
     "moonlight": {
@@ -255,6 +645,16 @@
       "short": "moonlight",
       "contents": [
         "Light Curtain"
+      ],
+      "acquisition": [
+        {
+          "method": "mob",
+          "map": "zadnor",
+          "zone": 2,
+          "mobs": [
+            "Zadnor Crawler"
+          ]
+        }
       ]
     },
     "hope": {
@@ -262,6 +662,13 @@
       "short": "hope",
       "contents": [
         "Lost Reraise"
+      ],
+      "acquisition": [
+        {
+          "method": "cluster",
+          "quantity": 1,
+          "clusters": 5
+        }
       ]
     },
     "artistry": {
@@ -270,6 +677,34 @@
       "contents": [
         "Lost Chainspell",
         "Lost Assassination"
+      ],
+      "acquisition": [
+        {
+          "method": "reflect",
+          "map": "zadnor",
+          "zone": 2,
+          "mob": "Water Sprite",
+          "rank": 5,
+          "weather": "Rain"
+        },
+        {
+          "method": "reflect",
+          "map": "zadnor",
+          "zone": 2,
+          "mob": "Lightning Sprite",
+          "rank": 4,
+          "weather": "Thunder"
+        },
+        {
+          "method": "star_mob",
+          "map": "zadnor",
+          "zone": 2,
+          "mobs": [
+            "Lord Ochu",
+            "Earth Eater",
+            "Aglaophotis"
+          ]
+        }
       ]
     },
     "desperation": {
@@ -278,6 +713,18 @@
       "contents": [
         "Lost Protect II",
         "Lost Shell II"
+      ],
+      "acquisition": [
+        {
+          "method": "mob",
+          "map": "zadnor",
+          "zone": 3,
+          "mobs": [
+            "Zadnor Cliffmole",
+            "Zadnor Wamouracampa",
+            "Zadnor Yamaa"
+          ]
+        }
       ]
     },
     "tenacity": {
@@ -285,6 +732,28 @@
       "short": "tenacity",
       "contents": [
         "Lost Bubble"
+      ],
+      "acquisition": [
+        {
+          "method": "skirmish",
+          "map": "zadnor",
+          "zone": 3,
+          "fates": [
+            "Attack of the Machines",
+            "Still Only Counts as One"
+          ]
+        },
+        {
+          "method": "ce",
+          "map": "zadnor",
+          "zone": 3,
+          "fates": [
+            "Feeling the Burn",
+            "Lean, Mean, Magitek Machines",
+            "Looks to Die For",
+            "Worn to a Shadow"
+          ]
+        }
       ]
     },
     "inspiration": {
@@ -292,6 +761,18 @@
       "short": "inspiration",
       "contents": [
         "Lost Impetus"
+      ],
+      "acquisition": [
+        {
+          "method": "star_mob",
+          "map": "zadnor",
+          "zone": 3,
+          "mobs": [
+            "Glyptodon",
+            "Molten Scorpion",
+            "Vapula"
+          ]
+        }
       ]
     },
     "heroism": {
@@ -300,6 +781,11 @@
       "contents": [
         "Lost Excellence",
         "Resistance Elixir"
+      ],
+      "acquisition": [
+        {
+          "method": "dalriada"
+        }
       ]
     },
     "revelation": {
@@ -308,6 +794,11 @@
       "contents": [
         "Lost Full Cure",
         "Resistance Elixir"
+      ],
+      "acquisition": [
+        {
+          "method": "dalriada"
+        }
       ]
     },
     "cunning": {
@@ -316,6 +807,11 @@
       "contents": [
         "Lost Blood Rage",
         "Resistance Elixir"
+      ],
+      "acquisition": [
+        {
+          "method": "dalriada"
+        }
       ]
     }
   }
