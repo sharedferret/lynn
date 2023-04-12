@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Box, Button, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Button, Stack, Typography } from '@mui/material';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import DRSHolsterContainerComponent from './DRSHolsterContainerComponent';
 import DRSHolsterActionAcquisitionGuideComponent from './DRSHolsterActionAcquisitionGuideComponent';
@@ -17,6 +17,7 @@ class DRSHolsterMainComponent extends Component {
         this.state = {
           holsterName: holster.name,
           holsterType: holster.type,
+          holsterFriendlyType: DRSHolsterHelper.getFriendlyHolsterSetName(holster.type),
           holsterMetadata: {
             name: holsterData.name,
             role: holsterData.role,
@@ -55,54 +56,43 @@ class DRSHolsterMainComponent extends Component {
       holsterPrepop: null,
       holsterMain: null
     });
+
+    // TODO: Navigate to /drs/holster
   }
 
   renderHolsterSelectionPage() {
+    const holsterSets = DRSHolsterHelper.getAvailableHolsterSets();
+    
     return (
-      <Box>
-        <Stack>
-          <Typography>Available Holsters</Typography>
-          <a href='/drs/holster/learning/maintank'>
-            <Button>Main Tank</Button>
-          </a>
-          <a href='/drs/holster/learning/offtank'>
-            <Button>Off Tank</Button>
-          </a>
-          <a href='/drs/holster/learning/mainhealer'>
-            <Button>Main Healer</Button>
-          </a>
-          <a href='/drs/holster/learning/offhealer'>
-            <Button>Off Healer</Button>
-          </a>
-          <a href='/drs/holster/learning/melee-rend'>
-            <Button>Melee (Rend)</Button>
-          </a>
-          <a href='/drs/holster/learning/melee-dps'>
-            <Button>Melee (DPS)</Button>
-          </a>
-          <a href='/drs/holster/learning/caster-c4'>
-            <Button>Caster (C4)</Button>
-          </a>
-          <a href='/drs/holster/learning/caster-dps'>
-            <Button>Caster (DPS)</Button>
-          </a>
-          <a href='/drs/holster/learning/ranged-c2'>
-            <Button>Ranged (C2)</Button>
-          </a>
-          <a href='/drs/holster/learning/ranged-dervish'>
-            <Button>Ranged (Dervish)</Button>
-          </a>
-          <a href='/drs/holster/learning/irregular-drk'>
-            <Button>Irregular (DRK)</Button>
-          </a>
-          <a href='/drs/holster/learning/savior-tank'>
-            <Button>Savior Tank</Button>
-          </a>
-          <a href='/drs/holster/learning/profane-whm'>
-            <Button>Profane (WHM)</Button>
-          </a>
-        </Stack>
-      </Box>
+      Object.keys(holsterSets).map(i => {
+        const holsterNames = DRSHolsterHelper.getHolsterNames(i);
+        return (
+          <Box>
+            <Stack p={2} spacing={1}>
+              <Typography>{ holsterSets[i] }</Typography>
+              {
+                Object.keys(holsterNames).map(key => {
+                  const holsterData = holsterNames[key];
+                  return (
+                    <a href={ '/drs/holster/' + i + '/' + key }>
+                      <Button
+                        variant="outlined"
+                        size="large"
+                        fullWidth
+                        sx={{ 'text-transform': 'capitalize' }}
+                        style={{justifyContent: "flex-start"}}
+                        startIcon={ <Avatar src={`${process.env.PUBLIC_URL}/assets/lostactions/${holsterData.icon}.jpg`} /> }
+                        >
+                          { holsterData.name }
+                      </Button>
+                   </a>
+                  )
+                })
+              }
+            </Stack>
+          </Box>
+        )
+      })
     );
   }
 
@@ -113,7 +103,7 @@ class DRSHolsterMainComponent extends Component {
     return (
       <Box maxWidth={1000}>
         <Stack spacing={2} minHeight={100} p={1}>
-          <Typography fontWeight={700} variant={'h4'}>DRS Holster</Typography>
+          <Typography fontWeight={700} variant={'h4'}>DRS Holster - { this.state.holsterFriendlyType }</Typography>
           <Typography fontWeight={700} variant={'h4'}>Role: {this.state.holsterMetadata.name}</Typography>
           <Typography align='left' p={2} style={{'whiteSpace': 'pre-line'}}>{ this.state.holsterMetadata.explanation }</Typography>
           <DRSHolsterContainerComponent

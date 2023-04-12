@@ -36,6 +36,33 @@ class DRSHolsterHelper {
     }
     return weight;
   }
+
+  static getFriendlyHolsterSetName(set) {
+    return holsters[set].name;
+  }
+
+  static getAvailableHolsterSets() {
+    const holsterSetKeys = Object.keys(holsters);
+    const holsterSets = {};
+    for (let i in holsterSetKeys) {
+      holsterSets[holsterSetKeys[i]] = holsters[holsterSetKeys[i]].name
+    }
+    return holsterSets;
+  }
+
+  static getHolsterNames(type) {
+    const holsterNameKeys = Object.keys(holsters[type].holsters);
+    const holsterNames = {};
+    for (let i in holsterNameKeys) {
+      const holsterData = holsters[type].holsters[holsterNameKeys[i]];
+      holsterNames[holsterNameKeys[i]] = {
+        name: holsterData.name,
+        role: holsterData.role,
+        icon: holsterData.icon
+      };
+    }
+    return holsterNames;
+  }
 }
 
 export default DRSHolsterHelper;
