@@ -59,7 +59,8 @@ class MainComponent extends Component {
             {React.cloneElement(this.props.component, {
               forecastFilter: this.state.forecastFilter,
               type: this.props.type,
-              holster: this.props.holster
+              holster: this.props.holster,
+              lostAction: this.props.lostAction
             })}
           </Box>
         </Box>

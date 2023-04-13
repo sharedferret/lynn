@@ -28,7 +28,7 @@ class DRSLostActionAcquisitionMethodReflectCard extends Component {
           </Box>
           { this.props.methodData.mobs.map(i => {
             return (
-              <Stack>
+              <Stack key={'reflect-' + i.mob}>
                 <Stack direction={ 'row' } alignItems={ 'center' } spacing={ 2 }>
                   <img src={`${process.env.PUBLIC_URL}/assets/icons/${ i.icon }`} width={24} height={24} alt={'Kill Mobs'} />
                   <Typography>{ i.mob } (Rank { i.rank })</Typography>

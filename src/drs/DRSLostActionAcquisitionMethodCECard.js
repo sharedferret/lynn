@@ -28,7 +28,7 @@ class DRSLostActionAcquisitionMethodCECard extends Component {
           </Box>
           { this.props.methodData.fates.map(i => {
             return (
-              <Stack direction={ 'row' } alignItems={'center'} spacing={2}>
+              <Stack direction={ 'row' } alignItems={'center'} spacing={2} key={'ce-' + i}>
                 <img src={`${process.env.PUBLIC_URL}/assets/icons/Critical_Engagement.png`} width={24} height={24} alt={'Earth Sprite'} />
                 <Typography>{ i }</Typography>
               </Stack>

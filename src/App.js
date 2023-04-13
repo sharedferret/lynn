@@ -18,6 +18,7 @@ import BAPortalMapComponent from './BAPortalMapComponent';
 import ResultsFilter from './forecast/lib/ResultsFilter';
 import LynnReferenceComponent from './reference/LynnReferenceComponent';
 import DRSHolsterMainComponent from './drs/DRSHolsterMainComponent';
+import BozjaLostActionHelperComponent from './drs/BozjaLostActionHelperComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => {}})
 
@@ -44,6 +45,10 @@ const WrappedMainComponent = props => {
           }
         }
       />
+    );
+  } else if (props.page === 'bozjalostaction') {
+    return (
+      <MainComponent component={props.component} lostAction={params.lostaction} />
     );
   }
 
@@ -78,6 +83,16 @@ const router = createBrowserRouter([
       {
         path: '/drs/holster/:holstertype/:holstername',
         element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page='drsholster' />,
+      }
+    ]
+  },
+  {
+    path: '/bozja/lostaction',
+    element: <WrappedMainComponent component={<BozjaLostActionHelperComponent />} page='bozjalostaction' />,
+    children: [
+      {
+        path: '/bozja/lostaction/:lostaction',
+        element: <WrappedMainComponent component={<BozjaLostActionHelperComponent />} page='bozjalostaction' />,
       }
     ]
   },

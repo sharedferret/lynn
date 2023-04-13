@@ -51,16 +51,21 @@ function SidebarComponent(props) {
 
       <li className="flex flex-row items-center h-12">
         <Box className="h-6 w-6"></Box>
-        <span className="text-md uppercase font-semibold text-white">DRS</span>
+        <span className="text-md uppercase font-semibold text-white">Bozja and DRS</span>
       </li>
       <li>
         <a href='/drs/holster'>
           <div style={{cursor: 'pointer'}} className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
             <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i className="bx bx-home"></i></span>
-            <span className="text-md font-medium">Holsters</span>
+            <span className="text-md font-medium">DRS Holsters</span>
           </div>
         </a>
-        
+        <a href='/bozja/lostaction'>
+          <div style={{cursor: 'pointer'}} className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+            <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i className="bx bx-home"></i></span>
+            <span className="text-md font-medium">Lost Action Helper</span>
+          </div>
+        </a>
       </li>
       
       <li className="flex flex-row items-center h-12">

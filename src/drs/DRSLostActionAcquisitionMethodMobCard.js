@@ -27,7 +27,7 @@ class DRSLostActionAcquisitionMethodMobCard extends Component {
             <Divider variant='middle' />
           </Box>
           { this.props.methodData.mobs.map(i => {
-            return <Stack direction={ 'row' } alignItems={ 'center' } spacing={ 2 }>
+            return <Stack direction={ 'row' } alignItems={ 'center' } spacing={ 2 } key={'mob-' + i}>
               <Box width={ 24 } />
               <Typography>{ i }</Typography>
             </Stack>
