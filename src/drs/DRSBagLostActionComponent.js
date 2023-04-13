@@ -68,6 +68,9 @@ class DRSBagLostActionComponent extends Component {
           <Box width={60}>
             <TextField
               type='number'
+              InputProps={{
+                inputProps: { min: 1 }
+              }}
               value={this.props.actionQuantity}
               size='small'
               onChange={ this.handleQuantityUpdate }

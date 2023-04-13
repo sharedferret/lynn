@@ -7,6 +7,11 @@ import DRSLostActionAcquisitionMethodCardComponent from './DRSLostActionAcquisit
 class DRSHolsterActionAcquisitionLostActionComponent extends Component {
   render() {
     const actionData = DRSHolsterHelper.getLostActionData(this.props.action);
+
+    if (actionData === undefined) {
+      return null;
+    }
+
     const fragmentData = DRSHolsterHelper.getFragmentData(actionData.fragment);
 
     return (
