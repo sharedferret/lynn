@@ -8,6 +8,8 @@ import DRSLostActionAcquisitionMethodSkirmishCard from './DRSLostActionAcquisiti
 import DRSLostActionAcquisitionMethodCECard from './DRSLostActionAcquisitionMethodCECard';
 import DRSLostActionAcquisitionMethodDutyCard from './DRSLostActionAcquisitionMethodDutyCard';
 
+import { Box } from '@mui/material';
+
 class DRSLostActionAcquisitionMethodCardComponent extends Component {
 
 
@@ -29,7 +31,7 @@ class DRSLostActionAcquisitionMethodCardComponent extends Component {
       case 'duty':
         return <DRSLostActionAcquisitionMethodDutyCard methodData={ this.props.fragmentData } />
       default:
-        return null;
+        return <Box />;
     }
   }
 }
