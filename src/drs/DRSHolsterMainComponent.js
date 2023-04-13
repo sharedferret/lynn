@@ -67,7 +67,7 @@ class DRSHolsterMainComponent extends Component {
       Object.keys(holsterSets).map(i => {
         const holsterNames = DRSHolsterHelper.getHolsterNames(i);
         return (
-          <Box>
+          <Box sx={{ pt: { xs: 14, md: 5} }}>
             <Stack p={2} spacing={1}>
               <Typography>{ holsterSets[i] }</Typography>
               {
