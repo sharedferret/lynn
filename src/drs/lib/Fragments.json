@@ -50,9 +50,14 @@
           "method": "reflect",
           "map": "bsf",
           "zone": 1,
-          "mob": "Wind Sprite",
-          "rank": 3,
-          "weather": "Wind"
+          "mobs": [
+            {
+              "mob": "Wind Sprite",
+              "rank": 3,
+              "icon": "Wind_Sprite.png",
+              "weather": "Wind"
+            }
+          ]
         },
         {
           "method": "skirmish",
@@ -146,17 +151,20 @@
           "method": "reflect",
           "map": "bsf",
           "zone": 2,
-          "mob": "Earth Sprite",
-          "rank": 5,
-          "weather": "Dust Storms"
-        },
-        {
-          "method": "reflect",
-          "map": "bsf",
-          "zone": 2,
-          "mob": "Wind Sprite",
-          "rank": 4,
-          "weather": "Wind"
+          "mobs": [
+            {
+              "mob": "Earth Sprite",
+              "rank": 5,
+              "icon": "Earth_Sprite.png",
+              "weather": "Dust Storms"
+            },
+            {
+              "mob": "Wind Sprite",
+              "rank": 4,
+              "icon": "Wind_Sprite.png",
+              "weather": "Wind"
+            }
+          ]
         },
         {
           "method": "mob",
@@ -164,6 +172,18 @@
           "zone": 2,
           "mobs": [
             "Bozjan Wight"
+          ]
+        },
+        {
+          "method": "skirmish",
+          "map": "bsf",
+          "zone": 2,
+          "fates": [
+            "Heavy Boots of Lead",
+            "Parts and Recreation",
+            "Pyromancer Supreme",
+            "Red (Chocobo) Alert",
+            "Scavengers of Human Sorrow"
           ]
         }
       ]
@@ -223,9 +243,15 @@
           "method": "reflect",
           "map": "bsf",
           "zone": 3,
-          "mob": "Wind Sprite",
-          "rank": 5,
-          "weather": "Wind"
+          "mobs": [
+            {
+              "mob": "Wind Sprite",
+              "rank": 5,
+              "icon": "Wind_Sprite.png",
+              "weather": "Wind"
+            }
+          ]
+          
         }
       ]
     },
@@ -336,7 +362,8 @@
       ],
       "acquisition": [
         {
-          "method": "cll"
+          "method": "duty",
+          "dutyName": "Castrum Lacus Litore"
         }
       ]
     },
@@ -352,7 +379,8 @@
       ],
       "acquisition": [
         {
-          "method": "cll"
+          "method": "duty",
+          "dutyName": "Castrum Lacus Litore"
         }
       ]
     },
@@ -366,10 +394,12 @@
       ],
       "acquisition": [
         {
-          "method": "cll"
+          "method": "duty",
+          "dutyName": "Castrum Lacus Litore"
         },
         {
-          "method": "dalriada"
+          "method": "duty",
+          "dutyName": "The Dalriada"
         }
       ]
     },
@@ -387,10 +417,12 @@
       ],
       "acquisition": [
         {
-          "method": "cll"
+          "method": "duty",
+          "dutyName": "Castrum Lacus Litore"
         },
         {
-          "method": "dalriada"
+          "method": "duty",
+          "dutyName": "The Dalriada"
         }
       ]
     },
@@ -404,7 +436,8 @@
       ],
       "acquisition": [
         {
-          "method": "cll"
+          "method": "duty",
+          "dutyName": "Castrum Lacus Litore"
         }
       ]
     },
@@ -418,7 +451,8 @@
       ],
       "acquisition": [
         {
-          "method": "cll"
+          "method": "duty",
+          "dutyName": "Castrum Lacus Litore"
         }
       ]
     },
@@ -435,10 +469,12 @@
           "clusters": 1
         },
         {
-          "method": "drn"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae"
         },
         {
-          "method": "drs"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae (Savage)"
         }
       ]
     },
@@ -450,7 +486,8 @@
       ],
       "acquisition": [
         {
-          "method": "drs"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae (Savage)"
         }
       ]
     },
@@ -462,10 +499,12 @@
       ],
       "acquisition": [
         {
-          "method": "drn"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae"
         },
         {
-          "method": "drs"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae (Savage)"
         }
       ]
     },
@@ -483,10 +522,12 @@
           "clusters": 1
         },
         {
-          "method": "drn"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae"
         },
         {
-          "method": "drs"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae (Savage)"
         }
       ]
     },
@@ -504,10 +545,12 @@
           "clusters": 1
         },
         {
-          "method": "drn"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae"
         },
         {
-          "method": "drs"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae (Savage)"
         }
       ]
     },
@@ -525,10 +568,12 @@
           "clusters": 1
         },
         {
-          "method": "drn"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae"
         },
         {
-          "method": "drs"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae (Savage)"
         }
       ]
     },
@@ -546,10 +591,12 @@
           "clusters": 1
         },
         {
-          "method": "drn"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae"
         },
         {
-          "method": "drs"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae (Savage)"
         }
       ]
     },
@@ -567,10 +614,12 @@
           "clusters": 1
         },
         {
-          "method": "drn"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae"
         },
         {
-          "method": "drs"
+          "method": "duty",
+          "dutyName": "Delubrum Reginae (Savage)"
         }
       ]
     },
@@ -683,17 +732,20 @@
           "method": "reflect",
           "map": "zadnor",
           "zone": 2,
-          "mob": "Water Sprite",
-          "rank": 5,
-          "weather": "Rain"
-        },
-        {
-          "method": "reflect",
-          "map": "zadnor",
-          "zone": 2,
-          "mob": "Lightning Sprite",
-          "rank": 4,
-          "weather": "Thunder"
+          "mobs": [
+            {
+              "mob": "Water Sprite",
+              "rank": 5,
+              "icon": "Water_Sprite.png",
+              "weather": "Rain"
+            },
+            {
+              "mob": "Lightning Sprite",
+              "rank": 4,
+              "icon": "Lightning_Sprite.png",
+              "weather": "Thunder"
+            }
+          ]
         },
         {
           "method": "star_mob",
@@ -784,7 +836,8 @@
       ],
       "acquisition": [
         {
-          "method": "dalriada"
+          "method": "duty",
+          "dutyName": "The Dalriada"
         }
       ]
     },
@@ -797,7 +850,8 @@
       ],
       "acquisition": [
         {
-          "method": "dalriada"
+          "method": "duty",
+          "dutyName": "The Dalriada"
         }
       ]
     },
@@ -810,7 +864,8 @@
       ],
       "acquisition": [
         {
-          "method": "dalriada"
+          "method": "duty",
+          "dutyName": "The Dalriada"
         }
       ]
     }

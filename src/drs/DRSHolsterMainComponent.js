@@ -100,6 +100,7 @@ class DRSHolsterMainComponent extends Component {
     if (this.state === null || this.state.holsterName === null) {
       return this.renderHolsterSelectionPage();
     }
+
     return (
       <Box maxWidth={1000}>
         <Stack spacing={2} minHeight={100} p={1}>
@@ -126,8 +127,8 @@ class DRSHolsterMainComponent extends Component {
             </Box>
             <Typography variant='caption' width={650} alignSelf={'center'}>Note: These holsters were created for Lynn Kaneko's DRS runs on The Help Lines. If you're running with a different group, your holsters may vary. Check with your raid lead to see what you need to bring.</Typography>
           </Stack>
-          
-          <DRSHolsterActionAcquisitionGuideComponent />
+          <Box height={40} />
+          <DRSHolsterActionAcquisitionGuideComponent neededActions={ DRSHolsterHelper.getNeededActionsForBag(this.state.holsterPrepop, this.state.holsterMain, 3) } />
         </Stack>
       </Box>
     );

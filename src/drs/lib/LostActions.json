@@ -112,7 +112,7 @@
       "short": "Chainspell",
       "image": "Lost_Chainspell",
       "type": "offensive",
-      "fragment": "aristry",
+      "fragment": "artistry",
       "weight": 20,
       "drsAction": true,
       "code": "ok"

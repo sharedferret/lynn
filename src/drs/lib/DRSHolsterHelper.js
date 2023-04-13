@@ -63,6 +63,27 @@ class DRSHolsterHelper {
     }
     return holsterNames;
   }
+
+  static getNeededActionsForBag(prepop, main, multiplier) {
+    const actions = {};
+    for (let i in prepop) {
+      if (actions[prepop[i].name] > 0) {
+        actions[prepop[i].name] += (prepop[i].quantity * multiplier);
+      } else {
+        actions[prepop[i].name] = (prepop[i].quantity * multiplier);
+      }
+    }
+
+    for (let i in main) {
+      if (actions[main[i].name] > 0) {
+        actions[main[i].name] += (main[i].quantity * multiplier);
+      } else {
+        actions[main[i].name] = (main[i].quantity * multiplier);
+      }
+    }
+
+    return actions;
+  }
 }
 
 export default DRSHolsterHelper;
