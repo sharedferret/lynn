@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Grid, Stack, Typography } from '@mui/material';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import DRSLostActionAcquisitionMethodCardComponent from './DRSLostActionAcquisitionMethodCardComponent';
 
@@ -29,16 +29,18 @@ class DRSHolsterActionAcquisitionLostActionComponent extends Component {
           <Typography variant='h6'>{ fragmentData.name }</Typography>
         </Stack>
         
-        <Stack
-          direction={ 'row' }
+        <Grid
+          container 
           spacing={2}
         >
           {
             fragmentData.acquisition.map(i => {
-              return <DRSLostActionAcquisitionMethodCardComponent fragmentData={ i } fragmentName={ fragmentData.short } />
+              return <Grid item>
+                <DRSLostActionAcquisitionMethodCardComponent fragmentData={ i } fragmentName={ fragmentData.short } priceData={ this.props.priceData } />
+              </Grid>
             })
           }
-        </Stack>
+        </Grid>
       </Stack>
     );
   }

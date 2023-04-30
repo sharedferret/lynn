@@ -15,7 +15,7 @@
         "ranged",
         "caster"
       ],
-      "code": "oa"
+      "code": "G"
     },
     "Lost Font of Magic": {
       "full": "Lost Font of Magic",
@@ -25,7 +25,7 @@
       "fragment": "sagacity",
       "weight": 25,
       "drsAction": true,
-      "code": "ob"
+      "code": "H"
     },
     "Lost Font of Power": {
       "full": "Lost Font of Power",
@@ -35,7 +35,7 @@
       "fragment": "sagacity",
       "weight": 25,
       "drsAction": true,
-      "code": "oc"
+      "code": "I"
     },
     "Lost Slash": {
       "full": "Lost Slash",
@@ -45,7 +45,7 @@
       "fragment": "violence",
       "weight": 10,
       "drsAction": true,
-      "code": "od"
+      "code": "J"
     },
     "Lost Death": {
       "full": "Lost Death",
@@ -55,7 +55,7 @@
       "fragment": "violence",
       "weight": 6,
       "drsAction": false,
-      "code": "oe"
+      "code": "K"
     },
     "Banner of Noble Ends": {
       "full": "Banner of Noble Ends",
@@ -65,7 +65,7 @@
       "fragment": "resolve",
       "weight": 10,
       "drsAction": false,
-      "code": "of"
+      "code": "{"
     },
     "Banner of Honored Sacrifice": {
       "full": "Banner of Honored Sacrifice",
@@ -75,7 +75,7 @@
       "fragment": "resolve",
       "weight": 10,
       "drsAction": true,
-      "code": "og"
+      "code": "L"
     },
     "Banner of Honed Acuity": {
       "full": "Banner of Honed Acuity",
@@ -85,7 +85,7 @@
       "fragment": "resolve",
       "weight": 6,
       "drsAction": true,
-      "code": "oh"
+      "code": "M"
     },
     "Lost Fair Trade": {
       "full": "Lost Fair Trade",
@@ -95,7 +95,7 @@
       "fragment": "caprice",
       "weight": 2,
       "drsAction": false,
-      "code": "oi"
+      "code": "N"
     },
     "Lost Flare Star": {
       "full": "Lost Flare Star",
@@ -105,7 +105,7 @@
       "fragment": "clarity",
       "weight": 20,
       "drsAction": true,
-      "code": "oj"
+      "code": "O"
     },
     "Lost Chainspell": {
       "full": "Lost Chainspell",
@@ -115,7 +115,7 @@
       "fragment": "artistry",
       "weight": 20,
       "drsAction": true,
-      "code": "ok"
+      "code": "P"
     },
     "Lost Assassination": {
       "full": "Lost Assassination",
@@ -125,7 +125,7 @@
       "fragment": "artistry",
       "weight": 8,
       "drsAction": false,
-      "code": "ol"
+      "code": "Q"
     },
     "Lost Manawall": {
       "full": "Lost Manawall",
@@ -135,7 +135,7 @@
       "fragment": "caution",
       "weight": 16,
       "drsAction": true,
-      "code": "da"
+      "code": "R"
     },
     "Banner of Tireless Conviction": {
       "full": "Banner of Tireless Conviction",
@@ -145,7 +145,7 @@
       "fragment": "resolve",
       "weight": 6,
       "drsAction": true,
-      "code": "db"
+      "code": "S"
     },
     "Banner of Firm Resolve": {
       "full": "Banner of Firm Resolve",
@@ -155,7 +155,7 @@
       "fragment": "resolve",
       "weight": 6,
       "drsAction": true,
-      "code": "dc"
+      "code": "T"
     },
     "Lost Incense": {
       "full": "Lost Incense",
@@ -165,7 +165,7 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": true,
-      "code": "dd"
+      "code": "U"
     },
     "Lost Excellence": {
       "full": "Lost Excellence",
@@ -175,7 +175,7 @@
       "fragment": "heroism",
       "weight": 25,
       "drsAction": true,
-      "code": "de"
+      "code": "V"
     },
     "Lost Blood Rage": {
       "full": "Lost Blood Rage",
@@ -185,7 +185,7 @@
       "fragment": "cunning",
       "weight": 25,
       "drsAction": true,
-      "code": "df"
+      "code": "W"
     },
     "Banner of Solemn Clarity": {
       "full": "Banner of Solemn Clarity",
@@ -195,7 +195,7 @@
       "fragment": "resolve",
       "weight": 6,
       "drsAction": true,
-      "code": "ra"
+      "code": "X"
     },
     "Lost Cure": {
       "full": "Lost Cure",
@@ -205,7 +205,7 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": false,
-      "code": "rb"
+      "code": "|"
     },
     "Lost Cure II": {
       "full": "Lost Cure II",
@@ -215,7 +215,7 @@
       "fragment": "compassion",
       "weight": 5,
       "drsAction": true,
-      "code": "rc"
+      "code": "Y"
     },
     "Lost Cure III": {
       "full": "Lost Cure III",
@@ -225,7 +225,7 @@
       "fragment": "caution",
       "weight": 3,
       "drsAction": false,
-      "code": "rd"
+      "code": "}"
     },
     "Lost Cure IV": {
       "full": "Lost Cure IV",
@@ -235,7 +235,7 @@
       "fragment": "compassion",
       "weight": 5,
       "drsAction": true,
-      "code": "re"
+      "code": "Z"
     },
     "Lost Arise": {
       "full": "Lost Arise",
@@ -245,7 +245,7 @@
       "fragment": "compassion",
       "weight": 6,
       "drsAction": true,
-      "code": "rf"
+      "code": "a"
     },
     "Lost Sacrifice": {
       "full": "Lost Sacrifice",
@@ -255,7 +255,7 @@
       "fragment": "loss",
       "weight": 19,
       "drsAction": true,
-      "code": "rg"
+      "code": "b"
     },
     "Lost Reraise": {
       "full": "Lost Reraise",
@@ -265,7 +265,7 @@
       "fragment": "hope",
       "weight": 12,
       "drsAction": true,
-      "code": "rh"
+      "code": "c"
     },
     "Lost Full Cure": {
       "full": "Lost Full Cure",
@@ -275,7 +275,7 @@
       "fragment": "revelation",
       "weight": 15,
       "drsAction": true,
-      "code": "ri"
+      "code": "d"
     },
     "Lost Spellforge": {
       "full": "Lost Spellforge",
@@ -285,7 +285,7 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "ba"
+      "code": "e"
     },
     "Lost Steelsting": {
       "full": "Lost Steelsting",
@@ -295,7 +295,7 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "bb"
+      "code": "f"
     },
     "Lost Protect": {
       "full": "Lost Protect",
@@ -305,7 +305,7 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": false,
-      "code": "bc"
+      "code": "~"
     },
     "Lost Shell": {
       "full": "Lost Shell",
@@ -315,7 +315,7 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": false,
-      "code": "bd"
+      "code": "["
     },
     "Lost Reflect": {
       "full": "Lost Reflect",
@@ -325,7 +325,7 @@
       "fragment": "support",
       "weight": 8,
       "drsAction": true,
-      "code": "be"
+      "code": "g"
     },
     "Lost Stoneskin": {
       "full": "Lost Stoneskin",
@@ -335,7 +335,7 @@
       "fragment": "support",
       "weight": 4,
       "drsAction": false,
-      "code": "bf"
+      "code": "\\"
     },
     "Lost Bravery": {
       "full": "Lost Bravery",
@@ -345,7 +345,7 @@
       "fragment": "support",
       "weight": 8,
       "drsAction": true,
-      "code": "bg"
+      "code": "h"
     },
     "Lost Aethershield": {
       "full": "Lost Aethershield",
@@ -355,7 +355,7 @@
       "fragment": "fortitude",
       "weight": 8,
       "drsAction": true,
-      "code": "bh"
+      "code": "i"
     },
     "Lost Dervish": {
       "full": "Lost Dervish",
@@ -365,7 +365,7 @@
       "fragment": "finesse",
       "weight": 8,
       "drsAction": true,
-      "code": "bi"
+      "code": "j"
     },
     "Lost Stoneskin II": {
       "full": "Lost Stoneskin II",
@@ -374,8 +374,8 @@
       "type": "beneficial",
       "fragment": "rage",
       "weight": 5,
-      "drsAction": false,
-      "code": "bj"
+      "drsAction": true,
+      "code": "k"
     },
     "Lost Protect II": {
       "full": "Lost Protect II",
@@ -385,7 +385,7 @@
       "fragment": "desperation",
       "weight": 3,
       "drsAction": true,
-      "code": "bk"
+      "code": "l"
     },
     "Lost Shell II": {
       "full": "Lost Shell II",
@@ -395,7 +395,7 @@
       "fragment": "desperation",
       "weight": 3,
       "drsAction": true,
-      "code": "bl"
+      "code": "m"
     },
     "Lost Bubble": {
       "full": "Lost Bubble",
@@ -405,7 +405,7 @@
       "fragment": "tenacity",
       "weight": 3,
       "drsAction": true,
-      "code": "bm"
+      "code": "n"
     },
     "Lost Stealth": {
       "full": "Lost Stealth",
@@ -415,7 +415,7 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": false,
-      "code": "ta"
+      "code": "]"
     },
     "Lost Swift": {
       "full": "Lost Swift",
@@ -425,7 +425,7 @@
       "fragment": "ingenuity",
       "weight": 4,
       "drsAction": false,
-      "code": "tb"
+      "code": "^"
     },
     "Lost Font of Skill": {
       "full": "Lost Font of Skill",
@@ -435,7 +435,7 @@
       "fragment": "sagacity",
       "weight": 20,
       "drsAction": true,
-      "code": "tc"
+      "code": "o"
     },
     "Mimic": {
       "full": "Mimic",
@@ -445,7 +445,7 @@
       "fragment": "caprice",
       "weight": 12,
       "drsAction": true,
-      "code": "td"
+      "code": "p"
     },
     "Lost Perception": {
       "full": "Lost Perception",
@@ -455,7 +455,7 @@
       "fragment": "observation",
       "weight": 4,
       "drsAction": true,
-      "code": "te"
+      "code": "q"
     },
     "Lost Impetus": {
       "full": "Lost Impetus",
@@ -465,7 +465,7 @@
       "fragment": "inspiration",
       "weight": 10,
       "drsAction": false,
-      "code": "tf"
+      "code": "_"
     },
     "Lost Paralyze III": {
       "full": "Lost Paralyze III",
@@ -475,7 +475,7 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "ea"
+      "code": "r"
     },
     "Lost Banish III": {
       "full": "Lost Banish III",
@@ -485,7 +485,7 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "eb"
+      "code": "s"
     },
     "Lost Dispel": {
       "full": "Lost Dispel",
@@ -495,7 +495,7 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "ec"
+      "code": "t"
     },
     "Lost Rend Armor": {
       "full": "Lost Rend Armor",
@@ -505,7 +505,7 @@
       "fragment": "contention",
       "weight": 8,
       "drsAction": true,
-      "code": "ed"
+      "code": "u"
     },
     "Lost Seraph Strike": {
       "full": "Lost Seraph Strike",
@@ -515,7 +515,7 @@
       "fragment": "divinity",
       "weight": 8,
       "drsAction": true,
-      "code": "ee"
+      "code": "v"
     },
     "Lost Burst": {
       "full": "Lost Burst",
@@ -525,7 +525,7 @@
       "fragment": "rage",
       "weight": 5,
       "drsAction": true,
-      "code": "ef"
+      "code": "w"
     },
     "Lost Rampage": {
       "full": "Lost Rampage",
@@ -535,7 +535,7 @@
       "fragment": "ferocity",
       "weight": 5,
       "drsAction": true,
-      "code": "eg"
+      "code": "x"
     },
     "Dynamis Dice": {
       "full": "Dynamis Dice",
@@ -545,7 +545,7 @@
       "fragment": "caprice",
       "weight": 11,
       "drsAction": true,
-      "code": "ia"
+      "code": "y"
     },
     "Resistance Phoenix": {
       "full": "Resistance Phoenix",
@@ -555,7 +555,7 @@
       "fragment": "preparation",
       "weight": 4,
       "drsAction": false,
-      "code": "ib"
+      "code": "`"
     },
     "Resistance Reraiser": {
       "full": "Resistance Reraiser",
@@ -565,7 +565,7 @@
       "fragment": "care",
       "weight": 8,
       "drsAction": true,
-      "code": "ic"
+      "code": "z"
     },
     "Resistance Potion Kit": {
       "full": "Resistance Potion Kit",
@@ -575,7 +575,7 @@
       "fragment": "care",
       "weight": 3,
       "drsAction": true,
-      "code": "id"
+      "code": "0"
     },
     "Resistance Ether Kit": {
       "full": "Resistance Ether Kit",
@@ -585,7 +585,7 @@
       "fragment": "care",
       "weight": 3,
       "drsAction": true,
-      "code": "ie"
+      "code": "1"
     },
     "Resistance Medikit": {
       "full": "Resistance Medikit",
@@ -595,7 +595,7 @@
       "fragment": "compassion",
       "weight": 3,
       "drsAction": true,
-      "code": "if"
+      "code": "2"
     },
     "Resistance Potion": {
       "full": "Resistance Potion",
@@ -605,7 +605,7 @@
       "fragment": "preparation",
       "weight": 1,
       "drsAction": false,
-      "code": "ig"
+      "code": "3"
     },
     "Lodestone": {
       "full": "Lodestone",
@@ -615,7 +615,7 @@
       "fragment": "history",
       "weight": 1,
       "drsAction": false,
-      "code": "ih"
+      "code": "@"
     },
     "Light Curtain": {
       "full": "Light Curtain",
@@ -625,7 +625,7 @@
       "fragment": "moonlight",
       "weight": 1,
       "drsAction": true,
-      "code": "ii"
+      "code": "4"
     },
     "Resistance Elixir": {
       "full": "Resistance Elixir",
@@ -635,7 +635,7 @@
       "fragment": "heroism",
       "weight": 4,
       "drsAction": true,
-      "code": "ij"
+      "code": "5"
     },
     "Essence of the Aetherweaver": {
       "full": "Essence of the Aetherweaver",
@@ -645,7 +645,7 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": "sa"
+      "code": "*"
     },
     "Essence of the Martialist": {
       "full": "Essence of the Martialist",
@@ -655,7 +655,7 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": "sb"
+      "code": "("
     },
     "Essence of the Savior": {
       "full": "Essence of the Savior",
@@ -665,7 +665,7 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": "sc"
+      "code": ")"
     },
     "Essence of the Veteran": {
       "full": "Essence of the Veteran",
@@ -675,7 +675,7 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": "sd"
+      "code": "'"
     },
     "Essence of the Platebearer": {
       "full": "Essence of the Platebearer",
@@ -685,7 +685,7 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": "se"
+      "code": "&"
     },
     "Essence of the Guardian": {
       "full": "Essence of the Guardian",
@@ -695,7 +695,7 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "sf"
+      "code": "%"
     },
     "Essence of the Ordained": {
       "full": "Essence of the Ordained",
@@ -705,7 +705,7 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "sg"
+      "code": "$"
     },
     "Essence of the Skirmisher": {
       "full": "Essence of the Skirmisher",
@@ -715,7 +715,7 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "sh"
+      "code": "#"
     },
     "Essence of the Watcher": {
       "full": "Essence of the Watcher",
@@ -725,7 +725,7 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "si"
+      "code": "\""
     },
     "Essence of the Profane": {
       "full": "Essence of the Profane",
@@ -735,7 +735,7 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "sj"
+      "code": "!"
     },
     "Essence of the Irregular": {
       "full": "Essence of the Irregular",
@@ -745,7 +745,7 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "sk"
+      "code": "¢"
     },
     "Essence of the Breathtaker": {
       "full": "Essence of the Breathtaker",
@@ -755,7 +755,7 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "sl"
+      "code": "£"
     },
     "Essence of the Bloodsucker": {
       "full": "Essence of the Bloodsucker",
@@ -765,7 +765,7 @@
       "fragment": "superstition",
       "weight": 6,
       "drsAction": false,
-      "code": "sm"
+      "code": "¤"
     },
     "Essence of the Beast": {
       "full": "Essence of the Beast",
@@ -775,7 +775,7 @@
       "fragment": "superstition",
       "weight": 6,
       "drsAction": false,
-      "code": "sn"
+      "code": "¥"
     },
     "Essence of the Templar": {
       "full": "Essence of the Templar",
@@ -785,7 +785,7 @@
       "fragment": "superstition",
       "weight": 6,
       "drsAction": false,
-      "code": "so"
+      "code": "§"
     },
     "Deep Essence of the Aetherweaver": {
       "full": "Deep Essence of the Aetherweaver",
@@ -795,7 +795,7 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": false,
-      "code": "ka"
+      "code": "?"
     },
     "Deep Essence of the Martialist": {
       "full": "Deep Essence of the Martialist",
@@ -805,7 +805,7 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": false,
-      "code": "kb"
+      "code": "<"
     },
     "Deep Essence of the Savior": {
       "full": "Deep Essence of the Savior",
@@ -815,7 +815,7 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": true,
-      "code": "kc"
+      "code": "="
     },
     "Deep Essence of the Veteran": {
       "full": "Deep Essence of the Veteran",
@@ -825,7 +825,7 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": true,
-      "code": "kd"
+      "code": ">"
     },
     "Deep Essence of the Platebearer": {
       "full": "Deep Essence of the Platebearer",
@@ -835,7 +835,7 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": false,
-      "code": "ke"
+      "code": ":"
     },
     "Deep Essence of the Guardian": {
       "full": "Deep Essence of the Guardian",
@@ -845,7 +845,7 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": false,
-      "code": "kf"
+      "code": ";"
     },
     "Deep Essence of the Ordained": {
       "full": "Deep Essence of the Ordained",
@@ -854,8 +854,8 @@
       "type": "deep_essence",
       "fragment": "becoming",
       "weight": 10,
-      "drsAction": false,
-      "code": "kg"
+      "drsAction": true,
+      "code": "6"
     },
     "Deep Essence of the Skirmisher": {
       "full": "Deep Essence of the Skirmisher",
@@ -865,7 +865,7 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": false,
-      "code": "kh"
+      "code": "/"
     },
     "Deep Essence of the Watcher": {
       "full": "Deep Essence of the Watcher",
@@ -875,7 +875,7 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": false,
-      "code": "ki"
+      "code": "."
     },
     "Deep Essence of the Profane": {
       "full": "Deep Essence of the Profane",
@@ -885,7 +885,7 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": true,
-      "code": "kj"
+      "code": "7"
     },
     "Deep Essence of the Irregular": {
       "full": "Deep Essence of the Irregular",
@@ -895,7 +895,7 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": true,
-      "code": "kk"
+      "code": "8"
     },
     "Deep Essence of the Breathtaker": {
       "full": "Deep Essence of the Breathtaker",
@@ -905,7 +905,7 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": false,
-      "code": "kl"
+      "code": "-"
     },
     "Deep Essence of the Bloodsucker": {
       "full": "Deep Essence of the Bloodsucker",
@@ -915,7 +915,7 @@
       "fragment": "transcendence",
       "weight": 10,
       "drsAction": false,
-      "code": "km"
+      "code": "æ"
     },
     "Deep Essence of the Beast": {
       "full": "Deep Essence of the Beast",
@@ -925,7 +925,7 @@
       "fragment": "transcendence",
       "weight": 10,
       "drsAction": false,
-      "code": "kn"
+      "code": "+"
     },
     "Deep Essence of the Templar": {
       "full": "Deep Essence of the Templar",
@@ -935,7 +935,7 @@
       "fragment": "transcendence",
       "weight": 10,
       "drsAction": true,
-      "code": "ko"
+      "code": "9"
     },
     "Pure Essence of the Gambler": {
       "full": "Pure Essence of the Gambler",
@@ -945,7 +945,7 @@
       "fragment": "deception",
       "weight": 12,
       "drsAction": false,
-      "code": "pa"
+      "code": "F"
     },
     "Pure Essence of the Elder": {
       "full": "Pure Essence of the Elder",
@@ -955,7 +955,7 @@
       "fragment": "clarity",
       "weight": 12,
       "drsAction": true,
-      "code": "pb"
+      "code": "A"
     },
     "Pure Essence of the Duelist": {
       "full": "Pure Essence of the Duelist",
@@ -965,7 +965,7 @@
       "fragment": "contention",
       "weight": 12,
       "drsAction": true,
-      "code": "pc"
+      "code": "B"
     },
     "Pure Essence of the Fiendhunter": {
       "full": "Pure Essence of the Fiendhunter",
@@ -975,7 +975,7 @@
       "fragment": "finesse",
       "weight": 12,
       "drsAction": true,
-      "code": "pd"
+      "code": "C"
     },
     "Pure Essence of the Indomitable": {
       "full": "Pure Essence of the Indomitable",
@@ -985,7 +985,7 @@
       "fragment": "fortitude",
       "weight": 12,
       "drsAction": true,
-      "code": "pe"
+      "code": "D"
     },
     "Pure Essence of the Divine": {
       "full": "Pure Essence of the Divine",
@@ -995,7 +995,7 @@
       "fragment": "divinity",
       "weight": 12,
       "drsAction": true,
-      "code": "pf"
+      "code": "E"
     }
   }
 }

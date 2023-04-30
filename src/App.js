@@ -41,9 +41,10 @@ const WrappedMainComponent = props => {
         holster={
           {
             name: params.holstername,
-            type: params.holstertype
+            type: params.holstertype,
           }
         }
+        encodedHolster={ params.holsterstring }
       />
     );
   } else if (props.page === 'bozjalostaction') {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
     path: '/drs/holster',
     element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page='drsholster' />,
     children: [
+      {
+        path: '/drs/holster/c/:holsterstring',
+        element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page='drsholster' />,
+      },
       {
         path: '/drs/holster/:holstertype/:holstername',
         element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page='drsholster' />,

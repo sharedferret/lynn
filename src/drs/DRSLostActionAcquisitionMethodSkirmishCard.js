@@ -12,7 +12,7 @@ class DRSLostActionAcquisitionMethodSkirmishCard extends Component {
     }
 
     return (
-      <Card sx={{ minWidth: 275 }}>
+      <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
           <Stack direction={ 'row' } alignItems={'center'} spacing={2}>
             <img src={`${process.env.PUBLIC_URL}/assets/icons/Bozja_Skirmish.png`} width={36} height={36} alt={'Kill Mobs'} />

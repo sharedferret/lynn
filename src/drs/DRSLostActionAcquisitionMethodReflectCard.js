@@ -12,7 +12,7 @@ class DRSLostActionAcquisitionMethodReflectCard extends Component {
     }
 
     return (
-      <Card sx={{ minWidth: 275 }}>
+      <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
           <Stack direction={ 'row' } alignItems={'center'} spacing={2}>
             <img src={`${process.env.PUBLIC_URL}/assets/lostactions/Lost_Reflect.jpg`} width={36} height={36} alt={'Kill Mobs'} />
@@ -29,9 +29,10 @@ class DRSLostActionAcquisitionMethodReflectCard extends Component {
           { this.props.methodData.mobs.map(i => {
             return (
               <Stack key={'reflect-' + i.mob}>
-                <Stack direction={ 'row' } alignItems={ 'center' } spacing={ 2 }>
-                  <img src={`${process.env.PUBLIC_URL}/assets/icons/${ i.icon }`} width={24} height={24} alt={'Kill Mobs'} />
-                  <Typography>{ i.mob } (Rank { i.rank })</Typography>
+                <Stack direction={ 'row' } alignItems={ 'center' } spacing={ 1 }>
+                  <img src={`${process.env.PUBLIC_URL}/assets/icons/${ i.icon }`} width={24} height={24} alt={'Sprite Type'} />
+                  <img src={`${process.env.PUBLIC_URL}/assets/icons/rank${ i.rank }.png`} width={24} height={24} alt={'Rank'} />
+                  <Typography>{ i.mob }</Typography>
                 </Stack>
                 <Stack direction={ 'row' } alignItems={ 'center' }>
                   <Box width={ 48 } />

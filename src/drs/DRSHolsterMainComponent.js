@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
-import { Avatar, Box, Button, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Button, Stack, TextField, Typography } from '@mui/material';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import DRSHolsterContainerComponent from './DRSHolsterContainerComponent';
 import DRSHolsterActionAcquisitionGuideComponent from './DRSHolsterActionAcquisitionGuideComponent';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import LinkIcon from '@mui/icons-material/Link';
+import { DefaultCopyField } from '@eisberg-labs/mui-copy-field';
 
 class DRSHolsterMainComponent extends Component {
   constructor(props) {
@@ -28,12 +30,28 @@ class DRSHolsterMainComponent extends Component {
           holsterMain: holsterData.main
         }
       }
+    } else if (props.encodedHolster !== undefined) {
+      const holsters = DRSHolsterHelper.decodeHolster(props.encodedHolster);
+      this.state = {
+        holsterName: 'Custom',
+        holsterType: 'custom',
+        holsterFriendlyType: 'Custom',
+        holsterMetadata: {
+          name: null,
+          role: null,
+          assignments: null,
+          explanation: ""
+        },
+        holsterPrepop: holsters.prepop,
+        holsterMain: holsters.main
+      }
     }
     
     
     this.handleHolsterUpdate = this.handleHolsterUpdate.bind(this);
     this.renderHolsterSelectionPage = this.renderHolsterSelectionPage.bind(this);
     this.resetHolsterPage = this.resetHolsterPage.bind(this);
+    this.generatePermalink = this.generatePermalink.bind(this);
   }
 
   handleHolsterUpdate(data, bagType) {
@@ -58,6 +76,13 @@ class DRSHolsterMainComponent extends Component {
     });
 
     // TODO: Navigate to /drs/holster
+  }
+
+  generatePermalink() {
+    const encodedHolsters = DRSHolsterHelper.encodeHolster(this.state.holsterPrepop, this.state.holsterMain);
+    this.setState({
+      generatedLink: 'https://lynn.pet/drs/holster/c/' + encodedHolsters
+    })
   }
 
   renderHolsterSelectionPage() {
@@ -105,7 +130,11 @@ class DRSHolsterMainComponent extends Component {
       <Box maxWidth={1000}>
         <Stack spacing={2} minHeight={100} p={1}>
           <Typography fontWeight={700} variant={'h4'}>DRS Holster - { this.state.holsterFriendlyType }</Typography>
-          <Typography fontWeight={700} variant={'h4'}>Role: {this.state.holsterMetadata.name}</Typography>
+          {
+            this.state.holsterMetadata.name !== null
+            ? <Typography fontWeight={700} variant={'h4'}>Role: {this.state.holsterMetadata.name}</Typography>
+            : null
+          }
           <Typography align='left' p={2} style={{'whiteSpace': 'pre-line'}}>{ this.state.holsterMetadata.explanation }</Typography>
           <DRSHolsterContainerComponent
             name={this.state.holsterName}
@@ -114,7 +143,7 @@ class DRSHolsterMainComponent extends Component {
             holsterMain={this.state.holsterMain}
             handleHolsterUpdate={this.handleHolsterUpdate}
           />
-          <Stack direction={'row'}>
+          <Stack direction={'row'} alignItems={'center'} height={60}>
             <Box width={200}>
               <Button
                 variant="outlined"
@@ -125,7 +154,28 @@ class DRSHolsterMainComponent extends Component {
                 Start Over
               </Button>
             </Box>
-            <Typography variant='caption' width={650} alignSelf={'center'}>Note: These holsters were created for Lynn Kaneko's DRS runs on The Help Lines. If you're running with a different group, your holsters may vary. Check with your raid lead to see what you need to bring.</Typography>
+            <Box width={200}>
+              <Button
+                variant="outlined"
+                size="large"
+                startIcon={<LinkIcon />}
+                onClick={ this.generatePermalink }
+              >
+                Create Link
+              </Button>
+            </Box>
+            {
+              (this.state.holsterType === 'learning' || this.state.holsterType === 'lynn-reclear') && !this.state.generatedLink
+                ? <Typography variant='caption' width={650} alignSelf={'center'}>Note: These holsters were created for Lynn Kaneko's DRS runs on The Help Lines. If you're running with a different group, your holsters may vary. Check with your raid lead to see what you need to bring.</Typography>
+                : null
+            }
+            {
+              this.state.generatedLink
+                ? <Box width={650} alignSelf={'center'}>
+                    <DefaultCopyField fullWidth value={ this.state.generatedLink } /> 
+                  </Box> 
+                : null
+            }
           </Stack>
           <Box height={40} />
           <DRSHolsterActionAcquisitionGuideComponent neededActions={ DRSHolsterHelper.getNeededActionsForBag(this.state.holsterPrepop, this.state.holsterMain, 3) } />

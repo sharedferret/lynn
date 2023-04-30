@@ -60,6 +60,7 @@ class MainComponent extends Component {
               forecastFilter: this.state.forecastFilter,
               type: this.props.type,
               holster: this.props.holster,
+              encodedHolster: this.props.encodedHolster,
               lostAction: this.props.lostAction
             })}
           </Box>

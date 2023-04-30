@@ -69,7 +69,7 @@ class DRSBagLostActionComponent extends Component {
             <TextField
               type='number'
               InputProps={{
-                inputProps: { min: 1 }
+                inputProps: { min: 1, max: 35 }
               }}
               value={this.props.actionQuantity}
               size='small'

@@ -34,12 +34,12 @@ function SidebarComponent(props) {
     <List className="flex flex-col py-4 overflow-x-hidden">
       <li className="flex flex-row items-center h-12">
         <Box className="h-6 w-6"></Box>
-        <span className="text-md uppercase font-semibold text-white">Baldesion Arsenal</span>
+        <span className="text-md uppercase font-semibold text-white">Eureka and BA</span>
       </li>
       <li>
         <div onClick={(e) => { handleSidebarClick(e, 'ba') }} style={{cursor: 'pointer'}} className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
           <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i className="bx bx-home"></i></span>
-          <span className="text-md font-medium">Logos Action Helper</span>
+          <span className="text-md font-medium">BA Loadouts</span>
         </div>
       </li>
       <li>

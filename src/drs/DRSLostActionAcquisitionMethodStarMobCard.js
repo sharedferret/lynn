@@ -12,10 +12,10 @@ class DRSLostActionAcquisitionMethodStarMobCard extends Component {
     }
 
     return (
-      <Card sx={{ minWidth: 275 }}>
+      <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
           <Stack direction={ 'row' } alignItems={'center'} spacing={2}>
-            <img src={`${process.env.PUBLIC_URL}/assets/lostactions/Ranged.jpg`} width={36} height={36} alt={'Kill Mobs'} />
+            <img src={`${process.env.PUBLIC_URL}/assets/icons/staricon.png`} width={36} height={36} alt={'Kill Star Mobs'} />
             <Typography variant='h5'>Kill Star Mobs</Typography>
           </Stack>
           <Box py={1}>
@@ -28,7 +28,7 @@ class DRSLostActionAcquisitionMethodStarMobCard extends Component {
           </Box>
           { this.props.methodData.mobs.map(i => {
             return <Stack direction={ 'row' } alignItems={ 'center' } spacing={ 2 } key={'starmob-' + i}>
-              <Box width={ 24 } />
+              <img src={`${process.env.PUBLIC_URL}/assets/icons/rankstar.png`} width={24} height={24} alt={'Earth Sprite'} />
               <Typography>{ i }</Typography>
             </Stack>
           })}
