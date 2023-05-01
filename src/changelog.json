@@ -1,6 +1,23 @@
 {
   "changes": [
     {
+      "version": "18.0",
+      "timestamp": "2023-11-17",
+      "changes": [
+        "Added time/weather widget"
+      ]
+    },
+    {
+      "version": "17.0",
+      "timestamp": "2023-11-17",
+      "changes": [
+        "Added Settings panel",
+        "Added sticky day/night mode selector",
+        "Added Universalis region selector",
+        "Added Eorzea Time tooltips to weather icons in Forecast results"
+      ]
+    },
+    {
       "version": "16.0",
       "timestamp": "2023-11-16",
       "changes": [

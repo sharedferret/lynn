@@ -1,6 +1,6 @@
 import './App.css';
 import { Helmet } from 'react-helmet';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {
@@ -193,13 +193,45 @@ const router = createBrowserRouter([
   },
 ]);
 
+function setupLocalStorage() {
+  useEffect(() => {
+    const existingThemePref = localStorage.getItem('theme');
+    if (!existingThemePref) {
+      const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+      localStorage.setItem('theme', darkThemeMq.matches ? 'system' : 'light');
+    }
+
+    const existingUniversalisServerPref = localStorage.getItem('universalisServer');
+    if (!existingUniversalisServerPref) {
+      localStorage.setItem('universalisServer', 'North America');
+    }
+  });
+}
+
 function App() {
-  const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
-  const [mode, setMode] = React.useState(darkThemeMq.matches ? 'dark' : 'light');
+  setupLocalStorage();
+
+  let modeToSet = localStorage.getItem('theme') ?? 'light';
+  if (localStorage.getItem('theme') === 'system') {
+    const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+    modeToSet = darkThemeMq.matches ? 'dark' : 'light';
+  }
+
+  const [mode, setMode] = React.useState(modeToSet);
+
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
+        localStorage.setItem('theme', mode === 'light' ? 'dark' : 'light');
         setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+      },
+      setColorMode: (newMode) => {
+        if (newMode === 'system') {
+          const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+          setMode(darkThemeMq.matches ? 'dark' : 'light');
+        } else {
+          setMode(newMode);
+        }
       },
     }),
     [],

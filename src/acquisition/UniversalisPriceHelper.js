@@ -12,6 +12,13 @@ class UniversalisPriceHelper {
       throw new Error('Duplicate UniversalisPriceHelper object');
     }
     this.priceData = {};
+    let preferredServer = localStorage.getItem('universalisServer');
+    if (preferredServer) {
+      preferredServer = preferredServer.replaceAll(' ', '-');
+    } else {
+      preferredServer = 'North-America';
+    }
+    this.server = preferredServer;
     instance = this;
   }
 
@@ -39,7 +46,7 @@ class UniversalisPriceHelper {
     }, []);
 
     if (idsToFetch.length > 0) {
-      axios.get(`https://universalis.app/api/v2/North-America/${idsToFetch.join(',')}?listings=3`)
+      axios.get(`https://universalis.app/api/v2/${this.server}/${idsToFetch.join(',')}?listings=3`)
         .then((response) => {
           if (response.data.itemID) {
             const id = response.data.itemID;
@@ -69,7 +76,7 @@ class UniversalisPriceHelper {
 
           updateGuideState(this.getPriceData());
         }, (error) => {
-          console.log(error);
+          console.error(error);
         });
     }
   }

@@ -52,6 +52,11 @@ export default function ActionAcquisitionMethodPurchaseCard({ priceData, fragmen
           <Divider variant="middle" />
         </Box>
         <Typography>
+          Location:
+          {' '}
+          {localStorage.getItem('universalisServer')}
+        </Typography>
+        <Typography>
           Average:
           {' '}
           {priceData.averagePrice.toLocaleString('en-us')}

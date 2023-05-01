@@ -190,6 +190,10 @@ class UpcomingSpawnCalculator {
 
     return results.slice(0, maxResults);
   }
+
+  static getUpcomingWeather(segments, startTime, region) {
+    return calculateWeatherForTimePeriod(segments, startTime, region);
+  }
 }
 
 export default UpcomingSpawnCalculator;

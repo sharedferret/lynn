@@ -22,6 +22,8 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ResultsFilter from './forecast/lib/ResultsFilter';
+import SettingsPopoverComponent from './SettingsPopoverComponent';
+import TimeAndWeatherPopoverComponent from './TimeAndWeatherPopoverComponent';
 
 function SidebarComponent({
   page,
@@ -48,7 +50,6 @@ function SidebarComponent({
 
   const handleDarkModeClick = useCallback((event, colorMode) => {
     colorMode.toggleColorMode();
-    handleSidebarClick();
   }, [handleSidebarClick]);
 
   const StyledButton = styled(ListItemButton)({
@@ -459,17 +460,13 @@ function SidebarComponent({
           <Box>
             <Stack width="100%" height="100%">
               <Divider variant="middle" light sx={{ bgcolor: '#999', mt: 1 }} />
-              <Stack direction="row" flexGrow={1}>
-                <Box flexGrow={1} />
-                <IconButton
-                  sx={{ m: 1 }}
-                  onClick={(e) => handleDarkModeClick(e, colorMode)}
-                  color="inherit"
-                >
-                  {theme.palette.mode === 'dark'
-                    ? <Brightness7Icon sx={{ color: 'white' }} />
-                    : <Brightness4Icon sx={{ color: 'white' }} />}
-                </IconButton>
+              <Stack direction="row" alignItems="center">
+                <Box flexGrow={1}>
+                  <SettingsPopoverComponent setColorMode={colorMode.setColorMode} />
+                </Box>
+                <Box>
+                  <TimeAndWeatherPopoverComponent />
+                </Box>
               </Stack>
             </Stack>
           </Box>
