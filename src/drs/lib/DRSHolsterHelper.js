@@ -103,10 +103,17 @@ class DRSHolsterHelper {
   }
 
   static getDecodedQuantity(encodedQuantity) {
-    return parseInt(encodedQuantity, 36);
+    const decodedQuantity = parseInt(encodedQuantity, 36);
+    if (!decodedQuantity || decodedQuantity < 0 || decodedQuantity > 35) {
+      return 1;
+    }
+    return decodedQuantity;
   }
 
   static encodeQuantity(quantity) {
+    if (!quantity || quantity < 0 || quantity > 35) {
+      return 1;
+    }
     return quantity.toString(36);
   }
 
@@ -115,7 +122,10 @@ class DRSHolsterHelper {
 
     for (let i = 0; i < prepopBag.length; i++) {
       if (prepopBag[i].name !== '') {
-        holsterComponents.push(this.getCodeForLostAction(prepopBag[i].name) + '' + this.encodeQuantity(prepopBag[i].quantity)); 
+        const code = this.getCodeForLostAction(prepopBag[i].name);
+        if (code) {
+          holsterComponents.push(this.getCodeForLostAction(prepopBag[i].name) + '' + this.encodeQuantity(prepopBag[i].quantity));
+        }
       }
       
     }
@@ -124,7 +134,10 @@ class DRSHolsterHelper {
 
     for (let i = 0; i < mainBag.length; i++) {
       if (mainBag[i].name !== '') {
-        holsterComponents.push(this.getCodeForLostAction(mainBag[i].name) + '' + this.encodeQuantity(mainBag[i].quantity)); 
+        const code = this.getCodeForLostAction(mainBag[i].name);
+        if (code) {
+          holsterComponents.push(this.getCodeForLostAction(mainBag[i].name) + '' + this.encodeQuantity(mainBag[i].quantity)); 
+        }
       }
       
     }
@@ -139,28 +152,37 @@ class DRSHolsterHelper {
     const encodedBags = encodedHolster.split(',');
 
     const encodedPrepopBag = encodedBags[0];
-    const prepopBagActions = encodedPrepopBag.match(/.{1,2}/g);
+    const prepopBagActions = encodedPrepopBag.match(/.{1,2}/g) ?? [];
     const prepopHolster = [];
 
     for (let i = 0; i < prepopBagActions.length; i++) {
       const encodedAction = prepopBagActions[i];
-      prepopHolster.push({
-          name: this.getLostActionFromCode(encodedAction[0]),
-          quantity: this.getDecodedQuantity(encodedAction[1])
-        })
+      if (encodedAction.length === 2) {
+        const name = this.getLostActionFromCode(encodedAction[0]);
+        if (name) {
+          prepopHolster.push({
+            name: name,
+            quantity: this.getDecodedQuantity(encodedAction[1])
+          });
+        }
+        
+      }
     }
 
-    const encodedMainBag = encodedBags[1];
-    const mainBagActions = encodedMainBag.match(/.{1,2}/g);
+    const encodedMainBag = encodedBags[1] ?? '';
+    const mainBagActions = encodedMainBag.match(/.{1,2}/g) ?? [];
     const mainHolster = [];
 
     for (let i = 0; i < mainBagActions.length; i++) {
       const encodedAction = mainBagActions[i];
       if (encodedAction.length === 2) {
-        mainHolster.push({
-          name: this.getLostActionFromCode(encodedAction[0]),
-          quantity: this.getDecodedQuantity(encodedAction[1])
-        })
+        const name = this.getLostActionFromCode(encodedAction[0]);
+        if (name) {
+          mainHolster.push({
+            name: name,
+            quantity: this.getDecodedQuantity(encodedAction[1])
+          })
+        }
       }
       
     }

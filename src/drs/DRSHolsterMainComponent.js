@@ -27,7 +27,8 @@ class DRSHolsterMainComponent extends Component {
             explanation: holsterData.explanation
           },
           holsterPrepop: holsterData.pre,
-          holsterMain: holsterData.main
+          holsterMain: holsterData.main,
+          hideStartOverButton: false
         }
       }
     } else if (props.encodedHolster !== undefined) {
@@ -43,8 +44,24 @@ class DRSHolsterMainComponent extends Component {
           explanation: ""
         },
         holsterPrepop: holsters.prepop,
-        holsterMain: holsters.main
+        holsterMain: holsters.main,
+        hideStartOverButton: true
       }
+    } else if (window.location.pathname === '/drs/holster/c') {
+      this.state = {
+        holsterName: 'Custom',
+        holsterType: 'custom',
+        holsterFriendlyType: 'Custom',
+        holsterMetadata: {
+          name: null,
+          role: null,
+          assignments: null,
+          explanation: ""
+        },
+        holsterPrepop: [],
+        holsterMain: [],
+        hideStartOverButton: true
+      };
     }
     
     
@@ -144,16 +161,20 @@ class DRSHolsterMainComponent extends Component {
             handleHolsterUpdate={this.handleHolsterUpdate}
           />
           <Stack direction={'row'} alignItems={'center'} height={60}>
-            <Box width={200}>
-              <Button
-                variant="outlined"
-                size="large"
-                startIcon={<ArrowBackIosNewIcon />}
-                onClick={ this.resetHolsterPage }
-              >
-                Start Over
-              </Button>
-            </Box>
+            {
+              this.state.hideStartOverButton
+                ? null
+                : <Box width={200}>
+                    <Button
+                      variant="outlined"
+                      size="large"
+                      startIcon={<ArrowBackIosNewIcon />}
+                      onClick={ this.resetHolsterPage }
+                    >
+                      Start Over
+                    </Button>
+                  </Box>
+            }
             <Box width={200}>
               <Button
                 variant="outlined"

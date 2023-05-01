@@ -19,6 +19,8 @@ import ResultsFilter from './forecast/lib/ResultsFilter';
 import LynnReferenceComponent from './reference/LynnReferenceComponent';
 import DRSHolsterMainComponent from './drs/DRSHolsterMainComponent';
 import BozjaLostActionHelperComponent from './drs/BozjaLostActionHelperComponent';
+import EurekaLoadoutMainComponent from './eureka/EurekaLoadoutMainComponent';
+import EurekaLogosActionMainComponent from './eureka/EurekaLogosActionMainComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => {}})
 
@@ -78,9 +80,21 @@ const router = createBrowserRouter([
     element: <WrappedMainComponent component={<BAMainComponent />} page='ba' />,
   },
   {
+    path: '/eureka/loadout',
+    element: <WrappedMainComponent component={<EurekaLoadoutMainComponent />} page='eurekaloadout' />,
+  },
+  {
+    path: '/eureka/logos',
+    element: <WrappedMainComponent component={<EurekaLogosActionMainComponent />} page='eurekalogosaction' />,
+  },
+  {
     path: '/drs/holster',
     element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page='drsholster' />,
     children: [
+      {
+        path: '/drs/holster/c',
+        element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page='drsholster' />,
+      },
       {
         path: '/drs/holster/c/:holsterstring',
         element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page='drsholster' />,

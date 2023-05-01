@@ -17,17 +17,29 @@ class BALogosHolsterComponent extends Component {
   constructor(props) {
     super(props);
 
-    const plates = this.props.tray.plates.map((i, index) => {
-      return {
-        index: index,
-        umbral: i.umbral,
-        astral: i.astral
+    if (this.props.tray === undefined) {
+      this.state = {
+        plates: [
+          {
+            index: 0,
+            umbral: '',
+            astral: ''
+          }
+        ]
       }
-    });
-    this.state = {
-      plates: plates
+    } else {
+      const plates = this.props.tray.plates.map((i, index) => {
+        return {
+          index: index,
+          umbral: i.umbral,
+          astral: i.astral
+        }
+      });
+      this.state = {
+        plates: plates
+      }
     }
-
+  
     this.handleLogosActionUpdate = this.handleLogosActionUpdate.bind(this);
   }
 
@@ -82,7 +94,7 @@ class BALogosHolsterComponent extends Component {
         <Paper variant='outlined' className='BALogosHolsterPaper'>
         <Stack spacing={2} minHeight={100} p={1}>
           {this.state.plates.map((i, index) => <BALogosActionTrayComponent tray={i} index={index} handleLogosActionUpdate={this.handleLogosActionUpdate} key={'tray-' + index} />)}
-          {this.state.plates.length < 7 ? this.renderAddPlateButton() : null}
+          {this.state.plates.length < 8 ? this.renderAddPlateButton() : null}
         </Stack>
       </Paper>
       </Box>
