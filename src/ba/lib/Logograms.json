@@ -140,5 +140,456 @@
       "logogram": "obscure",
       "type": "tactical"
     }
+  },
+  "logograms": {
+    "conceptual": {
+      "name": "Conceptual Logogram",
+      "short": "conceptual",
+      "contents": [
+        "Wisdom of the Aetherweaver",
+        "Wisdom of the Martialist",
+        "Wisdom of the Platebearer",
+        "Incense L",
+        "Cure L",
+        "Backstep L",
+        "Paralyze L"
+      ],
+      "acquisition": [
+        {
+          "method": "bunny_fate",
+          "map": "Pyros",
+          "coffer_rarity": "bronze"
+        },
+        {
+          "method": "mob",
+          "map": "Pyros",
+          "mobs": [
+            {
+              "mob": "Ember Sprite",
+              "level": 53,
+              "weather": "Heat Waves",
+              "adaptation": false
+            }
+          ]
+        },
+        {
+          "method": "reflect",
+          "map": "Hydatos",
+          "mobs": [
+            {
+              "mob": "Snowmelt Sprite",
+              "level": 65,
+              "weather": "Showers"
+            },
+            {
+              "mob": "Thunderstorm Sprite",
+              "level": 65,
+              "weather": "Thunderstorms"
+            }
+          ]
+        }
+      ]
+    },
+    "fundamental": {
+      "name": "Fundamental Logogram",
+      "short": "fundamental",
+      "contents": [
+        "Esuna L",
+        "Raise L",
+        "Feint L",
+        "Tranquilizer L",
+        "Protect L"
+      ],
+      "acquisition": [
+        {
+          "method": "bunny_fate",
+          "map": "Pyros",
+          "coffer_rarity": "bronze"
+        },
+        {
+          "method": "mob",
+          "map": "Pyros",
+          "mobs": [
+            {
+              "mob": "Thunderstorm Sprite",
+              "level": 41,
+              "weather": "Thunderstorms"
+            }
+          ]
+        },
+        {
+          "method": "30_chain",
+          "map": "Pyros"
+        },
+        {
+          "method": "reflect",
+          "map": "Hydatos",
+          "mobs": [
+            {
+              "mob": "Blizzard Sprite",
+              "level": 65,
+              "weather": "Snow"
+            },
+            {
+              "mob": "Death Sprite",
+              "level": 65,
+              "weather": "Gloom"
+            }
+          ]
+        }
+      ]
+    },
+    "offensive": {
+      "name": "Offensive Logogram",
+      "short": "offensive",
+      "contents": [
+        "Wisdom of the Skirmisher",
+        "Bloodbath L"
+      ],
+      "acquisition": [
+        {
+          "method": "bunny_fate",
+          "map": "Pyros",
+          "coffer_rarity": "gold"
+        },
+        {
+          "method": "bunny_fate",
+          "map": "Hydatos",
+          "coffer_rarity": "gold"
+        },
+        {
+          "method": "mob",
+          "map": "Hydatos",
+          "mobs": [
+            {
+              "mob": "Snowstorm Sprite",
+              "level": 64,
+              "weather": "Snow"
+            }
+          ]
+        }
+      ]
+    },
+    "protective": {
+      "name": "Protective Logogram",
+      "short": "protective",
+      "contents": [
+        "Wisdom of the Guardian",
+        "Spirit of the Remembered"
+      ],
+      "acquisition": [
+        {
+          "method": "bunny_fate",
+          "map": "Pyros",
+          "coffer_rarity": "gold"
+        },
+        {
+          "method": "nm",
+          "map": "Pyros",
+          "fates": [
+            {
+              "name": "High Voltage",
+              "mob": "Flauros",
+              "level": 36,
+              "element": "lightning",
+              "spawned_by": "Thunderstorm Sprite",
+              "weather": "Thunderstorms"
+            },
+            {
+              "name": "Quiet, Please",
+              "mob": "Askalaphos",
+              "level": 39,
+              "element": "wind",
+              "spawned_by": "Overdue Tome",
+              "weather": "Umbral Wind"
+            },
+            {
+              "name": "Scorchpion King",
+              "mob": "Lesath",
+              "level": 42,
+              "element": "fire",
+              "spawned_by": "Bird Eater"
+            },
+            {
+              "name": "Thirty Whacks",
+              "mob": "Lamebrix Strikebocks",
+              "level": 45,
+              "element": "earth",
+              "spawned_by": "Illuminati Escapee"
+            },
+            {
+              "name": "Mister Bright-eyes",
+              "mob": "Glaukopis",
+              "level": 48,
+              "element": "fire",
+              "spawned_by": "Val Skatene"
+            },
+            {
+              "name": "Heavens' Warg",
+              "mob": "Skoll",
+              "level": 50,
+              "element": "ice",
+              "spawned_by": "Pyros Shuck",
+              "weather": "Blizzards"
+            }
+          ]
+        }
+      ]
+    },
+    "curative": {
+      "name": "Curative Logogram",
+      "short": "curative",
+      "contents": [
+        "Wisdom of the Ordained",
+        "Cure L II"
+      ],
+      "acquisition": [
+        {
+          "method": "bunny_fate",
+          "map": "Pyros",
+          "coffer_rarity": "silver"
+        },
+        {
+          "method": "nm",
+          "map": "Pyros",
+          "fates": [
+            {
+              "name": "Medias Res",
+              "mob": "Leucosia",
+              "level": 35,
+              "element": "water",
+              "spawned_by": "Pyros Bhoot"
+            },
+            {
+              "name": "Creepy Doll",
+              "mob": "Graffiacane",
+              "level": 38,
+              "element": "ice",
+              "spawned_by": "Valking"
+            },
+            {
+              "name": "Rondo Aetolus",
+              "mob": "Aetolus",
+              "level": 41,
+              "element": "lightning",
+              "spawned_by": "Islandhander"
+            },
+            {
+              "name": "Dry Iris",
+              "mob": "Iris",
+              "level": 44,
+              "element": "water",
+              "spawned_by": "Northern Swallow"
+            },
+            {
+              "name": "You Do Know Jack",
+              "mob": "Lumber Jack",
+              "level": 47,
+              "element": "earth",
+              "spawned_by": "Pyros Treant"
+            },
+            {
+              "name": "Lost Epic",
+              "mob": "Penthesilea",
+              "level": 50,
+              "element": "fire",
+              "spawned_by": "Val Bloodglider",
+              "weather": "Heat Waves"
+            }
+          ]
+        }
+      ]
+    },
+    "tactical": {
+      "name": "Tactical Logogram",
+      "short": "tactical",
+      "contents": [
+        "Featherfoot L",
+        "Stealth L"
+      ],
+      "acquisition": [
+        {
+          "method": "box_farm",
+          "map": "Pyros",
+          "item": "Heat-warped Lockbox"
+        },
+        {
+          "method": "box_farm",
+          "map": "Hydatos",
+          "item": "Moisture-warped Lockbox"
+        }
+      ]
+    },
+    "inimical": {
+      "name": "Inimical Logogram",
+      "short": "inimical",
+      "contents": [
+        "Spirit Dart L",
+        "Dispel L"
+      ],
+      "acquisition": [
+        {
+          "method": "mob",
+          "map": "Pyros",
+          "mobs": [
+            {
+              "mob": "Snowstorm Sprite",
+              "level": 52,
+              "weather": "Snow"
+            },
+            {
+              "mob": "Snowstorm Sprite",
+              "level": 52,
+              "weather": "Blizzards"
+            },
+            {
+              "mob": "Thunderstorm Sprite",
+              "level": 54,
+              "weather": "Thunderstorms"
+            },
+            {
+              "mob": "Typhoon Sprite",
+              "level": 55,
+              "weather": "Umbral Wind"
+            }
+          ]
+        },
+        {
+          "method": "nm",
+          "map": "Pyros",
+          "fates": [
+            {
+              "name": "On the Non-existent",
+              "mob": "The Sophist",
+              "level": 37,
+              "element": "wind",
+              "spawned_by": "Pyros Apanda"
+            },
+            {
+              "name": "Up and Batym",
+              "mob": "Grand Duke Batym",
+              "level": 40,
+              "element": "earth",
+              "spawned_by": "Dark Troubadour"
+            },
+            {
+              "name": "Burning Hunger",
+              "mob": "Eldthurs",
+              "level": 43,
+              "element": "fire",
+              "spawned_by": "Pyros Crab"
+            },
+            {
+              "name": "Uncommon Nonsense",
+              "mob": "Bunny FATE",
+              "level": 46,
+              "element": "earth"
+            },
+            {
+              "name": "Haunter of the Dark",
+              "mob": "Ying-Yang",
+              "level": 49,
+              "element": "water",
+              "spawned_by": "Pyros Hecteyes"
+            }
+          ]
+        }
+      ]
+    },
+    "mitigative": {
+      "name": "Mitigative Logogram",
+      "short": "mitigative",
+      "contents": [
+        "Shell L",
+        "Stoneskin L"
+      ],
+      "acquisition": [
+        {
+          "method": "bunny_fate",
+          "map": "Pyros",
+          "coffer_rarity": "gold"
+        },
+        {
+          "method": "mob",
+          "map": "Pyros",
+          "mobs": [
+            {
+              "mob": "Thunderstorm Sprite",
+              "level": 46,
+              "weather": "Thunderstorms"
+            },
+            {
+              "mob": "Ember Sprite",
+              "level": 43,
+              "weather": "Heat Waves"
+            }
+          ]
+        }
+      ]
+    },
+    "obscure": {
+      "name": "Obscure Logogram",
+      "short": "obscure",
+      "contents": [
+        "Magic Burst L",
+        "Eagle Eye Shot L",
+        "Double Edge L",
+        "Wisdom of the Breathtaker"
+      ],
+      "acquisition": [
+        {
+          "method": "duty",
+          "map": "Hydatos",
+          "dutyName": "The Baldesion Arsenal"
+        },
+        {
+          "method": "nm",
+          "map": "Hydatos",
+          "fates": [
+            {
+              "name": "Fearful Symmetry",
+              "mob": "Frostmane",
+              "level": 54,
+              "element": "fire",
+              "spawned_by": "Northern Tiger"
+            },
+            {
+              "name": "From Tusk till Dawn",
+              "mob": "Stegodon",
+              "level": 51,
+              "element": "earth",
+              "spawned_by": "Hydatos Primelephas"
+            },
+            {
+              "name": "I Ink, Therefore I Am",
+              "mob": "Khalamari",
+              "level": 50,
+              "element": "water",
+              "spawned_by": "Xzomit"
+            },
+            {
+              "name": "I Don't Want to Believe",
+              "mob": "Ovni",
+              "level": 60,
+              "element": "water"
+            }
+          ]
+        },
+        {
+          "method": "mob",
+          "map": "Hydatos",
+          "mobs": [
+            {
+              "mob": "Crystal Claw",
+              "level": 65
+            }
+          ]
+        },
+        {
+          "method": "30_chain",
+          "map": "Hydatos"
+        }
+      ]
+    }
   }
 }
