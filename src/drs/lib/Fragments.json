@@ -3,6 +3,7 @@
     "caution": {
       "name": "Forgotten Fragment of Caution",
       "short": "caution",
+      "id": 30884,
       "contents": [
         "Lost Manawall",
         "Lost Incense",
@@ -27,12 +28,16 @@
           "method": "cluster",
           "quantity": 5,
           "clusters": 1
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "preparation": {
       "name": "Forgotten Fragment of Preparation",
       "short": "preparation",
+      "id": 30885,
       "contents": [
         "Resistance Phoenix",
         "Resistance Potion"
@@ -69,12 +74,16 @@
             "None of Them Knew They Were Robots",
             "Unrest for the Wicked"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "skill": {
       "name": "Forgotten Fragment of Skill",
       "short": "skill",
+      "id": 30886,
       "contents": [
         "Essence of the Aetherweaver",
         "Essence of the Martialist",
@@ -106,12 +115,16 @@
             "Sneak & Spell",
             "The Beasts Must Die"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "ingenuity": {
       "name": "Forgotten Fragment of Ingenuity",
       "short": "ingenuity",
+      "id": 30887,
       "contents": [
         "Lost Spellforge",
         "Lost Steelsting",
@@ -135,12 +148,16 @@
           "method": "cluster",
           "quantity": 4,
           "clusters": 1
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "care": {
       "name": "Forgotten Fragment of Care",
       "short": "care",
+      "id": 30888,
       "contents": [
         "Resistance Reraiser",
         "Resistance Potion Kit",
@@ -185,12 +202,16 @@
             "Red (Chocobo) Alert",
             "Scavengers of Human Sorrow"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "awakening": {
       "name": "Forgotten Fragment of Awakening",
       "short": "awakening",
+      "id": 30889,
       "contents": [
         "Essence of the Guardian",
         "Essence of the Ordained",
@@ -227,12 +248,16 @@
             "The Monster Mash",
             "Unicorn Flakes"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "support": {
       "name": "Forgotten Fragment of Support",
       "short": "support",
+      "id": 30890,
       "contents": [
         "Lost Reflect",
         "Lost Stoneskin",
@@ -251,13 +276,16 @@
               "weather": "Wind"
             }
           ]
-          
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "violence": {
       "name": "Forgotten Fragment of Violence",
       "short": "violence",
+      "id": 30891,
       "contents": [
         "Lost Focus",
         "Lost Slash",
@@ -282,12 +310,16 @@
             "Bozjan Gravekeeper",
             "Bozjan Rider"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "resolve": {
       "name": "Forgotten Fragment of Resolve",
       "short": "resolve",
+      "id": 30892,
       "contents": [
         "Banner of Noble Ends",
         "Banner of Honored Sacrifice",
@@ -306,12 +338,16 @@
             "Trampled Under Hoof",
             "Where Strode the Behemoth"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "compassion": {
       "name": "Forgotten Fragment of Compassion",
       "short": "compassion",
+      "id": 30893,
       "contents": [
         "Lost Cure II",
         "Lost Cure IV",
@@ -349,12 +385,16 @@
             "The War Against the Machines",
             "Waste the Rainbow"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "superstition": {
       "name": "Forgotten Fragment of Superstition",
       "short": "superstition",
+      "id": 30894,
       "contents": [
         "Essence of the Bloodsucker",
         "Essence of the Beast",
@@ -364,12 +404,16 @@
         {
           "method": "duty",
           "dutyName": "Castrum Lacus Litore"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "mastery": {
       "name": "Forgotten Fragment of Mastery",
       "short": "mastery",
+      "id": 30895,
       "contents": [
         "Deep Essence of the Aetherweaver",
         "Deep Essence of the Martialist",
@@ -381,12 +425,16 @@
         {
           "method": "duty",
           "dutyName": "Castrum Lacus Litore"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "sagacity": {
       "name": "Forgotten Fragment of Sagacity",
       "short": "sagacity",
+      "id": 30896,
       "contents": [
         "Lost Font of Magic",
         "Lost Font of Power",
@@ -400,12 +448,16 @@
         {
           "method": "duty",
           "dutyName": "The Dalriada"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "becoming": {
       "name": "Forgotten Fragment of Becoming",
       "short": "becoming",
+      "id": 30897,
       "contents": [
         "Deep Essence of the Guardian",
         "Deep Essence of the Ordained",
@@ -423,12 +475,16 @@
         {
           "method": "duty",
           "dutyName": "The Dalriada"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "transcendence": {
       "name": "Forgotten Fragment of Transcendence",
       "short": "transcendence",
+      "id": 30898,
       "contents": [
         "Deep Essence of the Bloodsucker",
         "Deep Essence of the Beast",
@@ -438,12 +494,16 @@
         {
           "method": "duty",
           "dutyName": "Castrum Lacus Litore"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "caprice": {
       "name": "Forgotten Fragment of Caprice",
       "short": "caprice",
+      "id": 30899,
       "contents": [
         "Lost Fair Trade",
         "Mimic",
@@ -453,12 +513,16 @@
         {
           "method": "duty",
           "dutyName": "Castrum Lacus Litore"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "observation": {
       "name": "Forgotten Fragment of Observation",
       "short": "observation",
+      "id": 32162,
       "contents": [
         "Lost Perception"
       ],
@@ -475,12 +539,16 @@
         {
           "method": "duty",
           "dutyName": "Delubrum Reginae (Savage)"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "deception": {
       "name": "Forgotten Fragment of Deception",
       "short": "deception",
+      "id": 32163,
       "contents": [
         "Pure Essence of the Gambler"
       ],
@@ -488,12 +556,16 @@
         {
           "method": "duty",
           "dutyName": "Delubrum Reginae (Savage)"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "loss": {
       "name": "Forgotten Fragment of Loss",
       "short": "loss",
+      "id": 32164,
       "contents": [
         "Lost Sacrifice"
       ],
@@ -505,12 +577,16 @@
         {
           "method": "duty",
           "dutyName": "Delubrum Reginae (Savage)"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "clarity": {
       "name": "Forgotten Fragment of Clarity",
       "short": "clarity",
+      "id": 32165,
       "contents": [
         "Lost Flare Star",
         "Pure Essence of the Elder"
@@ -528,12 +604,16 @@
         {
           "method": "duty",
           "dutyName": "Delubrum Reginae (Savage)"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "contention": {
       "name": "Forgotten Fragment of Contention",
       "short": "contention",
+      "id": 32831,
       "contents": [
         "Lost Rend Armor",
         "Pure Essence of the Duelist"
@@ -551,12 +631,16 @@
         {
           "method": "duty",
           "dutyName": "Delubrum Reginae (Savage)"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "finesse": {
       "name": "Forgotten Fragment of Finesse",
       "short": "finesse",
+      "id": 32832,
       "contents": [
         "Lost Dervish",
         "Pure Essence of the Fiendhunter"
@@ -574,12 +658,16 @@
         {
           "method": "duty",
           "dutyName": "Delubrum Reginae (Savage)"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "fortitude": {
       "name": "Forgotten Fragment of Fortitude",
       "short": "fortitude",
+      "id": 32833,
       "contents": [
         "Lost Aethershield",
         "Pure Essence of the Indomitable"
@@ -597,12 +685,16 @@
         {
           "method": "duty",
           "dutyName": "Delubrum Reginae (Savage)"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "divinity": {
       "name": "Forgotten Fragment of Divinity",
       "short": "divinity",
+      "id": 32834,
       "contents": [
         "Lost Seraph Strike",
         "Pure Essence of the Divine"
@@ -620,12 +712,16 @@
         {
           "method": "duty",
           "dutyName": "Delubrum Reginae (Savage)"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "history": {
       "name": "Forgotten Fragment of History",
       "short": "history",
+      "id": 33768,
       "contents": [
         "Lodestone"
       ],
@@ -648,12 +744,16 @@
             "Another Pilot Episode",
             "Breaking the Ice"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "rage": {
       "name": "Forgotten Fragment of Rage",
       "short": "rage",
+      "id": 33769,
       "contents": [
         "Lost Stoneskin II",
         "Lost Burst"
@@ -668,12 +768,16 @@
             "Zadnor Dhalmel",
             "Zadnor Gaur"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "ferocity": {
       "name": "Forgotten Fragment of Ferocity",
       "short": "ferocity",
+      "id": 33770,
       "contents": [
         "Lost Stoneskin II",
         "Lost Rampage"
@@ -686,12 +790,16 @@
           "mobs": [
             "Zadnor Ziz"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "moonlight": {
       "name": "Forgotten Fragment of Moonlight",
       "short": "moonlight",
+      "id": 33771,
       "contents": [
         "Light Curtain"
       ],
@@ -703,12 +811,16 @@
           "mobs": [
             "Zadnor Crawler"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "hope": {
       "name": "Forgotten Fragment of Hope",
       "short": "hope",
+      "id": 33772,
       "contents": [
         "Lost Reraise"
       ],
@@ -717,12 +829,16 @@
           "method": "cluster",
           "quantity": 1,
           "clusters": 5
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "artistry": {
       "name": "Forgotten Fragment of Artistry",
       "short": "artistry",
+      "id": 33773,
       "contents": [
         "Lost Chainspell",
         "Lost Assassination"
@@ -756,12 +872,16 @@
             "Earth Eater",
             "Aglaophotis"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "desperation": {
       "name": "Forgotten Fragment of Desperation",
       "short": "desperation",
+      "id": 33774,
       "contents": [
         "Lost Protect II",
         "Lost Shell II"
@@ -776,12 +896,16 @@
             "Zadnor Wamouracampa",
             "Zadnor Yamaa"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "tenacity": {
       "name": "Forgotten Fragment of Tenacity",
       "short": "tenacity",
+      "id": 33775,
       "contents": [
         "Lost Bubble"
       ],
@@ -805,12 +929,16 @@
             "Looks to Die For",
             "Worn to a Shadow"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "inspiration": {
       "name": "Forgotten Fragment of Inspiration",
       "short": "inspiration",
+      "id": 33776,
       "contents": [
         "Lost Impetus"
       ],
@@ -824,12 +952,16 @@
             "Molten Scorpion",
             "Vapula"
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "heroism": {
       "name": "Forgotten Fragment of Heroism",
       "short": "heroism",
+      "id": 33777,
       "contents": [
         "Lost Excellence",
         "Resistance Elixir"
@@ -838,12 +970,16 @@
         {
           "method": "duty",
           "dutyName": "The Dalriada"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "revelation": {
       "name": "Forgotten Fragment of Revelation",
       "short": "revelation",
+      "id": 33778,
       "contents": [
         "Lost Full Cure",
         "Resistance Elixir"
@@ -852,12 +988,16 @@
         {
           "method": "duty",
           "dutyName": "The Dalriada"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "cunning": {
       "name": "Forgotten Fragment of Cunning",
       "short": "cunning",
+      "id": 33779,
       "contents": [
         "Lost Blood Rage",
         "Resistance Elixir"
@@ -866,6 +1006,9 @@
         {
           "method": "duty",
           "dutyName": "The Dalriada"
+        },
+        {
+          "method": "purchase"
         }
       ]
     }

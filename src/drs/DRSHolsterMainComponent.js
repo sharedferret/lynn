@@ -91,12 +91,10 @@ class DRSHolsterMainComponent extends Component {
       holsterPrepop: null,
       holsterMain: null
     });
-
-    // TODO: Navigate to /drs/holster
   }
 
   generatePermalink() {
-    const encodedHolsters = DRSHolsterHelper.encodeHolster(this.state.holsterPrepop, this.state.holsterMain);
+    const encodedHolsters = DRSHolsterHelper.encodeHolster(this.state.holsterPrepop, this.state.holsterMain).replaceAll('=', '');
     this.setState({
       generatedLink: 'https://lynn.pet/drs/holster/c/' + encodedHolsters
     })

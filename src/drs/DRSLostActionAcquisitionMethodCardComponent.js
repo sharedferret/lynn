@@ -9,27 +9,29 @@ import DRSLostActionAcquisitionMethodCECard from './DRSLostActionAcquisitionMeth
 import DRSLostActionAcquisitionMethodDutyCard from './DRSLostActionAcquisitionMethodDutyCard';
 
 import { Box } from '@mui/material';
+import DRSLostActionAcquisitionMethodPurchaseCard from './DRSLostActionAcquisitionMethodPurchaseCard';
 
 class DRSLostActionAcquisitionMethodCardComponent extends Component {
 
 
   render() {
-    const method = this.props.fragmentData.method;
-    switch(method) {
+    switch(this.props.methodData.method) {
       case 'star_mob':
-        return <DRSLostActionAcquisitionMethodStarMobCard methodData={ this.props.fragmentData } />
+        return <DRSLostActionAcquisitionMethodStarMobCard methodData={ this.props.methodData } />
       case 'cluster':
-        return <DRSLostActionAcquisitionMethodClusterCard methodData={ this.props.fragmentData } />
+        return <DRSLostActionAcquisitionMethodClusterCard methodData={ this.props.methodData } />
       case 'mob':
-        return <DRSLostActionAcquisitionMethodMobCard methodData={ this.props.fragmentData } />
+        return <DRSLostActionAcquisitionMethodMobCard methodData={ this.props.methodData } />
       case 'reflect':
-        return <DRSLostActionAcquisitionMethodReflectCard methodData={ this.props.fragmentData } fragmentName={ this.props.fragmentName } />
+        return <DRSLostActionAcquisitionMethodReflectCard methodData={ this.props.methodData } fragmentName={ this.props.fragmentName } />
       case 'skirmish':
-        return <DRSLostActionAcquisitionMethodSkirmishCard methodData={ this.props.fragmentData } />
+        return <DRSLostActionAcquisitionMethodSkirmishCard methodData={ this.props.methodData } />
       case 'ce':
-        return <DRSLostActionAcquisitionMethodCECard methodData={ this.props.fragmentData } />
+        return <DRSLostActionAcquisitionMethodCECard methodData={ this.props.methodData } />
       case 'duty':
-        return <DRSLostActionAcquisitionMethodDutyCard methodData={ this.props.fragmentData } />
+        return <DRSLostActionAcquisitionMethodDutyCard methodData={ this.props.methodData } />
+      case 'purchase':
+        return <DRSLostActionAcquisitionMethodPurchaseCard methodData={ this.props.methodData } fragmentId={ this.props.fragmentId } priceData={ this.props.priceData } />
       default:
         return <Box />;
     }

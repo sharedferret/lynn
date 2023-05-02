@@ -36,7 +36,7 @@ class DRSHolsterActionAcquisitionLostActionComponent extends Component {
           {
             fragmentData.acquisition.map(i => {
               return <Grid item>
-                <DRSLostActionAcquisitionMethodCardComponent fragmentData={ i } fragmentName={ fragmentData.short } priceData={ this.props.priceData } />
+                <DRSLostActionAcquisitionMethodCardComponent methodData={ i } fragmentId={ fragmentData.id } fragmentName={ fragmentData.short } priceData={ this.props.priceData } />
               </Grid>
             })
           }
