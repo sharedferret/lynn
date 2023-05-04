@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Box, Card, CardContent, Divider, Stack, Typography } from '@mui/material';
 
-class DRSLostActionAcquisitionMethodMobCard extends Component {
+class ActionAcquisitionMethodMobCard extends Component {
   render() {
     let map = '';
     if (this.props.methodData.map === 'bsf') {
@@ -38,4 +38,4 @@ class DRSLostActionAcquisitionMethodMobCard extends Component {
   }
 }
 
-export default DRSLostActionAcquisitionMethodMobCard;
+export default ActionAcquisitionMethodMobCard;

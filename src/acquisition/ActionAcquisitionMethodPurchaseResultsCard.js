@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Box, Button, Card, CardActions, CardContent, CircularProgress, Divider, Stack, Typography } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 
-class DRSLostActionAcquisitionMethodPurchaseResultsCard extends Component {
+class ActionAcquisitionMethodPurchaseResultsCard extends Component {
 
   render() {
     if (!this.props.priceData) {
@@ -63,4 +63,4 @@ class DRSLostActionAcquisitionMethodPurchaseResultsCard extends Component {
   }
 }
 
-export default DRSLostActionAcquisitionMethodPurchaseResultsCard;
+export default ActionAcquisitionMethodPurchaseResultsCard;

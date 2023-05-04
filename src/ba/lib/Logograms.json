@@ -169,6 +169,12 @@
               "level": 53,
               "weather": "Heat Waves",
               "adaptation": false
+            },
+            {
+              "mob": "Thunderstorm Sprite",
+              "level": 51,
+              "weather": "Thunder",
+              "adaptation": false
             }
           ]
         },
@@ -214,6 +220,14 @@
               "mob": "Thunderstorm Sprite",
               "level": 41,
               "weather": "Thunderstorms"
+            },
+            {
+              "mob": "Pyros Hecteyes",
+              "level": 54
+            },
+            {
+              "mob": "Pyros Shuck",
+              "level": 55
             }
           ]
         },
@@ -445,7 +459,7 @@
             {
               "mob": "Thunderstorm Sprite",
               "level": 54,
-              "weather": "Thunderstorms"
+              "weather": "Thunder"
             },
             {
               "mob": "Typhoon Sprite",
@@ -493,6 +507,11 @@
               "spawned_by": "Pyros Hecteyes"
             }
           ]
+        },
+        {
+          "method": "bunny_fate",
+          "map": "Hydatos",
+          "coffer_rarity": "bronze"
         }
       ]
     },

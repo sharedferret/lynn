@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-import { Box, Divider, Stack, Typography } from '@mui/material';
-import DRSLostActionSelectorComponent from './DRSLostActionSelectorComponent';
-import DRSHolsterHelper from './lib/DRSHolsterHelper';
-import DRSLostActionAcquisitionMethodCardComponent from './DRSLostActionAcquisitionMethodCardComponent';
+import { Box, Stack, Typography } from '@mui/material';
+import ActionSelectorComponent from './BozjaLostActionSelectorComponent';
 import BozjaLostActionHelperDataComponent from './BozjaLostActionHelperDataComponent';
 
 class BozjaLostActionHelperComponent extends Component {
@@ -36,7 +34,7 @@ class BozjaLostActionHelperComponent extends Component {
           <Stack direction={'row'} spacing={2} alignItems={'center'}>
             <Typography>Action: </Typography>
             <Box width={325}>
-              <DRSLostActionSelectorComponent
+              <ActionSelectorComponent
                 lostAction={ this.state.lostAction }
                 handleActionUpdate={ this.handleActionUpdate }
               />

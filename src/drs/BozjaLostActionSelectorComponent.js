@@ -5,7 +5,7 @@ import { Box, Divider, FormControl, MenuItem, Select, Stack, Typography } from '
 import { groupBy } from 'underscore';
 import { v4 as uuidv4 } from 'uuid';
 
-class DRSLostActionSelectorComponent extends Component {
+class ActionSelectorComponent extends Component {
   renderSelectorMenuSection(items) {
     const menuItems = [];
     for (let i = 0; i < items.length; i++) {
@@ -113,4 +113,4 @@ class DRSLostActionSelectorComponent extends Component {
   }
 }
 
-export default DRSLostActionSelectorComponent;
+export default ActionSelectorComponent;

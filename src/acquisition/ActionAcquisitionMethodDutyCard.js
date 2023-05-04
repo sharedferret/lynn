@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Box, Card, CardContent, Divider, Stack, Typography } from '@mui/material';
 
-class DRSLostActionAcquisitionMethodDutyCard extends Component {
+class ActionAcquisitionMethodDutyCard extends Component {
   render() {
 
     return (
@@ -22,4 +22,4 @@ class DRSLostActionAcquisitionMethodDutyCard extends Component {
   }
 }
 
-export default DRSLostActionAcquisitionMethodDutyCard;
+export default ActionAcquisitionMethodDutyCard;

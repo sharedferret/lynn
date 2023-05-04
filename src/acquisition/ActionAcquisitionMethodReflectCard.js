@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Box, Button, Card, CardActions, CardContent, Divider, Stack, Typography } from '@mui/material';
 
-class DRSLostActionAcquisitionMethodReflectCard extends Component {
+class ActionAcquisitionMethodReflectCard extends Component {
   render() {
     let map = '';
     if (this.props.methodData.map === 'bsf') {
@@ -52,4 +52,4 @@ class DRSLostActionAcquisitionMethodReflectCard extends Component {
   }
 }
 
-export default DRSLostActionAcquisitionMethodReflectCard;
+export default ActionAcquisitionMethodReflectCard;

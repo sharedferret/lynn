@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Box, Card, CardContent, Divider, Stack, Typography } from '@mui/material';
 
-class DRSLostActionAcquisitionMethodCECard extends Component {
+class ActionAcquisitionMethodStarMobCard extends Component {
   render() {
     let map = '';
     if (this.props.methodData.map === 'bsf') {
@@ -15,8 +15,8 @@ class DRSLostActionAcquisitionMethodCECard extends Component {
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
           <Stack direction={ 'row' } alignItems={'center'} spacing={2}>
-            <img src={`${process.env.PUBLIC_URL}/assets/icons/Critical_Engagement.png`} width={36} height={36} alt={'Kill Mobs'} />
-            <Typography variant='h5'>Critical Engagements</Typography>
+            <img src={`${process.env.PUBLIC_URL}/assets/icons/staricon.png`} width={36} height={36} alt={'Kill Star Mobs'} />
+            <Typography variant='h5'>Kill Star Mobs</Typography>
           </Stack>
           <Box py={1}>
             <Divider variant='middle' />
@@ -26,13 +26,11 @@ class DRSLostActionAcquisitionMethodCECard extends Component {
           <Box py={1}>
             <Divider variant='middle' />
           </Box>
-          { this.props.methodData.fates.map(i => {
-            return (
-              <Stack direction={ 'row' } alignItems={'center'} spacing={2} key={'ce-' + i}>
-                <img src={`${process.env.PUBLIC_URL}/assets/icons/Critical_Engagement.png`} width={24} height={24} alt={'Earth Sprite'} />
-                <Typography>{ i }</Typography>
-              </Stack>
-            );
+          { this.props.methodData.mobs.map(i => {
+            return <Stack direction={ 'row' } alignItems={ 'center' } spacing={ 2 } key={'starmob-' + i}>
+              <img src={`${process.env.PUBLIC_URL}/assets/icons/rankstar.png`} width={24} height={24} alt={'Earth Sprite'} />
+              <Typography>{ i }</Typography>
+            </Stack>
           })}
         </CardContent>
       </Card>
@@ -40,4 +38,4 @@ class DRSLostActionAcquisitionMethodCECard extends Component {
   }
 }
 
-export default DRSLostActionAcquisitionMethodCECard;
+export default ActionAcquisitionMethodStarMobCard;

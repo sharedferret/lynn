@@ -2,10 +2,39 @@ import React, { Component } from 'react';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 
 import { Box, Divider, Stack, Typography } from '@mui/material';
-import DRSLostActionAcquisitionMethodCardComponent from './DRSLostActionAcquisitionMethodCardComponent';
+import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
+import universalisPriceHelperInstance from '../acquisition/UniversalisPriceHelper';
 import { v4 as uuidv4 } from 'uuid';
 
 class BozjaLostActionHelperDataComponent extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      actionPriceData: null,
+      lastUpdated: new Date()
+    }
+
+    this.updateGuideState = this.updateGuideState.bind(this);
+  }
+
+  componentDidMount() {
+    universalisPriceHelperInstance.fetchIDs([this.props.lostAction], this.updateGuideState);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (!(this.props.lostAction === prevProps.lostAction)) {
+      universalisPriceHelperInstance.fetchIDs([this.props.lostAction], this.updateGuideState);
+    }
+  }
+
+  updateGuideState(priceData) {
+    this.setState({
+      actionPriceData: priceData,
+      lastUpdated: new Date()
+    })
+  }
+
   render() {
     if (this.props.lostAction === '') {
       return null;
@@ -38,7 +67,12 @@ class BozjaLostActionHelperDataComponent extends Component {
         >
           {
             fragmentData.acquisition.map(i => {
-              return <DRSLostActionAcquisitionMethodCardComponent fragmentData={ i } fragmentName={ fragmentData.short } key={ uuidv4() } />
+              return <ActionAcquisitionMethodCardComponent
+                methodData={ i }
+                fragmentId={ fragmentData.id}
+                fragmentName={ fragmentData.short }
+                priceData={ this.state.actionPriceData && this.props.lostAction ? this.state.actionPriceData[fragmentData.short] : null }
+                key={ uuidv4() } />
             })
           }
         </Stack>

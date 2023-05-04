@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Box, Card, CardContent, Divider, Stack, Typography } from '@mui/material';
 
-class DRSLostActionAcquisitionMethodClusterCard extends Component {
+class ActionAcquisitionMethodClusterCard extends Component {
   render() {
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
@@ -22,4 +22,4 @@ class DRSLostActionAcquisitionMethodClusterCard extends Component {
   }
 }
 
-export default DRSLostActionAcquisitionMethodClusterCard;
+export default ActionAcquisitionMethodClusterCard;

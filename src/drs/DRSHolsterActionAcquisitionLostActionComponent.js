@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Box, Grid, Stack, Typography } from '@mui/material';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
-import DRSLostActionAcquisitionMethodCardComponent from './DRSLostActionAcquisitionMethodCardComponent';
+import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
 
 class DRSHolsterActionAcquisitionLostActionComponent extends Component {
   render() {
@@ -36,7 +36,7 @@ class DRSHolsterActionAcquisitionLostActionComponent extends Component {
           {
             fragmentData.acquisition.map(i => {
               return <Grid item>
-                <DRSLostActionAcquisitionMethodCardComponent methodData={ i } fragmentId={ fragmentData.id } fragmentName={ fragmentData.short } priceData={ this.props.priceData } />
+                <ActionAcquisitionMethodCardComponent methodData={ i } fragmentId={ fragmentData.id } fragmentName={ fragmentData.short } priceData={ this.props.priceData } />
               </Grid>
             })
           }

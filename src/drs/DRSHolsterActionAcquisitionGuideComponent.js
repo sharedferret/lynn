@@ -19,9 +19,6 @@ class DRSHolsterActionAcquisitionGuideComponent extends Component {
     this.updateGuideState = this.updateGuideState.bind(this);
   }
 
-  /**
-   * TODO: Move this up to DRSHolsterMainComponent so we can fetch data for new actions
-   */
   componentDidMount() {
     // Gather full list of IDs we need data for
     universalisPriceHelperInstance.fetchIDs(
