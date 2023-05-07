@@ -403,7 +403,7 @@
       "image": "Lost_Bubble",
       "type": "beneficial",
       "fragment": "tenacity",
-      "weight": 3,
+      "weight": 5,
       "drsAction": true,
       "code": "n"
     },

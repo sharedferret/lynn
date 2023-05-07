@@ -1,0 +1,178 @@
+{
+  "24007": {
+    "name": "conceptual",
+    "type": "logogram"
+  },
+  "24008": {
+    "name": "fundamental",
+    "type": "logogram"
+  },
+  "24009": {
+    "name": "curative",
+    "type": "logogram"
+  },
+  "24010": {
+    "name": "offensive",
+    "type": "logogram"
+  },
+  "24011": {
+    "name": "protective",
+    "type": "logogram"
+  },
+  "24012": {
+    "name": "tactical",
+    "type": "logogram"
+  },
+  "24013": {
+    "name": "mitigative",
+    "type": "logogram"
+  },
+  "24014": {
+    "name": "inimical",
+    "type": "logogram"
+  },
+  "24809": {
+    "name": "obscure",
+    "type": "logogram"
+  },
+  "30884": {
+    "name": "caution",
+    "type": "fragment"
+  },
+  "30885": {
+    "name": "preparation",
+    "type": "fragment"
+  },
+  "30886": {
+    "name": "skill",
+    "type": "fragment"
+  },
+  "30887": {
+    "name": "ingenuity",
+    "type": "fragment"
+  },
+  "30888": {
+    "name": "care",
+    "type": "fragment"
+  },
+  "30889": {
+    "name": "awakening",
+    "type": "fragment"
+  },
+  "30890": {
+    "name": "support",
+    "type": "fragment"
+  },
+  "30891": {
+    "name": "violence",
+    "type": "fragment"
+  },
+  "30892": {
+    "name": "resolve",
+    "type": "fragment"
+  },
+  "30893": {
+    "name": "compassion",
+    "type": "fragment"
+  },
+  "30894": {
+    "name": "superstition",
+    "type": "fragment"
+  },
+  "30895": {
+    "name": "mastery",
+    "type": "fragment"
+  },
+  "30896": {
+    "name": "sagacity",
+    "type": "fragment"
+  },
+  "30897": {
+    "name": "becoming",
+    "type": "fragment"
+  },
+  "30899": {
+    "name": "caprice",
+    "type": "fragment"
+  },
+  "32162": {
+    "name": "observation",
+    "type": "fragment"
+  },
+  "32163": {
+    "name": "deception",
+    "type": "fragment"
+  },
+  "32164": {
+    "name": "loss",
+    "type": "fragment"
+  },
+  "32165": {
+    "name": "clarity",
+    "type": "fragment"
+  },
+  "32831": {
+    "name": "contention",
+    "type": "fragment"
+  },
+  "32832": {
+    "name": "finesse",
+    "type": "fragment"
+  },
+  "32833": {
+    "name": "fortitude",
+    "type": "fragment"
+  },
+  "32834": {
+    "name": "divinity",
+    "type": "fragment"
+  },
+  "33768": {
+    "name": "history",
+    "type": "fragment"
+  },
+  "33769": {
+    "name": "rage",
+    "type": "fragment"
+  },
+  "33770": {
+    "name": "ferocity",
+    "type": "fragment"
+  },
+  "33771": {
+    "name": "moonlight",
+    "type": "fragment"
+  },
+  "33772": {
+    "name": "hope",
+    "type": "fragment"
+  },
+  "33773": {
+    "name": "artistry",
+    "type": "fragment"
+  },
+  "33774": {
+    "name": "desperation",
+    "type": "fragment"
+  },
+  "33775": {
+    "name": "tenacity",
+    "type": "fragment"
+  },
+  "33776": {
+    "name": "inspiration",
+    "type": "fragment"
+  },
+  "33777": {
+    "name": "heroism",
+    "type": "fragment"
+  },
+  "33778": {
+    "name": "revelation",
+    "type": "fragment"
+  },
+  "33779": {
+    "name": "cunning",
+    "type": "fragment"
+  }
+}

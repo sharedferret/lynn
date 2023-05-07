@@ -5,7 +5,7 @@ import { Box, Divider, FormControl, MenuItem, Select, Stack, Typography } from '
 import { groupBy } from 'underscore';
 import { v4 as uuidv4 } from 'uuid';
 
-class ActionSelectorComponent extends Component {
+class BozjaLostActionSelectorComponent extends Component {
   renderSelectorMenuSection(items) {
     const menuItems = [];
     for (let i = 0; i < items.length; i++) {
@@ -113,4 +113,4 @@ class ActionSelectorComponent extends Component {
   }
 }
 
-export default ActionSelectorComponent;
+export default BozjaLostActionSelectorComponent;

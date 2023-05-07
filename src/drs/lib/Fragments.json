@@ -403,7 +403,8 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "Castrum Lacus Litore"
+          "dutyName": "Castrum Lacus Litore",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -424,7 +425,8 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "Castrum Lacus Litore"
+          "dutyName": "Castrum Lacus Litore",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -443,11 +445,13 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "Castrum Lacus Litore"
+          "dutyName": "Castrum Lacus Litore",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "duty",
-          "dutyName": "The Dalriada"
+          "dutyName": "The Dalriada",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -470,11 +474,13 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "Castrum Lacus Litore"
+          "dutyName": "Castrum Lacus Litore",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "duty",
-          "dutyName": "The Dalriada"
+          "dutyName": "The Dalriada",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -493,7 +499,8 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "Castrum Lacus Litore"
+          "dutyName": "Castrum Lacus Litore",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -512,7 +519,8 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "Castrum Lacus Litore"
+          "dutyName": "Castrum Lacus Litore",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -534,11 +542,13 @@
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae"
+          "dutyName": "Delubrum Reginae",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae (Savage)"
+          "dutyName": "Delubrum Reginae (Savage)",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -555,7 +565,8 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae (Savage)"
+          "dutyName": "Delubrum Reginae (Savage)",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -572,11 +583,13 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae"
+          "dutyName": "Delubrum Reginae",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae (Savage)"
+          "dutyName": "Delubrum Reginae (Savage)",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -599,11 +612,13 @@
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae"
+          "dutyName": "Delubrum Reginae",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae (Savage)"
+          "dutyName": "Delubrum Reginae (Savage)",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -626,11 +641,13 @@
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae"
+          "dutyName": "Delubrum Reginae",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae (Savage)"
+          "dutyName": "Delubrum Reginae (Savage)",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -653,11 +670,13 @@
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae"
+          "dutyName": "Delubrum Reginae",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae (Savage)"
+          "dutyName": "Delubrum Reginae (Savage)",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -680,11 +699,13 @@
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae"
+          "dutyName": "Delubrum Reginae",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae (Savage)"
+          "dutyName": "Delubrum Reginae (Savage)",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -707,11 +728,13 @@
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae"
+          "dutyName": "Delubrum Reginae",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "duty",
-          "dutyName": "Delubrum Reginae (Savage)"
+          "dutyName": "Delubrum Reginae (Savage)",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -969,7 +992,8 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "The Dalriada"
+          "dutyName": "The Dalriada",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -987,7 +1011,8 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "The Dalriada"
+          "dutyName": "The Dalriada",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"
@@ -1005,7 +1030,8 @@
       "acquisition": [
         {
           "method": "duty",
-          "dutyName": "The Dalriada"
+          "dutyName": "The Dalriada",
+          "icon": "icons/BSF.png"
         },
         {
           "method": "purchase"

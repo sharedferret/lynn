@@ -20,7 +20,7 @@ import LynnReferenceComponent from './reference/LynnReferenceComponent';
 import DRSHolsterMainComponent from './drs/DRSHolsterMainComponent';
 import BozjaLostActionHelperComponent from './drs/BozjaLostActionHelperComponent';
 import EurekaLoadoutMainComponent from './eureka/EurekaLoadoutMainComponent';
-import EurekaLogosActionMainComponent from './eureka/EurekaLogosActionMainComponent';
+import EurekaLogosActionHelperComponent from './eureka/EurekaLogosActionHelperComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => {}})
 
@@ -53,6 +53,10 @@ const WrappedMainComponent = props => {
     return (
       <MainComponent component={props.component} lostAction={params.lostaction} />
     );
+  } else if (props.page === 'eurekalogosaction') {
+    return (
+      <MainComponent component={props.component} logosAction={params.logosaction} />
+    )
   }
 
   return (
@@ -85,7 +89,13 @@ const router = createBrowserRouter([
   },
   {
     path: '/eureka/logos',
-    element: <WrappedMainComponent component={<EurekaLogosActionMainComponent />} page='eurekalogosaction' />,
+    element: <WrappedMainComponent component={<EurekaLogosActionHelperComponent />} page='eurekalogosaction' />,
+    children: [
+      {
+        path: '/eureka/logos/:logosaction',
+        element: <WrappedMainComponent component={<EurekaLogosActionHelperComponent />} page='eurekalogosaction' />,
+      }
+    ]
   },
   {
     path: '/drs/holster',
@@ -159,7 +169,26 @@ function App() {
             'Noto Sans',
             'sans-serif',
           ].join(','),
-        }
+          button: {
+            textTransform: 'none',
+            fontSize: 16
+          }
+        },
+        button: {
+          fontSize: 16
+        },
+        components: {
+          // Name of the component
+          MuiButton: {
+            styleOverrides: {
+              // Name of the slot
+              root: {
+                // Some CSS
+                fontSize: '16',
+              },
+            },
+          },
+        },
       }),
     [mode],
   );

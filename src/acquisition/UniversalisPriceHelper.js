@@ -1,7 +1,10 @@
 import DRSHolsterHelper from "../drs/lib/DRSHolsterHelper";
 import axios from 'axios';
+import EurekaLogosActionHelper from "../eureka/lib/EurekaLogosActionHelper";
 
 let instance;
+
+const idToItem = require('./IDToItem.json');
 
 class UniversalisPriceHelper {
   constructor() {
@@ -15,11 +18,20 @@ class UniversalisPriceHelper {
   fetchIDs(ids, updateGuideState) {
     // Check if any of these already exist; if so, ignore them.
     const idsToFetch = ids.reduce((result, i) => {
+      // Bozja
       const lostActionData = DRSHolsterHelper.getLostActionData(i);
       if (lostActionData) {
         const fragmentData = DRSHolsterHelper.getFragmentData(lostActionData.fragment);
         if (!this.priceData[lostActionData.fragment]) {
           result.push(fragmentData.id);
+        }
+      }
+
+      // Eureka
+      const logogramData = EurekaLogosActionHelper.getLogogramData(i);
+      if (logogramData) {
+        if (!this.priceData[logogramData.short]) {
+          result.push(logogramData.id)
         }
       }
       
@@ -31,15 +43,27 @@ class UniversalisPriceHelper {
       .then(response => {
         if (response.data.itemID) {
           const id = response.data.itemID;
-          const fragmentName = DRSHolsterHelper.getFragmentNameForId(id);
+          const itemData = idToItem[id];
+          let itemName = '';
+          if (itemData.type === 'fragment') {
+            itemName = DRSHolsterHelper.getFragmentNameForId(id);
+          } else if (itemData.type === 'logogram') {
+            itemName = EurekaLogosActionHelper.getLogogramNameFromId(id);
+          }
           const data = response.data;
-          this.addPrice(fragmentName, data);
+          this.addPrice(itemName, data);
         } else {
           for (let i in response.data.itemIDs) {
             const id = response.data.itemIDs[i];
-            const fragmentName = DRSHolsterHelper.getFragmentNameForId(id);
+            const itemData = idToItem[id];
+            let itemName = '';
+            if (itemData.type === 'fragment') {
+              itemName = DRSHolsterHelper.getFragmentNameForId(id);
+            } else if (itemData.type === 'logogram') {
+              itemName = EurekaLogosActionHelper.getLogogramNameFromId(id);
+            }
             const data = response.data.items[id];
-            this.addPrice(fragmentName, data);
+            this.addPrice(itemName, data);
           }
         }
 

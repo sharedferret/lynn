@@ -3,14 +3,7 @@ import React, { Component } from 'react';
 import { Box, Button, Card, CardActions, CardContent, Divider, Stack, Typography } from '@mui/material';
 
 class ActionAcquisitionMethodReflectCard extends Component {
-  render() {
-    let map = '';
-    if (this.props.methodData.map === 'bsf') {
-      map = 'The Bozjan Southern Front';
-    } else if (this.props.methodData.map === 'zadnor') {
-      map = 'Zadnor';
-    }
-
+  renderBozjaReflectCard(map) {
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
@@ -49,6 +42,55 @@ class ActionAcquisitionMethodReflectCard extends Component {
         </CardActions>
       </Card>
     );
+  }
+
+  renderEurekaReflectCard(map) {
+    return (
+      <Card sx={{ minWidth: 275, minHeight: 300 }}>
+        <CardContent>
+          <Stack direction={ 'row' } alignItems={'center'} spacing={2}>
+            <img src={`${process.env.PUBLIC_URL}/assets/logosactions/reflect.png`} width={36} height={36} alt={'Kill Mobs'} />
+            <Typography variant='h5'>Reflect</Typography>
+          </Stack>
+          <Box py={1}>
+            <Divider variant='middle' />
+          </Box>
+          <Typography>{ map }</Typography>
+          <Box py={1}>
+            <Divider variant='middle' />
+          </Box>
+          { this.props.methodData.mobs.map(i => {
+            return (
+              <Stack key={'reflect-' + i.mob}>
+                <Stack direction={ 'row' } alignItems={ 'center' }>
+                  <Typography>Lv{i.level}</Typography>
+                  <img src={`${process.env.PUBLIC_URL}/assets/eureka/eureka_${ i.element }.png`} width={24} height={24} alt={'Element'} />
+                  <Typography>{ i.mob }</Typography>
+                </Stack>
+                <Stack direction={ 'row' } alignItems={ 'center' }>
+                  <Box width={ 48 } />
+                  <Typography fontStyle={ 'italic' }>during {i.weather}</Typography>
+                </Stack>
+              </Stack>
+            );
+          })}
+        </CardContent>
+      </Card>
+    );
+  }
+
+  render() {
+    if (this.props.methodData.map === 'bsf') {
+      return this.renderBozjaReflectCard('The Bozjan Southern Front');
+    } else if (this.props.methodData.map === 'zadnor') {
+      return this.renderBozjaReflectCard('Zadnor');
+    } else if (this.props.methodData.map === 'Pyros') {
+      return this.renderEurekaReflectCard('Eureka Pyros');
+    } else if (this.props.methodData.map === 'Hydatos') {
+      return this.renderEurekaReflectCard('Eureka Hydatos');
+    }
+
+    return <Box />;
   }
 }
 

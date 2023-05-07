@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Box, Divider, Stack, TextField, Typography } from '@mui/material';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
-import ActionSelectorComponent from './BozjaLostActionSelectorComponent';
+import BozjaLostActionSelectorComponent from './BozjaLostActionSelectorComponent';
 import ClearIcon from '@mui/icons-material/Clear';
 
 class DRSBagLostActionComponent extends Component {
@@ -78,7 +78,7 @@ class DRSBagLostActionComponent extends Component {
           </Box>
 
           <Box width={325}>
-            <ActionSelectorComponent lostAction={ this.props.actionName } handleActionUpdate={ this.handleActionUpdate } />
+            <BozjaLostActionSelectorComponent lostAction={ this.props.actionName } handleActionUpdate={ this.handleActionUpdate } />
           </Box>
           <Divider orientation='vertical' variant='middle' />
           <Box width={30}>

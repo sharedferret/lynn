@@ -61,7 +61,8 @@ class MainComponent extends Component {
               type: this.props.type,
               holster: this.props.holster,
               encodedHolster: this.props.encodedHolster,
-              lostAction: this.props.lostAction
+              lostAction: this.props.lostAction,
+              logosAction: this.props.logosAction
             })}
           </Box>
         </Box>

@@ -10,12 +10,24 @@ import ActionAcquisitionMethodDutyCard from './ActionAcquisitionMethodDutyCard';
 import ActionAcquisitionMethodPurchaseCard from './ActionAcquisitionMethodPurchaseCard';
 
 import { Box } from '@mui/material';
+import ActionAcquisitionMethodBunnyFateCard from './ActionAcquisitionMethodBunnyFateCard';
+import ActionAcquisitionMethod30ChainCard from './ActionAcquisitionMethod30ChainCard';
+import ActionAcquisitionMethodNMCard from './ActionAcquisitionMethodNMCard';
+import ActionAcquisitionMethodBoxFarmCard from './ActionAcquisitionMethodBoxFarmCard';
 
 class ActionAcquisitionMethodCardComponent extends Component {
 
 
   render() {
     switch(this.props.methodData.method) {
+      case 'bunny_fate':
+        return <ActionAcquisitionMethodBunnyFateCard methodData={ this.props.methodData } />
+      case '30_chain':
+        return <ActionAcquisitionMethod30ChainCard methodData={ this.props.methodData } />
+      case 'nm':
+        return <ActionAcquisitionMethodNMCard methodData={ this.props.methodData } />
+      case 'box_farm':
+        return <ActionAcquisitionMethodBoxFarmCard methodData={ this.props.methodData} />
       case 'star_mob':
         return <ActionAcquisitionMethodStarMobCard methodData={ this.props.methodData } />
       case 'cluster':

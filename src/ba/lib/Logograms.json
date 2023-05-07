@@ -145,6 +145,7 @@
     "conceptual": {
       "name": "Conceptual Logogram",
       "short": "conceptual",
+      "id": "24007",
       "contents": [
         "Wisdom of the Aetherweaver",
         "Wisdom of the Martialist",
@@ -168,12 +169,14 @@
               "mob": "Ember Sprite",
               "level": 53,
               "weather": "Heat Waves",
+              "element": "fire",
               "adaptation": false
             },
             {
               "mob": "Thunderstorm Sprite",
               "level": 51,
               "weather": "Thunder",
+              "element": "lightning",
               "adaptation": false
             }
           ]
@@ -185,20 +188,26 @@
             {
               "mob": "Snowmelt Sprite",
               "level": 65,
+              "element": "water",
               "weather": "Showers"
             },
             {
               "mob": "Thunderstorm Sprite",
               "level": 65,
-              "weather": "Thunderstorms"
+              "element": "lightning",
+              "weather": "Thunder"
             }
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "fundamental": {
       "name": "Fundamental Logogram",
       "short": "fundamental",
+      "id": "24008",
       "contents": [
         "Esuna L",
         "Raise L",
@@ -219,15 +228,18 @@
             {
               "mob": "Thunderstorm Sprite",
               "level": 41,
-              "weather": "Thunderstorms"
+              "element": "lightning",
+              "weather": "Thunder"
             },
             {
               "mob": "Pyros Hecteyes",
-              "level": 54
+              "level": 54,
+              "element": "water"
             },
             {
               "mob": "Pyros Shuck",
-              "level": 55
+              "level": 55,
+              "element": "earth"
             }
           ]
         },
@@ -242,20 +254,26 @@
             {
               "mob": "Blizzard Sprite",
               "level": 65,
+              "element": "ice",
               "weather": "Snow"
             },
             {
               "mob": "Death Sprite",
               "level": 65,
+              "element": "lightning",
               "weather": "Gloom"
             }
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "offensive": {
       "name": "Offensive Logogram",
       "short": "offensive",
+      "id": "24010",
       "contents": [
         "Wisdom of the Skirmisher",
         "Bloodbath L"
@@ -278,25 +296,25 @@
             {
               "mob": "Snowstorm Sprite",
               "level": 64,
+              "element": "ice",
               "weather": "Snow"
             }
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "protective": {
       "name": "Protective Logogram",
       "short": "protective",
+      "id": "24011",
       "contents": [
         "Wisdom of the Guardian",
         "Spirit of the Remembered"
       ],
       "acquisition": [
-        {
-          "method": "bunny_fate",
-          "map": "Pyros",
-          "coffer_rarity": "gold"
-        },
         {
           "method": "nm",
           "map": "Pyros",
@@ -307,7 +325,7 @@
               "level": 36,
               "element": "lightning",
               "spawned_by": "Thunderstorm Sprite",
-              "weather": "Thunderstorms"
+              "weather": "Thunder"
             },
             {
               "name": "Quiet, Please",
@@ -347,22 +365,26 @@
               "weather": "Blizzards"
             }
           ]
+        },
+        {
+          "method": "bunny_fate",
+          "map": "Pyros",
+          "coffer_rarity": "gold"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "curative": {
       "name": "Curative Logogram",
       "short": "curative",
+      "id": "24009",
       "contents": [
         "Wisdom of the Ordained",
         "Cure L II"
       ],
       "acquisition": [
-        {
-          "method": "bunny_fate",
-          "map": "Pyros",
-          "coffer_rarity": "silver"
-        },
         {
           "method": "nm",
           "map": "Pyros",
@@ -411,12 +433,21 @@
               "weather": "Heat Waves"
             }
           ]
+        },
+        {
+          "method": "bunny_fate",
+          "map": "Pyros",
+          "coffer_rarity": "silver"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "tactical": {
       "name": "Tactical Logogram",
       "short": "tactical",
+      "id": "24012",
       "contents": [
         "Featherfoot L",
         "Stealth L"
@@ -431,43 +462,21 @@
           "method": "box_farm",
           "map": "Hydatos",
           "item": "Moisture-warped Lockbox"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "inimical": {
       "name": "Inimical Logogram",
       "short": "inimical",
+      "id": "24014",
       "contents": [
         "Spirit Dart L",
         "Dispel L"
       ],
       "acquisition": [
-        {
-          "method": "mob",
-          "map": "Pyros",
-          "mobs": [
-            {
-              "mob": "Snowstorm Sprite",
-              "level": 52,
-              "weather": "Snow"
-            },
-            {
-              "mob": "Snowstorm Sprite",
-              "level": 52,
-              "weather": "Blizzards"
-            },
-            {
-              "mob": "Thunderstorm Sprite",
-              "level": 54,
-              "weather": "Thunder"
-            },
-            {
-              "mob": "Typhoon Sprite",
-              "level": 55,
-              "weather": "Umbral Wind"
-            }
-          ]
-        },
         {
           "method": "nm",
           "map": "Pyros",
@@ -509,15 +518,49 @@
           ]
         },
         {
+          "method": "mob",
+          "map": "Pyros",
+          "mobs": [
+            {
+              "mob": "Snowstorm Sprite",
+              "level": 52,
+              "element":"ice",
+              "weather": "Snow"
+            },
+            {
+              "mob": "Snowstorm Sprite",
+              "level": 52,
+              "element": "ice",
+              "weather": "Blizzards"
+            },
+            {
+              "mob": "Thunderstorm Sprite",
+              "level": 54,
+              "element": "lightning",
+              "weather": "Thunder"
+            },
+            {
+              "mob": "Typhoon Sprite",
+              "level": 55,
+              "element": "wind",
+              "weather": "Umbral Wind"
+            }
+          ]
+        },
+        {
           "method": "bunny_fate",
           "map": "Hydatos",
           "coffer_rarity": "bronze"
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "mitigative": {
       "name": "Mitigative Logogram",
       "short": "mitigative",
+      "id": "24013",
       "contents": [
         "Shell L",
         "Stoneskin L"
@@ -535,20 +578,26 @@
             {
               "mob": "Thunderstorm Sprite",
               "level": 46,
-              "weather": "Thunderstorms"
+              "element": "lightning",
+              "weather": "Thunder"
             },
             {
               "mob": "Ember Sprite",
               "level": 43,
+              "element": "fire",
               "weather": "Heat Waves"
             }
           ]
+        },
+        {
+          "method": "purchase"
         }
       ]
     },
     "obscure": {
       "name": "Obscure Logogram",
       "short": "obscure",
+      "id": "24809",
       "contents": [
         "Magic Burst L",
         "Eagle Eye Shot L",
@@ -556,11 +605,6 @@
         "Wisdom of the Breathtaker"
       ],
       "acquisition": [
-        {
-          "method": "duty",
-          "map": "Hydatos",
-          "dutyName": "The Baldesion Arsenal"
-        },
         {
           "method": "nm",
           "map": "Hydatos",
@@ -600,6 +644,7 @@
           "mobs": [
             {
               "mob": "Crystal Claw",
+              "element": "fire",
               "level": 65
             }
           ]
@@ -607,6 +652,15 @@
         {
           "method": "30_chain",
           "map": "Hydatos"
+        },
+        {
+          "method": "duty",
+          "map": "Hydatos",
+          "dutyName": "The Baldesion Arsenal",
+          "icon": "eureka/eureka_logo.png"
+        },
+        {
+          "method": "purchase"
         }
       ]
     }

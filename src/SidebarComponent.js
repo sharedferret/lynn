@@ -65,6 +65,12 @@ function SidebarComponent(props) {
         </div>
       </li>
       <li>
+        <div onClick={(e) => { handleSidebarClick(e, 'eureka/logos') }} style={{cursor: 'pointer'}} className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
+          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i className="bx bx-home"></i></span>
+          <span className="text-md font-medium">Logos Action Helper</span>
+        </div>
+      </li>
+      <li>
       <div onClick={(e) => handleSidebarForecastClick(e, ResultsFilter.EUREKA_NMS)} style={{cursor: 'pointer'}} className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100">
           <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"><i className="bx bx-home"></i></span>
           <span className="text-md font-medium">NM Spawn Times</span>
