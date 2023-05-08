@@ -19,6 +19,9 @@ class BozjaLostActionHelperComponent extends Component {
   }
 
   handleActionUpdate(event) {
+    const lostActionUrl = event.target.value.replaceAll(' ', '_');
+    window.history.pushState(lostActionUrl, 'lynn.pet! - ' + event.target.value, '/bozja/lostaction/' + lostActionUrl)
+
     this.setState(
       {
         lostAction: event.target.value

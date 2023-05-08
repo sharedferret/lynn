@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 
-import { Box, Divider, Stack, Typography } from '@mui/material';
+import { Box, Divider, Grid, Stack, Typography } from '@mui/material';
 import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
 import universalisPriceHelperInstance from '../acquisition/UniversalisPriceHelper';
 import { v4 as uuidv4 } from 'uuid';
@@ -61,21 +61,23 @@ class BozjaLostActionHelperDataComponent extends Component {
           <img src={`${process.env.PUBLIC_URL}/assets/icons/Yellow_Fragment.png`} width={24} height={24} alt={'Forgotten Fragment of Care'} />
           <Typography variant='h6'>{ fragmentData.name }</Typography>
         </Stack>
-        <Stack
-          direction={ 'row' }
+        <Grid
+          container
           spacing={2}
         >
           {
             fragmentData.acquisition.map(i => {
-              return <ActionAcquisitionMethodCardComponent
-                methodData={ i }
-                fragmentId={ fragmentData.id}
-                fragmentName={ fragmentData.short }
-                priceData={ this.state.actionPriceData && this.props.lostAction ? this.state.actionPriceData[fragmentData.short] : null }
-                key={ uuidv4() } />
+              return <Grid item key={ uuidv4() }>
+                <ActionAcquisitionMethodCardComponent
+                  methodData={ i }
+                  fragmentId={ fragmentData.id}
+                  fragmentName={ fragmentData.short }
+                  priceData={ this.state.actionPriceData && this.props.lostAction ? this.state.actionPriceData[fragmentData.short] : null }
+                />
+                </Grid>
             })
           }
-        </Stack>
+        </Grid>
       </Stack>
     )
   }
