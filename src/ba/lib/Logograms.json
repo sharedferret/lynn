@@ -166,18 +166,16 @@
           "map": "Pyros",
           "mobs": [
             {
-              "mob": "Ember Sprite",
-              "level": 53,
-              "weather": "Heat Waves",
-              "element": "fire",
-              "adaptation": false
-            },
-            {
               "mob": "Thunderstorm Sprite",
               "level": 51,
               "weather": "Thunder",
-              "element": "lightning",
-              "adaptation": false
+              "element": "lightning"
+            },
+            {
+              "mob": "Ember Sprite",
+              "level": 53,
+              "weather": "Heat Waves",
+              "element": "fire"
             }
           ]
         },
@@ -297,7 +295,8 @@
               "mob": "Snowstorm Sprite",
               "level": 64,
               "element": "ice",
-              "weather": "Snow"
+              "weather": "Snow",
+              "adaptation": true
             }
           ]
         },
@@ -525,25 +524,29 @@
               "mob": "Snowstorm Sprite",
               "level": 52,
               "element":"ice",
-              "weather": "Snow"
+              "weather": "Snow",
+              "adaptation": true
             },
             {
               "mob": "Snowstorm Sprite",
               "level": 52,
               "element": "ice",
-              "weather": "Blizzards"
+              "weather": "Blizzards",
+              "adaptation": true
             },
             {
               "mob": "Thunderstorm Sprite",
               "level": 54,
               "element": "lightning",
-              "weather": "Thunder"
+              "weather": "Thunder",
+              "adaptation": true
             },
             {
               "mob": "Typhoon Sprite",
               "level": 55,
               "element": "wind",
-              "weather": "Umbral Wind"
+              "weather": "Umbral Wind",
+              "adaptation": true
             }
           ]
         },
@@ -576,16 +579,16 @@
           "map": "Pyros",
           "mobs": [
             {
-              "mob": "Thunderstorm Sprite",
-              "level": 46,
-              "element": "lightning",
-              "weather": "Thunder"
-            },
-            {
               "mob": "Ember Sprite",
               "level": 43,
               "element": "fire",
               "weather": "Heat Waves"
+            },
+            {
+              "mob": "Thunderstorm Sprite",
+              "level": 46,
+              "element": "lightning",
+              "weather": "Thunder"
             }
           ]
         },
@@ -610,11 +613,11 @@
           "map": "Hydatos",
           "fates": [
             {
-              "name": "Fearful Symmetry",
-              "mob": "Frostmane",
-              "level": 54,
-              "element": "fire",
-              "spawned_by": "Northern Tiger"
+              "name": "I Ink, Therefore I Am",
+              "mob": "Khalamari",
+              "level": 50,
+              "element": "water",
+              "spawned_by": "Xzomit"
             },
             {
               "name": "From Tusk till Dawn",
@@ -624,11 +627,11 @@
               "spawned_by": "Hydatos Primelephas"
             },
             {
-              "name": "I Ink, Therefore I Am",
-              "mob": "Khalamari",
-              "level": 50,
-              "element": "water",
-              "spawned_by": "Xzomit"
+              "name": "Fearful Symmetry",
+              "mob": "Frostmane",
+              "level": 54,
+              "element": "fire",
+              "spawned_by": "Northern Tiger"
             },
             {
               "name": "I Don't Want to Believe",
@@ -642,6 +645,26 @@
           "method": "mob",
           "map": "Hydatos",
           "mobs": [
+            {
+              "mob": "Hydatos Wraith",
+              "element": "fire",
+              "level": 61
+            },
+            {
+              "mob": "Tigerhawk",
+              "element": "wind",
+              "level": 62
+            },
+            {
+              "mob": "Laboratory Lion",
+              "element": "earth",
+              "level": 63
+            },
+            {
+              "mob": "Hydatos Delphyne",
+              "element": "fire",
+              "level": 64
+            },
             {
               "mob": "Crystal Claw",
               "element": "fire",
@@ -657,7 +680,7 @@
           "method": "duty",
           "map": "Hydatos",
           "dutyName": "The Baldesion Arsenal",
-          "icon": "eureka/eureka_logo.png"
+          "icon": "eureka/baldesion_arsenal.png"
         },
         {
           "method": "purchase"

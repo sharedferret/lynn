@@ -52,6 +52,14 @@ class ActionAcquisitionMethodMobCard extends Component {
                 <Stack direction={ 'row' } alignItems={ 'center' } key={'mob-' + uuidv4()}>
                   <Typography>{ 'Lv' + i.level }</Typography>
                   <img src={`${process.env.PUBLIC_URL}/assets/eureka/eureka_${i.element}.png`} width={24} height={24} alt={i.element} />
+                  {
+                    i.adaptation ?
+                    <Box pr={0.5}>
+                      <img src={`${process.env.PUBLIC_URL}/assets/eureka/adaptation.png`} width={16} height={16} alt={'Adaptation'} />
+                    </Box>
+                    
+                    : null
+                  }
                   <Typography>{ i.mob }</Typography>
                 </Stack>
                 { i.weather

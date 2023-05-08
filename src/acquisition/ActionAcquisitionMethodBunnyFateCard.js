@@ -41,7 +41,9 @@ class ActionAcquisitionMethodBunnyFateCard extends Component {
             <Divider variant='middle' />
           </Box>
           <Stack direction={ 'row '} alignItems={ 'center' } spacing={ 2 } key={ uuidv4() }>
-            <img src={`${process.env.PUBLIC_URL}/assets/eureka/bunny_chest_${ this.props.methodData.coffer_rarity }.png`} width={24} height={24} alt={'Coffer'} />
+            <Box pr={0.5}>
+              <img src={`${process.env.PUBLIC_URL}/assets/eureka/bunny_chest_${ this.props.methodData.coffer_rarity }.png`} width={24} height={24} alt={'Coffer'} />
+            </Box>
             <Typography>{ rarity }</Typography>
           </Stack>
         </CardContent>
