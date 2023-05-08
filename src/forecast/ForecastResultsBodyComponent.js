@@ -4,6 +4,8 @@ import ForecastResultsDisplayComponent from './ForecastResultsDisplayComponent';
 
 import UpcomingSpawnCalculator from './lib/UpcomingSpawnCalculator';
 import FarmType from './lib/FarmType';
+import ForecastColdBoxMobSelectorComponent from './ForecastColdBoxMobSelectorComponent';
+import Weather from './lib/Weather';
 
 class ForecastResultsBodyComponent extends Component {
   constructor(props) {
@@ -13,7 +15,11 @@ class ForecastResultsBodyComponent extends Component {
 
     this.state = {
       startOfCurrentWeather: startOfCurrentWeather.getTime(),
+      coldBoxMob: 'Pagos Chimera',
+      coldBoxWeather: Weather.BLIZZARDS
     };
+
+    this.handleColdBoxMobUpdate = this.handleColdBoxMobUpdate.bind(this);
   }
 
   componentDidMount() {
@@ -22,6 +28,31 @@ class ForecastResultsBodyComponent extends Component {
 
   componentWillUnmount() {
     clearInterval(this.interval);
+  }
+
+  handleColdBoxMobUpdate(event, value) {
+    switch (value) {
+      case 'Pagos Chimera':
+        this.setState({
+          coldBoxMob: 'Pagos Chimera',
+          coldBoxWeather: Weather.BLIZZARDS
+        })
+        break;
+      case 'Val Griffin':
+        this.setState({
+          coldBoxMob: 'Val Griffin',
+          coldBoxWeather: Weather.FAIR_SKIES
+        })
+        break;
+        case 'Greater Amphiptere':
+          this.setState({
+            coldBoxMob: 'Greater Amphiptere',
+            coldBoxWeather: Weather.THUNDER
+          })
+        break;
+      default:
+        return null;
+    }
   }
 
   updateResultsOnWeatherChange() {
@@ -50,43 +81,57 @@ class ForecastResultsBodyComponent extends Component {
     let upcomingResults = [];
     let topResults = [];
 
-    if (this.props.filter.type === FarmType.EUREKA_NM) {
-      if (this.props.filter.collection === true) {
-        upcomingResults = UpcomingSpawnCalculator.getMultipleUpcomingSpawns(this.props.filter.contains);
+    const filter = this.props.filter;
+
+    if (filter.name === 'Cold-Warped Lockbox') {
+      filter.requiredWeather = [ this.state.coldBoxWeather ];
+    }
+
+    if (filter.type === FarmType.EUREKA_NM) {
+      if (filter.collection === true) {
+        upcomingResults = UpcomingSpawnCalculator.getMultipleUpcomingSpawns(filter.contains);
       } else {
-        upcomingResults = UpcomingSpawnCalculator.getUpcomingSpawns(this.props.filter);
+        upcomingResults = UpcomingSpawnCalculator.getUpcomingSpawns(filter);
       }
-    } else if (this.props.filter.type === FarmType.EUREKA_FARM) {
-      if (this.props.filter.collection === true) {
-        upcomingResults = UpcomingSpawnCalculator.getMultipleUpcomingSpawns(this.props.filter.contains);
-        topResults = UpcomingSpawnCalculator.getMultipleTopFarms(this.props.filter.contains);
+    } else if (filter.type === FarmType.EUREKA_FARM) {
+      if (filter.collection === true) {
+        upcomingResults = UpcomingSpawnCalculator.getMultipleUpcomingSpawns(filter.contains);
+        topResults = UpcomingSpawnCalculator.getMultipleTopFarms(filter.contains);
       } else {
-        upcomingResults = UpcomingSpawnCalculator.getUpcomingFarms(this.props.filter);
-        topResults = UpcomingSpawnCalculator.getTopFarms(this.props.filter);
+        upcomingResults = UpcomingSpawnCalculator.getUpcomingFarms(filter);
+        topResults = UpcomingSpawnCalculator.getTopFarms(filter);
       }
-    } else if (this.props.filter.type === FarmType.FRAGMENT_FARM) {
-      if (this.props.filter.collection === true) {
-        upcomingResults = UpcomingSpawnCalculator.getMultipleUpcomingSpawns(this.props.filter.contains);
-        topResults = UpcomingSpawnCalculator.getMultipleTopFarms(this.props.filter.contains);
+    } else if (filter.type === FarmType.FRAGMENT_FARM) {
+      if (filter.collection === true) {
+        upcomingResults = UpcomingSpawnCalculator.getMultipleUpcomingSpawns(filter.contains);
+        topResults = UpcomingSpawnCalculator.getMultipleTopFarms(filter.contains);
       } else {
-        upcomingResults = UpcomingSpawnCalculator.getUpcomingFarms(this.props.filter);
-        topResults = UpcomingSpawnCalculator.getTopFarms(this.props.filter);
+        upcomingResults = UpcomingSpawnCalculator.getUpcomingFarms(filter);
+        topResults = UpcomingSpawnCalculator.getTopFarms(filter);
       }
-    } else if (this.props.filter.type === FarmType.ALL) {
-      upcomingResults = UpcomingSpawnCalculator.getMultipleUpcomingSpawns(this.props.filter.contains, 10);
+    } else if (filter.type === FarmType.ALL) {
+      upcomingResults = UpcomingSpawnCalculator.getMultipleUpcomingSpawns(filter.contains, 10);
     }
 
     return (
-      <Stack direction="row" spacing={2} justifyContent='center'>
-        <ForecastResultsDisplayComponent
-          type='Upcoming Results'
-          filter={this.props.filter} 
-          results={upcomingResults}
-        />
+      <Stack spacing={4}>
         {
-          topResults.length > 0 ? <ForecastResultsDisplayComponent type='Top Results (Next 14 Days)' filter={this.props.filter} results={topResults} /> : undefined
+          filter.name === 'Cold-Warped Lockbox'
+            ? <ForecastColdBoxMobSelectorComponent currentMob={ this.state.coldBoxMob } handleColdBoxMobUpdate={ this.handleColdBoxMobUpdate } />
+            : null
         }
+        <Stack direction="row" spacing={2} justifyContent='center'>
+          <ForecastResultsDisplayComponent
+            type='Upcoming Results'
+            filter={filter} 
+            results={upcomingResults}
+          />
+          {
+            topResults.length > 0 ? <ForecastResultsDisplayComponent type='Top Results (Next 14 Days)' filter={filter} results={topResults} /> : undefined
+          }
+        </Stack>
       </Stack>
+      
     );
   }
 }

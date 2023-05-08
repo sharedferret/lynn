@@ -140,7 +140,7 @@ export default class ResultsFilter {
       ResultsFilter.PAZUZU,
       ResultsFilter.PENTHESILEA,
     ],
-    uri: 'nms',
+    uri: 'nm',
   });
   static FRAGMENT_FARM = new ResultsFilter({
     name: 'All Bozja Fragment Farms',
@@ -223,6 +223,7 @@ export default class ResultsFilter {
       case 'zadnor':
       case 'fragments': return ResultsFilter.FRAGMENT_FARM;
       case 'eurekanms':
+      case 'nms':
       case 'nm': return ResultsFilter.EUREKA_NMS;
       case 'eurekafarms': return ResultsFilter.EUREKA_FARMS;
       default: return ResultsFilter.ALL;
