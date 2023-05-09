@@ -1,5 +1,5 @@
+import React from 'react';
 import { Divider, Paper, Stack } from '@mui/material';
-import React, { Component } from 'react';
 
 import ForecastResultDateComponent from './ForecastResultDateComponent';
 import ForecastResultInfoComponent from './ForecastResultInfoComponent';
@@ -13,24 +13,19 @@ import './ForecastResultComponent.css';
  * Time    |  Spawn title
  *         |  Spawn detail
  */
-class ForecastResultComponent extends Component {
-  
-  render() {
-    return (
-      <Paper variant='outlined' className='ForecastResultPaper'>
-        <Stack direction='row' spacing={2} minHeight={70} height={'100%'} p={1}>
-          <ForecastResultDateComponent
-            time={this.props.result.time}
-          />
-          <Divider orientation='vertical' flexItem={true} variant='inset' />
-          <ForecastResultInfoComponent 
-            result={this.props.result}
-            isCollection={this.props.isCollection}
-          />
-        </Stack>
-      </Paper>
-    );
-  }
+export default function ForecastResultComponent({ result, isCollection }) {
+  return (
+    <Paper variant='outlined' className='ForecastResultPaper'>
+      <Stack direction='row' spacing={2} minHeight={70} height={'100%'} p={1}>
+        <ForecastResultDateComponent
+          time={ result.time }
+        />
+        <Divider orientation='vertical' flexItem={true} variant='inset' />
+        <ForecastResultInfoComponent 
+          result={ result }
+          isCollection={ isCollection }
+        />
+      </Stack>
+    </Paper>
+  );
 }
-
-export default ForecastResultComponent;

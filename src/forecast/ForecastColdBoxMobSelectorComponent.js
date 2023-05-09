@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Box, Stack, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material';
 import Weather from './lib/Weather';
 
-class ForecastColdBoxMobSelectorComponent extends Component {
-  renderMobButton(mob) {
+export default function ForecastColdBoxMobSelectorComponent({ currentMob, handleColdBoxMobUpdate }) {
+  function renderMobButton(mob) {
     return (
       <ToggleButton
         value={ mob.name }
@@ -28,46 +28,42 @@ class ForecastColdBoxMobSelectorComponent extends Component {
     )
   }
 
-  render() {
-    return (
-      <Box>
-        <ToggleButtonGroup
-          value={ this.props.currentMob }
-          exclusive
-          size={'large'}
-          onChange={this.props.handleColdBoxMobUpdate}
-        >
-          { this.renderMobButton(
-              {
-                name: 'Pagos Chimera',
-                level: 40,
-                element: 'lightning',
-                weather: Weather.BLIZZARDS
-              }
-            )
-          }
-          { this.renderMobButton(
-              {
-                name: 'Val Griffin',
-                level: 40,
-                element: 'wind',
-                weather: Weather.FAIR_SKIES
-              }
-            )
-          }
-          { this.renderMobButton(
+  return (
+    <Box>
+      <ToggleButtonGroup
+        value={ currentMob }
+        exclusive
+        size={'large'}
+        onChange={handleColdBoxMobUpdate}
+      >
+        { renderMobButton(
             {
-              name: 'Greater Amphiptere',
-              level: 39,
-              element: 'fire',
-              weather: Weather.THUNDER
+              name: 'Pagos Chimera',
+              level: 40,
+              element: 'lightning',
+              weather: Weather.BLIZZARDS
             }
           )
         }
-        </ToggleButtonGroup>
-      </Box>
-    );
-  }
+        { renderMobButton(
+            {
+              name: 'Val Griffin',
+              level: 40,
+              element: 'wind',
+              weather: Weather.FAIR_SKIES
+            }
+          )
+        }
+        { renderMobButton(
+          {
+            name: 'Greater Amphiptere',
+            level: 39,
+            element: 'fire',
+            weather: Weather.THUNDER
+          }
+        )
+      }
+      </ToggleButtonGroup>
+    </Box>
+  );
 }
-
-export default ForecastColdBoxMobSelectorComponent;
