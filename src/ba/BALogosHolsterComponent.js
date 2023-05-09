@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { Box, Button, Paper, Stack } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 import BALogosActionTrayComponent from './BALogosActionTrayComponent'
 import './BALogosHolsterComponent.css'
+import { useState } from 'react';
 
 
 /**
@@ -13,61 +14,64 @@ import './BALogosHolsterComponent.css'
  * Stack x6 with spacing
  * props as this.props.trays
  */
-class BALogosHolsterComponent extends Component {
-  constructor(props) {
-    super(props);
-
-    if (this.props.tray === undefined) {
-      this.state = {
-        plates: [
-          {
-            index: 0,
-            umbral: '',
-            astral: ''
-          }
-        ]
+export default function BALogosHolsterComponent({ tray }) {
+  /**
+   * Component State
+   */
+  let startingPlates = [];
+  if (tray === undefined) {
+    startingPlates = ([
+      {
+        index: 0,
+        umbral: '',
+        astral: ''
       }
-    } else {
-      const plates = this.props.tray.plates.map((i, index) => {
-        return {
-          index: index,
-          umbral: i.umbral,
-          astral: i.astral
-        }
-      });
-      this.state = {
-        plates: plates
+    ])
+  } else {
+    startingPlates = tray.plates.map((i, index) => {
+      return {
+        index: index,
+        umbral: i.umbral,
+        astral: i.astral
       }
-    }
-  
-    this.handleLogosActionUpdate = this.handleLogosActionUpdate.bind(this);
+    })
   }
 
-  handleLogosActionUpdate(data) {
+  const [plates, setPlates] = useState(startingPlates);
+
+  
+
+  function handleLogosActionUpdate(data) {
     if (data.array === 'umbral') {
-      const newPlates = this.state.plates;
+      const newPlates = plates;
       newPlates[data.plate].umbral = data.newAction;
-      this.setState({
-        plates: newPlates
-      });
+      setPlates(newPlates);
     }
     if (data.array === 'astral') {
-      const newPlates = this.state.plates;
+      const newPlates = plates;
       newPlates[data.plate].astral = data.newAction;
-      this.setState({
-        plates: newPlates
-      });
+      setPlates(newPlates);
     }
   }
 
-  renderAddPlateButton() {
+  function handleAddPlateButtonClicked() {
+    const newPlates = plates;
+    newPlates.push({
+      index: plates.length,
+      umbral: '',
+      astral: ''
+    })
+    setPlates([...newPlates]);
+  }
+
+  function renderAddPlateButton() {
     return (
       <Box>
         <Button
           variant="outlined"
           size="large"
           startIcon={<AddCircleIcon />}
-          onClick={(e) => this.handleAddPlateButtonClicked()}
+          onClick={handleAddPlateButtonClicked}
         >
           Add Plate
         </Button>
@@ -76,31 +80,18 @@ class BALogosHolsterComponent extends Component {
     )
   }
 
-  handleAddPlateButtonClicked() {
-    const plates = this.state.plates;
-    plates.push({
-      index: plates.length,
-      umbral: '',
-      astral: ''
-    })
-    this.setState({
-      plates: plates,
-    });
-  }
-
-  render() {
-    return (
-      <Box maxWidth={1000}>
-        <Paper variant='outlined' className='BALogosHolsterPaper'>
-        <Stack spacing={2} minHeight={100} p={1}>
-          {this.state.plates.map((i, index) => <BALogosActionTrayComponent tray={i} index={index} handleLogosActionUpdate={this.handleLogosActionUpdate} key={'tray-' + index} />)}
-          {this.state.plates.length < 8 ? this.renderAddPlateButton() : null}
-        </Stack>
-      </Paper>
-      </Box>
-      
-    );
-  }
+  /**
+   * Render Logic
+   */
+  return (
+    <Box maxWidth={1000}>
+      <Paper variant='outlined' className='BALogosHolsterPaper'>
+      <Stack spacing={2} minHeight={100} p={1}>
+        {plates.map((i, index) => <BALogosActionTrayComponent tray={i} index={index} handleLogosActionUpdate={handleLogosActionUpdate} key={'tray-' + index} />)}
+        {plates.length < 8 ? renderAddPlateButton() : null}
+      </Stack>
+    </Paper>
+    </Box>
+    
+  );
 }
-
-export default BALogosHolsterComponent;

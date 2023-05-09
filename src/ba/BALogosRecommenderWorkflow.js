@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Avatar, Box, Button, Divider, Stack, Typography } from '@mui/material';
 import { findIndex } from 'underscore';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
@@ -7,43 +7,8 @@ import BALogosHolsterComponent from './BALogosHolsterComponent';
 
 import './BALogosRecommenderWorkflow.css';
 
-
-class BALogosRecommender extends Component {
-  render() {
-    const recommendedActions = require('./lib/RecommendedActions.json').actions;
-    
-    if (this.props.workflow == null || this.props.workflow.role == null) {
-      return this.renderRoleSelection();
-    } else if (this.props.workflow.tray == null) {
-      return this.renderLoadoutSelection(this.props.workflow.role);
-    }
-
-    const roleTrays = recommendedActions[this.props.workflow.role].trays;
-    const trayID = findIndex(roleTrays, { title: this.props.workflow.tray });
-
-    return (
-      <Box className="BALogogramWorkflowContainer">
-        <Stack alignItems={'center'} spacing={2}>
-          <Typography variant='h4'>Here are your recommended logos actions!</Typography>
-          <Box maxWidth={600}>
-            <Typography>You can build these at a Logos Manipulator. Make sure to pop and activate your Spirit of the Remembered action before entering the Baldesion Arsenal.</Typography>
-          </Box>
-          <Button
-            variant="outlined"
-            size="large"
-            startIcon={<ArrowBackIosNewIcon />}
-            onClick={(e) => this.props.handleWorkflowUpdate(e, {role: null, tray: null})}
-          >
-            Start Over
-          </Button>
-          <Divider />
-          <BALogosHolsterComponent tray={roleTrays[trayID]} />
-        </Stack>
-      </Box>
-    );
-  }
-
-  renderRoleSelection(data) {
+export default function BALogosRecommender({ workflow, handleWorkflowUpdate }) {
+  function renderRoleSelection(data) {
     const recommendedActions = require('./lib/RecommendedActions.json').actions;
     const roles = Object.keys(recommendedActions);
 
@@ -63,7 +28,7 @@ class BALogosRecommender extends Component {
                     fullWidth={true}
                     variant='outlined'
                     size='large'
-                    onClick={(e) => this.props.handleWorkflowUpdate(e, {role: item})}
+                    onClick={(e) => handleWorkflowUpdate(e, {role: item})}
                     startIcon={<Avatar src={`${process.env.PUBLIC_URL}/assets/roles/${item}.png`} />}
                   >
                     {recommendedActions[item].name}
@@ -77,7 +42,7 @@ class BALogosRecommender extends Component {
     );
   }
 
-  renderLoadoutSelection(role) {
+  function renderLoadoutSelection(role) {
     const recommendedActions = require('./lib/RecommendedActions.json').actions;
     const trays = recommendedActions[role].trays;
 
@@ -96,7 +61,7 @@ class BALogosRecommender extends Component {
                       fullWidth={true}
                       variant='outlined'
                       size='large'
-                      onClick={(e) => this.props.handleWorkflowUpdate(e, { role: role, tray: item.title})}
+                      onClick={(e) => handleWorkflowUpdate(e, { role: role, tray: item.title})}
                       startIcon={<Avatar src={`${process.env.PUBLIC_URL}/assets/logosactions/${item.buttonIcon}.png`} />}
                     >
                       {item.title}
@@ -110,6 +75,36 @@ class BALogosRecommender extends Component {
       </Box>
     )
   }
-}
 
-export default BALogosRecommender
+  const recommendedActions = require('./lib/RecommendedActions.json').actions;
+    
+  if (workflow == null || workflow.role == null) {
+    return renderRoleSelection();
+  } else if (workflow.tray == null) {
+    return renderLoadoutSelection(workflow.role);
+  }
+
+  const roleTrays = recommendedActions[workflow.role].trays;
+  const trayID = findIndex(roleTrays, { title: workflow.tray });
+
+  return (
+    <Box className="BALogogramWorkflowContainer">
+      <Stack alignItems={'center'} spacing={2}>
+        <Typography variant='h4'>Here are your recommended logos actions!</Typography>
+        <Box maxWidth={600}>
+          <Typography>You can build these at a Logos Manipulator. Make sure to pop and activate your Spirit of the Remembered action before entering the Baldesion Arsenal.</Typography>
+        </Box>
+        <Button
+          variant="outlined"
+          size="large"
+          startIcon={<ArrowBackIosNewIcon />}
+          onClick={(e) => handleWorkflowUpdate(e, {role: null, tray: null})}
+        >
+          Start Over
+        </Button>
+        <Divider />
+        <BALogosHolsterComponent tray={roleTrays[trayID]} />
+      </Stack>
+    </Box>
+  );
+}

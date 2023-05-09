@@ -4,9 +4,9 @@ import { Box, Card, CardContent, Divider, Stack, Typography } from '@mui/materia
 
 export default function ActionAcquisitionMethodBoxFarmCard({ methodData }) {
   let map = '';
-  if (this.props.methodData.map === 'Pyros') {
+  if (methodData.map === 'Pyros') {
     map = 'Eureka Pyros';
-  } else if (this.props.methodData.map === 'Hydatos') {
+  } else if (methodData.map === 'Hydatos') {
     map = 'Eureka Hydatos';
   }
 
@@ -25,7 +25,7 @@ export default function ActionAcquisitionMethodBoxFarmCard({ methodData }) {
         <Box py={1}>
           <Divider variant='middle' />
         </Box>
-        <Typography>{ this.props.methodData.item }</Typography>
+        <Typography>{ methodData.item }</Typography>
       </CardContent>
     </Card>
   );

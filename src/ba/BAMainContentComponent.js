@@ -1,42 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import BALogosRecommender from './BALogosRecommenderWorkflow';
+import { useState } from 'react';
 
+export default function BAMainContentComponent() {
+  /**
+   * Component State
+   */
+  const [workflow, setWorkflow] = useState({
+    role: null,
+    tray: null
+  });
+  const [plates, setPlates] = useState(null);
 
-class BAMainContentComponent extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      workflow: {
-        role: null,
-        tray: null,
-      },
-      plates: null
-    };
-
-    this.handleWorkflowUpdate = this.handleWorkflowUpdate.bind(this);
-  }
-
-  handleWorkflowUpdate(event, data) {
-    this.setState({
-      workflow: {
-        role: data.role,
-        tray: data.tray,
-      },
-      plates: data.plates
+  function handleWorkflowUpdate(e, data) {
+    setWorkflow({
+      role: data.role,
+      tray: data.tray
     });
+    setPlates(data.plates);
   }
 
-  render() {
-    return (
-      <BALogosRecommender
-        workflow={this.state.workflow}
-        plates={this.state.plates}
-        handleWorkflowUpdate={this.handleWorkflowUpdate}
-      />
-    );
-  }
+  /**
+   * Render Logic
+   */
+  return (
+    <BALogosRecommender
+      workflow={workflow}
+      plates={plates}
+      handleWorkflowUpdate={handleWorkflowUpdate}
+    />
+  );
 }
-
-export default BAMainContentComponent

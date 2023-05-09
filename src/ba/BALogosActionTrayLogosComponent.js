@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { groupBy } from 'underscore';
 import { v4 as uuidv4 } from 'uuid';
@@ -9,8 +9,8 @@ import { Box, Divider, FormControl, MenuItem, Select, Stack, Typography } from '
  * Two logos actions in a tray with dropdowns to select a different action.
  * When a new action is selected call back up the chain to refresh recipe.
  */
-class BALogosActionTrayLogosComponent extends Component {
-  renderTrayMenu() {
+export default function BALogosActionTrayLogosComponent({ tray, index, handleLogosActionUpdate }) {
+  function renderTrayMenu() {
     const logosActions = require('./lib/LogosActions.json').logosActions;
 
     // Create sections
@@ -85,12 +85,14 @@ class BALogosActionTrayLogosComponent extends Component {
     return menuItems;
   }
 
-  render() {
-    const logosActions = require('./lib/LogosActions.json').logosActions;
-    const defaultUmbral = this.props.tray.umbral ?? '';
-    const defaultAstral = this.props.tray.astral ?? '';
+  /**
+   * Render Logic
+   */
+  const logosActions = require('./lib/LogosActions.json').logosActions;
+    const defaultUmbral = tray.umbral ?? '';
+    const defaultAstral = tray.astral ?? '';
 
-    const menuItems = this.renderTrayMenu();
+    const menuItems = renderTrayMenu();
 
     return (
       <Box border={0} borderRadius={'12px'} width={250} height={135}>
@@ -101,8 +103,8 @@ class BALogosActionTrayLogosComponent extends Component {
               height={100}
               displayEmpty
               value={defaultUmbral}
-              onChange={(e) => this.props.handleLogosActionUpdate({
-                plate: this.props.index,
+              onChange={(e) => handleLogosActionUpdate({
+                plate: index,
                 array: 'umbral',
                 newAction: e.target.value
               })}
@@ -134,8 +136,8 @@ class BALogosActionTrayLogosComponent extends Component {
               height={100}
               displayEmpty
               value={defaultAstral}
-              onChange={(e) => this.props.handleLogosActionUpdate({
-                plate: this.props.index,
+              onChange={(e) => handleLogosActionUpdate({
+                plate: index,
                 array: 'astral',
                 newAction: e.target.value
               })}
@@ -163,7 +165,4 @@ class BALogosActionTrayLogosComponent extends Component {
         </Stack>
       </Box>
     );
-  }
 }
-
-export default BALogosActionTrayLogosComponent;
