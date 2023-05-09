@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { Box, Card, CardContent, Divider, Stack, Typography } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 
-class ActionAcquisitionMethodMobCard extends Component {
-  renderBozjaMobCard(map) {
+export default function ActionAcquisitionMethodMobCard({ methodData }) {
+  function renderBozjaMobCard(map) {
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
@@ -16,11 +16,11 @@ class ActionAcquisitionMethodMobCard extends Component {
             <Divider variant='middle' />
           </Box>
           <Typography>{ map }</Typography>
-          <Typography>Zone { this.props.methodData.zone }</Typography>
+          <Typography>Zone { methodData.zone }</Typography>
           <Box py={1}>
             <Divider variant='middle' />
           </Box>
-          { this.props.methodData.mobs.map(i => {
+          { methodData.mobs.map(i => {
             return <Stack direction={ 'row' } alignItems={ 'center' } spacing={ 2 } key={'mob-' + i}>
               <Box width={ 24 } />
               <Typography>{ i }</Typography>
@@ -31,7 +31,7 @@ class ActionAcquisitionMethodMobCard extends Component {
     );
   }
 
-  renderEurekaMobCard(map) {
+  function renderEurekaMobCard(map) {
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
@@ -46,7 +46,7 @@ class ActionAcquisitionMethodMobCard extends Component {
           <Box py={1}>
             <Divider variant='middle' />
           </Box>
-          { this.props.methodData.mobs.map(i => {
+          { methodData.mobs.map(i => {
             return (
               <Stack key={ uuidv4() }>
                 <Stack direction={ 'row' } alignItems={ 'center' } key={'mob-' + uuidv4()}>
@@ -81,19 +81,18 @@ class ActionAcquisitionMethodMobCard extends Component {
     )
   }
 
-  render() {
-    if (this.props.methodData.map === 'bsf') {
-      return this.renderBozjaMobCard('The Bozjan Southern Front');
-    } else if (this.props.methodData.map === 'zadnor') {
-      return this.renderBozjaMobCard('Zadnor');
-    } else if (this.props.methodData.map === 'Pyros') {
-      return this.renderEurekaMobCard('Eureka Pyros');
-    } else if (this.props.methodData.map === 'Hydatos') {
-      return this.renderEurekaMobCard('Eureka Hydatos');
-    }
-
-    return <Box />
+  /**
+   * Render
+   */
+  if (methodData.map === 'bsf') {
+    return renderBozjaMobCard('The Bozjan Southern Front');
+  } else if (methodData.map === 'zadnor') {
+    return renderBozjaMobCard('Zadnor');
+  } else if (methodData.map === 'Pyros') {
+    return renderEurekaMobCard('Eureka Pyros');
+  } else if (methodData.map === 'Hydatos') {
+    return renderEurekaMobCard('Eureka Hydatos');
   }
-}
 
-export default ActionAcquisitionMethodMobCard;
+  return <Box />
+}

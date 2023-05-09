@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { Box, Button, Card, CardActions, CardContent, Divider, Stack, Typography } from '@mui/material';
 
-class ActionAcquisitionMethodReflectCard extends Component {
-  renderBozjaReflectCard(map) {
+export default function ActionAcquisitionMethodReflectCard({ methodData, fragmentName }) {
+  function renderBozjaReflectCard(map) {
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
@@ -15,11 +15,11 @@ class ActionAcquisitionMethodReflectCard extends Component {
             <Divider variant='middle' />
           </Box>
           <Typography>{ map }</Typography>
-          <Typography>Zone { this.props.methodData.zone }</Typography>
+          <Typography>Zone { methodData.zone }</Typography>
           <Box py={1}>
             <Divider variant='middle' />
           </Box>
-          { this.props.methodData.mobs.map(i => {
+          { methodData.mobs.map(i => {
             return (
               <Stack key={'reflect-' + i.mob}>
                 <Stack direction={ 'row' } alignItems={ 'center' } spacing={ 1 }>
@@ -36,7 +36,7 @@ class ActionAcquisitionMethodReflectCard extends Component {
           })}
         </CardContent>
         <CardActions>
-          <a href={ '/forecast/' + this.props.fragmentName } target="_blank" rel="noreferrer">
+          <a href={ '/forecast/' + fragmentName } target="_blank" rel="noreferrer">
             <Button size={ 'small' }>Upcoming Farm Times</Button>
           </a>
         </CardActions>
@@ -44,7 +44,7 @@ class ActionAcquisitionMethodReflectCard extends Component {
     );
   }
 
-  renderEurekaReflectCard(map) {
+  function renderEurekaReflectCard(map) {
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
@@ -59,7 +59,7 @@ class ActionAcquisitionMethodReflectCard extends Component {
           <Box py={1}>
             <Divider variant='middle' />
           </Box>
-          { this.props.methodData.mobs.map(i => {
+          { methodData.mobs.map(i => {
             return (
               <Stack key={'reflect-' + i.mob}>
                 <Stack direction={ 'row' } alignItems={ 'center' }>
@@ -79,19 +79,18 @@ class ActionAcquisitionMethodReflectCard extends Component {
     );
   }
 
-  render() {
-    if (this.props.methodData.map === 'bsf') {
-      return this.renderBozjaReflectCard('The Bozjan Southern Front');
-    } else if (this.props.methodData.map === 'zadnor') {
-      return this.renderBozjaReflectCard('Zadnor');
-    } else if (this.props.methodData.map === 'Pyros') {
-      return this.renderEurekaReflectCard('Eureka Pyros');
-    } else if (this.props.methodData.map === 'Hydatos') {
-      return this.renderEurekaReflectCard('Eureka Hydatos');
-    }
-
-    return <Box />;
+  /**
+   * Render
+   */
+  if (methodData.map === 'bsf') {
+    return renderBozjaReflectCard('The Bozjan Southern Front');
+  } else if (methodData.map === 'zadnor') {
+    return renderBozjaReflectCard('Zadnor');
+  } else if (methodData.map === 'Pyros') {
+    return renderEurekaReflectCard('Eureka Pyros');
+  } else if (methodData.map === 'Hydatos') {
+    return renderEurekaReflectCard('Eureka Hydatos');
   }
-}
 
-export default ActionAcquisitionMethodReflectCard;
+  return <Box />;
+}
