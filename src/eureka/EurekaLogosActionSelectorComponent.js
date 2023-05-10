@@ -1,11 +1,11 @@
 import { Box, Divider, FormControl, MenuItem, Select, Stack, Typography } from '@mui/material';
-import React, { Component } from 'react';
+import React from 'react';
 import EurekaLogosActionHelper from './lib/EurekaLogosActionHelper';
 import { groupBy } from 'underscore';
 import { v4 as uuidv4 } from 'uuid';
 
-class EurekaLogosActionSelectorComponent extends Component {
-  renderSelectorMenuSection(items) {
+export default function EurekaLogosActionSelectorComponent({ logosAction, handleActionUpdate }) {
+  function renderSelectorMenuSection(items) {
     const menuItems = [];
     for (let i = 0; i < items.length; i++) {
       const action = items[i];
@@ -22,7 +22,7 @@ class EurekaLogosActionSelectorComponent extends Component {
     return menuItems;
   }
 
-  renderSelectorMenu() {
+  function renderSelectorMenu() {
     const logosActions = EurekaLogosActionHelper.getLogosActions();
     
     // Create sections
@@ -35,24 +35,24 @@ class EurekaLogosActionSelectorComponent extends Component {
     menuItems.push(<MenuItem value='' key={ 'selector-' + uuidv4() }>None</MenuItem>);
 
     menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Wisdoms</Divider>);
-    menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['wisdom'])));
+    menuItems.push(...(renderSelectorMenuSection(actionsBySection['wisdom'])));
 
     menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Spirits</Divider>);
-    menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['spirit'])));
+    menuItems.push(...(renderSelectorMenuSection(actionsBySection['spirit'])));
 
     menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Personal Actions</Divider>);
-    menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['personalAction'])));
+    menuItems.push(...(renderSelectorMenuSection(actionsBySection['personalAction'])));
 
     menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Beneficial Actions</Divider>);
-    menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['beneficialAction'])));
+    menuItems.push(...(renderSelectorMenuSection(actionsBySection['beneficialAction'])));
 
     menuItems.push(<Divider textAlign='left' key={ 'selector-' + uuidv4() }>Other Actions</Divider>);
-    menuItems.push(...(this.renderSelectorMenuSection(actionsBySection['otherAction'])));
+    menuItems.push(...(renderSelectorMenuSection(actionsBySection['otherAction'])));
 
     return menuItems;
   }
 
-  renderSelectedAction(actionName) {
+  function renderSelectedAction(actionName) {
     if (actionName === '') {
       return (
         <Stack direction={'row'} spacing={2} alignItems={'center'}>
@@ -72,9 +72,11 @@ class EurekaLogosActionSelectorComponent extends Component {
     )
   }
 
-  render() {
-    const defaultAction = this.props.logosAction ?? '';
-    const menuItems = this.renderSelectorMenu();
+  /**
+   * Render Logic
+   */
+  const defaultAction = logosAction ?? '';
+    const menuItems = renderSelectorMenu();
 
     return (
       <Box width={325}>
@@ -85,8 +87,8 @@ class EurekaLogosActionSelectorComponent extends Component {
               displayEmpty
               size={'small'}
               value={defaultAction}
-              renderValue={this.renderSelectedAction}
-              onChange={this.props.handleActionUpdate}
+              renderValue={renderSelectedAction}
+              onChange={handleActionUpdate}
             >
               {menuItems}
             </Select>
@@ -94,7 +96,4 @@ class EurekaLogosActionSelectorComponent extends Component {
         </Stack>
       </Box>
     );
-  }
 }
-
-export default EurekaLogosActionSelectorComponent;

@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Box } from '@mui/material';
 import BALogosHolsterComponent from '../ba/BALogosHolsterComponent';
 
-class EurekaLoadoutMainComponent extends Component {
-  render() {
-    return (
-      <Box>
-        <BALogosHolsterComponent />
-      </Box>
-    )
-  }
+export default function EurekaLoadoutMainComponent() {
+  return (
+    <Box>
+      <BALogosHolsterComponent />
+    </Box>
+  );
 }
-
-export default EurekaLoadoutMainComponent;
