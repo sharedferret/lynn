@@ -136,7 +136,7 @@ export default function DRSHolsterMainComponent({ holster, encodedHolster }) {
    * Render Logic
    */
 
-  if (holsterName === null) {
+  if (!holsterName) {
     return renderHolsterSelectionPage();
   }
 
