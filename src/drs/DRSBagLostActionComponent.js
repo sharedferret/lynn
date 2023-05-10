@@ -5,89 +5,80 @@ import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import BozjaLostActionSelectorComponent from './BozjaLostActionSelectorComponent';
 import ClearIcon from '@mui/icons-material/Clear';
 
-class DRSBagLostActionComponent extends Component {
-  constructor(props) {
-    super(props);
-
-    this.handleQuantityUpdate = this.handleQuantityUpdate.bind(this);
-    this.handleActionUpdate = this.handleActionUpdate.bind(this);
-    this.handleDeleteAction = this.handleDeleteAction.bind(this);
-  }
-
-  handleQuantityUpdate(event) {
+export default function DRSBagLostActionComponent({ actionName, actionQuantity, index, handleLostActionUpdate }) {
+  function handleQuantityUpdate(event) {
     const newLostAction = {
-      name: this.props.actionName,
+      name: actionName,
       quantity: parseInt(event.target.value)
     }
 
-    this.props.handleLostActionUpdate(newLostAction, this.props.index);
+    handleLostActionUpdate(newLostAction, index);
   }
 
-  handleActionUpdate(event) {
+  function handleActionUpdate(event) {
     // For this we'll just create a new lost action with quantity 1 and pass it up.
     const newLostAction = {
       name: event.target.value,
       quantity: 1
     }
 
-    this.props.handleLostActionUpdate(newLostAction, this.props.index);
+    handleLostActionUpdate(newLostAction, index);
   }
 
-  handleDeleteAction(event) {
-    this.props.handleLostActionUpdate(null, this.props.index);
+  function handleDeleteAction(event) {
+    handleLostActionUpdate(null, index);
   }
 
-  render() {
-    // Get lost action data
-    const actionData = DRSHolsterHelper.getLostActionData(this.props.actionName);
+  /**
+   * Render Logic
+   */
+  // Get lost action data
+  const actionData = DRSHolsterHelper.getLostActionData(actionName);
 
-    // Calculate total action weight
-    const combinedActionWeight = actionData !== undefined ? (actionData.weight * this.props.actionQuantity) : 0;
+  // Calculate total action weight
+  const combinedActionWeight = actionData !== undefined ? (actionData.weight * actionQuantity) : 0;
 
-    return (
-      <Box>
-        <Stack
-          direction='row'
-          spacing={2}
-          height={60}
-          p={1}
-          alignItems={'center'}
-          justifyContent={'center'}
-        >
-          <Box width={10}>
-            <Box
-              style={{cursor: 'pointer'}}
-              onClick={ this.handleDeleteAction }
-            >
-              <ClearIcon
-                fontSize='small'
-                sx={{ color: 'red' }}
-              />
-            </Box>
-          </Box>
-          <Box width={60}>
-            <TextField
-              type='number'
-              InputProps={{
-                inputProps: { min: 1, max: 35 }
-              }}
-              value={this.props.actionQuantity}
-              size='small'
-              onChange={ this.handleQuantityUpdate }
+  return (
+    <Box>
+      <Stack
+        direction='row'
+        spacing={2}
+        height={60}
+        p={1}
+        alignItems={'center'}
+        justifyContent={'center'}
+      >
+        <Box width={10}>
+          <Box
+            style={{cursor: 'pointer'}}
+            onClick={ handleDeleteAction }
+          >
+            <ClearIcon
+              fontSize='small'
+              sx={{ color: 'red' }}
             />
           </Box>
+        </Box>
+        <Box width={60}>
+          <TextField
+            type='number'
+            InputProps={{
+              inputProps: { min: 1, max: 35 }
+            }}
+            value={actionQuantity}
+            size='small'
+            onChange={ handleQuantityUpdate }
+          />
+        </Box>
 
-          <Box width={325}>
-            <BozjaLostActionSelectorComponent lostAction={ this.props.actionName } handleActionUpdate={ this.handleActionUpdate } />
-          </Box>
-          <Divider orientation='vertical' variant='middle' />
-          <Box width={30}>
-            <Typography>{combinedActionWeight}</Typography>
-          </Box>
-        </Stack>
-      </Box>
-    );
-  }
+        <Box width={325}>
+          <BozjaLostActionSelectorComponent lostAction={ actionName } handleActionUpdate={ handleActionUpdate } />
+        </Box>
+        <Divider orientation='vertical' variant='middle' />
+        <Box width={30}>
+          <Typography>{combinedActionWeight}</Typography>
+        </Box>
+      </Stack>
+    </Box>
+  );
 }
-
-export default DRSBagLostActionComponent;

@@ -1,106 +1,102 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import { Avatar, Box, Button, Stack, TextField, Typography } from '@mui/material';
+import { Avatar, Box, Button, Stack, Typography } from '@mui/material';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import DRSHolsterContainerComponent from './DRSHolsterContainerComponent';
 import DRSHolsterActionAcquisitionGuideComponent from './DRSHolsterActionAcquisitionGuideComponent';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import LinkIcon from '@mui/icons-material/Link';
 import { DefaultCopyField } from '@eisberg-labs/mui-copy-field';
+import { useState } from 'react';
 
-class DRSHolsterMainComponent extends Component {
-  constructor(props) {
-    super(props);
+export default function DRSHolsterMainComponent({ holster, encodedHolster }) {
+  /**
+   * Component State
+   */
+  let initialHolster = {};
 
-    const holster = this.props.holster;
-    if (holster.name !== undefined) {
-      const holsterData = DRSHolsterHelper.getHolsterData(holster.type, holster.name);
-      if (holsterData !== undefined) {
-        this.state = {
-          holsterName: holster.name,
-          holsterType: holster.type,
-          holsterFriendlyType: DRSHolsterHelper.getFriendlyHolsterSetName(holster.type),
-          holsterMetadata: {
-            name: holsterData.name,
-            role: holsterData.role,
-            assignments: holsterData.assignments,
-            explanation: holsterData.explanation
-          },
-          holsterPrepop: holsterData.pre,
-          holsterMain: holsterData.main,
-          hideStartOverButton: false
-        }
-      }
-    } else if (props.encodedHolster !== undefined) {
-      const holsters = DRSHolsterHelper.decodeHolster(props.encodedHolster);
-      this.state = {
-        holsterName: 'Custom',
-        holsterType: 'custom',
-        holsterFriendlyType: 'Custom',
+  if (holster.name !== undefined) {
+    const holsterData = DRSHolsterHelper.getHolsterData(holster.type, holster.name);
+    if (holsterData !== undefined) {
+      initialHolster = {
+        holsterName: holster.name,
+        holsterType: holster.type,
+        holsterFriendlyType: DRSHolsterHelper.getFriendlyHolsterSetName(holster.type),
         holsterMetadata: {
-          name: null,
-          role: null,
-          assignments: null,
-          explanation: ""
+          name: holsterData.name,
+          role: holsterData.role,
+          assignments: holsterData.assignments,
+          explanation: holsterData.explanation
         },
-        holsterPrepop: holsters.prepop,
-        holsterMain: holsters.main,
-        hideStartOverButton: true
+        holsterPrepop: holsterData.pre,
+        holsterMain: holsterData.main,
+        hideStartOverButton: false
       }
-    } else if (window.location.pathname === '/drs/holster/c') {
-      this.state = {
-        holsterName: 'Custom',
-        holsterType: 'custom',
-        holsterFriendlyType: 'Custom',
-        holsterMetadata: {
-          name: null,
-          role: null,
-          assignments: null,
-          explanation: ""
-        },
-        holsterPrepop: [],
-        holsterMain: [],
-        hideStartOverButton: true
-      };
     }
-    
-    
-    this.handleHolsterUpdate = this.handleHolsterUpdate.bind(this);
-    this.renderHolsterSelectionPage = this.renderHolsterSelectionPage.bind(this);
-    this.resetHolsterPage = this.resetHolsterPage.bind(this);
-    this.generatePermalink = this.generatePermalink.bind(this);
+  } else if (encodedHolster !== undefined) {
+    const holsters = DRSHolsterHelper.decodeHolster(encodedHolster);
+    initialHolster = {
+      holsterName: 'Custom',
+      holsterType: 'custom',
+      holsterFriendlyType: 'Custom',
+      holsterMetadata: {
+        name: null,
+        role: null,
+        assignments: null,
+        explanation: ""
+      },
+      holsterPrepop: holsters.prepop,
+      holsterMain: holsters.main,
+      hideStartOverButton: true
+    }
+  } else if (window.location.pathname === '/drs/holster/c') {
+    initialHolster = {
+      holsterName: 'Custom',
+      holsterType: 'custom',
+      holsterFriendlyType: 'Custom',
+      holsterMetadata: {
+        name: null,
+        role: null,
+        assignments: null,
+        explanation: ""
+      },
+      holsterPrepop: [],
+      holsterMain: [],
+      hideStartOverButton: true
+    };
   }
 
-  handleHolsterUpdate(data, bagType) {
+  const [holsterName, setHolsterName] = useState(initialHolster.holsterName);
+  const [holsterType, setHolsterType] = useState(initialHolster.holsterType);
+  const [holsterFriendlyType, setHolsterFriendlyType] = useState(initialHolster.holsterFriendlyType);
+  const [holsterMetadata, setHolsterMetadata] = useState(initialHolster.holsterMetadata);
+  const [holsterPrepop, setHolsterPrepop] = useState(initialHolster.holsterPrepop);
+  const [holsterMain, setHolsterMain] = useState(initialHolster.holsterMain);
+  const [hideStartOverButton, setHideStartOverButton] = useState(initialHolster.hideStartOverButton);
+  const [generatedLink, setGeneratedLink] = useState(null);
+
+  function handleHolsterUpdate(data, bagType) {
     if (bagType === 'prepop') {
-      this.setState({
-        holsterPrepop: data
-      });
+      setHolsterPrepop([...data]);
     } else if (bagType === 'main') {
-      this.setState({
-        holsterMain: data
-      });
+      setHolsterMain([...data]);
     }
   }
 
-  resetHolsterPage() {
-    this.setState({
-      holsterName: null,
-      holsterType: null,
-      holsterMetadata: null,
-      holsterPrepop: null,
-      holsterMain: null
-    });
+  function resetHolsterPage() {
+    setHolsterName(null);
+    setHolsterType(null);
+    setHolsterMetadata(null);
+    setHolsterPrepop(null);
+    setHolsterMain(null);
   }
 
-  generatePermalink() {
-    const encodedHolsters = DRSHolsterHelper.encodeHolster(this.state.holsterPrepop, this.state.holsterMain).replaceAll('=', '');
-    this.setState({
-      generatedLink: 'https://lynn.pet/drs/holster/c/' + encodedHolsters
-    })
+  function generatePermalink() {
+    const encodedHolsters = DRSHolsterHelper.encodeHolster(holsterPrepop, holsterMain).replaceAll('=', '');
+    setGeneratedLink('https://lynn.pet/drs/holster/c/' + encodedHolsters);
   }
 
-  renderHolsterSelectionPage() {
+  function renderHolsterSelectionPage() {
     const holsterSets = DRSHolsterHelper.getAvailableHolsterSets();
     
     return (
@@ -136,72 +132,72 @@ class DRSHolsterMainComponent extends Component {
     );
   }
 
-  render() {
-    if (this.state === null || this.state.holsterName === null) {
-      return this.renderHolsterSelectionPage();
-    }
+  /**
+   * Render Logic
+   */
 
-    return (
-      <Box maxWidth={1000}>
-        <Stack spacing={2} minHeight={100} p={1}>
-          <Typography fontWeight={700} variant={'h4'}>DRS Holster - { this.state.holsterFriendlyType }</Typography>
-          {
-            this.state.holsterMetadata.name !== null
-            ? <Typography fontWeight={700} variant={'h4'}>Role: {this.state.holsterMetadata.name}</Typography>
-            : null
-          }
-          <Typography align='left' p={2} style={{'whiteSpace': 'pre-line'}}>{ this.state.holsterMetadata.explanation }</Typography>
-          <DRSHolsterContainerComponent
-            name={this.state.holsterName}
-            type={this.state.holsterType}
-            holsterPrepop={this.state.holsterPrepop}
-            holsterMain={this.state.holsterMain}
-            handleHolsterUpdate={this.handleHolsterUpdate}
-          />
-          <Stack direction={'row'} alignItems={'center'} height={60}>
-            {
-              this.state.hideStartOverButton
-                ? null
-                : <Box width={200}>
-                    <Button
-                      variant="outlined"
-                      size="large"
-                      startIcon={<ArrowBackIosNewIcon />}
-                      onClick={ this.resetHolsterPage }
-                    >
-                      Start Over
-                    </Button>
-                  </Box>
-            }
-            <Box width={200}>
-              <Button
-                variant="outlined"
-                size="large"
-                startIcon={<LinkIcon />}
-                onClick={ this.generatePermalink }
-              >
-                Create Link
-              </Button>
-            </Box>
-            {
-              (this.state.holsterType === 'learning' || this.state.holsterType === 'lynn-reclear') && !this.state.generatedLink
-                ? <Typography variant='caption' width={650} alignSelf={'center'}>Note: These holsters were created for Lynn Kaneko's DRS runs on The Help Lines. If you're running with a different group, your holsters may vary. Check with your raid lead to see what you need to bring.</Typography>
-                : null
-            }
-            {
-              this.state.generatedLink
-                ? <Box width={650} alignSelf={'center'}>
-                    <DefaultCopyField fullWidth value={ this.state.generatedLink } /> 
-                  </Box> 
-                : null
-            }
-          </Stack>
-          <Box height={40} />
-          <DRSHolsterActionAcquisitionGuideComponent neededActions={ DRSHolsterHelper.getNeededActionsForBag(this.state.holsterPrepop, this.state.holsterMain, 3) } />
-        </Stack>
-      </Box>
-    );
+  if (holsterName === null) {
+    return renderHolsterSelectionPage();
   }
-}
 
-export default DRSHolsterMainComponent
+  return (
+    <Box maxWidth={1000}>
+      <Stack spacing={2} minHeight={100} p={1}>
+        <Typography fontWeight={700} variant={'h4'}>DRS Holster - { holsterFriendlyType }</Typography>
+        {
+          holsterMetadata.name !== null
+          ? <Typography fontWeight={700} variant={'h4'}>Role: {holsterMetadata.name}</Typography>
+          : null
+        }
+        <Typography align='left' p={2} style={{'whiteSpace': 'pre-line'}}>{ holsterMetadata.explanation }</Typography>
+        <DRSHolsterContainerComponent
+          name={holsterName}
+          type={holsterType}
+          holsterPrepop={holsterPrepop}
+          holsterMain={holsterMain}
+          handleHolsterUpdate={handleHolsterUpdate}
+        />
+        <Stack direction={'row'} alignItems={'center'} height={60}>
+          {
+            hideStartOverButton
+              ? null
+              : <Box width={200}>
+                  <Button
+                    variant="outlined"
+                    size="large"
+                    startIcon={<ArrowBackIosNewIcon />}
+                    onClick={ resetHolsterPage }
+                  >
+                    Start Over
+                  </Button>
+                </Box>
+          }
+          <Box width={200}>
+            <Button
+              variant="outlined"
+              size="large"
+              startIcon={<LinkIcon />}
+              onClick={ generatePermalink }
+            >
+              Create Link
+            </Button>
+          </Box>
+          {
+            (holsterType === 'learning' || holsterType === 'lynn-reclear') && !generatedLink
+              ? <Typography variant='caption' width={650} alignSelf={'center'}>Note: These holsters were created for Lynn Kaneko's DRS runs on The Help Lines. If you're running with a different group, your holsters may vary. Check with your raid lead to see what you need to bring.</Typography>
+              : null
+          }
+          {
+            generatedLink
+              ? <Box width={650} alignSelf={'center'}>
+                  <DefaultCopyField fullWidth value={ generatedLink } /> 
+                </Box> 
+              : null
+          }
+        </Stack>
+        <Box height={40} />
+        <DRSHolsterActionAcquisitionGuideComponent neededActions={ DRSHolsterHelper.getNeededActionsForBag(holsterPrepop, holsterMain, 3) } />
+      </Stack>
+    </Box>
+  );
+}
