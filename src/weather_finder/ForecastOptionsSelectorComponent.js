@@ -180,8 +180,6 @@ export default function ForecastOptionsSelectorComponent(props) {
     },
   };
 
-  console.log('ranking', ranking)
-
   return (
     <div className="ForecastOptionsSelector">
       <Paper className="ForecastOptionsPaper" elevation={1}>

@@ -28,7 +28,9 @@ export default function EurekaLogosActionHelperComponent(props) {
     window.history.pushState(logosActionUrl, 'lynn.pet! - ' + logosActionUrl, '/eureka/logos/' + event.target.value.replaceAll(' ', '_'))
 
     setLogosAction(event.target.value);
-    setSelectedRecipe(logosActionData.recipes[0]);
+    if (logosActionData) {
+      setSelectedRecipe(logosActionData.recipes[0]);
+    }
   }
 
   function handleRecipeUpdate(event, value) {
