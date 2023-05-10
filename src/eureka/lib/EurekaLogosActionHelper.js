@@ -1,6 +1,6 @@
 const logograms = require('../../ba/lib/Logograms.json');
 const logosActions = require('../../ba/lib/LogosActions.json');
-const idToItem = require('../../acquisition/IDToItem.json')
+const idToItem = require('../../acquisition/IDToItem.json');
 
 class EurekaLogosActionHelper {
   static getLogosActionData(logosAction) {
@@ -24,6 +24,7 @@ class EurekaLogosActionHelper {
     if (mnemeData) {
       return mnemeData.logogram;
     }
+    return null;
   }
 
   static getMnemeData(mneme) {

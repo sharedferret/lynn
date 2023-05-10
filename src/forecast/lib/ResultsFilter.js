@@ -13,6 +13,7 @@ export default class ResultsFilter {
     image: 'cassie.png',
     uri: 'cassie',
   });
+
   static KING_ARTHO = new ResultsFilter({
     name: 'King Artho',
     type: FarmType.EUREKA_NM,
@@ -22,6 +23,7 @@ export default class ResultsFilter {
     image: 'crab.png',
     uri: 'crab',
   });
+
   static SKOLL = new ResultsFilter({
     name: 'Skoll',
     type: FarmType.EUREKA_NM,
@@ -31,6 +33,7 @@ export default class ResultsFilter {
     image: 'skoll.png',
     uri: 'skoll',
   });
+
   static PAZUZU = new ResultsFilter({
     name: 'Pazuzu',
     type: FarmType.EUREKA_NM,
@@ -40,6 +43,7 @@ export default class ResultsFilter {
     image: 'pazuzu.png',
     uri: 'pazuzu',
   });
+
   static PENTHESILEA = new ResultsFilter({
     name: 'Penthesilea',
     type: FarmType.EUREKA_NM,
@@ -48,7 +52,7 @@ export default class ResultsFilter {
     collection: false,
     image: 'penny.png',
     uri: 'penny',
-  })
+  });
 
   // Eureka Farms
   static COLD_WARPED_LOCKBOX = new ResultsFilter({
@@ -60,6 +64,7 @@ export default class ResultsFilter {
     image: 'lockbox.png',
     uri: 'cold_box',
   });
+
   static HEAT_WARPED_LOCKBOX = new ResultsFilter({
     name: 'Heat-Warped Lockbox',
     type: FarmType.EUREKA_FARM,
@@ -69,6 +74,7 @@ export default class ResultsFilter {
     image: 'lockbox.png',
     uri: 'heat_box',
   });
+
   static OFFENSIVE_LOGOGRAM = new ResultsFilter({
     name: 'Offensive Logogram',
     type: FarmType.EUREKA_FARM,
@@ -89,6 +95,7 @@ export default class ResultsFilter {
     image: 'bsffrag.png',
     uri: 'preparation',
   });
+
   static CARE_FRAGMENT = new ResultsFilter({
     name: 'Care',
     type: FarmType.FRAGMENT_FARM,
@@ -98,6 +105,7 @@ export default class ResultsFilter {
     image: 'bsffrag.png',
     uri: 'care',
   });
+
   static SUPPORT_FRAGMENT = new ResultsFilter({
     name: 'Support',
     type: FarmType.FRAGMENT_FARM,
@@ -107,6 +115,7 @@ export default class ResultsFilter {
     image: 'bsffrag.png',
     uri: 'support',
   });
+
   static HISTORY_FRAGMENT = new ResultsFilter({
     name: 'History',
     type: FarmType.FRAGMENT_FARM,
@@ -116,6 +125,7 @@ export default class ResultsFilter {
     image: 'zadnorfrag.png',
     uri: 'history',
   });
+
   static ARTISTRY_FRAGMENT = new ResultsFilter({
     name: 'Artistry',
     type: FarmType.FRAGMENT_FARM,
@@ -142,6 +152,7 @@ export default class ResultsFilter {
     ],
     uri: 'nm',
   });
+
   static FRAGMENT_FARM = new ResultsFilter({
     name: 'All Bozja Fragment Farms',
     type: FarmType.FRAGMENT_FARM,
@@ -157,6 +168,7 @@ export default class ResultsFilter {
     ],
     uri: 'fragments',
   });
+
   static EUREKA_FARMS = new ResultsFilter({
     name: 'All Eureka Farms',
     type: FarmType.EUREKA_FARM,
@@ -170,6 +182,7 @@ export default class ResultsFilter {
     ],
     uri: 'eurekafarms',
   });
+
   static ALL = new ResultsFilter({
     name: 'All Upcoming Spawns',
     type: FarmType.ALL,
@@ -191,11 +204,11 @@ export default class ResultsFilter {
       ResultsFilter.HISTORY_FRAGMENT,
       ResultsFilter.ARTISTRY_FRAGMENT,
     ],
-    uri: '#'
+    uri: '#',
   });
 
-  static getFilter = function(name) {
-    switch(name) {
+  static getFilter = function (name) {
+    switch (name) {
       case 'copycatcassie':
       case 'cassie': return ResultsFilter.COPYCAT_CASSIE;
       case 'kingartho':
@@ -228,8 +241,8 @@ export default class ResultsFilter {
       case 'eurekafarms': return ResultsFilter.EUREKA_FARMS;
       default: return ResultsFilter.ALL;
     }
-  }
-  
+  };
+
   constructor(data) {
     this.name = data.name;
     this.type = data.type;

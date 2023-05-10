@@ -7,9 +7,11 @@ const EIGHT_HOURS_IN_MS = 8 * 1000 * 60 * 60;
 const EORZEA_WEATHER_DURATION_MS = (23 * 60000) + (20 * 1000);
 const WEATHER_CHANGES_PER_14_DAYS = 864;
 
-const calculateWeatherForTimePeriod = (segments, 
-  start_date = new Date(), 
-  location = EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT) => {
+const calculateWeatherForTimePeriod = (
+  segments,
+  start_date = new Date(),
+  location = EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT,
+) => {
   const current_eorzea_epoch = start_date.getTime() * EORZEA_TIME_DILATION;
 
   // Align to start of current weather segment
@@ -21,7 +23,7 @@ const calculateWeatherForTimePeriod = (segments,
     const time = new Date(weather_start_date.getTime() + (i * EORZEA_WEATHER_DURATION_MS));
     const weather_condition = EorzeaWeather.getWeather(location, time);
     weather_array.push({
-      time: time,
+      time,
       condition: weather_condition,
     });
   }
@@ -69,12 +71,12 @@ const calculateUpcomingFarms = (filter) => {
       }
     }
   }
-  
+
   return output;
-}
+};
 
 /**
- * 
+ *
  * @param filter  A ResultsFilter object to retrieve upcoming spawns for.
  * @return An array of upcoming spawns containing the following object:
  *  {
@@ -107,13 +109,12 @@ const calculateUpcomingSpawns = (filter, max_results = 10) => {
 
   output = output.slice(0, max_results);
 
-
   // See if there's a conflict - if so, save the most recent one
   for (let i = 0; i < output.length; i++) {
     const most_recent_conditions = calculateWeatherForTimePeriod(
       5,
       new Date(output[i].time.getTime() - (5 * EORZEA_WEATHER_DURATION_MS)),
-      filter.zone
+      filter.zone,
     );
 
     for (let j = most_recent_conditions.length - 1; j >= 0; j--) {
@@ -122,16 +123,15 @@ const calculateUpcomingSpawns = (filter, max_results = 10) => {
       }
     }
   }
-  
-  
+
   return output;
-}
+};
 
 class UpcomingSpawnCalculator {
   static getUpcomingSpawns(filter, max_results = 10) {
     const upcoming = calculateUpcomingSpawns(filter);
     return upcoming.splice(0, max_results);
-  };
+  }
 
   static getMultipleUpcomingSpawns(filters, max_results = 10) {
     const partialResults = [];
@@ -167,9 +167,7 @@ class UpcomingSpawnCalculator {
 
   static getTopFarms(filter, max_results = 10) {
     const unsortedResults = calculateUpcomingFarms(filter);
-    const sortedResults = sortBy(unsortedResults, function(result) {
-      return -(result.duration);
-    });
+    const sortedResults = sortBy(unsortedResults, (result) => -(result.duration));
     return sortedResults.slice(0, max_results);
   }
 
@@ -184,9 +182,7 @@ class UpcomingSpawnCalculator {
 
     // Sort by time first, then by most concurrent weathers
     let results = sortBy(partialResults, 'time');
-    results = sortBy(results, function(result) {
-      return -(result.duration);
-    });
+    results = sortBy(results, (result) => -(result.duration));
 
     return results.slice(0, max_results);
   }

@@ -1,6 +1,6 @@
-import DRSHolsterHelper from "../drs/lib/DRSHolsterHelper";
 import axios from 'axios';
-import EurekaLogosActionHelper from "../eureka/lib/EurekaLogosActionHelper";
+import DRSHolsterHelper from '../drs/lib/DRSHolsterHelper';
+import EurekaLogosActionHelper from '../eureka/lib/EurekaLogosActionHelper';
 
 let instance;
 
@@ -11,7 +11,7 @@ class UniversalisPriceHelper {
     if (instance) {
       throw new Error('Duplicate UniversalisPriceHelper object');
     }
-    this.priceData = {}
+    this.priceData = {};
     instance = this;
   }
 
@@ -31,30 +31,18 @@ class UniversalisPriceHelper {
       const logogramData = EurekaLogosActionHelper.getLogogramData(i);
       if (logogramData) {
         if (!this.priceData[logogramData.short]) {
-          result.push(logogramData.id)
+          result.push(logogramData.id);
         }
       }
-      
+
       return result;
     }, []);
 
     if (idsToFetch.length > 0) {
-      axios.get('https://universalis.app/api/v2/North-America/' + idsToFetch.join(',') + '?listings=3')
-      .then(response => {
-        if (response.data.itemID) {
-          const id = response.data.itemID;
-          const itemData = idToItem[id];
-          let itemName = '';
-          if (itemData.type === 'fragment') {
-            itemName = DRSHolsterHelper.getFragmentNameForId(id);
-          } else if (itemData.type === 'logogram') {
-            itemName = EurekaLogosActionHelper.getLogogramNameFromId(id);
-          }
-          const data = response.data;
-          this.addPrice(itemName, data);
-        } else {
-          for (let i in response.data.itemIDs) {
-            const id = response.data.itemIDs[i];
+      axios.get(`https://universalis.app/api/v2/North-America/${idsToFetch.join(',')}?listings=3`)
+        .then((response) => {
+          if (response.data.itemID) {
+            const id = response.data.itemID;
             const itemData = idToItem[id];
             let itemName = '';
             if (itemData.type === 'fragment') {
@@ -62,25 +50,35 @@ class UniversalisPriceHelper {
             } else if (itemData.type === 'logogram') {
               itemName = EurekaLogosActionHelper.getLogogramNameFromId(id);
             }
-            const data = response.data.items[id];
+            const { data } = response;
             this.addPrice(itemName, data);
+          } else {
+            for (const i in response.data.itemIDs) {
+              const id = response.data.itemIDs[i];
+              const itemData = idToItem[id];
+              let itemName = '';
+              if (itemData.type === 'fragment') {
+                itemName = DRSHolsterHelper.getFragmentNameForId(id);
+              } else if (itemData.type === 'logogram') {
+                itemName = EurekaLogosActionHelper.getLogogramNameFromId(id);
+              }
+              const data = response.data.items[id];
+              this.addPrice(itemName, data);
+            }
           }
-        }
 
-        
-
-        updateGuideState(this.getPriceData());
-      }, error => {
-        console.log(error);
-      });
+          updateGuideState(this.getPriceData());
+        }, (error) => {
+          console.log(error);
+        });
     }
   }
 
   addPrice(fragmentName, data) {
     this.priceData[fragmentName] = {
       averagePrice: Math.round(data.averagePrice),
-      cheapestListings: data.listings
-    }
+      cheapestListings: data.listings,
+    };
   }
 
   getPriceData() {
@@ -92,6 +90,6 @@ class UniversalisPriceHelper {
   }
 }
 
-let universalisPriceHelperInstance = Object.freeze(new UniversalisPriceHelper());
+const universalisPriceHelperInstance = Object.freeze(new UniversalisPriceHelper());
 
 export default universalisPriceHelperInstance;
