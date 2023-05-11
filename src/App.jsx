@@ -30,11 +30,21 @@ function WrappedMainComponent({ component, page }) {
   if (page === 'forecast') {
     const forecastFilter = ResultsFilter.getFilter(params.forecastfilter);
     return (
-      <MainComponent component={component} page={page} forecastFilter={forecastFilter} />
+      <MainComponent
+        component={component}
+        page={page}
+        forecastFilter={forecastFilter}
+        colorModeContext={ColorModeContext}
+      />
     );
   } if (page === 'reference') {
     return (
-      <MainComponent component={component} page={page} type={params.type} />
+      <MainComponent
+        component={component}
+        page={page}
+        type={params.type}
+        colorModeContext={ColorModeContext}
+      />
     );
   } if (page === 'drsholster') {
     return (
@@ -47,20 +57,29 @@ function WrappedMainComponent({ component, page }) {
           }
         }
         encodedHolster={params.holsterstring}
+        colorModeContext={ColorModeContext}
       />
     );
   } if (page === 'bozjalostaction') {
     return (
-      <MainComponent component={component} lostAction={params.lostaction} />
+      <MainComponent
+        component={component}
+        lostAction={params.lostaction}
+        colorModeContext={ColorModeContext}
+      />
     );
   } if (page === 'eurekalogosaction') {
     return (
-      <MainComponent component={component} logosAction={params.logosaction} />
+      <MainComponent
+        component={component}
+        logosAction={params.logosaction}
+        colorModeContext={ColorModeContext}
+      />
     );
   }
 
   return (
-    <MainComponent component={component} page={page} />
+    <MainComponent component={component} page={page} colorModeContext={ColorModeContext} />
   );
 }
 

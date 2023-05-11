@@ -6,7 +6,15 @@ import MobileTopbarComponent from './MobileTopbarComponent';
 import ResultsFilter from './forecast/lib/ResultsFilter';
 
 export default function MainComponent({
-  forecastFilter, component, page, type, holster, encodedHolster, lostAction, logosAction,
+  forecastFilter,
+  component,
+  page,
+  type,
+  holster,
+  encodedHolster,
+  lostAction,
+  logosAction,
+  colorModeContext,
 }) {
   /**
    * Component State
@@ -44,6 +52,7 @@ export default function MainComponent({
         handleSidebarClick={handleSidebarClick}
         handleSidebarForecastClick={handleSidebarForecastClick}
         handleDrawerToggle={handleDrawerToggle}
+        colorModeContext={colorModeContext}
         page={page}
       />
       <Box flexGrow={1} height="100%" sx={{ width: { sm: 'calc(100% - 280px)' } }}>

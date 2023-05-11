@@ -1,24 +1,34 @@
 import React, { useCallback } from 'react';
 import {
-  Box, Divider, Drawer, IconButton, List, Stack,
+  Avatar,
+  Box,
+  Button,
+  Divider,
+  Drawer,
+  IconButton,
+  List,
+  ListItemAvatar,
+  ListItemButton,
+  ListItemText,
+  Stack,
+  Typography,
 } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { ColorModeContext } from './App';
 import ResultsFilter from './forecast/lib/ResultsFilter';
 
 function SidebarComponent({
-  filter,
   page,
   mobileOpen,
   handleDrawerToggle,
   handleSidebarClick,
   handleSidebarForecastClick,
+  colorModeContext,
   window,
 }) {
   const navigate = useNavigate();
@@ -40,6 +50,16 @@ function SidebarComponent({
     handleSidebarClick();
   }, [handleSidebarClick]);
 
+  const StyledButton = styled(ListItemButton)({
+    '&:hover': {
+      transform: 'translateX(6px)',
+      transition: '0.2s ease-in',
+      color: '#fff',
+    },
+    transition: 'transform 0.2s',
+    color: '#e0e0e0',
+  });
+
   /**
    * eureka/loadout: Loadout Creator
    * eureka/logos: Logos Action Helper
@@ -51,186 +71,111 @@ function SidebarComponent({
         <Box className="h-6 w-6" />
         <span className="text-md uppercase font-semibold text-white">Eureka and BA</span>
       </li>
-      <li>
-        <div
-          onClick={(e) => { handleSidebarClickFromSidebar(e, 'ba'); }}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <i className="bx bx-home" />
-          </span>
-          <span className="text-md font-medium">BA Loadouts</span>
-        </div>
-      </li>
-      <li>
-        <div
-          onClick={(e) => { handleSidebarClickFromSidebar(e, 'portals'); }}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <i className="bx bx-home" />
 
-          </span>
-          <span className="text-md font-medium">BA Portal Map</span>
-        </div>
-      </li>
-      <li>
-        <div
-          onClick={(e) => { handleSidebarClickFromSidebar(e, 'eureka/logos'); }}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <i className="bx bx-home" />
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'ba'); }}
+      >
+        <Box width={32} />
+        <Typography>BA Loadouts</Typography>
+      </StyledButton>
 
-          </span>
-          <span className="text-md font-medium">Logos Action Helper</span>
-        </div>
-      </li>
-      <li>
-        <div
-          onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.EUREKA_NMS)}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <i className="bx bx-home" />
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'portals'); }}
+      >
+        <Box width={32} />
+        <Typography>BA Portal Map</Typography>
+      </StyledButton>
 
-          </span>
-          <span className="text-md font-medium">NM Spawn Times</span>
-        </div>
-      </li>
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'eureka/logos'); }}
+      >
+        <Box width={32} />
+        <Typography>Logos Action Helper</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.EUREKA_NMS)}
+      >
+        <Box width={32} />
+        <Typography>NM Spawn Times</Typography>
+      </StyledButton>
 
       <li className="flex flex-row items-center h-12">
         <Box className="h-6 w-6" />
         <span className="text-md uppercase font-semibold text-white">Bozja and DRS</span>
       </li>
-      <li>
-        <a href="/drs/holster">
-          <div
-            style={{ cursor: 'pointer' }}
-            className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-          >
-            <span
-              className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"
-            >
-              <i className="bx bx-home" />
 
-            </span>
-            <span className="text-md font-medium">DRS Holsters</span>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="/drs/holster/c">
-          <div
-            style={{ cursor: 'pointer' }}
-            className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-          >
-            <span
-              className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"
-            >
-              <i className="bx bx-home" />
+      <a href="/drs/holster">
+        <StyledButton>
+          <Box width={32} />
+          <Typography>DRS Holsters</Typography>
+        </StyledButton>
+      </a>
 
-            </span>
-            <span className="text-md font-medium">Holster Creator</span>
-          </div>
-        </a>
-      </li>
-      <li>
-        <div
-          onClick={(e) => { handleSidebarClickFromSidebar(e, 'bozja/lostaction'); }}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <i className="bx bx-home" />
+      <a href="/drs/holster/c">
+        <StyledButton>
+          <Box width={32} />
+          <Typography>Holster Creator</Typography>
+        </StyledButton>
+      </a>
 
-          </span>
-          <span className="text-md font-medium">Lost Action Helper</span>
-        </div>
-      </li>
-      <li>
-        <div
-          onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.FRAGMENT_FARM)}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <i className="bx bx-home" />
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'bozja/lostaction'); }}
+      >
+        <Box width={32} />
+        <Typography>Lost Action Helper</Typography>
+      </StyledButton>
 
-          </span>
-          <span className="text-md font-medium">Fragment Farm Times</span>
-        </div>
-      </li>
+      <StyledButton
+        onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.FRAGMENT_FARM)}
+      >
+        <Box width={32} />
+        <Typography>Fragment Farm Times</Typography>
+      </StyledButton>
 
       <li className="flex flex-row items-center h-12">
         <Box className="h-6 w-6" />
         <span className="text-md uppercase font-semibold text-white">Forays</span>
       </li>
-      <li>
-        <div
-          onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.ALL)}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <i className="bx bx-home" />
 
-          </span>
-          <span className="text-md font-medium">Expeditionary Forecast</span>
-        </div>
-      </li>
-      <li>
-        <div
-          onClick={(e) => { handleSidebarClickFromSidebar(e, 'weather-finder'); }}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <i className="bx bx-home" />
+      <StyledButton
+        onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.ALL)}
+      >
+        <Box width={32} />
+        <Typography>Expeditionary Forecast</Typography>
+      </StyledButton>
 
-          </span>
-          <span className="text-md font-medium">Advanced Weather Finder</span>
-        </div>
-      </li>
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'weather-finder'); }}
+      >
+        <Box width={32} />
+        <Typography>Advanced Weather Finder</Typography>
+      </StyledButton>
 
       <li className="flex flex-row items-center h-12">
         <Box className="h-6 w-6" />
         <span className="text-md uppercase font-semibold text-white">About</span>
       </li>
-      <li>
-        <div
-          onClick={(e) => { handleSidebarClickFromSidebar(e, '#'); }}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <i className="bx bx-home" />
 
-          </span>
-          <span className="text-md font-medium">Lynn Kaneko @ Exodus</span>
-        </div>
-      </li>
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, '#'); }}
+      >
+        <Box width={32} />
+        <ListItemText>Lynn Kaneko @ Exodus</ListItemText>
+      </StyledButton>
     </List>
   );
 
   const forecastSidebarComponent = (
     <List className="flex flex-col py-4 overflow-x-hidden">
-      <li>
-        <div
-          onClick={(e) => { handleSidebarClickFromSidebar(e, ''); }}
-          style={{ cursor: 'pointer' }}
-          className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-        >
-          <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300">
-            <ArrowBackIcon />
-          </span>
-          <span className="text-md font-medium">Home</span>
-        </div>
-      </li>
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, ''); }}
+      >
+        <ListItemAvatar>
+          <ArrowBackIcon />
+        </ListItemAvatar>
+        <ListItemText>Home</ListItemText>
+      </StyledButton>
 
       <li className="flex flex-row items-center h-12">
         <Box className="h-6 w-6" />
@@ -239,21 +184,19 @@ function SidebarComponent({
       {[
         ResultsFilter.ALL,
       ].map((resultsfilter) => (
-        <li key={resultsfilter.name}>
-          <div
-            onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
-            style={{ cursor: 'pointer' }}
-            className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-          >
-            <span
-              className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"
-            >
-              <i className="bx bx-home" />
+        <StyledButton
+          onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
+        >
+          {resultsfilter.collection === false
+            ? (
+              <ListItemAvatar>
+                <Avatar variant="rounded" src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`} alt={resultsfilter.name} />
+              </ListItemAvatar>
+            )
+            : <ListItemAvatar />}
 
-            </span>
-            <span className="text-md font-medium">{resultsfilter.name}</span>
-          </div>
-        </li>
+          <ListItemText>{resultsfilter.name}</ListItemText>
+        </StyledButton>
       ))}
 
       <li className="flex flex-row items-center h-12">
@@ -268,31 +211,19 @@ function SidebarComponent({
         ResultsFilter.PAZUZU,
         ResultsFilter.PENTHESILEA,
       ].map((resultsfilter) => (
-        <li key={resultsfilter.name}>
-          <div
-            onClick={(e) => handleSidebarForecastClickFromSidebar(e, resultsfilter)}
-            selected={filter === resultsfilter}
-            style={{ cursor: 'pointer' }}
-            className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-          >
-            <span
-              className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"
-            >
-              {resultsfilter.collection === false
-                ? (
-                  <Box sx={{ width: '24px', height: '24px' }}>
-                    <img
-                      src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`}
-                      style={{ width: '100%', objectFit: 'scale-down' }}
-                      alt={resultsfilter.name}
-                    />
-                  </Box>
-                )
-                : null}
-            </span>
-            <span className="text-md font-medium">{resultsfilter.name}</span>
-          </div>
-        </li>
+        <StyledButton
+          onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
+        >
+          {resultsfilter.collection === false
+            ? (
+              <ListItemAvatar>
+                <Avatar variant="rounded" src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`} alt={resultsfilter.name} />
+              </ListItemAvatar>
+            )
+            : <ListItemAvatar />}
+
+          <ListItemText>{resultsfilter.name}</ListItemText>
+        </StyledButton>
       ))}
 
       <li className="flex flex-row items-center h-12">
@@ -305,31 +236,19 @@ function SidebarComponent({
         ResultsFilter.HEAT_WARPED_LOCKBOX,
         ResultsFilter.OFFENSIVE_LOGOGRAM,
       ].map((resultsfilter) => (
-        <li key={resultsfilter.name}>
-          <div
-            onClick={(e) => handleSidebarForecastClickFromSidebar(e, resultsfilter)}
-            selected={filter === resultsfilter}
-            style={{ cursor: 'pointer' }}
-            className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-          >
-            <span
-              className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"
-            >
-              {resultsfilter.collection === false
-                ? (
-                  <Box sx={{ width: '24px', height: '24px' }}>
-                    <img
-                      src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`}
-                      style={{ width: '100%', objectFit: 'scale-down' }}
-                      alt={resultsfilter.name}
-                    />
-                  </Box>
-                )
-                : null}
-            </span>
-            <span className="text-md font-medium">{resultsfilter.name}</span>
-          </div>
-        </li>
+        <StyledButton
+          onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
+        >
+          {resultsfilter.collection === false
+            ? (
+              <ListItemAvatar>
+                <Avatar variant="rounded" src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`} alt={resultsfilter.name} />
+              </ListItemAvatar>
+            )
+            : <ListItemAvatar />}
+
+          <ListItemText>{resultsfilter.name}</ListItemText>
+        </StyledButton>
       ))}
 
       <li className="flex flex-row items-center h-12">
@@ -344,31 +263,19 @@ function SidebarComponent({
         ResultsFilter.HISTORY_FRAGMENT,
         ResultsFilter.ARTISTRY_FRAGMENT,
       ].map((resultsfilter) => (
-        <li key={resultsfilter.name}>
-          <div
-            onClick={(e) => handleSidebarForecastClickFromSidebar(e, resultsfilter)}
-            selected={filter === resultsfilter}
-            style={{ cursor: 'pointer' }}
-            className="flex flex-row grow items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-300 hover:text-gray-100"
-          >
-            <span
-              className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-300"
-            >
-              {resultsfilter.collection === false
-                ? (
-                  <Box sx={{ width: '24px', height: '24px' }}>
-                    <img
-                      src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`}
-                      style={{ width: '100%', objectFit: 'scale-down' }}
-                      alt={resultsfilter.name}
-                    />
-                  </Box>
-                )
-                : null}
-            </span>
-            <span className="text-md font-medium">{resultsfilter.name}</span>
-          </div>
-        </li>
+        <StyledButton
+          onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
+        >
+          {resultsfilter.collection === false
+            ? (
+              <ListItemAvatar>
+                <Avatar variant="rounded" src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`} alt={resultsfilter.name} />
+              </ListItemAvatar>
+            )
+            : <ListItemAvatar />}
+
+          <ListItemText>{resultsfilter.name}</ListItemText>
+        </StyledButton>
       ))}
     </List>
   );
@@ -382,8 +289,10 @@ function SidebarComponent({
   const container = window !== undefined ? () => window().document.body : undefined;
 
   const theme = useTheme();
-  const colorMode = React.useContext(ColorModeContext);
+  const colorMode = React.useContext(colorModeContext);
 
+  // Disable prop spreading rule for scrollbars
+  /* eslint-disable react/jsx-props-no-spreading */
   return (
     <Box
       component="nav"
@@ -409,14 +318,17 @@ function SidebarComponent({
         }}
       >
         <Stack width="100%" height="100%">
-          <div
-            className="flex items-center justify-center h-20"
-            onClick={(e) => handleSidebarClickFromSidebar(e, '')}
-            style={{ cursor: 'pointer' }}
-          >
-            <h1 className="text-3xl text-red-200">lynn.pet!</h1>
-          </div>
-          <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />
+
+          <Stack spacing={2} pt={2}>
+            <Button
+              onClick={(e) => handleSidebarClickFromSidebar(e, '')}
+            >
+              <h1 className="text-3xl text-red-200">lynn.pet!</h1>
+            </Button>
+            <Box>
+              <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />
+            </Box>
+          </Stack>
           <Box flexGrow={1}>
             <Scrollbars universal>
               {drawer}
@@ -453,16 +365,16 @@ function SidebarComponent({
         open
       >
         <Stack width="100%" height="100%">
-          <Box>
-            <div
-              className="flex items-center justify-center h-20"
+          <Stack spacing={2} pt={2}>
+            <Button
               onClick={(e) => handleSidebarClickFromSidebar(e, '')}
-              style={{ cursor: 'pointer' }}
             >
               <h1 className="text-3xl text-red-200">lynn.pet!</h1>
-            </div>
-            <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />
-          </Box>
+            </Button>
+            <Box>
+              <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />
+            </Box>
+          </Stack>
           <Box flexGrow={1}>
             <Scrollbars
               universal
