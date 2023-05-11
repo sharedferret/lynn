@@ -1,5 +1,7 @@
 import EorzeaWeather from 'eorzea-weather';
 import sortBy from 'underscore/modules/sortBy';
+import EorzeaTime from 'eorzea-time';
+import Weather from '../forecast/lib/Weather';
 
 const EORZEA_TIME_DILATION = 20.571428571428573;
 const EIGHT_HOURS_IN_MS = 8 * 1000 * 60 * 60;
@@ -212,8 +214,86 @@ const getFavorability = (
 }
 */
 
+/**
+ * Aquamaton: Clear Skies or Fair Skies followed by Gales, with gales occurring at 8am
+ *
+ * Lancetfish: Fair Skies followed by Clouds, with Clouds occurring at 12am
+ *  Additionally include the most recent Fair Skies time along with this.
+ */
+const findUpcomingSpawnsForFish = (() => {
+  const oneEorzeaHour = 175000;
+
+  // Get a set of weather
+  // Iterate through, look for Weather -> Weather, and then check time of second weather
+  const upcomingKholusiaWeather = calculateWeatherForTimePeriod(
+    432,
+    new Date(new Date() - 1380000),
+    EorzeaWeather.ZONE_KHOLUSIA,
+  );
+
+  const aquamatonSpawns = [];
+  for (let i = 1; i < upcomingKholusiaWeather.length; i += 1) {
+    const currentWeather = upcomingKholusiaWeather[i];
+    const currentWeatherET = new EorzeaTime(currentWeather.time).getHours();
+    // console.log('checking', { weather: currentWeather.condition, et: currentWeatherET });
+    if (currentWeather.condition === Weather.GALES && currentWeatherET === 8) {
+      // Now, check the most recent weather to see if it was fair or clear
+      // If so, push a new event starting at 10AM (two hours after weather change)
+      const previousWeather = upcomingKholusiaWeather[i - 1];
+      if (previousWeather.condition === Weather.FAIR_SKIES
+        || previousWeather.condition === Weather.CLEAR_SKIES) {
+        aquamatonSpawns.push({
+          time: new Date(currentWeather.time.getTime() + (2 * oneEorzeaHour)),
+        });
+      }
+    }
+  }
+
+  // Now let's find lancetfish's spawns
+  const upcomingTempestWeather = calculateWeatherForTimePeriod(
+    432,
+    new Date(new Date() - 1380000),
+    EorzeaWeather.ZONE_THE_TEMPEST,
+  );
+
+  const lancetfishSpawns = [];
+  for (let i = 1; i < upcomingTempestWeather.length; i += 1) {
+    const currentWeather = upcomingTempestWeather[i];
+    const currentWeatherET = new EorzeaTime(currentWeather.time).getHours();
+    const previousWeather = upcomingTempestWeather[i - 1];
+    if (currentWeather.condition === Weather.CLOUDS
+      && currentWeatherET === 0
+      && previousWeather.condition === Weather.FAIR_SKIES) {
+      // Lastly, see if there was a Mora Tecta spawn in the last five weather changes.
+      const startingIndex = i - 5 > 0 ? i - 5 : 0;
+      const moraTectaSpawns = [];
+      for (let j = startingIndex; j < i; j += 1) {
+        const moraWeather = upcomingTempestWeather[j].condition;
+        const moraWeatherET = new EorzeaTime(upcomingTempestWeather[j].time).getHours();
+        if (moraWeather === Weather.FAIR_SKIES && moraWeatherET === 16) {
+          moraTectaSpawns.push({
+            condition: moraWeather,
+            time: new Date(upcomingTempestWeather[j].time + (6 * oneEorzeaHour)),
+          });
+        }
+      }
+
+      lancetfishSpawns.push({ time: currentWeather.time, moraSpawns: moraTectaSpawns });
+    }
+  }
+
+  return {
+    lancetfish: lancetfishSpawns,
+    aquamaton: aquamatonSpawns,
+  };
+});
+
 class WeatherFavorability {
   static ZoneMapping = zoneMapping;
+
+  static findUpcomingSpawnsForFish() {
+    return findUpcomingSpawnsForFish();
+  }
 
   static getFavorability(
     sliceLength,

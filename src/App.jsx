@@ -21,6 +21,7 @@ import DRSHolsterMainComponent from './drs/DRSHolsterMainComponent';
 import BozjaLostActionHelperComponent from './drs/BozjaLostActionHelperComponent';
 import EurekaLoadoutMainComponent from './eureka/EurekaLoadoutMainComponent';
 import EurekaLogosActionHelperComponent from './eureka/EurekaLogosActionHelperComponent';
+import FishComponent from './Fish';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -161,6 +162,10 @@ const router = createBrowserRouter([
         element: <WrappedMainComponent component={<LynnReferenceComponent />} page="reference" />,
       },
     ],
+  },
+  {
+    path: '/fish',
+    element: <WrappedMainComponent component={<FishComponent />} page="fish" />,
   },
 ]);
 
