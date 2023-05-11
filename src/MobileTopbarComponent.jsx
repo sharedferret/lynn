@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { AppBar, IconButton, Toolbar } from '@mui/material';
+import {
+  AppBar, Box, IconButton, Toolbar, Typography,
+} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function MobileTopbarComponent({ handleDrawerToggle }) {
@@ -22,11 +24,12 @@ export default function MobileTopbarComponent({ handleDrawerToggle }) {
         >
           <MenuIcon />
         </IconButton>
-        <div className="flex items-center justify-center h-20">
+        <Box height={80} />
+        <Box>
           <a href="./">
-            <h1 className="text-3xl text-red-200">lynn.pet!</h1>
+            <Typography fontSize="30px" color="#fecaca">lynn.pet!</Typography>
           </a>
-        </div>
+        </Box>
       </Toolbar>
     </AppBar>
   );

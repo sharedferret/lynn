@@ -58,6 +58,8 @@ function SidebarComponent({
     },
     transition: 'transform 0.2s',
     color: '#e0e0e0',
+    paddingTop: '10px',
+    paddingBottom: '10px',
   });
 
   /**
@@ -66,11 +68,11 @@ function SidebarComponent({
    */
 
   const mainSidebarContent = (
-    <List className="flex flex-col py-4 overflow-x-hidden">
-      <li className="flex flex-row items-center h-12">
-        <Box className="h-6 w-6" />
-        <span className="text-md uppercase font-semibold text-white">Eureka and BA</span>
-      </li>
+    <List pt={4} pb={4} sx={{ overflowX: 'hidden' }}>
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>EUREKA AND BA</Typography>
+      </Stack>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'ba'); }}
@@ -100,10 +102,10 @@ function SidebarComponent({
         <Typography>NM Spawn Times</Typography>
       </StyledButton>
 
-      <li className="flex flex-row items-center h-12">
-        <Box className="h-6 w-6" />
-        <span className="text-md uppercase font-semibold text-white">Bozja and DRS</span>
-      </li>
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>BOZJA AND DRS</Typography>
+      </Stack>
 
       <a href="/drs/holster">
         <StyledButton>
@@ -133,10 +135,10 @@ function SidebarComponent({
         <Typography>Fragment Farm Times</Typography>
       </StyledButton>
 
-      <li className="flex flex-row items-center h-12">
-        <Box className="h-6 w-6" />
-        <span className="text-md uppercase font-semibold text-white">Forays</span>
-      </li>
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>FORAYS</Typography>
+      </Stack>
 
       <StyledButton
         onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.ALL)}
@@ -152,10 +154,10 @@ function SidebarComponent({
         <Typography>Advanced Weather Finder</Typography>
       </StyledButton>
 
-      <li className="flex flex-row items-center h-12">
-        <Box className="h-6 w-6" />
-        <span className="text-md uppercase font-semibold text-white">About</span>
-      </li>
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>ABOUT</Typography>
+      </Stack>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, '#'); }}
@@ -167,7 +169,7 @@ function SidebarComponent({
   );
 
   const forecastSidebarComponent = (
-    <List className="flex flex-col py-4 overflow-x-hidden">
+    <List pt={4} pb={4} sx={{ overflowX: 'hidden' }}>
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, ''); }}
       >
@@ -177,10 +179,10 @@ function SidebarComponent({
         <ListItemText>Home</ListItemText>
       </StyledButton>
 
-      <li className="flex flex-row items-center h-12">
-        <Box className="h-6 w-6" />
-        <span className="text-md uppercase font-semibold text-white">All</span>
-      </li>
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>ALL</Typography>
+      </Stack>
       {[
         ResultsFilter.ALL,
       ].map((resultsfilter) => (
@@ -199,10 +201,10 @@ function SidebarComponent({
         </StyledButton>
       ))}
 
-      <li className="flex flex-row items-center h-12">
-        <Box className="h-6 w-6" />
-        <span className="text-md uppercase font-semibold text-white">Eureka NMs</span>
-      </li>
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>EUREKA NMS</Typography>
+      </Stack>
       {[
         ResultsFilter.EUREKA_NMS,
         ResultsFilter.COPYCAT_CASSIE,
@@ -226,10 +228,10 @@ function SidebarComponent({
         </StyledButton>
       ))}
 
-      <li className="flex flex-row items-center h-12">
-        <Box className="h-6 w-6" />
-        <span className="text-md uppercase font-semibold text-white">Eureka Farms</span>
-      </li>
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>EUREKA FARMS</Typography>
+      </Stack>
       {[
         ResultsFilter.EUREKA_FARMS,
         ResultsFilter.COLD_WARPED_LOCKBOX,
@@ -251,10 +253,10 @@ function SidebarComponent({
         </StyledButton>
       ))}
 
-      <li className="flex flex-row items-center h-12">
-        <Box className="h-6 w-6" />
-        <span className="text-md uppercase font-semibold text-white">Bozja Fragment Farms</span>
-      </li>
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>BOZJA FRAGMENT FARMS</Typography>
+      </Stack>
       {[
         ResultsFilter.FRAGMENT_FARM,
         ResultsFilter.PREPARATION_FRAGMENT,
@@ -281,9 +283,9 @@ function SidebarComponent({
   );
 
   const drawer = (
-    <div className="flex flex-col">
+    <Box>
       {page === 'forecast' ? forecastSidebarComponent : mainSidebarContent}
-    </div>
+    </Box>
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
@@ -319,11 +321,11 @@ function SidebarComponent({
       >
         <Stack width="100%" height="100%">
 
-          <Stack spacing={2} pt={2}>
+          <Stack spacing={2} pt={1}>
             <Button
               onClick={(e) => handleSidebarClickFromSidebar(e, '')}
             >
-              <h1 className="text-3xl text-red-200">lynn.pet!</h1>
+              <Typography fontSize="30px" color="#fecaca">lynn.pet!</Typography>
             </Button>
             <Box>
               <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />
@@ -365,11 +367,11 @@ function SidebarComponent({
         open
       >
         <Stack width="100%" height="100%">
-          <Stack spacing={2} pt={2}>
+          <Stack spacing={2} pt={1}>
             <Button
               onClick={(e) => handleSidebarClickFromSidebar(e, '')}
             >
-              <h1 className="text-3xl text-red-200">lynn.pet!</h1>
+              <Typography fontSize="30px" color="#fecaca">lynn.pet!</Typography>
             </Button>
             <Box>
               <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />

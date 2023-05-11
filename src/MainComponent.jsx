@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { Box, CssBaseline } from '@mui/material';
+import { Box, CssBaseline, Stack } from '@mui/material';
 import SidebarComponent from './SidebarComponent';
 
 import MobileTopbarComponent from './MobileTopbarComponent';
@@ -46,7 +46,7 @@ export default function MainComponent({
    * Render Logic
    */
   return (
-    <div className="App h-screen flex items-center">
+    <Stack direction="row" alignItems="center" sx={{ textAlign: 'center' }}>
       <SidebarComponent
         mobileOpen={mobileOpen}
         handleSidebarClick={handleSidebarClick}
@@ -71,6 +71,6 @@ export default function MainComponent({
           })}
         </Box>
       </Box>
-    </div>
+    </Stack>
   );
 }
