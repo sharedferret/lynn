@@ -200,6 +200,7 @@ export default function ForecastOptionsSelectorComponent(
     },
   };
 
+  /* eslint-disable react/jsx-props-no-spreading */
   return (
     <div className="ForecastOptionsSelector">
       <Paper className="ForecastOptionsPaper" elevation={1}>

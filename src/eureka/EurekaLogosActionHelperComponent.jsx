@@ -15,7 +15,7 @@ export default function EurekaLogosActionHelperComponent({ logosAction }) {
   const logosActionData = EurekaLogosActionHelper.getLogosActionData(action);
   let initialSelectedRecipe = null;
   if (logosActionData) {
-    initialSelectedRecipe = logosActionData.recipes[0];
+    [initialSelectedRecipe] = logosActionData.recipes;
   }
 
   const [logosActionState, setLogosActionState] = useState(action);

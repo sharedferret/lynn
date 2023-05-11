@@ -13,7 +13,7 @@ export default function ForecastResultDateComponent({ time }) {
    * currentTime: The current time. Currently only used to force a refresh of
    * the date object.
    */
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [, setCurrentTime] = useState(new Date());
 
   function updateTimer() {
     setCurrentTime(new Date());

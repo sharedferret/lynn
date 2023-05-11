@@ -53,7 +53,7 @@ class UniversalisPriceHelper {
             const { data } = response;
             this.addPrice(itemName, data);
           } else {
-            for (const i in response.data.itemIDs) {
+            for (let i = 0; i < response.data.itemIDs.length; i += 1) {
               const id = response.data.itemIDs[i];
               const itemData = idToItem[id];
               let itemName = '';

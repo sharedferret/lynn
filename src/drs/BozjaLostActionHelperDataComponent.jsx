@@ -72,6 +72,7 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
                 methodData={i}
                 fragmentId={fragmentData.id}
                 fragmentName={fragmentData.short}
+                lastUpdated={lastUpdated}
                 priceData={
                   actionPriceData && lostAction
                     ? actionPriceData[fragmentData.short]
