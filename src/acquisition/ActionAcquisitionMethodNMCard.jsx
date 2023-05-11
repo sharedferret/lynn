@@ -65,6 +65,7 @@ export default function ActionAcquisitionMethodNMCard({ methodData }) {
                       <Box width={48} />
                       <Typography fontStyle="italic">
                         prepped by
+                        {' '}
                         {i.spawned_by}
                       </Typography>
                     </Stack>
@@ -80,6 +81,7 @@ export default function ActionAcquisitionMethodNMCard({ methodData }) {
                       <Box width={48} />
                       <Typography fontStyle="italic">
                         during
+                        {' '}
                         {i.weather}
                       </Typography>
                     </Stack>

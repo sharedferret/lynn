@@ -46,7 +46,7 @@ export default function ActionAcquisitionMethodBunnyFateCard({ methodData }) {
         <Box py={1}>
           <Divider variant="middle" />
         </Box>
-        <Stack direction="row " alignItems="center" spacing={2} key={uuidv4()}>
+        <Stack direction="row" alignItems="center" spacing={2} key={uuidv4()}>
           <Box pr={0.5}>
             <img
               src={`${process.env.PUBLIC_URL}/assets/eureka/bunny_chest_${methodData.coffer_rarity}.png`}

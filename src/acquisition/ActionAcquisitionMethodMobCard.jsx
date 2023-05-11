@@ -25,6 +25,7 @@ export default function ActionAcquisitionMethodMobCard({ methodData }) {
           <Typography>{map}</Typography>
           <Typography>
             Zone
+            {' '}
             {methodData.zone}
           </Typography>
           <Box py={1}>
@@ -94,6 +95,7 @@ export default function ActionAcquisitionMethodMobCard({ methodData }) {
                     <Box width={48} />
                     <Typography fontStyle="italic">
                       during
+                      {' '}
                       {i.weather}
                     </Typography>
                   </Stack>

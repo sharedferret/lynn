@@ -51,6 +51,7 @@ export default function ActionAcquisitionMethodReflectCard({ methodData, fragmen
                 <Box width={48} />
                 <Typography fontStyle="italic">
                   during
+                  {' '}
                   {i.weather}
                 </Typography>
               </Stack>
@@ -105,6 +106,7 @@ export default function ActionAcquisitionMethodReflectCard({ methodData, fragmen
                 <Box width={48} />
                 <Typography fontStyle="italic">
                   during
+                  {' '}
                   {i.weather}
                 </Typography>
               </Stack>

@@ -24,7 +24,7 @@ export default function BAPortalMapComponent() {
         <title>BA Portal Map - lynn.pet!</title>
       </Helmet>
       <Box maxWidth={1400} minWidth={800} height="100%" margin="auto" sx={{ backgroundColor: '#000' }}>
-        <img src={`${process.env.PUBLIC_URL}/assets/portalmap.jpg`} alt="BA Portal Map" style={{ 'max-width': '100%' }} />
+        <img src={`${process.env.PUBLIC_URL}/assets/portalmap.jpg`} alt="BA Portal Map" style={{ maxWidth: '100%' }} />
       </Box>
 
     </Box>

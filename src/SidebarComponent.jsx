@@ -16,6 +16,7 @@ import {
 import { styled, useTheme } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import { Scrollbars } from 'react-custom-scrollbars-2';
+import { v4 as uuidv4 } from 'uuid';
 
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
@@ -76,6 +77,7 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'ba'); }}
+        key={uuidv4()}
       >
         <Box width={32} />
         <Typography>BA Loadouts</Typography>
@@ -83,6 +85,7 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'portals'); }}
+        key={uuidv4()}
       >
         <Box width={32} />
         <Typography>BA Portal Map</Typography>
@@ -90,6 +93,7 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'eureka/logos'); }}
+        key={uuidv4()}
       >
         <Box width={32} />
         <Typography>Logos Action Helper</Typography>
@@ -97,6 +101,7 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.EUREKA_NMS)}
+        key={uuidv4()}
       >
         <Box width={32} />
         <Typography>NM Spawn Times</Typography>
@@ -108,14 +113,14 @@ function SidebarComponent({
       </Stack>
 
       <a href="/drs/holster">
-        <StyledButton>
+        <StyledButton key={uuidv4()}>
           <Box width={32} />
           <Typography>DRS Holsters</Typography>
         </StyledButton>
       </a>
 
       <a href="/drs/holster/c">
-        <StyledButton>
+        <StyledButton key={uuidv4()}>
           <Box width={32} />
           <Typography>Holster Creator</Typography>
         </StyledButton>
@@ -123,6 +128,7 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'bozja/lostaction'); }}
+        key={uuidv4()}
       >
         <Box width={32} />
         <Typography>Lost Action Helper</Typography>
@@ -130,6 +136,7 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.FRAGMENT_FARM)}
+        key={uuidv4()}
       >
         <Box width={32} />
         <Typography>Fragment Farm Times</Typography>
@@ -142,6 +149,7 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.ALL)}
+        key={uuidv4()}
       >
         <Box width={32} />
         <Typography>Expeditionary Forecast</Typography>
@@ -149,6 +157,7 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'weather-finder'); }}
+        key={uuidv4()}
       >
         <Box width={32} />
         <Typography>Advanced Weather Finder</Typography>
@@ -161,6 +170,7 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, '#'); }}
+        key={uuidv4()}
       >
         <Box width={32} />
         <ListItemText>Lynn Kaneko @ Exodus</ListItemText>
@@ -172,6 +182,7 @@ function SidebarComponent({
     <List pt={4} pb={4} sx={{ overflowX: 'hidden' }}>
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, ''); }}
+        key={uuidv4()}
       >
         <ListItemAvatar>
           <ArrowBackIcon />
@@ -188,11 +199,16 @@ function SidebarComponent({
       ].map((resultsfilter) => (
         <StyledButton
           onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
+          key={uuidv4()}
         >
           {resultsfilter.collection === false
             ? (
               <ListItemAvatar>
-                <Avatar variant="rounded" src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`} alt={resultsfilter.name} />
+                <Avatar
+                  variant="rounded"
+                  src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`}
+                  alt={resultsfilter.name}
+                />
               </ListItemAvatar>
             )
             : <ListItemAvatar />}
@@ -215,11 +231,16 @@ function SidebarComponent({
       ].map((resultsfilter) => (
         <StyledButton
           onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
+          key={uuidv4()}
         >
           {resultsfilter.collection === false
             ? (
               <ListItemAvatar>
-                <Avatar variant="rounded" src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`} alt={resultsfilter.name} />
+                <Avatar
+                  variant="rounded"
+                  src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`}
+                  alt={resultsfilter.name}
+                />
               </ListItemAvatar>
             )
             : <ListItemAvatar />}
@@ -240,11 +261,16 @@ function SidebarComponent({
       ].map((resultsfilter) => (
         <StyledButton
           onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
+          key={uuidv4()}
         >
           {resultsfilter.collection === false
             ? (
               <ListItemAvatar>
-                <Avatar variant="rounded" src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`} alt={resultsfilter.name} />
+                <Avatar
+                  variant="rounded"
+                  src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`}
+                  alt={resultsfilter.name}
+                />
               </ListItemAvatar>
             )
             : <ListItemAvatar />}
@@ -267,11 +293,16 @@ function SidebarComponent({
       ].map((resultsfilter) => (
         <StyledButton
           onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
+          key={uuidv4()}
         >
           {resultsfilter.collection === false
             ? (
               <ListItemAvatar>
-                <Avatar variant="rounded" src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`} alt={resultsfilter.name} />
+                <Avatar
+                  variant="rounded"
+                  src={`${process.env.PUBLIC_URL}/assets/nms/${resultsfilter.image}`}
+                  alt={resultsfilter.name}
+                />
               </ListItemAvatar>
             )
             : <ListItemAvatar />}
@@ -346,7 +377,9 @@ function SidebarComponent({
                   onClick={(e) => handleDarkModeClick(e, colorMode)}
                   color="inherit"
                 >
-                  {theme.palette.mode === 'dark' ? <Brightness7Icon sx={{ color: 'white' }} /> : <Brightness4Icon sx={{ color: 'white' }} />}
+                  {theme.palette.mode === 'dark'
+                    ? <Brightness7Icon sx={{ color: 'white' }} />
+                    : <Brightness4Icon sx={{ color: 'white' }} />}
                 </IconButton>
               </Stack>
             </Stack>
@@ -384,7 +417,12 @@ function SidebarComponent({
                 <div
                   {...props}
                   style={{
-                    ...style, right: '2px', bottom: '2px', top: '2px', borderRadius: '3px', width: '5px',
+                    ...style,
+                    right: '2px',
+                    bottom: '2px',
+                    top: '2px',
+                    borderRadius: '3px',
+                    width: '5px',
                   }}
                 />
               )}
@@ -415,7 +453,9 @@ function SidebarComponent({
                   onClick={(e) => handleDarkModeClick(e, colorMode)}
                   color="inherit"
                 >
-                  {theme.palette.mode === 'dark' ? <Brightness7Icon sx={{ color: 'white' }} /> : <Brightness4Icon sx={{ color: 'white' }} />}
+                  {theme.palette.mode === 'dark'
+                    ? <Brightness7Icon sx={{ color: 'white' }} />
+                    : <Brightness4Icon sx={{ color: 'white' }} />}
                 </IconButton>
               </Stack>
             </Stack>
