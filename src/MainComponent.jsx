@@ -4,6 +4,7 @@ import SidebarComponent from './SidebarComponent';
 
 import MobileTopbarComponent from './MobileTopbarComponent';
 import ResultsFilter from './forecast/lib/ResultsFilter';
+import FooterComponent from './FooterComponent';
 
 export default function MainComponent({
   forecastFilter,
@@ -55,21 +56,33 @@ export default function MainComponent({
         colorModeContext={colorModeContext}
         page={page}
       />
-      <Box flexGrow={1} height="100%" sx={{ width: { sm: 'calc(100% - 280px)' } }}>
-        <CssBaseline />
-        <Box display="flex">
-          <MobileTopbarComponent
-            handleDrawerToggle={handleDrawerToggle}
-          />
-          {React.cloneElement(component, {
-            passedFilter,
-            type,
-            holster,
-            encodedHolster,
-            lostAction,
-            logosAction,
-          })}
-        </Box>
+      <Box
+        flexGrow={1}
+        height="100%"
+        sx={{
+          width: {
+            sm: 'calc(100% - 280px)',
+          },
+        }}
+      >
+        <Stack>
+          <CssBaseline />
+          <Box display="flex">
+            <MobileTopbarComponent
+              handleDrawerToggle={handleDrawerToggle}
+            />
+            {React.cloneElement(component, {
+              passedFilter,
+              type,
+              holster,
+              encodedHolster,
+              lostAction,
+              logosAction,
+            })}
+
+          </Box>
+          <FooterComponent />
+        </Stack>
       </Box>
     </Stack>
   );

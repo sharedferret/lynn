@@ -61,6 +61,7 @@ function SidebarComponent({
     color: '#e0e0e0',
     paddingTop: '10px',
     paddingBottom: '10px',
+    textDecoration: 'none',
   });
 
   /**

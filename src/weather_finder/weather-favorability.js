@@ -273,7 +273,7 @@ const findUpcomingSpawnsForFish = (() => {
         if (moraWeather === Weather.FAIR_SKIES && moraWeatherET === 16) {
           moraTectaSpawns.push({
             condition: moraWeather,
-            time: new Date(upcomingTempestWeather[j].time + (6 * oneEorzeaHour)),
+            time: new Date(upcomingTempestWeather[j].time.getTime() + (6 * oneEorzeaHour)),
           });
         }
       }

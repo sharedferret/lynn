@@ -4,8 +4,8 @@ import { Helmet } from 'react-helmet';
 
 export default function BAPortalMapComponent() {
   return (
-    <Box flexGrow={1} height="100%" sx={{ backgroundColor: '#000', pt: { xs: 14, md: 5 } }}>
-      <Helmet>
+    <Box flexGrow={1} height="100%" sx={{ pt: { xs: 14, md: 5 } }}>
+      <Helmet bodyAttributes={{ style: 'background-color : #000' }}>
         <meta name="description" content="Portal map for Baldesion Arsenal runs on the Primal data center" data-react-helmet="true" />
         <meta property="og:title" content="BA Portal Map" data-react-helmet="true" />
         <meta property="og:image" content="http://lynn.pet/assets/portalmap.jpg" data-react-helmet="true" />
@@ -26,7 +26,6 @@ export default function BAPortalMapComponent() {
       <Box maxWidth={1400} minWidth={800} height="100%" margin="auto" sx={{ backgroundColor: '#000' }}>
         <img src={`${process.env.PUBLIC_URL}/assets/portalmap.jpg`} alt="BA Portal Map" style={{ maxWidth: '100%' }} />
       </Box>
-
     </Box>
   );
 }
