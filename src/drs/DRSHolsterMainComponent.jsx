@@ -149,7 +149,7 @@ export default function DRSHolsterMainComponent({ holster, encodedHolster }) {
   }
 
   return (
-    <Box maxWidth={1000}>
+    <Box maxWidth={1000} minHeight={600}>
       <Stack spacing={2} minHeight={100} p={1}>
         <Typography fontWeight={700} variant="h4">
           DRS Holster -
@@ -234,9 +234,15 @@ export default function DRSHolsterMainComponent({ holster, encodedHolster }) {
           }
         </Stack>
         <Box height={40} />
-        <DRSHolsterActionAcquisitionGuideComponent
-          neededActions={DRSHolsterHelper.getNeededActionsForBag(holsterPrepop, holsterMain, 3)}
-        />
+        {(holsterPrepop !== undefined && holsterMain !== undefined)
+          && (holsterPrepop.length > 0 || holsterMain.length > 0)
+          ? (
+            <DRSHolsterActionAcquisitionGuideComponent
+              neededActions={DRSHolsterHelper.getNeededActionsForBag(holsterPrepop, holsterMain, 3)}
+            />
+          )
+          : null}
+
       </Stack>
     </Box>
   );

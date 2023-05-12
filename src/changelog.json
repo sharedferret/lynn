@@ -1,0 +1,96 @@
+{
+  "changes": [
+    {
+      "version": "8.0",
+      "timestamp": "2023-05-12",
+      "changes": [
+        "Added a new homepage and footer",
+        "Added changelog",
+        "Lots of internal changes, let me know if anything is broken!"
+      ]
+    },
+    {
+      "version": "7.1",
+      "timestamp": "2023-05-08",
+      "changes": [
+        "URL now updates for Bozja lost action helper",
+        "Added adaptation icon for sprites in Eureka that need to adapt to drop logograms",
+        "Added a mob selector for all three Cold-Warped Lockbox farm types"
+      ]
+    },
+    {
+      "version": "7.0",
+      "timestamp": "2023-05-06",
+      "changes": [
+        "Added Eureka logos action helper page",
+        "See how to acquire logograms for each logos action"
+      ]
+    },
+    {
+      "version": "6.0",
+      "timestamp": "2023-05-02",
+      "changes": [
+        "Added purchase option to ways to acquire Forgotten Fragments (using Universalis)"
+      ]
+    },
+    {
+      "version": "5.0",
+      "timestamp": "2023-04-30",
+      "changes": [
+        "Added custom link generator for DRS holsters",
+        "Added Bozja holster creator page"
+      ]
+    },
+    {
+      "version": "4.0",
+      "timestamp": "2023-04-13",
+      "changes": [
+        "Added Bozja lost action helper page",
+        "See how to acquire Forgotten Fragments for each lost action"
+      ]
+    },
+    {
+      "version": "3.1",
+      "timestamp": "2023-04-12",
+      "changes": [
+        "Added two-mimic reclear holsters"
+      ]
+    },
+    {
+      "version": "3.0",
+      "timestamp": "2023-04-07",
+      "changes": [
+        "Added DRS holsters for runs on THL"
+      ]
+    },
+    {
+      "version": "2.0",
+      "timestamp": "2023-02-06",
+      "changes": [
+        "Night mode"
+      ]
+    },
+    {
+      "version": "1.2",
+      "timestamp": "2022-12-30",
+      "changes": [
+        "Support link previews on third party sites (Discord, Telegram, Twitter, etc)"
+      ]
+    },
+    {
+      "version": "1.1",
+      "timestamp": "2022-12-27",
+      "changes": [
+        "Added forecast pages for Pazuzu and Penthesilea"
+      ]
+    },
+    {
+      "version": "1.0",
+      "timestamp": "2022-12-19",
+      "changes": [
+        "Added forecast page",
+        "Migrated weather forecast page to this app"
+      ]
+    }
+  ]
+}

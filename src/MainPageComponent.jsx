@@ -54,7 +54,7 @@ export default function MainPageComponent() {
         <meta property="og:site_name" content="lynn.pet!" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@reflexyui" />
-        <title>lynn.pet!</title>
+        <title>lynn.pet! - FFXIV Field Operations Assistant</title>
       </Helmet>
       <Box>
         <Typography variant="h3" fontWeight={700}>FFXIV Field Operations Assistant</Typography>

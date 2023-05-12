@@ -1,6 +1,6 @@
 {
   "name": "lynn",
-  "version": "1.0.0",
+  "version": "8.0",
   "private": true,
   "dependencies": {
     "@date-io/dayjs": "^2.16.0",
@@ -8,6 +8,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
+    "@mui/lab": "^5.0.0-alpha.129",
     "@mui/material": "^5.11.0",
     "@mui/material-next": "^6.0.0-alpha.81",
     "@mui/x-date-pickers": "^5.0.11",

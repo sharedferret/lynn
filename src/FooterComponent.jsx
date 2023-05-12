@@ -1,24 +1,34 @@
 import React from 'react';
 import {
-  Box, IconButton, Stack, SvgIcon, Typography,
+  Box, Button, IconButton, Stack, SvgIcon, Typography,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { useNavigate } from 'react-router-dom';
 
 export default function FooterComponent() {
+  const navigate = useNavigate();
   return (
     <Box width="100%">
-      <Stack direction="row" pt={10} pb={2} pl={5} pr={5} alignItems="center">
+      <Stack
+        direction={{ xs: 'none', md: 'row' }}
+        pt={10}
+        pb={2}
+        pl={5}
+        pr={5}
+        alignItems="center"
+      >
         <Typography variant="subtitle2" fontSize={12} maxWidth={600} textAlign="left">
           FINAL FANTASY XIV © 2010 - 2023 SQUARE ENIX CO., LTD. FINAL FANTASY, FINAL FANTASY
           XIV, and FFXIV are registered trademarks or trademarks of Square Enix Holdings Co.,
           Ltd. All material used under license.
         </Typography>
         <Box flexGrow={1} />
-        <IconButton href="https://discord.gg/thehelplines" target="_blank" rel="noreferrer">
-          <SvgIcon width="24" height="24" viewBox="0 0 23 24">
-            <g id="surface1" transform="translate(0,3)">
-              <path d="M 19.460938,1.507812 C 17.953125,0.792969 16.363281,0.285156 14.730469,0
+        <Stack direction="row">
+          <IconButton href="https://discord.gg/thehelplines" target="_blank" rel="noreferrer">
+            <SvgIcon width="24" height="24" viewBox="0 0 23 24">
+              <g id="surface1" transform="translate(0,3)">
+                <path d="M 19.460938,1.507812 C 17.953125,0.792969 16.363281,0.285156 14.730469,0
               14.507812,0.414062 14.304688,0.839844 14.125,1.277344 12.382812,1.003906
               10.613281,1.003906 8.871094,1.277344 8.691406,0.839844 8.488281,0.414062
               8.265625,0 6.628906,0.289062 5.039062,0.796875 3.527344,1.511719 0.535156,6.097656
@@ -36,19 +46,22 @@ export default function FooterComponent() {
               -2.066406,-2.371093 0,-1.304688 0.902344,-2.378907 2.066406,-2.378907 1.160156,0
               2.082031,1.074219 2.058594,2.378907 -0.01953,1.308593 -0.90625,2.371093
               -2.058594,2.371093 z m 0,0"
-              />
-            </g>
-          </SvgIcon>
-        </IconButton>
-        <IconButton href="https://twitter.com/reflexyui" target="_blank" rel="noreferrer">
-          <TwitterIcon />
-        </IconButton>
-        <IconButton href="https://github.com/sharedferret" target="_blank" rel="noreferrer">
-          <GitHubIcon />
-        </IconButton>
-        <Typography variant="subtitle2" fontSize={12} pl={1}>
-          {`Version ${process.env.REACT_APP_VERSION}`}
-        </Typography>
+                />
+              </g>
+            </SvgIcon>
+          </IconButton>
+          <IconButton href="https://twitter.com/reflexyui" target="_blank" rel="noreferrer">
+            <TwitterIcon />
+          </IconButton>
+          <IconButton href="https://github.com/sharedferret" target="_blank" rel="noreferrer">
+            <GitHubIcon />
+          </IconButton>
+          <Button color="inherit" onClick={() => { navigate('/changelog'); }}>
+            <Typography variant="subtitle2" fontSize={12} pl={1} pr={1}>
+              {`Version ${process.env.REACT_APP_VERSION}`}
+            </Typography>
+          </Button>
+        </Stack>
       </Stack>
     </Box>
   );

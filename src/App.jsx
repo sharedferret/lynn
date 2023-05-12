@@ -22,11 +22,14 @@ import BozjaLostActionHelperComponent from './drs/BozjaLostActionHelperComponent
 import EurekaLoadoutMainComponent from './eureka/EurekaLoadoutMainComponent';
 import EurekaLogosActionHelperComponent from './eureka/EurekaLogosActionHelperComponent';
 import FishComponent from './Fish';
+import ChangelogComponent from './ChangelogComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
 function WrappedMainComponent({ component, page }) {
   const params = useParams();
+
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
   if (page === 'forecast') {
     const forecastFilter = ResultsFilter.getFilter(params.forecastfilter);
@@ -167,6 +170,10 @@ const router = createBrowserRouter([
     path: '/fish',
     element: <WrappedMainComponent component={<FishComponent />} page="fish" />,
   },
+  {
+    path: '/changelog',
+    element: <WrappedMainComponent component={<ChangelogComponent />} page="changelog" />,
+  },
 ]);
 
 function App() {
@@ -219,7 +226,7 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <Helmet>
-          <title>lynn.pet!</title>
+          <title>lynn.pet! - FFXIV Field Operations Assistant</title>
           <meta name="description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
           <meta property="og:title" content="lynn.pet!" />
           <meta property="og:url" content="https://lynn.pet/" />

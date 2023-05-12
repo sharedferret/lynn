@@ -27,7 +27,7 @@ export default function BozjaLostActionHelperComponent({ lostAction }) {
    * Render Logic
    */
   return (
-    <Box width={1000}>
+    <Box width={1000} minHeight={600}>
       <Stack spacing={2} minHeight={100} p={1} alignItems="center">
         <Typography fontWeight={700} variant="h4">Bozja Lost Action Helper</Typography>
         <Stack direction="row" spacing={2} alignItems="center">
