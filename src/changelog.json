@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "version": "9.0",
+      "timestamp": "2023-05-13",
+      "changes": [
+        "Improved BA Logos Action Helper flow",
+        "Improved DRS Holster selection flow"
+      ]
+    },
+    {
       "version": "8.0",
       "timestamp": "2023-05-12",
       "changes": [

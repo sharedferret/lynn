@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 
 import {
   Box, Divider, Stack, Typography,
@@ -11,28 +11,16 @@ import BALogosActionRecipeContainerComponent from './BALogosActionRecipeContaine
  * One tray.
  * 2 | [Tray logos] [Recipe]
  */
-export default function BALogosActionTrayComponent({ inputTray, inputIndex }) {
+export default function BALogosActionTrayComponent({
+  inputTray,
+  inputIndex,
+  handleLogosActionUpdate,
+}) {
   /**
    * Component State
    *
    */
-  const [tray, setTray] = useState(inputTray);
   const [index] = useState(inputIndex);
-
-  const handleLogosActionUpdate = useCallback((data) => {
-    if (data.array === 'umbral') {
-      setTray({
-        umbral: data.newAction,
-        astral: tray.astral,
-      });
-    }
-    if (data.array === 'astral') {
-      setTray({
-        umbral: tray.umbral,
-        astral: data.newAction,
-      });
-    }
-  }, [tray, setTray]);
 
   /**
    * Render Logic
@@ -61,12 +49,12 @@ export default function BALogosActionTrayComponent({ inputTray, inputIndex }) {
         </Box>
         <Divider orientation="vertical" variant="middle" />
         <BALogosActionTrayLogosComponent
-          tray={tray}
+          tray={inputTray}
           index={index}
           handleLogosActionUpdate={handleLogosActionUpdate}
         />
         <Box>
-          <BALogosActionRecipeContainerComponent tray={tray} />
+          <BALogosActionRecipeContainerComponent tray={inputTray} />
         </Box>
       </Stack>
     </Box>

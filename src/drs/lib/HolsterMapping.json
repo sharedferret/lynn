@@ -1,0 +1,144 @@
+{
+  "runType": {
+    "learning": {
+      "name": "Learning",
+      "owner": "Lynn Kaneko",
+      "roles": {
+        "tank": {
+          "name": "Tank",
+          "holsters": [
+            "maintank",
+            "offtank",
+            "irregular-drk",
+            "savior-tank"
+          ]
+        },
+        "healer": {
+          "name": "Healer",
+          "holsters": [
+            "mainhealer",
+            "offhealer",
+            "profane-whm"
+          ]
+        },
+        "melee": {
+          "name": "Melee",
+          "holsters": [
+            "melee-rend",
+            "melee-dps"
+          ]
+        },
+        "caster": {
+          "name": "Caster",
+          "holsters": [
+            "caster-c4",
+            "caster-dps"
+          ]
+        },
+        "ranged": {
+          "name": "Physical Ranged",
+          "holsters": [
+            "ranged-c2",
+            "ranged-dervish"
+          ]
+        }
+      }
+    },
+    "lynn-reclear": {
+      "name": "Reclear",
+      "owner": "Lynn Kaneko",
+      "roles": {
+        "tank": {
+          "name": "Tank",
+          "holsters": [
+            "maintank",
+            "offtank",
+            "irregular-drk",
+            "savior-tank",
+            "offtank-battery"
+          ]
+        },
+        "healer": {
+          "name": "Healer",
+          "holsters": [
+            "mainhealer",
+            "offhealer",
+            "profane-whm"
+          ]
+        },
+        "melee": {
+          "name": "Melee",
+          "holsters": [
+            "melee-rend",
+            "melee-dps",
+            "melee-battery"
+          ]
+        },
+        "caster": {
+          "name": "Caster",
+          "holsters": [
+            "caster-c4",
+            "caster-dps",
+            "caster-battery"
+          ]
+        },
+        "ranged": {
+          "name": "Physical Ranged",
+          "holsters": [
+            "ranged-c2",
+            "ranged-dervish",
+            "ranged-battery"
+          ]
+        }
+      }
+    },
+    "lynn-reclear-3battery": {
+      "name": "Reclear (Three Batteries)",
+      "owner": "Lynn Kaneko",
+      "roles": {
+        "tank": {
+          "name": "Tank",
+          "holsters": [
+            "maintank",
+            "offtank",
+            "irregular-drk",
+            "savior-tank",
+            "offtank-battery"
+          ]
+        },
+        "healer": {
+          "name": "Healer",
+          "holsters": [
+            "mainhealer",
+            "offhealer",
+            "profane-whm"
+          ]
+        },
+        "melee": {
+          "name": "Melee",
+          "holsters": [
+            "melee-rend",
+            "melee-dps",
+            "melee-battery"
+          ]
+        },
+        "caster": {
+          "name": "Caster",
+          "holsters": [
+            "caster-c4",
+            "caster-dps",
+            "caster-battery"
+          ]
+        },
+        "ranged": {
+          "name": "Physical Ranged",
+          "holsters": [
+            "ranged-c2",
+            "ranged-dervish",
+            "ranged-battery"
+          ]
+        }
+      }
+    }
+  }
+}

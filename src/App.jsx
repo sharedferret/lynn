@@ -17,12 +17,12 @@ import FavorableWeatherFinderComponent from './weather_finder/FavorableWeatherFi
 import BAPortalMapComponent from './BAPortalMapComponent';
 import ResultsFilter from './forecast/lib/ResultsFilter';
 import LynnReferenceComponent from './reference/LynnReferenceComponent';
-import DRSHolsterMainComponent from './drs/DRSHolsterMainComponent';
 import BozjaLostActionHelperComponent from './drs/BozjaLostActionHelperComponent';
 import EurekaLoadoutMainComponent from './eureka/EurekaLoadoutMainComponent';
 import EurekaLogosActionHelperComponent from './eureka/EurekaLogosActionHelperComponent';
 import FishComponent from './Fish';
 import ChangelogComponent from './ChangelogComponent';
+import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -122,19 +122,19 @@ const router = createBrowserRouter([
   },
   {
     path: '/drs/holster',
-    element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page="drsholster" />,
+    element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
     children: [
       {
         path: '/drs/holster/c',
-        element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page="drsholster" />,
+        element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
       },
       {
         path: '/drs/holster/c/:holsterstring',
-        element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page="drsholster" />,
+        element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
       },
       {
         path: '/drs/holster/:holstertype/:holstername',
-        element: <WrappedMainComponent component={<DRSHolsterMainComponent />} page="drsholster" />,
+        element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
       },
     ],
   },

@@ -37,17 +37,20 @@ export default function BALogosHolsterComponent({ tray }) {
   }
 
   const [plates, setPlates] = useState(startingPlates);
+  console.log('plates', plates);
 
   const handleLogosActionUpdate = useCallback((data) => {
     if (data.array === 'umbral') {
       const newPlates = plates;
       newPlates[data.plate].umbral = data.newAction;
-      setPlates(newPlates);
+      console.log('umbral updated', data);
+      setPlates([...newPlates]);
     }
     if (data.array === 'astral') {
       const newPlates = plates;
       newPlates[data.plate].astral = data.newAction;
-      setPlates(newPlates);
+      console.log('astral updated', data);
+      setPlates([...newPlates]);
     }
   }, [plates, setPlates]);
 
