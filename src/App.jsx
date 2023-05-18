@@ -23,6 +23,7 @@ import EurekaLogosActionHelperComponent from './eureka/EurekaLogosActionHelperCo
 import FishComponent from './Fish';
 import ChangelogComponent from './ChangelogComponent';
 import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
+import DRSRunHolsterCreatorComponent from './drs/create/DRSRunHolsterCreatorComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -119,6 +120,10 @@ const router = createBrowserRouter([
         element: <WrappedMainComponent component={<EurekaLogosActionHelperComponent />} page="eurekalogosaction" />,
       },
     ],
+  },
+  {
+    path: '/drs/createholsters',
+    element: <WrappedMainComponent component={<DRSRunHolsterCreatorComponent />} page="drsholster" />,
   },
   {
     path: '/drs/holster',
