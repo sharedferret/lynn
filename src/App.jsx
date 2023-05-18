@@ -24,6 +24,7 @@ import FishComponent from './Fish';
 import ChangelogComponent from './ChangelogComponent';
 import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
 import DRSRunHolsterCreatorComponent from './drs/create/DRSRunHolsterCreatorComponent';
+import BAMorbolMapComponent from './BAMorbolMapComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -160,6 +161,10 @@ const router = createBrowserRouter([
   {
     path: '/portals',
     element: <WrappedMainComponent component={<BAPortalMapComponent />} page="portals" />,
+  },
+  {
+    path: '/morbols',
+    element: <WrappedMainComponent component={<BAMorbolMapComponent />} page="portals" />,
   },
   {
     path: '/reference',
