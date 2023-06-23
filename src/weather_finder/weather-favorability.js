@@ -152,7 +152,7 @@ const calculateFavorabilityScoresForTimeSlice = (
 
     if (favorability > 0) {
       weightedStartTimes[conditions[i].time] = {
-        starting_time: conditions[i].time,
+        startingTime: conditions[i].time,
         favorability,
       };
     }
@@ -176,7 +176,7 @@ const generateConditionsForFavorableTimes = (favorabilityScores, sliceDuration, 
       location,
     );
     output.push({
-      starting_time: favorabilityScores[i].starting_time,
+      startingTime: favorabilityScores[i].startingTime,
       duration: sliceDuration,
       favorability: favorabilityScores[i].favorability,
       conditions,

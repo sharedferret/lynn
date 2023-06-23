@@ -1,6 +1,22 @@
 {
   "changes": [
     {
+      "version": "9.4",
+      "timestamp": "2023-06-23",
+      "changes": [
+        "Updated learning and reclear DRS holsters for Lynn Kaneko's runs"
+      ]
+    },
+    {
+      "version": "9.3",
+      "timestamp": "2023-05-22",
+      "changes": [
+        "Fixed issue where weather finder always showed the current weather",
+        "BA Morbol Map",
+        "Show URL for DRS holsters after they're selected"
+      ]
+    },
+    {
       "version": "9.0",
       "timestamp": "2023-05-13",
       "changes": [

@@ -63,6 +63,11 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
     setSelectedRole(null);
     setSelectedHolster(null);
     setFirstHolster(null);
+    window.history.pushState(
+      {},
+      'lynn.pet! - FFXIV Field Operations Assistant',
+      '/drs/holster',
+    );
   }, [setActiveStep, setSelectedRunType, setSelectedRole, setSelectedHolster, setFirstHolster]);
 
   /**
@@ -106,6 +111,7 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
       }
     }
   } else if (selectedHolster) {
+    // Holster picked through the stepper flow.
     const selectedHolsterData = DRSHolsterHelper.getHolsterData(selectedRunType, selectedHolster);
     initialHolster = {
       holsterName: selectedRunType,
@@ -122,6 +128,12 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
       hideStartOverButton: false,
       showStepper: true,
     };
+
+    window.history.pushState(
+      selectedHolster,
+      `lynn.pet! - DRS Holster - ${initialHolster.holsterFriendlyType}`,
+      `/drs/holster/${selectedRunType}/${selectedHolster}`,
+    );
   } else if (encodedHolster !== undefined) {
     const holsters = DRSHolsterHelper.decodeHolster(encodedHolster);
     initialHolster = {

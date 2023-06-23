@@ -18,7 +18,7 @@ export default function ForecastResultComponent({ data }) {
               Starting time
             </Typography>
             <Typography variant="h4">
-              {data.starting_time.toLocaleString('en-US', {
+              {data.startingTime.toLocaleString('en-US', {
                 weekday: 'long',
                 day: 'numeric',
                 month: 'short',

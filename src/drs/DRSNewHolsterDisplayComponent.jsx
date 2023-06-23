@@ -52,6 +52,11 @@ export default function DRSNewHolsterDisplayComponent({ holster, handleReset }) 
       holsterMain,
     ).replaceAll('=', '');
     setGeneratedLink(`https://lynn.pet/drs/holster/c/${encodedHolsters}`);
+    window.history.pushState(
+      {},
+      'lynn.pet! - FFXIV Field Operations Assistant',
+      `/drs/holster/c/${encodedHolsters}`,
+    );
   }, [holsterPrepop, holsterMain, setGeneratedLink]);
 
   /**

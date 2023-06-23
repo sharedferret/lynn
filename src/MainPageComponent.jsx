@@ -32,7 +32,7 @@ export default function MainPageComponent() {
         </Typography>
         <Typography textAlign="left" fontSize={textSize}>
           Built by Lynn Kaneko @ Exodus. Issues/suggestions? You can reach out to me
-          on Discord (Lynn#0001).
+          on Discord (@lynnkaneko).
         </Typography>
       </Stack>
     </Paper>
