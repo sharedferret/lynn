@@ -32,7 +32,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 3
           },
           {
             "name": "Lost Aethershield",
@@ -47,8 +47,12 @@
             "quantity": 1
           },
           {
+            "name": "Lost Reraise",
+            "quantity": 1
+          },
+          {
             "name": "Light Curtain",
-            "quantity": 4
+            "quantity": 3
           }
         ]
       },
@@ -145,15 +149,19 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 5
+            "quantity": 4
           },
           {
             "name": "Lost Reflect",
             "quantity": 1
           },
           {
+            "name": "Lost Dispel",
+            "quantity": 1
+          },
+          {
             "name": "Lost Arise",
-            "quantity": 7
+            "quantity": 8
           },
           {
             "name": "Lost Steelsting",
@@ -206,15 +214,15 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 5
-          },
-          {
-            "name": "Light Curtain",
             "quantity": 4
           },
           {
+            "name": "Light Curtain",
+            "quantity": 6
+          },
+          {
             "name": "Lost Arise",
-            "quantity": 8
+            "quantity": 9
           },
           {
             "name": "Lost Dispel",
@@ -263,7 +271,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 5
+            "quantity": 4
           },
           {
             "name": "Light Curtain",
@@ -276,6 +284,10 @@
           {
             "name": "Lost Rend Armor",
             "quantity": 3
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
           }
         ]
       },
@@ -316,7 +328,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 5
+            "quantity": 3
           },
           {
             "name": "Light Curtain",
@@ -328,10 +340,18 @@
           },
           {
             "name": "Banner of Honored Sacrifice",
-            "quantity": 1
+            "quantity": 2
           },
           {
             "name": "Lost Rend Armor",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Rampage",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Reraise",
             "quantity": 1
           }
         ]
@@ -373,7 +393,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 5
+            "quantity": 4
           },
           {
             "name": "Light Curtain",
@@ -392,7 +412,11 @@
             "quantity": 1
           },
           {
-            "name": "Lost Bubble",
+            "name": "Lost Burst",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Reraise",
             "quantity": 1
           }
         ]
@@ -481,14 +505,14 @@
             "quantity": 1
           },
           {
-            "name": "Lost Perception",
+            "name": "Lost Bubble",
             "quantity": 1
           }
         ],
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 5
+            "quantity": 4
           },
           {
             "name": "Light Curtain",
@@ -500,6 +524,10 @@
           },
           {
             "name": "Lost Dervish",
+            "quantity": 3
+          },
+          {
+            "name": "Lost Bubble",
             "quantity": 3
           }
         ]
@@ -538,7 +566,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 5
+            "quantity": 4
           },
           {
             "name": "Light Curtain",
@@ -553,7 +581,7 @@
             "quantity": 3
           },
           {
-            "name": "Lost Perception",
+            "name": "Lost Slash",
             "quantity": 1
           }
         ]
@@ -588,20 +616,20 @@
             "quantity": 2
           },
           {
-            "name": "Lost Font of Power",
-            "quantity": 1
-          },
-          {
-            "name": "Lost Blood Rage",
-            "quantity": 1
-          },
-          {
             "name": "Light Curtain",
+            "quantity": 4
+          },
+          {
+            "name": "Mimic",
             "quantity": 3
           },
           {
+            "name": "Lost Rampage",
+            "quantity": 1
+          },
+          {
             "name": "Resistance Ether Kit",
-            "quantity": 10
+            "quantity": 12
           }
         ]
       },
@@ -695,19 +723,31 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 6
+            "quantity": 2
           },
           {
             "name": "Light Curtain",
-            "quantity": 4
+            "quantity": 3
           },
           {
-            "name": "Lost Chainspell",
+            "name": "Lost Font of Magic",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Seraph Strike",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Burst",
             "quantity": 1
           },
           {
             "name": "Resistance Ether Kit",
-            "quantity": 9
+            "quantity": 10
+          },
+          {
+            "name": "Lost Reraise",
+            "quantity": 1
           }
         ]
       }
@@ -741,12 +781,16 @@
           {
             "name": "Lost Blood Rage",
             "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
           }
         ],
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 5
+            "quantity": 2
           },
           {
             "name": "Lost Aethershield",
@@ -758,7 +802,7 @@
           },
           {
             "name": "Mimic",
-            "quantity": 1
+            "quantity": 3
           },
           {
             "name": "Light Curtain",
@@ -795,7 +839,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 1
           },
           {
             "name": "Lost Aethershield",
@@ -807,7 +851,7 @@
           },
           {
             "name": "Mimic",
-            "quantity": 1
+            "quantity": 3
           },
           {
             "name": "Light Curtain",
@@ -815,7 +859,11 @@
           },
           {
             "name": "Banner of Honored Sacrifice",
-            "quantity": 2
+            "quantity": 1
+          },
+          {
+            "name": "Lost Reraise",
+            "quantity": 1
           }
         ]
       },
@@ -861,15 +909,19 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 3
           },
           {
             "name": "Lost Reflect",
             "quantity": 1
           },
           {
+            "name": "Lost Dispel",
+            "quantity": 1
+          },
+          {
             "name": "Lost Arise",
-            "quantity": 8
+            "quantity": 7
           },
           {
             "name": "Lost Steelsting",
@@ -881,6 +933,10 @@
           },
           {
             "name": "Lost Shell II",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Reraise",
             "quantity": 1
           }
         ]
@@ -926,7 +982,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 2
           },
           {
             "name": "Light Curtain",
@@ -934,7 +990,7 @@
           },
           {
             "name": "Lost Arise",
-            "quantity": 8
+            "quantity": 7
           },
           {
             "name": "Lost Dispel",
@@ -947,6 +1003,14 @@
           {
             "name": "Lost Seraph Strike",
             "quantity": 1
+          },
+          {
+            "name": "Lost Burst",
+            "quantity": 1
+          },
+          {
+            "name": "Resistance Ether Kit",
+            "quantity": 6
           }
         ]
       },
@@ -985,7 +1049,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 3
           },
           {
             "name": "Light Curtain",
@@ -998,6 +1062,14 @@
           {
             "name": "Lost Rend Armor",
             "quantity": 4
+          },
+          {
+            "name": "Lost Rampage",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
           }
         ]
       },
@@ -1036,7 +1108,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 2
           },
           {
             "name": "Light Curtain",
@@ -1048,7 +1120,15 @@
           },
           {
             "name": "Banner of Honored Sacrifice",
-            "quantity": 3
+            "quantity": 4
+          },
+          {
+            "name": "Lost Rampage",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Rend Armor",
+            "quantity": 1
           }
         ]
       },
@@ -1083,7 +1163,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 3
+            "quantity": 2
           },
           {
             "name": "Light Curtain",
@@ -1099,7 +1179,11 @@
           },
           {
             "name": "Resistance Ether Kit",
-            "quantity": 9
+            "quantity": 10
+          },
+          {
+            "name": "Lost Burst",
+            "quantity": 1
           }
         ]
       },
@@ -1134,11 +1218,11 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 2
           },
           {
             "name": "Light Curtain",
-            "quantity": 4
+            "quantity": 3
           },
           {
             "name": "Mimic",
@@ -1146,7 +1230,11 @@
           },
           {
             "name": "Resistance Ether Kit",
-            "quantity": 13
+            "quantity": 12
+          },
+          {
+            "name": "Lost Chainspell",
+            "quantity": 1
           }
         ]
       },
@@ -1183,7 +1271,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 3
+            "quantity": 2
           },
           {
             "name": "Light Curtain",
@@ -1198,7 +1286,11 @@
             "quantity": 4
           },
           {
-            "name": "Mimic",
+            "name": "Lost Bubble",
+            "quantity": 3
+          },
+          {
+            "name": "Lost Reraise",
             "quantity": 1
           }
         ]
@@ -1236,7 +1328,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 2
           },
           {
             "name": "Light Curtain",
@@ -1252,6 +1344,75 @@
           },
           {
             "name": "Lost Perception",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Rampage",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Reraise",
+            "quantity": 1
+          }
+        ]
+      },
+      "ranged-dervish-mch": {
+        "name": "Ranged DPS (Dervish, Machinist)",
+        "role": "ranged",
+        "icon": "Lost_Dervish",
+        "assignments": [
+          "incensemanawall"
+        ],
+        "explanation": "",
+        "pre": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 1
+          },
+          {
+            "name": "Pure Essence of the Fiendhunter",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Font of Power",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Dervish",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Perception",
+            "quantity": 1
+          }
+        ],
+        "main": [
+          {
+            "name": "Resistance Reraiser",
+            "quantity": 2
+          },
+          {
+            "name": "Light Curtain",
+            "quantity": 3
+          },
+          {
+            "name": "Mimic",
+            "quantity": 2
+          },
+          {
+            "name": "Lost Dervish",
+            "quantity": 4
+          },
+          {
+            "name": "Lost Perception",
+            "quantity": 1
+          },
+          {
+            "name": "Banner of Honored Sacrifice",
+            "quantity": 1
+          },
+          {
+            "name": "Lost Slash",
             "quantity": 1
           }
         ]
@@ -1283,7 +1444,7 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 2
           },
           {
             "name": "Light Curtain",
@@ -1291,11 +1452,11 @@
           },
           {
             "name": "Mimic",
-            "quantity": 2
+            "quantity": 3
           },
           {
             "name": "Resistance Ether Kit",
-            "quantity": 13
+            "quantity": 14
           }
         ]
       },
@@ -1393,19 +1554,27 @@
           },
           {
             "name": "Light Curtain",
-            "quantity": 4
+            "quantity": 3
           },
           {
-            "name": "Mimic",
-            "quantity": 2
+            "name": "Lost Font of Magic",
+            "quantity": 1
           },
           {
             "name": "Lost Seraph Strike",
-            "quantity": 3            
+            "quantity": 1
+          },
+          {
+            "name": "Lost Burst",
+            "quantity": 1
           },
           {
             "name": "Resistance Ether Kit",
-            "quantity": 9
+            "quantity": 10
+          },
+          {
+            "name": "Lost Reraise",
+            "quantity": 1
           }
         ]
       },
@@ -1460,7 +1629,7 @@
           },
           {
             "name": "Mimic",
-            "quantity": 1
+            "quantity": 2
           }
         ]
       },
@@ -1552,15 +1721,15 @@
         "main": [
           {
             "name": "Resistance Reraiser",
-            "quantity": 4
+            "quantity": 3
           },
           {
             "name": "Light Curtain",
-            "quantity": 4
+            "quantity": 2
           },
           {
             "name": "Mimic",
-            "quantity": 1
+            "quantity": 2
           },
           {
             "name": "Lost Dervish",
@@ -1568,50 +1737,6 @@
           },
           {
             "name": "Lost Excellence",
-            "quantity": 1
-          }
-        ]
-      },
-      "offtank-battery": {
-        "name": "Off Tank (Battery)",
-        "role": "tank",
-        "icon": "Lost_Blood_Rage",
-        "assignments": [
-        ],
-        "explanation": "",
-        "pre": [
-          {
-            "name": "Resistance Reraiser",
-            "quantity": 1
-          },
-          {
-            "name": "Pure Essence of the Indomitable",
-            "quantity": 1
-          },
-          {
-            "name": "Lost Font of Power",
-            "quantity": 1
-          },
-          {
-            "name": "Lost Blood Rage",
-            "quantity": 1
-          }
-        ],
-        "main": [
-          {
-            "name": "Resistance Reraiser",
-            "quantity": 4
-          },
-          {
-            "name": "Light Curtain",
-            "quantity": 4
-          },
-          {
-            "name": "Lost Blood Rage",
-            "quantity": 1
-          },
-          {
-            "name": "Mimic",
             "quantity": 1
           }
         ]
@@ -2302,7 +2427,7 @@
           },
           {
             "name": "Lost Seraph Strike",
-            "quantity": 3            
+            "quantity": 3
           },
           {
             "name": "Resistance Ether Kit",
@@ -2477,8 +2602,7 @@
         "name": "Off Tank (Battery)",
         "role": "tank",
         "icon": "Lost_Blood_Rage",
-        "assignments": [
-        ],
+        "assignments": [],
         "explanation": "",
         "pre": [
           {
