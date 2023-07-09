@@ -5,7 +5,7 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 import { v4 as uuidv4 } from 'uuid';
 import DRSBagLostActionComponent from './DRSBagLostActionComponent';
-import DRSHolsterHelper from './lib/DRSHolsterHelper';
+import DRSLostActionHelper from './lib/DRSLostActionHelper';
 
 export default function DRSHolsterBagComponent({ holsterData, bagType, handleHolsterUpdate }) {
   const handleLostActionUpdate = useCallback((data, index) => {
@@ -39,7 +39,7 @@ export default function DRSHolsterBagComponent({ holsterData, bagType, handleHol
   const actions = holsterData;
 
   // Calculate bag weight
-  const bagWeight = DRSHolsterHelper.calculateHolsterWeight(actions);
+  const bagWeight = DRSLostActionHelper.calculateHolsterWeight(actions);
   const overweightSx = { color: 'red' };
 
   return (

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import DRSHolsterHelper from '../drs/lib/DRSHolsterHelper';
+import DRSLostActionHelper from '../drs/lib/DRSLostActionHelper';
 import EurekaLogosActionHelper from '../eureka/lib/EurekaLogosActionHelper';
 
 let instance;
@@ -19,9 +19,9 @@ class UniversalisPriceHelper {
     // Check if any of these already exist; if so, ignore them.
     const idsToFetch = ids.reduce((result, i) => {
       // Bozja
-      const lostActionData = DRSHolsterHelper.getLostActionData(i);
+      const lostActionData = DRSLostActionHelper.getLostActionData(i);
       if (lostActionData) {
-        const fragmentData = DRSHolsterHelper.getFragmentData(lostActionData.fragment);
+        const fragmentData = DRSLostActionHelper.getFragmentData(lostActionData.fragment);
         if (!this.priceData[lostActionData.fragment]) {
           result.push(fragmentData.id);
         }
@@ -46,7 +46,7 @@ class UniversalisPriceHelper {
             const itemData = idToItem[id];
             let itemName = '';
             if (itemData.type === 'fragment') {
-              itemName = DRSHolsterHelper.getFragmentNameForId(id);
+              itemName = DRSLostActionHelper.getFragmentNameForId(id);
             } else if (itemData.type === 'logogram') {
               itemName = EurekaLogosActionHelper.getLogogramNameFromId(id);
             }
@@ -58,7 +58,7 @@ class UniversalisPriceHelper {
               const itemData = idToItem[id];
               let itemName = '';
               if (itemData.type === 'fragment') {
-                itemName = DRSHolsterHelper.getFragmentNameForId(id);
+                itemName = DRSLostActionHelper.getFragmentNameForId(id);
               } else if (itemData.type === 'logogram') {
                 itemName = EurekaLogosActionHelper.getLogogramNameFromId(id);
               }

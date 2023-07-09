@@ -8,28 +8,40 @@ import holsterMapping from './lib/HolsterMapping.json';
 import holsterData from './lib/Holsters.json';
 
 export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster }) {
+  const [selectedHost, setSelectedHost] = React.useState(null);
   const [selectedRunType, setSelectedRunType] = React.useState(null);
   const [selectedRole, setSelectedRole] = React.useState(null);
   const [selectedHolster, setSelectedHolster] = React.useState(null);
   const [activeStep, setActiveStep] = React.useState(0);
   const [firstHolster, setFirstHolster] = React.useState(holster);
 
-  const runTypes = Object.keys(holsterMapping.runType);
+  const hosts = Object.keys(holsterMapping.hosts);
+
+  let runTypes = [];
+  if (selectedHost) {
+    runTypes = Object.keys(holsterMapping.hosts[selectedHost].runTypes);
+  }
 
   let roles = [];
   if (selectedRunType) {
-    roles = Object.keys(holsterMapping.runType[selectedRunType].roles);
+    roles = Object.keys(holsterMapping.hosts[selectedHost].runTypes[selectedRunType].roles);
   }
 
   let availableHolsters = [];
   if (selectedRunType && selectedRole) {
-    availableHolsters = holsterMapping.runType[selectedRunType].roles[selectedRole].holsters;
+    availableHolsters = holsterMapping
+      .hosts[selectedHost].runTypes[selectedRunType].roles[selectedRole].holsters;
   }
 
   const steps = [
     {
+      label: 'Select host',
+      description: 'Select your run\'s host.',
+      hosts,
+    },
+    {
       label: 'Select run type',
-      description: 'Select your run\'s host and run type.',
+      description: 'Select your run\'s type.',
       runTypes,
     },
     {
@@ -45,6 +57,9 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
   ];
 
   const handleNext = React.useCallback((e, data) => {
+    if (data.host) {
+      setSelectedHost(data.host);
+    }
     if (data.runType) {
       setSelectedRunType(data.runType);
     }
@@ -55,10 +70,11 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
       setSelectedHolster(data.holster);
     }
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  }, [setSelectedRunType, setSelectedRole, setSelectedHolster, setActiveStep]);
+  }, [setSelectedHost, setSelectedRunType, setSelectedRole, setSelectedHolster, setActiveStep]);
 
   const handleReset = React.useCallback(() => {
     setActiveStep(0);
+    setSelectedHost(null);
     setSelectedRunType(null);
     setSelectedRole(null);
     setSelectedHolster(null);
@@ -68,7 +84,12 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
       'lynn.pet! - FFXIV Field Operations Assistant',
       '/drs/holster',
     );
-  }, [setActiveStep, setSelectedRunType, setSelectedRole, setSelectedHolster, setFirstHolster]);
+  }, [setActiveStep,
+    setSelectedHost,
+    setSelectedRunType,
+    setSelectedRole,
+    setSelectedHolster,
+    setFirstHolster]);
 
   /**
    * TODO
@@ -85,12 +106,19 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
 
   if (holster && firstHolster && holster.name) {
     // A holster was passed in. Advance the stepper to the last step, and populate all data.
-    const selectedHolsterData = DRSHolsterHelper.getHolsterData(holster.type, holster.name);
+    const selectedHolsterData = DRSHolsterHelper.getHolsterData(
+      holster.host,
+      holster.type,
+      holster.name,
+    );
+
     if (holsterData !== undefined) {
       initialHolster = {
+        holsterHost: holster.host,
+        holsterHostFriendly: holsterMapping.hosts[holster.host].name,
         holsterName: holster.name,
         holsterType: holster.type,
-        holsterFriendlyType: DRSHolsterHelper.getFriendlyHolsterSetName(holster.type),
+        holsterFriendlyType: DRSHolsterHelper.getFriendlyHolsterSetName(holster.host, holster.type),
         holsterMetadata: {
           name: selectedHolsterData.name,
           role: selectedHolsterData.role,
@@ -103,20 +131,28 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
         showStepper: true,
       };
 
-      if (activeStep !== 3) {
+      if (activeStep !== 4) {
+        setSelectedHost(holster.host);
         setSelectedRunType(holster.type);
         setSelectedRole(selectedHolsterData.role);
         setSelectedHolster(holster.name);
-        setActiveStep(3);
+        setActiveStep(4);
       }
     }
   } else if (selectedHolster) {
     // Holster picked through the stepper flow.
-    const selectedHolsterData = DRSHolsterHelper.getHolsterData(selectedRunType, selectedHolster);
+    const selectedHolsterData = DRSHolsterHelper.getHolsterData(
+      selectedHost,
+      selectedRunType,
+      selectedHolster,
+    );
     initialHolster = {
+      holsterHost: selectedHost,
+      holsterHostFriendly: holsterMapping.hosts[selectedHost].name,
       holsterName: selectedRunType,
       holsterType: selectedHolster,
-      holsterFriendlyType: DRSHolsterHelper.getFriendlyHolsterSetName(selectedRunType),
+      holsterFriendlyType:
+        DRSHolsterHelper.getFriendlyHolsterSetName(selectedHost, selectedRunType),
       holsterMetadata: {
         name: selectedHolsterData.name,
         role: selectedHolsterData.role,
@@ -132,11 +168,12 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
     window.history.pushState(
       selectedHolster,
       `lynn.pet! - DRS Holster - ${initialHolster.holsterFriendlyType}`,
-      `/drs/holster/${selectedRunType}/${selectedHolster}`,
+      `/drs/holster/${selectedHost}/${selectedRunType}/${selectedHolster}`,
     );
   } else if (encodedHolster !== undefined) {
     const holsters = DRSHolsterHelper.decodeHolster(encodedHolster);
     initialHolster = {
+      holsterHost: '',
       holsterName: 'Custom',
       holsterType: 'custom',
       holsterFriendlyType: 'Custom',
@@ -153,6 +190,7 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
     };
   } else if (window.location.pathname === '/drs/holster/c') {
     initialHolster = {
+      holsterHost: '',
       holsterName: 'Custom',
       holsterType: 'custom',
       holsterFriendlyType: 'Custom',
@@ -172,24 +210,71 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
   const displayStepper = (() => (
     <Stepper activeStep={activeStep} orientation="vertical">
       {
-        steps.map((step) => (
+        steps.map((step, i) => (
           <Step key={step.label}>
-            <StepLabel>{step.label}</StepLabel>
+            <StepLabel>
+              {step.label}
+              {
+                i === 0 && selectedHost
+                  ? (
+                    <Typography fontWeight={700}>
+                      {holsterMapping.hosts[selectedHost].name}
+                    </Typography>
+                  )
+                  : null
+              }
+              {
+                i === 1 && selectedRunType
+                  ? (
+                    <Typography fontWeight={700}>
+                      {holsterMapping.hosts[selectedHost].runTypes[selectedRunType].name}
+                    </Typography>
+                  )
+                  : null
+              }
+              {
+                i === 2 && selectedRole
+                  ? (
+                    <Typography fontWeight={700}>
+                      {holsterMapping
+                        .hosts[selectedHost].runTypes[selectedRunType].roles[selectedRole].name}
+                    </Typography>
+                  )
+                  : null
+              }
+              {
+                i === 3 && selectedHolster
+                  ? (
+                    <Typography fontWeight={700}>
+                      {holsterData
+                        .host[selectedHost]
+                        .holsters[selectedRunType]
+                        .holsters[selectedHolster]
+                        .name}
+                    </Typography>
+                  )
+                  : null
+              }
+            </StepLabel>
             <StepContent>
               <Typography textAlign="left" fontSize={20} pb={2}>{step.description}</Typography>
               {
                 activeStep === 0
                   ? (
                     <Stack spacing={2} width="100%">
-                      {runTypes.map((item) => (
-                        <Box key={`runtypewf-${item}`}>
+                      {hosts.map((item) => (
+                        <Box key={`hostwf-${item}`}>
                           <Button
                             fullWidth
                             variant="outlined"
                             size="large"
-                            onClick={(e) => handleNext(e, { runType: item })}
+                            style={{ justifyContent: 'flex-start' }}
+                            startIcon={
+                              <Avatar variant="rounded" src={`${process.env.PUBLIC_URL}/assets/servericons/${holsterMapping.hosts[item].serverIcon}`} />
+                            }
+                            onClick={(e) => handleNext(e, { host: item })}
                           >
-                            {`${holsterMapping.runType[item].owner} - ${holsterMapping.runType[item].name}`}
+                            {`${holsterMapping.hosts[item].name} (${holsterMapping.hosts[item].server})`}
                           </Button>
                         </Box>
                       ))}
@@ -201,18 +286,16 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
                 activeStep === 1
                   ? (
                     <Stack spacing={2} width="100%">
-                      {roles.map((item) => (
-                        <Box key={`rolewf-${item}`}>
+                      {runTypes.map((item) => (
+                        <Box key={`runtypewf-${item}`}>
                           <Button
                             fullWidth
                             variant="outlined"
                             size="large"
-                            onClick={(e) => handleNext(e, { role: item })}
-                            startIcon={
-                              <Avatar src={`${process.env.PUBLIC_URL}/assets/roles/${item}.png`} />
-                            }
+                            onClick={(e) => handleNext(e, { runType: item })}
+                            style={{ justifyContent: 'flex-start' }}
                           >
-                            {`${holsterMapping.runType[selectedRunType].roles[item].name}`}
+                            {`${holsterMapping.hosts[selectedHost].runTypes[item].name}`}
                           </Button>
                         </Box>
                       ))}
@@ -224,6 +307,30 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
                 activeStep === 2
                   ? (
                     <Stack spacing={2} width="100%">
+                      {roles.map((item) => (
+                        <Box key={`rolewf-${item}`}>
+                          <Button
+                            fullWidth
+                            variant="outlined"
+                            size="large"
+                            onClick={(e) => handleNext(e, { role: item })}
+                            style={{ justifyContent: 'flex-start' }}
+                            startIcon={
+                              <Avatar src={`${process.env.PUBLIC_URL}/assets/roles/${item}.png`} />
+                            }
+                          >
+                            {`${holsterMapping.hosts[selectedHost].runTypes[selectedRunType].roles[item].name}`}
+                          </Button>
+                        </Box>
+                      ))}
+                    </Stack>
+                  )
+                  : null
+              }
+              {
+                activeStep === 3
+                  ? (
+                    <Stack spacing={2} width="100%">
                       {availableHolsters.map((item) => (
                         <Box key={`holsterwf-${item}`}>
                           <Button
@@ -231,11 +338,12 @@ export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster
                             variant="outlined"
                             size="large"
                             onClick={(e) => handleNext(e, { holster: item })}
+                            style={{ justifyContent: 'flex-start' }}
                             startIcon={
-                              <Avatar src={`${process.env.PUBLIC_URL}/assets/lostactions/${holsterData[selectedRunType].holsters[item].icon}.jpg`} />
+                              <Avatar src={`${process.env.PUBLIC_URL}/assets/lostactions/${holsterData.host[selectedHost].holsters[selectedRunType].holsters[item].icon}.jpg`} />
                             }
                           >
-                            {`${holsterData[selectedRunType].holsters[item].name}`}
+                            {`${holsterData.host[selectedHost].holsters[selectedRunType].holsters[item].name}`}
                           </Button>
                         </Box>
                       ))}

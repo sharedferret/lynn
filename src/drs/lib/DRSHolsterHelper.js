@@ -1,14 +1,11 @@
 import { Buffer } from 'buffer';
+import DRSLostActionHelper from './DRSLostActionHelper';
 
 const holsters = require('./Holsters.json');
-const lostActions = require('./LostActions.json');
-const fragments = require('./Fragments.json');
-const idsToFragments = require('./IDsToFragments.json');
-const codeToLostAction = require('./CodeToLostAction.json');
 
 class DRSHolsterHelper {
-  static getHolsterData(type, loadoutName) {
-    const holstersForType = holsters[type];
+  static getHolsterData(host, type, loadoutName) {
+    const holstersForType = holsters.host[host].holsters[type];
     if (holstersForType === undefined) {
       return null;
     }
@@ -16,32 +13,8 @@ class DRSHolsterHelper {
     return holstersForType.holsters[loadoutName];
   }
 
-  static getLostActionData(lostAction) {
-    return lostActions.lostActions[lostAction];
-  }
-
-  static getLostActions() {
-    return lostActions.lostActions;
-  }
-
-  static getFragmentData(fragment) {
-    return fragments.fragments[fragment];
-  }
-
-  static calculateHolsterWeight(actionList) {
-    let weight = 0;
-    for (let i = 0; i < actionList.length; i += 1) {
-      const inputAction = actionList[i];
-      const action = lostActions.lostActions[inputAction.name];
-      if (action !== undefined) {
-        weight += action.weight * inputAction.quantity;
-      }
-    }
-    return weight;
-  }
-
-  static getFriendlyHolsterSetName(set) {
-    return holsters[set].name;
+  static getFriendlyHolsterSetName(host, set) {
+    return holsters.host[host].holsters[set].name;
   }
 
   static getAvailableHolsterSets() {
@@ -53,11 +26,11 @@ class DRSHolsterHelper {
     return holsterSets;
   }
 
-  static getHolsterNames(type) {
-    const holsterNameKeys = Object.keys(holsters[type].holsters);
+  static getHolsterNames(host, type) {
+    const holsterNameKeys = Object.keys(holsters[host].holsters[type].holsters);
     const holsterNames = {};
     for (let i = 0; i < holsterNameKeys.length; i += 1) {
-      const holsterData = holsters[type].holsters[holsterNameKeys[i]];
+      const holsterData = holsters[host].holsters[type].holsters[holsterNameKeys[i]];
       holsterNames[holsterNameKeys[i]] = {
         name: holsterData.name,
         role: holsterData.role,
@@ -88,19 +61,6 @@ class DRSHolsterHelper {
     return actions;
   }
 
-  static getFragmentNameForId(id) {
-    return idsToFragments[id];
-  }
-
-  static getLostActionFromCode(code) {
-    return codeToLostAction[code];
-  }
-
-  static getCodeForLostAction(actionName) {
-    const action = this.getLostActionData(actionName);
-    return action.code;
-  }
-
   static getDecodedQuantity(encodedQuantity) {
     const decodedQuantity = parseInt(encodedQuantity, 36);
     if (!decodedQuantity || decodedQuantity < 0 || decodedQuantity > 35) {
@@ -121,9 +81,9 @@ class DRSHolsterHelper {
 
     for (let i = 0; i < prepopBag.length; i += 1) {
       if (prepopBag[i].name !== '') {
-        const code = this.getCodeForLostAction(prepopBag[i].name);
+        const code = DRSLostActionHelper.getCodeForLostAction(prepopBag[i].name);
         if (code) {
-          holsterComponents.push(`${this.getCodeForLostAction(prepopBag[i].name)}${this.encodeQuantity(prepopBag[i].quantity)}`);
+          holsterComponents.push(`${DRSLostActionHelper.getCodeForLostAction(prepopBag[i].name)}${this.encodeQuantity(prepopBag[i].quantity)}`);
         }
       }
     }
@@ -132,9 +92,9 @@ class DRSHolsterHelper {
 
     for (let i = 0; i < mainBag.length; i += 1) {
       if (mainBag[i].name !== '') {
-        const code = this.getCodeForLostAction(mainBag[i].name);
+        const code = DRSLostActionHelper.getCodeForLostAction(mainBag[i].name);
         if (code) {
-          holsterComponents.push(`${this.getCodeForLostAction(mainBag[i].name)}${this.encodeQuantity(mainBag[i].quantity)}`);
+          holsterComponents.push(`${DRSLostActionHelper.getCodeForLostAction(mainBag[i].name)}${this.encodeQuantity(mainBag[i].quantity)}`);
         }
       }
     }
@@ -155,7 +115,7 @@ class DRSHolsterHelper {
     for (let i = 0; i < prepopBagActions.length; i += 1) {
       const encodedAction = prepopBagActions[i];
       if (encodedAction.length === 2) {
-        const name = this.getLostActionFromCode(encodedAction[0]);
+        const name = DRSLostActionHelper.getLostActionFromCode(encodedAction[0]);
         if (name) {
           prepopHolster.push({
             name,
@@ -172,7 +132,7 @@ class DRSHolsterHelper {
     for (let i = 0; i < mainBagActions.length; i += 1) {
       const encodedAction = mainBagActions[i];
       if (encodedAction.length === 2) {
-        const name = this.getLostActionFromCode(encodedAction[0]);
+        const name = DRSLostActionHelper.getLostActionFromCode(encodedAction[0]);
         if (name) {
           mainHolster.push({
             name,

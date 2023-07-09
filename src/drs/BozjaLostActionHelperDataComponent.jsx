@@ -3,7 +3,7 @@ import {
   Box, Divider, Grid, Stack, Typography,
 } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
-import DRSHolsterHelper from './lib/DRSHolsterHelper';
+import DRSLostActionHelper from './lib/DRSLostActionHelper';
 
 import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
 import universalisPriceHelperInstance from '../acquisition/UniversalisPriceHelper';
@@ -30,13 +30,13 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
     return null;
   }
 
-  const actionData = DRSHolsterHelper.getLostActionData(lostAction);
+  const actionData = DRSLostActionHelper.getLostActionData(lostAction);
 
   if (actionData === undefined) {
     return null;
   }
 
-  const fragmentData = DRSHolsterHelper.getFragmentData(actionData.fragment);
+  const fragmentData = DRSLostActionHelper.getFragmentData(actionData.fragment);
 
   return (
     <Stack spacing={2} p={1} alignItems="flex-start" width={1000}>

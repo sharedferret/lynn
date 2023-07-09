@@ -3,19 +3,19 @@ import React from 'react';
 import {
   Box, Grid, Stack, Typography,
 } from '@mui/material';
-import DRSHolsterHelper from './lib/DRSHolsterHelper';
+import DRSLostActionHelper from './lib/DRSLostActionHelper';
 import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
 
 export default function DRSHolsterActionAcquisitionLostActionComponent(
   { action, quantity, priceData },
 ) {
-  const actionData = DRSHolsterHelper.getLostActionData(action);
+  const actionData = DRSLostActionHelper.getLostActionData(action);
 
   if (actionData === undefined) {
     return null;
   }
 
-  const fragmentData = DRSHolsterHelper.getFragmentData(actionData.fragment);
+  const fragmentData = DRSLostActionHelper.getFragmentData(actionData.fragment);
 
   return (
     <Stack alignItems="flex-start" p={2} spacing={2}>

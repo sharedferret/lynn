@@ -1,6 +1,29 @@
 {
   "changes": [
     {
+      "version": "11.0",
+      "timestamp": "2023-07-09",
+      "changes": [
+        "Updated DRS holster selector workflow",
+        "Added Cam Klauser's holsters"
+      ]
+    },
+    {
+      "version": "10.1",
+      "timestamp": "2023-07-08",
+      "changes": [
+        "Added Stoik Harlow's learning holsters"
+      ]
+    },
+    {
+      "version": "10.0",
+      "timestamp": "2023-07-07",
+      "changes": [
+        "Added a Select Host option to the DRS Holster selector flow",
+        "Added Lynn Renkinjutsu's learning and reclear holsters"
+      ]
+    },
+    {
       "version": "9.4",
       "timestamp": "2023-06-23",
       "changes": [

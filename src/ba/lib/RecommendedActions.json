@@ -107,7 +107,7 @@
             },
             {
               "umbral": "Spirit of the Remembered",
-              "astral":"Wisdom of the Skirmisher"
+              "astral": "Wisdom of the Skirmisher"
             }
           ]
         },
@@ -204,7 +204,7 @@
             },
             {
               "umbral": "Spirit of the Remembered",
-              "astral":"Wisdom of the Skirmisher"
+              "astral": "Wisdom of the Skirmisher"
             }
           ]
         },
@@ -378,7 +378,7 @@
           "plates": [
             {
               "umbral": null,
-              "astral":"Spirit of the Remembered"
+              "astral": "Spirit of the Remembered"
             },
             {
               "umbral": "Rapid Recast L",
@@ -397,7 +397,7 @@
           "plates": [
             {
               "umbral": null,
-              "astral":"Spirit of the Remembered"
+              "astral": "Spirit of the Remembered"
             },
             {
               "umbral": "Catastrophe L",
@@ -446,7 +446,7 @@
       "name": "Healer",
       "trays": [
         {
-          "title": "Standard",
+          "title": "Standard / First Timer",
           "subtitle": "Aetherweaver, Refresh",
           "buttonIcon": "refresh",
           "plates": [
@@ -457,6 +457,10 @@
             {
               "umbral": "Refresh L",
               "astral": "Wisdom of the Aetherweaver"
+            },
+            {
+              "umbral": "Refresh L",
+              "astral": "Spirit of the Remembered"
             },
             {
               "umbral": "Spirit of the Remembered",

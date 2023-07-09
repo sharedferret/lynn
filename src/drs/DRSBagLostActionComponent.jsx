@@ -4,7 +4,7 @@ import {
   Box, Divider, Stack, TextField, Typography,
 } from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
-import DRSHolsterHelper from './lib/DRSHolsterHelper';
+import DRSLostActionHelper from './lib/DRSLostActionHelper';
 import BozjaLostActionSelectorComponent from './BozjaLostActionSelectorComponent';
 
 export default function DRSBagLostActionComponent({
@@ -37,7 +37,7 @@ export default function DRSBagLostActionComponent({
    * Render Logic
    */
   // Get lost action data
-  const actionData = DRSHolsterHelper.getLostActionData(actionName);
+  const actionData = DRSLostActionHelper.getLostActionData(actionName);
 
   // Calculate total action weight
   const combinedActionWeight = actionData !== undefined

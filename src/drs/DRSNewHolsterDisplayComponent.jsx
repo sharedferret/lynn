@@ -17,7 +17,6 @@ export default function DRSNewHolsterDisplayComponent({ holster, handleReset }) 
 
   const [holsterName, setHolsterName] = useState(initialHolster.holsterName);
   const [holsterType, setHolsterType] = useState(initialHolster.holsterType);
-  const [holsterFriendlyType] = useState(initialHolster.holsterFriendlyType);
   const [holsterMetadata, setHolsterMetadata] = useState(initialHolster.holsterMetadata);
   const [holsterPrepop, setHolsterPrepop] = useState(initialHolster.holsterPrepop);
   const [holsterMain, setHolsterMain] = useState(initialHolster.holsterMain);
@@ -83,11 +82,6 @@ export default function DRSNewHolsterDisplayComponent({ holster, handleReset }) 
               )
           }
           <Stack>
-            <Typography fontWeight={700} variant="h5">
-              Holster:
-              {' '}
-              {holsterFriendlyType}
-            </Typography>
             {holsterMetadata.name
               ? (
                 <Typography fontWeight={700} variant="h5">

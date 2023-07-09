@@ -13,7 +13,7 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import DRSHolsterHelper from '../lib/DRSHolsterHelper';
+import DRSLostActionHelper from '../lib/DRSLostActionHelper';
 
 export default function DRSRunCreatorSingleHolsterComponent({
   holster, index, updateHolster, deleteHolster,
@@ -27,7 +27,7 @@ export default function DRSRunCreatorSingleHolsterComponent({
     'Ranged',
   ];
 
-  const lostActions = DRSHolsterHelper.getLostActions();
+  const lostActions = DRSLostActionHelper.getLostActions();
   const lostActionKeys = Object.keys(lostActions);
   const images = [];
   images.push(...roles);

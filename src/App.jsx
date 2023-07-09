@@ -23,7 +23,7 @@ import EurekaLogosActionHelperComponent from './eureka/EurekaLogosActionHelperCo
 import FishComponent from './Fish';
 import ChangelogComponent from './ChangelogComponent';
 import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
-import DRSRunHolsterCreatorComponent from './drs/create/DRSRunHolsterCreatorComponent';
+import DRSRunHolsterCreatorContainerComponent from './drs/create/DRSRunHolsterCreatorContainerComponent';
 import BAMorbolMapComponent from './BAMorbolMapComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
@@ -58,6 +58,7 @@ function WrappedMainComponent({ component, page }) {
         component={component}
         holster={
           {
+            host: params.host,
             name: params.holstername,
             type: params.holstertype,
           }
@@ -124,7 +125,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/drs/createholsters',
-    element: <WrappedMainComponent component={<DRSRunHolsterCreatorComponent />} page="drsholster" />,
+    element: <WrappedMainComponent component={<DRSRunHolsterCreatorContainerComponent />} page="drsholster" />,
   },
   {
     path: '/drs/holster',
@@ -139,7 +140,7 @@ const router = createBrowserRouter([
         element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
       },
       {
-        path: '/drs/holster/:holstertype/:holstername',
+        path: '/drs/holster/:host/:holstertype/:holstername',
         element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
       },
     ],

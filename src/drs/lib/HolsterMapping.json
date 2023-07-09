@@ -1,142 +1,389 @@
 {
-  "runType": {
-    "learning": {
-      "name": "Learning",
-      "owner": "Lynn Kaneko",
-      "roles": {
-        "tank": {
-          "name": "Tank",
-          "holsters": [
-            "maintank",
-            "offtank",
-            "irregular-drk",
-            "savior-tank"
-          ]
+  "hosts": {
+    "lynn": {
+      "name": "Lynn Kaneko",
+      "server": "The Help Lines",
+      "serverLink": "https://discord.gg/thehelplines",
+      "serverIcon": "thl.png",
+      "runTypes": {
+        "learning": {
+          "name": "Learning",
+          "owner": "Lynn Kaneko",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "maintank",
+                "offtank",
+                "irregular-drk",
+                "savior-tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "mainhealer",
+                "offhealer",
+                "profane-whm"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee-rend",
+                "melee-dps"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster-c4",
+                "caster-dps"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "ranged-c2",
+                "ranged-dervish"
+              ]
+            }
+          }
         },
-        "healer": {
-          "name": "Healer",
-          "holsters": [
-            "mainhealer",
-            "offhealer",
-            "profane-whm"
-          ]
+        "reclear": {
+          "name": "Reclear",
+          "owner": "Lynn Kaneko",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "maintank",
+                "offtank",
+                "irregular-drk",
+                "savior-tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "mainhealer",
+                "offhealer",
+                "profane-whm"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee-rend",
+                "melee-dps",
+                "melee-battery"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster-c4",
+                "caster-dps",
+                "caster-battery"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "ranged-c2",
+                "ranged-dervish",
+                "ranged-dervish-mch",
+                "ranged-battery"
+              ]
+            }
+          }
         },
-        "melee": {
-          "name": "Melee",
-          "holsters": [
-            "melee-rend",
-            "melee-dps"
-          ]
-        },
-        "caster": {
-          "name": "Caster",
-          "holsters": [
-            "caster-c4",
-            "caster-dps"
-          ]
-        },
-        "ranged": {
-          "name": "Physical Ranged",
-          "holsters": [
-            "ranged-c2",
-            "ranged-dervish"
-          ]
+        "reclear-3battery": {
+          "name": "Reclear (Three Batteries)",
+          "owner": "Lynn Kaneko",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "maintank",
+                "offtank",
+                "irregular-drk",
+                "savior-tank",
+                "offtank-battery"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "mainhealer",
+                "offhealer",
+                "profane-whm"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee-rend",
+                "melee-dps",
+                "melee-battery"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster-c4",
+                "caster-dps",
+                "caster-battery"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "ranged-c2",
+                "ranged-dervish",
+                "ranged-battery"
+              ]
+            }
+          }
         }
       }
     },
-    "lynn-reclear": {
-      "name": "Reclear",
-      "owner": "Lynn Kaneko",
-      "roles": {
-        "tank": {
-          "name": "Tank",
-          "holsters": [
-            "maintank",
-            "offtank",
-            "irregular-drk",
-            "savior-tank",
-            "offtank-battery"
-          ]
+    "lynnr": {
+      "name": "Lynn Renkinjutsu",
+      "server": "PEBE",
+      "serverLink": "https://discord.gg/pebe",
+      "serverIcon": "pebe.png",
+      "runTypes": {
+        "learning": {
+          "name": " Learning",
+          "owner": "Lynn Renkinjutsu",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "main-tank",
+                "off-tank",
+                "tank-advanced",
+                "solo-queen-tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee-dps",
+                "melee-rend"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster-c4",
+                "caster-dps"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "ranged-dervish"
+              ]
+            }
+          }
         },
-        "healer": {
-          "name": "Healer",
-          "holsters": [
-            "mainhealer",
-            "offhealer",
-            "profane-whm"
-          ]
-        },
-        "melee": {
-          "name": "Melee",
-          "holsters": [
-            "melee-rend",
-            "melee-dps",
-            "melee-battery"
-          ]
-        },
-        "caster": {
-          "name": "Caster",
-          "holsters": [
-            "caster-c4",
-            "caster-dps",
-            "caster-battery"
-          ]
-        },
-        "ranged": {
-          "name": "Physical Ranged",
-          "holsters": [
-            "ranged-c2",
-            "ranged-dervish",
-            "ranged-battery"
-          ]
+        "reclear": {
+          "name": "Reclear",
+          "owner": "Lynn Renkinjutsu",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "tank-aethershield",
+                "off-tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee",
+                "melee-battery",
+                "melee-standard",
+                "melee-rend-standard"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster-c4",
+                "caster-battery",
+                "caster-c4-standard"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "ranged-dervish",
+                "ranged-battery",
+                "ranged-standard"
+              ]
+            }
+          }
         }
       }
     },
-    "lynn-reclear-3battery": {
-      "name": "Reclear (Three Batteries)",
-      "owner": "Lynn Kaneko",
-      "roles": {
-        "tank": {
-          "name": "Tank",
-          "holsters": [
-            "maintank",
-            "offtank",
-            "irregular-drk",
-            "savior-tank",
-            "offtank-battery"
-          ]
+    "cam": {
+      "name": "Cam Klauser",
+      "server": "PEBE",
+      "serverLink": "https://discord.gg/pebe",
+      "serverIcon": "pebe.png",
+      "runTypes": {
+        "reclear": {
+          "name": "Reclear",
+          "owner": "Cam Klauser",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "tank",
+                "irregular",
+                "irregular-chain"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer",
+                "profane",
+                "profane-ta-battery",
+                "profane-queen-battery"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee",
+                "melee-mimic-target",
+                "melee-rend-armor",
+                "melee-rend-mimic-target"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster-c4",
+                "caster-c4-mimic-target",
+                "blm-dps",
+                "lfs",
+                "lfs-alt"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "phys-dervish",
+                "phys-dervish-mimic-target",
+                "mch"
+              ]
+            }
+          }
         },
-        "healer": {
-          "name": "Healer",
-          "holsters": [
-            "mainhealer",
-            "offhealer",
-            "profane-whm"
-          ]
-        },
-        "melee": {
-          "name": "Melee",
-          "holsters": [
-            "melee-rend",
-            "melee-dps",
-            "melee-battery"
-          ]
-        },
-        "caster": {
-          "name": "Caster",
-          "holsters": [
-            "caster-c4",
-            "caster-dps",
-            "caster-battery"
-          ]
-        },
-        "ranged": {
-          "name": "Physical Ranged",
-          "holsters": [
-            "ranged-c2",
-            "ranged-dervish",
-            "ranged-battery"
-          ]
+        "no-healers": {
+          "name": "Reclear - No Healers",
+          "owner": "Cam Klauser",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "tank",
+                "irregular",
+                "irregular-chain"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee",
+                "melee-mimic-target",
+                "melee-rend-armor",
+                "melee-rend-mimic-target"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster-c4",
+                "blm-dps",
+                "lfs",
+                "lfs-alt"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "phys-dervish",
+                "mch"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "stoik": {
+      "name": "Stoik Harlow",
+      "server": "PEBE",
+      "serverLink": "https://discord.gg/pebe",
+      "serverIcon": "pebe.png",
+      "runTypes": {
+        "learning": {
+          "name": "Learning",
+          "owner": "Stoik Harlow",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "main-tank",
+                "off-tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer-1",
+                "healer-2"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee-rend",
+                "melee-dps"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster-c4",
+                "caster-dps"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "ranged-dervish",
+                "ranged-dps"
+              ]
+            }
+          }
         }
       }
     }

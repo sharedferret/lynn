@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 import DRSHolsterActionAcquisitionLostActionComponent from './DRSHolsterActionAcquisitionLostActionComponent';
-import DRSHolsterHelper from './lib/DRSHolsterHelper';
+import DRSLostActionHelper from './lib/DRSLostActionHelper';
 import universalisPriceHelperInstance from '../acquisition/UniversalisPriceHelper';
 
 export default function DRSHolsterActionAcquisitionGuideComponent({ neededActions }) {
@@ -37,7 +37,7 @@ export default function DRSHolsterActionAcquisitionGuideComponent({ neededAction
         <Box>
           <Stack spacing={2} divider={<Divider variant="middle" />}>
             {Object.keys(neededActions).map((i) => {
-              const lostActionData = DRSHolsterHelper.getLostActionData(i);
+              const lostActionData = DRSLostActionHelper.getLostActionData(i);
               return (
                 <DRSHolsterActionAcquisitionLostActionComponent
                   key={uuidv4()}

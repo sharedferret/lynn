@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import { groupBy } from 'underscore';
 import { v4 as uuidv4 } from 'uuid';
-import DRSHolsterHelper from './lib/DRSHolsterHelper';
+import DRSLostActionHelper from './lib/DRSLostActionHelper';
 
 export default function BozjaLostActionSelectorComponent({ lostAction, handleActionUpdate }) {
   function renderSelectorMenuSection(items) {
@@ -29,7 +29,7 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
   }
 
   function renderSelectorMenu() {
-    const lostActions = DRSHolsterHelper.getLostActions();
+    const lostActions = DRSLostActionHelper.getLostActions();
 
     // Create sections
     const actionsBySection = groupBy(lostActions, (i) => i.type);
@@ -80,7 +80,7 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
         </Stack>
       );
     }
-    const action = DRSHolsterHelper.getLostActionData(actionName);
+    const action = DRSLostActionHelper.getLostActionData(actionName);
 
     return (
       <Stack direction="row" spacing={2} alignItems="center">
