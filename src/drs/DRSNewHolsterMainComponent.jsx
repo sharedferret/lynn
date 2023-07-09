@@ -4,10 +4,9 @@ import React, { Suspense } from 'react';
 const DRSNewHolsterSelectorComponent = React.lazy(() => import('./DRSNewHolsterSelectorComponent'));
 // import DRSNewHolsterSelectorComponent from './DRSNewHolsterSelectorComponent';
 
-export default function DRSNewHolsterMainComponent({ holster, encodedHolster }) {
-  /**
-   * TODO: Pass down initial props if they exist on this element.
-   */
+export default function DRSNewHolsterMainComponent({
+  holster, encodedHolster, resetTimer,
+}) {
   return (
     <Box
       component="main"
@@ -17,7 +16,11 @@ export default function DRSNewHolsterMainComponent({ holster, encodedHolster }) 
       <Stack>
         <Typography variant="h4" fontWeight={700}>DRS Holster Helper</Typography>
         <Suspense fallback={<div>Loading...</div>}>
-          <DRSNewHolsterSelectorComponent holster={holster} encodedHolster={encodedHolster} />
+          <DRSNewHolsterSelectorComponent
+            holster={holster}
+            encodedHolster={encodedHolster}
+            resetTimer={resetTimer}
+          />
         </Suspense>
       </Stack>
     </Box>

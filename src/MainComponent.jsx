@@ -24,6 +24,7 @@ export default function MainComponent({
   const [forecastFilterState, setForecastFilterState] = useState(
     forecastFilter ?? ResultsFilter.ALL,
   );
+  const [resetTimer, setResetTimer] = useState(new Date().getTime());
 
   const handleDrawerToggle = useCallback(() => {
     setMobileOpen(!mobileOpen);
@@ -31,7 +32,8 @@ export default function MainComponent({
 
   const handleSidebarClick = useCallback(() => {
     setMobileOpen(false);
-  }, [setMobileOpen]);
+    setResetTimer(new Date().getTime());
+  }, [setMobileOpen, setResetTimer]);
 
   const handleSidebarForecastClick = useCallback((filter) => {
     setForecastFilterState(filter);
@@ -78,6 +80,7 @@ export default function MainComponent({
               encodedHolster,
               lostAction,
               logosAction,
+              resetTimer,
             })}
 
           </Box>

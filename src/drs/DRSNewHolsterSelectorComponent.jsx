@@ -7,13 +7,28 @@ import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import holsterMapping from './lib/HolsterMapping.json';
 import holsterData from './lib/Holsters.json';
 
-export default function DRSNewHolsterSelectorComponent({ holster, encodedHolster }) {
+export default function DRSNewHolsterSelectorComponent({
+  holster,
+  encodedHolster,
+  resetTimer,
+}) {
   const [selectedHost, setSelectedHost] = React.useState(null);
   const [selectedRunType, setSelectedRunType] = React.useState(null);
   const [selectedRole, setSelectedRole] = React.useState(null);
   const [selectedHolster, setSelectedHolster] = React.useState(null);
   const [activeStep, setActiveStep] = React.useState(0);
   const [firstHolster, setFirstHolster] = React.useState(holster);
+  const [resetTimerState, setResetTimerState] = React.useState(resetTimer);
+
+  if (resetTimer !== resetTimerState) {
+    setActiveStep(0);
+    setSelectedHost(null);
+    setSelectedRunType(null);
+    setSelectedRole(null);
+    setSelectedHolster(null);
+    setFirstHolster(null);
+    setResetTimerState(resetTimer);
+  }
 
   const hosts = Object.keys(holsterMapping.hosts);
 

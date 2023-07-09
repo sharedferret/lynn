@@ -113,19 +113,21 @@ function SidebarComponent({
         <Typography color="#fff" fontWeight={600} fontSize={16}>BOZJA AND DRS</Typography>
       </Stack>
 
-      <a href="/drs/holster">
-        <StyledButton key={uuidv4()}>
-          <Box width={32} />
-          <Typography>DRS Holsters</Typography>
-        </StyledButton>
-      </a>
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/holster'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>DRS Holsters</Typography>
+      </StyledButton>
 
-      <a href="/drs/holster/c">
-        <StyledButton key={uuidv4()}>
-          <Box width={32} />
-          <Typography>Holster Creator</Typography>
-        </StyledButton>
-      </a>
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/holster/c'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Holster Creator</Typography>
+      </StyledButton>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'bozja/lostaction'); }}
