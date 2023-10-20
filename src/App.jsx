@@ -124,24 +124,30 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/drs/createholsters',
-    element: <WrappedMainComponent component={<DRSRunHolsterCreatorContainerComponent />} page="drsholster" />,
-  },
-  {
-    path: '/drs/holster',
+    path: '/drs',
     element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
     children: [
       {
-        path: '/drs/holster/c',
-        element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
+        path: '/drs/createholsters',
+        element: <WrappedMainComponent component={<DRSRunHolsterCreatorContainerComponent />} page="drsholster" />,
       },
       {
-        path: '/drs/holster/c/:holsterstring',
+        path: '/drs/holster',
         element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
-      },
-      {
-        path: '/drs/holster/:host/:holstertype/:holstername',
-        element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
+        children: [
+          {
+            path: '/drs/holster/c',
+            element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
+          },
+          {
+            path: '/drs/holster/c/:holsterstring',
+            element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
+          },
+          {
+            path: '/drs/holster/:host/:holstertype/:holstername',
+            element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
+          },
+        ],
       },
     ],
   },

@@ -44,8 +44,9 @@
             "ranged": {
               "name": "Physical Ranged",
               "holsters": [
-                "ranged-c2",
-                "ranged-dervish"
+                "ranged-dervish",
+                "ranged-mch",
+                "ranged-c2"
               ]
             }
           }
@@ -142,6 +143,59 @@
                 "ranged-c2",
                 "ranged-dervish",
                 "ranged-battery"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "kiwi": {
+      "name": "Kiwi Navi",
+      "server": "The Help Lines",
+      "serverLink": "https://discord.gg/thehelplines",
+      "serverIcon": "thl.png",
+      "runTypes": {
+        "learning": {
+          "name": "Learning",
+          "owner": "Kiwi Navi",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "maintank",
+                "offtank",
+                "irregular-drk",
+                "savior-tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "mainhealer",
+                "offhealer",
+                "profane-whm"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee-rend",
+                "melee-dps"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster-c4",
+                "caster-dps"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "ranged-dervish",
+                "ranged-mch",
+                "ranged-c2"
               ]
             }
           }
@@ -263,6 +317,7 @@
               "name": "Healer",
               "holsters": [
                 "healer",
+                "healer-utility",
                 "profane",
                 "profane-ta-battery",
                 "profane-queen-battery"
@@ -281,56 +336,19 @@
               "name": "Caster",
               "holsters": [
                 "caster-c4",
+                "caster-c4-utility",
                 "caster-c4-mimic-target",
+                "caster-c4-utility-mimic",
                 "blm-dps",
-                "lfs",
-                "lfs-alt"
+                "lfs"
               ]
             },
             "ranged": {
               "name": "Physical Ranged",
               "holsters": [
-                "phys-dervish",
+                "phys-dervish-c2",
+                "phys-utility",
                 "phys-dervish-mimic-target",
-                "mch"
-              ]
-            }
-          }
-        },
-        "no-healers": {
-          "name": "Reclear - No Healers",
-          "owner": "Cam Klauser",
-          "roles": {
-            "tank": {
-              "name": "Tank",
-              "holsters": [
-                "tank",
-                "irregular",
-                "irregular-chain"
-              ]
-            },
-            "melee": {
-              "name": "Melee",
-              "holsters": [
-                "melee",
-                "melee-mimic-target",
-                "melee-rend-armor",
-                "melee-rend-mimic-target"
-              ]
-            },
-            "caster": {
-              "name": "Caster",
-              "holsters": [
-                "caster-c4",
-                "blm-dps",
-                "lfs",
-                "lfs-alt"
-              ]
-            },
-            "ranged": {
-              "name": "Physical Ranged",
-              "holsters": [
-                "phys-dervish",
                 "mch"
               ]
             }

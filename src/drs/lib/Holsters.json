@@ -575,8 +575,62 @@
                   "quantity": 3
                 },
                 {
+                  "name": "Lost Rampage",
+                  "quantity": 1
+                }
+              ]
+            },
+            "ranged-mch": {
+              "name": "Machinist - Full DPS",
+              "role": "ranged",
+              "icon": "Lost_Slash",
+              "assignments": [
+                "incensemanawall",
+                "rangedexcellence"
+              ],
+              "explanation": "",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 3
+                },
+                {
                   "name": "Lost Slash",
                   "quantity": 1
+                },
+                {
+                  "name": "Lost Rampage",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 3
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
                 }
               ]
             },
@@ -2599,6 +2653,817 @@
         }
       }
     },
+    "kiwi": {
+      "name": "Kiwi Navi",
+      "server": "The Help Lines",
+      "serverLink": "https://discord.gg/thehelplines",
+      "holsters": {
+        "learning": {
+          "name": "Learning",
+          "owner": "Kiwi Navi",
+          "holsters": {
+            "maintank": {
+              "name": "Main Tank",
+              "role": "tank",
+              "icon": "Lost_Aethershield",
+              "assignments": [
+                "dispel"
+              ],
+              "explanation": "As a main tank, you'll be responsible for using Lost Aethershield on the party during raidwides on Trinity Avowed and The Queen. Lost Sacrifice can be used to resurrect a player if the raid is low on Lost Arises. Your bag contains a Shell II in case your off tank forgets it - if needed, you’ll slot it and apply it to your party.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Indomitable",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Aethershield",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 1
+                }
+              ]
+            },
+            "offtank": {
+              "name": "Off Tank",
+              "role": "tank",
+              "icon": "Tank",
+              "assignments": [],
+              "explanation": "As an off-tank, you’ll mainly be doing damage with Lost Font of Power + Banner of Honored Sacrifice. Lost Aethershield is needed for Queen enrage - you’ll use it after the main tank uses both of their Aethershields. Lost Sacrifice can be used to resurrect a player if the raid is low on Lost Arises.\nOff-tanks are also tasked with applying Shell II (and Bubble, if someone in the raid needs it) throughout the raid. If you’re assigned as Shell II on the roster, you’ll need to apply Shell II to your party and others when instructed. After applying Shell II, you can slot over it with Honored Sacrifice or Aethershield.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Indomitable",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Aethershield",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 2
+                }
+              ]
+            },
+            "mainhealer": {
+              "name": "Main Healer",
+              "role": "healer",
+              "icon": "Healer",
+              "assignments": [
+                "protect",
+                "banish"
+              ],
+              "explanation": "Main healers are responsible for applying Shell II to players at the box, as well as applying Protect II to any players standing on the north pad at the box.\nYour main role is to resurrect players by using the Lost Arise action. When Arising players, stand over them and jump to make sure that other healers don’t waste Arises on the same player.\nAt Queen’s Guard, you’ll slot Spellforge (if you’re the only healer in your party, you’ll need to slot both Steelsting and Spellforge). When the raid lead instructs you during Queen’s Guard, you’ll slot over Spellforge with Reflect, which you’ll carry with you through the rest of the raid, if possible (both Minotaur and Queen have reflect mechanics).",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Divine",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Protect II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Arise",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Reflect",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Dispel",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Arise",
+                  "quantity": 8
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                }
+              ]
+            },
+            "offhealer": {
+              "name": "Off Healer",
+              "role": "healer",
+              "icon": "Healer",
+              "assignments": [
+                "banish"
+              ],
+              "explanation": "Your main role is to resurrect players by using the Lost Arise action. When Arising players, stand over them and jump to make sure that other healers don’t waste Arises on the same player.\nAt Queen’s Guard, you’ll slot Steelsting for an upcoming mechanic. At Minotaur, you’ll slot Dispel for mechanics that require dispel on both Minotaur and Queen.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if your main healer misses an orb.",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Divine",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Protect II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Arise",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 6
+                },
+                {
+                  "name": "Lost Arise",
+                  "quantity": 8
+                },
+                {
+                  "name": "Lost Dispel",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                }
+              ]
+            },
+            "melee-rend": {
+              "name": "Melee DPS (Rend)",
+              "role": "melee",
+              "icon": "Lost_Rend_Armor",
+              "assignments": [
+                "meleeexcellence"
+              ],
+              "explanation": "As a melee carrying Lost Rend Armor, you’re responsible for making sure that bosses have the Rend Armor debuff. You’ll be assigned first or second rend in the roster - if you’re first rend, you’ll apply Rend Armor at the start of the fight, and every 60 seconds after that. If you’re second rend, you’ll apply Rend Armor 30 seconds into the fight, and then every 60 seconds after that.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Duelist",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Perception",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Rend Armor",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Rend Armor",
+                  "quantity": 3
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                }
+              ]
+            },
+            "melee-dps": {
+              "name": "Melee DPS",
+              "role": "melee",
+              "icon": "Melee",
+              "assignments": [
+                "meleeexcellence"
+              ],
+              "explanation": "As a melee DPS, your main job is to deal damage. There’s an extra Lost Rend Armor in your bag to use in case a primary or secondary Rend goes down, or for the initial phase of Queen’s Guard where all four bosses need Rend applied to them.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Duelist",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Perception",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Rend Armor",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Rend Armor",
+                  "quantity": 1
+                }
+              ]
+            },
+            "caster-c4": {
+              "name": "Caster (C4)",
+              "role": "caster",
+              "icon": "Lost_Cure_IV",
+              "assignments": [
+                "c4excellence"
+              ],
+              "explanation": "As a Cure IV (C4) caster, your primary role is to apply Cure IV to the party every 60 seconds. Cure IV interacts with your Pure essence to apply a 10% bravery damage boost to your party. You can also use Cure IV to heal the party when your healers are busy (for example, using LB3) or dead.\nYour pre-pop bag has three options for a damage action alongside Cure IV. For first-timers, Chainspell is the easiest action of the three to use. Lost Font of Magic is the preferred action for Black Mages, and for casters that want to deal extra damage. Resistance Ether Kits are required for non-BLMs carrying Lost Font of Magic. Banner of Honored Sacrifice is an option for Red Mages, since your burst phase is mixed physical/magic damage.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Elder",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Burst",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 2
+                }
+              ]
+            },
+            "caster-dps": {
+              "name": "Caster DPS",
+              "role": "caster",
+              "icon": "Caster",
+              "assignments": [
+                "casterexcellence"
+              ],
+              "explanation": "As a DPS caster, your main role is to deal damage. You should slot Lost Font of Magic as your first pre-pop action. You can choose either Lost Chainspell or Banner of Honored Sacrifice (RDM only) as your secondary action. HSac is useful for Red Mages since their burst phase is mixed physical/magic damage.\nYour main bag contains a Cure IV to use if your party’s C4 caster goes down during a fight. Resistance Ether Kits are required for this loadout, as FoM+CS will burn through your MP. If you’re comfortable with some of the fights in DRS, drop a Reraiser to bring more ether kits.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Elder",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 11
+                }
+              ]
+            },
+            "ranged-c2": {
+              "name": "Ranged DPS (C2)",
+              "role": "ranged",
+              "icon": "Lost_Cure_II",
+              "assignments": [
+                "incensemanawall",
+                "rangedexcellence"
+              ],
+              "explanation": "As a Cure II ranged player, your primary role is to apply Cure II to the member of your party that requests it. Cure II interacts with your Pure essence to apply a MP regen over time to the player you cast Cure II on. This is useful for full-DPS casters, Profane White Mages, and the Duelist. Your second action can either be Lost Font of Power or Lost Dervish, depending on if your party has another Physical Ranged player in it.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Bubble",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Cure II",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Bubble",
+                  "quantity": 3
+                }
+              ]
+            },
+            "ranged-dervish": {
+              "name": "Ranged DPS (Dervish)",
+              "role": "ranged",
+              "icon": "Lost_Dervish",
+              "assignments": [
+                "incensemanawall",
+                "rangedexcellence"
+              ],
+              "explanation": "As a Dervish ranged player, your primary role is to apply Lost Dervish every two minutes (within burst windows) during boss fights. Dervish is a party buff that increases critical hit rate and damage dealt, and reduces GCD and recast times. If you have two ranged players in your party, have one player offset their Dervish by 60 seconds to get full uptime.\nYou also have a Lost Perception in your bag. You can use this to percept traps after Phantom, and then slot a Lost Dervish over it once we get to Trinity Avowed.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Perception",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Rampage",
+                  "quantity": 1
+                }
+              ]
+            },
+            "ranged-mch": {
+              "name": "Machinist - Full DPS",
+              "role": "ranged",
+              "icon": "Lost_Slash",
+              "assignments": [
+                "incensemanawall",
+                "rangedexcellence"
+              ],
+              "explanation": "",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Slash",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Rampage",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 3
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                }
+              ]
+            },
+            "irregular-drk": {
+              "name": "Irregular (DRK)",
+              "role": "tank",
+              "icon": "Lost_Blood_Rage",
+              "assignments": [],
+              "explanation": "If you’re looking at this loadout, you probably don’t need tooltips. 😀",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Deep Essence of the Irregular",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Blood Rage",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                },
+                {
+                  "name": "Mimic",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Rampage",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 12
+                }
+              ]
+            },
+            "savior-tank": {
+              "name": "Savior Tank",
+              "role": "tank",
+              "icon": "Healer",
+              "assignments": [],
+              "explanation": "If you’re looking at this loadout, you probably don’t need tooltips. 😀",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Deep Essence of the Savior",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Aethershield",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Reflect",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 5
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 4
+                }
+              ]
+            },
+            "profane-whm": {
+              "name": "Profane (WHM)",
+              "role": "healer",
+              "icon": "Caster",
+              "assignments": [],
+              "explanation": "If you’re looking at this loadout, you probably don’t need tooltips. 😀",
+              "pre": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Deep Essence of the Profane",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Burst",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 10
+                },
+                {
+                  "name": "Lost Reraise",
+                  "quantity": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
     "lynnr": {
       "name": "Lynn Renkinjutsu",
       "server": "PEBE",
@@ -3817,8 +4682,62 @@
                 }
               ]
             },
-            "phys-dervish": {
-              "name": "Dervish",
+            "phys-dervish-c2": {
+              "name": "Dervish + C2",
+              "role": "ranged",
+              "icon": "Lost_Dervish",
+              "explanation": "If you need to mimic at Trinity Seeker (those running Incense+Mimic or Rampage+Mimic during door bosses), you can mimic any DPS with Font of Power/Excellence slotted.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Mimic",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Cure II",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Rampage",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Perception",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Incense",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 5
+                }
+              ]
+            },
+            "phys-utility": {
+              "name": "Dervish + C2 (Utility)",
               "role": "ranged",
               "icon": "Lost_Dervish",
               "explanation": "If you need to mimic at Trinity Seeker (those running Incense+Mimic or Rampage+Mimic during door bosses), you can mimic any DPS with Font of Power/Excellence slotted.",
@@ -3854,6 +4773,18 @@
                   "quantity": 1
                 },
                 {
+                  "name": "Lost Dispel",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure II",
+                  "quantity": 3
+                },
+                {
                   "name": "Lost Perception",
                   "quantity": 1
                 },
@@ -3863,7 +4794,7 @@
                 },
                 {
                   "name": "Light Curtain",
-                  "quantity": 3
+                  "quantity": 1
                 }
               ]
             },
@@ -3909,7 +4840,7 @@
                 },
                 {
                   "name": "Lost Perception",
-                  "quantity": 1
+                  "quantity": 2
                 },
                 {
                   "name": "Lost Incense",
@@ -3917,7 +4848,7 @@
                 },
                 {
                   "name": "Light Curtain",
-                  "quantity": 7
+                  "quantity": 3
                 }
               ]
             },
@@ -3968,10 +4899,10 @@
               ]
             },
             "caster-c4": {
-              "name": "Cure IV (Only with >24 people)",
+              "name": "Cure IV",
               "role": "caster",
               "icon": "Lost_Cure_IV",
-              "explanation": "This should be used only in runs with more than 24 people. All C4 will be mimic targets unless specified otherwise.\n\nIf you need to mimic at Trinity Seeker (those running Incense+Mimic or Rampage+Mimic during door bosses), you can mimic any DPS with Font of Power/Excellence slotted.",
+              "explanation": "All C4 will be mimic targets unless specified otherwise.\n\nIf you need to mimic at Trinity Seeker (those running Incense+Mimic or Rampage+Mimic during door bosses), you can mimic any DPS with Font of Power/Excellence slotted.",
               "pre": [
                 {
                   "name": "Pure Essence of the Elder",
@@ -4014,6 +4945,64 @@
                 {
                   "name": "Light Curtain",
                   "quantity": 5
+                }
+              ]
+            },
+            "caster-c4-utility": {
+              "name": "Cure IV (Utility)",
+              "role": "caster",
+              "icon": "Lost_Cure_IV",
+              "explanation": "All C4 will be mimic targets unless specified otherwise.\n\nIf you need to mimic at Trinity Seeker (those running Incense+Mimic or Rampage+Mimic during door bosses), you can mimic any DPS with Font of Power/Excellence slotted.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Elder",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Mimic",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Burst",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Dispel",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 8
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 8
                 }
               ]
             },
@@ -4068,6 +5057,68 @@
                 {
                   "name": "Light Curtain",
                   "quantity": 4
+                }
+              ]
+            },
+            "caster-c4-utility-mimic": {
+              "name": "Cure IV (Utility & Mimic Target)",
+              "role": "caster",
+              "icon": "Lost_Cure_IV",
+              "explanation": "If you need to mimic at Trinity Seeker (those running Incense+Mimic or Rampage+Mimic during door bosses), you can mimic any DPS with Font of Power/Excellence slotted.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Elder",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Mimic",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Burst",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Banish III",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 4
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 7
                 }
               ]
             },
@@ -4175,48 +5226,6 @@
                 }
               ]
             },
-            "lfs-alt": {
-              "name": "Black Mage - Lost Flare Star (No Ether Kits)",
-              "role": "caster",
-              "icon": "Lost_Flare_Star",
-              "explanation": null,
-              "pre": [
-                {
-                  "name": "Pure Essence of the Elder",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Magic",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 2
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Flare Star",
-                  "quantity": 3
-                },
-                {
-                  "name": "Lost Burst",
-                  "quantity": 1
-                }
-              ]
-            },
             "tank": {
               "name": "Tank",
               "role": "tank",
@@ -4243,7 +5252,7 @@
               "main": [
                 {
                   "name": "Mimic",
-                  "quantity": 2
+                  "quantity": 1
                 },
                 {
                   "name": "Lost Sacrifice",
@@ -4254,16 +5263,12 @@
                   "quantity": 2
                 },
                 {
-                  "name": "Lost Shell II",
-                  "quantity": 2
-                },
-                {
                   "name": "Lost Reraise",
                   "quantity": 1
                 },
                 {
                   "name": "Light Curtain",
-                  "quantity": 3
+                  "quantity": 2
                 }
               ]
             },
@@ -4353,6 +5358,56 @@
             },
             "healer": {
               "name": "Healer",
+              "role": "healer",
+              "icon": "Healer",
+              "explanation": "Healers should slot some combination of Chainspell, Font of Magic, and Seraph Strike, depending on the amount of MP support they have. These can be used until utility actions need to be overwritten.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Divine",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Arise",
+                  "quantity": 10
+                },
+                {
+                  "name": "Lost Burst",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Bubble",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 2
+                }
+              ]
+            },
+            "healer-utility": {
+              "name": "Healer (Utility)",
               "role": "healer",
               "icon": "Healer",
               "explanation": "Healers should slot some combination of Chainspell, Font of Magic, and Seraph Strike, depending on the amount of MP support they have. These can be used until utility actions need to be overwritten.",
@@ -4560,618 +5615,6 @@
                 {
                   "name": "Light Curtain",
                   "quantity": 3
-                }
-              ]
-            }
-          }
-        },
-        "no-healers": {
-          "name": "Reclear - No Healers",
-          "owner": "Cam Klauser",
-          "holsters": {
-            "melee": {
-              "name": "Melee",
-              "role": "melee",
-              "icon": "Melee",
-              "explanation": "",
-              "pre": [
-                {
-                  "name": "Pure Essence of the Duelist",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 3
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 6
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 3
-                }
-              ]
-            },
-            "melee-mimic-target": {
-              "name": "Mimic Target",
-              "role": "melee",
-              "icon": "Lost_Excellence",
-              "explanation": "",
-              "pre": [
-                {
-                  "name": "Pure Essence of the Duelist",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 2
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 5
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                }
-              ]
-            },
-            "melee-rend-armor": {
-              "name": "Rend Armor",
-              "role": "melee",
-              "icon": "Lost_Rend_Armor",
-              "explanation": "",
-              "pre": [
-                {
-                  "name": "Pure Essence of the Duelist",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 3
-                },
-                {
-                  "name": "Lost Rend Armor",
-                  "quantity": 4
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 3
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 1
-                }
-              ]
-            },
-            "melee-rend-mimic-target": {
-              "name": "Rend + 2x Mimic Target",
-              "role": "melee",
-              "icon": "Lost_Excellence",
-              "explanation": "",
-              "pre": [
-                {
-                  "name": "Pure Essence of the Duelist",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Rend Armor",
-                  "quantity": 4
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 5
-                }
-              ]
-            },
-            "phys-dervish": {
-              "name": "Dervish",
-              "role": "ranged",
-              "icon": "Lost_Dervish",
-              "explanation": "",
-              "pre": [
-                {
-                  "name": "Pure Essence of the Fiendhunter",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 3
-                },
-                {
-                  "name": "Lost Dervish",
-                  "quantity": 5
-                },
-                {
-                  "name": "Lost Rampage",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Dispel",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Spellforge",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Perception",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Incense",
-                  "quantity": 1
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 6
-                }
-              ]
-            },
-            "mch": {
-              "name": "Machinist - Full DPS",
-              "role": "ranged",
-              "icon": "Lost_Slash",
-              "explanation": null,
-              "pre": [
-                {
-                  "name": "Pure Essence of the Fiendhunter",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 3
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 4
-                },
-                {
-                  "name": "Lost Rampage",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Slash",
-                  "quantity": 1
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 8
-                }
-              ]
-            },
-            "caster-c4": {
-              "name": "Cure IV",
-              "role": "caster",
-              "icon": "Lost_Cure_IV",
-              "explanation": "You will be assigned to bring either Lost Dispel or Lost Banish III.",
-              "pre": [
-                {
-                  "name": "Pure Essence of the Elder",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Magic",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Ether Kit",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Cure IV",
-                  "quantity": 4
-                },
-                {
-                  "name": "Lost Burst",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Steelsting",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Dispel",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Ether Kit",
-                  "quantity": 4
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 7
-                }
-              ]
-            },
-            "blm-dps": {
-              "name": "Black Mage - Full DPS",
-              "role": "caster",
-              "icon": "Lost_Chainspell",
-              "explanation": null,
-              "pre": [
-                {
-                  "name": "Pure Essence of the Elder",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Magic",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Ether Kit",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Chainspell",
-                  "quantity": 3
-                },
-                {
-                  "name": "Lost Burst",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Ether Kit",
-                  "quantity": 3
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 1
-                }
-              ]
-            },
-            "lfs": {
-              "name": "Black Mage - Lost Flare Star",
-              "role": "caster",
-              "icon": "Lost_Flare_Star",
-              "explanation": null,
-              "pre": [
-                {
-                  "name": "Pure Essence of the Elder",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Magic",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Ether Kit",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 2
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Flare Star",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Burst",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Ether Kit",
-                  "quantity": 2
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 4
-                }
-              ]
-            },
-            "lfs-alt": {
-              "name": "Black Mage - Lost Flare Star (No Ether Kits)",
-              "role": "caster",
-              "icon": "Lost_Flare_Star",
-              "explanation": null,
-              "pre": [
-                {
-                  "name": "Pure Essence of the Elder",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Magic",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Excellence",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 2
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Flare Star",
-                  "quantity": 3
-                },
-                {
-                  "name": "Lost Burst",
-                  "quantity": 1
-                }
-              ]
-            },
-            "tank": {
-              "name": "Tank",
-              "role": "tank",
-              "icon": "Lost_Aethershield",
-              "explanation": null,
-              "pre": [
-                {
-                  "name": "Pure Essence of the Indomitable",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Blood Rage",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Sacrifice",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Aethershield",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Shell II",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Reraise",
-                  "quantity": 1
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 3
-                }
-              ]
-            },
-            "irregular": {
-              "name": "Irregular",
-              "role": "tank",
-              "icon": "Deep_Essence_of_the_Irregular",
-              "explanation": null,
-              "pre": [
-                {
-                  "name": "Deep Essence of the Irregular",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Blood Rage",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Blood Rage",
-                  "quantity": 1
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 4
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 1
-                }
-              ]
-            },
-            "irregular-chain": {
-              "name": "Irregular - Chaining",
-              "role": "tank",
-              "icon": "Mimic",
-              "explanation": null,
-              "pre": [
-                {
-                  "name": "Deep Essence of the Irregular",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Blood Rage",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Mimic",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Blood Rage",
-                  "quantity": 2
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 1
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 1
                 }
               ]
             }

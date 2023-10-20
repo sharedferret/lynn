@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "version": "12.0",
+      "timestamp": "2023-09-01",
+      "changes": [
+        "Added conceptual logogram farms",
+        "Added Kiwi Navi's learning holsters"
+      ]
+    },
+    {
       "version": "11.0",
       "timestamp": "2023-07-09",
       "changes": [

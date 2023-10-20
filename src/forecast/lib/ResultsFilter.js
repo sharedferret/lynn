@@ -12,6 +12,17 @@ export default class ResultsFilter {
     collection: false,
     image: 'cassie.png',
     uri: 'cassie',
+    guide: {
+      zone: 'Eureka Pagos',
+      mobs: [
+        {
+          mob: 'Copycat Cassie',
+          level: 35,
+          element: 'ice',
+        },
+      ],
+      method: 'The Cassie Earring is a rare drop from completing the Copycat Cassie NM.',
+    },
   });
 
   static KING_ARTHO = new ResultsFilter({
@@ -22,6 +33,17 @@ export default class ResultsFilter {
     collection: false,
     image: 'crab.png',
     uri: 'crab',
+    guide: {
+      zone: 'Eureka Pagos',
+      mobs: [
+        {
+          mob: 'King Artho',
+          level: 29,
+          element: 'water',
+        },
+      ],
+      method: 'The Blitzring is a rare drop from completing the King Artho NM.',
+    },
   });
 
   static SKOLL = new ResultsFilter({
@@ -32,6 +54,17 @@ export default class ResultsFilter {
     collection: false,
     image: 'skoll.png',
     uri: 'skoll',
+    guide: {
+      zone: 'Eureka Pyros',
+      mobs: [
+        {
+          mob: 'Skoll',
+          level: 50,
+          element: 'ice',
+        },
+      ],
+      method: 'Skoll\'s Claw is a rare drop from completing the Skoll NM.',
+    },
   });
 
   static PAZUZU = new ResultsFilter({
@@ -42,6 +75,17 @@ export default class ResultsFilter {
     collection: false,
     image: 'pazuzu.png',
     uri: 'pazuzu',
+    guide: {
+      zone: 'Eureka Anemos',
+      mobs: [
+        {
+          mob: 'Pazuzu',
+          level: 20,
+          element: 'wind',
+        },
+      ],
+      method: 'Three Pazuzu\'s Feathers drop from completing the Pazuzu NM.',
+    },
   });
 
   static PENTHESILEA = new ResultsFilter({
@@ -52,6 +96,17 @@ export default class ResultsFilter {
     collection: false,
     image: 'penny.png',
     uri: 'penny',
+    guide: {
+      zone: 'Eureka Pyros',
+      mobs: [
+        {
+          mob: 'Penthesilea',
+          level: 50,
+          element: 'fire',
+        },
+      ],
+      method: 'Two Penthesilea\'s Flames drop from completing the Penthesilea NM.',
+    },
   });
 
   // Eureka Farms
@@ -63,6 +118,27 @@ export default class ResultsFilter {
     collection: false,
     image: 'lockbox.png',
     uri: 'cold_box',
+    guide: {
+      zone: 'Eureka Pagos',
+      mobs: [
+        {
+          mob: 'Pagos Chimera',
+          level: 40,
+          element: 'lightning',
+        },
+        {
+          mob: 'Val Griffin',
+          level: 40,
+          element: 'wind',
+        },
+        {
+          mob: 'Greater Amphiptere',
+          level: 39,
+          element: 'fire',
+        },
+      ],
+      method: 'Cold-Warped Lockboxes drop from high-level mutated mobs in Pagos. There are three different mobs that are commonly farmed for this - Chimeras, Griffins, and Amphipteres. Pagos has a low mutation rate, so it\'s best to hold mutated mobs and kill them on the 30 chain to get additional boxes.',
+    },
   });
 
   static HEAT_WARPED_LOCKBOX = new ResultsFilter({
@@ -73,6 +149,17 @@ export default class ResultsFilter {
     collection: false,
     image: 'lockbox.png',
     uri: 'heat_box',
+    guide: {
+      zone: 'Eureka Pyros',
+      mobs: [
+        {
+          mob: 'Val Gigantopithecus',
+          level: 55,
+          element: 'fire',
+        },
+      ],
+      method: 'Heat-Warped Lockboxes drop from high-level mutated mobs in Pyros. The most common mob farmed for these boxes is the Val Gigantopithecus. The mutation rate in Pyros is 50-75%, so you\'ll want to hold the last few mutated mobs so you can kill them on the 30 chain.',
+    },
   });
 
   static OFFENSIVE_LOGOGRAM = new ResultsFilter({
@@ -83,6 +170,43 @@ export default class ResultsFilter {
     collection: false,
     image: 'offensive.png',
     uri: 'offensive',
+    guide: {
+      zone: 'Eureka Hydatos',
+      mobs: [
+        {
+          mob: 'Snowstorm Sprite',
+          level: 64,
+          element: 'ice',
+        },
+      ],
+      method: 'Offensive Logogram farms use adapted Snowstorm Sprites. Kill Hydatos Peistes, then kill an adapted Snowstorm Sprite on the 30 chain. You can have a tank hold Snowstorm Sprites after the farm\'s weather has ended, as long as they adapt before the weather ends.',
+    },
+  });
+
+  static CONCEPTUAL_LOGOGRAM = new ResultsFilter({
+    name: 'Conceptual Logogram',
+    type: FarmType.EUREKA_FARM,
+    zone: EorzeaWeather.ZONE_EUREKA_HYDATOS,
+    requiredWeather: [Weather.SHOWERS, Weather.THUNDERSTORMS],
+    collection: false,
+    image: 'conceptual.png',
+    uri: 'conceptual',
+    guide: {
+      zone: 'Eureka Hydatos',
+      mobs: [
+        {
+          mob: 'Snowmelt Sprite',
+          level: 65,
+          element: 'water',
+        },
+        {
+          mob: 'Thunderstorm Sprite',
+          level: 65,
+          element: 'lightning',
+        },
+      ],
+      method: 'You can reflect farm these mobs to get logograms. Take off all your gear, swap to 0 defensive magia, and use Reflect L to kill the sprites. Make sure to use your first Reflect outside of aggro range to avoid dying. Additionally, Thunderstorm Sprites will kill you with their autoattacks, so be sure to kite these as you kill them.',
+    },
   });
 
   // Bozja Fragment Farms
@@ -179,6 +303,7 @@ export default class ResultsFilter {
       ResultsFilter.COLD_WARPED_LOCKBOX,
       ResultsFilter.HEAT_WARPED_LOCKBOX,
       ResultsFilter.OFFENSIVE_LOGOGRAM,
+      ResultsFilter.CONCEPTUAL_LOGOGRAM,
     ],
     uri: 'eurekafarms',
   });
@@ -197,7 +322,6 @@ export default class ResultsFilter {
       ResultsFilter.PENTHESILEA,
       ResultsFilter.COLD_WARPED_LOCKBOX,
       ResultsFilter.HEAT_WARPED_LOCKBOX,
-      ResultsFilter.OFFENSIVE_LOGOGRAM,
       ResultsFilter.PREPARATION_FRAGMENT,
       ResultsFilter.CARE_FRAGMENT,
       ResultsFilter.SUPPORT_FRAGMENT,
@@ -226,6 +350,7 @@ export default class ResultsFilter {
       case 'heatbox':
       case 'heat_box': return ResultsFilter.HEAT_WARPED_LOCKBOX;
       case 'offensive': return ResultsFilter.OFFENSIVE_LOGOGRAM;
+      case 'conceptual': return ResultsFilter.CONCEPTUAL_LOGOGRAM;
       case 'preparation': return ResultsFilter.PREPARATION_FRAGMENT;
       case 'care': return ResultsFilter.CARE_FRAGMENT;
       case 'support': return ResultsFilter.SUPPORT_FRAGMENT;
@@ -252,6 +377,7 @@ export default class ResultsFilter {
     this.contains = data.contains;
     this.image = data.image;
     this.uri = data.uri;
+    this.guide = data.guide;
   }
 
   toString() {
