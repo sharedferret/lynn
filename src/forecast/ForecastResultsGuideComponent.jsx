@@ -24,13 +24,46 @@ function ForecastResultsGuideComponent({ filter }) {
               {
                 filter.guide.mobs.map((i) => (
                   <Stack direction="row" alignItems="center" key={`mob-${uuidv4()}`}>
-                    <Typography>{`Lv${i.level}`}</Typography>
-                    <img
-                      src={`${process.env.PUBLIC_URL}/assets/eureka/eureka_${i.element}.png`}
-                      width={24}
-                      height={24}
-                      alt={i.element}
-                    />
+                    {
+                      i.rank
+                        ? (
+                          <Box pr={1}>
+                            <img
+                              src={`${process.env.PUBLIC_URL}/assets/icons/rank${i.rank}.png`}
+                              width={24}
+                              height={24}
+                              alt="Rank"
+                            />
+                          </Box>
+                        )
+                        : <Typography>{`Lv${i.level}`}</Typography>
+                    }
+
+                    {
+                      i.element
+                        ? (
+                          <img
+                            src={`${process.env.PUBLIC_URL}/assets/eureka/eureka_${i.element}.png`}
+                            width={24}
+                            height={24}
+                            alt={i.element}
+                          />
+                        )
+                        : null
+                    }
+
+                    {
+                      i.syncRequired === true
+                        ? (
+                          <img
+                            src={`${process.env.PUBLIC_URL}/assets/sync.png`}
+                            width={20}
+                            height={20}
+                            alt="ILVL sync required"
+                          />
+                        )
+                        : null
+                    }
                     <Typography>{i.mob}</Typography>
                   </Stack>
                 ))

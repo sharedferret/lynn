@@ -262,6 +262,7 @@ function SidebarComponent({
         ResultsFilter.HEAT_WARPED_LOCKBOX,
         ResultsFilter.OFFENSIVE_LOGOGRAM,
         ResultsFilter.CONCEPTUAL_LOGOGRAM,
+        ResultsFilter.MITIGATIVE_LOGOGRAM,
       ].map((resultsfilter) => (
         <StyledButton
           onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}

@@ -4,6 +4,7 @@ import {
 } from '@mui/material';
 import FarmType from './lib/FarmType';
 import ForecastResultsGuideComponent from './ForecastResultsGuideComponent';
+import ForecastResultsMapComponent from './ForecastResultsMapComponent';
 
 function ForecastResultsHeaderComponent({ filter }) {
   // Generate Response
@@ -41,6 +42,11 @@ function ForecastResultsHeaderComponent({ filter }) {
             ? (
               <ForecastResultsGuideComponent filter={filter} />
             )
+            : <Box />
+        }
+        {
+          filter.map
+            ? <ForecastResultsMapComponent filter={filter} />
             : <Box />
         }
 

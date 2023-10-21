@@ -73,7 +73,12 @@ export default function ForecastResultInfoComponent({ result, isCollection }) {
         </Stack>
         <Box>
           {Array.isArray(result.condition)
-            ? <ForecastResultInfoWeatherComponent conditions={result.condition} />
+            ? (
+              <ForecastResultInfoWeatherComponent
+                conditions={result.condition}
+                startTime={result.time}
+              />
+            )
             : null}
         </Box>
         <Box>

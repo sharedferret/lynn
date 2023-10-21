@@ -23,6 +23,7 @@ export default class ResultsFilter {
       ],
       method: 'The Cassie Earring is a rare drop from completing the Copycat Cassie NM.',
     },
+    map: 'cassie.jpg',
   });
 
   static KING_ARTHO = new ResultsFilter({
@@ -44,6 +45,7 @@ export default class ResultsFilter {
       ],
       method: 'The Blitzring is a rare drop from completing the King Artho NM.',
     },
+    map: 'crab.jpg',
   });
 
   static SKOLL = new ResultsFilter({
@@ -65,6 +67,7 @@ export default class ResultsFilter {
       ],
       method: 'Skoll\'s Claw is a rare drop from completing the Skoll NM.',
     },
+    map: 'skoll.jpg',
   });
 
   static PAZUZU = new ResultsFilter({
@@ -86,6 +89,7 @@ export default class ResultsFilter {
       ],
       method: 'Three Pazuzu\'s Feathers drop from completing the Pazuzu NM.',
     },
+    map: 'pazuzu.jpg',
   });
 
   static PENTHESILEA = new ResultsFilter({
@@ -107,6 +111,7 @@ export default class ResultsFilter {
       ],
       method: 'Two Penthesilea\'s Flames drop from completing the Penthesilea NM.',
     },
+    map: 'penny.jpg',
   });
 
   // Eureka Farms
@@ -139,6 +144,7 @@ export default class ResultsFilter {
       ],
       method: 'Cold-Warped Lockboxes drop from high-level mutated mobs in Pagos. There are three different mobs that are commonly farmed for this - Chimeras, Griffins, and Amphipteres. Pagos has a low mutation rate, so it\'s best to hold mutated mobs and kill them on the 30 chain to get additional boxes.',
     },
+    map: 'coldbox.jpg',
   });
 
   static HEAT_WARPED_LOCKBOX = new ResultsFilter({
@@ -160,6 +166,7 @@ export default class ResultsFilter {
       ],
       method: 'Heat-Warped Lockboxes drop from high-level mutated mobs in Pyros. The most common mob farmed for these boxes is the Val Gigantopithecus. The mutation rate in Pyros is 50-75%, so you\'ll want to hold the last few mutated mobs so you can kill them on the 30 chain.',
     },
+    map: 'heatbox.jpg',
   });
 
   static OFFENSIVE_LOGOGRAM = new ResultsFilter({
@@ -181,6 +188,7 @@ export default class ResultsFilter {
       ],
       method: 'Offensive Logogram farms use adapted Snowstorm Sprites. Kill Hydatos Peistes, then kill an adapted Snowstorm Sprite on the 30 chain. You can have a tank hold Snowstorm Sprites after the farm\'s weather has ended, as long as they adapt before the weather ends.',
     },
+    map: 'offensive.jpg',
   });
 
   static CONCEPTUAL_LOGOGRAM = new ResultsFilter({
@@ -207,9 +215,42 @@ export default class ResultsFilter {
       ],
       method: 'You can reflect farm these mobs to get logograms. Take off all your gear, swap to 0 defensive magia, and use Reflect L to kill the sprites. Make sure to use your first Reflect outside of aggro range to avoid dying. Additionally, Thunderstorm Sprites will kill you with their autoattacks, so be sure to kite these as you kill them.',
     },
+    map: 'conceptual.jpg',
+  });
+
+  static MITIGATIVE_LOGOGRAM = new ResultsFilter({
+    name: 'Mitigative Logogram',
+    type: FarmType.EUREKA_FARM,
+    zone: EorzeaWeather.ZONE_EUREKA_PYROS,
+    requiredWeather: [Weather.THUNDER, Weather.HEAT_WAVES],
+    collection: false,
+    image: 'mitigative.png',
+    uri: 'mitigative',
+    guide: {
+      zone: 'Eureka Pyros',
+      mobs: [
+        {
+          mob: 'Thunderstorm Sprite',
+          level: 46,
+          element: 'lightning',
+          syncRequired: true,
+        },
+        {
+          mob: 'Ember Sprite',
+          level: 43,
+          element: 'fire',
+          syncRequired: true,
+        },
+      ],
+      method: 'You can reflect farm these mobs to get logograms. Take off all your gear, swap to 0 defensive magia, and use Reflect L to kill the sprites. Make sure to use your first Reflect outside of aggro range to avoid dying.\n\nNote that reflecting for Mitigative requires you to level-sync to a nearby NM to receive rewards. For Thunderstorm Sprites, you must spawn the Rondo Aetolus (Aetolus) NM and level sync to it. For Ember Sprites, you must spawn the Creepy Doll (Graffiacane) NM and level sync to it.',
+    },
+    map: 'mitigative.jpg',
   });
 
   // Bozja Fragment Farms
+
+  static REFLECT_GUIDE_TEXT = 'You can reflect farm these mobs to get fragments. Use Essence of the Irregular and take off all your gear. Use Lost Reflect to kill the sprites. Make sure to use your first Reflect outside of aggro range to avoid dying.';
+
   static PREPARATION_FRAGMENT = new ResultsFilter({
     name: 'Preparation',
     type: FarmType.FRAGMENT_FARM,
@@ -218,6 +259,16 @@ export default class ResultsFilter {
     collection: false,
     image: 'bsffrag.png',
     uri: 'preparation',
+    guide: {
+      zone: 'The Bozjan Southern Front, Zone 1',
+      mobs: [
+        {
+          mob: 'Wind Sprite',
+          rank: 3,
+        },
+      ],
+      method: this.REFLECT_GUIDE_TEXT,
+    },
   });
 
   static CARE_FRAGMENT = new ResultsFilter({
@@ -228,6 +279,21 @@ export default class ResultsFilter {
     collection: false,
     image: 'bsffrag.png',
     uri: 'care',
+    guide: {
+      zone: 'The Bozjan Southern Front, Zone 2',
+      mobs: [
+        {
+          mob: 'Earth Sprite',
+          rank: 5,
+        },
+        {
+          mob: 'Wind Sprite',
+          rank: 4,
+        },
+      ],
+      method: this.REFLECT_GUIDE_TEXT,
+    },
+    map: 'care.jpg',
   });
 
   static SUPPORT_FRAGMENT = new ResultsFilter({
@@ -238,6 +304,16 @@ export default class ResultsFilter {
     collection: false,
     image: 'bsffrag.png',
     uri: 'support',
+    guide: {
+      zone: 'The Bozjan Southern Front, Zone 3',
+      mobs: [
+        {
+          mob: 'Wind Sprite',
+          rank: 5,
+        },
+      ],
+      method: this.REFLECT_GUIDE_TEXT,
+    },
   });
 
   static HISTORY_FRAGMENT = new ResultsFilter({
@@ -258,6 +334,21 @@ export default class ResultsFilter {
     collection: false,
     image: 'zadnorfrag.png',
     uri: 'artistry',
+    guide: {
+      zone: 'Zadnor, Zone 2',
+      mobs: [
+        {
+          mob: 'Water Sprite',
+          rank: 5,
+        },
+        {
+          mob: 'Lightning Sprite',
+          rank: 4,
+        },
+      ],
+      method: this.REFLECT_GUIDE_TEXT,
+    },
+    map: 'artistry.jpg',
   });
 
   // Collections
@@ -304,6 +395,7 @@ export default class ResultsFilter {
       ResultsFilter.HEAT_WARPED_LOCKBOX,
       ResultsFilter.OFFENSIVE_LOGOGRAM,
       ResultsFilter.CONCEPTUAL_LOGOGRAM,
+      ResultsFilter.MITIGATIVE_LOGOGRAM,
     ],
     uri: 'eurekafarms',
   });
@@ -351,6 +443,7 @@ export default class ResultsFilter {
       case 'heat_box': return ResultsFilter.HEAT_WARPED_LOCKBOX;
       case 'offensive': return ResultsFilter.OFFENSIVE_LOGOGRAM;
       case 'conceptual': return ResultsFilter.CONCEPTUAL_LOGOGRAM;
+      case 'mitigative': return ResultsFilter.MITIGATIVE_LOGOGRAM;
       case 'preparation': return ResultsFilter.PREPARATION_FRAGMENT;
       case 'care': return ResultsFilter.CARE_FRAGMENT;
       case 'support': return ResultsFilter.SUPPORT_FRAGMENT;
@@ -378,6 +471,7 @@ export default class ResultsFilter {
     this.image = data.image;
     this.uri = data.uri;
     this.guide = data.guide;
+    this.map = data.map;
   }
 
   toString() {

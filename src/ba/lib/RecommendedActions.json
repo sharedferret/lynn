@@ -84,6 +84,10 @@
             {
               "umbral": "Spirit Dart L",
               "astral": "Wisdom of the Elder"
+            },
+            {
+              "umbral": "Spirit Dart L",
+              "astral": "Wisdom of the Elder"
             }
           ]
         }
@@ -181,6 +185,10 @@
             {
               "umbral": "Spirit Dart L",
               "astral": "Wisdom of the Duelist"
+            },
+            {
+              "umbral": "Spirit Dart L",
+              "astral": "Wisdom of the Duelist"
             }
           ]
         }
@@ -241,7 +249,7 @@
               "astral": "Wisdom of the Fiendhunter"
             },
             {
-              "umbral": null,
+              "umbral": "Shell L",
               "astral": "Focus L"
             },
             {
@@ -270,6 +278,10 @@
             {
               "umbral": "Spirit Dart L",
               "astral": "Wisdom of the Fiendhunter"
+            },
+            {
+              "umbral": "Spirit Dart L",
+              "astral": "Wisdom of the Fiendhunter"
             }
           ]
         }
@@ -280,8 +292,8 @@
       "trays": [
         {
           "title": "First Timer",
-          "subtitle": "Guardian, Death",
-          "buttonIcon": "guardian",
+          "subtitle": "Martialist, Death",
+          "buttonIcon": "martialist",
           "plates": [
             {
               "umbral": null,
@@ -289,7 +301,7 @@
             },
             {
               "umbral": "Death L",
-              "astral": "Wisdom of the Guardian"
+              "astral": "Wisdom of the Martialist"
             },
             {
               "umbral": "Spirit of the Remembered",
@@ -318,7 +330,7 @@
         },
         {
           "title": "Advanced",
-          "subtitle": "Indomitable, Double Edge",
+          "subtitle": "Indom + DE Chaining",
           "buttonIcon": "indomitable",
           "plates": [
             {
@@ -332,6 +344,14 @@
             {
               "umbral": "Double Edge L",
               "astral": "Focus L"
+            },
+            {
+              "umbral": "Double Edge L",
+              "astral": "Wisdom of the Martialist"
+            },
+            {
+              "umbral": "Double Edge L",
+              "astral": "Wisdom of the Martialist"
             },
             {
               "umbral": "Double Edge L",
@@ -392,20 +412,20 @@
         },
         {
           "title": "Standard",
-          "subtitle": "Indomitable, Catastrophe",
-          "buttonIcon": "catastrophe",
+          "subtitle": "Indomitable",
+          "buttonIcon": "indomitable",
           "plates": [
             {
               "umbral": null,
               "astral": "Spirit of the Remembered"
             },
             {
-              "umbral": "Catastrophe L",
+              "umbral": "Cure L",
               "astral": "Wisdom of the Indomitable"
             },
             {
               "umbral": "Double Edge L",
-              "astral": "Wisdom of the Guardian"
+              "astral": "Wisdom of the Martialist"
             },
             {
               "umbral": "Cure L III",
@@ -429,6 +449,18 @@
             {
               "umbral": "Double Edge L",
               "astral": "Focus L"
+            },
+            {
+              "umbral": "Double Edge L",
+              "astral": "Wisdom of the Martialist"
+            },
+            {
+              "umbral": "Double Edge L",
+              "astral": "Wisdom of the Martialist"
+            },
+            {
+              "umbral": "Double Edge L",
+              "astral": "Wisdom of the Martialist"
             },
             {
               "umbral": "Double Edge L",
@@ -460,11 +492,15 @@
             },
             {
               "umbral": "Refresh L",
-              "astral": "Spirit of the Remembered"
+              "astral": "Spirit of the Aetherweaver"
             },
             {
-              "umbral": "Spirit of the Remembered",
+              "umbral": "Magic Burst",
               "astral": "Wisdom of the Ordained"
+            },
+            {
+              "umbral": null,
+              "astral": "Spirit of the Remembered"
             }
           ]
         },
@@ -476,6 +512,10 @@
             {
               "umbral": null,
               "astral": "Spirit of the Remembered"
+            },
+            {
+              "umbral": "Refresh L",
+              "astral": "Wisdom of the Aetherweaver"
             },
             {
               "umbral": "Refresh L",
