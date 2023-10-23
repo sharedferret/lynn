@@ -1,11 +1,19 @@
 {
   "changes": [
     {
+      "version": "13.2",
+      "timestamp": "2023-10-21",
+      "changes": [
+        "New home page images"
+      ]
+    },
+    {
       "version": "13.0",
       "timestamp": "2023-10-21",
       "changes": [
         "Added guides to Forecast tool",
         "Added maps to Forecast tool",
+        "Added Mitigative Logogram farms to Forecast tool",
         "Adjusted BA loadouts",
         "UI fixes"
       ]
