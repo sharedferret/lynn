@@ -320,7 +320,7 @@ export default function DRSNewHolsterSelectorComponent({
                   ? (
                     <Stack spacing={2} width="100%">
                       {hosts.map((item) => (
-                        <Box key={`hostwf-${item}`}>
+                        <Box maxWidth={600} key={`hostwf-${item}`}>
                           <Button
                             fullWidth
                             variant="outlined"
@@ -344,7 +344,7 @@ export default function DRSNewHolsterSelectorComponent({
                   ? (
                     <Stack spacing={2} width="100%">
                       {runTypes.map((item) => (
-                        <Box key={`runtypewf-${item}`}>
+                        <Box maxWidth={600} key={`runtypewf-${item}`}>
                           <Button
                             fullWidth
                             variant="outlined"
@@ -365,7 +365,7 @@ export default function DRSNewHolsterSelectorComponent({
                   ? (
                     <Stack spacing={2} width="100%">
                       {roles.map((item) => (
-                        <Box key={`rolewf-${item}`}>
+                        <Box maxWidth={600} key={`rolewf-${item}`}>
                           <Button
                             fullWidth
                             variant="outlined"
@@ -389,7 +389,7 @@ export default function DRSNewHolsterSelectorComponent({
                   ? (
                     <Stack spacing={2} width="100%">
                       {availableHolsters.map((item) => (
-                        <Box key={`holsterwf-${item}`}>
+                        <Box maxWidth={600} key={`holsterwf-${item}`}>
                           <Button
                             fullWidth
                             variant="outlined"
