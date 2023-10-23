@@ -43,7 +43,7 @@ export default function DRSHolsterBagComponent({ holsterData, bagType, handleHol
   const overweightSx = { color: 'red' };
 
   return (
-    <Box sx={{ border: 1, borderRadius: '12px', borderColor: '#ddd' }}>
+    <Box width={525} sx={{ border: 1, borderRadius: '12px', borderColor: '#ddd' }}>
       <Stack>
         <Typography fontSize={30} fontWeight={700}>
           {bagType === 'prepop' ? 'Pre-Pop' : 'Main'}

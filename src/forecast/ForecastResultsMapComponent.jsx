@@ -6,7 +6,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function ForecastResultsMapComponent({ filter }) {
   return (
-    <Box width={800}>
+    <Box width="90%" maxWidth={800}>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

@@ -2,6 +2,8 @@ import {
   Avatar, Box, Button, Stack, Step, StepContent, StepLabel, Stepper, Typography,
 } from '@mui/material';
 import React from 'react';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import DRSNewHolsterDisplayComponent from './DRSNewHolsterDisplayComponent';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import holsterMapping from './lib/HolsterMapping.json';
@@ -222,6 +224,46 @@ export default function DRSNewHolsterSelectorComponent({
     };
   }
 
+  const handleBack = () => {
+    switch (activeStep) {
+      case 1: setSelectedHost(null); break;
+      case 2: setSelectedRunType(null); break;
+      case 3: setSelectedRole(null); break;
+      case 4: setSelectedHolster(null); break;
+      default:
+    }
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const displayBackButton = () => (
+    <Stack direction="row" spacing={2}>
+      <Box>
+        <Button
+          variant="outlined"
+          size="large"
+          startIcon={<RestartAltIcon />}
+          onClick={handleReset}
+        >
+          Start Over
+        </Button>
+      </Box>
+      {holster && firstHolster && holster.name
+        ? null
+        : (
+          <Box>
+            <Button
+              variant="outlined"
+              size="large"
+              startIcon={<ArrowBackIosNewIcon />}
+              onClick={handleBack}
+            >
+              Back
+            </Button>
+          </Box>
+        )}
+    </Stack>
+  );
+
   const displayStepper = (() => (
     <Stepper activeStep={activeStep} orientation="vertical">
       {
@@ -374,10 +416,15 @@ export default function DRSNewHolsterSelectorComponent({
   ));
 
   return (
-    <Box minWidth={600} maxWidth={1600} minHeight={600} mt="30px" ml="auto" mr="auto" pb="10px">
+    <Box width="90%" maxWidth={1600} minHeight={600} mt="30px" ml="auto" mr="auto" pb="10px">
       <Stack spacing={2}>
         {!initialHolster || (initialHolster && initialHolster.showStepper)
           ? displayStepper()
+          : null}
+        {(!initialHolster
+          || (initialHolster && initialHolster.showStepper && !initialHolster.hideStartOverButton))
+          && activeStep > 0
+          ? displayBackButton()
           : null}
         {initialHolster
           ? <DRSNewHolsterDisplayComponent holster={initialHolster} handleReset={handleReset} />

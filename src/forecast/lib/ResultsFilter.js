@@ -142,7 +142,7 @@ export default class ResultsFilter {
           element: 'fire',
         },
       ],
-      method: 'Cold-Warped Lockboxes drop from high-level mutated mobs in Pagos. There are three different mobs that are commonly farmed for this - Chimeras, Griffins, and Amphipteres. Pagos has a low mutation rate, so it\'s best to hold mutated mobs and kill them on the 30 chain to get additional boxes.',
+      method: 'Cold-Warped Lockboxes drop from high-level mutated mobs in Pagos. There are three different mobs that are commonly farmed for this - Chimeras, Griffins, and Amphipteres. Chimeras and Griffins can drop extra boxes if killed on a 30 chain. Since Pagos has a low mutation rate, it\'s best to hold mutated Chimeras and Griffins to save for 30 chain kills. This is usually done by having a second tank hold the mutated mobs until the group\'s chain is high enough. You can increase your chain by killing nearby mobs - for Amphipteres, you can increase the chain by killing Val Ymirs and Storm Mantas alongside the Amphipteres.',
     },
     map: 'coldbox.jpg',
   });
@@ -164,7 +164,7 @@ export default class ResultsFilter {
           element: 'fire',
         },
       ],
-      method: 'Heat-Warped Lockboxes drop from high-level mutated mobs in Pyros. The most common mob farmed for these boxes is the Val Gigantopithecus. The mutation rate in Pyros is 50-75%, so you\'ll want to hold the last few mutated mobs so you can kill them on the 30 chain.',
+      method: 'Heat-Warped Lockboxes drop from high-level mutated mobs in Pyros. The most common mob farmed for these boxes is the Val Gigantopithecus. The mutation rate in Pyros is 50-75%, so you\'ll want to hold the last few mutated mobs so you can kill them on the 30 chain. Val Gigantopitheci drop two boxes if killed on the 30 chain.',
     },
     map: 'heatbox.jpg',
   });
@@ -186,7 +186,7 @@ export default class ResultsFilter {
           element: 'ice',
         },
       ],
-      method: 'Offensive Logogram farms use adapted Snowstorm Sprites. Kill Hydatos Peistes, then kill an adapted Snowstorm Sprite on the 30 chain. You can have a tank hold Snowstorm Sprites after the farm\'s weather has ended, as long as they adapt before the weather ends.',
+      method: 'Offensive Logogram farms use adapted Level 64 Snowstorm Sprites. There are two popular methods for this farm. The first is to kill 17 Gargoyles and 13 Peistes/Delphynes to build your chain to 29, and then killing an adapted Snowstorm Sprite on the 30 chain. The other method is pulling all of the Zebus and 5 Void Wyverns together to get your chain to 29, then killing an adapted Snowstorm Sprite. Snowstorm Sprites will drop logograms as long as they\'re adapted.You can have any player hold adapted Snowstorm Sprites after the farm weather ends, and then kill one at a time on the 30 chain - make sure to get the sprites to adapt before the weather ends.',
     },
     map: 'offensive.jpg',
   });
@@ -242,7 +242,7 @@ export default class ResultsFilter {
           syncRequired: true,
         },
       ],
-      method: 'You can reflect farm these mobs to get logograms. Take off all your gear, swap to 0 defensive magia, and use Reflect L to kill the sprites. Make sure to use your first Reflect outside of aggro range to avoid dying.\n\nNote that reflecting for Mitigative requires you to level-sync to a nearby NM to receive rewards. For Thunderstorm Sprites, you must spawn the Rondo Aetolus (Aetolus) NM and level sync to it. For Ember Sprites, you must spawn the Creepy Doll (Graffiacane) NM and level sync to it.',
+      method: 'You can reflect farm these mobs to get logograms. Take off all your gear, swap to 0 defensive magia, and use Reflect L to kill the sprites. Make sure to use your first Reflect outside of aggro range to avoid dying.\n\nNote that reflecting for Mitigative requires you to level-sync to a nearby NM to receive rewards. For Thunderstorm Sprites, you must spawn the Rondo Aetolus (Aetolus) NM and level sync to it. For Ember Sprites, you must spawn the Creepy Doll (Graffiacane) NM and level sync to it. These sprites give additional logograms if killed on a high chain. You can build your chain by killing mobs near the NM circle.',
     },
     map: 'mitigative.jpg',
   });
@@ -300,7 +300,7 @@ export default class ResultsFilter {
     name: 'Support',
     type: FarmType.FRAGMENT_FARM,
     zone: EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT,
-    requiredWeather: [Weather.WIND],
+    requiredWeather: [Weather.SNOW, Weather.WIND],
     collection: false,
     image: 'bsffrag.png',
     uri: 'support',
@@ -308,8 +308,12 @@ export default class ResultsFilter {
       zone: 'The Bozjan Southern Front, Zone 3',
       mobs: [
         {
-          mob: 'Wind Sprite',
+          mob: 'Snow Sprite',
           rank: 5,
+        },
+        {
+          mob: 'Wind Sprite',
+          rank: 4,
         },
       ],
       method: this.REFLECT_GUIDE_TEXT,
@@ -324,6 +328,20 @@ export default class ResultsFilter {
     collection: false,
     image: 'zadnorfrag.png',
     uri: 'history',
+    guide: {
+      zone: 'The Bozjan Southern Front, Zone 1',
+      mobs: [
+        {
+          mob: 'Wind Sprite',
+          rank: 5,
+        },
+        {
+          mob: 'Snow Sprite',
+          rank: 4,
+        },
+      ],
+      method: this.REFLECT_GUIDE_TEXT,
+    },
   });
 
   static ARTISTRY_FRAGMENT = new ResultsFilter({

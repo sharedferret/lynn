@@ -3,7 +3,8 @@ import {
 } from '@mui/material';
 import React, { useCallback } from 'react';
 
-import { ArrowBackIosNew } from '@mui/icons-material';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { findIndex } from 'underscore';
 import recommendedActionsJson from './lib/RecommendedActions.json';
 import BALogosHolsterComponent from './BALogosHolsterComponent';
@@ -41,6 +42,16 @@ export default function BANewLogosRecommenderWorkflow() {
     setTray(null);
   }, [setRole, setTray, setActiveStep]);
 
+  const handleBack = useCallback(() => {
+    switch (activeStep) {
+      case 1: setRole(null); break;
+      case 2: setTray(null); break;
+      default:
+    }
+
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  });
+
   const recommendedActions = recommendedActionsJson.actions;
   const roles = Object.keys(recommendedActions);
   let trays;
@@ -51,7 +62,7 @@ export default function BANewLogosRecommenderWorkflow() {
   const trayId = role && tray ? findIndex(recommendedActions[role].trays, { title: tray }) : 0;
 
   return (
-    <Box minWidth={600} maxWidth={1600} minHeight={600} mt="30px" ml="auto" mr="auto" pb="10px">
+    <Box maxWidth={1600} minHeight={600} mt="30px" ml="auto" mr="auto" pb="10px">
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
@@ -92,7 +103,7 @@ export default function BANewLogosRecommenderWorkflow() {
                   ? (
                     <Stack spacing={2} width="100%">
                       {trays.map((item) => (
-                        <Box width={390} key={`baloadout-${item.title}`}>
+                        <Box key={`baloadout-${item.title}`}>
                           <Button
                             fullWidth
                             variant="outlined"
@@ -117,6 +128,32 @@ export default function BANewLogosRecommenderWorkflow() {
           </Step>
         ))}
       </Stepper>
+      {activeStep > 0
+        ? (
+          <Stack direction="row" spacing={2} px={4} py={2}>
+            <Box>
+              <Button
+                variant="outlined"
+                size="large"
+                startIcon={<RestartAltIcon />}
+                onClick={handleReset}
+              >
+                Start Over
+              </Button>
+            </Box>
+            <Box>
+              <Button
+                variant="outlined"
+                size="large"
+                startIcon={<ArrowBackIosNewIcon />}
+                onClick={handleBack}
+              >
+                Back
+              </Button>
+            </Box>
+          </Stack>
+        )
+        : null}
       {activeStep === steps.length
         ? (
           <Box className="BALogogramWorkflowContainer">
@@ -128,14 +165,6 @@ export default function BANewLogosRecommenderWorkflow() {
                   your Spirit of the Remembered action before entering the Baldesion Arsenal.
                 </Typography>
               </Box>
-              <Button
-                variant="outlined"
-                size="large"
-                startIcon={<ArrowBackIosNew />}
-                onClick={handleReset}
-              >
-                Start Over
-              </Button>
               <Divider />
               <BALogosHolsterComponent tray={recommendedActions[role].trays[trayId]} />
             </Stack>
