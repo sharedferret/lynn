@@ -17,6 +17,7 @@ const steps = [
   },
   {
     label: 'Select loadout',
+    completedLabelStart: 'Loadout: ',
     description: 'Next, pick a loadout. If you\'re new, select First Timer.',
   },
 ];
@@ -61,19 +62,23 @@ export default function BANewLogosRecommenderWorkflow() {
 
   const trayId = role && tray ? findIndex(recommendedActions[role].trays, { title: tray }) : 0;
 
+  function getStepLabel(step, index) {
+    if (activeStep > 0 && index === 0) {
+      return `${step.completedLabelStart} ${recommendedActions[role].name}`;
+    }
+    if (activeStep > 1 && index === 1) {
+      return `${step.completedLabelStart} ${trays[trayId].title}`;
+    }
+    return step.label;
+  }
+
   return (
     <Box maxWidth={1600} minHeight={600} mt="30px" ml="auto" mr="auto" pb="10px">
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
             <StepLabel>
-              {
-                activeStep > 0 && index === 0
-                  ? `${step.completedLabelStart} ${recommendedActions[role].name}`
-                  : step.label
-
-              }
-
+              {getStepLabel(step, index)}
             </StepLabel>
             <StepContent>
               <Typography textAlign="left" fontSize={20} pb={2}>{step.description}</Typography>
@@ -161,8 +166,10 @@ export default function BANewLogosRecommenderWorkflow() {
               <Typography variant="h4">Here are your recommended logos actions!</Typography>
               <Box maxWidth={600}>
                 <Typography>
-                  You can build these at a Logos Manipulator. Make sure to pop and activate
-                  your Spirit of the Remembered action before entering the Baldesion Arsenal.
+                  You can build these at a Logos Manipulator. Pop and activate your Spirit of
+                  the Remembered action before you zone in to the Baldesion Arsenal, then pop your
+                  Initial plate. Plates 1-6 go in your action tray, and will be used as you
+                  progress through the Arsenal.
                 </Typography>
               </Box>
               <Divider />

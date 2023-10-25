@@ -64,7 +64,7 @@ export default function DRSNewHolsterDisplayComponent({ holster }) {
         <Typography
           align="left"
           p={2}
-          style={{ whiteSpace: 'pre-line' }}
+          style={{ whiteSpace: 'pre-wrap' }}
         >
           {holsterMetadata.explanation}
         </Typography>

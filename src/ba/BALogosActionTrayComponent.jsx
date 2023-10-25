@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import {
-  Box, Divider, Stack, Typography,
+  Box, Divider, Stack, Typography, useMediaQuery, useTheme,
 } from '@mui/material';
 
 import BALogosActionTrayLogosComponent from './BALogosActionTrayLogosComponent';
@@ -21,33 +21,47 @@ export default function BALogosActionTrayComponent({
    *
    */
   const [index] = useState(inputIndex);
+  const theme = useTheme();
 
   /**
    * Render Logic
    */
+
+  function getPlateName() {
+    if (index === 0) {
+      return 'HYDATOS';
+    }
+    if (index === 1) {
+      return 'INITIAL';
+    }
+    return `PLATE ${index - 1}`;
+  }
+
   return (
     <Box sx={{ border: 1, borderRadius: '12px', borderColor: '#ddd' }}>
       <Stack
-        direction="row"
-        spacing={2}
-        height={150}
+        direction={{ lg: 'row' }}
+        spacing={{ xs: 1, md: 2 }}
+        height={{ lg: 150 }}
         p={1}
         alignItems="center"
         justifyContent="center"
       >
-        <Box width={25}>
+        <Box width={{ lg: 25 }}>
           <Typography
             align="center"
             fontWeight={700}
-            width={150}
-            sx={{ transform: 'translateX(-40%) rotate(-90deg)', whiteSpace: 'nowrap' }}
+            width={{ lg: 150 }}
+            sx={{ transform: { lg: 'translateX(-40%) rotate(-90deg)' }, whiteSpace: { lg: 'nowrap' } }}
           >
-            {index === 0
-              ? 'PRE-POP'
-              : `PLATE ${index}`}
+            {getPlateName()}
           </Typography>
         </Box>
-        <Divider orientation="vertical" variant="middle" />
+        <Divider
+          orientation={useMediaQuery(theme.breakpoints.down('lg')) ? 'horizontal' : 'vertical'}
+          variant="middle"
+          flexItem
+        />
         <BALogosActionTrayLogosComponent
           tray={inputTray}
           index={index}

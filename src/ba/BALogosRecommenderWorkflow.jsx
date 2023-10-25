@@ -102,8 +102,9 @@ export default function BALogosRecommender({ workflow, handleWorkflowUpdate }) {
         <Typography variant="h4">Here are your recommended logos actions!</Typography>
         <Box maxWidth={600}>
           <Typography>
-            You can build these at a Logos Manipulator. Make sure to pop and activate
-            your Spirit of the Remembered action before entering the Baldesion Arsenal.
+            You can build these at a Logos Manipulator. Pop and activate your Spirit of
+            the Remembered action when you zone in to the Baldesion Arsenal, then pop your
+            Initial plate. Plates 1-6 go in your action tray to be used during the instance.
           </Typography>
         </Box>
         <Button

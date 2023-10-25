@@ -6126,6 +6126,565 @@
           }
         }
       }
+    },
+    "nacl": {
+      "name": "Nacl Free",
+      "server": "Lego Steppers",
+      "serverLink": "https://discord.gg/YKP76AsMw8",
+      "holsters": {
+        "anyprog": {
+          "name": "Anyprog",
+          "owner": "Nacl Free",
+          "holsters": {
+            "tank": {
+              "name": "Tank",
+              "role": "tank",
+              "icon": "Tank",
+              "explanation": "- If DRK, realistic scenario for necessary LD usage is 3: \n  - Trap sweep during slime/golem\n  - Guard invuln mechanic (turret or aura sphere)\n  - Trap sweep during mino\n  Bring enough elixir to cover these in case a healer can't heal you out of living dead, i.e. no WHM bene.\n- If there are 2 tanks in the party, the non-primary Aethershield tank should bring a 2nd DPS action in holster\n- HAVE THE TANK DISCUSSION: \n  - If MT has a co-tank in party, co-tank will be responsible for Aethershield.\n  - If MT has no co-tank in party, designate a non-unique DPS (Rank 16 or higher) as pseudotank and have them bring the pseudotank kit.\n- If necessary, 1 Tank in entire raid will be responsible for Lost Protect (not Main tank)",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Indomitable",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Aethershield",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                }
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "role": "healer",
+              "icon": "Healer",
+              "explanation": "- Bring Spellforge XOR Steelsting, not both. HAVE THE HEALER DISCUSSION: Coordinate with cohealer or pseudohealer so one of you have steelsting and the other has spellforge.\n  - If Healer has no co-healer, designate a non-unique DPS as a pseudohealer and have them bring the pseudohealer kit.\n- A single Lost Reflect can be replaced with 4 Light Curtains IF THE HEALER KNOWS HOW TO TIME REFLECT DURING REFLECT MECHANICS. If in doubt, just bring 2 Lost Reflects and don't worry about it.\n- I'm only asking for 3 Lost Arise per healer. If we have a mass-res situation after a fight, we will just exit and re-do the fight so people get more practice. If you bring more than 3, you'll be thanked, but realistically speaking \"thanks\" doesn't pay the bills.\n- The \"????\" in the prepop means I don't know what you should have in your lost actions prior to jumping down to slime/golem. If I get better info I will update this graphic.\n- Banner of Solemn Clarity is for healers with no Succor rays. Use this during the Queen fight while standing underneath the lightning orb shell the 2nd time it happens.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Divine",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Reflect",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Arise",
+                  "quantity": 3
+                },
+                {
+                  "name": "Banner of Solemn Clarity",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                }
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "role": "melee",
+              "icon": "Melee",
+              "explanation": "- Banner of Honored Sacrifice has an interaction with melee pure essence that makes it 30 seconds and bleed for 1 HP per tick\n- TWO melee IN ENTIRE RAID shall bring Rend Armor and keep as close to 100% uptime on boss (1 slotted, 2 in holster)",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Duelist",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                }
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "role": "ranged",
+              "icon": "Ranged",
+              "explanation": "- keep Lost Dervish generally on cooldown. Exceptions are when we call to hold burst (boss is untargetable, or we have downtime due to running)\n- If you have an MP-hungry teammate, consider bringing Lost Cure II, as you have a hidden pure essence interaction that gives your heal target a 5000 MP refresh at the expense of a stacking slow debuff on yourself.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                }
+              ]
+            },
+            "caster": {
+              "name": "Caster DPS",
+              "role": "caster",
+              "icon": "Caster",
+              "explanation": "- cast Cure IV to buff party with a strong 1-minute bravery, and keep bravery uptime as close to 100% as possible.  This is made possible through the caster pure essence hidden interaction.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Elder",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 8
+                }
+              ]
+            },
+            "pseudotank-caster": {
+              "name": "Pseudotank (Rank 16+)",
+              "role": "caster",
+              "icon": "Lost_Stoneskin_II",
+              "explanation": "Reason: Your team does not have a 2nd tank, and thus does not have a 2nd tank's party mitigations.\n\nNotes:\n- Pseudotanks are not running party/raid utility outside of Stoneskin II during TA/Queen.\n- Lost Stoneskin II is slotted in pre-TA and kept in through Queen, cast it before and after each raidwide of concern to absorb both the initial hit and subsequent bleed\n- It is possible, albeit rare, that no DPS in a given team can equip Lost Stoneskin II due to none of them meeting the Resistance Rank requirement to get the skill from the fragment. If this happens, that 8-man team will just assume the increased risk of having a complete party wipe during TA/Queen.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Elder",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Stoneskin II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 5
+                }
+              ]
+            },
+            "pseudotank-melee": {
+              "name": "Pseudotank (Rank 16+)",
+              "role": "melee",
+              "icon": "Lost_Stoneskin_II",
+              "explanation": "Reason: Your team does not have a 2nd tank, and thus does not have a 2nd tank's party mitigations.\n\nNotes:\n- Pseudotanks are not running party/raid utility outside of Stoneskin II during TA/Queen.\n- Lost Stoneskin II is slotted in pre-TA and kept in through Queen, cast it before and after each raidwide of concern to absorb both the initial hit and subsequent bleed\n- It is possible, albeit rare, that no DPS in a given team can equip Lost Stoneskin II due to none of them meeting the Resistance Rank requirement to get the skill from the fragment. If this happens, that 8-man team will just assume the increased risk of having a complete party wipe during TA/Queen.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Duelist",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Stoneskin II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                }
+              ]
+            },
+            "pseudotank-ranged": {
+              "name": "Pseudotank (Rank 16+)",
+              "role": "ranged",
+              "icon": "Lost_Stoneskin_II",
+              "explanation": "Reason: Your team does not have a 2nd tank, and thus does not have a 2nd tank's party mitigations.\n\nNotes:\n- Pseudotanks are not running party/raid utility outside of Stoneskin II during TA/Queen.\n- Lost Stoneskin II is slotted in pre-TA and kept in through Queen, cast it before and after each raidwide of concern to absorb both the initial hit and subsequent bleed\n- It is possible, albeit rare, that no DPS in a given team can equip Lost Stoneskin II due to none of them meeting the Resistance Rank requirement to get the skill from the fragment. If this happens, that 8-man team will just assume the increased risk of having a complete party wipe during TA/Queen.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Stoneskin II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                }
+              ]
+            },
+            "pseudohealer-caster": {
+              "name": "Pseudohealer",
+              "role": "caster",
+              "icon": "Healer",
+              "explanation": "Reason: Your team does not have a 2nd healer.\n\nNotes:\n- Pseudohealers are not running party/raid utility outside of the healer kit.\n- A single Lost Reflect can be replaced with 4 Light Curtains IF THE PSEUDOHEALER KNOWS HOW TO TIME REFLECT DURING REFLECT MECHANICS. If in doubt, just bring 2 Lost Reflects and don't worry about it.\n- The Lost Cure III should be used going into Queen soft enrage. Use in conjunction with Lost Cure IV (Lost Cure III is a GCD heal, Lost Cure IV is oGCD)\n- A sole caster in a party running Lost Cure IV for bravery is not \"also a pseudohealer\", their Cure IVs are specifically for buffing the party with 1-minute 10% Bravery.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Elder",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Reflect",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Dispel",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure III",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 5
+                }
+              ]
+            },
+            "pseudohealer-melee": {
+              "name": "Pseudohealer",
+              "role": "melee",
+              "icon": "Healer",
+              "explanation": "Reason: Your team does not have a 2nd healer.\n\nNotes:\n- Pseudohealers are not running party/raid utility outside of the healer kit.\n- A single Lost Reflect can be replaced with 4 Light Curtains IF THE PSEUDOHEALER KNOWS HOW TO TIME REFLECT DURING REFLECT MECHANICS. If in doubt, just bring 2 Lost Reflects and don't worry about it.\n- The Lost Cure III should be used going into Queen soft enrage. Use in conjunction with Lost Cure IV (Lost Cure III is a GCD heal, Lost Cure IV is oGCD)\n- A sole caster in a party running Lost Cure IV for bravery is not \"also a pseudohealer\", their Cure IVs are specifically for buffing the party with 1-minute 10% Bravery.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Duelist",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Reflect",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Dispel",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure III",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                }
+              ]
+            },
+            "pseudohealer-ranged": {
+              "name": "Pseudohealer",
+              "role": "ranged",
+              "icon": "Healer",
+              "explanation": "Reason: Your team does not have a 2nd healer.\n\nNotes:\n- Pseudohealers are not running party/raid utility outside of the healer kit.\n- A single Lost Reflect can be replaced with 4 Light Curtains IF THE PSEUDOHEALER KNOWS HOW TO TIME REFLECT DURING REFLECT MECHANICS. If in doubt, just bring 2 Lost Reflects and don't worry about it.\n- The Lost Cure III should be used going into Queen soft enrage. Use in conjunction with Lost Cure IV (Lost Cure III is a GCD heal, Lost Cure IV is oGCD)\n- A sole caster in a party running Lost Cure IV for bravery is not \"also a pseudohealer\", their Cure IVs are specifically for buffing the party with 1-minute 10% Bravery.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Cure IV",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Reflect",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Dispel",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure III",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 1
+                }
+              ]
+            }
+          }
+        }
+      }
     }
   }
 }

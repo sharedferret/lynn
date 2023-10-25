@@ -124,13 +124,13 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: '/createdrsholster',
+    element: <WrappedMainComponent component={<DRSRunHolsterCreatorContainerComponent />} page="drsholster" />,
+  },
+  {
     path: '/drs',
     element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,
     children: [
-      {
-        path: '/drs/createholsters',
-        element: <WrappedMainComponent component={<DRSRunHolsterCreatorContainerComponent />} page="drsholster" />,
-      },
       {
         path: '/drs/holster',
         element: <WrappedMainComponent component={<DRSNewHolsterMainComponent />} page="drsholster" />,

@@ -404,6 +404,56 @@
           }
         }
       }
+    },
+    "nacl": {
+      "name": "Nacl Free",
+      "server": "Lego Steppers",
+      "serverLink": "https://discord.gg/YKP76AsMw8",
+      "serverIcon": "legosteppers.png",
+      "runTypes": {
+        "anyprog": {
+          "name": "Anyprog",
+          "owner": "Nacl Free",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee",
+                "pseudotank-melee",
+                "pseudohealer-melee"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster",
+                "pseudotank-caster",
+                "pseudohealer-caster"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "ranged",
+                "pseudotank-ranged",
+                "pseudohealer-ranged"
+              ]
+            }
+          }
+        }
+      }
     }
   }
 }

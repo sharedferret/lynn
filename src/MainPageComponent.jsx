@@ -5,7 +5,8 @@ import {
 import { Helmet } from 'react-helmet';
 
 export default function MainPageComponent() {
-  function daysIntoYear(date) {
+  /**
+   function daysIntoYear(date) {
     return (
       Date.UTC(
         date.getFullYear(),
@@ -13,6 +14,7 @@ export default function MainPageComponent() {
         date.getDate(),
       ) - Date.UTC(date.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000;
   }
+  */
 
   function getPageThemeData() {
     const themeOptions = [
@@ -59,11 +61,13 @@ export default function MainPageComponent() {
         color: '#e2ced1',
       },
     ];
-    const dayOfMonth = daysIntoYear(new Date());
-    return themeOptions[(dayOfMonth) % themeOptions.length];
+    // const dayOfMonth = daysIntoYear(new Date());
+    // return themeOptions[(dayOfMonth) % themeOptions.length];
+    const themeToDisplay = Math.floor(Math.random() * 7);
+    return themeOptions[themeToDisplay];
   }
 
-  const renderIntroParagraph = ((textSize) => (
+  const renderIntroParagraph = ((textSize, pageTheme) => (
     <Paper elevation={3}>
       <Stack p={5} spacing={2}>
         <Typography textAlign="left" fontSize={textSize}>
@@ -95,8 +99,12 @@ export default function MainPageComponent() {
         <Typography textAlign="left" fontSize={textSize}>
           Home page artwork by
           {' '}
-          <a href={getPageThemeData().imageCreditLink}>
-            {getPageThemeData().imageCredit}
+          <a
+            href={pageTheme.imageCreditLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {pageTheme.imageCredit}
             !
           </a>
         </Typography>
@@ -109,14 +117,16 @@ export default function MainPageComponent() {
 
       </Box>
    */
+  const pageTheme = getPageThemeData();
   return (
     <Box flexGrow={1} height="100%" sx={{ pt: { xs: 14, md: 5 } }}>
-      <Helmet bodyAttributes={{ style: `background-color : ${getPageThemeData().color}` }}>
-        <meta name="description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
+      <Helmet bodyAttributes={{ style: `background-color : ${pageTheme.color}` }}>
+        <meta name="description" content="Tools for FFXIV Baldesion Arsenal, Delubrum Reginae Savage, and Eureka by Lynn Kaneko @ Exodus" />
+        <meta name="keywords" content="FFXIV, Final Fantasy 14, Final Fantasy XIV, Eureka, Eureka Anemos, Eureka Pagos, Eureka Pyros, Eureka Hydatos, Bozjan Southern Front, Zadnor, Delubrum Reginae, Delubrum Reginae Savage, DRS Holsters, BA Loadout, NM Tracker, Fragment Farm" />
         <meta property="og:title" content="lynn.pet!" />
         <meta property="og:url" content="https://lynn.pet/" />
         <meta property="og:image" content="https://lynn.pet/logo.png" />
-        <meta property="og:description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
+        <meta property="og:description" content="Tools for FFXIV Baldesion Arsenal, Delubrum Reginae Savage, and Eureka by Lynn Kaneko @ Exodus" />
         <meta property="og:site_name" content="lynn.pet!" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@reflexyui" />
@@ -128,12 +138,12 @@ export default function MainPageComponent() {
       <Box pl={5} sx={{ display: { xs: 'none', md: 'block' } }}>
         <Stack direction="row">
           <Box minWidth={400} width={600} maxWidth={600} pt={10}>
-            {renderIntroParagraph(18)}
+            {renderIntroParagraph(18, pageTheme)}
           </Box>
 
           <Box maxWidth="70%" p={2}>
             <img
-              src={getPageThemeData().image}
+              src={pageTheme.image}
               alt="lynn.pet!"
             />
           </Box>
@@ -142,10 +152,10 @@ export default function MainPageComponent() {
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }}>
         <Stack width="100%" spacing={2} pt={5}>
-          {renderIntroParagraph(20)}
+          {renderIntroParagraph(20, pageTheme)}
           <Box width="100%">
             <img
-              src={getPageThemeData().image}
+              src={pageTheme.image}
               alt="lynn.pet!"
             />
           </Box>

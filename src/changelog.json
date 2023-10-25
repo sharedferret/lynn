@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "version": "15.0",
+      "timestamp": "2023-10-25",
+      "changes": [
+        "Improved mobile support for BA loadout guide",
+        "Rename trays in BA loadout guide",
+        "Add Nacl Free DRS anyprog holsters"
+      ]
+    },
+    {
       "version": "14.0",
       "timestamp": "2023-10-23",
       "changes": [
