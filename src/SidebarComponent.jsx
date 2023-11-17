@@ -97,7 +97,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Logos Action Helper</Typography>
+        <Typography>Logos Action Info</Typography>
       </StyledButton>
 
       <StyledButton
@@ -106,6 +106,14 @@ function SidebarComponent({
       >
         <Box width={32} />
         <Typography>NM Spawn Times</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.EUREKA_FARMS)}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Logogram/Box Farm Times</Typography>
       </StyledButton>
 
       <Stack direction="row" height="3rem" alignItems="center">
@@ -134,7 +142,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Lost Action Helper</Typography>
+        <Typography>Lost Action Info</Typography>
       </StyledButton>
 
       <StyledButton

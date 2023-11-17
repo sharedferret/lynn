@@ -230,6 +230,7 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
                 <Tooltip
                   arrow
                   placement="top"
+                  disableInteractive
                   enterDelay={500}
                   title={(
                     <EurekaLogosActionInformationTooltipComponent

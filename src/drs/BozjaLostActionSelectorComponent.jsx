@@ -101,6 +101,7 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
         arrow
         placement="top"
         enterDelay={600}
+        disableInteractive
         title={(
           <BozjaLostActionInformationTooltipComponent
             lostAction={actionName}
