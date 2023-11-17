@@ -1,25 +1,44 @@
 import {
-  Box, Divider, FormControl, MenuItem, Select, Stack, Typography,
+  Box, Divider, FormControl, MenuItem, Select, Stack, Tooltip, Typography, useMediaQuery, useTheme,
 } from '@mui/material';
 import React, { useCallback } from 'react';
 import { groupBy } from 'underscore';
 import { v4 as uuidv4 } from 'uuid';
 import EurekaLogosActionHelper from './lib/EurekaLogosActionHelper';
+import EurekaLogosActionInformationTooltipComponent from './EurekaLogosActionInformationTooltipComponent';
 
 export default function EurekaLogosActionSelectorComponent({ logosAction, handleActionUpdate }) {
+  const theme = useTheme();
+
   function renderSelectorMenuSection(items) {
     const menuItems = [];
     for (let i = 0; i < items.length; i += 1) {
       const action = items[i];
       menuItems.push(
         <MenuItem value={action.full} key={`selector-${uuidv4()}`}>
-          <Stack direction="row" spacing={2} alignItems="center">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
-              alt={action.full}
-            />
-            <Typography>{action.full}</Typography>
-          </Stack>
+          <Tooltip
+            arrow
+            placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
+            enterDelay={500}
+            title={
+              useMediaQuery(theme.breakpoints.up('md'))
+                ? (
+                  <EurekaLogosActionInformationTooltipComponent
+                    logosAction={action.full}
+                    actionData={action}
+                  />
+                )
+                : ''
+            }
+          >
+            <Stack direction="row" spacing={2} alignItems="center">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
+                alt={action.full}
+              />
+              <Typography>{action.full}</Typography>
+            </Stack>
+          </Tooltip>
         </MenuItem>,
       );
     }

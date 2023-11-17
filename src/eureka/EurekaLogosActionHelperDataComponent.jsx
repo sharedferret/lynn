@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import {
-  Box, Divider, Stack, Typography,
+  Divider, Stack, Typography,
 } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 import universalisPriceHelperInstance from '../acquisition/UniversalisPriceHelper';
 import EurekaLogosActionHelper from './lib/EurekaLogosActionHelper';
 import EurekaLogogramDataComponent from './EurekaLogogramDataComponent';
 import EurekaLogosActionRecipeSelectorComponent from './EurekaLogosActionRecipeSelectorComponent';
+import EurekaLogosActionInformationComponent from './EurekaLogosActionInformationComponent';
 
 export default function EurekaLogosActionHelperDataComponent(
   { logosAction, selectedRecipe, handleRecipeUpdate },
@@ -48,19 +49,11 @@ export default function EurekaLogosActionHelperDataComponent(
 
   return (
     <Stack spacing={2} p={1} alignItems="flex-start" width={1000}>
+      <EurekaLogosActionInformationComponent
+        actionData={actionData}
+        logosAction={logosAction}
+      />
       <Divider variant="middle" />
-      <Stack direction="row" alignItems="center">
-        <Stack direction="row" alignItems="center">
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/logosactions/${actionData.image}.png`}
-            width={48}
-            height={48}
-            alt={logosAction}
-          />
-          <Box width={12} />
-          <Typography fontWeight={700} variant="h4">{logosAction}</Typography>
-        </Stack>
-      </Stack>
       <Typography fontWeight={700} variant="h5">Recipes</Typography>
       <EurekaLogosActionRecipeSelectorComponent
         recipes={actionData.recipes}

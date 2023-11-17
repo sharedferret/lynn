@@ -8,7 +8,7 @@ import DRSLostActionHelper from './lib/DRSLostActionHelper';
 import BozjaLostActionSelectorComponent from './BozjaLostActionSelectorComponent';
 
 export default function DRSBagLostActionComponent({
-  actionName, actionQuantity, index, handleLostActionUpdate,
+  actionName, actionQuantity, index, handleLostActionUpdate, displayQuantity, displayDeleteIcon,
 }) {
   const handleQuantityUpdate = useCallback((event) => {
     const newLostAction = {
@@ -58,6 +58,7 @@ export default function DRSBagLostActionComponent({
           <Box
             style={{ cursor: 'pointer' }}
             onClick={handleDeleteAction}
+            display={displayDeleteIcon === false ? 'none' : null}
           >
             <ClearIcon
               fontSize="small"
@@ -65,7 +66,7 @@ export default function DRSBagLostActionComponent({
             />
           </Box>
         </Box>
-        <Box width={60}>
+        <Box width={60} display={displayQuantity === false ? 'none' : null}>
           <TextField
             type="number"
             InputProps={{

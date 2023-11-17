@@ -15,7 +15,12 @@
         "ranged",
         "caster"
       ],
-      "code": "G"
+      "code": "G",
+      "abilityType": "Ability",
+      "duration": "30s",
+      "recastTime": 2.5,
+      "charges": 32,
+      "actionText": "Grants a stack of Boost, up to a maximum of 16.\nBoost Bonus: Increases potency of next weaponskill by 15% per stack.\nEffect ends upon using another lost action.\nShares a recast timer with all other weaponskills and spells."
     },
     "Lost Font of Magic": {
       "full": "Lost Font of Magic",
@@ -25,7 +30,16 @@
       "fragment": "sagacity",
       "weight": 25,
       "drsAction": true,
-      "code": "H"
+      "code": "H",
+      "roles": [
+        "healer",
+        "caster"
+      ],
+      "abilityType": "Ability",
+      "duration": "30s",
+      "recastTime": 120,
+      "charges": 10,
+      "actionText": "Increases damage dealt by 70%, draining MP while in use.\nSpirit of the Veteran Effect: Grants Spell Shield to self.\nSpell Shield Effect: Reduces magic damage taken by 50%.\nDuration: 15s\nCan only be executed while in combat."
     },
     "Lost Font of Power": {
       "full": "Lost Font of Power",
@@ -35,7 +49,17 @@
       "fragment": "sagacity",
       "weight": 25,
       "drsAction": true,
-      "code": "I"
+      "code": "I",
+      "roles": [
+        "melee",
+        "ranged",
+        "tank"
+      ],
+      "abilityType": "Ability",
+      "duration": "30s",
+      "recastTime": 120,
+      "charges": 10,
+      "actionText": "Increases damage dealt by 30% and critical hit rate by 40%.\nSpirit of the Irregular Effect: Damage bonus is increased to 40%.\nSpirit of the Platebearer Effect: Grants Solid Shield to self.\nSolid Shield Effect: Reduces phyiscal damage taken by 50%.\nDuration: 15s\nCan only be executed while in combat."
     },
     "Lost Slash": {
       "full": "Lost Slash",
@@ -45,7 +69,16 @@
       "fragment": "violence",
       "weight": 10,
       "drsAction": true,
-      "code": "J"
+      "code": "J",
+      "roles": [
+        "tank",
+        "ranged",
+        "melee"
+      ],
+      "abilityType": "Weaponskill",
+      "recastTime": 90,
+      "charges": 10,
+      "actionText": "Delivers an attack with a potency of 800 to all enemies in a cone before you. When critical damage is dealt, potency is tripled.\nThis action does not share a recast timer with any other actions. Furthermore, the recast timer cannot be affected by other actions."
     },
     "Lost Death": {
       "full": "Lost Death",
@@ -55,7 +88,19 @@
       "fragment": "violence",
       "weight": 6,
       "drsAction": false,
-      "code": "K"
+      "code": "K",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 5,
+      "recastTime": 60,
+      "charges": 10,
+      "actionText": "KOs target. The less the target's HP, the greater the chance of success.\nSpirit of the Ordained Effect: Chance of success is increased.\nThis action does not share a recast timer with any other actions. Furthermore, the recast timer cannot be affected by other actions."
     },
     "Banner of Noble Ends": {
       "full": "Banner of Noble Ends",
@@ -65,7 +110,19 @@
       "fragment": "resolve",
       "weight": 10,
       "drsAction": false,
-      "code": "{"
+      "code": "{",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 90,
+      "charges": 10,
+      "duration": "15s",
+      "actionText": "Storm the field under the Banner of Noble Ends, increasing damage dealt by 50% while reducing own HP recovery via most healing actions by 100%.\nCan only be executed while in combat.\nEffect cannot be stacked with other Banner actions."
     },
     "Banner of Honored Sacrifice": {
       "full": "Banner of Honored Sacrifice",
@@ -75,7 +132,19 @@
       "fragment": "resolve",
       "weight": 10,
       "drsAction": true,
-      "code": "L"
+      "code": "L",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "duration": "15s",
+      "recastTime": 90,
+      "charges": 10,
+      "actionText": "Storm the field under the Banner of Honored Sacrifice, increasing damage dealt by 55% while draining your HP.\nCan only be executed while in combat.\nEffect cannot be stacked with other Banner actions."
     },
     "Banner of Honed Acuity": {
       "full": "Banner of Honed Acuity",
@@ -85,7 +154,19 @@
       "fragment": "resolve",
       "weight": 6,
       "drsAction": true,
-      "code": "M"
+      "code": "M",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "duration": "120s",
+      "recastTime": 180,
+      "charges": 10,
+      "actionText": "Storm the field under the Banner of Honed Acuity, gaining additional stacks each time an attack is evaded, up to a maximum of 3.\nBanner of Honed Acuity Effect: Increases damage taken by 10% per stack.\nAt maximum stacks, take up the Banner of Transcendent Finesse.\nBanner of Transcendent Finesse Effect: Increases critical hit rate by 30% and reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay by 20%.\nDuration: 180s.\nCan only be executed while in combat.\nEffect cannot be stacked with other Banner actions."
     },
     "Lost Fair Trade": {
       "full": "Lost Fair Trade",
@@ -95,7 +176,18 @@
       "fragment": "caprice",
       "weight": 2,
       "drsAction": false,
-      "code": "N"
+      "code": "N",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Weaponskill",
+      "recastTime": 4,
+      "charges": 99,
+      "actionText": "Through sheer force of will, restore a random technique of the lost to physical form and throw it at a single target, dealing damage with potency of 50.\nPotency increases up to 1,000 based on the weight of the lost action.\nThe lost action thrown will be lost upon execution.\nThis action does not share a recast timer with any other actions. Furthermore, the recast timer cannot be affected by other actions."
     },
     "Lost Flare Star": {
       "full": "Lost Flare Star",
@@ -105,7 +197,15 @@
       "fragment": "clarity",
       "weight": 20,
       "drsAction": true,
-      "code": "O"
+      "code": "O",
+      "roles": [
+        "caster"
+      ],
+      "abilityType": "Spell",
+      "recastTime": 5,
+      "duration": "60s",
+      "mpCost": 9000,
+      "actionText": "Consumes MP to deal unaspected damage with a potency of 300 to all nearby enemies.\nAdditional Effect: Unaspected damage over time.\nPotency: 350\nThe damage over time effect of Lost Flare Star can only be applied once per target at any given time. This effect cannot be stacked by multiple players."
     },
     "Lost Chainspell": {
       "full": "Lost Chainspell",
@@ -115,7 +215,16 @@
       "fragment": "artistry",
       "weight": 20,
       "drsAction": true,
-      "code": "P"
+      "code": "P",
+      "roles": [
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 90,
+      "duration": "30s",
+      "charges": 20,
+      "actionText": "Temporarily eliminates cast time for all spells.\nAdditional Effect: Magic Burst\nMagic Burst Effect: Increases spell damage by 45% while increasing MP cost.\nDuration: 30s\nSpirit of the Ordained Effect: Raises Magic Burst spell damage increase to 100% and nullifies additional MP cost.\nSpirit of the Watcher Effect: Lost Chainspell duration is increased to 90s.\nCan only be executed while in combat."
     },
     "Lost Assassination": {
       "full": "Lost Assassination",
@@ -125,7 +234,16 @@
       "fragment": "artistry",
       "weight": 8,
       "drsAction": false,
-      "code": "Q"
+      "code": "Q",
+      "roles": [
+        "tank",
+        "ranged",
+        "melee"
+      ],
+      "abilityType": "Weaponskill",
+      "recastTime": 15,
+      "charges": 99,
+      "actionText": "Delivers a close-quarter attack with a potency of 350. Chance of instant KO when attacking from the rear, which increases the lower the target's HP.\nSpirit of the Beast Effect: Grants the effect of Lost Font of Power to self.\nLost Font of Power Effect: Increases damage dealt by 30% and critical hit rate by 40%.\nDuration: 18s\nThis action does not share a recast timer with any other actions. Furthermore, the recast timer cannot be affected by other actions."
     },
     "Lost Manawall": {
       "full": "Lost Manawall",
@@ -135,7 +253,19 @@
       "fragment": "caution",
       "weight": 16,
       "drsAction": true,
-      "code": "R"
+      "code": "R",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 360,
+      "duration": "6s",
+      "charges": 2,
+      "actionText": "Temporarily applies Heavy to self, while reducing damage taken by 90% and nullifying most knockback and draw-in effects."
     },
     "Banner of Tireless Conviction": {
       "full": "Banner of Tireless Conviction",
@@ -145,7 +275,15 @@
       "fragment": "resolve",
       "weight": 6,
       "drsAction": true,
-      "code": "S"
+      "code": "S",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 180,
+      "charges": 10,
+      "duration": "30s",
+      "actionText": "Storm the field under the Banner of Tireless Conviction, gaining additional stacks each time damage is taken, up to a maximum of 5.\nBanner of Tireless Conviction Effect: Increases damage taken by 15% per stack.\nAt maximum stacks, take up the Banner of Unyielding Defense.\nBanner of Unyielding Defense Effect: Reduces damage taken by 30%.\nDuration: 180s\nEffect cannot be stacked with other Banner actions."
     },
     "Banner of Firm Resolve": {
       "full": "Banner of Firm Resolve",
@@ -155,7 +293,18 @@
       "fragment": "resolve",
       "weight": 6,
       "drsAction": true,
-      "code": "T"
+      "code": "T",
+      "roles": [
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 180,
+      "charges": 10,
+      "duration": "30s",
+      "actionText": "Storm the field under the Banner of Firm Resolve, gaining additional stacks each time damage is taken, up to a maximum of 5.\nBanner of Firm Resolve Effect: Reduces damage dealt by 15% per stack.\nAt maximum stacks, take up the Banner of Unyielding Defense.\nBanner of Unyielding Defense Effect: Reduces damage taken by 30%.\nDuration: 180s\nEffect cannot be stacked with other Banner actions."
     },
     "Lost Incense": {
       "full": "Lost Incense",
@@ -165,7 +314,17 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": true,
-      "code": "U"
+      "code": "U",
+      "roles": [
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 20,
+      "duration": "20s",
+      "actionText": "Gesture threateningly, placing yourself at the top of a target's enmity list\nAdditional Effect: Enmity generation is increased and damage taken is reduced by 20%."
     },
     "Lost Excellence": {
       "full": "Lost Excellence",
@@ -175,7 +334,17 @@
       "fragment": "heroism",
       "weight": 25,
       "drsAction": true,
-      "code": "V"
+      "code": "V",
+      "roles": [
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Ability",
+      "duration": "10s",
+      "recastTime": 300,
+      "charges": 5,
+      "actionText": "Instantly cures Weakness and temporarily nullifies most attacks, while increasing damage dealt by 65%. Memorable will be applied when this effect ends.\nMemorable Effect: Increases damage dealt by 65% while decreasing damage taken by 10%.\nDuration: 50s\nCan only be executed while in combat."
     },
     "Lost Blood Rage": {
       "full": "Lost Blood Rage",
@@ -185,7 +354,15 @@
       "fragment": "cunning",
       "weight": 25,
       "drsAction": true,
-      "code": "W"
+      "code": "W",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 180,
+      "charges": 10,
+      "duration": "18s",
+      "actionText": "Increases damage dealt by 15% and reduces damage taken by 5% per stack. Stacks increase with each use of a dash attack while effect is active, to a maximum of 4.\nMaximum stacks grant the effect of Blood Rush.\nBlood Rush Effect: Increases damage dealt by 60%, shortens recast times of abilities by 75%, and gradually restores HP and MP. Recast time reduction does not apply to charged actions.\nDuration: 30s\nCan only be executed while in combat."
     },
     "Banner of Solemn Clarity": {
       "full": "Banner of Solemn Clarity",
@@ -195,7 +372,19 @@
       "fragment": "resolve",
       "weight": 6,
       "drsAction": true,
-      "code": "X"
+      "code": "X",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 180,
+      "charges": 10,
+      "duration": "30s",
+      "actionText": "Storm the field under the Banner of Solemn Clarity, periodically gaining additional stacks, up to a maximum of 4.\nEffect ends upon using another action or moving (including facing a different direction).\nCancels auto-attack upon execution.\nAt maximum stacks, take up the Banner of Limitless Grace.\nBanner of Limitless Grace Effect: Increases healing potency by 50% while reducing MP cost.\nDuration: 120s\nCan only be executed while in combat.\nEffect cannot be stacked with other Banner actions."
     },
     "Lost Cure": {
       "full": "Lost Cure",
@@ -205,7 +394,17 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": false,
-      "code": "|"
+      "code": "|",
+      "roles": [
+        "tank",
+        "melee",
+        "caster",
+        "ranged"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "actionText": "Restores target's HP.\nCure Potency: 15,000"
     },
     "Lost Cure II": {
       "full": "Lost Cure II",
@@ -215,7 +414,17 @@
       "fragment": "compassion",
       "weight": 5,
       "drsAction": true,
-      "code": "Y"
+      "code": "Y",
+      "roles": [
+        "tank",
+        "melee",
+        "caster",
+        "ranged"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 5,
+      "charges": 50,
+      "actionText": "Restores target's HP.\nCure Potency: 21,700\nSpirit of the Savior Effect: Regen\nCure Potency: 6,000\nDuration: 21s"
     },
     "Lost Cure III": {
       "full": "Lost Cure III",
@@ -225,7 +434,18 @@
       "fragment": "caution",
       "weight": 3,
       "drsAction": false,
-      "code": "}"
+      "code": "}",
+      "roles": [
+        "tank",
+        "melee",
+        "caster",
+        "ranged"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "charges": 99,
+      "actionText": "Restores own or target party member's HP and all party members nearby target.\nCure Potency: 15,000"
     },
     "Lost Cure IV": {
       "full": "Lost Cure IV",
@@ -235,7 +455,17 @@
       "fragment": "compassion",
       "weight": 5,
       "drsAction": true,
-      "code": "Z"
+      "code": "Z",
+      "roles": [
+        "tank",
+        "melee",
+        "caster",
+        "ranged"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 5,
+      "charges": 25,
+      "actionText": "Restores own or target party member's HP and all party members nearby target.\nCure Potency: 21,700\nSpirit of the Savior Effect: Regen\nCure Potency: 6,000\nDuration: 21s"
     },
     "Lost Arise": {
       "full": "Lost Arise",
@@ -245,7 +475,15 @@
       "fragment": "compassion",
       "weight": 6,
       "drsAction": true,
-      "code": "a"
+      "code": "a",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 3,
+      "recastTime": 2.5,
+      "charges": 5,
+      "actionText": "Restores all of a KO'd target's HP.\nIf the target was weakened at the time of Raise, the weakness effect will be removed."
     },
     "Lost Sacrifice": {
       "full": "Lost Sacrifice",
@@ -255,7 +493,19 @@
       "fragment": "loss",
       "weight": 19,
       "drsAction": true,
-      "code": "b"
+      "code": "b",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 3,
+      "recastTime": 2.5,
+      "charges": 1,
+      "actionText": "Restores all of a KO'd target's HP.\nCannot be executed if currently afflicted with Sacrifice.\nAdditional Effect: Inflicts Sacrifice on self.\nSacrifice Effect: When effect expires, you will be KO'd.\nDuration: 10s"
     },
     "Lost Reraise": {
       "full": "Lost Reraise",
@@ -265,7 +515,20 @@
       "fragment": "hope",
       "weight": 12,
       "drsAction": true,
-      "code": "c"
+      "code": "c",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "charges": 2,
+      "duration": "180m",
+      "actionText": "Grants the effect of Reraise to self or target player.\nReraise Effect: Grants an 80% chance of automatic revival upon KO."
     },
     "Lost Full Cure": {
       "full": "Lost Full Cure",
@@ -275,7 +538,15 @@
       "fragment": "revelation",
       "weight": 15,
       "drsAction": true,
-      "code": "d"
+      "code": "d",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 180,
+      "charges": 10,
+      "duration": "10m",
+      "actionText": "Fully restores HP and MP while granting Auto-potion and Auto-ether to self and nearby party members.\nAuto-potion Effect: Restores HP automatically when HP falls below 50%. When triggered, there is a 50% chance the effect will end.\nAuto-ether Effect: Restores MP automatically when MP falls below 20%. When triggered, there is a 50% chance the effect will end.\nSpirit of the Breathtaker Effect: Chance for Auto-potion and Auto-ether effect to end is reduced to 10%."
     },
     "Lost Spellforge": {
       "full": "Lost Spellforge",
@@ -285,7 +556,19 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "e"
+      "code": "e",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "duration": "5m",
+      "actionText": "Grants the effect of Lost Spellforge to self or target ally.\nLost Spellforge Effect: All attacks deal magic damage. However, all bonuses to damage dealt are determined by the attack's base damage type.\nEffect cannot be stacked with Lost Steelsting."
     },
     "Lost Steelsting": {
       "full": "Lost Steelsting",
@@ -295,7 +578,19 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "f"
+      "code": "f",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "duration": "5m",
+      "actionText": "Grants the effect of Lost Steelsting to self or target ally.\nLost Steelsting Effect: All attacks deal physical damage. However, all bonuses to damage dealt are determined by the attack's base damage type.\nEffect cannot be stacked with Lost Spellforge."
     },
     "Lost Protect": {
       "full": "Lost Protect",
@@ -305,7 +600,19 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": false,
-      "code": "~"
+      "code": "~",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "duration": "30m",
+      "actionText": "Applies a barrier to self or target player reducing physical damage taken by 10%."
     },
     "Lost Shell": {
       "full": "Lost Shell",
@@ -315,7 +622,19 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": false,
-      "code": "["
+      "code": "[",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "duration": "30m",
+      "actionText": "Applies a barrier to self or target player reducing magic damage taken by 10%."
     },
     "Lost Reflect": {
       "full": "Lost Reflect",
@@ -325,7 +644,19 @@
       "fragment": "support",
       "weight": 8,
       "drsAction": true,
-      "code": "g"
+      "code": "g",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "recastTime": 2.5,
+      "charges": 99,
+      "duration": "10s",
+      "actionText": "Creates a barrier around self or party member that reflects most magic attacks.\nSpirit of the Guardian Effect: Duration is increased to 30s."
     },
     "Lost Stoneskin": {
       "full": "Lost Stoneskin",
@@ -335,7 +666,20 @@
       "fragment": "support",
       "weight": 4,
       "drsAction": false,
-      "code": "\\"
+      "code": "\\",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2,
+      "recastTime": 2.5,
+      "charges": 99,
+      "duration": "60s",
+      "actionText": "Applies a barrier to self or target player that absorbs damage totaling 15% of target's maximum HP."
     },
     "Lost Bravery": {
       "full": "Lost Bravery",
@@ -345,7 +689,20 @@
       "fragment": "support",
       "weight": 8,
       "drsAction": true,
-      "code": "h"
+      "code": "h",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "charges": 99,
+      "duration": "10m",
+      "actionText": "Increases damage dealt by an ally or self by 5%."
     },
     "Lost Aethershield": {
       "full": "Lost Aethershield",
@@ -355,7 +712,15 @@
       "fragment": "fortitude",
       "weight": 8,
       "drsAction": true,
-      "code": "i"
+      "code": "i",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 60,
+      "duration": "15s",
+      "charges": 15,
+      "actionText": "Reduces damage taken by self and nearby party members by 30%."
     },
     "Lost Dervish": {
       "full": "Lost Dervish",
@@ -365,7 +730,15 @@
       "fragment": "finesse",
       "weight": 8,
       "drsAction": true,
-      "code": "j"
+      "code": "j",
+      "roles": [
+        "ranged"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 90,
+      "duration": "60s",
+      "charges": 15,
+      "actionText": "Increases critical hit rate of self and nearby party members by 10%, increases damage dealt by 7%, and reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay by 1%."
     },
     "Lost Stoneskin II": {
       "full": "Lost Stoneskin II",
@@ -375,7 +748,20 @@
       "fragment": "rage",
       "weight": 5,
       "drsAction": true,
-      "code": "k"
+      "code": "k",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 3,
+      "recastTime": 2.5,
+      "duration": "30s",
+      "charges": 99,
+      "actionText": "Creates a barrier around self and all party members near you that absorbs damage totaling 10% of maximum HP."
     },
     "Lost Protect II": {
       "full": "Lost Protect II",
@@ -385,7 +771,19 @@
       "fragment": "desperation",
       "weight": 3,
       "drsAction": true,
-      "code": "l"
+      "code": "l",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "duration": "30m",
+      "actionText": "Applies a barrier to self or target player reducing physical damage taken by 15%."
     },
     "Lost Shell II": {
       "full": "Lost Shell II",
@@ -395,7 +793,19 @@
       "fragment": "desperation",
       "weight": 3,
       "drsAction": true,
-      "code": "m"
+      "code": "m",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "duration": "30m",
+      "actionText": "Applies a barrier to self or target player reducing magic damage taken by 15%."
     },
     "Lost Bubble": {
       "full": "Lost Bubble",
@@ -405,7 +815,20 @@
       "fragment": "tenacity",
       "weight": 5,
       "drsAction": true,
-      "code": "n"
+      "code": "n",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "duration": "10m",
+      "charges": 99,
+      "actionText": "Increases maximum HP of self or target player by 30%."
     },
     "Lost Stealth": {
       "full": "Lost Stealth",
@@ -415,7 +838,18 @@
       "fragment": "caution",
       "weight": 2,
       "drsAction": false,
-      "code": "]"
+      "code": "]",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 15,
+      "charges": 99,
+      "actionText": "Blend in with your surroundings, making it impossible for most enemies to detect you, but reducing movement speed by 25%. Has no effect on certain enemies with special sight.\nCannot be executed while in combat.\nEffect ends upon use of any action other than Sprint, or upon reuse."
     },
     "Lost Swift": {
       "full": "Lost Swift",
@@ -425,7 +859,19 @@
       "fragment": "ingenuity",
       "weight": 4,
       "drsAction": false,
-      "code": "^"
+      "code": "^",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 90,
+      "duration": "10s",
+      "charges": 25,
+      "actionText": "Greatly increases movement speed.\nEffect cannot be stacked with other movement speed enhancing abilities.\nSpirit of the Breathtaker Effect: Increases evasion by 30%.\nDuration: 60s\nSpirit of the Watcher Effect: Grants Rapid Recast to self.\nRapid Recast Effect: Shortens recast time for next ability used by 60%.\nEffect only applies to certain abilities.\nDuration: 30s"
     },
     "Lost Font of Skill": {
       "full": "Lost Font of Skill",
@@ -435,7 +881,18 @@
       "fragment": "sagacity",
       "weight": 20,
       "drsAction": true,
-      "code": "o"
+      "code": "o",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 300,
+      "charges": 5,
+      "actionText": "Resets the recast timer for most actions and role actions."
     },
     "Mimic": {
       "full": "Mimic",
@@ -445,7 +902,18 @@
       "fragment": "caprice",
       "weight": 12,
       "drsAction": true,
-      "code": "p"
+      "code": "p",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 5,
+      "charges": 1,
+      "actionText": "Study the lost techniques used by a targeted ally and make them your own.\nCannot be executed while in combat."
     },
     "Lost Perception": {
       "full": "Lost Perception",
@@ -455,7 +923,18 @@
       "fragment": "observation",
       "weight": 4,
       "drsAction": true,
-      "code": "q"
+      "code": "q",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 1.5,
+      "charges": 99,
+      "actionText": "Detect traps within a radius of 15 yalms.\nIf there are no traps within 15 yalms, alerts you to the presence of traps with a radius of 36 yalms.\n* This action can only be used in Delubrum Reginae."
     },
     "Lost Impetus": {
       "full": "Lost Impetus",
@@ -465,7 +944,18 @@
       "fragment": "inspiration",
       "weight": 10,
       "drsAction": false,
-      "code": "_"
+      "code": "_",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 30,
+      "charges": 50,
+      "actionText": "Quickly dash 10 yalms forward.\nAdditional Effect: Applies Lost Swift to self and nearby party members.\nLost Swift Effect: Greatly increases movement speed. Effect cannot be stacked with other movement enhancing abilities.\nDuration: 10s\nSpirit of the Breathtaker Effect: Increases evasion of self and nearby party members by 15%.\nDuration: 60s\nSpirit of the Watcher Effect: Grants Rapid Recast to self and nearby party members.\nRapid Recast Effect: Shortens recast time for next ability used by 25%. Effect only applies to certain abilities.\nDuration: 15s\nCannot be executed while bound."
     },
     "Lost Paralyze III": {
       "full": "Lost Paralyze III",
@@ -475,7 +965,18 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "r"
+      "code": "r",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "duration": "60s",
+      "charges": 99,
+      "actionText": "Afflicts target and all nearby enemies with Paralysis."
     },
     "Lost Banish III": {
       "full": "Lost Banish III",
@@ -485,7 +986,17 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "s"
+      "code": "s",
+      "roles": [
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "duration": "60s",
+      "charges": 99,
+      "actionText": "Deals unaspected damage with a potency of 200 to target and all enemies nearby it.\nAdditional Effect: Increases damage undead enemies take by 25%."
     },
     "Lost Dispel": {
       "full": "Lost Dispel",
@@ -495,7 +1006,19 @@
       "fragment": "ingenuity",
       "weight": 3,
       "drsAction": true,
-      "code": "t"
+      "code": "t",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "charges": 15,
+      "actionText": "Removes one beneficial status from target.\nCancels auto-attack upon execution."
     },
     "Lost Rend Armor": {
       "full": "Lost Rend Armor",
@@ -505,7 +1028,14 @@
       "fragment": "contention",
       "weight": 8,
       "drsAction": true,
-      "code": "u"
+      "code": "u",
+      "roles": [
+        "melee"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 30,
+      "duration": "30s",
+      "actionText": "Delivers a jumping attack with a potency of 100.\nAdditional Effect: Increases target's damage taken by 10%."
     },
     "Lost Seraph Strike": {
       "full": "Lost Seraph Strike",
@@ -515,7 +1045,15 @@
       "fragment": "divinity",
       "weight": 8,
       "drsAction": true,
-      "code": "v"
+      "code": "v",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 60,
+      "duration": "15s",
+      "mpCost": 5000,
+      "actionText": "Consumes MP to deliver a jumping attack that deals unaspected damage with a potency of 500.\nAdditional Effect: Reduces target's accuracy by 10%.\nAdditional Effect: Grants Cleric Stance to self.\nCleric Stance Bonus: Reduces healing potency by 60% while increasing damage dealt by 60%.\nDuration: 15s\nCannot be executed while bound."
     },
     "Lost Burst": {
       "full": "Lost Burst",
@@ -525,7 +1063,15 @@
       "fragment": "rage",
       "weight": 5,
       "drsAction": true,
-      "code": "w"
+      "code": "w",
+      "roles": [
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "recastTime": 2.5,
+      "charges": 99,
+      "actionText": "Deals lightning damage with a potency of 300 to all nearby enemies.\nAdditional Effect: Interrupts all nearby enemies\nAdditional Effect: Increases damage taken by enemies with Magical Aversion by 10%.\nDuration: 60s"
     },
     "Lost Rampage": {
       "full": "Lost Rampage",
@@ -535,7 +1081,16 @@
       "fragment": "ferocity",
       "weight": 5,
       "drsAction": true,
-      "code": "x"
+      "code": "x",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged"
+      ],
+      "abilityType": "Weaponskill",
+      "recastTime": 2.5,
+      "charges": 99,
+      "actionText": "Delivers an attack with a potency of 300 to all nearby enemies.\nAdditional Effect: Interrupts all nearby enemies.\nAdditional Effect: Increases damage taken by enemies with Physical Aversion by 10%.\nDuration: 60s"
     },
     "Dynamis Dice": {
       "full": "Dynamis Dice",
@@ -545,7 +1100,17 @@
       "fragment": "caprice",
       "weight": 11,
       "drsAction": true,
-      "code": "y"
+      "code": "y",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "recastTime": 180,
+      "actionText": "Place your faith in the goddess Nymeia as she spins the wheel of fate.\nCan only be executed while in combat.\nShares a recast timer with Resistance Potion and Resistance Elixir."
     },
     "Resistance Phoenix": {
       "full": "Resistance Phoenix",
@@ -555,7 +1120,16 @@
       "fragment": "preparation",
       "weight": 4,
       "drsAction": false,
-      "code": "`"
+      "code": "`",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Resurrects target to a weakened state."
     },
     "Resistance Reraiser": {
       "full": "Resistance Reraiser",
@@ -565,7 +1139,17 @@
       "fragment": "care",
       "weight": 8,
       "drsAction": true,
-      "code": "z"
+      "code": "z",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "duration": "180m",
+      "actionText": "Grants a 70% chance of automatic revival upon KO."
     },
     "Resistance Potion Kit": {
       "full": "Resistance Potion Kit",
@@ -575,7 +1159,18 @@
       "fragment": "care",
       "weight": 3,
       "drsAction": true,
-      "code": "0"
+      "code": "0",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "recastTime": 30,
+      "duration": "10m",
+      "actionText": "Grants Auto-potion to self.\nAuto-potion Effect: Restores HP automatically when HP falls below 50%.\nWhen triggered, there is a 50% chance the effect will end.\nSpirit of the Breathtaker Effect: Chance for Auto-potion to end is reduced to 10%.\nShares a recast timer with Resistance Ether Kit and Resistance Medikit."
     },
     "Resistance Ether Kit": {
       "full": "Resistance Ether Kit",
@@ -585,7 +1180,18 @@
       "fragment": "care",
       "weight": 3,
       "drsAction": true,
-      "code": "1"
+      "code": "1",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "recastTime": 30,
+      "duration": "10m",
+      "actionText": "Grants Auto-ether to self.\nAuto-ether Effect: Restores MP automatically when MP falls below 20%.\nWhen triggered, there is a 50% chance the effect will end.\nSpirit of the Breathtaker Effect: Chance for Auto-ether effect to end is reduced to 10%.\nShares a recast timer with Resistance Potion Kit and Resistance Medikit."
     },
     "Resistance Medikit": {
       "full": "Resistance Medikit",
@@ -595,7 +1201,18 @@
       "fragment": "compassion",
       "weight": 3,
       "drsAction": true,
-      "code": "2"
+      "code": "2",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "recastTime": 45,
+      "duration": "30m",
+      "actionText": "Removes a single detrimental effect from self. When not suffering from detrimental effects, creates a barrier that protects against most status ailments. The barrier is removed after curing the next status ailment suffered.\nEffect cannot be stacked with similar barrier actions.\nShares a recast timer with Resistance Potion Kit and Resistance Ether Kit."
     },
     "Resistance Potion": {
       "full": "Resistance Potion",
@@ -605,7 +1222,18 @@
       "fragment": "preparation",
       "weight": 1,
       "drsAction": false,
-      "code": "3"
+      "code": "3",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "recastTime": 40,
+      "duration": "40s",
+      "actionText": "Gradually restores HP.\nCure Potency: 1,600\nShares a recast timer with Dynamis Dice and Resistance Elixir."
     },
     "Lodestone": {
       "full": "Lodestone",
@@ -615,7 +1243,17 @@
       "fragment": "history",
       "weight": 1,
       "drsAction": false,
-      "code": "@"
+      "code": "@",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "recastTime": 2.5,
+      "actionText": "Instantly return to the starting point of the area.\nCannot be executed while in combat.\nShares a recast timer with all other weaponskills and spells."
     },
     "Light Curtain": {
       "full": "Light Curtain",
@@ -625,7 +1263,18 @@
       "fragment": "moonlight",
       "weight": 1,
       "drsAction": true,
-      "code": "4"
+      "code": "4",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "recastTime": 2.5,
+      "duration": "10s",
+      "actionText": "Grants the effect of Lost Reflect to self.\nLost Reflect Effect: Reflects most magic attacks.\nShares a recast timer with all other weaponskills and spells."
     },
     "Resistance Elixir": {
       "full": "Resistance Elixir",
@@ -635,7 +1284,17 @@
       "fragment": "heroism",
       "weight": 4,
       "drsAction": true,
-      "code": "5"
+      "code": "5",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "recastTime": 90,
+      "actionText": "Restores own HP and MP to maximum.\nShares a recast timer with Resistance Potion and Dynamis Dice."
     },
     "Essence of the Aetherweaver": {
       "full": "Essence of the Aetherweaver",
@@ -645,7 +1304,12 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": "*"
+      "code": "*",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 80%.\nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Martialist": {
       "full": "Essence of the Martialist",
@@ -655,7 +1319,12 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": "("
+      "code": "(",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 60%.\nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Savior": {
       "full": "Essence of the Savior",
@@ -665,7 +1334,15 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": ")"
+      "code": ")",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases healing potency by 60%.\nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Veteran": {
       "full": "Essence of the Veteran",
@@ -675,7 +1352,13 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": "'"
+      "code": "'",
+      "roles": [
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases physical defense by 150%, magic defense by 45%, and maximum HP by 60%.\nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Platebearer": {
       "full": "Essence of the Platebearer",
@@ -685,7 +1368,13 @@
       "fragment": "skill",
       "weight": 4,
       "drsAction": false,
-      "code": "&"
+      "code": "&",
+      "roles": [
+        "melee",
+        "ranged"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 80% and maximum HP by 45%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Guardian": {
       "full": "Essence of the Guardian",
@@ -695,7 +1384,12 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "%"
+      "code": "%",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 30% and maximum HP by 10%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Ordained": {
       "full": "Essence of the Ordained",
@@ -705,7 +1399,13 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "$"
+      "code": "$",
+      "roles": [
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 20%, healing potency by 25%, and maximum HP by 50%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Skirmisher": {
       "full": "Essence of the Skirmisher",
@@ -715,7 +1415,14 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "#"
+      "code": "#",
+      "roles": [
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 20% and critical hit rate by 15%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Watcher": {
       "full": "Essence of the Watcher",
@@ -725,7 +1432,14 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "\""
+      "code": "\"",
+      "roles": [
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Item",
+      "actionText": "Reduces maximum HP by 5% while increasing evasion by 40%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Profane": {
       "full": "Essence of the Profane",
@@ -735,7 +1449,12 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "!"
+      "code": "!",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Reduces healing potency by 70% while increasing damage dealt by 100%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Irregular": {
       "full": "Essence of the Irregular",
@@ -745,7 +1464,12 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "¢"
+      "code": "¢",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 90% and damage taken by 200% while reducing maximum HP by 30%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Breathtaker": {
       "full": "Essence of the Breathtaker",
@@ -755,7 +1479,16 @@
       "fragment": "awakening",
       "weight": 6,
       "drsAction": false,
-      "code": "£"
+      "code": "£",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases poison resistance and movement speed, including mount speed, and increases evasion by 10%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Bloodsucker": {
       "full": "Essence of the Bloodsucker",
@@ -765,7 +1498,12 @@
       "fragment": "superstition",
       "weight": 6,
       "drsAction": false,
-      "code": "¤"
+      "code": "¤",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 40%.\nAdditional Effect: Absorb a portion of damage dealt as HP. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Beast": {
       "full": "Essence of the Beast",
@@ -775,7 +1513,14 @@
       "fragment": "superstition",
       "weight": 6,
       "drsAction": false,
-      "code": "¥"
+      "code": "¥",
+      "roles": [
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 50% and maximum HP by 45%.\nAdditional Effect: Absorb a portion of damage dealt as HP. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Essence of the Templar": {
       "full": "Essence of the Templar",
@@ -785,7 +1530,12 @@
       "fragment": "superstition",
       "weight": 6,
       "drsAction": false,
-      "code": "§"
+      "code": "§",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 50%, maximum HP by 45%, and damage dealt by 60%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Aetherweaver": {
       "full": "Deep Essence of the Aetherweaver",
@@ -795,7 +1545,12 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": false,
-      "code": "?"
+      "code": "?",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 96%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Martialist": {
       "full": "Deep Essence of the Martialist",
@@ -805,7 +1560,12 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": false,
-      "code": "<"
+      "code": "<",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 72%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Savior": {
       "full": "Deep Essence of the Savior",
@@ -815,7 +1575,15 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": true,
-      "code": "="
+      "code": "=",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases healing potency by 72%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Veteran": {
       "full": "Deep Essence of the Veteran",
@@ -825,7 +1593,13 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": true,
-      "code": ">"
+      "code": ">",
+      "roles": [
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases physical defense by 180%, magic defense by 54%, and maximum HP by 72%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Platebearer": {
       "full": "Deep Essence of the Platebearer",
@@ -835,7 +1609,13 @@
       "fragment": "mastery",
       "weight": 6,
       "drsAction": false,
-      "code": ":"
+      "code": ":",
+      "roles": [
+        "melee",
+        "ranged"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 96% and maximum HP by 54%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Guardian": {
       "full": "Deep Essence of the Guardian",
@@ -845,7 +1625,12 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": false,
-      "code": ";"
+      "code": ";",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 36% and maximum HP by 12%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Ordained": {
       "full": "Deep Essence of the Ordained",
@@ -855,7 +1640,13 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": true,
-      "code": "6"
+      "code": "6",
+      "roles": [
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 24%, healing potency by 30%, and maximum HP by 60%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Skirmisher": {
       "full": "Deep Essence of the Skirmisher",
@@ -865,7 +1656,14 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": false,
-      "code": "/"
+      "code": "/",
+      "roles": [
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 24% and critical hit rate by 18%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Watcher": {
       "full": "Deep Essence of the Watcher",
@@ -875,7 +1673,14 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": false,
-      "code": "."
+      "code": ".",
+      "roles": [
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Item",
+      "actionText": "Reduces maximum HP by 3% while increasing evasion by 48%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Profane": {
       "full": "Deep Essence of the Profane",
@@ -885,7 +1690,12 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": true,
-      "code": "7"
+      "code": "7",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Reduces healing potency by 70% while increasing damage dealt by 120%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Irregular": {
       "full": "Deep Essence of the Irregular",
@@ -895,7 +1705,12 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": true,
-      "code": "8"
+      "code": "8",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 108% and damage taken by 200% while reducing maximum HP by 30%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Breathtaker": {
       "full": "Deep Essence of the Breathtaker",
@@ -905,7 +1720,16 @@
       "fragment": "becoming",
       "weight": 10,
       "drsAction": false,
-      "code": "-"
+      "code": "-",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases poison resistance and movement speed, including mount speed, and increases evasion by 20%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Bloodsucker": {
       "full": "Deep Essence of the Bloodsucker",
@@ -915,7 +1739,12 @@
       "fragment": "transcendence",
       "weight": 10,
       "drsAction": false,
-      "code": "æ"
+      "code": "æ",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases damage dealt by 48%.\nAdditional Effect: Absorb a portion of damage dealt as HP. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Beast": {
       "full": "Deep Essence of the Beast",
@@ -925,7 +1754,14 @@
       "fragment": "transcendence",
       "weight": 10,
       "drsAction": false,
-      "code": "+"
+      "code": "+",
+      "roles": [
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 60% and maximum HP by 54%.\nAdditional Effect: Absorb a portion of damage dealt as HP. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Deep Essence of the Templar": {
       "full": "Deep Essence of the Templar",
@@ -935,7 +1771,12 @@
       "fragment": "transcendence",
       "weight": 10,
       "drsAction": true,
-      "code": "9"
+      "code": "9",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 60%, maximum HP by 54%, and damage dealt by 72%. \nEffect ends upon reuse.\nCannot be used with other Essence or Deep Essence actions."
     },
     "Pure Essence of the Gambler": {
       "full": "Pure Essence of the Gambler",
@@ -945,7 +1786,16 @@
       "fragment": "deception",
       "weight": 12,
       "drsAction": false,
-      "code": "F"
+      "code": "F",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases evasion by 11%, critical hit rate by 77%, and direct hit rate by 77%.\nHidden Effect: Removes detrimental effects from the Dynamis Dice effect pool. \nEffect ends upon reuse.\nCannot be used with other Essence, Deep Essence, or Pure Essence actions.\n* This action can only be used in Delubrum Reginae."
     },
     "Pure Essence of the Elder": {
       "full": "Pure Essence of the Elder",
@@ -955,7 +1805,15 @@
       "fragment": "clarity",
       "weight": 12,
       "drsAction": true,
-      "code": "A"
+      "code": "A",
+      "roles": [
+        "tank",
+        "melee",
+        "ranged",
+        "caster"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 25%, damage dealt by 50%, and maximum HP by 100%.\nHidden Effect: Cure IV applies Bravery to self and nearby party members.\nBravery Effect: Increases damage dealt by 10%.\nDuration: 60s \nEffect ends upon reuse.\nCannot be used with other Essence, Deep Essence, or Pure Essence actions.\n* This action can only be used in Delubrum Reginae."
     },
     "Pure Essence of the Duelist": {
       "full": "Pure Essence of the Duelist",
@@ -965,7 +1823,12 @@
       "fragment": "contention",
       "weight": 12,
       "drsAction": true,
-      "code": "B"
+      "code": "B",
+      "roles": [
+        "melee"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 60%, damage dealt by 60%, and maximum HP by 81%.\nHidden Effect: Nullifies damage taken by Banner of Honored Sacrifice. \nEffect ends upon reuse.\nCannot be used with other Essence, Deep Essence, or Pure Essence actions.\n* This action can only be used in Delubrum Reginae."
     },
     "Pure Essence of the Fiendhunter": {
       "full": "Pure Essence of the Fiendhunter",
@@ -975,7 +1838,12 @@
       "fragment": "finesse",
       "weight": 12,
       "drsAction": true,
-      "code": "C"
+      "code": "C",
+      "roles": [
+        "ranged"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 60%, damage dealt by 50%, and maximum HP by 81%.\nHidden Effect: Cure II applies Rehabilitation to target party member, and applies Slow to self.\nRehabilitation Effect: Restores MP over time. \nEffect ends upon reuse.\nCannot be used with other Essence, Deep Essence, or Pure Essence actions.\n* This action can only be used in Delubrum Reginae."
     },
     "Pure Essence of the Indomitable": {
       "full": "Pure Essence of the Indomitable",
@@ -985,7 +1853,12 @@
       "fragment": "fortitude",
       "weight": 12,
       "drsAction": true,
-      "code": "D"
+      "code": "D",
+      "roles": [
+        "tank"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 40%, damage dealt by 72%, and maximum HP by 50%.\nHidden Effect: Decreases the chance of being afflicted with Doom after using Lost Sacrifice to 50%. \nEffect ends upon reuse.\nCannot be used with other Essence, Deep Essence, or Pure Essence actions.\n* This action can only be used in Delubrum Reginae."
     },
     "Pure Essence of the Divine": {
       "full": "Pure Essence of the Divine",
@@ -995,7 +1868,12 @@
       "fragment": "divinity",
       "weight": 12,
       "drsAction": true,
-      "code": "E"
+      "code": "E",
+      "roles": [
+        "healer"
+      ],
+      "abilityType": "Item",
+      "actionText": "Increases defense by 25%, damage dealt by 35%, and maximum HP by 100%.\nHidden Effect: Increases the success rate of Lost Arise to 10%. \nEffect ends upon reuse.\nCannot be used with other Essence, Deep Essence, or Pure Essence actions.\n* This action can only be used in Delubrum Reginae."
     }
   }
 }

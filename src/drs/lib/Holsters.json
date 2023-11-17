@@ -17,6 +17,18 @@
                 "dispel"
               ],
               "explanation": "As a main tank, you'll be responsible for using Lost Aethershield on the party during raidwides on Trinity Avowed and The Queen. Lost Sacrifice can be used to resurrect a player if the raid is low on Lost Arises.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "prepop": {
+                "essence": "Pure Essence of the Indomitable",
+                "reraiser": "Resistance Reraiser",
+                "primaryActions": [
+                  "Lost Font of Power"
+                ],
+                "secondaryActions": [
+                  "Banner of Honored Sacrifice",
+                  "Lost Blood Rage"
+                ],
+                "entryItems": []
+              },
               "pre": [
                 {
                   "name": "Resistance Reraiser",
@@ -89,7 +101,7 @@
               "main": [
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 4
+                  "quantity": 3
                 },
                 {
                   "name": "Lost Aethershield",
@@ -105,11 +117,11 @@
                 },
                 {
                   "name": "Light Curtain",
-                  "quantity": 4
+                  "quantity": 3
                 },
                 {
                   "name": "Banner of Honored Sacrifice",
-                  "quantity": 1
+                  "quantity": 2
                 }
               ]
             },
@@ -140,11 +152,7 @@
                   "quantity": 1
                 },
                 {
-                  "name": "Lost Arise",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Steelsting",
+                  "name": "Lost Chainspell",
                   "quantity": 1
                 },
                 {
@@ -155,7 +163,7 @@
               "main": [
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 4
+                  "quantity": 3
                 },
                 {
                   "name": "Lost Reflect",
@@ -167,7 +175,7 @@
                 },
                 {
                   "name": "Lost Arise",
-                  "quantity": 8
+                  "quantity": 9
                 },
                 {
                   "name": "Lost Steelsting",
@@ -175,6 +183,10 @@
                 },
                 {
                   "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
                   "quantity": 1
                 }
               ]
@@ -205,11 +217,7 @@
                   "quantity": 1
                 },
                 {
-                  "name": "Lost Arise",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Steelsting",
+                  "name": "Lost Chainspell",
                   "quantity": 1
                 },
                 {
@@ -220,7 +228,7 @@
               "main": [
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 4
+                  "quantity": 3
                 },
                 {
                   "name": "Light Curtain",
@@ -228,14 +236,22 @@
                 },
                 {
                   "name": "Lost Arise",
-                  "quantity": 9
+                  "quantity": 8
                 },
                 {
                   "name": "Lost Dispel",
                   "quantity": 1
                 },
                 {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
                   "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
                   "quantity": 1
                 }
               ]
@@ -258,19 +274,11 @@
                   "quantity": 1
                 },
                 {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Perception",
+                  "name": "Lost Rend Armor",
                   "quantity": 1
                 },
                 {
                   "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Rend Armor",
                   "quantity": 1
                 }
               ],
@@ -319,22 +327,14 @@
                   "quantity": 1
                 },
                 {
-                  "name": "Lost Perception",
-                  "quantity": 1
-                },
-                {
                   "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Rend Armor",
                   "quantity": 1
                 }
               ],
               "main": [
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 4
+                  "quantity": 3
                 },
                 {
                   "name": "Light Curtain",
@@ -391,7 +391,7 @@
               "main": [
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 4
+                  "quantity": 3
                 },
                 {
                   "name": "Light Curtain",
@@ -412,6 +412,10 @@
                 {
                   "name": "Lost Burst",
                   "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 3
                 }
               ]
             },
@@ -422,7 +426,7 @@
               "assignments": [
                 "casterexcellence"
               ],
-              "explanation": "As a DPS caster, your main role is to deal damage. You should slot Lost Font of Magic as your first pre-pop action. You can choose either Lost Chainspell or Banner of Honored Sacrifice (RDM only) as your secondary action. HSac is useful for Red Mages since their burst phase is mixed physical/magic damage.\nYour main bag contains a Cure IV to use if your party’s C4 caster goes down during a fight. Resistance Ether Kits are required for this loadout, as FoM+CS will burn through your MP. If you’re comfortable with some of the fights in DRS, drop a Reraiser to bring more ether kits.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
+              "explanation": "As a DPS caster, your main role is to deal damage. You should slot Lost Font of Magic as your first pre-pop action. You can choose either Lost Chainspell or Banner of Honored Sacrifice (RDM only) as your secondary action. HSac is useful for Red Mages since their burst phase is mixed physical/magic damage.\nResistance Ether Kits are required for this loadout, as FoM+CS will burn through your MP. If you’re comfortable with some of the fights in DRS, drop a Reraiser to bring more ether kits.\nLight Curtains are for the Queen’s Sovereignty mechanic, where players must reflect orbs to create a safe spot. They can also be used on Queen’s Guard if a healer misses an orb.",
               "pre": [
                 {
                   "name": "Resistance Reraiser",
@@ -447,28 +451,32 @@
                 {
                   "name": "Lost Font of Magic",
                   "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 1
                 }
               ],
               "main": [
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 4
+                  "quantity": 3
                 },
                 {
                   "name": "Light Curtain",
-                  "quantity": 4
-                },
-                {
-                  "name": "Lost Cure IV",
-                  "quantity": 1
+                  "quantity": 3
                 },
                 {
                   "name": "Lost Font of Magic",
                   "quantity": 1
                 },
                 {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
                   "name": "Resistance Ether Kit",
-                  "quantity": 11
+                  "quantity": 9
                 }
               ]
             },
@@ -506,7 +514,7 @@
               "main": [
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 4
+                  "quantity": 3
                 },
                 {
                   "name": "Light Curtain",
@@ -514,7 +522,7 @@
                 },
                 {
                   "name": "Lost Cure II",
-                  "quantity": 3
+                  "quantity": 4
                 },
                 {
                   "name": "Lost Dervish",
@@ -522,7 +530,11 @@
                 },
                 {
                   "name": "Lost Bubble",
-                  "quantity": 3
+                  "quantity": 4
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 2
                 }
               ]
             },
@@ -560,7 +572,7 @@
               "main": [
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 4
+                  "quantity": 3
                 },
                 {
                   "name": "Light Curtain",
@@ -575,7 +587,7 @@
                   "quantity": 3
                 },
                 {
-                  "name": "Lost Rampage",
+                  "name": "Lost Perception",
                   "quantity": 1
                 }
               ]
@@ -618,7 +630,7 @@
                 },
                 {
                   "name": "Lost Slash",
-                  "quantity": 1
+                  "quantity": 2
                 },
                 {
                   "name": "Lost Rampage",
@@ -626,11 +638,11 @@
                 },
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 3
+                  "quantity": 2
                 },
                 {
                   "name": "Light Curtain",
-                  "quantity": 4
+                  "quantity": 3
                 }
               ]
             },

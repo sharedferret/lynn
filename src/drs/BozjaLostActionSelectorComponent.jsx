@@ -1,26 +1,40 @@
 import React, { useCallback } from 'react';
 
 import {
-  Box, Divider, FormControl, MenuItem, Select, Stack, Typography,
+  Box, Divider, FormControl, MenuItem, Select, Stack, Tooltip, Typography,
 } from '@mui/material';
 import { groupBy } from 'underscore';
 import { v4 as uuidv4 } from 'uuid';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
+import BozjaLostActionInformationTooltipComponent from './BozjaLostActionInformationTooltipComponent';
 
 export default function BozjaLostActionSelectorComponent({ lostAction, handleActionUpdate }) {
   function renderSelectorMenuSection(items) {
     const menuItems = [];
     for (let i = 0; i < items.length; i += 1) {
       const action = items[i];
+      const actionData = DRSLostActionHelper.getLostActionData(action.full);
       menuItems.push(
         <MenuItem value={action.full} key={`selector-${uuidv4()}`}>
-          <Stack direction="row" spacing={2} alignItems="center">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/lostactions/${action.image}.jpg`}
-              alt={action.full}
-            />
-            <Typography>{action.full}</Typography>
-          </Stack>
+          <Tooltip
+            arrow
+            placement="left"
+            enterDelay={500}
+            title={(
+              <BozjaLostActionInformationTooltipComponent
+                lostAction={action.full}
+                actionData={actionData}
+              />
+            )}
+          >
+            <Stack direction="row" spacing={2} alignItems="center">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/lostactions/${action.image}.jpg`}
+                alt={action.full}
+              />
+              <Typography>{action.full}</Typography>
+            </Stack>
+          </Tooltip>
         </MenuItem>,
       );
     }
@@ -83,10 +97,22 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
     const action = DRSLostActionHelper.getLostActionData(actionName);
 
     return (
-      <Stack direction="row" spacing={2} alignItems="center">
-        <img src={`${process.env.PUBLIC_URL}/assets/lostactions/${action.image}.jpg`} width={32} height={32} alt={action.full} />
-        <Typography>{action.full}</Typography>
-      </Stack>
+      <Tooltip
+        arrow
+        placement="top"
+        enterDelay={600}
+        title={(
+          <BozjaLostActionInformationTooltipComponent
+            lostAction={actionName}
+            actionData={action}
+          />
+        )}
+      >
+        <Stack direction="row" spacing={2} alignItems="center">
+          <img src={`${process.env.PUBLIC_URL}/assets/lostactions/${action.image}.jpg`} width={32} height={32} alt={action.full} />
+          <Typography>{action.full}</Typography>
+        </Stack>
+      </Tooltip>
     );
   });
 

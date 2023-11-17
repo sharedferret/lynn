@@ -1,20 +1,37 @@
 {
   "changes": [
     {
+      "version": "16.0",
+      "timestamp": "2023-11-16",
+      "changes": [
+        "Added info panels for Eureka Logos Actions",
+        "Added info panels for Bozja Lost Actions",
+        "Added tooltips on hover for Eureka Logos Action pickers",
+        "Added tooltips on hover for Bozja Lost Action pickers"
+      ]
+    },
+    {
+      "version": "15.1",
+      "timestamp": "2023-11-10",
+      "changes": [
+        "Updated Lynn Kaneko - Learning holsters"
+      ]
+    },
+    {
       "version": "15.0",
       "timestamp": "2023-10-25",
       "changes": [
         "Improved mobile support for BA loadout guide",
-        "Rename trays in BA loadout guide",
-        "Add Nacl Free DRS anyprog holsters"
+        "Renamed trays in BA loadout guide",
+        "Added Nacl Free DRS anyprog holsters"
       ]
     },
     {
       "version": "14.0",
       "timestamp": "2023-10-23",
       "changes": [
-        "Add back buttons to BA and DRS loadout selectors",
-        "Update some logogram farm guides",
+        "Added back buttons to BA and DRS loadout selectors",
+        "Updated some logogram farm guides",
         "Slightly™ better mobile support"
       ]
     },

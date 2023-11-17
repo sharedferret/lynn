@@ -18,6 +18,7 @@ export default function DRSNewHolsterDisplayComponent({ holster }) {
   const [holsterType] = useState(initialHolster.holsterType);
   const [holsterMetadata] = useState(initialHolster.holsterMetadata);
   const [holsterPrepop, setHolsterPrepop] = useState(initialHolster.holsterPrepop);
+  const [holsterPrepopNew] = useState(initialHolster.holsterPrepopNew);
   const [holsterMain, setHolsterMain] = useState(initialHolster.holsterMain);
   const [generatedLink, setGeneratedLink] = useState(null);
 
@@ -72,6 +73,7 @@ export default function DRSNewHolsterDisplayComponent({ holster }) {
           name={holsterName}
           type={holsterType}
           holsterPrepop={holsterPrepop}
+          holsterPrepopNew={holsterPrepopNew}
           holsterMain={holsterMain}
           handleHolsterUpdate={handleHolsterUpdate}
         />

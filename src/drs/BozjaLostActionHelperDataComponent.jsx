@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import {
-  Box, Divider, Grid, Stack, Typography,
+  Divider, Grid, Stack, Typography,
 } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 
 import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
 import universalisPriceHelperInstance from '../acquisition/UniversalisPriceHelper';
+import BozjaLostActionInformationComponent from './BozjaLostActionInformationComponent';
 
 export default function BozjaLostActionHelperDataComponent({ lostAction }) {
   /**
@@ -41,16 +42,10 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
   return (
     <Stack spacing={2} p={1} alignItems="flex-start" width={1000}>
       <Divider variant="middle" />
-      <Stack direction="row" alignItems="center">
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/lostactions/${actionData.image}.jpg`}
-          width={48}
-          height={48}
-          alt="Resistance Reraiser"
-        />
-        <Box width={12} />
-        <Typography fontWeight={700} variant="h5">{lostAction}</Typography>
-      </Stack>
+      <BozjaLostActionInformationComponent
+        lostAction={lostAction}
+        actionData={actionData}
+      />
       <Stack direction="row" alignItems="center" spacing={1}>
         <Typography variant="h6">Drops from:</Typography>
         <img

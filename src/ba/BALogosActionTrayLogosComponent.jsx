@@ -4,16 +4,19 @@ import { groupBy } from 'underscore';
 import { v4 as uuidv4 } from 'uuid';
 
 import {
-  Box, Divider, FormControl, MenuItem, Select, Stack, Typography,
+  Box, Divider, FormControl, MenuItem, Select, Stack, Tooltip, Typography, useMediaQuery, useTheme,
 } from '@mui/material';
 
 import logosActionsJson from './lib/LogosActions.json';
+import EurekaLogosActionInformationTooltipComponent from '../eureka/EurekaLogosActionInformationTooltipComponent';
 
 /**
  * Two logos actions in a tray with dropdowns to select a different action.
  * When a new action is selected call back up the chain to refresh recipe.
  */
 export default function BALogosActionTrayLogosComponent({ tray, index, handleLogosActionUpdate }) {
+  const theme = useTheme();
+
   function renderTrayMenu() {
     const { logosActions } = logosActionsJson;
 
@@ -29,13 +32,29 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
       const action = actionsBySection.wisdom[i];
       menuItems.push(
         <MenuItem value={action.full} key={`action-${uuidv4()}`}>
-          <Stack direction="row" spacing={2} alignItems="center">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
-              alt={action.name}
-            />
-            <Typography>{action.full}</Typography>
-          </Stack>
+          <Tooltip
+            arrow
+            placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
+            enterDelay={500}
+            title={
+              useMediaQuery(theme.breakpoints.up('md'))
+                ? (
+                  <EurekaLogosActionInformationTooltipComponent
+                    logosAction={action.full}
+                    actionData={action}
+                  />
+                )
+                : ''
+            }
+          >
+            <Stack direction="row" spacing={2} alignItems="center">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
+                alt={action.name}
+              />
+              <Typography>{action.full}</Typography>
+            </Stack>
+          </Tooltip>
         </MenuItem>,
       );
     }
@@ -45,13 +64,29 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
       const action = actionsBySection.spirit[i];
       menuItems.push(
         <MenuItem value={action.full} key={`action-${uuidv4()}`}>
-          <Stack direction="row" spacing={2} alignItems="center">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
-              alt={action.name}
-            />
-            <Typography>{action.full}</Typography>
-          </Stack>
+          <Tooltip
+            arrow
+            placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
+            enterDelay={500}
+            title={
+              useMediaQuery(theme.breakpoints.up('md'))
+                ? (
+                  <EurekaLogosActionInformationTooltipComponent
+                    logosAction={action.full}
+                    actionData={action}
+                  />
+                )
+                : ''
+            }
+          >
+            <Stack direction="row" spacing={2} alignItems="center">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
+                alt={action.name}
+              />
+              <Typography>{action.full}</Typography>
+            </Stack>
+          </Tooltip>
         </MenuItem>,
       );
     }
@@ -63,13 +98,29 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
       const action = actionsBySection.personalAction[i];
       menuItems.push(
         <MenuItem value={action.full} key={`action-${uuidv4()}`}>
-          <Stack direction="row" spacing={2} alignItems="center">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
-              alt={action.name}
-            />
-            <Typography>{action.full}</Typography>
-          </Stack>
+          <Tooltip
+            arrow
+            placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
+            enterDelay={500}
+            title={
+              useMediaQuery(theme.breakpoints.up('md'))
+                ? (
+                  <EurekaLogosActionInformationTooltipComponent
+                    logosAction={action.full}
+                    actionData={action}
+                  />
+                )
+                : ''
+            }
+          >
+            <Stack direction="row" spacing={2} alignItems="center">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
+                alt={action.name}
+              />
+              <Typography>{action.full}</Typography>
+            </Stack>
+          </Tooltip>
         </MenuItem>,
       );
     }
@@ -81,13 +132,29 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
       const action = actionsBySection.beneficialAction[i];
       menuItems.push(
         <MenuItem value={action.full} key={`action-${uuidv4()}`}>
-          <Stack direction="row" spacing={2} alignItems="center">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
-              alt={action.name}
-            />
-            <Typography>{action.full}</Typography>
-          </Stack>
+          <Tooltip
+            arrow
+            placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
+            enterDelay={500}
+            title={
+              useMediaQuery(theme.breakpoints.up('md'))
+                ? (
+                  <EurekaLogosActionInformationTooltipComponent
+                    logosAction={action.full}
+                    actionData={action}
+                  />
+                )
+                : ''
+            }
+          >
+            <Stack direction="row" spacing={2} alignItems="center">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
+                alt={action.name}
+              />
+              <Typography>{action.full}</Typography>
+            </Stack>
+          </Tooltip>
         </MenuItem>,
       );
     }
@@ -97,13 +164,29 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
       const action = actionsBySection.otherAction[i];
       menuItems.push(
         <MenuItem value={action.full} key={`action-${uuidv4()}`}>
-          <Stack direction="row" spacing={2} alignItems="center">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
-              alt={action.name}
-            />
-            <Typography>{action.full}</Typography>
-          </Stack>
+          <Tooltip
+            arrow
+            placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
+            enterDelay={500}
+            title={
+              useMediaQuery(theme.breakpoints.up('md'))
+                ? (
+                  <EurekaLogosActionInformationTooltipComponent
+                    logosAction={action.full}
+                    actionData={action}
+                  />
+                )
+                : ''
+            }
+          >
+            <Stack direction="row" spacing={2} alignItems="center">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
+                alt={action.name}
+              />
+              <Typography>{action.full}</Typography>
+            </Stack>
+          </Tooltip>
         </MenuItem>,
       );
     }
@@ -125,7 +208,6 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
       <Stack direction="row" alignItems="center" justifyContent="center" mt={1}>
         <FormControl sx={{ width: 120, height: 100 }}>
           <Select
-            fullWidth
             height={100}
             displayEmpty
             value={defaultUmbral}
@@ -145,15 +227,27 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
                 );
               }
               return (
-                <Stack>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
-                    width={64}
-                    height={64}
-                    alt={action.name}
-                  />
-                  <Typography variant="caption">{action.short}</Typography>
-                </Stack>
+                <Tooltip
+                  arrow
+                  placement="top"
+                  enterDelay={500}
+                  title={(
+                    <EurekaLogosActionInformationTooltipComponent
+                      logosAction={action.full}
+                      actionData={action}
+                    />
+                  )}
+                >
+                  <Stack>
+                    <img
+                      src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
+                      width={64}
+                      height={64}
+                      alt={action.name}
+                    />
+                    <Typography variant="caption">{action.short}</Typography>
+                  </Stack>
+                </Tooltip>
               );
             }}
           >
@@ -183,15 +277,27 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
                 );
               }
               return (
-                <Stack>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
-                    width={64}
-                    height={64}
-                    alt={action.name}
-                  />
-                  <Typography variant="caption">{action.short}</Typography>
-                </Stack>
+                <Tooltip
+                  arrow
+                  placement="top"
+                  enterDelay={500}
+                  title={(
+                    <EurekaLogosActionInformationTooltipComponent
+                      logosAction={action.full}
+                      actionData={action}
+                    />
+                  )}
+                >
+                  <Stack>
+                    <img
+                      src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
+                      width={64}
+                      height={64}
+                      alt={action.name}
+                    />
+                    <Typography variant="caption">{action.short}</Typography>
+                  </Stack>
+                </Tooltip>
               );
             }}
           >
