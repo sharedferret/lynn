@@ -21,6 +21,7 @@ import BozjaLostActionHelperComponent from './drs/BozjaLostActionHelperComponent
 import EurekaLoadoutMainComponent from './eureka/EurekaLoadoutMainComponent';
 import EurekaLogosActionHelperComponent from './eureka/EurekaLogosActionHelperComponent';
 import FishComponent from './Fish';
+import MapContainerComponent from './map/MapContainerComponent';
 import ChangelogComponent from './ChangelogComponent';
 import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
 import DRSRunHolsterCreatorContainerComponent from './drs/create/DRSRunHolsterCreatorContainerComponent';
@@ -41,6 +42,7 @@ function WrappedMainComponent({ component, page }) {
         page={page}
         forecastFilter={forecastFilter}
         colorModeContext={ColorModeContext}
+        displayFooter
       />
     );
   } if (page === 'reference') {
@@ -50,6 +52,7 @@ function WrappedMainComponent({ component, page }) {
         page={page}
         type={params.type}
         colorModeContext={ColorModeContext}
+        displayFooter
       />
     );
   } if (page === 'drsholster') {
@@ -65,6 +68,7 @@ function WrappedMainComponent({ component, page }) {
         }
         encodedHolster={params.holsterstring}
         colorModeContext={ColorModeContext}
+        displayFooter
       />
     );
   } if (page === 'bozjalostaction') {
@@ -73,6 +77,7 @@ function WrappedMainComponent({ component, page }) {
         component={component}
         lostAction={params.lostaction}
         colorModeContext={ColorModeContext}
+        displayFooter
       />
     );
   } if (page === 'eurekalogosaction') {
@@ -81,12 +86,27 @@ function WrappedMainComponent({ component, page }) {
         component={component}
         logosAction={params.logosaction}
         colorModeContext={ColorModeContext}
+        displayFooter
+      />
+    );
+  } if (page === 'map') {
+    return (
+      <MainComponent
+        component={component}
+        page={page}
+        colorModeContext={ColorModeContext}
+        displayFooter={false}
       />
     );
   }
 
   return (
-    <MainComponent component={component} page={page} colorModeContext={ColorModeContext} />
+    <MainComponent
+      component={component}
+      page={page}
+      colorModeContext={ColorModeContext}
+      displayFooter
+    />
   );
 }
 
@@ -182,6 +202,10 @@ const router = createBrowserRouter([
         element: <WrappedMainComponent component={<LynnReferenceComponent />} page="reference" />,
       },
     ],
+  },
+  {
+    path: '/map',
+    element: <WrappedMainComponent component={<MapContainerComponent />} page="map" />,
   },
   {
     path: '/fish',

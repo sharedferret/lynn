@@ -16,6 +16,7 @@ export default function MainComponent({
   lostAction,
   logosAction,
   colorModeContext,
+  displayFooter,
 }) {
   /**
    * Component State
@@ -84,7 +85,11 @@ export default function MainComponent({
             })}
 
           </Box>
-          <FooterComponent />
+          {
+            displayFooter
+              ? <FooterComponent />
+              : null
+          }
         </Stack>
       </Box>
     </Stack>
