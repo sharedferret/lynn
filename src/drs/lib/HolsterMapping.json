@@ -454,6 +454,101 @@
           }
         }
       }
+    },
+    "carter": {
+      "name": "Carter Valentine",
+      "server": "CAFE",
+      "serverLink": "https://discord.gg/c-a-f-e",
+      "serverIcon": "cafe.png",
+      "runTypes": {
+        "standard": {
+          "name": "Standard/Prog",
+          "owner": "Carter Valentine",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "main-tank",
+                "dispel-main-tank",
+                "off-tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer",
+                "banish-healer"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee-dps",
+                "rend"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "c4",
+                "pump-caster",
+                "LFS-caster"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "dervish"
+              ]
+            }
+          }
+        },
+        "advanced": {
+          "name": "Advanced/Mimic Chain",
+          "owner": "Carter Valentine",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "main-tank",
+                "main-tank-dispel",
+                "off-tank",
+                "irreg-tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer",
+                "healer-banish"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "mimic-melee",
+                "mimic-rend",
+                "mimic-melee-battery",
+                "mimic-rend-battery"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "mimic-c4",
+                "mimic-c4-battery"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "mimic-dervish",
+                "mimic-dervish-battery"
+              ]
+            }
+          }
+        }
+      }
     }
   }
 }
