@@ -22,10 +22,11 @@ import {
   useTheme,
 } from '@mui/material';
 import {
-  Circle, Image, Layer, Stage, Text,
+  Group, Image, Layer, Stage, Text,
 } from 'react-konva';
 import useImage from 'use-image';
 import MapOptionsMenuComponent from './MapOptionsMenuComponent';
+import MapItemInfoContainerComponent from './MapItemInfoContainerComponent';
 
 export default function MapContainerComponent() {
   // Map data
@@ -34,31 +35,44 @@ export default function MapContainerComponent() {
     anemos: {
       name: 'Eureka Anemos',
       scale: 1,
+      baseOptions: {},
     },
     pagos: {
       name: 'Eureka Pagos',
       scale: 1,
+      baseOptions: {},
     },
     pyros: {
       name: 'Eureka Pyros',
       scale: 1,
+      baseOptions: {},
     },
     hydatos: {
       name: 'Eureka Hydatos',
       scale: 50.101,
       data: require('./lib/hydatos-coordinates.json'),
+      baseOptions: {
+        elementals: false,
+        aetherytes: true,
+        bunnyCoffers: false,
+        quests: true,
+        portals: false,
+      },
     },
     ba: {
       name: 'The Baldesion Arsenal',
       scale: 1,
+      baseOptions: {},
     },
     bsf: {
       name: 'The Bozjan Southern Front',
       scale: 1,
+      baseOptions: {},
     },
     zadnor: {
       name: 'Zadnor',
       scale: 1,
+      baseOptions: {},
     },
   };
 
@@ -75,6 +89,7 @@ export default function MapContainerComponent() {
   // Label tooltip state
   // please tell me this isn't how to do it
   const [textVisible, setTextVisible] = useState(false);
+  const [selectedEntity, setSelectedEntity] = useState(null);
   const [textX, setTextX] = useState(0);
   const [textY, setTextY] = useState(0);
 
@@ -83,10 +98,7 @@ export default function MapContainerComponent() {
   const [cursorY, setCursorY] = useState(0);
 
   // Current display options
-  const [options, setOptions] = useState({
-    elementals: false,
-    aetherytes: false,
-  });
+  const [options, setOptions] = useState(maps.hydatos.baseOptions);
 
   // Ref for canvas
   const ref = useRef(null);
@@ -97,6 +109,10 @@ export default function MapContainerComponent() {
 
   // screaming
   const [elementalImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/elemental.png`);
+  const [aetheryteImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/aetheryte.png`);
+  const [bunnyCofferImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/bunny-coffer.png`);
+  const [questImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/quest.png`);
+  const [portalImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/portal.png`);
 
   const updateOptions = useCallback((newOptions) => {
     setOptions(newOptions);
@@ -134,32 +150,9 @@ export default function MapContainerComponent() {
   const handleMapChange = useCallback((e) => {
     if (e.target.value) {
       setCurrentMap(e.target.value);
+      setOptions(maps[e.target.value].baseOptions);
     }
   }, [setCurrentMap]);
-
-  /**
-   * To do in order:
-   * 1. make this box display the way you want it.
-   * 2. make a json file with dummy data to load it.
-   * 3. add different maps/zones.
-   * 4. add filtering.
-   */
-  const testBox = (
-    <Box
-      position="absolute"
-      top={textY - 25}
-      left={textX + 25}
-      width="300px"
-      height="100px"
-      bgcolor={theme.palette.mode === 'light' ? 'white' : '#333'}
-      opacity={0.9}
-      display={textVisible ? 'block' : 'none'}
-      borderRadius="12px"
-      boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2)"
-    >
-      <Typography>Ceto</Typography>
-    </Box>
-  );
 
   const mapSelector = (
     <FormControl fullWidth>
@@ -176,14 +169,6 @@ export default function MapContainerComponent() {
     </FormControl>
   );
 
-  const handleCircleClick = useCallback((e) => {
-    setTextVisible(!textVisible);
-
-    const stage = e.target.getStage();
-    setTextX(stage.getPointerPosition().x);
-    setTextY(stage.getPointerPosition().y);
-  }, [setTextVisible, textVisible, setTextX, setTextY]);
-
   const handleDragStart = useCallback(() => {
     setTextVisible(false);
   }, [setTextVisible]);
@@ -196,6 +181,33 @@ export default function MapContainerComponent() {
   }, [setCursorX, setCursorY, currentMap]);
 
   /**
+   *
+   */
+  const handleEntityClick = useCallback((e) => {
+    console.log('entity clicked', e.target.parent.attrs.entity);
+    console.log(' - entity type', e.target.parent.attrs.entityType);
+    // TODO: This should pop up a box with information on the entity.
+    // Make sure that enough data is passed through to be able to be able to identify
+    // the entity in json.
+
+    setTextVisible(!textVisible);
+
+    const clickedEntity = e.target.parent.attrs.entity;
+    const clickedEntityType = e.target.parent.attrs.entityType;
+    clickedEntity.type = {
+      type: clickedEntityType,
+      prefix: maps[currentMap].data[clickedEntityType].prefix,
+      icon: maps[currentMap].data[clickedEntityType].icon,
+      name: maps[currentMap].data[clickedEntityType].name,
+    };
+
+    const stage = e.target.getStage();
+    setTextX(stage.getPointerPosition().x);
+    setTextY(stage.getPointerPosition().y);
+    setSelectedEntity(clickedEntity);
+  }, [setTextX, setTextY, textVisible, setTextVisible, setSelectedEntity]);
+
+  /**
    * TODO: This will need to be made a lot more robust in the future.
    */
   const addObjectsToDisplay = () => {
@@ -204,30 +216,67 @@ export default function MapContainerComponent() {
     for (let i = 0; i < keys.length; i += 1) {
       const key = keys[i];
       if (options[key]) {
+        // TODO: This would be fixed by making this its own component
+        let imageToUse = null;
+        if (key === 'elementals') {
+          imageToUse = elementalImage;
+        } else if (key === 'aetherytes') {
+          imageToUse = aetheryteImage;
+        } else if (key === 'bunnyCoffers') {
+          imageToUse = bunnyCofferImage;
+        } else if (key === 'quests') {
+          imageToUse = questImage;
+        } else if (key === 'portals') {
+          imageToUse = portalImage;
+        }
+
         // Add these to the output array
-        const objectData = maps[currentMap].data[key];
-        for (let j = 0; j < objectData.entities.length; j += 1) {
-          const entity = objectData.entities[j];
-          const objectToAdd = (
-            <Image
-              image={elementalImage}
-              scale={{ x: 1 / stageScale, y: 1 / stageScale }}
-              x={(entity.coordinates.x - 1) * maps[currentMap].scale}
-              y={(entity.coordinates.y - 1) * maps[currentMap].scale}
-            />
-          );
-          const textToAdd = (
-            <Text
-              text="Elemental"
-              fontSize={16}
-              scale={{ x: 1 / stageScale, y: 1 / stageScale }}
-              x={((entity.coordinates.x - 1) * maps[currentMap].scale) + 32}
-              y={((entity.coordinates.y - 1) * maps[currentMap].scale) + 8}
-            />
-          );
-          objectsToReturn.push(objectToAdd);
-          if (stageScale > 0.7) {
-            objectsToReturn.push(textToAdd);
+        if (maps[currentMap].data) {
+          const objectData = maps[currentMap].data[key];
+          for (let j = 0; j < objectData.entities.length; j += 1) {
+            const entity = objectData.entities[j];
+
+            const objectToAdd = (
+              <Image
+                image={imageToUse}
+                scaleX={0.5}
+                scaleY={0.5}
+              />
+            );
+
+            let text = objectData.name;
+            if (entity.name) {
+              text = entity.name;
+            }
+
+            const textToAdd = (
+              <Text
+                text={text}
+                fontSize={16}
+                x={32}
+                y={8}
+                stroke="white"
+                fill="black"
+                strokeWidth={2}
+                fillAfterStrokeEnabled
+              />
+            );
+
+            const groupToAdd = (
+              <Group
+                scale={{ x: 1 / stageScale, y: 1 / stageScale }}
+                x={((entity.coordinates.x - 1) * maps[currentMap].scale) - 16}
+                y={((entity.coordinates.y - 1) * maps[currentMap].scale) - 16}
+                onClick={handleEntityClick}
+                entity={entity}
+                entityType={key}
+              >
+                {objectToAdd}
+                {stageScale > 0.7 && objectData.shouldDisplayText ? textToAdd : null}
+              </Group>
+            );
+
+            objectsToReturn.push(groupToAdd);
           }
         }
       }
@@ -265,18 +314,18 @@ export default function MapContainerComponent() {
       >
         <Layer>
           <Image image={image} />
-          <Circle
-            x={1750}
-            y={625}
-            radius={10}
-            fill="green"
-            shadowBlur={5}
-            onClick={handleCircleClick}
-          />
+        </Layer>
+        <Layer>
           {addObjectsToDisplay()}
         </Layer>
       </Stage>
-      {testBox}
+      <MapItemInfoContainerComponent
+        entity={selectedEntity}
+        textX={textX}
+        textY={textY}
+        textVisible={textVisible}
+        theme={theme}
+      />
       <Box
         position="absolute"
         top="25px"

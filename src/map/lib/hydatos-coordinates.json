@@ -1,7 +1,44 @@
 {
+  "aetherytes": {
+    "prefix": "ha",
+    "icon": "aetheryte.png",
+    "name": "Aetheryte",
+    "shouldDisplayText": true,
+    "entities": [
+      {
+        "id": 0,
+        "name": "Central Point",
+        "coordinates": {
+          "x": 20.2,
+          "y": 13.5
+        },
+        "unlockLevel": 50
+      },
+      {
+        "id": 1,
+        "name": "Unverified Research",
+        "coordinates": {
+          "x": 9.7,
+          "y": 28.1
+        },
+        "unlockLevel": 51
+      },
+      {
+        "id": 2,
+        "name": "The Dormitory",
+        "coordinates": {
+          "x": 37.1,
+          "y": 22.6
+        },
+        "unlockLevel": 55
+      }
+    ]
+  },
   "elementals": {
     "prefix": "he",
     "icon": "elemental.png",
+    "name": "Elemental",
+    "shouldDisplayText": false,
     "entities": [
       {
         "id": 0,
@@ -36,6 +73,914 @@
         "coordinates": {
           "x": 5.2,
           "y": 16.1
+        }
+      },
+      {
+        "id": 5,
+        "coordinates": {
+          "x": 7.9,
+          "y": 19.5
+        }
+      },
+      {
+        "id": 6,
+        "coordinates": {
+          "x": 6.8,
+          "y": 24.0
+        }
+      },
+      {
+        "id": 7,
+        "coordinates": {
+          "x": 4.1,
+          "y": 24.0
+        }
+      },
+      {
+        "id": 8,
+        "coordinates": {
+          "x": 5.2,
+          "y": 30.1
+        }
+      },
+      {
+        "id": 9,
+        "coordinates": {
+          "x": 9.1,
+          "y": 29.9
+        }
+      },
+      {
+        "id": 10,
+        "coordinates": {
+          "x": 9.8,
+          "y": 27.0
+        }
+      },
+      {
+        "id": 11,
+        "coordinates": {
+          "x": 13.9,
+          "y": 29.7
+        }
+      },
+      {
+        "id": 12,
+        "coordinates": {
+          "x": 19.2,
+          "y": 24.4
+        }
+      },
+      {
+        "id": 13,
+        "coordinates": {
+          "x": 18.0,
+          "y": 20.3
+        }
+      },
+      {
+        "id": 14,
+        "coordinates": {
+          "x": 23.8,
+          "y": 27.1
+        }
+      },
+      {
+        "id": 15,
+        "coordinates": {
+          "x": 29.5,
+          "y": 30.2
+        }
+      },
+      {
+        "id": 16,
+        "coordinates": {
+          "x": 30.8,
+          "y": 26.2
+        }
+      },
+      {
+        "id": 17,
+        "coordinates": {
+          "x": 35.6,
+          "y": 27.0
+        }
+      },
+      {
+        "id": 18,
+        "coordinates": {
+          "x": 37.0,
+          "y": 29.8
+        }
+      },
+      {
+        "id": 19,
+        "coordinates": {
+          "x": 38.0,
+          "y": 23.0
+        }
+      },
+      {
+        "id": 20,
+        "coordinates": {
+          "x": 33.9,
+          "y": 21.5
+        }
+      },
+      {
+        "id": 21,
+        "coordinates": {
+          "x": 28.6,
+          "y": 21.1
+        }
+      },
+      {
+        "id": 22,
+        "coordinates": {
+          "x": 34.1,
+          "y": 16.7
+        }
+      },
+      {
+        "id": 23,
+        "coordinates": {
+          "x": 38.2,
+          "y": 17.1
+        }
+      }
+    ]
+  },
+  "bunnyCoffers": {
+    "prefix": "hb",
+    "icon": "bunny-coffer.png",
+    "name": "Bunny Coffer",
+    "shouldDisplayText": false,
+    "entities": [
+      {
+        "id": 0,
+        "coordinates": {
+          "x": 5.3,
+          "y": 12.2
+        }
+      },
+      {
+        "id": 1,
+        "coordinates": {
+          "x": 9.3,
+          "y": 13.5
+        }
+      },
+      {
+        "id": 2,
+        "coordinates": {
+          "x": 2.8,
+          "y": 16.4
+        }
+      },
+      {
+        "id": 3,
+        "coordinates": {
+          "x": 12.8,
+          "y": 17.3
+        }
+      },
+      {
+        "id": 4,
+        "coordinates": {
+          "x": 5.3,
+          "y": 12.2
+        }
+      },
+      {
+        "id": 5,
+        "coordinates": {
+          "x": 4.1,
+          "y": 21.9
+        }
+      },
+      {
+        "id": 6,
+        "coordinates": {
+          "x": 7.9,
+          "y": 23.5
+        }
+      },
+      {
+        "id": 7,
+        "coordinates": {
+          "x": 3.1,
+          "y": 27.4
+        }
+      },
+      {
+        "id": 8,
+        "coordinates": {
+          "x": 5.7,
+          "y": 28.8
+        }
+      },
+      {
+        "id": 9,
+        "coordinates": {
+          "x": 10.2,
+          "y": 30.5
+        }
+      },
+      {
+        "id": 10,
+        "coordinates": {
+          "x": 18.9,
+          "y": 13.5
+        }
+      },
+      {
+        "id": 11,
+        "coordinates": {
+          "x": 15.1,
+          "y": 16.2
+        }
+      },
+      {
+        "id": 12,
+        "coordinates": {
+          "x": 17.7,
+          "y": 19.1
+        }
+      },
+      {
+        "id": 13,
+        "coordinates": {
+          "x": 23.9,
+          "y": 18.6
+        }
+      },
+      {
+        "id": 14,
+        "coordinates": {
+          "x": 21.8,
+          "y": 24.1
+        }
+      },
+      {
+        "id": 15,
+        "coordinates": {
+          "x": 24.9,
+          "y": 24.0
+        }
+      },
+      {
+        "id": 16,
+        "coordinates": {
+          "x": 28.3,
+          "y": 26.7
+        }
+      },
+      {
+        "id": 17,
+        "coordinates": {
+          "x": 14.4,
+          "y": 28.8
+        }
+      },
+      {
+        "id": 18,
+        "coordinates": {
+          "x": 18.1,
+          "y": 30.1
+        }
+      },
+      {
+        "id": 19,
+        "coordinates": {
+          "x": 24.2,
+          "y": 31.1
+        }
+      },
+      {
+        "id": 20,
+        "coordinates": {
+          "x": 33.3,
+          "y": 29.4
+        }
+      },
+      {
+        "id": 21,
+        "coordinates": {
+          "x": 38.4,
+          "y": 30.8
+        }
+      },
+      {
+        "id": 22,
+        "coordinates": {
+          "x": 26.1,
+          "y": 13.3
+        }
+      },
+      {
+        "id": 23,
+        "coordinates": {
+          "x": 30.8,
+          "y": 16.8
+        }
+      },
+      {
+        "id": 24,
+        "coordinates": {
+          "x": 34.4,
+          "y": 16.1
+        }
+      },
+      {
+        "id": 25,
+        "coordinates": {
+          "x": 38.4,
+          "y": 13.2
+        }
+      },
+      {
+        "id": 26,
+        "coordinates": {
+          "x": 27.1,
+          "y": 20.6
+        }
+      },
+      {
+        "id": 27,
+        "coordinates": {
+          "x": 29.1,
+          "y": 22.7
+        }
+      },
+      {
+        "id": 28,
+        "coordinates": {
+          "x": 34.8,
+          "y": 24.0
+        }
+      },
+      {
+        "id": 29,
+        "coordinates": {
+          "x": 38.3,
+          "y": 20.5
+        }
+      },
+      {
+        "id": 30,
+        "coordinates": {
+          "x": 39.1,
+          "y": 26.0
+        }
+      }
+    ]
+  },
+  "quests": {
+    "prefix": "hq",
+    "icon": "quest.png",
+    "name": "Quest Location",
+    "shouldDisplayText": true,
+    "entities": [
+      {
+        "id": 0,
+        "name": "51a",
+        "level": 51,
+        "coordinates": {
+          "x": 20.3,
+          "y": 24.8
+        }
+      },
+      {
+        "id": 1,
+        "name": "51b",
+        "level": 51,
+        "coordinates": {
+          "x": 25.7,
+          "y": 30.7
+        }
+      },
+      {
+        "id": 2,
+        "name": "54b",
+        "level": 54,
+        "coordinates": {
+          "x": 6.5,
+          "y": 15.7
+        }
+      },
+      {
+        "id": 3,
+        "name": "57a",
+        "level": 57,
+        "coordinates": {
+          "x": 10.6,
+          "y": 29.6
+        }
+      },
+      {
+        "id": 4,
+        "name": "60a",
+        "level": 60,
+        "coordinates": {
+          "x": 31.3,
+          "y": 27.2
+        }
+      },
+      {
+        "id": 5,
+        "name": "60b",
+        "level": 60,
+        "coordinates": {
+          "x": 24.0,
+          "y": 30.6
+        }
+      }
+    ]
+  },
+  "portals": {
+    "prefix": "hp",
+    "icon": "portal.png",
+    "name": "Baldesion Arsenal Portal",
+    "shouldDisplayText": true,
+    "entities": [
+      {
+        "id": 0,
+        "name": "1-1",
+        "group": 1,
+        "portal": 1,
+        "coordinates": {
+          "x": 4.2,
+          "y": 15.1
+        }
+      },
+      {
+        "id": 1,
+        "name": "1-2",
+        "group": 1,
+        "portal": 2,
+        "coordinates": {
+          "x": 7.1,
+          "y": 14.9
+        }
+      },
+      {
+        "id": 2,
+        "name": "1-3",
+        "group": 1,
+        "portal": 3,
+        "coordinates": {
+          "x": 10.6,
+          "y": 14.7
+        }
+      },
+      {
+        "id": 3,
+        "name": "1-4",
+        "group": 1,
+        "portal": 4,
+        "coordinates": {
+          "x": 6.9,
+          "y": 18.6
+        }
+      },
+      {
+        "id": 4,
+        "name": "1-5",
+        "group": 1,
+        "portal": 5,
+        "coordinates": {
+          "x": 10.2,
+          "y": 17.8
+        }
+      },
+      {
+        "id": 5,
+        "name": "1-6",
+        "group": 1,
+        "portal": 6,
+        "coordinates": {
+          "x": 6.2,
+          "y": 21.8
+        }
+      },
+      {
+        "id": 6,
+        "name": "1-7",
+        "group": 1,
+        "portal": 7,
+        "coordinates": {
+          "x": 4.3,
+          "y": 26.1
+        }
+      },
+      {
+        "id": 7,
+        "name": "1-8",
+        "group": 1,
+        "portal": 8,
+        "coordinates": {
+          "x": 7.3,
+          "y": 29.4
+        }
+      },
+      {
+        "id": 8,
+        "name": "2-1",
+        "group": 2,
+        "portal": 1,
+        "coordinates": {
+          "x": 15.8,
+          "y": 14.6
+        }
+      },
+      {
+        "id": 9,
+        "name": "2-2",
+        "group": 2,
+        "portal": 2,
+        "coordinates": {
+          "x": 16.4,
+          "y": 18.7
+        }
+      },
+      {
+        "id": 10,
+        "name": "2-3",
+        "group": 2,
+        "portal": 3,
+        "coordinates": {
+          "x": 10.7,
+          "y": 21.9
+        }
+      },
+      {
+        "id": 11,
+        "name": "2-4",
+        "group": 2,
+        "portal": 4,
+        "coordinates": {
+          "x": 15.9,
+          "y": 22.3
+        }
+      },
+      {
+        "id": 12,
+        "name": "2-5",
+        "group": 2,
+        "portal": 5,
+        "coordinates": {
+          "x": 13.7,
+          "y": 24.3
+        }
+      },
+      {
+        "id": 13,
+        "name": "2-6",
+        "group": 2,
+        "portal": 6,
+        "coordinates": {
+          "x": 10.6,
+          "y": 25.8
+        }
+      },
+      {
+        "id": 14,
+        "name": "2-7",
+        "group": 2,
+        "portal": 7,
+        "coordinates": {
+          "x": 14.8,
+          "y": 26.8
+        }
+      },
+      {
+        "id": 15,
+        "name": "2-8",
+        "group": 2,
+        "portal": 8,
+        "coordinates": {
+          "x": 16.7,
+          "y": 29.2
+        }
+      },
+      {
+        "id": 16,
+        "name": "3-1",
+        "group": 3,
+        "portal": 1,
+        "coordinates": {
+          "x": 21.2,
+          "y": 17.2
+        }
+      },
+      {
+        "id": 17,
+        "name": "3-2",
+        "group": 3,
+        "portal": 2,
+        "coordinates": {
+          "x": 19.4,
+          "y": 20.2
+        }
+      },
+      {
+        "id": 18,
+        "name": "3-3",
+        "group": 3,
+        "portal": 3,
+        "coordinates": {
+          "x": 23.7,
+          "y": 21.8
+        }
+      },
+      {
+        "id": 19,
+        "name": "3-4",
+        "group": 3,
+        "portal": 4,
+        "coordinates": {
+          "x": 19.2,
+          "y": 26.9
+        }
+      },
+      {
+        "id": 20,
+        "name": "3-5",
+        "group": 3,
+        "portal": 5,
+        "coordinates": {
+          "x": 23.0,
+          "y": 27.0
+        }
+      },
+      {
+        "id": 21,
+        "name": "3-6",
+        "group": 3,
+        "portal": 6,
+        "coordinates": {
+          "x": 19.2,
+          "y": 28.6
+        }
+      },
+      {
+        "id": 22,
+        "name": "3-7",
+        "group": 3,
+        "portal": 7,
+        "coordinates": {
+          "x": 20.7,
+          "y": 29.0
+        }
+      },
+      {
+        "id": 23,
+        "name": "3-8",
+        "group": 3,
+        "portal": 8,
+        "coordinates": {
+          "x": 22.8,
+          "y": 29.1
+        }
+      },
+      {
+        "id": 24,
+        "name": "4-1",
+        "group": 4,
+        "portal": 1,
+        "coordinates": {
+          "x": 25.0,
+          "y": 16.5
+        }
+      },
+      {
+        "id": 25,
+        "name": "4-2",
+        "group": 4,
+        "portal": 2,
+        "coordinates": {
+          "x": 26.4,
+          "y": 19.1
+        }
+      },
+      {
+        "id": 26,
+        "name": "4-3",
+        "group": 4,
+        "portal": 3,
+        "coordinates": {
+          "x": 28.8,
+          "y": 23.4
+        }
+      },
+      {
+        "id": 27,
+        "name": "4-4",
+        "group": 4,
+        "portal": 4,
+        "coordinates": {
+          "x": 25.2,
+          "y": 25.4
+        }
+      },
+      {
+        "id": 28,
+        "name": "4-5",
+        "group": 4,
+        "portal": 5,
+        "coordinates": {
+          "x": 26.9,
+          "y": 26.6
+        }
+      },
+      {
+        "id": 29,
+        "name": "4-6",
+        "group": 4,
+        "portal": 6,
+        "coordinates": {
+          "x": 26.0,
+          "y": 27.8
+        }
+      },
+      {
+        "id": 30,
+        "name": "4-7",
+        "group": 4,
+        "portal": 7,
+        "coordinates": {
+          "x": 25.4,
+          "y": 29.0
+        }
+      },
+      {
+        "id": 31,
+        "name": "4-8",
+        "group": 4,
+        "portal": 8,
+        "coordinates": {
+          "x": 25.7,
+          "y": 30.1
+        }
+      },
+      {
+        "id": 32,
+        "name": "5-1",
+        "group": 5,
+        "portal": 1,
+        "coordinates": {
+          "x": 28.9,
+          "y": 15.3
+        }
+      },
+      {
+        "id": 33,
+        "name": "5-2",
+        "group": 5,
+        "portal": 2,
+        "coordinates": {
+          "x": 33.3,
+          "y": 17.1
+        }
+      },
+      {
+        "id": 34,
+        "name": "5-3",
+        "group": 5,
+        "portal": 3,
+        "coordinates": {
+          "x": 29.9,
+          "y": 19.6
+        }
+      },
+      {
+        "id": 35,
+        "name": "5-4",
+        "group": 5,
+        "portal": 4,
+        "coordinates": {
+          "x": 32.3,
+          "y": 24.8
+        }
+      },
+      {
+        "id": 36,
+        "name": "5-5",
+        "group": 5,
+        "portal": 5,
+        "coordinates": {
+          "x": 29.5,
+          "y": 26.4
+        }
+      },
+      {
+        "id": 37,
+        "name": "5-6",
+        "group": 5,
+        "portal": 6,
+        "coordinates": {
+          "x": 30.7,
+          "y": 27.8
+        }
+      },
+      {
+        "id": 38,
+        "name": "5-7",
+        "group": 5,
+        "portal": 7,
+        "coordinates": {
+          "x": 30.4,
+          "y": 30.2
+        }
+      },
+      {
+        "id": 39,
+        "name": "5-8",
+        "group": 5,
+        "portal": 8,
+        "coordinates": {
+          "x": 31.7,
+          "y": 29.9
+        }
+      },
+      {
+        "id": 40,
+        "name": "6-1",
+        "group": 6,
+        "portal": 1,
+        "coordinates": {
+          "x": 35.2,
+          "y": 13.9
+        }
+      },
+      {
+        "id": 41,
+        "name": "6-2",
+        "group": 6,
+        "portal": 2,
+        "coordinates": {
+          "x": 37.9,
+          "y": 15.0
+        }
+      },
+      {
+        "id": 42,
+        "name": "6-3",
+        "group": 6,
+        "portal": 3,
+        "coordinates": {
+          "x": 36.0,
+          "y": 19.0
+        }
+      },
+      {
+        "id": 43,
+        "name": "6-4",
+        "group": 6,
+        "portal": 4,
+        "coordinates": {
+          "x": 37.4,
+          "y": 23.8
+        }
+      },
+      {
+        "id": 44,
+        "name": "6-5",
+        "group": 6,
+        "portal": 5,
+        "coordinates": {
+          "x": 33.0,
+          "y": 27.6
+        }
+      },
+      {
+        "id": 45,
+        "name": "6-6",
+        "group": 6,
+        "portal": 6,
+        "coordinates": {
+          "x": 37.3,
+          "y": 27.9
+        }
+      },
+      {
+        "id": 46,
+        "name": "6-7",
+        "group": 6,
+        "portal": 7,
+        "coordinates": {
+          "x": 32.6,
+          "y": 28.9
+        }
+      },
+      {
+        "id": 47,
+        "name": "6-8",
+        "group": 6,
+        "portal": 8,
+        "coordinates": {
+          "x": 35.7,
+          "y": 29.9
         }
       }
     ]

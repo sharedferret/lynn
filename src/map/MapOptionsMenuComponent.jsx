@@ -11,24 +11,20 @@ import React from 'react';
 
 export default function MapOptionsMenuComponent({ options, updateOptions }) {
   const handleToggle = (value) => () => {
-    console.log('updating value', value);
     const newOptions = { ...options };
-    newOptions[value.key] = !(options[value.key]);
+    newOptions[value] = !(options[value]);
     updateOptions(newOptions);
   };
 
-  const menuItems = [
-    {
-      index: 0,
-      name: 'Elementals',
-      key: 'elementals',
-    },
-    {
-      index: 1,
-      name: 'Aetherytes',
-      key: 'aetherytes',
-    },
-  ];
+  const menuItemCaptions = {
+    elementals: 'Elementals',
+    aetherytes: 'Aetherytes',
+    bunnyCoffers: 'Bunny FATE Coffers',
+    quests: 'Quest Locations',
+    portals: 'Baldesion Arsenal Portals',
+  };
+
+  const menuItems = Object.keys(options);
 
   return (
     <Box
@@ -47,12 +43,12 @@ export default function MapOptionsMenuComponent({ options, updateOptions }) {
                   <ListItemIcon>
                     <Checkbox
                       edge="start"
-                      checked={options[value.key] === true}
+                      checked={options[value] === true}
                       tabIndex={-1}
                       disableRipple
                     />
                   </ListItemIcon>
-                  <ListItemText primary={value.name} />
+                  <ListItemText primary={menuItemCaptions[value]} />
                 </ListItemButton>
               </ListItem>
             ))
