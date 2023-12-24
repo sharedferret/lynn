@@ -1,0 +1,47 @@
+{
+  "aetherytes": {
+    "prefix": "ca",
+    "icon": "aetheryte.png",
+    "name": "Aetheryte",
+    "shouldDisplayText": true,
+    "markerType": "icon",
+    "entities": [
+      {
+        "id": 0,
+        "name": "Northpoint",
+        "coordinates": {
+          "x": 16.4,
+          "y": 24.4
+        },
+        "unlockLevel": 35
+      },
+      {
+        "id": 1,
+        "name": "The Dragon Star Observatory",
+        "coordinates": {
+          "x": 24,
+          "y": 37.4
+        },
+        "unlockLevel": 37
+      },
+      {
+        "id": 2,
+        "name": "The Firing Chamber",
+        "coordinates": {
+          "x": 24,
+          "y": 17.6
+        },
+        "unlockLevel": 39
+      },
+      {
+        "id": 3,
+        "name": "Carbonatite Quarry",
+        "coordinates": {
+          "x": 12.6,
+          "y": 9
+        },
+        "unlockLevel": 41
+      }
+    ]
+  }
+}

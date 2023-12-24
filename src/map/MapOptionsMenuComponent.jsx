@@ -22,6 +22,7 @@ export default function MapOptionsMenuComponent({ options, updateOptions }) {
     bunnyCoffers: 'Bunny FATE Coffers',
     quests: 'Quest Locations',
     portals: 'Baldesion Arsenal Portals',
+    nms: 'Notorious Monsters',
   };
 
   const menuItems = Object.keys(options);

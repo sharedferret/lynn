@@ -8,6 +8,13 @@
  * - Mini component for forecast maps
  */
 
+/**
+ * Current TODO
+ * clicks outside of entities should make the overlay box not visible
+ * overlay box needs design
+ * all click listeners should also have touch listeners for mobile
+ */
+
 import React, {
   useCallback, useEffect, useRef, useState,
 } from 'react';
@@ -22,11 +29,12 @@ import {
   useTheme,
 } from '@mui/material';
 import {
-  Group, Image, Layer, Stage, Text,
+  Image, Layer, Stage,
 } from 'react-konva';
 import useImage from 'use-image';
 import MapOptionsMenuComponent from './MapOptionsMenuComponent';
 import MapItemInfoContainerComponent from './MapItemInfoContainerComponent';
+import MapIconComponent from './MapIconComponent';
 
 export default function MapContainerComponent() {
   // Map data
@@ -34,18 +42,21 @@ export default function MapContainerComponent() {
   const maps = {
     anemos: {
       name: 'Eureka Anemos',
-      scale: 1,
+      scale: 50.101,
       baseOptions: {},
     },
     pagos: {
       name: 'Eureka Pagos',
-      scale: 1,
+      scale: 50.101,
       baseOptions: {},
     },
     pyros: {
       name: 'Eureka Pyros',
-      scale: 1,
-      baseOptions: {},
+      scale: 50.101,
+      data: require('./lib/pyros-coordinates.json'),
+      baseOptions: {
+        aetherytes: true,
+      },
     },
     hydatos: {
       name: 'Eureka Hydatos',
@@ -57,16 +68,17 @@ export default function MapContainerComponent() {
         bunnyCoffers: false,
         quests: true,
         portals: false,
+        nms: true,
       },
     },
-    ba: {
+    baldesionarsenal: {
       name: 'The Baldesion Arsenal',
-      scale: 1,
+      scale: 50.101,
       baseOptions: {},
     },
-    bsf: {
+    bozjansouthernfront: {
       name: 'The Bozjan Southern Front',
-      scale: 1,
+      scale: 50.101,
       baseOptions: {},
     },
     zadnor: {
@@ -106,13 +118,6 @@ export default function MapContainerComponent() {
 
   // Map image to display
   const [image] = useImage(`${process.env.PUBLIC_URL}/assets/maps/${currentMap}.jpg`);
-
-  // screaming
-  const [elementalImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/elemental.png`);
-  const [aetheryteImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/aetheryte.png`);
-  const [bunnyCofferImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/bunny-coffer.png`);
-  const [questImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/quest.png`);
-  const [portalImage] = useImage(`${process.env.PUBLIC_URL}/assets/maps/icons/portal.png`);
 
   const updateOptions = useCallback((newOptions) => {
     setOptions(newOptions);
@@ -184,13 +189,11 @@ export default function MapContainerComponent() {
    *
    */
   const handleEntityClick = useCallback((e) => {
-    console.log('entity clicked', e.target.parent.attrs.entity);
-    console.log(' - entity type', e.target.parent.attrs.entityType);
     // TODO: This should pop up a box with information on the entity.
     // Make sure that enough data is passed through to be able to be able to identify
     // the entity in json.
 
-    setTextVisible(!textVisible);
+    setTextVisible(true);
 
     const clickedEntity = e.target.parent.attrs.entity;
     const clickedEntityType = e.target.parent.attrs.entityType;
@@ -207,76 +210,26 @@ export default function MapContainerComponent() {
     setSelectedEntity(clickedEntity);
   }, [setTextX, setTextY, textVisible, setTextVisible, setSelectedEntity]);
 
-  /**
-   * TODO: This will need to be made a lot more robust in the future.
-   */
   const addObjectsToDisplay = () => {
     const keys = Object.keys(options);
     const objectsToReturn = [];
     for (let i = 0; i < keys.length; i += 1) {
       const key = keys[i];
       if (options[key]) {
-        // TODO: This would be fixed by making this its own component
-        let imageToUse = null;
-        if (key === 'elementals') {
-          imageToUse = elementalImage;
-        } else if (key === 'aetherytes') {
-          imageToUse = aetheryteImage;
-        } else if (key === 'bunnyCoffers') {
-          imageToUse = bunnyCofferImage;
-        } else if (key === 'quests') {
-          imageToUse = questImage;
-        } else if (key === 'portals') {
-          imageToUse = portalImage;
-        }
-
         // Add these to the output array
         if (maps[currentMap].data) {
           const objectData = maps[currentMap].data[key];
           for (let j = 0; j < objectData.entities.length; j += 1) {
-            const entity = objectData.entities[j];
-
-            const objectToAdd = (
-              <Image
-                image={imageToUse}
-                scaleX={0.5}
-                scaleY={0.5}
-              />
-            );
-
-            let text = objectData.name;
-            if (entity.name) {
-              text = entity.name;
-            }
-
-            const textToAdd = (
-              <Text
-                text={text}
-                fontSize={16}
-                x={32}
-                y={8}
-                stroke="white"
-                fill="black"
-                strokeWidth={2}
-                fillAfterStrokeEnabled
-              />
-            );
-
-            const groupToAdd = (
-              <Group
-                scale={{ x: 1 / stageScale, y: 1 / stageScale }}
-                x={((entity.coordinates.x - 1) * maps[currentMap].scale) - 16}
-                y={((entity.coordinates.y - 1) * maps[currentMap].scale) - 16}
-                onClick={handleEntityClick}
-                entity={entity}
-                entityType={key}
-              >
-                {objectToAdd}
-                {stageScale > 0.7 && objectData.shouldDisplayText ? textToAdd : null}
-              </Group>
-            );
-
-            objectsToReturn.push(groupToAdd);
+            objectsToReturn.push(<MapIconComponent
+              entity={objectData.entities[j]}
+              objectName={objectData.name}
+              shouldDisplayText={objectData.shouldDisplayText}
+              markerType={objectData.markerType}
+              type={key}
+              mapScale={maps[currentMap].scale}
+              stageScale={stageScale}
+              handleEntityClick={handleEntityClick}
+            />);
           }
         }
       }

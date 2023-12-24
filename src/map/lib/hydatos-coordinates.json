@@ -1,9 +1,10 @@
 {
   "aetherytes": {
-    "prefix": "ha",
+    "prefix": "da",
     "icon": "aetheryte.png",
     "name": "Aetheryte",
     "shouldDisplayText": true,
+    "markerType": "icon",
     "entities": [
       {
         "id": 0,
@@ -35,10 +36,11 @@
     ]
   },
   "elementals": {
-    "prefix": "he",
+    "prefix": "de",
     "icon": "elemental.png",
     "name": "Elemental",
     "shouldDisplayText": false,
+    "markerType": "icon",
     "entities": [
       {
         "id": 0,
@@ -57,164 +59,221 @@
       {
         "id": 2,
         "coordinates": {
-          "x": 13.0,
-          "y": 17.8
-        }
-      },
-      {
-        "id": 3,
-        "coordinates": {
           "x": 10.0,
           "y": 14.1
         }
       },
       {
-        "id": 4,
+        "id": 3,
         "coordinates": {
           "x": 5.2,
           "y": 16.1
         }
       },
       {
-        "id": 5,
+        "id": 4,
         "coordinates": {
           "x": 7.9,
           "y": 19.5
         }
       },
       {
-        "id": 6,
+        "id": 5,
         "coordinates": {
           "x": 6.8,
           "y": 24.0
         }
       },
       {
-        "id": 7,
+        "id": 6,
         "coordinates": {
           "x": 4.1,
           "y": 24.0
         }
       },
       {
-        "id": 8,
+        "id": 7,
         "coordinates": {
           "x": 5.2,
           "y": 30.1
         }
       },
       {
-        "id": 9,
+        "id": 8,
         "coordinates": {
           "x": 9.1,
           "y": 29.9
         }
       },
       {
-        "id": 10,
+        "id": 9,
         "coordinates": {
           "x": 9.8,
           "y": 27.0
         }
       },
       {
-        "id": 11,
+        "id": 10,
         "coordinates": {
           "x": 13.9,
           "y": 29.7
         }
       },
       {
-        "id": 12,
+        "id": 11,
         "coordinates": {
           "x": 19.2,
           "y": 24.4
         }
       },
       {
-        "id": 13,
+        "id": 12,
         "coordinates": {
           "x": 18.0,
           "y": 20.3
         }
       },
       {
-        "id": 14,
+        "id": 13,
         "coordinates": {
           "x": 23.8,
           "y": 27.1
         }
       },
       {
-        "id": 15,
+        "id": 14,
         "coordinates": {
           "x": 29.5,
           "y": 30.2
         }
       },
       {
-        "id": 16,
+        "id": 15,
         "coordinates": {
           "x": 30.8,
           "y": 26.2
         }
       },
       {
-        "id": 17,
+        "id": 16,
         "coordinates": {
           "x": 35.6,
           "y": 27.0
         }
       },
       {
-        "id": 18,
+        "id": 17,
         "coordinates": {
           "x": 37.0,
           "y": 29.8
         }
       },
       {
-        "id": 19,
+        "id": 18,
         "coordinates": {
           "x": 38.0,
           "y": 23.0
         }
       },
       {
-        "id": 20,
+        "id": 19,
         "coordinates": {
           "x": 33.9,
           "y": 21.5
         }
       },
       {
-        "id": 21,
+        "id": 20,
         "coordinates": {
           "x": 28.6,
           "y": 21.1
         }
       },
       {
-        "id": 22,
+        "id": 21,
         "coordinates": {
           "x": 34.1,
           "y": 16.7
         }
       },
       {
-        "id": 23,
+        "id": 22,
         "coordinates": {
           "x": 38.2,
           "y": 17.1
+        }
+      },
+      {
+        "id": 23,
+        "coordinates": {
+          "x": 9.7,
+          "y": 21.4
+        }
+      },
+      {
+        "id": 24,
+        "coordinates": {
+          "x": 3.6,
+          "y": 28.1
+        }
+      },
+      {
+        "id": 25,
+        "coordinates": {
+          "x": 15,
+          "y": 26
+        }
+      },
+      {
+        "id": 26,
+        "coordinates": {
+          "x": 15.9,
+          "y": 20.8
+        }
+      },
+      {
+        "id": 27,
+        "coordinates": {
+          "x": 23.3,
+          "y": 19.2
+        }
+      },
+      {
+        "id": 28,
+        "coordinates": {
+          "x": 22,
+          "y": 30
+        }
+      },
+      {
+        "id": 29,
+        "coordinates": {
+          "x": 30,
+          "y": 16
+        }
+      },
+      {
+        "id": 30,
+        "coordinates": {
+          "x": 25,
+          "y": 15
+        }
+      },
+      {
+        "id": 31,
+        "coordinates": {
+          "x": 24.3,
+          "y": 23
         }
       }
     ]
   },
   "bunnyCoffers": {
-    "prefix": "hb",
+    "prefix": "db",
     "icon": "bunny-coffer.png",
     "name": "Bunny Coffer",
     "shouldDisplayText": false,
+    "markerType": "icon",
     "entities": [
       {
         "id": 0,
@@ -436,10 +495,11 @@
     ]
   },
   "quests": {
-    "prefix": "hq",
+    "prefix": "dq",
     "icon": "quest.png",
     "name": "Quest Location",
     "shouldDisplayText": true,
+    "markerType": "icon",
     "entities": [
       {
         "id": 0,
@@ -498,10 +558,11 @@
     ]
   },
   "portals": {
-    "prefix": "hp",
+    "prefix": "dp",
     "icon": "portal.png",
     "name": "Baldesion Arsenal Portal",
     "shouldDisplayText": true,
+    "markerType": "icon",
     "entities": [
       {
         "id": 0,
@@ -982,6 +1043,511 @@
           "x": 35.7,
           "y": 29.9
         }
+      }
+    ]
+  },
+  "nms": {
+    "prefix": "dn",
+    "icon": "nm.png",
+    "name": "Notorious Monster",
+    "shouldDisplayText": true,
+    "markerType": "iconWithCircle",
+    "entities": [
+      {
+        "id": 0,
+        "coordinates": {
+          "x": 10.8,
+          "y": 25.6
+        },
+        "name": "I Ink, Therefore I Am",
+        "displayName": "Lv50 Khalamari",
+        "mob": "Khalamari",
+        "element": "water",
+        "level": 50,
+        "experience": 11161152,
+        "tomestones": 63,
+        "spawnedBy": {
+          "name": "Xzomit",
+          "level": 55,
+          "element": "water"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 4
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 5
+          },
+          {
+            "name": "Obscure Logogram",
+            "quantity": 1,
+            "rareDrop": true
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "coordinates": {
+          "x": 10.4,
+          "y": 17.2
+        },
+        "name": "From Tusk till Dawn",
+        "displayName": "Lv51 Stegodon",
+        "mob": "Stegodon",
+        "element": "earth",
+        "level": 51,
+        "experience": 12277267,
+        "tomestones": 69,
+        "spawnedBy": {
+          "name": "Hydatos Primelephas",
+          "level": 56,
+          "element": "earth"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 4
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 5
+          },
+          {
+            "name": "Obscure Logogram",
+            "quantity": 1,
+            "rareDrop": true
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "coordinates": {
+          "x": 8.1,
+          "y": 21.8
+        },
+        "name": "Bullheaded Berserker",
+        "displayName": "Lv52 Molech",
+        "mob": "Molech",
+        "element": "ice",
+        "level": 52,
+        "experience": 13529549,
+        "tomestones": 75,
+        "spawnedBy": {
+          "name": "Val Nullchu",
+          "level": 57,
+          "element": "earth"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 5
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 6
+          },
+          {
+            "name": "Molech's Horn",
+            "quantity": 1,
+            "rareDrop": true
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "coordinates": {
+          "x": 7.1,
+          "y": 14.5
+        },
+        "name": "Mad, Bad, and Fabulous to Know",
+        "displayName": "Lv53 Piasa",
+        "mob": "Piasa",
+        "element": "wind",
+        "level": 53,
+        "experience": 14936622,
+        "tomestones": 81,
+        "spawnedBy": {
+          "name": "Vivid Gastornis",
+          "level": 58,
+          "element": "wind"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 5
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 6
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "coordinates": {
+          "x": 8.2,
+          "y": 26.1
+        },
+        "name": "Fearful Symmetry",
+        "displayName": "Lv54 Frostmane",
+        "mob": "Frostmane",
+        "element": "fire",
+        "level": 54,
+        "experience": 16519904,
+        "tomestones": 87,
+        "spawnedBy": {
+          "name": "Northern Tiger",
+          "level": 59,
+          "element": "earth"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 6
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 7
+          },
+          {
+            "name": "Obscure Logogram",
+            "quantity": 1,
+            "rareDrop": true
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "coordinates": {
+          "x": 24.2,
+          "y": 19.0
+        },
+        "name": "Crawling Chaos",
+        "displayName": "Lv55 Daphne",
+        "mob": "Daphne",
+        "element": "water",
+        "level": 55,
+        "experience": 18304054,
+        "tomestones": 96,
+        "spawnedBy": {
+          "name": "Dark Void Monk",
+          "level": 60,
+          "element": "water"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 6
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 7
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "coordinates": {
+          "x": 29.1,
+          "y": 23.0
+        },
+        "name": "Duty-free",
+        "displayName": "Lv56 Goldemar",
+        "mob": "King Goldemar",
+        "element": "lightning",
+        "level": 56,
+        "experience": 19393977,
+        "tomestones": 99,
+        "spawnedBy": {
+          "name": "Hydatos Wraith",
+          "level": 61,
+          "element": "fire"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 7
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 8
+          },
+          {
+            "name": "Goldemar's Horn",
+            "quantity": 1,
+            "rareDrop": true
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          },
+          {
+            "name": "Dvergr Card",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "coordinates": {
+          "x": 37.4,
+          "y": 26.4
+        },
+        "name": "Leukewarm Reception",
+        "displayName": "Lv57 Leuke",
+        "mob": "Leuke",
+        "element": "earth",
+        "level": 57,
+        "experience": 21566102,
+        "tomestones": 105,
+        "spawnedBy": {
+          "name": "Tigerhawk",
+          "level": 62,
+          "element": "wind"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 7
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 8
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "coordinates": {
+          "x": 32.2,
+          "y": 25.3
+        },
+        "name": "Robber Barong",
+        "displayName": "Lv58 Barong",
+        "mob": "Barong",
+        "element": "fire",
+        "level": 58,
+        "experience": 24390235,
+        "tomestones": 108,
+        "spawnedBy": {
+          "name": "Laboratory Lion",
+          "level": 63,
+          "element": "earth"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 8
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 9
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "coordinates": {
+          "x": 36.3,
+          "y": 14.0
+        },
+        "name": "Stone-cold Killer",
+        "displayName": "Lv59 Ceto",
+        "mob": "Ceto",
+        "element": "water",
+        "level": 59,
+        "experience": 25699605,
+        "tomestones": 114,
+        "spawnedBy": {
+          "name": "Hydatos Delphyne",
+          "level": 64,
+          "element": "fire"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 8
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 9
+          },
+          {
+            "name": "Ceto's Claw",
+            "quantity": 1,
+            "rareDrop": true
+          },
+          {
+            "name": "Hydatos Cluster",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "coordinates": {
+          "x": 32.8,
+          "y": 19.5
+        },
+        "name": "Crystalline Provenance",
+        "displayName": "Lv60 Provenance Watcher",
+        "mob": "Provenance Watcher",
+        "element": "fire",
+        "level": 60,
+        "experience": 25699605,
+        "tomestones": 120,
+        "spawnedBy": {
+          "name": "Crystal Claw",
+          "level": 65,
+          "element": "fire"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 9
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 10
+          },
+          {
+            "name": "Crystalline Scale",
+            "quantity": 3,
+            "goldRequired": true
+          },
+          {
+            "name": "Provenance Watcher Card",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "coordinates": {
+          "x": 26.3,
+          "y": 29.2
+        },
+        "name": "I Don't Want To Believe",
+        "displayName": "Ovni",
+        "mob": "Ovni",
+        "element": "water",
+        "level": 60,
+        "experience": 25699605,
+        "tomestones": 120,
+        "spawnedBy": {
+          "timer": 20
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 9
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 10
+          },
+          {
+            "name": "Obscure Logogram",
+            "quantity": 1,
+            "rareDrop": true
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "coordinates": {
+          "x": 18.7,
+          "y": 28.4
+        },
+        "name": "The Baldesion Arsenal: Expedition Support",
+        "displayName": "Support FATE (Tristitia)",
+        "mob": "Tristitia",
+        "element": "wind",
+        "level": 60,
+        "experience": 25699605,
+        "tomestones": 120,
+        "spawnedBy": {
+          "duty": "The Baldesion Arsenal"
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 9
+          },
+          {
+            "name": "Hydatos Crystal",
+            "quantity": 30
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "coordinates": {
+          "x": 13.8,
+          "y": 21.6
+        },
+        "name": "Drink Me",
+        "displayName": "Bunny FATE",
+        "mob": "Bunny FATE",
+        "element": "lightning",
+        "level": 50,
+        "experience": 2536625,
+        "tomestones": 30,
+        "spawnedBy": {
+          "timer": 8
+        },
+        "rewards": [
+          {
+            "name": "Hydatos Lockbox",
+            "quantity": 3
+          }
+        ]
       }
     ]
   }
