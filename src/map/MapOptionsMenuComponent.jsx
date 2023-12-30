@@ -23,6 +23,7 @@ export default function MapOptionsMenuComponent({ options, updateOptions }) {
     quests: 'Quest Locations',
     portals: 'Baldesion Arsenal Portals',
     nms: 'Notorious Monsters',
+    mobPacks: 'Mob Packs',
   };
 
   const menuItems = Object.keys(options);
@@ -33,14 +34,15 @@ export default function MapOptionsMenuComponent({ options, updateOptions }) {
       sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
     >
       <nav>
-        <List>
+        <List dense disablePadding>
           {
             menuItems.map((value) => (
               <ListItem
                 dense
+                disablePadding
                 onClick={handleToggle(value)}
               >
-                <ListItemButton>
+                <ListItemButton dense>
                   <ListItemIcon>
                     <Checkbox
                       edge="start"

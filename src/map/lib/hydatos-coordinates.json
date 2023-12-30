@@ -1280,8 +1280,8 @@
       {
         "id": 6,
         "coordinates": {
-          "x": 29.1,
-          "y": 23.0
+          "x": 28.9,
+          "y": 23.5
         },
         "name": "Duty-free",
         "displayName": "Lv56 Goldemar",
@@ -1547,6 +1547,38 @@
             "name": "Hydatos Lockbox",
             "quantity": 3
           }
+        ]
+      }
+    ]
+  },
+  "mobPacks": {
+    "prefix": "hm",
+    "name": "Mob Pack",
+    "shouldDisplayText": true,
+    "markerType": "poly",
+    "entities": [
+      {
+        "id": 0,
+        "name": "Dark Gargoyle",
+        "displayName": "Lv64 Dark Gargoyle",
+        "element": "lightning",
+        "coordinates": {
+          "x": 35,
+          "y": 15
+        },
+        "pointArray": [
+          0.1,
+          -1.2,
+          0.5,
+          -0.6,
+          0.5,
+          1.0,
+          -0.1,
+          1.1,
+          -1.0,
+          0.5,
+          -0.1,
+          -1.1
         ]
       }
     ]

@@ -9,7 +9,7 @@ export default function DRSHolsterContainerComponent(
   return (
     <Box>
       <Stack
-        direction={{ xl: 'row' }}
+        direction={{ lg: 'row' }}
         spacing={2}
       >
         <DRSHolsterBagComponent

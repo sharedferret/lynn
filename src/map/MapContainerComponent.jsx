@@ -69,6 +69,7 @@ export default function MapContainerComponent() {
         quests: true,
         portals: false,
         nms: true,
+        mobPacks: false,
       },
     },
     baldesionarsenal: {
@@ -122,6 +123,10 @@ export default function MapContainerComponent() {
   const updateOptions = useCallback((newOptions) => {
     setOptions(newOptions);
   }, [setOptions]);
+
+  const handleInfoboxCloseButton = useCallback(() => {
+    setTextVisible(false);
+  }, [setTextVisible]);
 
   const handleScrollWheel = useCallback((e) => {
     /**
@@ -181,8 +186,8 @@ export default function MapContainerComponent() {
   const handleMouseMove = useCallback((e) => {
     const stage = e.target.getStage();
     const pointerPosition = stage.getRelativePointerPosition();
-    setCursorX((pointerPosition.x / maps[currentMap].scale) + 1);
-    setCursorY((pointerPosition.y / maps[currentMap].scale) + 1);
+    // setCursorX((pointerPosition.x / maps[currentMap].scale) + 1);
+    // setCursorY((pointerPosition.y / maps[currentMap].scale) + 1);
   }, [setCursorX, setCursorY, currentMap]);
 
   /**
@@ -248,6 +253,8 @@ export default function MapContainerComponent() {
     return () => window.removeEventListener('resize', handleResize);
   }, [setCanvasHeight, setCanvasWidth]);
 
+  console.log('redraw', new Date());
+
   /**
    * Primary render
    */
@@ -278,6 +285,7 @@ export default function MapContainerComponent() {
         textY={textY}
         textVisible={textVisible}
         theme={theme}
+        handleCloseButton={handleInfoboxCloseButton}
       />
       <Box
         position="absolute"
@@ -291,7 +299,7 @@ export default function MapContainerComponent() {
           p={2}
         >
           {mapSelector}
-          <Typography>{`${cursorX.toFixed(2)}, ${cursorY.toFixed(2)}`}</Typography>
+
         </Stack>
       </Box>
       <Box
