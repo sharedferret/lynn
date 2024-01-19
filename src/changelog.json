@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "version": "19.0",
+      "timestamp": "2024-01-19",
+      "changes": [
+        "Added permalinks to BA loadouts",
+        "Added custom Eureka loadout links",
+        "Added Eureka Loadout Creator"
+      ]
+    },
+    {
       "version": "18.1",
       "timestamp": "2023-12-16",
       "changes": [

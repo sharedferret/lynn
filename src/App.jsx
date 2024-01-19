@@ -83,6 +83,28 @@ function WrappedMainComponent({ component, page }) {
         colorModeContext={ColorModeContext}
       />
     );
+  } if (page === 'eurekaloadout') {
+    return (
+      <MainComponent
+        component={component}
+        encodedHolster={params.holsterstring}
+        colorModeContext={ColorModeContext}
+      />
+    );
+  } if (page === 'ba') {
+    return (
+      <MainComponent
+        component={component}
+        holster={
+          {
+            role: params.role,
+            tray: params.tray,
+          }
+        }
+        encodedHolster={params.holsterstring}
+        colorModeContext={ColorModeContext}
+      />
+    );
   }
 
   return (
@@ -108,10 +130,22 @@ const router = createBrowserRouter([
   {
     path: '/ba',
     element: <WrappedMainComponent component={<BAMainComponent />} page="ba" />,
+    children: [
+      {
+        path: '/ba/:role/:tray',
+        element: <WrappedMainComponent component={<BAMainComponent />} page="ba" />,
+      },
+    ],
   },
   {
     path: '/eureka/loadout',
     element: <WrappedMainComponent component={<EurekaLoadoutMainComponent />} page="eurekaloadout" />,
+    children: [
+      {
+        path: '/eureka/loadout/:holsterstring',
+        element: <WrappedMainComponent component={<EurekaLoadoutMainComponent />} page="eurekaloadout" />,
+      },
+    ],
   },
   {
     path: '/eureka/logos',

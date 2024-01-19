@@ -6,6 +6,7 @@
         {
           "title": "First Timer",
           "subtitle": "Skirmisher, Death",
+          "uri": "newbie",
           "buttonIcon": "skirmisher",
           "plates": [
             {
@@ -25,6 +26,7 @@
         {
           "title": "Standard",
           "subtitle": "Elder, Magic Burst",
+          "uri": "standard",
           "buttonIcon": "elder",
           "plates": [
             {
@@ -48,6 +50,7 @@
         {
           "title": "Advanced",
           "subtitle": "Elder, Magic Burst",
+          "uri": "advanced",
           "buttonIcon": "elder",
           "plates": [
             {
@@ -75,6 +78,7 @@
         {
           "title": "Spirit Dart",
           "subtitle": "Elder, Spirit Dart",
+          "uri": "spiritdart",
           "buttonIcon": "spiritdart",
           "plates": [
             {
@@ -99,6 +103,7 @@
         {
           "title": "First Timer",
           "subtitle": "Skirmisher, Death",
+          "uri": "newbie",
           "buttonIcon": "skirmisher",
           "plates": [
             {
@@ -118,6 +123,7 @@
         {
           "title": "Standard",
           "subtitle": "Duelist, Rapid Recast",
+          "uri": "standard",
           "buttonIcon": "duelist",
           "plates": [
             {
@@ -137,6 +143,7 @@
         {
           "title": "Advanced",
           "subtitle": "Double Edge chaining",
+          "uri": "advanced",
           "buttonIcon": "doubleedge",
           "plates": [
             {
@@ -176,6 +183,7 @@
         {
           "title": "Spirit Dart",
           "subtitle": "Duelist, Spirit Dart",
+          "uri": "spiritdart",
           "buttonIcon": "spiritdart",
           "plates": [
             {
@@ -194,12 +202,13 @@
         }
       ]
     },
-    "physicalRanged": {
+    "ranged": {
       "name": "Physical Ranged DPS",
       "trays": [
         {
           "title": "First Timer",
           "subtitle": "Skirmisher, Death",
+          "uri": "newbie",
           "buttonIcon": "skirmisher",
           "plates": [
             {
@@ -219,6 +228,7 @@
         {
           "title": "Standard",
           "subtitle": "Fiendhunter, Rapid Recast",
+          "uri": "standard",
           "buttonIcon": "fiendhunter",
           "plates": [
             {
@@ -238,6 +248,7 @@
         {
           "title": "Advanced",
           "subtitle": "Irregular, Eagle Eye Shot",
+          "uri": "advanced",
           "buttonIcon": "eagleeyeshot",
           "plates": [
             {
@@ -269,6 +280,7 @@
         {
           "title": "Spirit Dart",
           "subtitle": "Fiendhunter, Spirit Dart",
+          "uri": "spiritdart",
           "buttonIcon": "spiritdart",
           "plates": [
             {
@@ -287,12 +299,13 @@
         }
       ]
     },
-    "blueDps": {
+    "blue-dps": {
       "name": "Tank / Blue DPS",
       "trays": [
         {
           "title": "First Timer",
           "subtitle": "Martialist, Death",
+          "uri": "newbie",
           "buttonIcon": "martialist",
           "plates": [
             {
@@ -312,6 +325,7 @@
         {
           "title": "Standard",
           "subtitle": "Martialist, Double Edge",
+          "uri": "standard",
           "buttonIcon": "martialist",
           "plates": [
             {
@@ -331,6 +345,7 @@
         {
           "title": "Advanced",
           "subtitle": "Indom + DE Chaining",
+          "uri": "advanced",
           "buttonIcon": "indomitable",
           "plates": [
             {
@@ -370,6 +385,7 @@
         {
           "title": "Feint",
           "subtitle": "Martialist, Feint",
+          "uri": "feint",
           "buttonIcon": "feint",
           "plates": [
             {
@@ -388,12 +404,14 @@
         }
       ]
     },
-    "mainTank": {
+    "main-tank": {
       "name": "Main Tank",
+      "uri": "maintank",
       "trays": [
         {
           "title": "Guardian",
           "subtitle": "Guardian, Rapid Recast",
+          "uri": "guardian",
           "buttonIcon": "guardian",
           "plates": [
             {
@@ -413,6 +431,7 @@
         {
           "title": "Standard",
           "subtitle": "Indomitable",
+          "uri": "indom",
           "buttonIcon": "indomitable",
           "plates": [
             {
@@ -436,6 +455,7 @@
         {
           "title": "Advanced",
           "subtitle": "Indomitable, Double Edge",
+          "uri": "advanced",
           "buttonIcon": "doubleedge",
           "plates": [
             {
@@ -476,10 +496,12 @@
     },
     "healer": {
       "name": "Healer",
+      "uri": "healer",
       "trays": [
         {
           "title": "Standard / First Timer",
           "subtitle": "Aetherweaver, Refresh",
+          "uri": "newbie",
           "buttonIcon": "refresh",
           "plates": [
             {
@@ -507,6 +529,7 @@
         {
           "title": "Heavy Healing",
           "subtitle": "Templar, Rejuvenate",
+          "uri": "templar",
           "buttonIcon": "templar",
           "plates": [
             {
@@ -534,6 +557,7 @@
         {
           "title": "Damage",
           "subtitle": "Aetherweaver, Magic Burst",
+          "uri": "damage",
           "buttonIcon": "magicburst",
           "plates": [
             {
@@ -557,6 +581,7 @@
         {
           "title": "Feint",
           "subtitle": "Aetherweaver, Feint",
+          "uri": "feint",
           "buttonIcon": "feint",
           "plates": [
             {
@@ -580,6 +605,7 @@
         {
           "title": "Bravery",
           "subtitle": "Aetherweaver, Bravery",
+          "uri": "bravery",
           "buttonIcon": "bravery",
           "plates": [
             {
@@ -599,6 +625,7 @@
         {
           "title": "Sacrifice",
           "subtitle": "Aetherweaver, Sacrifice",
+          "uri": "sacrifice",
           "buttonIcon": "sacrifice",
           "plates": [
             {
@@ -631,10 +658,12 @@
     },
     "perceptor": {
       "name": "Perceptor",
+      "uri": "percept",
       "trays": [
         {
           "title": "Safety",
           "subtitle": "Platebearer, Perception",
+          "uri": "safety",
           "buttonIcon": "platebearer",
           "plates": [
             {
@@ -654,6 +683,7 @@
         {
           "title": "Damage",
           "subtitle": "Skirmisher, Perception",
+          "uri": "damage",
           "buttonIcon": "skirmisher",
           "plates": [
             {
@@ -673,6 +703,7 @@
         {
           "title": "Fast",
           "subtitle": "Swift, Perception",
+          "uri": "fast",
           "buttonIcon": "swift",
           "plates": [
             {

@@ -102,6 +102,14 @@ function SidebarComponent({
       </StyledButton>
 
       <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'eureka/loadout'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Loadout Creator</Typography>
+      </StyledButton>
+
+      <StyledButton
         onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.EUREKA_NMS)}
         key={uuidv4()}
       >

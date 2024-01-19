@@ -4,7 +4,11 @@ import { Helmet } from 'react-helmet';
 
 import BAMainContentComponent from './BAMainContentComponent';
 
-export default function BAMainComponent() {
+export default function BAMainComponent({
+  holster,
+  encodedHolster,
+  resetTimer,
+}) {
   return (
     <Box
       component="main"
@@ -24,7 +28,11 @@ export default function BAMainComponent() {
         <meta name="twitter:creator" content="@reflexyui" />
       </Helmet>
 
-      <BAMainContentComponent />
+      <BAMainContentComponent
+        holster={holster}
+        encodedHolster={encodedHolster}
+        resetTimer={resetTimer}
+      />
     </Box>
 
   );
