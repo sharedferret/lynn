@@ -150,6 +150,26 @@
       "charges": 3,
       "actionText": "Increases damage dealt by 20%.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
     },
+    "Wisdom of the Watcher": {
+      "full": "Wisdom of the Watcher",
+      "short": "Watcher",
+      "image": "watcher",
+      "type": "otherAction",
+      "code": "L",
+      "recipes": [
+        [
+          "Stealth L",
+          "Stealth L"
+        ]
+      ],
+      "allowedRoles": [
+        "tank"
+      ],
+      "abilityType": "Spell",
+      "recastTime": 10,
+      "charges": 3,
+      "actionText": "Increases evasion by 25% while reducing damage dealt by 5%.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
+    },
     "Wisdom of the Templar": {
       "full": "Wisdom of the Templar",
       "short": "Templar",
@@ -243,110 +263,6 @@
       "charges": 3,
       "actionText": "Increases poison resistance and movement speed, including mount speed, and increases evasion by 10%.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
     },
-    "Wisdom of the Elder": {
-      "full": "Wisdom of the Elder",
-      "short": "Elder",
-      "image": "elder",
-      "type": "wisdom",
-      "code": "j",
-      "recipes": [
-        [
-          "Wisdom of the Aetherweaver",
-          "Wisdom of the Ordained",
-          "Magic Burst L"
-        ],
-        [
-          "Wisdom of the Guardian",
-          "Stoneskin L",
-          "Magic Burst L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster"
-      ],
-      "abilityType": "Spell",
-      "recastTime": 10,
-      "charges": 3,
-      "actionText": "Increases magic damage dealt by 35% while reducing magic damage taken by 22% and decreasing spell MP cost.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
-    },
-    "Wisdom of the Duelist": {
-      "full": "Wisdom of the Duelist",
-      "short": "Duelist",
-      "image": "duelist",
-      "type": "wisdom",
-      "code": "k",
-      "recipes": [
-        [
-          "Backstep L",
-          "Bloodbath L",
-          "Double Edge L"
-        ],
-        [
-          "Wisdom of the Skirmisher",
-          "Wisdom of the Skirmisher",
-          "Double Edge L"
-        ]
-      ],
-      "allowedRoles": [
-        "melee"
-      ],
-      "abilityType": "Spell",
-      "recastTime": 10,
-      "charges": 3,
-      "actionText": "Increases physical damage dealt by 40% and maximum HP by 15%.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
-    },
-    "Wisdom of the Fiendhunter": {
-      "full": "Wisdom of the Fiendhunter",
-      "short": "Fiendhunter",
-      "image": "fiendhunter",
-      "type": "wisdom",
-      "code": "l",
-      "recipes": [
-        [
-          "Featherfoot L",
-          "Spirit Dart L",
-          "Eagle Eye Shot L"
-        ],
-        [
-          "Feint L",
-          "Tranquilizer L",
-          "Eagle Eye Shot L"
-        ]
-      ],
-      "allowedRoles": [
-        "physicalRanged"
-      ],
-      "abilityType": "Spell",
-      "recastTime": 10,
-      "charges": 3,
-      "actionText": "Increases physical damage dealt by 25% and evasion by 25%.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
-    },
-    "Wisdom of the Indomitable": {
-      "full": "Wisdom of the Indomitable",
-      "short": "Indomitable",
-      "image": "indomitable",
-      "type": "wisdom",
-      "code": "m",
-      "recipes": [
-        [
-          "Wisdom of the Platebearer",
-          "Incense L",
-          "Double Edge L"
-        ],
-        [
-          "Protect L",
-          "Spirit of the Remembered",
-          "Double Edge L"
-        ]
-      ],
-      "allowedRoles": [
-        "tank"
-      ],
-      "abilityType": "Spell",
-      "recastTime": 10,
-      "charges": 3,
-      "actionText": "Reduces damage taken by 64%.\nGrants one stack of HP Boost each time damage equal to or greater than half of maximum HP is taken from a single-target attack.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
-    },
     "Spirit of the Remembered": {
       "full": "Spirit of the Remembered",
       "short": "Remembered",
@@ -379,296 +295,6 @@
       "charges": 1,
       "duration": "180m",
       "actionText": "Increases maximum HP by 10% and accuracy by 30%.\nAdditional Effect: Grants a 70% chance of automatic revival upon KO."
-    },
-    "Catastrophe L": {
-      "full": "Catastrophe L",
-      "short": "Catastrophe",
-      "image": "catastrophe",
-      "type": "personalAction",
-      "code": "o",
-      "recipes": [
-        [
-          "Bloodbath L",
-          "Bloodbath L"
-        ],
-        [
-          "Wisdom of the Guardian",
-          "Spirit Dart L"
-        ],
-        [
-          "Spirit Dart L",
-          "Spirit Dart L",
-          "Spirit Dart L"
-        ]
-      ],
-      "allowedRoles": [
-        "physicalRanged",
-        "melee",
-        "tank"
-      ],
-      "abilityType": "Ability",
-      "recastTime": 300,
-      "charges": 3,
-      "actionText": "Deals unaspected damage to all nearby enemies with a potency of 4,000, while dealing damage with a potency of 999,999 to self."
-    },
-    "Rejuvenate L": {
-      "full": "Rejuvenate L",
-      "short": "Rejuvenate",
-      "image": "rejuvenate",
-      "type": "personalAction",
-      "code": "p",
-      "recipes": [
-        [
-          "Bloodbath L",
-          "Shell L"
-        ],
-        [
-          "Spirit of the Remembered",
-          "Spirit Dart L"
-        ],
-        [
-          "Wisdom of the Aetherweaver",
-          "Wisdom of the Martialist",
-          "Cure L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "physicalRanged",
-        "melee",
-        "healer",
-        "tank"
-      ],
-      "abilityType": "Ability",
-      "recastTime": 30,
-      "charges": 50,
-      "actionText": "Instantly restores 50% of maximum HP and MP."
-    },
-    "Rapid Recast L": {
-      "full": "Rapid Recast L",
-      "short": "Rapid Recast",
-      "image": "rapidrecast",
-      "type": "personalAction",
-      "code": "q",
-      "recipes": [
-        [
-          "Esuna L",
-          "Dispel L"
-        ],
-        [
-          "Cure L",
-          "Esuna L",
-          "Feint L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "physicalRanged",
-        "melee",
-        "tank"
-      ],
-      "abilityType": "Ability",
-      "recastTime": 90,
-      "duration": "15s",
-      "charges": 50,
-      "actionText": "Shortens recast time for next ability used by 50%."
-    },
-    "Focus L": {
-      "full": "Focus L",
-      "short": "Focus",
-      "image": "focus",
-      "type": "personalAction",
-      "code": "r",
-      "recipes": [
-        [
-          "Wisdom of the Skirmisher",
-          "Bloodbath L"
-        ],
-        [
-          "Bloodbath L",
-          "Bloodbath L",
-          "Bloodbath L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "physicalRanged",
-        "melee",
-        "healer",
-        "tank"
-      ],
-      "abilityType": "Ability",
-      "recastTime": 2.5,
-      "duration": "30s",
-      "charges": 99,
-      "actionText": "Grants a stack of Boost, up to a maximum of 16.\nBoost Bonus: Increases potency of next weaponskill by 30% per stack.\nShares a recast timer with all weaponskills."
-    },
-    "Magic Burst L": {
-      "full": "Magic Burst L",
-      "short": "Magic Burst",
-      "image": "magicburst",
-      "type": "personalAction",
-      "code": "s",
-      "recipes": [
-        [
-          "Magic Burst L"
-        ],
-        [
-          "Spirit of the Remembered",
-          "Wisdom of the Ordained",
-          "Stoneskin L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "healer"
-      ],
-      "abilityType": "Ability",
-      "recastTime": 90,
-      "duration": "20s",
-      "charges": 10,
-      "actionText": "Increases spell damage by 100% while increasing MP cost."
-    },
-    "Double Edge L": {
-      "full": "Double Edge L",
-      "short": "Double Edge",
-      "image": "doubleedge",
-      "type": "personalAction",
-      "code": "t",
-      "recipes": [
-        [
-          "Double Edge L"
-        ],
-        [
-          "Wisdom of the Skirmisher",
-          "Bloodbath L",
-          "Wisdom of the Guardian"
-        ]
-      ],
-      "allowedRoles": [
-        "melee",
-        "tank"
-      ],
-      "abilityType": "Ability",
-      "recastTime": 90,
-      "duration": "48s",
-      "charges": 10,
-      "actionText": "Increases physical damage dealt while dealing damage to self over time.\nStacks increase every 3 seconds, up to a maximum of 16.\nFor each stack, physical damage dealt is increased by 15%, and potency of damage dealt to self increases by 1,200."
-    },
-    "Eagle Eye Shot L": {
-      "full": "Eagle Eye Shot L",
-      "short": "EES",
-      "image": "eagleeyeshot",
-      "type": "personalAction",
-      "code": "u",
-      "recipes": [
-        [
-          "Eagle Eye Shot L"
-        ],
-        [
-          "Wisdom of the Skirmisher",
-          "Spirit of the Remembered",
-          "Spirit Dart L"
-        ]
-      ],
-      "allowedRoles": [
-        "physicalRanged"
-      ],
-      "abilityType": "Weaponskill",
-      "recastTime": 2.5,
-      "charges": 30,
-      "actionText": "Delivers a ranged attack with a potency of 80.\nPotency increases up to 1,000% the lower the target's HP.\nGenerates significant enmity upon use."
-    },
-    "Death L": {
-      "full": "Death L",
-      "short": "Death",
-      "image": "death",
-      "type": "beneficialAction",
-      "code": "v",
-      "recipes": [
-        [
-          "Raise L",
-          "Dispel L"
-        ],
-        [
-          "Raise L",
-          "Tranquilizer L",
-          "Tranquilizer L"
-        ],
-        [
-          "Wisdom of the Aetherweaver",
-          "Paralyze L",
-          "Raise L"
-        ],
-        [
-          "Dispel L",
-          "Dispel L",
-          "Dispel L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "physicalRanged",
-        "melee",
-        "healer",
-        "tank"
-      ],
-      "abilityType": "Spell",
-      "castTime": 5,
-      "recastTime": 300,
-      "charges": 30,
-      "actionText": "KOs target. The less the target's HP, the greater the chance of success."
-    },
-    "Feint L": {
-      "full": "Feint L",
-      "short": "Feint",
-      "image": "feint",
-      "type": "beneficialAction",
-      "code": "w",
-      "recipes": [
-        [
-          "Feint L"
-        ]
-      ],
-      "allowedRoles": [
-        "healer",
-        "tank"
-      ],
-      "abilityType": "Weaponskill",
-      "duration": "60s",
-      "recastTime": 2.5,
-      "actionText": "Delivers an attack with a potency of 100.\nAdditional Effect: Reduces target's evasion."
-    },
-    "Spirit Dart L": {
-      "full": "Spirit Dart L",
-      "short": "Spirit Dart",
-      "image": "spiritdart",
-      "type": "beneficialAction",
-      "code": "x",
-      "recipes": [
-        [
-          "Spirit Dart L"
-        ],
-        [
-          "Tranquilizer L",
-          "Wisdom of the Ordained"
-        ],
-        [
-          "Wisdom of the Aetherweaver",
-          "Paralyze L",
-          "Tranquilizer L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "physicalRanged",
-        "melee"
-      ],
-      "abilityType": "Weaponskill",
-      "duration": "60s",
-      "recastTime": 2.5,
-      "charges": 50,
-      "actionText": "Delivers a ranged attack with a potency of 100.\nAdditional Effect: Afflicts target with Spirit Dart L, increasing damage taken by 8%."
     },
     "Protect L": {
       "full": "Protect L",
@@ -722,138 +348,100 @@
       "recastTime": 2.5,
       "actionText": "Reduces magic damage taken by 22%."
     },
-    "Dispel L": {
-      "full": "Dispel L",
-      "short": "Dispel",
-      "image": "dispel",
+    "Death L": {
+      "full": "Death L",
+      "short": "Death",
+      "image": "death",
       "type": "beneficialAction",
-      "code": "A",
+      "code": "v",
       "recipes": [
         [
+          "Raise L",
           "Dispel L"
         ],
         [
-          "Esuna L",
-          "Wisdom of the Ordained"
-        ],
-        [
-          "Esuna L",
-          "Esuna L",
-          "Esuna L"
-        ],
-        [
-          "Tranquilizer L",
+          "Raise L",
           "Tranquilizer L",
           "Tranquilizer L"
+        ],
+        [
+          "Wisdom of the Aetherweaver",
+          "Paralyze L",
+          "Raise L"
+        ],
+        [
+          "Dispel L",
+          "Dispel L",
+          "Dispel L"
         ]
       ],
       "allowedRoles": [
         "caster",
         "physicalRanged",
         "melee",
-        "healer"
+        "healer",
+        "tank"
       ],
       "abilityType": "Spell",
-      "castTime": 2.5,
-      "recastTime": 2.5,
-      "actionText": "Removes one beneficial status from target."
+      "castTime": 5,
+      "recastTime": 300,
+      "charges": 30,
+      "actionText": "KOs target. The less the target's HP, the greater the chance of success."
     },
-    "Perception L": {
-      "full": "Perception L",
-      "short": "Perception",
-      "image": "perception",
-      "type": "beneficialAction",
-      "code": "B",
+    "Focus L": {
+      "full": "Focus L",
+      "short": "Focus",
+      "image": "focus",
+      "type": "personalAction",
+      "code": "r",
       "recipes": [
         [
-          "Wisdom of the Breathtaker",
-          "Wisdom of the Breathtaker"
+          "Wisdom of the Skirmisher",
+          "Bloodbath L"
         ],
         [
-          "Stealth L",
-          "Dispel L",
-          "Wisdom of the Breathtaker"
+          "Bloodbath L",
+          "Bloodbath L",
+          "Bloodbath L"
         ]
       ],
       "allowedRoles": [
         "caster",
         "physicalRanged",
-        "melee"
+        "melee",
+        "healer",
+        "tank"
       ],
       "abilityType": "Ability",
-      "recastTime": 3.5,
-      "charges": 99,
-      "actionText": "Reveals all traps within a 15-yalm radius. If no traps exist within 15 yalms, detects whether any traps are present within a 36-yalm radius.\nOnly effective within dungeons."
-    },
-    "Sacrifice L": {
-      "full": "Sacrifice L",
-      "short": "Sacrifice",
-      "image": "sacrifice",
-      "type": "beneficialAction",
-      "code": "C",
-      "recipes": [
-        [
-          "Esuna L",
-          "Raise L",
-          "Magic Burst L"
-        ]
-      ],
-      "allowedRoles": [
-        "healer"
-      ],
-      "abilityType": "Spell",
-      "duration": "10s",
-      "castTime": 3,
       "recastTime": 2.5,
-      "charges": 10,
-      "actionText": "Restores 100% of target's HP, even if target is KO'd.\nCannot be executed if currently afflicted with Doom.\nAdditional Effect: Inflicts Doom on self."
-    },
-    "Refresh L": {
-      "full": "Refresh L",
-      "short": "Refresh",
-      "image": "refresh",
-      "type": "beneficialAction",
-      "code": "D",
-      "recipes": [
-        [
-          "Wisdom of the Aetherweaver",
-          "Wisdom of the Ordained",
-          "Cure L II"
-        ]
-      ],
-      "allowedRoles": [
-        "healer"
-      ],
-      "abilityType": "Spell",
       "duration": "30s",
-      "castTime": 3,
-      "recastTime": 2.5,
       "charges": 99,
-      "actionText": "Increases the amount of magia aether regenerated over time by self and nearby party members."
+      "actionText": "Grants a stack of Boost, up to a maximum of 16.\nBoost Bonus: Increases potency of next weaponskill by 30% per stack.\nShares a recast timer with all weaponskills."
     },
-    "Bravery L": {
-      "full": "Bravery L",
-      "short": "Bravery",
-      "image": "bravery",
-      "type": "beneficialAction",
-      "code": "E",
+    "Paralyze L": {
+      "full": "Paralyze L",
+      "short": "Paralyze",
+      "image": "paralyze",
+      "type": "otherAction",
+      "code": "M",
       "recipes": [
         [
-          "Wisdom of the Skirmisher",
-          "Wisdom of the Guardian",
-          "Wisdom of the Ordained"
+          "Paralyze L"
         ]
       ],
       "allowedRoles": [
         "caster",
-        "healer"
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
       ],
       "abilityType": "Spell",
-      "duration": "300s",
+      "duration": "60s",
       "castTime": 2.5,
       "recastTime": 2.5,
       "charges": 99,
-      "actionText": "Increases target's damage dealt by 10%."
+      "actionText": "Afflicts target with Paralysis."
     },
     "Paralyze L III": {
       "full": "Paralyze L III",
@@ -921,178 +509,6 @@
       "charges": 20,
       "actionText": "Greatly increases movement speed."
     },
-    "Cure L III": {
-      "full": "Cure L III",
-      "short": "Cure 3",
-      "image": "cure3",
-      "type": "beneficialAction",
-      "code": "H",
-      "recipes": [
-        [
-          "Cure L II",
-          "Cure L II"
-        ],
-        [
-          "Bloodbath L",
-          "Wisdom of the Ordained"
-        ],
-        [
-          "Cure L",
-          "Cure L",
-          "Wisdom of the Ordained"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "physicalRanged",
-        "melee",
-        "tank"
-      ],
-      "abilityType": "Spell",
-      "castTime": 2,
-      "recastTime": 2.5,
-      "charges": 50,
-      "actionText": "Restores HP of target and all party members nearby target.\nCure Potency: 9,000."
-    },
-    "Incense L": {
-      "full": "Incense L",
-      "short": "Incense",
-      "image": "incense",
-      "type": "beneficialAction",
-      "code": "I",
-      "recipes": [
-        [
-          "Incense L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "physicalRanged",
-        "melee",
-        "healer"
-      ],
-      "abilityType": "Ability",
-      "duration": "15s",
-      "recastTime": 20,
-      "actionText": "Gesture threateningly, placing yourself at the top of the target's enmity list and increasing enmity generation."
-    },
-    "Reflect L": {
-      "full": "Reflect L",
-      "short": "Reflect",
-      "image": "reflect",
-      "type": "beneficialAction",
-      "code": "J",
-      "recipes": [
-        [
-          "Protect L",
-          "Wisdom of the Ordained",
-          "Shell L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "physicalRanged",
-        "melee",
-        "healer",
-        "tank"
-      ],
-      "abilityType": "Spell",
-      "duration": "10s",
-      "recastTime": 2.5,
-      "charges": 99,
-      "actionText": "Creates a magic-reflecting barrier around self or party member."
-    },
-    "Banish L": {
-      "full": "Banish L",
-      "short": "Banish",
-      "image": "banish",
-      "type": "beneficialAction",
-      "code": "K",
-      "recipes": [
-        [
-          "Wisdom of the Aetherweaver",
-          "Dispel L",
-          "Dispel L"
-        ]
-      ],
-      "allowedRoles": [
-        "healer"
-      ],
-      "abilityType": "Spell",
-      "duration": "60s",
-      "castTime": 2.5,
-      "recastTime": 2.5,
-      "charges": 99,
-      "actionText": "Deals unaspected damage with a potency of 200.\nAdditional Effect: Afflicts undead targets with Banish L, increasing damage taken by 25%."
-    },
-    "Wisdom of the Watcher": {
-      "full": "Wisdom of the Watcher",
-      "short": "Watcher",
-      "image": "watcher",
-      "type": "otherAction",
-      "code": "L",
-      "recipes": [
-        [
-          "Stealth L",
-          "Stealth L"
-        ]
-      ],
-      "allowedRoles": [
-        "tank"
-      ],
-      "abilityType": "Spell",
-      "recastTime": 10,
-      "charges": 3,
-      "actionText": "Increases evasion by 25% while reducing damage dealt by 5%.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
-    },
-    "Paralyze L": {
-      "full": "Paralyze L",
-      "short": "Paralyze",
-      "image": "paralyze",
-      "type": "otherAction",
-      "code": "M",
-      "recipes": [
-        [
-          "Paralyze L"
-        ]
-      ],
-      "allowedRoles": [
-        "caster",
-        "physicalRanged",
-        "melee",
-        "healer",
-        "tank"
-      ],
-      "abilityType": "Spell",
-      "duration": "60s",
-      "castTime": 2.5,
-      "recastTime": 2.5,
-      "charges": 99,
-      "actionText": "Afflicts target with Paralysis."
-    },
-    "Banish L III": {
-      "full": "Banish L III",
-      "short": "Banish 3",
-      "image": "banish3",
-      "type": "otherAction",
-      "code": "N",
-      "recipes": [
-        [
-          "Wisdom of the Ordained",
-          "Dispel L",
-          "Dispel L"
-        ]
-      ],
-      "allowedRoles": [
-        "healer"
-      ],
-      "abilityType": "Spell",
-      "duration": "60s",
-      "castTime": 3,
-      "recastTime": 2.5,
-      "charges": 50,
-      "actionText": "Deals unaspected damage with a potency of 150 to target and all enemies nearby it.\nAdditional Effect: Afflicts all undead targets with Banish L, increasing damage taken by 25%."
-    },
     "Featherfoot L": {
       "full": "Featherfoot L",
       "short": "Featherfoot",
@@ -1120,6 +536,124 @@
       "recastTime": 90,
       "charges": 50,
       "actionText": "Increases evasion by 15%."
+    },
+    "Spirit Dart L": {
+      "full": "Spirit Dart L",
+      "short": "Spirit Dart",
+      "image": "spiritdart",
+      "type": "beneficialAction",
+      "code": "x",
+      "recipes": [
+        [
+          "Spirit Dart L"
+        ],
+        [
+          "Tranquilizer L",
+          "Wisdom of the Ordained"
+        ],
+        [
+          "Wisdom of the Aetherweaver",
+          "Paralyze L",
+          "Tranquilizer L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee"
+      ],
+      "abilityType": "Weaponskill",
+      "duration": "60s",
+      "recastTime": 2.5,
+      "charges": 50,
+      "actionText": "Delivers a ranged attack with a potency of 100.\nAdditional Effect: Afflicts target with Spirit Dart L, increasing damage taken by 8%."
+    },
+    "Catastrophe L": {
+      "full": "Catastrophe L",
+      "short": "Catastrophe",
+      "image": "catastrophe",
+      "type": "personalAction",
+      "code": "o",
+      "recipes": [
+        [
+          "Bloodbath L",
+          "Bloodbath L"
+        ],
+        [
+          "Wisdom of the Guardian",
+          "Spirit Dart L"
+        ],
+        [
+          "Spirit Dart L",
+          "Spirit Dart L",
+          "Spirit Dart L"
+        ]
+      ],
+      "allowedRoles": [
+        "physicalRanged",
+        "melee",
+        "tank"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 300,
+      "charges": 3,
+      "actionText": "Deals unaspected damage to all nearby enemies with a potency of 4,000, while dealing damage with a potency of 999,999 to self."
+    },
+    "Dispel L": {
+      "full": "Dispel L",
+      "short": "Dispel",
+      "image": "dispel",
+      "type": "beneficialAction",
+      "code": "A",
+      "recipes": [
+        [
+          "Dispel L"
+        ],
+        [
+          "Esuna L",
+          "Wisdom of the Ordained"
+        ],
+        [
+          "Esuna L",
+          "Esuna L",
+          "Esuna L"
+        ],
+        [
+          "Tranquilizer L",
+          "Tranquilizer L",
+          "Tranquilizer L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "actionText": "Removes one beneficial status from target."
+    },
+    "Feint L": {
+      "full": "Feint L",
+      "short": "Feint",
+      "image": "feint",
+      "type": "beneficialAction",
+      "code": "w",
+      "recipes": [
+        [
+          "Feint L"
+        ]
+      ],
+      "allowedRoles": [
+        "healer",
+        "tank"
+      ],
+      "abilityType": "Weaponskill",
+      "duration": "60s",
+      "recastTime": 2.5,
+      "actionText": "Delivers an attack with a potency of 100.\nAdditional Effect: Reduces target's evasion."
     },
     "Stealth L": {
       "full": "Stealth L",
@@ -1257,6 +791,39 @@
       "charges": 30,
       "actionText": "Converts a portion of damage dealt into HP."
     },
+    "Rejuvenate L": {
+      "full": "Rejuvenate L",
+      "short": "Rejuvenate",
+      "image": "rejuvenate",
+      "type": "personalAction",
+      "code": "p",
+      "recipes": [
+        [
+          "Bloodbath L",
+          "Shell L"
+        ],
+        [
+          "Spirit of the Remembered",
+          "Spirit Dart L"
+        ],
+        [
+          "Wisdom of the Aetherweaver",
+          "Wisdom of the Martialist",
+          "Cure L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 30,
+      "charges": 50,
+      "actionText": "Instantly restores 50% of maximum HP and MP."
+    },
     "Haymaker L": {
       "full": "Haymaker L",
       "short": "Haymaker",
@@ -1282,6 +849,35 @@
       "recastTime": 30,
       "charges": 50,
       "actionText": "Delivers an attack with a potency of 300.\nCan only be executed immediately after evading an attack.\nAdditional Effect: Slow +20%."
+    },
+    "Rapid Recast L": {
+      "full": "Rapid Recast L",
+      "short": "Rapid Recast",
+      "image": "rapidrecast",
+      "type": "personalAction",
+      "code": "q",
+      "recipes": [
+        [
+          "Esuna L",
+          "Dispel L"
+        ],
+        [
+          "Cure L",
+          "Esuna L",
+          "Feint L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "tank"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 90,
+      "duration": "15s",
+      "charges": 50,
+      "actionText": "Shortens recast time for next ability used by 50%."
     },
     "Cure L": {
       "full": "Cure L",
@@ -1379,6 +975,39 @@
       "charges": 99,
       "actionText": "Creates a barrier around target that absorbs damage totaling 10% of the target's maximum HP."
     },
+    "Cure L III": {
+      "full": "Cure L III",
+      "short": "Cure 3",
+      "image": "cure3",
+      "type": "beneficialAction",
+      "code": "H",
+      "recipes": [
+        [
+          "Cure L II",
+          "Cure L II"
+        ],
+        [
+          "Bloodbath L",
+          "Wisdom of the Ordained"
+        ],
+        [
+          "Cure L",
+          "Cure L",
+          "Wisdom of the Ordained"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "tank"
+      ],
+      "abilityType": "Spell",
+      "castTime": 2,
+      "recastTime": 2.5,
+      "charges": 50,
+      "actionText": "Restores HP of target and all party members nearby target.\nCure Potency: 9,000."
+    },
     "Regen L": {
       "full": "Regen L",
       "short": "Regen",
@@ -1434,6 +1063,28 @@
       "recastTime": 2.5,
       "actionText": "Removes a single detrimental effect from target."
     },
+    "Incense L": {
+      "full": "Incense L",
+      "short": "Incense",
+      "image": "incense",
+      "type": "beneficialAction",
+      "code": "I",
+      "recipes": [
+        [
+          "Incense L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "duration": "15s",
+      "recastTime": 20,
+      "actionText": "Gesture threateningly, placing yourself at the top of the target's enmity list and increasing enmity generation."
+    },
     "Raise L": {
       "full": "Raise L",
       "short": "Raise",
@@ -1456,6 +1107,30 @@
       "recastTime": 2.5,
       "charges": 99,
       "actionText": "Resurrects target to a weakened state."
+    },
+    "Bravery L": {
+      "full": "Bravery L",
+      "short": "Bravery",
+      "image": "bravery",
+      "type": "beneficialAction",
+      "code": "E",
+      "recipes": [
+        [
+          "Wisdom of the Skirmisher",
+          "Wisdom of the Guardian",
+          "Wisdom of the Ordained"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "duration": "300s",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "charges": 99,
+      "actionText": "Increases target's damage dealt by 10%."
     },
     "Solid Shield L": {
       "full": "Solid Shield L",
@@ -1507,6 +1182,32 @@
       "charges": 30,
       "actionText": "Reduces magic damage taken by 99%."
     },
+    "Reflect L": {
+      "full": "Reflect L",
+      "short": "Reflect",
+      "image": "reflect",
+      "type": "beneficialAction",
+      "code": "J",
+      "recipes": [
+        [
+          "Protect L",
+          "Wisdom of the Ordained",
+          "Shell L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee",
+        "healer",
+        "tank"
+      ],
+      "abilityType": "Spell",
+      "duration": "10s",
+      "recastTime": 2.5,
+      "charges": 99,
+      "actionText": "Creates a magic-reflecting barrier around self or party member."
+    },
     "Smite L": {
       "full": "Smite L",
       "short": "Smite",
@@ -1527,6 +1228,305 @@
       "recastTime": 45,
       "charges": 30,
       "actionText": "Delivers an attack with a potency of 1,000.\nCan only be executed when your HP is below 50%.\nAdditional Effect: Restores an amount of own HP proportional to damage dealt."
+    },
+    "Refresh L": {
+      "full": "Refresh L",
+      "short": "Refresh",
+      "image": "refresh",
+      "type": "beneficialAction",
+      "code": "D",
+      "recipes": [
+        [
+          "Wisdom of the Aetherweaver",
+          "Wisdom of the Ordained",
+          "Cure L II"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "duration": "30s",
+      "castTime": 3,
+      "recastTime": 2.5,
+      "charges": 99,
+      "actionText": "Increases the amount of magia aether regenerated over time by self and nearby party members."
+    },
+    "Banish L": {
+      "full": "Banish L",
+      "short": "Banish",
+      "image": "banish",
+      "type": "beneficialAction",
+      "code": "K",
+      "recipes": [
+        [
+          "Wisdom of the Aetherweaver",
+          "Dispel L",
+          "Dispel L"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "duration": "60s",
+      "castTime": 2.5,
+      "recastTime": 2.5,
+      "charges": 99,
+      "actionText": "Deals unaspected damage with a potency of 200.\nAdditional Effect: Afflicts undead targets with Banish L, increasing damage taken by 25%."
+    },
+    "Banish L III": {
+      "full": "Banish L III",
+      "short": "Banish 3",
+      "image": "banish3",
+      "type": "otherAction",
+      "code": "N",
+      "recipes": [
+        [
+          "Wisdom of the Ordained",
+          "Dispel L",
+          "Dispel L"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "duration": "60s",
+      "castTime": 3,
+      "recastTime": 2.5,
+      "charges": 50,
+      "actionText": "Deals unaspected damage with a potency of 150 to target and all enemies nearby it.\nAdditional Effect: Afflicts all undead targets with Banish L, increasing damage taken by 25%."
+    },
+    "Magic Burst L": {
+      "full": "Magic Burst L",
+      "short": "Magic Burst",
+      "image": "magicburst",
+      "type": "personalAction",
+      "code": "s",
+      "recipes": [
+        [
+          "Magic Burst L"
+        ],
+        [
+          "Spirit of the Remembered",
+          "Wisdom of the Ordained",
+          "Stoneskin L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "healer"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 90,
+      "duration": "20s",
+      "charges": 10,
+      "actionText": "Increases spell damage by 100% while increasing MP cost."
+    },
+    "Double Edge L": {
+      "full": "Double Edge L",
+      "short": "Double Edge",
+      "image": "doubleedge",
+      "type": "personalAction",
+      "code": "t",
+      "recipes": [
+        [
+          "Double Edge L"
+        ],
+        [
+          "Wisdom of the Skirmisher",
+          "Bloodbath L",
+          "Wisdom of the Guardian"
+        ]
+      ],
+      "allowedRoles": [
+        "melee",
+        "tank"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 90,
+      "duration": "48s",
+      "charges": 10,
+      "actionText": "Increases physical damage dealt while dealing damage to self over time.\nStacks increase every 3 seconds, up to a maximum of 16.\nFor each stack, physical damage dealt is increased by 15%, and potency of damage dealt to self increases by 1,200."
+    },
+    "Eagle Eye Shot L": {
+      "full": "Eagle Eye Shot L",
+      "short": "EES",
+      "image": "eagleeyeshot",
+      "type": "personalAction",
+      "code": "u",
+      "recipes": [
+        [
+          "Eagle Eye Shot L"
+        ],
+        [
+          "Wisdom of the Skirmisher",
+          "Spirit of the Remembered",
+          "Spirit Dart L"
+        ]
+      ],
+      "allowedRoles": [
+        "physicalRanged"
+      ],
+      "abilityType": "Weaponskill",
+      "recastTime": 2.5,
+      "charges": 30,
+      "actionText": "Delivers a ranged attack with a potency of 80.\nPotency increases up to 1,000% the lower the target's HP.\nGenerates significant enmity upon use."
+    },
+    "Perception L": {
+      "full": "Perception L",
+      "short": "Perception",
+      "image": "perception",
+      "type": "beneficialAction",
+      "code": "B",
+      "recipes": [
+        [
+          "Wisdom of the Breathtaker",
+          "Wisdom of the Breathtaker"
+        ],
+        [
+          "Stealth L",
+          "Dispel L",
+          "Wisdom of the Breathtaker"
+        ]
+      ],
+      "allowedRoles": [
+        "caster",
+        "physicalRanged",
+        "melee"
+      ],
+      "abilityType": "Ability",
+      "recastTime": 3.5,
+      "charges": 99,
+      "actionText": "Reveals all traps within a 15-yalm radius. If no traps exist within 15 yalms, detects whether any traps are present within a 36-yalm radius.\nOnly effective within dungeons."
+    },
+    "Wisdom of the Elder": {
+      "full": "Wisdom of the Elder",
+      "short": "Elder",
+      "image": "elder",
+      "type": "wisdom",
+      "code": "j",
+      "recipes": [
+        [
+          "Wisdom of the Aetherweaver",
+          "Wisdom of the Ordained",
+          "Magic Burst L"
+        ],
+        [
+          "Wisdom of the Guardian",
+          "Stoneskin L",
+          "Magic Burst L"
+        ]
+      ],
+      "allowedRoles": [
+        "caster"
+      ],
+      "abilityType": "Spell",
+      "recastTime": 10,
+      "charges": 3,
+      "actionText": "Increases magic damage dealt by 35% while reducing magic damage taken by 22% and decreasing spell MP cost.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
+    },
+    "Wisdom of the Duelist": {
+      "full": "Wisdom of the Duelist",
+      "short": "Duelist",
+      "image": "duelist",
+      "type": "wisdom",
+      "code": "k",
+      "recipes": [
+        [
+          "Backstep L",
+          "Bloodbath L",
+          "Double Edge L"
+        ],
+        [
+          "Wisdom of the Skirmisher",
+          "Wisdom of the Skirmisher",
+          "Double Edge L"
+        ]
+      ],
+      "allowedRoles": [
+        "melee"
+      ],
+      "abilityType": "Spell",
+      "recastTime": 10,
+      "charges": 3,
+      "actionText": "Increases physical damage dealt by 40% and maximum HP by 15%.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
+    },
+    "Wisdom of the Fiendhunter": {
+      "full": "Wisdom of the Fiendhunter",
+      "short": "Fiendhunter",
+      "image": "fiendhunter",
+      "type": "wisdom",
+      "code": "l",
+      "recipes": [
+        [
+          "Featherfoot L",
+          "Spirit Dart L",
+          "Eagle Eye Shot L"
+        ],
+        [
+          "Feint L",
+          "Tranquilizer L",
+          "Eagle Eye Shot L"
+        ]
+      ],
+      "allowedRoles": [
+        "physicalRanged"
+      ],
+      "abilityType": "Spell",
+      "recastTime": 10,
+      "charges": 3,
+      "actionText": "Increases physical damage dealt by 25% and evasion by 25%.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
+    },
+    "Wisdom of the Indomitable": {
+      "full": "Wisdom of the Indomitable",
+      "short": "Indomitable",
+      "image": "indomitable",
+      "type": "wisdom",
+      "code": "m",
+      "recipes": [
+        [
+          "Wisdom of the Platebearer",
+          "Incense L",
+          "Double Edge L"
+        ],
+        [
+          "Protect L",
+          "Spirit of the Remembered",
+          "Double Edge L"
+        ]
+      ],
+      "allowedRoles": [
+        "tank"
+      ],
+      "abilityType": "Spell",
+      "recastTime": 10,
+      "charges": 3,
+      "actionText": "Reduces damage taken by 64%.\nGrants one stack of HP Boost each time damage equal to or greater than half of maximum HP is taken from a single-target attack.\nCannot be used with other Wisdom abilities.\nEffect ends upon reuse or upon replacement of duty action."
+    },
+    "Sacrifice L": {
+      "full": "Sacrifice L",
+      "short": "Sacrifice",
+      "image": "sacrifice",
+      "type": "beneficialAction",
+      "code": "C",
+      "recipes": [
+        [
+          "Esuna L",
+          "Raise L",
+          "Magic Burst L"
+        ]
+      ],
+      "allowedRoles": [
+        "healer"
+      ],
+      "abilityType": "Spell",
+      "duration": "10s",
+      "castTime": 3,
+      "recastTime": 2.5,
+      "charges": 10,
+      "actionText": "Restores 100% of target's HP, even if target is KO'd.\nCannot be executed if currently afflicted with Doom.\nAdditional Effect: Inflicts Doom on self."
     }
   }
 }

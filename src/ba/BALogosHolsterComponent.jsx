@@ -33,8 +33,8 @@ export default function BALogosHolsterComponent({ tray, encodedHolster }) {
       startingPlates = ([
         {
           index: 0,
-          umbral: '',
-          astral: '',
+          umbral: null,
+          astral: null,
         },
       ]);
     }

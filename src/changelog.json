@@ -6,7 +6,8 @@
       "changes": [
         "Added permalinks to BA loadouts",
         "Added custom Eureka loadout links",
-        "Added Eureka Loadout Creator"
+        "Added Eureka Loadout Creator",
+        "Added icon selector to logos action helper"
       ]
     },
     {

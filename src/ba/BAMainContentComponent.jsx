@@ -11,11 +11,6 @@ export default function BAMainContentComponent({
   /**
    * Render Logic
    */
-  console.log('passing props', {
-    holster,
-    encodedHolster,
-    resetTimer,
-  });
 
   return (
     <Stack>
