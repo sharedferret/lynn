@@ -417,9 +417,28 @@ export default function DRSNewHolsterSelectorComponent({
     </Stepper>
   ));
 
+  const displayStepperIntroText = (() => (
+    <Box>
+      <Typography textAlign="left">
+        Use this tool to see what Lost Actions you should bring on your DRS run.
+      </Typography>
+      <Typography textAlign="left" pt={1}>
+        Are you a DRS host? Use the
+        {' '}
+        <a href="/createdrsholsters">DRS Run Holster Creator</a>
+        {' '}
+        to get your holsters added to this page!
+      </Typography>
+    </Box>
+  ));
+
   return (
     <Box width="90%" maxWidth={1600} minHeight={600} mt="30px" ml="auto" mr="auto" pb="10px">
-      <Stack spacing={2}>
+      {!initialHolster || (initialHolster && initialHolster.showStepper)
+        ? displayStepperIntroText()
+        : null}
+
+      <Stack spacing={2} pt={2}>
         {!initialHolster || (initialHolster && initialHolster.showStepper)
           ? displayStepper()
           : null}

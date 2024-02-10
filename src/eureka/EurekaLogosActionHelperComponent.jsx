@@ -23,7 +23,6 @@ export default function EurekaLogosActionHelperComponent({ logosAction }) {
   const [selectedRecipe, setSelectedRecipe] = useState(initialSelectedRecipe);
 
   const handleActionUpdate = useCallback((event) => {
-    console.log('action update', event);
     const newLogosActionData = EurekaLogosActionHelper.getLogosActionData(event.target.value);
     const logosActionUrl = event.target.value.replaceAll(' ', '_');
     window.history.pushState(logosActionUrl, `lynn.pet! - ${logosActionUrl}`, `/eureka/logos/${event.target.value.replaceAll(' ', '_')}`);

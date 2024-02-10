@@ -20,7 +20,6 @@ import LynnReferenceComponent from './reference/LynnReferenceComponent';
 import BozjaLostActionHelperComponent from './drs/BozjaLostActionHelperComponent';
 import EurekaLoadoutMainComponent from './eureka/EurekaLoadoutMainComponent';
 import EurekaLogosActionHelperComponent from './eureka/EurekaLogosActionHelperComponent';
-import FishComponent from './Fish';
 import ChangelogComponent from './ChangelogComponent';
 import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
 import DRSRunHolsterCreatorContainerComponent from './drs/create/DRSRunHolsterCreatorContainerComponent';
@@ -158,7 +157,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/createdrsholster',
+    path: '/createdrsholsters',
     element: <WrappedMainComponent component={<DRSRunHolsterCreatorContainerComponent />} page="drsholster" />,
   },
   {
@@ -216,10 +215,6 @@ const router = createBrowserRouter([
         element: <WrappedMainComponent component={<LynnReferenceComponent />} page="reference" />,
       },
     ],
-  },
-  {
-    path: '/fish',
-    element: <WrappedMainComponent component={<FishComponent />} page="fish" />,
   },
   {
     path: '/changelog',

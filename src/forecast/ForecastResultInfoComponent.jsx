@@ -25,33 +25,6 @@ export default function ForecastResultInfoComponent({ result, isCollection }) {
     conflictText = `Last spawn ${spawnTimeBeforeNowMinutes}m earlier, may not spawn if the earliest Time Remaining is less than ${earliestEntryTime}m`;
   }
 
-  // Little hack for fishies
-  let requiredFishComponent = null;
-  if (result.spawn.requiredFish) {
-    requiredFishComponent = (
-      <Stack>
-        {
-          result.spawn.requiredFish.map((i) => (
-            <Stack direction="row" spacing={2}>
-              <Typography>
-                {
-                  i.time.toLocaleString('en-US', {
-                    hour: 'numeric',
-                    minute: 'numeric',
-                    timeZoneName: 'short',
-                  })
-                }
-              </Typography>
-              <Typography>
-                Mora Tecta Spawn
-              </Typography>
-            </Stack>
-          ))
-        }
-      </Stack>
-    );
-  }
-
   return (
     <Box sx={{
       width: '65%', display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -90,9 +63,6 @@ export default function ForecastResultInfoComponent({ result, isCollection }) {
               </Stack>
             )
             : null}
-        </Box>
-        <Box>
-          {requiredFishComponent}
         </Box>
       </Stack>
 

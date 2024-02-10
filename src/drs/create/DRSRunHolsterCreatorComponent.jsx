@@ -16,7 +16,7 @@ export default function DRSRunHolsterCreatorComponent() {
       {
         tag: null,
         name: null,
-        role: 'None',
+        role: 'none',
         icon: 'None',
         explanation: null,
         pre: null,
@@ -45,7 +45,7 @@ export default function DRSRunHolsterCreatorComponent() {
     newHolsters.push({
       tag: null,
       name: null,
-      role: 'None',
+      role: 'none',
       icon: 'None',
       explanation: null,
       pre: null,
@@ -114,8 +114,8 @@ export default function DRSRunHolsterCreatorComponent() {
       owner: runOwner,
       roles: outputHolsterMapping,
     };
-    setRunJson(JSON.stringify(output, null, 2));
-    setMappingJson(JSON.stringify(mappingOutput, null, 2));
+    setRunJson(`\`\`\`json\n${JSON.stringify(output, null, 2)}\n\`\`\``);
+    setMappingJson(`\`\`\`json\n${JSON.stringify(mappingOutput, null, 2)}\n\`\`\``);
   }, [runName, runOwner, holsters, setRunJson, setMappingJson]);
 
   return (
@@ -123,12 +123,34 @@ export default function DRSRunHolsterCreatorComponent() {
       component="main"
       margin="auto"
       sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
+      pl={5}
     >
-      <Stack spacing={2} alignItems="center">
+      <Stack spacing={2} alignItems="center" width={600}>
         <Typography variant="h4" fontWeight={700}>DRS Run Holster Creator</Typography>
-        <Typography>
+        <Typography textAlign="left">
           This tool creates the JSON required to add a new run&apos;s holsters to the
-          DRS Holsters section of the site.
+          DRS Holsters section of the site. Any DRS host can add their holsters to the site.
+        </Typography>
+        <Typography textAlign="left">
+          Use the
+          {' '}
+          <a
+            href="/drs/holster/c"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Holster Creator
+          </a>
+          {' '}
+          to create a bag for each holster. On the Holster Creator
+          page, click &quot;Create Link&quot;, then copy that URL into the &quot;Custom Holster
+          Link&quot; field.
+        </Typography>
+        <Typography textAlign="left">
+          After creating your holsters, click Generate Holster JSON. Send both fields to
+          @lynnkaneko on Discord for them to be added to the site.  In order to edit holsters, use
+          this tool to re-create the holsters you&apos;d like to change, and send the changes
+          to Lynn.
         </Typography>
         <Box minWidth={600} maxWidth={1600} minHeight={600} pt={2}>
           <Stack alignItems="flex-start" spacing={2} width={600}>

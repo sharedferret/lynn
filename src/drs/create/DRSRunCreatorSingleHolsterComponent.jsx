@@ -19,18 +19,18 @@ export default function DRSRunCreatorSingleHolsterComponent({
   holster, index, updateHolster, deleteHolster,
 }) {
   const roles = [
-    'None',
-    'Tank',
-    'Healer',
-    'Caster',
-    'Melee',
-    'Ranged',
+    'none',
+    'tank',
+    'healer',
+    'caster',
+    'melee',
+    'ranged',
   ];
 
   const lostActions = DRSLostActionHelper.getLostActions();
   const lostActionKeys = Object.keys(lostActions);
   const images = [];
-  images.push(...roles);
+  images.push('None', 'Tank', 'Healer', 'Caster', 'Melee', 'Ranged');
   for (let i = 0; i < lostActionKeys.length; i += 1) {
     images.push(lostActions[lostActionKeys[i]].image);
   }
@@ -138,7 +138,7 @@ export default function DRSRunCreatorSingleHolsterComponent({
           label="Holster Tag"
           value={holster.tag}
           fullWidth
-          helperText="A unique tag for this holster, containing only lowercase letters and dashes"
+          helperText="A unique tag for this holster, containing only lowercase letters and dashes. This will be the URL of the holster after the host's name and run type (e.g. /lynn/anyprog/main-tank)."
           onChange={updateTag}
         />
         <TextField
@@ -147,7 +147,7 @@ export default function DRSRunCreatorSingleHolsterComponent({
           label="Holster Name"
           value={holster.name}
           fullWidth
-          helperText="The name for this specific holster."
+          helperText="The name for this specific holster. This name will be displayed on the Holster page."
           onChange={updateName}
         />
         <FormControl fullWidth>
@@ -204,7 +204,7 @@ export default function DRSRunCreatorSingleHolsterComponent({
           onChange={updateExplanation}
           fullWidth
           multiline
-          rows={4}
+          rows={5}
         />
         <TextField
           id={`holster-link-${index}`}

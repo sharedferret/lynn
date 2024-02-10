@@ -1,6 +1,36 @@
 {
   "changes": [
     {
+      "version": "21.0",
+      "timestamp": "2024-02-10",
+      "changes": [
+        "Public release of DRS run holster creator tool"
+      ]
+    },
+    {
+      "version": "20.0",
+      "timestamp": "2024-02-09",
+      "changes": [
+        "Added required Resistance Rank to use each Lost Action",
+        "Added Lynn Kaneko Anyprog (Mimic Chain) holsters",
+        "Removed the fish page. Bye fishies!"
+      ]
+    },
+    {
+      "version": "19.4",
+      "timestamp": "2024-02-01",
+      "changes": [
+        "Updated DRS holsters"
+      ]
+    },
+    {
+      "version": "19.1",
+      "timestamp": "2024-01-20",
+      "changes": [
+        "Added Lynn Kaneko Anyprog holsters"
+      ]
+    },
+    {
       "version": "19.0",
       "timestamp": "2024-01-19",
       "changes": [

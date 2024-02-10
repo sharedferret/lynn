@@ -6,6 +6,111 @@
       "serverLink": "https://discord.gg/thehelplines",
       "serverIcon": "thl.png",
       "runTypes": {
+        "anyprog": {
+          "name": "Anyprog",
+          "owner": "Lynn Kaneko",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "tank",
+                "tank-bloodrage"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "rend",
+                "melee",
+                "melee-duelist",
+                "melee-pseudotank",
+                "melee-pseudohealer"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "c4",
+                "caster-dps",
+                "lfs",
+                "caster-duelist",
+                "caster-pseudotank",
+                "caster-pseudohealer"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "dervish",
+                "mch",
+                "ranged-duelist",
+                "ranged-pseudotank",
+                "ranged-pseudohealer",
+                "ranged-golem-tank"
+              ]
+            }
+          }
+        },
+        "anyprog-mimic-chain": {
+          "name": "Anyprog (Mimic Chaining)",
+          "owner": "Lynn Kaneko",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "tank",
+                "tank-bloodrage"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "rend",
+                "melee",
+                "melee-target",
+                "melee-duelist",
+                "melee-pseudotank",
+                "melee-pseudohealer"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "c4",
+                "c4-target",
+                "caster-dps",
+                "lfs",
+                "caster-duelist",
+                "caster-pseudotank",
+                "caster-pseudohealer"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "dervish",
+                "dervish-target",
+                "mch",
+                "ranged-duelist",
+                "ranged-pseudotank",
+                "ranged-pseudohealer",
+                "ranged-golem-tank"
+              ]
+            }
+          }
+        },
         "learning": {
           "name": "Learning",
           "owner": "Lynn Kaneko",
@@ -52,54 +157,6 @@
           }
         },
         "reclear": {
-          "name": "Reclear",
-          "owner": "Lynn Kaneko",
-          "roles": {
-            "tank": {
-              "name": "Tank",
-              "holsters": [
-                "maintank",
-                "offtank",
-                "irregular-drk",
-                "savior-tank"
-              ]
-            },
-            "healer": {
-              "name": "Healer",
-              "holsters": [
-                "mainhealer",
-                "offhealer",
-                "profane-whm"
-              ]
-            },
-            "melee": {
-              "name": "Melee",
-              "holsters": [
-                "melee-rend",
-                "melee-dps",
-                "melee-battery"
-              ]
-            },
-            "caster": {
-              "name": "Caster",
-              "holsters": [
-                "caster-c4",
-                "caster-dps",
-                "caster-battery"
-              ]
-            },
-            "ranged": {
-              "name": "Physical Ranged",
-              "holsters": [
-                "ranged-c2",
-                "ranged-dervish",
-                "ranged-dervish-mch",
-                "ranged-battery"
-              ]
-            }
-          }
-        },
-        "reclear-3battery": {
           "name": "Reclear (Three Batteries)",
           "owner": "Lynn Kaneko",
           "roles": {
@@ -405,56 +462,6 @@
         }
       }
     },
-    "nacl": {
-      "name": "Nacl Free",
-      "server": "Lego Steppers",
-      "serverLink": "https://discord.gg/YKP76AsMw8",
-      "serverIcon": "legosteppers.png",
-      "runTypes": {
-        "anyprog": {
-          "name": "Anyprog",
-          "owner": "Nacl Free",
-          "roles": {
-            "tank": {
-              "name": "Tank",
-              "holsters": [
-                "tank"
-              ]
-            },
-            "healer": {
-              "name": "Healer",
-              "holsters": [
-                "healer"
-              ]
-            },
-            "melee": {
-              "name": "Melee",
-              "holsters": [
-                "melee",
-                "pseudotank-melee",
-                "pseudohealer-melee"
-              ]
-            },
-            "caster": {
-              "name": "Caster",
-              "holsters": [
-                "caster",
-                "pseudotank-caster",
-                "pseudohealer-caster"
-              ]
-            },
-            "ranged": {
-              "name": "Physical Ranged",
-              "holsters": [
-                "ranged",
-                "pseudotank-ranged",
-                "pseudohealer-ranged"
-              ]
-            }
-          }
-        }
-      }
-    },
     "carter": {
       "name": "Carter Valentine",
       "server": "CAFE",
@@ -544,6 +551,56 @@
               "holsters": [
                 "mimic-dervish",
                 "mimic-dervish-battery"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "nacl": {
+      "name": "Nacl Free",
+      "server": "Lego Steppers",
+      "serverLink": "",
+      "serverIcon": "legosteppers.png",
+      "runTypes": {
+        "anyprog": {
+          "name": "Anyprog",
+          "owner": "Nacl Free",
+          "roles": {
+            "tank": {
+              "name": "Tank",
+              "holsters": [
+                "tank"
+              ]
+            },
+            "healer": {
+              "name": "Healer",
+              "holsters": [
+                "healer"
+              ]
+            },
+            "melee": {
+              "name": "Melee",
+              "holsters": [
+                "melee",
+                "pseudotank-melee",
+                "pseudohealer-melee"
+              ]
+            },
+            "caster": {
+              "name": "Caster",
+              "holsters": [
+                "caster",
+                "pseudotank-caster",
+                "pseudohealer-caster"
+              ]
+            },
+            "ranged": {
+              "name": "Physical Ranged",
+              "holsters": [
+                "ranged",
+                "pseudotank-ranged",
+                "pseudohealer-ranged"
               ]
             }
           }

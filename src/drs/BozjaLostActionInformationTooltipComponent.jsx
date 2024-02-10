@@ -71,7 +71,6 @@ export default function BozjaLostActionInformationTooltipComponent({ lostAction,
             : null}
 
         </Stack>
-
         <Typography
           textAlign="left"
           pl={2}
@@ -80,6 +79,11 @@ export default function BozjaLostActionInformationTooltipComponent({ lostAction,
           fontSize={12}
         >
           {actionData.actionText}
+        </Typography>
+        <Typography fontWeight={700} fontSize={10} textAlign="left" pl={2} pr={1}>
+          Rank:
+          {' '}
+          {actionData.rank}
         </Typography>
         <Stack direction="row" spacing={1}>
           <Typography fontWeight={700} pl={2} fontSize={10}>Usable by:</Typography>

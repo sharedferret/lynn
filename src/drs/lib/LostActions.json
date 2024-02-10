@@ -7,6 +7,7 @@
       "type": "offensive",
       "fragment": "violence",
       "weight": 6,
+      "rank": 8,
       "drsAction": true,
       "roles": [
         "tank",
@@ -29,6 +30,7 @@
       "type": "offensive",
       "fragment": "sagacity",
       "weight": 25,
+      "rank": 12,
       "drsAction": true,
       "code": "H",
       "roles": [
@@ -48,6 +50,7 @@
       "type": "offensive",
       "fragment": "sagacity",
       "weight": 25,
+      "rank": 12,
       "drsAction": true,
       "code": "I",
       "roles": [
@@ -68,6 +71,7 @@
       "type": "offensive",
       "fragment": "violence",
       "weight": 10,
+      "rank": 8,
       "drsAction": true,
       "code": "J",
       "roles": [
@@ -87,6 +91,7 @@
       "type": "offensive",
       "fragment": "violence",
       "weight": 6,
+      "rank": 8,
       "drsAction": false,
       "code": "K",
       "roles": [
@@ -109,6 +114,7 @@
       "type": "offensive",
       "fragment": "resolve",
       "weight": 10,
+      "rank": 8,
       "drsAction": false,
       "code": "{",
       "roles": [
@@ -131,6 +137,7 @@
       "type": "offensive",
       "fragment": "resolve",
       "weight": 10,
+      "rank": 8,
       "drsAction": true,
       "code": "L",
       "roles": [
@@ -153,6 +160,7 @@
       "type": "offensive",
       "fragment": "resolve",
       "weight": 6,
+      "rank": 8,
       "drsAction": true,
       "code": "M",
       "roles": [
@@ -175,6 +183,7 @@
       "type": "offensive",
       "fragment": "caprice",
       "weight": 2,
+      "rank": 15,
       "drsAction": false,
       "code": "N",
       "roles": [
@@ -196,6 +205,7 @@
       "type": "offensive",
       "fragment": "clarity",
       "weight": 20,
+      "rank": 15,
       "drsAction": true,
       "code": "O",
       "roles": [
@@ -214,6 +224,7 @@
       "type": "offensive",
       "fragment": "artistry",
       "weight": 20,
+      "rank": 18,
       "drsAction": true,
       "code": "P",
       "roles": [
@@ -233,6 +244,7 @@
       "type": "offensive",
       "fragment": "artistry",
       "weight": 8,
+      "rank": 18,
       "drsAction": false,
       "code": "Q",
       "roles": [
@@ -252,6 +264,7 @@
       "type": "defensive",
       "fragment": "caution",
       "weight": 16,
+      "rank": 2,
       "drsAction": true,
       "code": "R",
       "roles": [
@@ -274,6 +287,7 @@
       "type": "defensive",
       "fragment": "resolve",
       "weight": 6,
+      "rank": 8,
       "drsAction": true,
       "code": "S",
       "roles": [
@@ -292,6 +306,7 @@
       "type": "defensive",
       "fragment": "resolve",
       "weight": 6,
+      "rank": 8,
       "drsAction": true,
       "code": "T",
       "roles": [
@@ -313,6 +328,7 @@
       "type": "defensive",
       "fragment": "caution",
       "weight": 2,
+      "rank": 2,
       "drsAction": true,
       "code": "U",
       "roles": [
@@ -333,6 +349,7 @@
       "type": "defensive",
       "fragment": "heroism",
       "weight": 25,
+      "rank": 25,
       "drsAction": true,
       "code": "V",
       "roles": [
@@ -353,6 +370,7 @@
       "type": "defensive",
       "fragment": "cunning",
       "weight": 25,
+      "rank": 25,
       "drsAction": true,
       "code": "W",
       "roles": [
@@ -371,6 +389,7 @@
       "type": "restorative",
       "fragment": "resolve",
       "weight": 6,
+      "rank": 8,
       "drsAction": true,
       "code": "X",
       "roles": [
@@ -393,6 +412,7 @@
       "type": "restorative",
       "fragment": "caution",
       "weight": 2,
+      "rank": 2,
       "drsAction": false,
       "code": "|",
       "roles": [
@@ -413,6 +433,7 @@
       "type": "restorative",
       "fragment": "compassion",
       "weight": 5,
+      "rank": 8,
       "drsAction": true,
       "code": "Y",
       "roles": [
@@ -433,6 +454,7 @@
       "type": "restorative",
       "fragment": "caution",
       "weight": 3,
+      "rank": 2,
       "drsAction": false,
       "code": "}",
       "roles": [
@@ -454,6 +476,7 @@
       "type": "restorative",
       "fragment": "compassion",
       "weight": 5,
+      "rank": 8,
       "drsAction": true,
       "code": "Z",
       "roles": [
@@ -474,6 +497,7 @@
       "type": "restorative",
       "fragment": "compassion",
       "weight": 6,
+      "rank": 8,
       "drsAction": true,
       "code": "a",
       "roles": [
@@ -492,6 +516,7 @@
       "type": "restorative",
       "fragment": "loss",
       "weight": 19,
+      "rank": 14,
       "drsAction": true,
       "code": "b",
       "roles": [
@@ -514,6 +539,7 @@
       "type": "restorative",
       "fragment": "hope",
       "weight": 12,
+      "rank": 18,
       "drsAction": true,
       "code": "c",
       "roles": [
@@ -537,6 +563,7 @@
       "type": "restorative",
       "fragment": "revelation",
       "weight": 15,
+      "rank": 25,
       "drsAction": true,
       "code": "d",
       "roles": [
@@ -555,6 +582,7 @@
       "type": "beneficial",
       "fragment": "ingenuity",
       "weight": 3,
+      "rank": 5,
       "drsAction": true,
       "code": "e",
       "roles": [
@@ -577,6 +605,7 @@
       "type": "beneficial",
       "fragment": "ingenuity",
       "weight": 3,
+      "rank": 5,
       "drsAction": true,
       "code": "f",
       "roles": [
@@ -599,6 +628,7 @@
       "type": "beneficial",
       "fragment": "caution",
       "weight": 2,
+      "rank": 2,
       "drsAction": false,
       "code": "~",
       "roles": [
@@ -621,6 +651,7 @@
       "type": "beneficial",
       "fragment": "caution",
       "weight": 2,
+      "rank": 2,
       "drsAction": false,
       "code": "[",
       "roles": [
@@ -643,6 +674,7 @@
       "type": "beneficial",
       "fragment": "support",
       "weight": 8,
+      "rank": 8,
       "drsAction": true,
       "code": "g",
       "roles": [
@@ -665,6 +697,7 @@
       "type": "beneficial",
       "fragment": "support",
       "weight": 4,
+      "rank": 8,
       "drsAction": false,
       "code": "\\",
       "roles": [
@@ -688,6 +721,7 @@
       "type": "beneficial",
       "fragment": "support",
       "weight": 8,
+      "rank": 8,
       "drsAction": true,
       "code": "h",
       "roles": [
@@ -711,6 +745,7 @@
       "type": "beneficial",
       "fragment": "fortitude",
       "weight": 8,
+      "rank": 15,
       "drsAction": true,
       "code": "i",
       "roles": [
@@ -729,6 +764,7 @@
       "type": "beneficial",
       "fragment": "finesse",
       "weight": 8,
+      "rank": 15,
       "drsAction": true,
       "code": "j",
       "roles": [
@@ -747,6 +783,7 @@
       "type": "beneficial",
       "fragment": "rage",
       "weight": 5,
+      "rank": 16,
       "drsAction": true,
       "code": "k",
       "roles": [
@@ -770,6 +807,7 @@
       "type": "beneficial",
       "fragment": "desperation",
       "weight": 3,
+      "rank": 22,
       "drsAction": true,
       "code": "l",
       "roles": [
@@ -792,6 +830,7 @@
       "type": "beneficial",
       "fragment": "desperation",
       "weight": 3,
+      "rank": 22,
       "drsAction": true,
       "code": "m",
       "roles": [
@@ -814,6 +853,7 @@
       "type": "beneficial",
       "fragment": "tenacity",
       "weight": 5,
+      "rank": 22,
       "drsAction": true,
       "code": "n",
       "roles": [
@@ -837,6 +877,7 @@
       "type": "tactical",
       "fragment": "caution",
       "weight": 2,
+      "rank": 2,
       "drsAction": false,
       "code": "]",
       "roles": [
@@ -858,6 +899,7 @@
       "type": "tactical",
       "fragment": "ingenuity",
       "weight": 4,
+      "rank": 5,
       "drsAction": false,
       "code": "^",
       "roles": [
@@ -880,6 +922,7 @@
       "type": "tactical",
       "fragment": "sagacity",
       "weight": 20,
+      "rank": 12,
       "drsAction": true,
       "code": "o",
       "roles": [
@@ -901,6 +944,7 @@
       "type": "tactical",
       "fragment": "caprice",
       "weight": 12,
+      "rank": 15,
       "drsAction": true,
       "code": "p",
       "roles": [
@@ -922,6 +966,7 @@
       "type": "tactical",
       "fragment": "observation",
       "weight": 4,
+      "rank": 10,
       "drsAction": true,
       "code": "q",
       "roles": [
@@ -943,6 +988,7 @@
       "type": "tactical",
       "fragment": "inspiration",
       "weight": 10,
+      "rank": 22,
       "drsAction": false,
       "code": "_",
       "roles": [
@@ -964,6 +1010,7 @@
       "type": "detrimental",
       "fragment": "ingenuity",
       "weight": 3,
+      "rank": 5,
       "drsAction": true,
       "code": "r",
       "roles": [
@@ -985,6 +1032,7 @@
       "type": "detrimental",
       "fragment": "ingenuity",
       "weight": 3,
+      "rank": 5,
       "drsAction": true,
       "code": "s",
       "roles": [
@@ -1005,6 +1053,7 @@
       "type": "detrimental",
       "fragment": "ingenuity",
       "weight": 3,
+      "rank": 5,
       "drsAction": true,
       "code": "t",
       "roles": [
@@ -1027,6 +1076,7 @@
       "type": "detrimental",
       "fragment": "contention",
       "weight": 8,
+      "rank": 15,
       "drsAction": true,
       "code": "u",
       "roles": [
@@ -1044,6 +1094,7 @@
       "type": "detrimental",
       "fragment": "divinity",
       "weight": 8,
+      "rank": 15,
       "drsAction": true,
       "code": "v",
       "roles": [
@@ -1062,6 +1113,7 @@
       "type": "detrimental",
       "fragment": "rage",
       "weight": 5,
+      "rank": 16,
       "drsAction": true,
       "code": "w",
       "roles": [
@@ -1080,6 +1132,7 @@
       "type": "detrimental",
       "fragment": "ferocity",
       "weight": 5,
+      "rank": 16,
       "drsAction": true,
       "code": "x",
       "roles": [
@@ -1099,6 +1152,7 @@
       "type": "item",
       "fragment": "caprice",
       "weight": 11,
+      "rank": 15,
       "drsAction": true,
       "code": "y",
       "roles": [
@@ -1119,6 +1173,7 @@
       "type": "item",
       "fragment": "preparation",
       "weight": 4,
+      "rank": 2,
       "drsAction": false,
       "code": "`",
       "roles": [
@@ -1138,6 +1193,7 @@
       "type": "item",
       "fragment": "care",
       "weight": 8,
+      "rank": 5,
       "drsAction": true,
       "code": "z",
       "roles": [
@@ -1158,6 +1214,7 @@
       "type": "item",
       "fragment": "care",
       "weight": 3,
+      "rank": 5,
       "drsAction": true,
       "code": "0",
       "roles": [
@@ -1179,6 +1236,7 @@
       "type": "item",
       "fragment": "care",
       "weight": 3,
+      "rank": 5,
       "drsAction": true,
       "code": "1",
       "roles": [
@@ -1200,6 +1258,7 @@
       "type": "item",
       "fragment": "compassion",
       "weight": 3,
+      "rank": 8,
       "drsAction": true,
       "code": "2",
       "roles": [
@@ -1221,6 +1280,7 @@
       "type": "item",
       "fragment": "preparation",
       "weight": 1,
+      "rank": 2,
       "drsAction": false,
       "code": "3",
       "roles": [
@@ -1242,6 +1302,7 @@
       "type": "item",
       "fragment": "history",
       "weight": 1,
+      "rank": 16,
       "drsAction": false,
       "code": "@",
       "roles": [
@@ -1262,6 +1323,7 @@
       "type": "item",
       "fragment": "moonlight",
       "weight": 1,
+      "rank": 18,
       "drsAction": true,
       "code": "4",
       "roles": [
@@ -1283,6 +1345,7 @@
       "type": "item",
       "fragment": "heroism",
       "weight": 4,
+      "rank": 25,
       "drsAction": true,
       "code": "5",
       "roles": [
@@ -1303,6 +1366,7 @@
       "type": "essence",
       "fragment": "skill",
       "weight": 4,
+      "rank": 2,
       "drsAction": false,
       "code": "*",
       "roles": [
@@ -1318,6 +1382,7 @@
       "type": "essence",
       "fragment": "skill",
       "weight": 4,
+      "rank": 2,
       "drsAction": false,
       "code": "(",
       "roles": [
@@ -1333,6 +1398,7 @@
       "type": "essence",
       "fragment": "skill",
       "weight": 4,
+      "rank": 2,
       "drsAction": false,
       "code": ")",
       "roles": [
@@ -1351,6 +1417,7 @@
       "type": "essence",
       "fragment": "skill",
       "weight": 4,
+      "rank": 2,
       "drsAction": false,
       "code": "'",
       "roles": [
@@ -1367,6 +1434,7 @@
       "type": "essence",
       "fragment": "skill",
       "weight": 4,
+      "rank": 2,
       "drsAction": false,
       "code": "&",
       "roles": [
@@ -1383,6 +1451,7 @@
       "type": "essence",
       "fragment": "awakening",
       "weight": 6,
+      "rank": 5,
       "drsAction": false,
       "code": "%",
       "roles": [
@@ -1398,6 +1467,7 @@
       "type": "essence",
       "fragment": "awakening",
       "weight": 6,
+      "rank": 5,
       "drsAction": false,
       "code": "$",
       "roles": [
@@ -1414,6 +1484,7 @@
       "type": "essence",
       "fragment": "awakening",
       "weight": 6,
+      "rank": 5,
       "drsAction": false,
       "code": "#",
       "roles": [
@@ -1431,6 +1502,7 @@
       "type": "essence",
       "fragment": "awakening",
       "weight": 6,
+      "rank": 5,
       "drsAction": false,
       "code": "\"",
       "roles": [
@@ -1448,6 +1520,7 @@
       "type": "essence",
       "fragment": "awakening",
       "weight": 6,
+      "rank": 5,
       "drsAction": false,
       "code": "!",
       "roles": [
@@ -1463,6 +1536,7 @@
       "type": "essence",
       "fragment": "awakening",
       "weight": 6,
+      "rank": 5,
       "drsAction": false,
       "code": "¢",
       "roles": [
@@ -1478,6 +1552,7 @@
       "type": "essence",
       "fragment": "awakening",
       "weight": 6,
+      "rank": 5,
       "drsAction": false,
       "code": "£",
       "roles": [
@@ -1497,6 +1572,7 @@
       "type": "essence",
       "fragment": "superstition",
       "weight": 6,
+      "rank": 11,
       "drsAction": false,
       "code": "¤",
       "roles": [
@@ -1512,6 +1588,7 @@
       "type": "essence",
       "fragment": "superstition",
       "weight": 6,
+      "rank": 11,
       "drsAction": false,
       "code": "¥",
       "roles": [
@@ -1529,6 +1606,7 @@
       "type": "essence",
       "fragment": "superstition",
       "weight": 6,
+      "rank": 11,
       "drsAction": false,
       "code": "§",
       "roles": [
@@ -1544,6 +1622,7 @@
       "type": "deep_essence",
       "fragment": "mastery",
       "weight": 6,
+      "rank": 11,
       "drsAction": false,
       "code": "?",
       "roles": [
@@ -1559,6 +1638,7 @@
       "type": "deep_essence",
       "fragment": "mastery",
       "weight": 6,
+      "rank": 11,
       "drsAction": false,
       "code": "<",
       "roles": [
@@ -1574,6 +1654,7 @@
       "type": "deep_essence",
       "fragment": "mastery",
       "weight": 6,
+      "rank": 11,
       "drsAction": true,
       "code": "=",
       "roles": [
@@ -1592,6 +1673,7 @@
       "type": "deep_essence",
       "fragment": "mastery",
       "weight": 6,
+      "rank": 11,
       "drsAction": true,
       "code": ">",
       "roles": [
@@ -1608,6 +1690,7 @@
       "type": "deep_essence",
       "fragment": "mastery",
       "weight": 6,
+      "rank": 11,
       "drsAction": false,
       "code": ":",
       "roles": [
@@ -1624,6 +1707,7 @@
       "type": "deep_essence",
       "fragment": "becoming",
       "weight": 10,
+      "rank": 13,
       "drsAction": false,
       "code": ";",
       "roles": [
@@ -1639,6 +1723,7 @@
       "type": "deep_essence",
       "fragment": "becoming",
       "weight": 10,
+      "rank": 13,
       "drsAction": true,
       "code": "6",
       "roles": [
@@ -1655,6 +1740,7 @@
       "type": "deep_essence",
       "fragment": "becoming",
       "weight": 10,
+      "rank": 13,
       "drsAction": false,
       "code": "/",
       "roles": [
@@ -1672,6 +1758,7 @@
       "type": "deep_essence",
       "fragment": "becoming",
       "weight": 10,
+      "rank": 13,
       "drsAction": false,
       "code": ".",
       "roles": [
@@ -1689,6 +1776,7 @@
       "type": "deep_essence",
       "fragment": "becoming",
       "weight": 10,
+      "rank": 13,
       "drsAction": true,
       "code": "7",
       "roles": [
@@ -1704,6 +1792,7 @@
       "type": "deep_essence",
       "fragment": "becoming",
       "weight": 10,
+      "rank": 13,
       "drsAction": true,
       "code": "8",
       "roles": [
@@ -1719,6 +1808,7 @@
       "type": "deep_essence",
       "fragment": "becoming",
       "weight": 10,
+      "rank": 13,
       "drsAction": false,
       "code": "-",
       "roles": [
@@ -1738,6 +1828,7 @@
       "type": "deep_essence",
       "fragment": "transcendence",
       "weight": 10,
+      "rank": 14,
       "drsAction": false,
       "code": "æ",
       "roles": [
@@ -1753,6 +1844,7 @@
       "type": "deep_essence",
       "fragment": "transcendence",
       "weight": 10,
+      "rank": 14,
       "drsAction": false,
       "code": "+",
       "roles": [
@@ -1770,6 +1862,7 @@
       "type": "deep_essence",
       "fragment": "transcendence",
       "weight": 10,
+      "rank": 14,
       "drsAction": true,
       "code": "9",
       "roles": [
@@ -1785,6 +1878,7 @@
       "type": "pure_essence",
       "fragment": "deception",
       "weight": 12,
+      "rank": 13,
       "drsAction": false,
       "code": "F",
       "roles": [
@@ -1804,6 +1898,7 @@
       "type": "pure_essence",
       "fragment": "clarity",
       "weight": 12,
+      "rank": 15,
       "drsAction": true,
       "code": "A",
       "roles": [
@@ -1822,6 +1917,7 @@
       "type": "pure_essence",
       "fragment": "contention",
       "weight": 12,
+      "rank": 15,
       "drsAction": true,
       "code": "B",
       "roles": [
@@ -1837,6 +1933,7 @@
       "type": "pure_essence",
       "fragment": "finesse",
       "weight": 12,
+      "rank": 15,
       "drsAction": true,
       "code": "C",
       "roles": [
@@ -1852,6 +1949,7 @@
       "type": "pure_essence",
       "fragment": "fortitude",
       "weight": 12,
+      "rank": 15,
       "drsAction": true,
       "code": "D",
       "roles": [
@@ -1867,6 +1965,7 @@
       "type": "pure_essence",
       "fragment": "divinity",
       "weight": 12,
+      "rank": 15,
       "drsAction": true,
       "code": "E",
       "roles": [

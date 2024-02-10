@@ -80,6 +80,16 @@ export default function BozjaLostActionInformationComponent({ lostAction, action
         >
           {actionData.actionText}
         </Typography>
+        <Typography
+          textAlign="left"
+          pl={3}
+          pr={2}
+          fontWeight={700}
+        >
+          Rank:
+          {' '}
+          {actionData.rank}
+        </Typography>
         <Stack direction="row" spacing={1}>
           <Typography fontWeight={700} pl={3}>Usable by:</Typography>
           {
