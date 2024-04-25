@@ -16,7 +16,7 @@ export default function BozjaLostActionHelperComponent({ lostAction }) {
     const lostActionUrl = event.target.value.replaceAll(' ', '_');
     window.history.pushState(
       lostActionUrl,
-      `lynn.pet! - ${event.target.value}`,
+      `${event.target.value} - forays.info`,
       `/bozja/lostaction/${lostActionUrl}`,
     );
 

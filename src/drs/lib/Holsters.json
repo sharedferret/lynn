@@ -790,16 +790,12 @@
                   "quantity": 2
                 },
                 {
-                  "name": "Lost Shell II",
-                  "quantity": 1
-                },
-                {
                   "name": "Light Curtain",
                   "quantity": 3
                 },
                 {
                   "name": "Resistance Ether Kit",
-                  "quantity": 8
+                  "quantity": 9
                 }
               ]
             },
@@ -822,7 +818,7 @@
                   "quantity": 1
                 },
                 {
-                  "name": "Banner of Honored Sacrifice",
+                  "name": "Lost Flare Star",
                   "quantity": 1
                 },
                 {
@@ -840,11 +836,7 @@
                   "quantity": 1
                 },
                 {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Shell II",
+                  "name": "Lost Flare Star",
                   "quantity": 1
                 },
                 {
@@ -1852,7 +1844,7 @@
                   "quantity": 1
                 },
                 {
-                  "name": "Banner of Honored Sacrifice",
+                  "name": "Lost Flare Star",
                   "quantity": 1
                 },
                 {
@@ -1863,19 +1855,15 @@
               "main": [
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 3
-                },
-                {
-                  "name": "Lost Font of Magic",
                   "quantity": 1
                 },
                 {
-                  "name": "Banner of Honored Sacrifice",
+                  "name": "Lost Flare Star",
                   "quantity": 2
                 },
                 {
-                  "name": "Lost Shell II",
-                  "quantity": 1
+                  "name": "Mimic",
+                  "quantity": 2
                 },
                 {
                   "name": "Light Curtain",
@@ -3088,7 +3076,7 @@
           }
         },
         "reclear": {
-          "name": "Reclear (Three Batteries)",
+          "name": "Reclear",
           "owner": "Lynn Kaneko",
           "holsters": {
             "maintank": {
@@ -5268,7 +5256,7 @@
           "owner": "Lynn Renkinjutsu",
           "holsters": {
             "melee": {
-              "name": "Melee Pump",
+              "name": "Melee Ex",
               "role": "melee",
               "icon": "Melee",
               "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot HSac over Excellence\n4. Use HSac and Font of Power\n5. (Optional) Slot another HSac for 60 seconds of it!",
@@ -5301,12 +5289,58 @@
                 },
                 {
                   "name": "Light Curtain",
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                }
+              ]
+            },
+            "rend": {
+              "name": "Rend Ex",
+              "role": "melee",
+              "icon": "Lost_Rend_Armor",
+              "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot HSac over Excellence\n4. Use HSac and Font of Power\n5. (Optional) Slot another HSac for 60 seconds of it!",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Duelist",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Rend Armor",
+                  "quantity": 4
+                },
+                {
+                  "name": "Mimic",
                   "quantity": 3
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
                 }
               ]
             },
             "ranged-dervish": {
-              "name": "Dervish Pump",
+              "name": "Physical Ranged Ex (Dervish)",
               "role": "ranged",
               "icon": "Lost_Dervish",
               "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Dervish over Excellence\n4. Use Dervish and Font of Power",
@@ -5339,12 +5373,104 @@
                 },
                 {
                   "name": "Light Curtain",
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                }
+              ]
+            },
+            "ranged-doorboss-percept": {
+              "name": "Slimes/Golems Percept (Dervish)",
+              "role": "ranged",
+              "icon": "Lost_Perception",
+              "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Dervish over Excellence\n4. Use Dervish and Font of Power",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Perception",
+                  "quantity": 1
+                },
+                {
+                  "name": "Mimic",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 4
+                },
+                {
+                  "name": "Mimic",
                   "quantity": 3
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
+                }
+              ]
+            },
+            "ranged-c2": {
+              "name": "Cure 2 Mana Supporter",
+              "role": "ranged",
+              "icon": "Lost_Cure_II",
+              "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Dervish over Excellence\n4. Use Dervish and Font of Power",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Dervish",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Cure II",
+                  "quantity": 5
+                },
+                {
+                  "name": "Lost Perception",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
                 }
               ]
             },
             "melee-battery": {
-              "name": "Melee Battery",
+              "name": "Physical Mimic Target",
               "role": "melee",
               "icon": "Lost_Excellence",
               "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot HSac over Excellence\n4. Use HSac and Font of Power\n5. (Optional) Slot another HSac for 60 seconds of it!",
@@ -5381,12 +5507,104 @@
                 },
                 {
                   "name": "Light Curtain",
-                  "quantity": 3
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                }
+              ]
+            },
+            "rend-battery": {
+              "name": "Rend Mimic Target",
+              "role": "melee",
+              "icon": "Lost_Excellence",
+              "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot HSac over Excellence\n4. Use HSac and Font of Power\n5. (Optional) Slot another HSac for 60 seconds of it!",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Duelist",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Rend Armor",
+                  "quantity": 4
+                },
+                {
+                  "name": "Mimic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 2
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 2
                 }
               ]
             },
             "ranged-battery": {
-              "name": "Dervish / Battery",
+              "name": "Physical Mimic Target",
+              "role": "ranged",
+              "icon": "Lost_Excellence",
+              "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Dervish over Excellence\n4. Use Dervish and Font of Power",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Fiendhunter",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 4
+                },
+                {
+                  "name": "Mimic",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                }
+              ]
+            },
+            "dervish-battery": {
+              "name": "Physical Ranged Mimic Target (Dervish)",
               "role": "ranged",
               "icon": "Lost_Excellence",
               "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Dervish over Excellence\n4. Use Dervish and Font of Power",
@@ -5423,12 +5641,16 @@
                 },
                 {
                   "name": "Light Curtain",
-                  "quantity": 3
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
                 }
               ]
             },
             "caster-c4": {
-              "name": "Cure 4 Pump",
+              "name": "Cure 4 Ex",
               "role": "caster",
               "icon": "Lost_Cure_IV",
               "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Cure IV over Excellence\n4. Use Cure IV and Font of Magic",
@@ -5464,17 +5686,71 @@
                   "quantity": 3
                 },
                 {
-                  "name": "Light Curtain",
-                  "quantity": 3
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
                 },
                 {
                   "name": "Resistance Ether Kit",
-                  "quantity": 10
+                  "quantity": 8
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 3
+                }
+              ]
+            },
+            "caster-dps": {
+              "name": "Full DPS Ex",
+              "role": "caster",
+              "icon": "Lost_Font_Of_Magic",
+              "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Cure IV over Excellence\n4. Use Cure IV and Font of Magic",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Elder",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Excellence",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Banner of Honored Sacrifice",
+                  "quantity": 4
+                },
+                {
+                  "name": "Mimic",
+                  "quantity": 3
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 6
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 3
                 }
               ]
             },
             "caster-battery": {
-              "name": "Cure 4 / Battery",
+              "name": "Cure 4 Excellence Battery",
               "role": "caster",
               "icon": "Lost_Excellence",
               "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Cure IV over Excellence\n4. Use Cure IV and Font of Magic",
@@ -5515,133 +5791,23 @@
                 },
                 {
                   "name": "Light Curtain",
-                  "quantity": 3
+                  "quantity": 2
                 },
                 {
                   "name": "Resistance Ether Kit",
-                  "quantity": 9
-                }
-              ]
-            },
-            "melee-standard": {
-              "name": "Standard (No Excellence)",
-              "role": "melee",
-              "icon": "Melee",
-              "explanation": "Fill the rest of your bag with whatever you'd like.",
-              "pre": [
-                {
-                  "name": "Pure Essence of the Duelist",
-                  "quantity": 1
+                  "quantity": 4
                 },
                 {
                   "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Banner of Honored Sacrifice",
                   "quantity": 2
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 3
                 }
               ]
             },
-            "ranged-standard": {
-              "name": "Standard (No Excellence)",
-              "role": "ranged",
-              "icon": "Ranged",
-              "explanation": "Fill the rest of your bag with whatever you'd like.",
-              "pre": [
-                {
-                  "name": "Pure Essence of the Fiendhunter",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Dervish",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Lost Dervish",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Font of Power",
-                  "quantity": 1
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 3
-                }
-              ]
-            },
-            "melee-rend-standard": {
-              "name": "Rend (Standard)",
-              "role": "melee",
-              "icon": "Lost_Rend_Armor",
-              "explanation": "Fill the rest of your bag with whatever you'd like.",
-              "pre": [
-                {
-                  "name": "Pure Essence of the Duelist",
-                  "quantity": 1
-                },
-                {
-                  "name": "Resistance Reraiser",
-                  "quantity": 1
-                },
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 1
-                },
-                {
-                  "name": "Lost Rend Armor",
-                  "quantity": 1
-                }
-              ],
-              "main": [
-                {
-                  "name": "Banner of Honored Sacrifice",
-                  "quantity": 2
-                },
-                {
-                  "name": "Lost Rend Armor",
-                  "quantity": 3
-                },
-                {
-                  "name": "Light Curtain",
-                  "quantity": 3
-                }
-              ]
-            },
-            "caster-c4-standard": {
-              "name": "Cure 4 Standard (No Excellence)",
+            "lfs": {
+              "name": "Lost Flare Star",
               "role": "caster",
-              "icon": "Lost_Cure_IV",
-              "explanation": "Fill the rest of your bag with whatever you'd like - preferably with Banner of Honored Sacrifice and Ether Kits.",
+              "icon": "Lost_Flare_Star",
+              "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Cure IV over Excellence\n4. Use Cure IV and Font of Magic",
               "pre": [
                 {
                   "name": "Pure Essence of the Elder",
@@ -5656,27 +5822,77 @@
                   "quantity": 1
                 },
                 {
-                  "name": "Lost Cure IV",
+                  "name": "Lost Flare Star",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
                   "quantity": 1
                 }
               ],
               "main": [
                 {
-                  "name": "Lost Cure IV",
-                  "quantity": 4
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 16
+                }
+              ]
+            },
+            "lfs-advanced": {
+              "name": "Advanced Lost Flare Star",
+              "role": "caster",
+              "icon": "Lost_Flare_Star",
+              "explanation": "Fill the rest of the holster with whatever you want/need.\nOpener:\n1. Mimic Battery before combat\n2. Hit boss\n3. Use Excellence, slot Cure IV over Excellence\n4. Use Cure IV and Font of Magic",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Elder",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
                 },
                 {
                   "name": "Lost Font of Magic",
                   "quantity": 1
                 },
                 {
+                  "name": "Lost Flare Star",
+                  "quantity": 1
+                },
+                {
                   "name": "Resistance Ether Kit",
-                  "quantity": 6
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Flare Star",
+                  "quantity": 3
+                },
+                {
+                  "name": "Mimic",
+                  "quantity": 2
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 4
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 3
                 }
               ]
             },
-            "tank-aethershield": {
-              "name": "Aethershield Tank",
+            "party-mt": {
+              "name": "Party Main Tank",
               "role": "tank",
               "icon": "Lost_Aethershield",
               "explanation": "Fill the rest of your bag with whatever you'd like.",
@@ -5700,7 +5916,11 @@
               ],
               "main": [
                 {
-                  "name": "Lost Font of Power",
+                  "name": "Lost Sacrifice",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Reraise",
                   "quantity": 1
                 },
                 {
@@ -5716,13 +5936,17 @@
                   "quantity": 1
                 },
                 {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
                   "name": "Light Curtain",
                   "quantity": 3
                 }
               ]
             },
-            "off-tank": {
-              "name": "Off Tank (Blue DPS)",
+            "party-ot": {
+              "name": "Party Off Tank",
               "role": "tank",
               "icon": "Lost_Blood_Rage",
               "explanation": "Fill the rest of your bag with whatever you'd like.",
@@ -5750,12 +5974,16 @@
                   "quantity": 1
                 },
                 {
-                  "name": "Lost Aethershield",
-                  "quantity": 2
+                  "name": "Lost Blood Rage",
+                  "quantity": 1
                 },
                 {
-                  "name": "Mimic",
+                  "name": "Lost Aethershield",
                   "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 2
                 },
                 {
                   "name": "Light Curtain",
@@ -5763,10 +5991,110 @@
                 }
               ]
             },
-            "healer": {
-              "name": "Healer",
+            "lynn-mt": {
+              "name": "Lynn's Chad MT Bag",
+              "role": "tank",
+              "icon": "Lost_Blood_Rage",
+              "explanation": "Fill the rest of your bag with whatever you'd like.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Indomitable",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Power",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Blood Rage",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Sacrifice",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Reraise",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Aethershield",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Dispel",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 1
+                }
+              ]
+            },
+            "impetus-chain": {
+              "name": "Impetus Chaining",
+              "role": "tank",
+              "icon": "Lost_Impetus",
+              "explanation": "Fill the rest of your bag with whatever you'd like.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Indomitable",
+                  "quantity": 1
+                },
+                {
+                  "name": "Deep Essence of the Irregular",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Impetus",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Blood Rage",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Blood Rage",
+                  "quantity": 3
+                },
+                {
+                  "name": "Mimic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Impetus",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 1
+                }
+              ]
+            },
+            "healer-reflect": {
+              "name": "Reflect Healer",
               "role": "healer",
-              "icon": "Healer",
+              "icon": "Lost_Reflect",
               "explanation": "Check the roster for any extra assignments, e.g. Banish.\n\nIf you have two healers, you'll only need one of Spellforge/Steelsting. Coordinate with your other healer to see who is bringing what.",
               "pre": [
                 {
@@ -5782,18 +6110,22 @@
                   "quantity": 1
                 },
                 {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
                   "name": "Lost Seraph Strike",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
                   "quantity": 1
                 }
               ],
               "main": [
                 {
                   "name": "Lost Arise",
-                  "quantity": 8
-                },
-                {
-                  "name": "Lost Seraph Strike",
-                  "quantity": 3
+                  "quantity": 6
                 },
                 {
                   "name": "Lost Spellforge",
@@ -5804,12 +6136,248 @@
                   "quantity": 1
                 },
                 {
+                  "name": "Lost Banish III",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 7
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 9
+                }
+              ]
+            },
+            "healer-dispel": {
+              "name": "Dispel Healer",
+              "role": "healer",
+              "icon": "Lost_Dispel",
+              "explanation": "Check the roster for any extra assignments, e.g. Banish.\n\nIf you have two healers, you'll only need one of Spellforge/Steelsting. Coordinate with your other healer to see who is bringing what.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Divine",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Arise",
+                  "quantity": 7
+                },
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 2
+                },
+                {
                   "name": "Lost Dispel",
                   "quantity": 1
                 },
                 {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 7
+                },
+                {
                   "name": "Light Curtain",
-                  "quantity": 6
+                  "quantity": 3
+                }
+              ]
+            },
+            "healer-supporter": {
+              "name": "Off-Essence Supporter",
+              "role": "healer",
+              "icon": "Lost_Full_Cure",
+              "explanation": "Check the roster for any extra assignments, e.g. Banish.\n\nIf you have two healers, you'll only need one of Spellforge/Steelsting. Coordinate with your other healer to see who is bringing what.",
+              "pre": [
+                {
+                  "name": "Pure Essence of the Divine",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Full Cure",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Arise",
+                  "quantity": 9
+                },
+                {
+                  "name": "Lost Spellforge",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Steelsting",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Shell II",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Bubble",
+                  "quantity": 4
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 5
+                }
+              ]
+            },
+            "profane": {
+              "name": "Profane",
+              "role": "healer",
+              "icon": "Deep_Essence_of_the_Profane",
+              "explanation": "Check the roster for any extra assignments, e.g. Banish.\n\nIf you have two healers, you'll only need one of Spellforge/Steelsting. Coordinate with your other healer to see who is bringing what.",
+              "pre": [
+                {
+                  "name": "Deep Essence of the Profane",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Mimic",
+                  "quantity": 2
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 3
+                },
+                {
+                  "name": "Lost Burst",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 12
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 2
+                }
+              ]
+            },
+            "profane-battery": {
+              "name": "Profane Battery",
+              "role": "healer",
+              "icon": "Deep_Essence_of_the_Profane",
+              "explanation": "Check the roster for any extra assignments, e.g. Banish.\n\nIf you have two healers, you'll only need one of Spellforge/Steelsting. Coordinate with your other healer to see who is bringing what.",
+              "pre": [
+                {
+                  "name": "Deep Essence of the Profane",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Font of Magic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                }
+              ],
+              "main": [
+                {
+                  "name": "Lost Chainspell",
+                  "quantity": 1
+                },
+                {
+                  "name": "Mimic",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Seraph Strike",
+                  "quantity": 1
+                },
+                {
+                  "name": "Lost Burst",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Reraiser",
+                  "quantity": 1
+                },
+                {
+                  "name": "Resistance Ether Kit",
+                  "quantity": 9
+                },
+                {
+                  "name": "Light Curtain",
+                  "quantity": 3
                 }
               ]
             }

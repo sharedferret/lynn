@@ -166,6 +166,12 @@
           "map": "Pyros",
           "mobs": [
             {
+              "mob": "Blizzard Sprite",
+              "level": 50,
+              "weather": "Blizzards",
+              "element": "ice"
+            },
+            {
               "mob": "Thunderstorm Sprite",
               "level": 51,
               "weather": "Thunder",
@@ -196,6 +202,11 @@
               "weather": "Thunder"
             }
           ]
+        },
+        {
+          "method": "bunny_fate",
+          "map": "Pyros",
+          "coffer_rarity": "bronze"
         },
         {
           "method": "purchase"
@@ -292,10 +303,22 @@
           "map": "Hydatos",
           "mobs": [
             {
+              "mob": "Hydatos Squib",
+              "level": 61,
+              "element": "water",
+              "adaptation": true
+            },
+            {
               "mob": "Snowstorm Sprite",
               "level": 64,
               "element": "ice",
               "weather": "Snow",
+              "adaptation": true
+            },
+            {
+              "mob": "Samurai Corpse",
+              "level": 65,
+              "element": "water",
               "adaptation": true
             }
           ]
@@ -371,6 +394,11 @@
           "coffer_rarity": "gold"
         },
         {
+          "method": "bunny_fate",
+          "map": "Hydatos",
+          "coffer_rarity": "bronze"
+        },
+        {
           "method": "purchase"
         }
       ]
@@ -437,6 +465,11 @@
           "method": "bunny_fate",
           "map": "Pyros",
           "coffer_rarity": "silver"
+        },
+        {
+          "method": "bunny_fate",
+          "map": "Hydatos",
+          "coffer_rarity": "bronze"
         },
         {
           "method": "purchase"
@@ -523,7 +556,7 @@
             {
               "mob": "Snowstorm Sprite",
               "level": 52,
-              "element":"ice",
+              "element": "ice",
               "weather": "Snow",
               "adaptation": true
             },
@@ -573,6 +606,11 @@
           "method": "bunny_fate",
           "map": "Pyros",
           "coffer_rarity": "gold"
+        },
+        {
+          "method": "bunny_fate",
+          "map": "Hydatos",
+          "coffer_rarity": "silver"
         },
         {
           "method": "mob",
@@ -625,6 +663,13 @@
               "level": 51,
               "element": "earth",
               "spawned_by": "Hydatos Primelephas"
+            },
+            {
+              "name": "Bullheaded Berserker",
+              "mob": "Molech",
+              "level": 52,
+              "element": "ice",
+              "spawned_by": "Val Nullchu"
             },
             {
               "name": "Fearful Symmetry",

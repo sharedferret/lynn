@@ -33,6 +33,7 @@ function SidebarComponent({
   handleSidebarForecastClick,
   colorModeContext,
   window,
+  host,
 }) {
   const navigate = useNavigate();
 
@@ -64,6 +65,16 @@ function SidebarComponent({
     paddingBottom: '10px',
     textDecoration: 'none',
   });
+
+  function getSiteName() {
+    if (host.indexOf('bozja.info') !== -1) {
+      return 'bozja.info';
+    }
+    if (host.indexOf('forays.info') !== -1) {
+      return 'forays.info';
+    }
+    return 'lynn.pet!';
+  }
 
   /**
    * eureka/loadout: Loadout Creator
@@ -378,7 +389,7 @@ function SidebarComponent({
             <Button
               onClick={(e) => handleSidebarClickFromSidebar(e, '')}
             >
-              <Typography fontSize="30px" color="#fecaca">lynn.pet!</Typography>
+              <Typography fontSize="30px" color="#fecaca">{getSiteName()}</Typography>
             </Button>
             <Box>
               <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />
@@ -426,7 +437,7 @@ function SidebarComponent({
             <Button
               onClick={(e) => handleSidebarClickFromSidebar(e, '')}
             >
-              <Typography fontSize="30px" color="#fecaca">lynn.pet!</Typography>
+              <Typography fontSize="30px" color="#fecaca">{getSiteName()}</Typography>
             </Button>
             <Box>
               <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />

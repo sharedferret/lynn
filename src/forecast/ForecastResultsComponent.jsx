@@ -11,13 +11,13 @@ function ForecastResultsComponent({ filter }) {
   return (
     <Paper className="ForecastResultsPaper">
       <Helmet>
-        <title>Expeditionary Forecast - lynn.pet</title>
+        <title>Expeditionary Forecast - forays.info</title>
         <meta name="description" content="Find the best times to farm for fragments, logograms, and Eureka NMs!" />
         <meta property="og:title" content="Expeditionary Forecast" />
-        <meta property="og:url" content="https://lynn.pet/forecast" />
-        <meta property="og:image" content="https://lynn.pet/assets/nms/cassie.png" />
+        <meta property="og:url" content="https://forays.info/forecast" />
+        <meta property="og:image" content="https://forays.info/assets/nms/cassie.png" />
         <meta property="og:description" content="Find the best times to farm for fragments, logograms, and Eureka NMs!" />
-        <meta property="og:site_name" content="lynn.pet!" />
+        <meta property="og:site_name" content="forays.info" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@reflexyui" />
       </Helmet>

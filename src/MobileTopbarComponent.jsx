@@ -5,7 +5,17 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-export default function MobileTopbarComponent({ handleDrawerToggle }) {
+export default function MobileTopbarComponent({ handleDrawerToggle, host }) {
+  function getSiteName() {
+    if (host.indexOf('bozja.info') !== -1) {
+      return 'bozja.info';
+    }
+    if (host.indexOf('forays.info') !== -1) {
+      return 'forays.info';
+    }
+    return 'lynn.pet!';
+  }
+
   return (
     <AppBar
       position="fixed"
@@ -27,7 +37,7 @@ export default function MobileTopbarComponent({ handleDrawerToggle }) {
         <Box height={80} />
         <Box>
           <a href="./">
-            <Typography fontSize="30px" color="#fecaca">lynn.pet!</Typography>
+            <Typography fontSize="30px" color="#fecaca">{getSiteName()}</Typography>
           </a>
         </Box>
       </Toolbar>

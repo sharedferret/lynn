@@ -8,9 +8,9 @@ export default function BAMorbolMapComponent() {
       <Helmet bodyAttributes={{ style: 'background-color : #000' }}>
         <meta name="description" content="Morbol map for Baldesion Arsenal runs on the Primal data center" data-react-helmet="true" />
         <meta property="og:title" content="BA Morbol Map" data-react-helmet="true" />
-        <meta property="og:image" content="http://lynn.pet/assets/morbolmap.jpg" data-react-helmet="true" />
+        <meta property="og:image" content="http://forays.info/assets/morbolmap.jpg" data-react-helmet="true" />
         <meta property="og:description" content="Morbol map for Baldesion Arsenal runs on the Primal data center" data-react-helmet="true" />
-        <meta property="og:site_name" content="lynn.pet!" data-react-helmet="true" />
+        <meta property="og:site_name" content="forays.info" data-react-helmet="true" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" data-react-helmet="true" />
         <meta name="twitter:creator" content="@reflexyui" data-react-helmet="true" />
@@ -21,7 +21,7 @@ export default function BAMorbolMapComponent() {
         <meta name="BA Morbol Map" content="Morbol map for Baldesion Arsenal runs on the Primal data center" data-react-helmet="true" />
         <link rel="apple-touch-icon" href="/logo192.png" data-react-helmet="true" />
         <link rel="manifest" href="/site.webmanifest" />
-        <title>BA Morbol Map - lynn.pet!</title>
+        <title>BA Morbol Map - forays.info</title>
       </Helmet>
       <Box maxWidth={1400} minWidth={800} height="100%" margin="auto" sx={{ backgroundColor: '#000' }}>
         <img src={`${process.env.PUBLIC_URL}/assets/morbolmap.jpg`} alt="BA Morbol Map" style={{ maxWidth: '100%' }} />

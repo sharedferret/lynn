@@ -304,13 +304,13 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <Helmet>
-          <title>lynn.pet! - FFXIV Field Operations Assistant</title>
+          <title>FFXIV Field Operations Assistant - forays.info</title>
           <meta name="description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
-          <meta property="og:title" content="lynn.pet!" />
-          <meta property="og:url" content="https://lynn.pet/" />
-          <meta property="og:image" content="https://lynn.pet/logo.png" />
+          <meta property="og:title" content="forays.info" />
+          <meta property="og:url" content="https://forays.info/" />
+          <meta property="og:image" content="https://forays.info/logo.png" />
           <meta property="og:description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
-          <meta property="og:site_name" content="lynn.pet!" />
+          <meta property="og:site_name" content="forays.info" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:creator" content="@reflexyui" />
         </Helmet>

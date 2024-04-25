@@ -44,6 +44,7 @@ export default function MainComponent({
   }, [window, setForecastFilterState, setMobileOpen]);
 
   const passedFilter = forecastFilterState ?? forecastFilter;
+  const host = window.location.hostname;
 
   /**
    * Render Logic
@@ -57,6 +58,7 @@ export default function MainComponent({
         handleDrawerToggle={handleDrawerToggle}
         colorModeContext={colorModeContext}
         page={page}
+        host={host}
       />
       <Box
         flexGrow={1}
@@ -72,6 +74,7 @@ export default function MainComponent({
           <Box display="flex">
             <MobileTopbarComponent
               handleDrawerToggle={handleDrawerToggle}
+              host={host}
             />
             {React.cloneElement(component, {
               passedFilter,

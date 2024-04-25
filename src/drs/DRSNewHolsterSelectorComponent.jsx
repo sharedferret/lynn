@@ -98,7 +98,7 @@ export default function DRSNewHolsterSelectorComponent({
     setFirstHolster(null);
     window.history.pushState(
       {},
-      'lynn.pet! - FFXIV Field Operations Assistant',
+      'FFXIV Field Operations Assistant - forays.info',
       '/drs/holster',
     );
   }, [setActiveStep,
@@ -186,7 +186,7 @@ export default function DRSNewHolsterSelectorComponent({
 
     window.history.pushState(
       selectedHolster,
-      `lynn.pet! - DRS Holster - ${initialHolster.holsterFriendlyType}`,
+      `DRS Holster - ${initialHolster.holsterFriendlyType} - forays.info`,
       `/drs/holster/${selectedHost}/${selectedRunType}/${selectedHolster}`,
     );
   } else if (encodedHolster !== undefined) {
@@ -276,9 +276,21 @@ export default function DRSNewHolsterSelectorComponent({
               {
                 i === 0 && selectedHost
                   ? (
-                    <Typography fontWeight={700}>
-                      {holsterMapping.hosts[selectedHost].name}
-                    </Typography>
+                    <Stack>
+                      <Typography fontWeight={700}>
+                        {holsterMapping.hosts[selectedHost].name}
+                      </Typography>
+                      {holsterMapping.hosts[selectedHost].lastUpdated
+                        ? (
+                          <Typography fontSize={12}>
+                            (Last Updated:
+                            {' '}
+                            {holsterMapping.hosts[selectedHost].lastUpdated}
+                            )
+                          </Typography>
+                        )
+                        : null}
+                    </Stack>
                   )
                   : null
               }

@@ -25,7 +25,11 @@ export default function EurekaLogosActionHelperComponent({ logosAction }) {
   const handleActionUpdate = useCallback((event) => {
     const newLogosActionData = EurekaLogosActionHelper.getLogosActionData(event.target.value);
     const logosActionUrl = event.target.value.replaceAll(' ', '_');
-    window.history.pushState(logosActionUrl, `lynn.pet! - ${logosActionUrl}`, `/eureka/logos/${event.target.value.replaceAll(' ', '_')}`);
+    window.history.pushState(
+      logosActionUrl,
+      `${logosActionUrl} - forays.info`,
+      `/eureka/logos/${event.target.value.replaceAll(' ', '_')}`,
+    );
 
     setLogosActionState(event.target.value);
     if (newLogosActionData) {

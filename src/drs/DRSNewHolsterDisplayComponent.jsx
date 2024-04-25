@@ -35,10 +35,10 @@ export default function DRSNewHolsterDisplayComponent({ holster }) {
       holsterPrepop,
       holsterMain,
     ).replaceAll('=', '');
-    setGeneratedLink(`https://lynn.pet/drs/holster/c/${encodedHolsters}`);
+    setGeneratedLink(`https://forays.info/drs/holster/c/${encodedHolsters}`);
     window.history.pushState(
       {},
-      'lynn.pet! - FFXIV Field Operations Assistant',
+      'FFXIV Field Operations Assistant - forays.info',
       `/drs/holster/c/${encodedHolsters}`,
     );
   }, [holsterPrepop, holsterMain, setGeneratedLink]);

@@ -5,6 +5,18 @@ import {
 import { Helmet } from 'react-helmet';
 
 export default function MainPageComponent() {
+  function getSiteName() {
+    const host = window.location.hostname;
+
+    if (host.indexOf('bozja.info') !== -1) {
+      return 'bozja.info';
+    }
+    if (host.indexOf('forays.info') !== -1) {
+      return 'forays.info';
+    }
+    return 'lynn.pet';
+  }
+
   /**
    function daysIntoYear(date) {
     return (
@@ -71,7 +83,10 @@ export default function MainPageComponent() {
     <Paper elevation={3}>
       <Stack p={5} spacing={2}>
         <Typography textAlign="left" fontSize={textSize}>
-          Welcome to lynn.pet, a home for tools to help with Final Fantasy XIV side
+          Welcome to
+          {' '}
+          {getSiteName()}
+          , a home for tools to help with Final Fantasy XIV side
           content - primarily Eureka (Baldesion Arsenal) and Bozja (Delubrum Reginae
           Savage). Find out how to build and gather materials for Lost Actions and
           Logos Actions, what to bring for Baldesion Arsenal or Delubrum Reginae
@@ -123,14 +138,18 @@ export default function MainPageComponent() {
       <Helmet bodyAttributes={{ style: `background-color : ${pageTheme.color}` }}>
         <meta name="description" content="Tools for FFXIV Baldesion Arsenal, Delubrum Reginae Savage, and Eureka by Lynn Kaneko @ Exodus" />
         <meta name="keywords" content="FFXIV, Final Fantasy 14, Final Fantasy XIV, Eureka, Eureka Anemos, Eureka Pagos, Eureka Pyros, Eureka Hydatos, Bozjan Southern Front, Zadnor, Delubrum Reginae, Delubrum Reginae Savage, DRS Holsters, BA Loadout, NM Tracker, Fragment Farm" />
-        <meta property="og:title" content="lynn.pet!" />
-        <meta property="og:url" content="https://lynn.pet/" />
-        <meta property="og:image" content="https://lynn.pet/logo.png" />
+        <meta property="og:title" content={getSiteName()} />
+        <meta property="og:url" content="https://forays.info/" />
+        <meta property="og:image" content="https://forays.info/logo.png" />
         <meta property="og:description" content="Tools for FFXIV Baldesion Arsenal, Delubrum Reginae Savage, and Eureka by Lynn Kaneko @ Exodus" />
-        <meta property="og:site_name" content="lynn.pet!" />
+        <meta property="og:site_name" content="forays.info" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@reflexyui" />
-        <title>lynn.pet! - FFXIV Field Operations Assistant</title>
+        <title>
+          {getSiteName()}
+          {' '}
+          - FFXIV Field Operations Assistant
+        </title>
       </Helmet>
       <Box>
         <Typography variant="h3" fontWeight={700}>FFXIV Field Operations Assistant</Typography>
@@ -144,7 +163,7 @@ export default function MainPageComponent() {
           <Box maxWidth="70%" p={2}>
             <img
               src={pageTheme.image}
-              alt="lynn.pet!"
+              alt="forays.info"
             />
           </Box>
 
@@ -156,7 +175,7 @@ export default function MainPageComponent() {
           <Box width="100%">
             <img
               src={pageTheme.image}
-              alt="lynn.pet!"
+              alt="forays.info"
             />
           </Box>
         </Stack>

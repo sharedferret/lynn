@@ -54,7 +54,7 @@ export default function BANewLogosRecommenderWorkflow({
       const trayUri = recommendedActions[data.role].trays[trayId].uri;
       window.history.pushState(
         {},
-        'lynn.pet! - FFXIV Field Operations Assistant',
+        'FFXIV Field Operations Assistant - forays.info',
         `/ba/${data.role}/${trayUri}`,
       );
     }
@@ -78,7 +78,7 @@ export default function BANewLogosRecommenderWorkflow({
     setFirstHolster(null);
     window.history.pushState(
       {},
-      'lynn.pet! - FFXIV Field Operations Assistant',
+      'FFXIV Field Operations Assistant - forays.info',
       '/ba',
     );
   }, [setRole, setTray, setActiveStep]);
@@ -93,7 +93,7 @@ export default function BANewLogosRecommenderWorkflow({
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
     window.history.pushState(
       {},
-      'lynn.pet! - FFXIV Field Operations Assistant',
+      'FFXIV Field Operations Assistant - forays.info',
       '/ba',
     );
   });

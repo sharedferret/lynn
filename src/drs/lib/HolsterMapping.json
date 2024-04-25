@@ -5,6 +5,7 @@
       "server": "The Help Lines",
       "serverLink": "https://discord.gg/thehelplines",
       "serverIcon": "thl.png",
+      "lastUpdated": "2024-03-03",
       "runTypes": {
         "anyprog": {
           "name": "Anyprog",
@@ -157,7 +158,7 @@
           }
         },
         "reclear": {
-          "name": "Reclear (Three Batteries)",
+          "name": "Reclear",
           "owner": "Lynn Kaneko",
           "roles": {
             "tank": {
@@ -264,6 +265,7 @@
       "server": "PEBE",
       "serverLink": "https://discord.gg/pebe",
       "serverIcon": "pebe.png",
+      "lastUpdated": "2024-03-03",
       "runTypes": {
         "learning": {
           "name": " Learning",
@@ -313,39 +315,49 @@
             "tank": {
               "name": "Tank",
               "holsters": [
-                "tank-aethershield",
-                "off-tank"
+                "party-mt",
+                "party-ot",
+                "lynn-mt",
+                "impetus-chain"
               ]
             },
             "healer": {
               "name": "Healer",
               "holsters": [
-                "healer"
+                "healer-reflect",
+                "healer-dispel",
+                "healer-supporter",
+                "profane",
+                "profane-battery"
               ]
             },
             "melee": {
               "name": "Melee",
               "holsters": [
                 "melee",
+                "rend",
                 "melee-battery",
-                "melee-standard",
-                "melee-rend-standard"
+                "rend-battery"
               ]
             },
             "caster": {
               "name": "Caster",
               "holsters": [
                 "caster-c4",
+                "caster-dps",
                 "caster-battery",
-                "caster-c4-standard"
+                "lfs",
+                "lfs-advanced"
               ]
             },
             "ranged": {
               "name": "Physical Ranged",
               "holsters": [
                 "ranged-dervish",
+                "ranged-doorboss-percept",
+                "ranged-c2",
                 "ranged-battery",
-                "ranged-standard"
+                "dervish-battery"
               ]
             }
           }

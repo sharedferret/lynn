@@ -50,10 +50,10 @@ export default function BALogosHolsterComponent({ tray, encodedHolster }) {
 
   const generatePermalink = useCallback(() => {
     const encodedHolsters = BAHolsterHelper.encodeHolster(plates).replaceAll('=', '');
-    setGeneratedLink(`https://lynn.pet/eureka/loadout/${encodedHolsters}`);
+    setGeneratedLink(`https://forays.info/eureka/loadout/${encodedHolsters}`);
     window.history.pushState(
       {},
-      'lynn.pet! - FFXIV Field Operations Assistant',
+      'FFXIV Field Operations Assistant - forays.info',
       `/eureka/loadout/${encodedHolsters}`,
     );
   }, [setGeneratedLink]);
