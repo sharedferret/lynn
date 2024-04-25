@@ -4,6 +4,8 @@ A set of tools for the Eureka and Bozja side content forays in the MMORPG Final 
 a self-contained client-side React application with no backend. There are multiple entry points
 (see `public/`) in order to generate Telegram/Discord/Twitter link previews without a backend.
 
+You can view a live version of this site at [https://forays.info/](https://forays.info).
+
 ## Pages
 
 At present, the following pages are available:
