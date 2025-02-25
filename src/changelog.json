@@ -1,6 +1,13 @@
 {
   "changes": [
     {
+      "version": "22.2",
+      "timestamp": "2024-05-18",
+      "changes": [
+        "Added new recipes for Wisdom of the Guardian"
+      ]
+    },
+    {
       "version": "22.0",
       "timestamp": "2024-03-29",
       "changes": [
