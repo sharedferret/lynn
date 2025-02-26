@@ -1,6 +1,6 @@
 {
   "name": "lynn",
-  "version": "22.2",
+  "version": "22.2.az",
   "private": true,
   "dependencies": {
     "@date-io/dayjs": "^2.16.0",
@@ -20,11 +20,14 @@
     "dayjs": "^1.11.7",
     "eorzea-time": "^3.0.0",
     "eorzea-weather": "^3.2.0",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
     "react-custom-scrollbars-2": "^4.5.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-cluster": "^2.1.0",
     "react-router-dom": "^6.5.0",
     "react-scripts": "5.0.1",
     "underscore": "^1.13.6",
