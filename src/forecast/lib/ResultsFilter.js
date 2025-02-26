@@ -441,6 +441,7 @@ export default class ResultsFilter {
     uri: '#',
   });
 
+  // eslint-disable-next-line func-names
   static getFilter = function (name) {
     switch (name) {
       case 'copycatcassie':
