@@ -1,0 +1,10 @@
+{
+  "routes": [
+    {
+      "route": "/assets/**/*.{jpg,png,gif}",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      }
+    }
+  ]
+}
