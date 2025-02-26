@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "route": "/assets/**/*.{jpg,png,gif}",
+      "route": "/assets/*",
       "headers": {
         "Cache-Control": "public, max-age=86400"
       }
