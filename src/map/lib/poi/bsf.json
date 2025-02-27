@@ -1,0 +1,93 @@
+{
+  "name": "The Bozjan Southern Front",
+  "parameters": {
+    "imageUrl": "bsf.png",
+    "bounds": {
+      "min": {
+        "lat": -1,
+        "lon": 1
+      },
+      "max": {
+        "lat": -42,
+        "lon": 42
+      }
+    },
+    "center": {
+      "lat": -21,
+      "lon": 21
+    },
+    "zoom": {
+      "default": 5,
+      "min": 3,
+      "max": 8,
+      "delta": 0.5,
+      "snap": 0.5,
+      "scrollPx": 200
+    }
+  },
+  "mapData": {
+    "namedLocations": {
+      "markerIcon": "poi-pin.png",
+      "waymarks": [
+        {
+          "name": "Orphaned Ruins",
+          "@id": "bsf_orphanedruins",
+          "position": {
+            "x": 16,
+            "y": -17.7
+          }
+        }
+      ]
+    },
+    "namedRegions": {
+      "markerIcon": "",
+      "waymarks": [
+        {
+          "name": "The Alermuc Climb",
+          "@id": "bsf_thealermucclimb",
+          "position": {
+            "x": 23.2,
+            "y": -14.6
+          }
+        }
+      ]
+    },
+    "aetherytes": {
+      "markerIcon": "aetheryte.png",
+      "waymarks": [
+        {
+          "name": "Utya's Aegis",
+          "@id": "bsf_utyasaegis",
+          "position": {
+            "x": 14.9,
+            "y": -29.9
+          }
+        },
+        {
+          "name": "Olana's Stand",
+          "@id": "bsf_olanastand",
+          "position": {
+            "x": 28.6,
+            "y": -23.6
+          }
+        },
+        {
+          "name": "Lunya's Stand",
+          "@id": "bsf_lunyasstand",
+          "position": {
+            "x": 13.7,
+            "y": -23.6
+          }
+        },
+        {
+          "name": "Camp Steva",
+          "@id": "bsf_campsteva",
+          "position": {
+            "x": 22.3,
+            "y": -16.8
+          }
+        }
+      ]
+    }
+  }
+}

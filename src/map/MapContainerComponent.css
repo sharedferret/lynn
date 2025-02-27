@@ -1,0 +1,21 @@
+.full-screen-map {
+  height: 100vh;
+}
+
+.leaflet-tooltip {
+  background-color: transparent !important;
+  border: 0px !important;
+  box-shadow: none !important;
+  font-size:14px;
+  font-weight: 700;
+  color: #fff !important;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.leaflet-tooltip-left::before {
+  display: none !important;
+}
+
+.leaflet-tooltip-right::before {
+  display: none !important;
+}
