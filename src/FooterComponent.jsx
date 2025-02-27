@@ -3,7 +3,6 @@ import {
   Box, Button, IconButton, Stack, SvgIcon, Typography,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import { useNavigate } from 'react-router-dom';
 
 export default function FooterComponent() {
@@ -49,9 +48,6 @@ export default function FooterComponent() {
                 />
               </g>
             </SvgIcon>
-          </IconButton>
-          <IconButton href="https://twitter.com/reflexyui" target="_blank" rel="noreferrer">
-            <TwitterIcon />
           </IconButton>
           <IconButton href="https://github.com/sharedferret" target="_blank" rel="noreferrer">
             <GitHubIcon />
