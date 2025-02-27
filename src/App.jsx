@@ -24,6 +24,7 @@ import ChangelogComponent from './ChangelogComponent';
 import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
 import DRSRunHolsterCreatorContainerComponent from './drs/create/DRSRunHolsterCreatorContainerComponent';
 import BAMorbolMapComponent from './BAMorbolMapComponent';
+import MapContainerComponent from './map/MapContainerComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -193,6 +194,10 @@ const router = createBrowserRouter([
         element: <WrappedMainComponent component={<BozjaLostActionHelperComponent />} page="bozjalostaction" />,
       },
     ],
+  },
+  {
+    path: '/map',
+    element: <WrappedMainComponent component={<MapContainerComponent />} page="map" />,
   },
   {
     path: '/weather-finder',
