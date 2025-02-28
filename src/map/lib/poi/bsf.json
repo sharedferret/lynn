@@ -39,19 +39,6 @@
         }
       ]
     },
-    "namedRegions": {
-      "markerIcon": "",
-      "waymarks": [
-        {
-          "name": "The Alermuc Climb",
-          "@id": "bsf_thealermucclimb",
-          "position": {
-            "x": 23.2,
-            "y": -14.6
-          }
-        }
-      ]
-    },
     "aetherytes": {
       "markerIcon": "aetheryte.png",
       "waymarks": [
