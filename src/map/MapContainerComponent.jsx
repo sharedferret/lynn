@@ -3,22 +3,43 @@ import { Box } from '@mui/material';
 import './MapContainerComponent.css';
 
 import FullscreenMapComponent from './FullscreenMapComponent';
+import MapLayerSelectorComponent from './MapLayerSelectorComponent';
+
+// TODO: Update this when we support multiple maps
+import bsfMapData from './lib/poi/bsf.json';
 
 export default function MapContainerComponent() {
-  const [selectedLayers, setSelectedLayers] = React.useState(['namedLocations', 'aetherytes']);
+  const initialSelectedLayers = bsfMapData.layers.map((layer) => layer.id);
+  const [selectedLayers, setSelectedLayers] = React.useState(initialSelectedLayers);
+  const availableLayers = bsfMapData.layers;
 
   const handleLayerSelectorUpdate = useCallback((data) => {
-    setSelectedLayers(data);
-  }, [setSelectedLayers]);
+    const newLayers = [...selectedLayers];
+    if (data.checked) {
+      newLayers.push(data.layer);
+    } else {
+      const index = newLayers.indexOf(data.layer);
+      if (index > -1) {
+        newLayers.splice(index, 1);
+      }
+    }
+    setSelectedLayers(newLayers);
+  }, [selectedLayers, setSelectedLayers]);
 
   return (
     <Box
       component="main"
       margin="auto"
-      sx={{ flexGrow: 1, pt: { xs: 10, md: 0 } }}
+      className="map-container"
+      sx={{ pt: { xs: 10, md: 0 } }}
     >
       <FullscreenMapComponent
         selectedLayers={selectedLayers}
+        handleLayerSelectorUpdate={handleLayerSelectorUpdate}
+      />
+      <MapLayerSelectorComponent
+        selectedLayers={selectedLayers}
+        availableLayers={availableLayers}
         handleLayerSelectorUpdate={handleLayerSelectorUpdate}
       />
     </Box>

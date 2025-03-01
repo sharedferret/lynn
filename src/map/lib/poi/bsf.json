@@ -1,5 +1,15 @@
 {
   "name": "The Bozjan Southern Front",
+  "layers": [
+    {
+      "id": "namedLocations",
+      "name": "Named Locations"
+    },
+    {
+      "id": "aetherytes",
+      "name": "Aetherytes"
+    }
+  ],
   "parameters": {
     "imageUrl": "bsf.png",
     "bounds": {

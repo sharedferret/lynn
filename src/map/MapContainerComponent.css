@@ -19,3 +19,19 @@
 .leaflet-tooltip-right::before {
   display: none !important;
 }
+
+.map-container {
+  position: relative;
+  flex-grow: 1;
+}
+
+.map-layer-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 10px;
+}
