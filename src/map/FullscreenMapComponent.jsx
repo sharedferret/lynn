@@ -2,6 +2,7 @@ import React from 'react';
 
 import 'leaflet/dist/leaflet.css';
 import {
+  Circle,
   ImageOverlay,
   MapContainer, Marker, Popup, Tooltip,
 } from 'react-leaflet';
@@ -24,19 +25,32 @@ export default function FullscreenMapComponent({ selectedLayers }) {
   const markers = [];
 
   // Add all json markers to a flat markers array to display on the map
-  // TODO: When we add the LayerSelector we'll need to update this to include/exclude layers
-  // TODO: Watch performance on this, since we need to update the full markers array every time
-  // TODO: Only include icon if it's included, otherwise adjust the tooltip anchor appropriately
   Object.keys(data.mapData).forEach((markerType) => {
     if (selectedLayers.includes(markerType)) {
       // Push all markers of this type to the markers array
+      /**
+       * Most options for these markers are set in the map's json file.
+       * - markerIcon: The icon image displayed. Can be overridden for a specific marker with
+       *     iconOverride.
+       * - circle: If present, draws a circle around the marker.
+       *     (e.g. FATE/Skirmish/CE/NM boundaries)
+       * - position: Corresponds to the x/y values in-game. Since we're using leaflet (and have
+       *     to pretend that we're using latitude/longitude values), the y value needs to be
+       *     provided as negative.
+       *
+       * TODO: Eventually we'll add support for actual tooltips, but for now it just shows
+       *   the marker's name.
+       * NOTE: For region names, the marker will be slightly offset due to lacking an icon.
+       */
       markers.push(...(data.mapData[markerType].waymarks.map((marker) => (
         <Marker
           key={marker['@id']}
           position={[marker.position.y, marker.position.x]}
           icon={
             L.icon({
-              iconUrl: `${process.env.PUBLIC_URL}/assets/maps/markers/${data.mapData[markerType].markerIcon}`,
+              iconUrl: `${process.env.PUBLIC_URL}/assets/maps/markers/${
+                marker.iconOverride ? marker.iconOverride : data.mapData[markerType].markerIcon
+              }`,
               iconSize: [32, 32],
               iconAnchor: [16, 16],
               popupAnchor: [0, -8],
@@ -50,6 +64,20 @@ export default function FullscreenMapComponent({ selectedLayers }) {
           <Tooltip permanent>
             {marker.name}
           </Tooltip>
+          {
+            data.mapData[markerType].circle && (
+              <Circle
+                center={[marker.position.y, marker.position.x]}
+                pathOptions={{
+                  color: data.mapData[markerType].circle.color,
+                  fillColor: data.mapData[markerType].circle.color,
+                  fillOpacity: 0.2,
+                  dashArray: '4, 4',
+                }}
+                radius={data.mapData[markerType].circle.radius}
+              />
+            )
+          }
         </Marker>
       ))));
     }

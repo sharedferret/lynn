@@ -11,7 +11,7 @@ import bsfMapData from './lib/poi/bsf.json';
 export default function MapContainerComponent() {
   const initialSelectedLayers = bsfMapData.layers.map((layer) => layer.id);
   const [selectedLayers, setSelectedLayers] = React.useState(initialSelectedLayers);
-  const availableLayers = bsfMapData.layers;
+  const availableLayers = bsfMapData.categories;
 
   const handleLayerSelectorUpdate = useCallback((data) => {
     const newLayers = [...selectedLayers];

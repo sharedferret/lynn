@@ -1,13 +1,85 @@
 {
   "name": "The Bozjan Southern Front",
+  "categories": [
+    {
+      "name": "General",
+      "layers": [
+        {
+          "id": "namedLocations",
+          "name": "Named Locations"
+        },
+        {
+          "id": "aetherytes",
+          "name": "Aetherytes"
+        },
+        {
+          "id": "traders",
+          "name": "Traders"
+        },
+        {
+          "id": "repair",
+          "name": "Repair"
+        }
+      ]
+    },
+    {
+      "name": "Encounters",
+      "layers": [
+        {
+          "id": "skirmishes",
+          "name": "Skirmishes"
+        },
+        {
+          "id": "criticalEngagements",
+          "name": "Critical Engagements"
+        },
+        {
+          "id": "specialEncounters",
+          "name": "Special Encounters"
+        }
+      ]
+    },
+    {
+      "name": "Enemies",
+      "layers": [
+        {
+          "id": "starMobs",
+          "name": "Star Mobs"
+        },
+        {
+          "id": "magitekMobs",
+          "name": "Magitek Mobs"
+        },
+        {
+          "id": "fragmentMobs",
+          "name": "Fragment Mobs"
+        }
+      ]
+    },
+    {
+      "name": "Progression",
+      "layers": [
+        {
+          "id": "quests",
+          "name": "Quests"
+        },
+        {
+          "id": "fieldNotes",
+          "name": "Field Notes"
+        }
+      ]
+    }
+  ],
   "layers": [
     {
       "id": "namedLocations",
-      "name": "Named Locations"
+      "name": "Named Locations",
+      "category": "General"
     },
     {
       "id": "aetherytes",
-      "name": "Aetherytes"
+      "name": "Aetherytes",
+      "category": "General"
     }
   ],
   "parameters": {
@@ -82,6 +154,137 @@
           "position": {
             "x": 22.3,
             "y": -16.8
+          }
+        }
+      ]
+    },
+    "skirmishes": {
+      "markerIcon": "fate-enemies.png",
+      "circle": {
+        "radius": 0.5,
+        "color": "#03c2fc"
+      },
+      "waymarks": [
+        {
+          "name": "All Pets Are Off",
+          "@id": "bsf_skirmish01",
+          "position": {
+            "x": 17,
+            "y": -26.8
+          }
+        },
+        {
+          "name": "Brought to Heal",
+          "@id": "bsf_skirmish02",
+          "position": {
+            "x": 28.6,
+            "y": -26.1
+          }
+        },
+        {
+          "name": "Can Carnivorous Plants Bloom Even on a Battlefield?",
+          "@id": "bsf_skirmish03",
+          "position": {
+            "x": 33.7,
+            "y": -29.5
+          }
+        },
+        {
+          "name": "Conflicting with the First Law",
+          "@id": "bsf_skirmish04",
+          "position": {
+            "x": 33.5,
+            "y": -29.3
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "More Machine Now than Man",
+          "@id": "bsf_skirmish05",
+          "position": {
+            "x": 27.9,
+            "y": -28.9
+          }
+        },
+        {
+          "name": "None of Them Knew They Were Robots",
+          "@id": "bsf_skirmish06",
+          "position": {
+            "x": 24.5,
+            "y": -27.8
+          }
+        },
+        {
+          "name": "Seeq and Destroy",
+          "@id": "bsf_skirmish07",
+          "position": {
+            "x": 28.8,
+            "y": -26.3
+          }
+        },
+        {
+          "name": "Sneak and Spell",
+          "@id": "bsf_skirmish08",
+          "position": {
+            "x": 20.2,
+            "y": -26.9
+          }
+        },
+        {
+          "name": "The Beasts Must Die",
+          "@id": "bsf_skirmish09",
+          "position": {
+            "x": 20.4,
+            "y": -27.1
+          }
+        },
+        {
+          "name": "Unrest for the Wicked",
+          "@id": "bsf_skirmish10",
+          "position": {
+            "x": 24.3,
+            "y": -27.6
+          }
+        }
+      ]
+    },
+    "criticalEngagements": {
+      "markerIcon": "fate-nm.png",
+      "circle": {
+        "radius": 0.5,
+        "color": "#e0635a"
+      },
+      "waymarks": [
+        {
+          "name": "Kill It with Fire",
+          "@id": "bsf_ce01",
+          "position": {
+            "x": 17.2,
+            "y": -27
+          }
+        },
+        {
+          "name": "The Baying of the Hound(s)",
+          "@id": "bsf_ce02",
+          "position": {
+            "x": 22,
+            "y": -29
+          }
+        },
+        {
+          "name": "The Shadow of Death's Hand",
+          "@id": "bsf_ce03",
+          "position": {
+            "x": 35.4,
+            "y": -26.2
+          }
+        },
+        {
+          "name": "Vigil for the Lost",
+          "@id": "bsf_ce04",
+          "position": {
+            "x": 27.9,
+            "y": -30
           }
         }
       ]
