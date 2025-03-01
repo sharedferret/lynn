@@ -6,5 +6,21 @@
         "Cache-Control": "public, max-age=86400"
       }
     }
-  ]
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/assets/*",
+      "/static/*",
+      "/*.{png,jpg,jpeg,gif,svg,ico,webp,css,js,json}",
+      "/robots.txt",
+      "/asset-manifest.json",
+      "/site.webmanifest.json",
+      "/um.js",
+      "*/index.html"
+    ]
+  },
+  "mimeTypes": {
+    ".json": "application/json"
+  }
 }
