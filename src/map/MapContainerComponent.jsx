@@ -1,5 +1,10 @@
-import React, { useCallback } from 'react';
-import { Box, Button, Stack } from '@mui/material';
+import React, { useCallback, useMemo } from 'react';
+import {
+  Box,
+  Button,
+  Stack,
+  useTheme,
+} from '@mui/material';
 import LayersIcon from '@mui/icons-material/Layers';
 import MapIcon from '@mui/icons-material/Map';
 import './MapContainerComponent.css';
@@ -11,9 +16,12 @@ import MapLayerSelectorComponent from './MapLayerSelectorComponent';
 import bsfMapData from './lib/poi/bsf.json';
 
 export default function MapContainerComponent() {
+  const theme = useTheme();
+
   const initialSelectedLayers = bsfMapData.layers.map((layer) => layer.id);
   const [selectedLayers, setSelectedLayers] = React.useState(initialSelectedLayers);
   const [displayLayerSelector, setDisplayLayerSelector] = React.useState(true);
+  const [mouseCoordinates, setMouseCoordinates] = React.useState({ lat: 1, lon: -1 });
   const availableLayers = bsfMapData.categories;
 
   const handleLayerSelectorUpdate = useCallback((data) => {
@@ -29,6 +37,18 @@ export default function MapContainerComponent() {
     setSelectedLayers(newLayers);
   }, [selectedLayers, setSelectedLayers]);
 
+  const handleMouseMove = useCallback((e) => {
+    setMouseCoordinates({ lat: e.latlng.lat, lon: e.latlng.lng });
+  }, [setMouseCoordinates]);
+
+  const displayMap = useMemo(() => (
+    <FullscreenMapComponent
+      selectedLayers={selectedLayers}
+      handleLayerSelectorUpdate={handleLayerSelectorUpdate}
+      handleMouseMove={handleMouseMove}
+    />
+  ), [selectedLayers, handleLayerSelectorUpdate, handleMouseMove]);
+
   return (
     <Box
       component="main"
@@ -36,10 +56,7 @@ export default function MapContainerComponent() {
       className="map-container"
       sx={{ pt: { xs: 10, md: 0 } }}
     >
-      <FullscreenMapComponent
-        selectedLayers={selectedLayers}
-        handleLayerSelectorUpdate={handleLayerSelectorUpdate}
-      />
+      { displayMap }
       {
         displayLayerSelector
           && (
@@ -68,6 +85,9 @@ export default function MapContainerComponent() {
             { displayLayerSelector ? 'Close' : 'Change Layers' }
           </Button>
         </Stack>
+      </Box>
+      <Box className="mouse-coordinates" sx={{ backgroundColor: theme.palette.background.paper }}>
+        {`${mouseCoordinates.lon.toFixed(1)}, ${(mouseCoordinates.lat * -1.0).toFixed(1)}`}
       </Box>
     </Box>
 

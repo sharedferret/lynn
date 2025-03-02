@@ -5,6 +5,7 @@ import {
   Circle,
   ImageOverlay,
   MapContainer, Marker, Popup, Tooltip,
+  useMapEvents,
 } from 'react-leaflet';
 import L from 'leaflet';
 
@@ -21,7 +22,15 @@ L.Icon.Default.mergeOptions({
 });
 /* eslint-enable no-underscore-dangle, global-require, comma-dangle */
 
-export default function FullscreenMapComponent({ selectedLayers }) {
+function LocationMarker({ handleMouseMove }) {
+  useMapEvents({
+    mousemove: (e) => {
+      handleMouseMove(e);
+    },
+  });
+}
+
+export default function FullscreenMapComponent({ selectedLayers, handleMouseMove }) {
   const markers = [];
 
   // Add all json markers to a flat markers array to display on the map
@@ -97,6 +106,7 @@ export default function FullscreenMapComponent({ selectedLayers }) {
       zoomSnap={mapParameters.zoom.snap}
       wheelPxPerZoomLevel={mapParameters.zoom.scrollPx}
     >
+      <LocationMarker handleMouseMove={handleMouseMove} />
       <ImageOverlay
         url={`${process.env.PUBLIC_URL}/assets/maps/${mapParameters.imageUrl}`}
         noWrap

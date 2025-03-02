@@ -30,7 +30,6 @@
   top: 80px;
   right: 20px;
   z-index: 1000;
-  background-color: white;
   padding: 10px;
   padding-left: 15px;
   border-radius: 10px;
@@ -42,4 +41,13 @@
   top: 20px;
   right: 20px;
   z-index: 1010;
+}
+
+.mouse-coordinates {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1010;
+  padding: 10px;
+  border-radius: 10px;
 }
