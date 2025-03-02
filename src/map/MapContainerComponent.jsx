@@ -54,7 +54,6 @@ export default function MapContainerComponent() {
       component="main"
       margin="auto"
       className="map-container"
-      sx={{ pt: { xs: 10, md: 0 } }}
     >
       { displayMap }
       {
