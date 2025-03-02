@@ -78,7 +78,7 @@ export default function MapLayerSelectorComponent({
     checkboxesToDisplay.push(
       <Box sx={{ display: 'flex', flexDirection: 'column', ml: 3 }}>
         {categoryLayers}
-      </Box>, 
+      </Box>,
     );
   }
 
