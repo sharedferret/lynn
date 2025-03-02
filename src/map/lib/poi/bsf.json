@@ -34,8 +34,8 @@
           "name": "Critical Engagements"
         },
         {
-          "id": "specialEncounters",
-          "name": "Special Encounters"
+          "id": "duels",
+          "name": "Duels"
         }
       ]
     },
@@ -117,6 +117,46 @@
           "position": {
             "x": 16,
             "y": -17.7
+          }
+        },
+        {
+          "name": "Firelight's Coffin",
+          "@id": "bsf_firelightscoffin",
+          "position": {
+            "x": 25.2,
+            "y": -35.4
+          }
+        },
+        {
+          "name": "Castrum Lacus Litore",
+          "@id": "bsf_castrumlacuslitore",
+          "position": {
+            "x": 16.9,
+            "y": -9.4
+          }
+        },
+        {
+          "name": "The Alermuc Climb",
+          "@id": "bsf_thealermucclimb",
+          "position": {
+            "x": 19.9,
+            "y": -14.8
+          }
+        },
+        {
+          "name": "Old Bozja",
+          "@id": "bsf_oldbozja",
+          "position": {
+            "x": 20.7,
+            "y": -22.1
+          }
+        },
+        {
+          "name": "Southern Entrenchment",
+          "@id": "bsf_southernentrenchment",
+          "position": {
+            "x": 20.1,
+            "y": -28.2
           }
         }
       ]
@@ -245,6 +285,192 @@
             "x": 24.3,
             "y": -27.6
           }
+        },
+        {
+          "name": "Heavy Boots of Lead",
+          "@id": "bsf_skirmish11",
+          "position": {
+            "x": 30.6,
+            "y": -22
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "Help Wanted",
+          "@id": "bsf_skirmish12",
+          "position": {
+            "x": 18.2,
+            "y": -20.9
+          },
+          "iconOverride": "fate-defense.png"
+        },
+        {
+          "name": "No Camping Allowed",
+          "@id": "bsf_skirmish13",
+          "position": {
+            "x": 17.8,
+            "y": -23.5
+          }
+        },
+        {
+          "name": "Parts and Recreation",
+          "@id": "bsf_skirmish14",
+          "position": {
+            "x": 25.4,
+            "y": -21.9
+          },
+          "iconOverride": "fate-gather.png"
+        },
+        {
+          "name": "Pyromancer Supreme",
+          "@id": "bsf_skirmish15",
+          "position": {
+            "x": 18.2,
+            "y": -20.9
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "Red (Chocobo) Alert",
+          "@id": "bsf_skirmish16",
+          "position": {
+            "x": 27,
+            "y": -18.5
+          }
+        },
+        {
+          "name": "Scavengers of Man's Sorrow",
+          "@id": "bsf_skirmish17",
+          "position": {
+            "x": 25.2,
+            "y": -22.8
+          }
+        },
+        {
+          "name": "The Element of Supplies",
+          "@id": "bsf_skirmish18",
+          "position": {
+            "x": 17.6,
+            "y": -23.3
+          }
+        },
+        {
+          "name": "The Monster Mash",
+          "@id": "bsf_skirmish19",
+          "position": {
+            "x": 30.8,
+            "y": -22.2
+          }
+        },
+        {
+          "name": "Unicorn Flakes",
+          "@id": "bsf_skirmish20",
+          "position": {
+            "x": 31.6,
+            "y": -17.3
+          },
+          "iconOverride": "fate-defense.png"
+        },
+        {
+          "name": "Demonstrably Demonic",
+          "@id": "bsf_skirmish21",
+          "position": {
+            "x": 11.3,
+            "y": -20.4
+          }
+        },
+        {
+          "name": "Desperately Seeking Something",
+          "@id": "bsf_skirmish22",
+          "position": {
+            "x": 24.5,
+            "y": -17.3
+          }
+        },
+        {
+          "name": "For Absent Friends",
+          "@id": "bsf_skirmish23",
+          "position": {
+            "x": 14.3,
+            "y": -18.2
+          }
+        },
+        {
+          "name": "I'm a Mechanical Man",
+          "@id": "bsf_skirmish24",
+          "position": {
+            "x": 20.8,
+            "y": -18
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "Let Slip the Dogs of War",
+          "@id": "bsf_skirmish25",
+          "position": {
+            "x": 14.1,
+            "y": -15.7
+          }
+        },
+        {
+          "name": "Murder Death Kill",
+          "@id": "bsf_skirmish26",
+          "position": {
+            "x": 14.3,
+            "y": -15.9
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "My Family and Other Animals",
+          "@id": "bsf_skirmish27",
+          "position": {
+            "x": 11.3,
+            "y": -15.2
+          }
+        },
+        {
+          "name": "Of Steel and Flame",
+          "@id": "bsf_skirmish28",
+          "position": {
+            "x": 14.5,
+            "y": -18.4
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "Supplies Party",
+          "@id": "bsf_skirmish29",
+          "position": {
+            "x": 20.9,
+            "y": -14.7
+          },
+          "iconOverride": "fate-gather.png"
+        },
+        {
+          "name": "The War Against the Machines",
+          "@id": "bsf_skirmish30",
+          "position": {
+            "x": 11.5,
+            "y": -20.6
+          }
+        },
+        {
+          "name": "The Wild Bunch",
+          "@id": "bsf_skirmish31",
+          "position": {
+            "x": 21.1,
+            "y": -14.9
+          }
+        },
+        {
+          "name": "Waste the Rainbow",
+          "@id": "bsf_skirmish32",
+          "position": {
+            "x": 24.7,
+            "y": -17.5
+          },
+          "iconOverride": "fate-boss.png"
         }
       ]
     },
@@ -285,6 +511,104 @@
           "position": {
             "x": 27.9,
             "y": -30
+          }
+        },
+        {
+          "name": "Patriot Games",
+          "@id": "bsf_ce05",
+          "position": {
+            "x": 14.2,
+            "y": -21.3
+          }
+        },
+        {
+          "name": "The Final Furlong",
+          "@id": "bsf_ce06",
+          "position": {
+            "x": 31.9,
+            "y": -17.6
+          }
+        },
+        {
+          "name": "The Fires of War",
+          "@id": "bsf_ce07",
+          "position": {
+            "x": 20.6,
+            "y": -24.3
+          },
+          "iconOverride": "fate-wave.png"
+        },
+        {
+          "name": "The Hunt for Red Choctober",
+          "@id": "bsf_ce08",
+          "position": {
+            "x": 26.8,
+            "y": -18.4
+          }
+        },
+        {
+          "name": "Metal Fox Chaos",
+          "@id": "bsf_ce09",
+          "position": {
+            "x": 14.3,
+            "y": -18.3
+          }
+        },
+        {
+          "name": "Rise of the Robots",
+          "@id": "bsf_ce10",
+          "position": {
+            "x": 21,
+            "y": -17.8
+          }
+        },
+        {
+          "name": "Trampled under Hoof",
+          "@id": "bsf_ce11",
+          "position": {
+            "x": 9.9,
+            "y": -18.3
+          }
+        },
+        {
+          "name": "Where Strode the Behemoth",
+          "@id": "bsf_ce12",
+          "position": {
+            "x": 23.6,
+            "y": -14.9
+          }
+        }
+      ]
+    },
+    "duels": {
+      "markerIcon": "fate-duel.png",
+      "circle": {
+        "radius": 0.5,
+        "color": "#e0635a"
+      },
+      "waymarks": [
+        {
+          "name": "Aces High",
+          "@id": "bsf_duel1",
+          "position": {
+            "x": 31.6,
+            "y": -26.8
+          }
+        },
+        {
+          "name": "Beast of Man",
+          "@id": "bsf_duel2",
+          "position": {
+            "x": 23.2,
+            "y": -20.6
+          }
+        },
+        {
+          "name": "And the Flames Went Higher",
+          "@id": "bsf_duel3",
+          "position": {
+            "x": 18.7,
+            "y": -15.9
           }
         }
       ]
