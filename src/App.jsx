@@ -24,7 +24,7 @@ import ChangelogComponent from './ChangelogComponent';
 import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
 import DRSRunHolsterCreatorContainerComponent from './drs/create/DRSRunHolsterCreatorContainerComponent';
 import BAMorbolMapComponent from './BAMorbolMapComponent';
-import MapContainerComponent from './map/MapContainerComponent';
+import MapPageComponent from './map/MapPageComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -197,7 +197,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/map',
-    element: <WrappedMainComponent component={<MapContainerComponent />} page="map" />,
+    element: <WrappedMainComponent component={<MapPageComponent />} page="map" />,
   },
   {
     path: '/weather-finder',

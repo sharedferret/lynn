@@ -87,7 +87,7 @@ export default function MainComponent({
             })}
 
           </Box>
-          <FooterComponent />
+          { page !== 'map' ?? <FooterComponent />}
         </Stack>
       </Box>
     </Stack>

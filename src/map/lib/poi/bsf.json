@@ -13,8 +13,16 @@
           "name": "Aetherytes"
         },
         {
+          "id": "lostFindCaches",
+          "name": "Lost Find Caches"
+        },
+        {
           "id": "traders",
           "name": "Traders"
+        },
+        {
+          "id": "shops",
+          "name": "Shops"
         },
         {
           "id": "repair",
@@ -161,6 +169,130 @@
         }
       ]
     },
+    "lostFindCaches": {
+      "markerIcon": "box.png",
+      "waymarks": [
+        {
+          "name": "",
+          "@id": "bsf_lostfindcache1",
+          "position": {
+            "x": 15.1,
+            "y": -30.2
+          }
+        },
+        {
+          "name": "",
+          "@id": "bsf_lostfindcache2",
+          "position": {
+            "x": 28.9,
+            "y": -23.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "bsf_lostfindcache3",
+          "position": {
+            "x": 13.6,
+            "y": -23.8
+          }
+        },
+        {
+          "name": "",
+          "@id": "bsf_lostfindcache4",
+          "position": {
+            "x": 22.1,
+            "y": -16.6
+          }
+        }
+      ]
+    },
+    "repair": {
+      "markerIcon": "repair.png",
+      "waymarks": [
+        {
+          "name": "",
+          "@id": "bsf_repair1",
+          "position": {
+            "x": 14.6,
+            "y": -30.6
+          }
+        }
+      ]
+    },
+    "traders": {
+      "markerIcon": "trader.png",
+      "waymarks": [
+        {
+          "name": "Resistance Quartermaster",
+          "@id": "bsf_trader01",
+          "position": {
+            "x": 14.2,
+            "y": -29.7
+          }
+        },
+        {
+          "name": "Resistance Historian",
+          "@id": "bsf_trader02",
+          "position": {
+            "x": 15.0,
+            "y": -29.1
+          }
+        },
+        {
+          "name": "Resistance Supplier",
+          "@id": "bsf_trader03",
+          "position": {
+            "x": 15.3,
+            "y": -29.9
+          }
+        },
+        {
+          "name": "Resistance Appraiser",
+          "@id": "bsf_trader04",
+          "position": {
+            "x": 15.2,
+            "y": -30.1
+          }
+        },
+        {
+          "name": "Resistance Appraiser",
+          "@id": "bsf_trader05",
+          "position": {
+            "x": 28.9,
+            "y": -23.6
+          }
+        },
+        {
+          "name": "Resistance Appraiser",
+          "@id": "bsf_trader06",
+          "position": {
+            "x": 13.8,
+            "y": -23.8
+          }
+        },
+        {
+          "name": "Resistance Appraiser",
+          "@id": "bsf_trader07",
+          "position": {
+            "x": 22.2,
+            "y": -16.6
+          }
+        }
+      ]
+    },
+    "shops": {
+      "markerIcon": "shop.png",
+      "waymarks": [
+        {
+          "name": "Resistance Locksmith",
+          "@id": "bsf_shop01",
+          "position": {
+            "x": 15.1,
+            "y": -29.7
+          }
+        }
+      ]
+    },
     "aetherytes": {
       "markerIcon": "aetheryte.png",
       "waymarks": [
@@ -201,7 +333,7 @@
     "skirmishes": {
       "markerIcon": "fate-enemies.png",
       "circle": {
-        "radius": 0.5,
+        "radius": 0.9,
         "color": "#03c2fc"
       },
       "waymarks": [
@@ -477,7 +609,7 @@
     "criticalEngagements": {
       "markerIcon": "fate-nm.png",
       "circle": {
-        "radius": 0.5,
+        "radius": 0.9,
         "color": "#e0635a"
       },
       "waymarks": [

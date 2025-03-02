@@ -3,6 +3,7 @@ import {
   Typography,
 } from '@mui/material';
 import React from 'react';
+import Scrollbars from 'react-custom-scrollbars-2';
 
 export default function MapLayerSelectorComponent({
   selectedLayers,
@@ -85,10 +86,12 @@ export default function MapLayerSelectorComponent({
   }
 
   return (
-    <Box className="map-layer-selector" sx={{ mt: { xs: 10, md: 0 } }}>
-      <FormGroup>
-        {checkboxesToDisplay}
-      </FormGroup>
+    <Box className="map-layer-selector" sx={{ mt: { xs: 10, md: 0 }, height: { xs: '70vh', md: '80vh' } }}>
+      <Scrollbars universal>
+        <FormGroup>
+          {checkboxesToDisplay}
+        </FormGroup>
+      </Scrollbars>
     </Box>
   );
 }

@@ -1,5 +1,7 @@
 import React, { useCallback } from 'react';
-import { Box } from '@mui/material';
+import { Box, Button, Stack } from '@mui/material';
+import LayersIcon from '@mui/icons-material/Layers';
+import MapIcon from '@mui/icons-material/Map';
 import './MapContainerComponent.css';
 
 import FullscreenMapComponent from './FullscreenMapComponent';
@@ -11,6 +13,7 @@ import bsfMapData from './lib/poi/bsf.json';
 export default function MapContainerComponent() {
   const initialSelectedLayers = bsfMapData.layers.map((layer) => layer.id);
   const [selectedLayers, setSelectedLayers] = React.useState(initialSelectedLayers);
+  const [displayLayerSelector, setDisplayLayerSelector] = React.useState(true);
   const availableLayers = bsfMapData.categories;
 
   const handleLayerSelectorUpdate = useCallback((data) => {
@@ -37,11 +40,35 @@ export default function MapContainerComponent() {
         selectedLayers={selectedLayers}
         handleLayerSelectorUpdate={handleLayerSelectorUpdate}
       />
-      <MapLayerSelectorComponent
-        selectedLayers={selectedLayers}
-        availableLayers={availableLayers}
-        handleLayerSelectorUpdate={handleLayerSelectorUpdate}
-      />
+      {
+        displayLayerSelector
+          && (
+          <MapLayerSelectorComponent
+            selectedLayers={selectedLayers}
+            availableLayers={availableLayers}
+            handleLayerSelectorUpdate={handleLayerSelectorUpdate}
+          />
+          )
+      }
+      <Box className="layer-selector-button">
+        <Stack direction="row" spacing={2}>
+          <Button
+            variant="contained"
+            endIcon={<MapIcon />}
+            onClick={() => setDisplayLayerSelector(!displayLayerSelector)}
+            disabled
+          >
+            The Bozjan Southern Front
+          </Button>
+          <Button
+            variant="contained"
+            endIcon={<LayersIcon />}
+            onClick={() => setDisplayLayerSelector(!displayLayerSelector)}
+          >
+            { displayLayerSelector ? 'Close' : 'Change Layers' }
+          </Button>
+        </Stack>
+      </Box>
     </Box>
 
   );
