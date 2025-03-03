@@ -7,6 +7,8 @@ import {
 } from '@mui/material';
 import LayersIcon from '@mui/icons-material/Layers';
 import MapIcon from '@mui/icons-material/Map';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './MapContainerComponent.css';
 
 import FullscreenMapComponent from './FullscreenMapComponent';
@@ -70,6 +72,7 @@ export default function MapContainerComponent() {
         <Stack direction="row" spacing={2}>
           <Button
             variant="contained"
+            startIcon={<ExpandMoreIcon />}
             endIcon={<MapIcon />}
             onClick={() => setDisplayLayerSelector(!displayLayerSelector)}
             disabled
@@ -78,10 +81,14 @@ export default function MapContainerComponent() {
           </Button>
           <Button
             variant="contained"
+            startIcon={displayLayerSelector ? <ExpandLessIcon /> : <ExpandMoreIcon />}
             endIcon={<LayersIcon />}
             onClick={() => setDisplayLayerSelector(!displayLayerSelector)}
           >
-            { displayLayerSelector ? 'Close' : 'Change Layers' }
+            {
+              /* { displayLayerSelector ? 'Close' : 'Change Layers' } */
+              ''
+            }
           </Button>
         </Stack>
       </Box>
