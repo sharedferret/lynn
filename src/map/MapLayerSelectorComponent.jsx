@@ -90,8 +90,9 @@ export default function MapLayerSelectorComponent({
     <Box
       className="map-layer-selector"
       sx={{
-        mt: { xs: 10, md: 0 },
-        height: { xs: '70vh', md: '80vh' },
+        mt: { xs: 4, md: 0 },
+        height: { xs: 'calc(80vh - 112px)', md: 'calc(80vh - 32px)' },
+        top: { xs: '40px', md: '80px' },
         backgroundColor: theme.palette.background.paper,
       }}
     >

@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Stack,
+  Typography,
   useTheme,
 } from '@mui/material';
 import LayersIcon from '@mui/icons-material/Layers';
@@ -56,6 +57,9 @@ export default function MapContainerComponent() {
       component="main"
       margin="auto"
       className="map-container"
+      sx={{
+        height: { xs: 'calc(100vh - 80px)', md: '100vh' },
+      }}
     >
       { displayMap }
       {
@@ -77,7 +81,11 @@ export default function MapContainerComponent() {
             onClick={() => setDisplayLayerSelector(!displayLayerSelector)}
             disabled
           >
-            The Bozjan Southern Front
+            <Typography
+              display={{ xs: 'none', md: 'block' }}
+            >
+              The Bozjan Southern Front
+            </Typography>
           </Button>
           <Button
             variant="contained"

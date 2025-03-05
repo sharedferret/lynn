@@ -1,5 +1,5 @@
 .full-screen-map {
-  height: 100vh;
+  height: 100%;
 }
 
 .leaflet-tooltip {
@@ -23,11 +23,11 @@
 .map-container {
   position: relative;
   flex-grow: 1;
+  touch-action: manipulation;
 }
 
 .map-layer-selector {
   position: absolute;
-  top: 80px;
   right: 20px;
   z-index: 1000;
   padding: 10px;
