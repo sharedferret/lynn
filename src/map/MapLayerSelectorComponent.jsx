@@ -91,7 +91,7 @@ export default function MapLayerSelectorComponent({
       className="map-layer-selector"
       sx={{
         mt: { xs: 4, md: 0 },
-        height: { xs: 'calc(80vh - 112px)', md: 'calc(80vh - 32px)' },
+        height: { xs: 'calc(80dvh - 112px)', md: 'calc(80dvh - 32px)' },
         top: { xs: '40px', md: '80px' },
         backgroundColor: theme.palette.background.paper,
       }}

@@ -58,7 +58,7 @@ export default function MapContainerComponent() {
       margin="auto"
       className="map-container"
       sx={{
-        height: { xs: 'calc(100vh - 80px)', md: '100vh' },
+        height: { xs: 'calc(100dvh - 80px)', md: '100dvh' },
       }}
     >
       { displayMap }
