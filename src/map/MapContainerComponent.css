@@ -34,6 +34,18 @@
   padding-left: 15px;
   border-radius: 10px;
   width: 280px;
+  opacity: 0.8;
+}
+
+.map-zone-selector {
+  position: absolute;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 10px;
+  width: 320px;
+  opacity: 0.8;
 }
 
 .layer-selector-button {

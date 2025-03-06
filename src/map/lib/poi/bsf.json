@@ -170,7 +170,7 @@
       ]
     },
     "lostFindCaches": {
-      "markerIcon": "box.png",
+      "markerIcon": "lostfindscache.png",
       "waymarks": [
         {
           "name": "",

@@ -15,17 +15,27 @@ import './MapContainerComponent.css';
 import FullscreenMapComponent from './FullscreenMapComponent';
 import MapLayerSelectorComponent from './MapLayerSelectorComponent';
 
-// TODO: Update this when we support multiple maps
+// TODO: Attempt to lazy-load these
 import bsfMapData from './lib/poi/bsf.json';
+import hydMapData from './lib/poi/hydatos.json';
+import MapZoneSelectorComponent from './MapZoneSelectorComponent';
 
-export default function MapContainerComponent() {
+export default function MapContainerComponent({ mapId }) {
   const theme = useTheme();
 
-  const initialSelectedLayers = bsfMapData.layers.map((layer) => layer.id);
+  // TODO: Have a mapping so we can use multiple identifiers for each zone
+  const mapData = {};
+  mapData.hydatos = hydMapData;
+  mapData.bsf = bsfMapData;
+
+  const [selectedMapId, setSelectedMapId] = React.useState(mapId ?? 'hydatos');
+
+  const initialSelectedLayers = mapData[selectedMapId].layers.map((layer) => layer.id);
   const [selectedLayers, setSelectedLayers] = React.useState(initialSelectedLayers);
   const [displayLayerSelector, setDisplayLayerSelector] = React.useState(true);
+  const [displayZoneSelector, setDisplayZoneSelector] = React.useState(false);
   const [mouseCoordinates, setMouseCoordinates] = React.useState({ lat: 1, lon: -1 });
-  const availableLayers = bsfMapData.categories;
+  const availableLayers = mapData[selectedMapId].categories;
 
   const handleLayerSelectorUpdate = useCallback((data) => {
     const newLayers = [...selectedLayers];
@@ -40,17 +50,27 @@ export default function MapContainerComponent() {
     setSelectedLayers(newLayers);
   }, [selectedLayers, setSelectedLayers]);
 
+  const handleZoneSelectorUpdate = useCallback((data) => {
+    setSelectedMapId(data);
+
+    // Close selector
+    setDisplayZoneSelector(false);
+  }, [setSelectedMapId, setDisplayZoneSelector]);
+
   const handleMouseMove = useCallback((e) => {
     setMouseCoordinates({ lat: e.latlng.lat, lon: e.latlng.lng });
   }, [setMouseCoordinates]);
 
   const displayMap = useMemo(() => (
     <FullscreenMapComponent
+      mapId={selectedMapId}
+      mapData={mapData[selectedMapId].mapData}
+      mapParameters={mapData[selectedMapId].parameters}
       selectedLayers={selectedLayers}
       handleLayerSelectorUpdate={handleLayerSelectorUpdate}
       handleMouseMove={handleMouseMove}
     />
-  ), [selectedLayers, handleLayerSelectorUpdate, handleMouseMove]);
+  ), [selectedMapId, selectedLayers, handleLayerSelectorUpdate, handleMouseMove]);
 
   return (
     <Box
@@ -72,26 +92,40 @@ export default function MapContainerComponent() {
           />
           )
       }
+      {
+        displayZoneSelector
+          && (
+          <MapZoneSelectorComponent
+            currentZone={selectedMapId}
+            handleZoneSelectorUpdate={handleZoneSelectorUpdate}
+          />
+          )
+      }
       <Box className="layer-selector-button">
         <Stack direction="row" spacing={2}>
           <Button
             variant="contained"
-            startIcon={<ExpandMoreIcon />}
+            startIcon={displayZoneSelector ? <ExpandLessIcon /> : <ExpandMoreIcon />}
             endIcon={<MapIcon />}
-            onClick={() => setDisplayLayerSelector(!displayLayerSelector)}
-            disabled
+            onClick={() => {
+              setDisplayZoneSelector(!displayZoneSelector);
+              setDisplayLayerSelector(false);
+            }}
           >
             <Typography
               display={{ xs: 'none', md: 'block' }}
             >
-              The Bozjan Southern Front
+              { mapData[selectedMapId].name }
             </Typography>
           </Button>
           <Button
             variant="contained"
             startIcon={displayLayerSelector ? <ExpandLessIcon /> : <ExpandMoreIcon />}
             endIcon={<LayersIcon />}
-            onClick={() => setDisplayLayerSelector(!displayLayerSelector)}
+            onClick={() => {
+              setDisplayZoneSelector(false);
+              setDisplayLayerSelector(!displayLayerSelector);
+            }}
           >
             {
               /* { displayLayerSelector ? 'Close' : 'Change Layers' } */

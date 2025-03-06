@@ -15,6 +15,7 @@ export default function MainComponent({
   encodedHolster,
   lostAction,
   logosAction,
+  mapId,
   colorModeContext,
 }) {
   /**
@@ -83,6 +84,7 @@ export default function MainComponent({
               encodedHolster,
               lostAction,
               logosAction,
+              mapId,
               resetTimer,
             })}
 

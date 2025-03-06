@@ -105,6 +105,15 @@ function WrappedMainComponent({ component, page }) {
         colorModeContext={ColorModeContext}
       />
     );
+  } if (page === 'map') {
+    return (
+      <MainComponent
+        component={component}
+        mapId={params.mapId}
+        page={page}
+        colorModeContext={ColorModeContext}
+      />
+    );
   }
 
   return (
@@ -198,6 +207,12 @@ const router = createBrowserRouter([
   {
     path: '/map',
     element: <WrappedMainComponent component={<MapPageComponent />} page="map" />,
+    children: [
+      {
+        path: '/map/:mapId',
+        element: <WrappedMainComponent component={<MapPageComponent />} page="map" />,
+      },
+    ],
   },
   {
     path: '/weather-finder',

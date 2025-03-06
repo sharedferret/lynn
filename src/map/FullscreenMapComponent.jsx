@@ -9,8 +9,6 @@ import {
 } from 'react-leaflet';
 import L from 'leaflet';
 
-import data from './lib/poi/bsf.json';
-
 // Hack to support leaflet, see https://github.com/PaulLeCam/react-leaflet/issues/255
 /* eslint-disable no-underscore-dangle, global-require, comma-dangle */
 delete L.Icon.Default.prototype._getIconUrl;
@@ -30,11 +28,16 @@ function LocationMarker({ handleMouseMove }) {
   });
 }
 
-export default function FullscreenMapComponent({ selectedLayers, handleMouseMove }) {
+export default function FullscreenMapComponent({
+  mapData,
+  mapParameters,
+  selectedLayers,
+  handleMouseMove,
+}) {
   const markers = [];
 
   // Add all json markers to a flat markers array to display on the map
-  Object.keys(data.mapData).forEach((markerType) => {
+  Object.keys(mapData).forEach((markerType) => {
     if (selectedLayers.includes(markerType)) {
       // Push all markers of this type to the markers array
       /**
@@ -51,14 +54,14 @@ export default function FullscreenMapComponent({ selectedLayers, handleMouseMove
        *   the marker's name.
        * NOTE: For region names, the marker will be slightly offset due to lacking an icon.
        */
-      markers.push(...(data.mapData[markerType].waymarks.map((marker) => (
+      markers.push(...(mapData[markerType].waymarks.map((marker) => (
         <Marker
           key={marker['@id']}
           position={[marker.position.y, marker.position.x]}
           icon={
             L.icon({
               iconUrl: `${process.env.PUBLIC_URL}/assets/maps/markers/${
-                marker.iconOverride ? marker.iconOverride : data.mapData[markerType].markerIcon
+                marker.iconOverride ? marker.iconOverride : mapData[markerType].markerIcon
               }`,
               iconSize: [32, 32],
               iconAnchor: [16, 16],
@@ -74,16 +77,16 @@ export default function FullscreenMapComponent({ selectedLayers, handleMouseMove
             {marker.name}
           </Tooltip>
           {
-            data.mapData[markerType].circle && (
+            mapData[markerType].circle && (
               <Circle
                 center={[marker.position.y, marker.position.x]}
                 pathOptions={{
-                  color: data.mapData[markerType].circle.color,
-                  fillColor: data.mapData[markerType].circle.color,
+                  color: mapData[markerType].circle.color,
+                  fillColor: mapData[markerType].circle.color,
                   fillOpacity: 0.2,
                   dashArray: '4, 4',
                 }}
-                radius={data.mapData[markerType].circle.radius}
+                radius={mapData[markerType].circle.radius}
               />
             )
           }
@@ -91,8 +94,6 @@ export default function FullscreenMapComponent({ selectedLayers, handleMouseMove
       ))));
     }
   });
-
-  const mapParameters = data.parameters;
 
   return (
     <MapContainer
