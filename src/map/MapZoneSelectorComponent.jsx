@@ -25,9 +25,11 @@ export default function MapZoneSelectorComponent({
             value={currentZone}
             onChange={(e) => handleZoneSelectorUpdate(e.target.value)}
           >
+            <FormLabel>Occult Crescent</FormLabel>
+            <FormControlLabel value="crescent-isle" control={<Radio disabled />} label="Crescent Isle" />
             <FormLabel>Bozja</FormLabel>
-            <FormControlLabel value="bsf" control={<Radio />} label="The Bozjan Southern Front" />
             <FormControlLabel value="zadnor" control={<Radio disabled />} label="Zadnor" />
+            <FormControlLabel value="bsf" control={<Radio />} label="The Bozjan Southern Front" />
             <FormLabel>Eureka</FormLabel>
             <FormControlLabel value="hydatos" control={<Radio />} label="Eureka Hydatos" />
             <FormControlLabel value="pyros" control={<Radio disabled />} label="Eureka Pyros" />

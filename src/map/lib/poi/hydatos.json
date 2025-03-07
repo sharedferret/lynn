@@ -576,6 +576,261 @@
           }
         }
       ]
+    },
+    "nms": {
+      "markerIcon": "fate-nm.png",
+      "circle": {
+        "radius": 0.9,
+        "color": "#03c2fc"
+      },
+      "waymarks": [
+        {
+          "name": "I Ink, Therefore I Am",
+          "@id": "hyd_nm1",
+          "position": {
+            "x": 10.8,
+            "y": -25.6
+          },
+          "metadata": {
+            "boss": "Khalamari",
+            "level": 50,
+            "element": "Water",
+            "spawnedBy": {
+              "name": "Xzomit",
+              "element": "Water",
+              "level": 55
+            }
+          }
+        },
+        {
+          "name": "Drink Me",
+          "@id": "hyd_nmbunny",
+          "position": {
+            "x": 13.8,
+            "y": -21.6
+          },
+          "metadata": {
+            "boss": "Bunny FATE",
+            "level": 50,
+            "element": "Water"
+          }
+        },
+        {
+          "name": "From Tusk till Dawn",
+          "@id": "hyd_nm2",
+          "position": {
+            "x": 10.4,
+            "y": -17.2
+          },
+          "metadata": {
+            "boss": "Stegodon",
+            "level": 51,
+            "element": "Earth",
+            "spawnedBy": {
+              "name": "Hydatos Primelephas",
+              "element": "Earth",
+              "level": 56
+            }
+          }
+        },
+        {
+          "name": "Bullheaded Berserker",
+          "@id": "hyd_nm3",
+          "position": {
+            "x": 8.1,
+            "y": -21.8
+          },
+          "metadata": {
+            "boss": "Molech",
+            "level": 52,
+            "element": "Ice",
+            "spawnedBy": {
+              "name": "Val Nullchu",
+              "element": "Earth",
+              "level": 57
+            }
+          }
+        },
+        {
+          "name": "Mad, Bad, and Fabulous to Know",
+          "@id": "hyd_nm4",
+          "position": {
+            "x": 7.1,
+            "y": -14.5
+          },
+          "metadata": {
+            "boss": "Piasa",
+            "level": 53,
+            "element": "Wind",
+            "spawnedBy": {
+              "name": "Vivid Gastornis",
+              "element": "Wind",
+              "level": 58
+            }
+          }
+        },
+        {
+          "name": "Fearful Symmetry",
+          "@id": "hyd_nm5",
+          "position": {
+            "x": 8.2,
+            "y": -26.1
+          },
+          "metadata": {
+            "boss": "Frostmane",
+            "level": 54,
+            "element": "Fire",
+            "spawnedBy": {
+              "name": "Northern Tiger",
+              "element": "Earth",
+              "level": 59
+            }
+          }
+        },
+        {
+          "name": "Crawling Chaos",
+          "@id": "hyd_nm6",
+          "position": {
+            "x": 24.2,
+            "y": -19.0
+          },
+          "metadata": {
+            "boss": "Daphne",
+            "level": 55,
+            "element": "Water",
+            "spawnedBy": {
+              "name": "Dark Void Monk",
+              "element": "Water",
+              "level": 60
+            }
+          }
+        },
+        {
+          "name": "Duty-free",
+          "@id": "hyd_nm7",
+          "position": {
+            "x": 29.1,
+            "y": -23.0
+          },
+          "metadata": {
+            "boss": "King Golemar",
+            "level": 56,
+            "element": "Lightning",
+            "spawnedBy": {
+              "name": "Hydatos Wraith",
+              "element": "Fire",
+              "level": 61,
+              "spawnCondition": {
+                "time": "Night"
+              }
+            }
+          }
+        },
+        {
+          "name": "Leukewarm Reception",
+          "@id": "hyd_nm8",
+          "position": {
+            "x": 37.4,
+            "y": -26.4
+          },
+          "metadata": {
+            "boss": "Leuke",
+            "level": 57,
+            "element": "Earth",
+            "spawnedBy": {
+              "name": "Tigerhawk",
+              "element": "Wind",
+              "level": 62
+            }
+          }
+        },
+        {
+          "name": "Robber Barong",
+          "@id": "hyd_nm9",
+          "position": {
+            "x": 32.2,
+            "y": -25.3
+          },
+          "metadata": {
+            "boss": "Barong",
+            "level": 58,
+            "element": "Fire",
+            "spawnedBy": {
+              "name": "Laboratory Lion",
+              "element": "Earth",
+              "level": 63
+            }
+          }
+        },
+        {
+          "name": "Stone-cold Killer",
+          "@id": "hyd_nm10",
+          "position": {
+            "x": 36.3,
+            "y": -14.0
+          },
+          "metadata": {
+            "boss": "Ceto",
+            "level": 59,
+            "element": "Water",
+            "spawnedBy": {
+              "name": "Hydatos Delphine",
+              "element": "Fire",
+              "level": 64
+            }
+          }
+        },
+        {
+          "name": "Crystalline Provenance",
+          "@id": "hyd_nm11",
+          "position": {
+            "x": 32.8,
+            "y": -19.6
+          },
+          "metadata": {
+            "boss": "Provenance Watcher",
+            "level": 60,
+            "element": "Fire",
+            "spawnedBy": {
+              "name": "Crystal Claw",
+              "element": "Fire",
+              "level": 65
+            }
+          }
+        },
+        {
+          "name": "I Don't Want to Believe",
+          "@id": "hyd_nm12",
+          "position": {
+            "x": 26.3,
+            "y": -29.2
+          },
+          "metadata": {
+            "boss": "Ovni",
+            "level": 60,
+            "element": "Ice",
+            "spawnCondition": {
+              "weather": "Umbral Turbulence"
+            }
+          }
+        },
+        {
+          "name": "The Baldesion Arsenal: Expedition Support",
+          "@id": "hyd_nm13",
+          "position": {
+            "x": 18.7,
+            "y": -28.4
+          },
+          "metadata": {
+            "boss": "Tristitia",
+            "level": 60,
+            "element": "Wind",
+            "spawnCondition": {
+              "duty": "The Baldesion Arsenal"
+            }
+          }
+        }
+      ]
     }
   }
 }
