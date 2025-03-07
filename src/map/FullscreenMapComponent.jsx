@@ -31,6 +31,7 @@ function LocationMarker({ handleMouseMove }) {
 export default function FullscreenMapComponent({
   mapData,
   mapParameters,
+  displayLabels,
   selectedLayers,
   handleMouseMove,
 }) {
@@ -74,7 +75,7 @@ export default function FullscreenMapComponent({
             {marker.name}
           </Popup>
           <Tooltip permanent>
-            {marker.name}
+            {displayLabels ? marker.name : ''}
           </Tooltip>
           {
             mapData[markerType].circle && (

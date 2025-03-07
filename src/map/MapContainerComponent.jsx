@@ -10,6 +10,9 @@ import LayersIcon from '@mui/icons-material/Layers';
 import MapIcon from '@mui/icons-material/Map';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
+import AbcIcon from '@mui/icons-material/Abc';
 import './MapContainerComponent.css';
 
 import FullscreenMapComponent from './FullscreenMapComponent';
@@ -34,6 +37,7 @@ export default function MapContainerComponent({ mapId }) {
   const [selectedLayers, setSelectedLayers] = React.useState(initialSelectedLayers);
   const [displayLayerSelector, setDisplayLayerSelector] = React.useState(true);
   const [displayZoneSelector, setDisplayZoneSelector] = React.useState(false);
+  const [displayLabels, setDisplayLabels] = React.useState(true);
   const [mouseCoordinates, setMouseCoordinates] = React.useState({ lat: 1, lon: -1 });
   const availableLayers = mapData[selectedMapId].categories;
 
@@ -67,10 +71,11 @@ export default function MapContainerComponent({ mapId }) {
       mapData={mapData[selectedMapId].mapData}
       mapParameters={mapData[selectedMapId].parameters}
       selectedLayers={selectedLayers}
+      displayLabels={displayLabels}
       handleLayerSelectorUpdate={handleLayerSelectorUpdate}
       handleMouseMove={handleMouseMove}
     />
-  ), [selectedMapId, selectedLayers, handleLayerSelectorUpdate, handleMouseMove]);
+  ), [displayLabels, selectedMapId, selectedLayers, handleLayerSelectorUpdate, handleMouseMove]);
 
   return (
     <Box
@@ -103,6 +108,14 @@ export default function MapContainerComponent({ mapId }) {
       }
       <Box className="layer-selector-button">
         <Stack direction="row" spacing={2}>
+          <Button
+            variant="contained"
+            startIcon={displayLabels ? <CheckBoxIcon /> : <CheckBoxOutlineBlankIcon />}
+            endIcon={<AbcIcon />}
+            onClick={() => {
+              setDisplayLabels(!displayLabels);
+            }}
+          />
           <Button
             variant="contained"
             startIcon={displayZoneSelector ? <ExpandLessIcon /> : <ExpandMoreIcon />}

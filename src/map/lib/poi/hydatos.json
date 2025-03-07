@@ -15,8 +15,12 @@
           "name": "Aetherytes"
         },
         {
-          "id": "lostFindCaches",
-          "name": "Lost Find Caches"
+          "id": "logosManipulators",
+          "name": "Logos Manipulators"
+        },
+        {
+          "id": "magiaMelders",
+          "name": "Magia Melders"
         },
         {
           "id": "traders",
@@ -184,6 +188,32 @@
           "position": {
             "x": 37.0,
             "y": -22.6
+          }
+        }
+      ]
+    },
+    "logosManipulators": {
+      "markerIcon": "logos-manipulator.png",
+      "waymarks": [
+        {
+          "name": "Logos Manipulator",
+          "@id": "hyd_logosmanipulator1",
+          "position": {
+            "x": 21.4,
+            "y": -13.5
+          }
+        }
+      ]
+    },
+    "magiaMelders": {
+      "markerIcon": "magia-melder.png",
+      "waymarks": [
+        {
+          "name": "Magia Melder",
+          "@id": "hyd_magiamelder1",
+          "position": {
+            "x": 19.7,
+            "y": -13.8
           }
         }
       ]
