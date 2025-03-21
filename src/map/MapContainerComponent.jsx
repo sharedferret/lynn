@@ -22,8 +22,9 @@ import MapLayerSelectorComponent from './MapLayerSelectorComponent';
 import bsfMapData from './lib/poi/bsf.json';
 import hydMapData from './lib/poi/hydatos.json';
 import MapZoneSelectorComponent from './MapZoneSelectorComponent';
+// import MapData from './MapData';
 
-export default function MapContainerComponent({ mapId }) {
+export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
   const theme = useTheme();
 
   // TODO: Have a mapping so we can use multiple identifiers for each zone
@@ -31,26 +32,20 @@ export default function MapContainerComponent({ mapId }) {
   mapData.hydatos = hydMapData;
   mapData.bsf = bsfMapData;
 
+  // const mapDataManager = MapData.getInstance();
+
   const [selectedMapId, setSelectedMapId] = React.useState(mapId ?? 'hydatos');
 
-  const initialSelectedLayers = mapData[selectedMapId].layers.map((layer) => layer.id);
+  const initialSelectedLayers = inputSelectedLayers
+    ?? mapData[selectedMapId].layers.map((layer) => layer.id);
   const [selectedLayers, setSelectedLayers] = React.useState(initialSelectedLayers);
-  const [displayLayerSelector, setDisplayLayerSelector] = React.useState(true);
+  const [displayLayerSelector, setDisplayLayerSelector] = React.useState(false);
   const [displayZoneSelector, setDisplayZoneSelector] = React.useState(false);
   const [displayLabels, setDisplayLabels] = React.useState(true);
   const [mouseCoordinates, setMouseCoordinates] = React.useState({ lat: 1, lon: -1 });
   const availableLayers = mapData[selectedMapId].categories;
 
-  const handleLayerSelectorUpdate = useCallback((data) => {
-    const newLayers = [...selectedLayers];
-    if (data.checked) {
-      newLayers.push(data.layer);
-    } else {
-      const index = newLayers.indexOf(data.layer);
-      if (index > -1) {
-        newLayers.splice(index, 1);
-      }
-    }
+  const handleLayerSelectorUpdate = useCallback((newLayers) => {
     setSelectedLayers(newLayers);
   }, [selectedLayers, setSelectedLayers]);
 
@@ -59,6 +54,13 @@ export default function MapContainerComponent({ mapId }) {
 
     // Close selector
     setDisplayZoneSelector(false);
+
+    // Update current href
+    window.history.pushState(
+      {},
+      'FFXIV Field Operations Assistant - forays.info',
+      `/map/${data}`,
+    );
   }, [setSelectedMapId, setDisplayZoneSelector]);
 
   const handleMouseMove = useCallback((e) => {

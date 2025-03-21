@@ -39,8 +39,11 @@ function SidebarComponent({
 
   const drawerWidth = 280;
 
-  const handleSidebarClickFromSidebar = useCallback((event, item) => {
+  const handleSidebarClickFromSidebar = useCallback((event, item, forceReload = false) => {
     navigate(`/${item}`);
+    if (forceReload) {
+      navigate(0);
+    }
     handleSidebarClick();
   }, [navigate, handleSidebarClick]);
 
@@ -85,6 +88,65 @@ function SidebarComponent({
     <List pt={4} pb={4} sx={{ overflowX: 'hidden' }}>
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>OCCULT CRESCENT</Typography>
+      </Stack>
+
+      <StyledButton
+        disabled
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'oc'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Coming soon!</Typography>
+      </StyledButton>
+
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
+        <Typography color="#fff" fontWeight={600} fontSize={16}>BOZJA AND DRS</Typography>
+      </Stack>
+
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/holster'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>DRS Holsters</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/holster/c'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Holster Creator</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/bsf', true); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Bozja Maps</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'bozja/lostaction'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Lost Action Info</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.FRAGMENT_FARM)}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Fragment Farm Times</Typography>
+      </StyledButton>
+
+      <Stack direction="row" height="3rem" alignItems="center">
+        <Box width={24} />
         <Typography color="#fff" fontWeight={600} fontSize={16}>EUREKA AND BA</Typography>
       </Stack>
 
@@ -102,6 +164,14 @@ function SidebarComponent({
       >
         <Box width={32} />
         <Typography>BA Portal Map</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/hydatos', true); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Eureka Maps</Typography>
       </StyledButton>
 
       <StyledButton
@@ -134,43 +204,6 @@ function SidebarComponent({
       >
         <Box width={32} />
         <Typography>Logogram/Box Farm Times</Typography>
-      </StyledButton>
-
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>BOZJA AND DRS</Typography>
-      </Stack>
-
-      <StyledButton
-        onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/holster'); }}
-        key={uuidv4()}
-      >
-        <Box width={32} />
-        <Typography>DRS Holsters</Typography>
-      </StyledButton>
-
-      <StyledButton
-        onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/holster/c'); }}
-        key={uuidv4()}
-      >
-        <Box width={32} />
-        <Typography>Holster Creator</Typography>
-      </StyledButton>
-
-      <StyledButton
-        onClick={(e) => { handleSidebarClickFromSidebar(e, 'bozja/lostaction'); }}
-        key={uuidv4()}
-      >
-        <Box width={32} />
-        <Typography>Lost Action Info</Typography>
-      </StyledButton>
-
-      <StyledButton
-        onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.FRAGMENT_FARM)}
-        key={uuidv4()}
-      >
-        <Box width={32} />
-        <Typography>Fragment Farm Times</Typography>
       </StyledButton>
 
       <Stack direction="row" height="3rem" alignItems="center">

@@ -89,7 +89,7 @@ export default function MainComponent({
             })}
 
           </Box>
-          { page !== 'map' ? <FooterComponent /> : null}
+          { (page !== 'map' && page !== 'portals') ? <FooterComponent /> : null}
         </Stack>
       </Box>
     </Stack>

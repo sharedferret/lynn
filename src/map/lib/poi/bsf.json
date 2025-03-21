@@ -3,77 +3,95 @@
   "categories": [
     {
       "name": "General",
+      "enabled": true,
       "layers": [
         {
           "id": "namedLocations",
-          "name": "Named Locations"
+          "name": "Named Locations",
+          "enabled": true
         },
         {
           "id": "aetherytes",
-          "name": "Aetherytes"
+          "name": "Aetherytes",
+          "enabled": true
         },
         {
           "id": "lostFindCaches",
-          "name": "Lost Find Caches"
+          "name": "Lost Find Caches",
+          "enabled": true
         },
         {
           "id": "traders",
-          "name": "Traders"
+          "name": "Traders",
+          "enabled": true
         },
         {
           "id": "shops",
-          "name": "Shops"
+          "name": "Shops",
+          "enabled": true
         },
         {
           "id": "repair",
-          "name": "Repair"
+          "name": "Repair",
+          "enabled": true
         }
       ]
     },
     {
       "name": "Encounters",
+      "enabled": true,
       "layers": [
         {
           "id": "skirmishes",
-          "name": "Skirmishes"
+          "name": "Skirmishes",
+          "enabled": true
         },
         {
           "id": "criticalEngagements",
-          "name": "Critical Engagements"
+          "name": "Critical Engagements",
+          "enabled": true
         },
         {
           "id": "duels",
-          "name": "Duels"
+          "name": "Duels",
+          "enabled": true
         }
       ]
     },
     {
       "name": "Enemies",
+      "enabled": false,
       "layers": [
         {
           "id": "starMobs",
-          "name": "Star Mobs"
+          "name": "Star Mobs",
+          "enabled": false
         },
         {
           "id": "magitekMobs",
-          "name": "Magitek Mobs"
+          "name": "Magitek Mobs",
+          "enabled": false
         },
         {
           "id": "fragmentMobs",
-          "name": "Fragment Mobs"
+          "name": "Fragment Mobs",
+          "enabled": false
         }
       ]
     },
     {
       "name": "Progression",
+      "enabled": false,
       "layers": [
         {
           "id": "quests",
-          "name": "Quests"
+          "name": "Quests",
+          "enabled": false
         },
         {
           "id": "fieldNotes",
-          "name": "Field Notes"
+          "name": "Field Notes",
+          "enabled": false
         }
       ]
     }

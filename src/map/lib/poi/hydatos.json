@@ -5,77 +5,100 @@
   "categories": [
     {
       "name": "General",
+      "enabled": true,
       "layers": [
         {
           "id": "namedLocations",
-          "name": "Named Locations"
+          "name": "Named Locations",
+          "enabled": true
         },
         {
           "id": "aetherytes",
-          "name": "Aetherytes"
+          "name": "Aetherytes",
+          "enabled": true
+        },
+        {
+          "id": "elementals",
+          "name": "Elementals",
+          "enabled": true
         },
         {
           "id": "logosManipulators",
-          "name": "Logos Manipulators"
+          "name": "Logos Manipulators",
+          "enabled": true
         },
         {
           "id": "magiaMelders",
-          "name": "Magia Melders"
+          "name": "Magia Melders",
+          "enabled": true
         },
         {
           "id": "traders",
-          "name": "Traders"
+          "name": "Traders",
+          "enabled": true
         },
         {
           "id": "shops",
-          "name": "Shops"
+          "name": "Shops",
+          "enabled": true
         },
         {
           "id": "repair",
-          "name": "Repair"
+          "name": "Repair",
+          "enabled": true
         }
       ]
     },
     {
       "name": "Encounters",
+      "enabled": true,
       "layers": [
         {
           "id": "nms",
-          "name": "NMs"
+          "name": "NMs",
+          "enabled": true
         },
         {
           "id": "bunnyCoffers",
-          "name": "Bunny Coffers"
+          "name": "Bunny Coffers",
+          "enabled": true
         },
         {
           "id": "baPortals",
-          "name": "BA Portals"
+          "name": "BA Portals",
+          "enabled": true
         }
       ]
     },
     {
       "name": "Enemies",
+      "enabled": false,
       "layers": [
         {
           "id": "mobs",
-          "name": "Mobs"
+          "name": "Mobs",
+          "enabled": false
         },
         {
           "id": "nmPrepMobs",
-          "name": "NM Prep Mobs"
+          "name": "NM Prep Mobs",
+          "enabled": false
         },
         {
           "id": "sprites",
-          "name": "Sprites"
+          "name": "Sprites",
+          "enabled": false
         }
       ]
     },
     {
       "name": "Progression",
+      "enabled": false,
       "layers": [
         {
           "id": "quests",
-          "name": "Quests"
+          "name": "Quests",
+          "enabled": false
         }
       ]
     }
@@ -192,6 +215,211 @@
         }
       ]
     },
+    "elementals": {
+      "markerIcon": "elemental.png",
+      "waymarks": [
+        {
+          "name": "",
+          "@id": "hyd_elemental01",
+          "position": {
+            "x": 5.1,
+            "y": -16.1
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental02",
+          "position": {
+            "x": 10.0,
+            "y": -14.3
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental03",
+          "position": {
+            "x": 16.0,
+            "y": -13.3
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental04",
+          "position": {
+            "x": 14.6,
+            "y": -16.5
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental05",
+          "position": {
+            "x": 13.0,
+            "y": -17.8
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental06",
+          "position": {
+            "x": 7.8,
+            "y": -19.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental07",
+          "position": {
+            "x": 4.4,
+            "y": -23.9
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental08",
+          "position": {
+            "x": 7.1,
+            "y": -23.9
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental09",
+          "position": {
+            "x": 5.5,
+            "y": -30.0
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental10",
+          "position": {
+            "x": 9.2,
+            "y": -29.7
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental11",
+          "position": {
+            "x": 9.8,
+            "y": -27.0
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental12",
+          "position": {
+            "x": 14.2,
+            "y": -29.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental13",
+          "position": {
+            "x": 18.2,
+            "y": -20.4
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental14",
+          "position": {
+            "x": 19.2,
+            "y": -24.3
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental15",
+          "position": {
+            "x": 22.1,
+            "y": -30.1
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental16",
+          "position": {
+            "x": 23.7,
+            "y": -27.1
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental17",
+          "position": {
+            "x": 28.6,
+            "y": -21.1
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental18",
+          "position": {
+            "x": 30.8,
+            "y": -26.1
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental19",
+          "position": {
+            "x": 29.5,
+            "y": -30.3
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental20",
+          "position": {
+            "x": 34.2,
+            "y": -16.7
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental21",
+          "position": {
+            "x": 38.2,
+            "y": -17.2
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental22",
+          "position": {
+            "x": 33.9,
+            "y": -21.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental23",
+          "position": {
+            "x": 37.9,
+            "y": -22.9
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental24",
+          "position": {
+            "x": 35.6,
+            "y": -26.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "hyd_elemental25",
+          "position": {
+            "x": 36.9,
+            "y": -29.7
+          }
+        }
+      ]
+    },
     "logosManipulators": {
       "markerIcon": "logos-manipulator.png",
       "waymarks": [
@@ -214,6 +442,85 @@
           "position": {
             "x": 19.7,
             "y": -13.8
+          }
+        }
+      ]
+    },
+    "traders": {
+      "markerIcon": "trader.png",
+      "waymarks": [
+        {
+          "name": "Trader",
+          "@id": "hyd_trader1",
+          "position": {
+            "x": 20.5,
+            "y": -13.3
+          }
+        }
+      ]
+    },
+    "shops": {
+      "markerIcon": "shop.png",
+      "waymarks": [
+        {
+          "name": "Expedition Engineer",
+          "@id": "hyd_shop1",
+          "position": {
+            "x": 19.7,
+            "y": -13.2
+          }
+        },
+        {
+          "name": "Shop",
+          "@id": "hyd_shop2",
+          "position": {
+            "x": 19.8,
+            "y": -14.0
+          }
+        },
+        {
+          "name": "Shop",
+          "@id": "hyd_shop3",
+          "position": {
+            "x": 20.0,
+            "y": -14.1
+          }
+        },
+        {
+          "name": "Expedition Alchemist",
+          "@id": "hyd_shop4",
+          "position": {
+            "x": 20.9,
+            "y": -13.3
+          }
+        },
+        {
+          "name": "Drake",
+          "@id": "hyd_shop5",
+          "position": {
+            "x": 21.3,
+            "y": -13.3
+          }
+        },
+        {
+          "name": "Eureka Weapons & Gear",
+          "@id": "hyd_shop1",
+          "position": {
+            "x": 21.4,
+            "y": -13.7
+          }
+        }
+      ]
+    },
+    "repair": {
+      "markerIcon": "repair.png",
+      "waymarks": [
+        {
+          "name": "Repair",
+          "@id": "hyd_repair1",
+          "position": {
+            "x": 19.7,
+            "y": -13.5
           }
         }
       ]
@@ -603,6 +910,409 @@
           "position": {
             "x": 35.8,
             "y": -29.9
+          }
+        }
+      ],
+      "annotations": [
+        {
+          "@id": "ba-line-12",
+          "type": "polyline",
+          "path": [
+            {
+              "x": 11.0,
+              "y": -14.0
+            },
+            {
+              "x": 11.0,
+              "y": -19.0
+            },
+            {
+              "x": 9.0,
+              "y": -21.5
+            },
+            {
+              "x": 9.0,
+              "y": -30
+            }
+          ]
+        },
+        {
+          "@id": "ba-line-23",
+          "type": "polyline",
+          "path": [
+            {
+              "x": 17.8,
+              "y": -12.5
+            },
+            {
+              "x": 17.8,
+              "y": -30.1
+            }
+          ]
+        },
+        {
+          "@id": "ba-line-34",
+          "type": "polyline",
+          "path": [
+            {
+              "x": 24.1,
+              "y": -14.8
+            },
+            {
+              "x": 24.1,
+              "y": -31.2
+            }
+          ]
+        },
+        {
+          "@id": "ba-line-45",
+          "type": "polyline",
+          "path": [
+            {
+              "x": 28.0,
+              "y": -14.6
+            },
+            {
+              "x": 28.0,
+              "y": -17.0
+            },
+            {
+              "x": 29.0,
+              "y": -19.0
+            },
+            {
+              "x": 29.0,
+              "y": -30.7
+            }
+          ]
+        },
+        {
+          "@id": "ba-line-56",
+          "type": "polyline",
+          "path": [
+            {
+              "x": 34.0,
+              "y": -13.2
+            },
+            {
+              "x": 34.0,
+              "y": -25.0
+            },
+            {
+              "x": 32.3,
+              "y": -26.5
+            },
+            {
+              "x": 32.3,
+              "y": -30.6
+            }
+          ]
+        },
+        {
+          "@id": "ba-1-header",
+          "type": "largeText",
+          "text": "1",
+          "position": {
+            "x": 7.0,
+            "y": -8.0
+          }
+        },
+        {
+          "@id": "ba-2-header",
+          "type": "largeText",
+          "text": "2",
+          "position": {
+            "x": 14.0,
+            "y": -8.0
+          }
+        },
+        {
+          "@id": "ba-3-header",
+          "type": "largeText",
+          "text": "3",
+          "position": {
+            "x": 20.5,
+            "y": -8.0
+          }
+        },
+        {
+          "@id": "ba-4-header",
+          "type": "largeText",
+          "text": "4",
+          "position": {
+            "x": 25.5,
+            "y": -8.0
+          }
+        },
+        {
+          "@id": "ba-5-header",
+          "type": "largeText",
+          "text": "5",
+          "position": {
+            "x": 31.0,
+            "y": -8.0
+          }
+        },
+        {
+          "@id": "ba-6-header",
+          "type": "largeText",
+          "text": "6",
+          "position": {
+            "x": 36.5,
+            "y": -8.0
+          }
+        }
+      ]
+    },
+    "bunnyCoffers": {
+      "markerIcon": "coffer.png",
+      "waymarks": [
+        {
+          "name": "",
+          "@id": "hydatoscoffer01",
+          "position": {
+          "x": 5.4,
+          "y": -12.2
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer02",
+          "position": {
+          "x": 9.4,
+          "y": -13.5
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer03",
+          "position": {
+          "x": 3.0,
+          "y": -16.5
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer04",
+          "position": {
+          "x": 8.4,
+          "y": -19.4
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer05",
+          "position": {
+          "x": 4.1,
+          "y": -22.1
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer06",
+          "position": {
+          "x": 7.8,
+          "y": -23.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer07",
+          "position": {
+          "x": 3.1,
+          "y": -27.5
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer08",
+          "position": {
+          "x": 5.5,
+          "y": -28.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer09",
+          "position": {
+          "x": 10.2,
+          "y": -30.5
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer10",
+          "position": {
+          "x": 14.4,
+          "y": -28.7
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer11",
+          "position": {
+          "x": 18.1,
+          "y": -30.0
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer12",
+          "position": {
+          "x": 17.7,
+          "y": -19.1
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer13",
+          "position": {
+          "x": 12.7,
+          "y": -17.5
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer14",
+          "position": {
+          "x": 15.1,
+          "y": -16.4
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer15",
+          "position": {
+          "x": 19.1,
+          "y": -13.5
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer16",
+          "position": {
+          "x": 23.9,
+          "y": -18.7
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer17",
+          "position": {
+          "x": 21.6,
+          "y": -23.5
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer18",
+          "position": {
+          "x": 24.7,
+          "y": -24.0
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer19",
+          "position": {
+          "x": 24.2,
+          "y": -31.2
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer20",
+          "position": {
+          "x": 26.1,
+          "y": -13.3
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer21",
+          "position": {
+          "x": 27.2,
+          "y": -20.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer22",
+          "position": {
+          "x": 28.9,
+          "y": -22.9
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer23",
+          "position": {
+          "x": 28.3,
+          "y": -26.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer24",
+          "position": {
+          "x": 30.8,
+          "y": -16.8
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer25",
+          "position": {
+          "x": 38.4,
+          "y": -13.3
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer26",
+          "position": {
+          "x": 34.6,
+          "y": -16.4
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer27",
+          "position": {
+          "x": 38.2,
+          "y": -20.5
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer28",
+          "position": {
+          "x": 34.8,
+          "y": -23.9
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer29",
+          "position": {
+          "x": 38.9,
+          "y": -26.1
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer30",
+          "position": {
+          "x": 38.4,
+          "y": -30.7
+          }
+        },
+        {
+          "name": "",
+          "@id": "hydatoscoffer31",
+          "position": {
+          "x": 33.1,
+          "y": -29.3
           }
         }
       ]

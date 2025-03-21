@@ -31,6 +31,7 @@ export default function MapLayerSelectorComponent({
                 category.layers.some((layer) => selectedLayers.includes(layer.id))
                 && !category.layers.every((layer) => selectedLayers.includes(layer.id))
               }
+              disabled={!category.enabled}
             />
           )
         }
@@ -64,14 +65,23 @@ export default function MapLayerSelectorComponent({
           (
             <Checkbox
               checked={selectedLayers.includes(layer.id)}
+              disabled={!layer.enabled}
             />
           )
         }
         label={layer.name}
-        onChange={(e) => handleLayerSelectorUpdate({
-          layer: layer.id,
-          checked: e.target.checked,
-        })}
+        onChange={(e) => {
+          const newLayers = [...selectedLayers];
+          if (e.target.checked) {
+            newLayers.push(layer.id);
+          } else {
+            const index = newLayers.indexOf(layer.id);
+            if (index > -1) {
+              newLayers.splice(index, 1);
+            }
+          }
+          handleLayerSelectorUpdate(newLayers);
+        }}
       />
     ));
 

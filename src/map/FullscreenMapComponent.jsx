@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import {
   Circle,
   ImageOverlay,
-  MapContainer, Marker, Popup, Tooltip,
+  MapContainer, Marker, Polyline, Popup, Tooltip,
   useMapEvents,
 } from 'react-leaflet';
 import L from 'leaflet';
@@ -36,6 +36,7 @@ export default function FullscreenMapComponent({
   handleMouseMove,
 }) {
   const markers = [];
+  const annotations = [];
 
   // Add all json markers to a flat markers array to display on the map
   Object.keys(mapData).forEach((markerType) => {
@@ -93,6 +94,50 @@ export default function FullscreenMapComponent({
           }
         </Marker>
       ))));
+
+      /**
+       * Add annotations, if they exist. These are things drawn on the map that aren't associated
+       * with a specific marker.
+       */
+      if (mapData[markerType].annotations) {
+        annotations.push(...mapData[markerType].annotations.map((annotation) => {
+          switch (annotation.type) {
+            case 'polyline':
+              return (
+                <Polyline
+                  key={annotation['@id']}
+                  pathOptions={{
+                    color: '#fff',
+                    fillColor: '#fff',
+                    fillOpacity: 0.2,
+                    dashArray: '4, 12',
+                  }}
+                  positions={annotation.path.map((point) => (
+                    [point.y, point.x]
+                  ))}
+                />
+              );
+            case 'largeText':
+              // TODO: Adjust font size with zoom. Or make these images, maybe?
+              return (
+                <Marker
+                  key={annotation['@id']}
+                  position={[annotation.position.y, annotation.position.x]}
+                  icon={L.divIcon({
+                    className: 'large-text',
+                    html: `<div style="font-size:48pt;font-weight:bold;">${annotation.text}</div>`,
+                    iconSize: [0, 0],
+                    iconAnchor: [0, 0],
+                    popupAnchor: [0, 0],
+                    tooltipAnchor: [0, 0],
+                  })}
+                />
+              );
+            default:
+              return null;
+          }
+        }));
+      }
     }
   });
 
@@ -124,6 +169,7 @@ export default function FullscreenMapComponent({
         }
       />
       {markers}
+      {annotations}
     </MapContainer>
   );
 }
