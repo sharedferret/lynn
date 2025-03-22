@@ -39,11 +39,9 @@ function SidebarComponent({
 
   const drawerWidth = 280;
 
-  const handleSidebarClickFromSidebar = useCallback((event, item, forceReload = false) => {
+  const handleSidebarClickFromSidebar = useCallback((event, item) => {
     navigate(`/${item}`);
-    if (forceReload) {
-      navigate(0);
-    }
+
     handleSidebarClick();
   }, [navigate, handleSidebarClick]);
 
@@ -122,7 +120,7 @@ function SidebarComponent({
       </StyledButton>
 
       <StyledButton
-        onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/bsf', true); }}
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/bsf'); }}
         key={uuidv4()}
       >
         <Box width={32} />
@@ -167,7 +165,7 @@ function SidebarComponent({
       </StyledButton>
 
       <StyledButton
-        onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/hydatos', true); }}
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/hydatos'); }}
         key={uuidv4()}
       >
         <Box width={32} />
