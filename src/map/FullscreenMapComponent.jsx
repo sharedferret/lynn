@@ -8,6 +8,7 @@ import {
   useMapEvents,
 } from 'react-leaflet';
 import L from 'leaflet';
+import TooltipBaseComponent from './TooltipBaseComponent';
 
 // Hack to support leaflet, see https://github.com/PaulLeCam/react-leaflet/issues/255
 /* eslint-disable no-underscore-dangle, global-require, comma-dangle */
@@ -72,8 +73,12 @@ export default function FullscreenMapComponent({
             })
           }
         >
-          <Popup>
-            {marker.name}
+          <Popup m={0}>
+            <TooltipBaseComponent
+              markerData={marker}
+              icon={marker.iconOverride ? marker.iconOverride : mapData[markerType].markerIcon}
+              type={markerType}
+            />
           </Popup>
           <Tooltip permanent>
             {displayLabels ? marker.name : ''}
