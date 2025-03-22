@@ -86,6 +86,7 @@ export default function TimeAndWeatherPopoverComponent() {
       spacing={1}
       alignItems="center"
       justifyContent="center"
+      key={uuidv4()}
     >
       <Box>
         <Typography width={300}>{name}</Typography>
@@ -97,33 +98,35 @@ export default function TimeAndWeatherPopoverComponent() {
         alignItems="center"
       >
         {conditions.map((item, index) => (
-          <Tooltip title={(
-            <Stack>
-              <Typography textAlign="center">
-                {dayjs(item.time.getTime())
-                  .format('h:mm:ss A')}
-              </Typography>
-              <Typography textAlign="center">
-                {
+          <Tooltip
+            title={(
+              <Stack>
+                <Typography textAlign="center">
+                  {dayjs(item.time.getTime())
+                    .format('h:mm:ss A')}
+                </Typography>
+                <Typography textAlign="center">
+                  {
                   new EorzeaTime(
                     dayjs(item.time.getTime())
                       .toDate(),
                   )
                     .getHours().toLocaleString('en-US', { minimumIntegerDigits: 2 })
                 }
-                :
-                {
+                  :
+                  {
                   new EorzeaTime(
                     dayjs(item.time.getTime())
                       .toDate(),
                   )
                     .getMinutes().toLocaleString('en-US', { minimumIntegerDigits: 2 })
                 }
-                {' '}
-                ET
-              </Typography>
-            </Stack>
+                  {' '}
+                  ET
+                </Typography>
+              </Stack>
           )}
+            key={uuidv4()}
           >
             <Stack direction="row" alignItems="center">
               <Grid

@@ -15,6 +15,7 @@ export default function MainComponent({
   encodedHolster,
   lostAction,
   logosAction,
+  mapId,
   colorModeContext,
 }) {
   /**
@@ -83,11 +84,12 @@ export default function MainComponent({
               encodedHolster,
               lostAction,
               logosAction,
+              mapId,
               resetTimer,
             })}
 
           </Box>
-          <FooterComponent />
+          { (page !== 'map' && page !== 'portals') ? <FooterComponent /> : null}
         </Stack>
       </Box>
     </Stack>
