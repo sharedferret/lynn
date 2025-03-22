@@ -191,6 +191,7 @@
       "waymarks": [
         {
           "name": "",
+          "popupTitle": "Lost Finds Cache",
           "@id": "bsf_lostfindcache1",
           "position": {
             "x": 15.1,
@@ -199,6 +200,7 @@
         },
         {
           "name": "",
+          "popupTitle": "Lost Finds Cache",
           "@id": "bsf_lostfindcache2",
           "position": {
             "x": 28.9,
@@ -207,6 +209,7 @@
         },
         {
           "name": "",
+          "popupTitle": "Lost Finds Cache",
           "@id": "bsf_lostfindcache3",
           "position": {
             "x": 13.6,
@@ -215,6 +218,7 @@
         },
         {
           "name": "",
+          "popupTitle": "Lost Finds Cache",
           "@id": "bsf_lostfindcache4",
           "position": {
             "x": 22.1,
