@@ -31,8 +31,6 @@ export const ColorModeContext = React.createContext({ toggleColorMode: () => { }
 function WrappedMainComponent({ component, page }) {
   const params = useParams();
 
-  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-
   if (page === 'forecast') {
     const forecastFilter = ResultsFilter.getFilter(params.forecastfilter);
     return (
@@ -319,6 +317,10 @@ function App() {
     }),
     [mode],
   );
+
+  useEffect(() => {
+    document.body.setAttribute('data-theme', mode);
+  }, [mode]);
 
   return (
     <ColorModeContext.Provider value={colorMode}>

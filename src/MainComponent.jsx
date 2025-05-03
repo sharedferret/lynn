@@ -34,6 +34,9 @@ export default function MainComponent({
   const handleSidebarClick = useCallback(() => {
     setMobileOpen(false);
     setResetTimer(new Date().getTime());
+
+    // Reset window scroll
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, [setMobileOpen, setResetTimer]);
 
   const handleSidebarForecastClick = useCallback((filter) => {

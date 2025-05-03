@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "version": "23.1",
+      "timestamp": "2025-05-02",
+      "changes": [
+        "Make links actually readable in dark mode",
+        "Other bugfixes"
+      ]
+    },
+    {
       "version": "23.0",
       "timestamp": "2025-03-21",
       "changes": [
