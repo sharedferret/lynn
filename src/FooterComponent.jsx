@@ -52,7 +52,14 @@ export default function FooterComponent() {
           <IconButton href="https://github.com/sharedferret" target="_blank" rel="noreferrer">
             <GitHubIcon />
           </IconButton>
-          <Button color="inherit" onClick={() => { navigate('/changelog'); }}>
+          <Button
+            color="inherit"
+            onClick={() => {
+              navigate('/changelog');
+              // Reset window scroll
+              window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+            }}
+          >
             <Typography variant="subtitle2" fontSize={12} pl={1} pr={1}>
               {`Version ${process.env.REACT_APP_VERSION}`}
             </Typography>
