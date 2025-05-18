@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import 'leaflet/dist/leaflet.css';
 import {
@@ -20,6 +20,21 @@ L.Icon.Default.mergeOptions({
   shadowUrl: require('leaflet/dist/images/marker-shadow.png')
 });
 /* eslint-enable no-underscore-dangle, global-require, comma-dangle */
+
+function PopupHelper({ markerRef }) {
+  React.useEffect(() => {
+    if (markerRef?.current) {
+      // Small timeout to ensure marker is fully initialized
+      // There has to be a better way to do this...
+      setTimeout(() => {
+        if (markerRef.current) {
+          markerRef.current.openPopup();
+        }
+      }, 100);
+    }
+  }, [markerRef]);
+  return null;
+}
 
 function LocationMarker({ handleMouseMove }) {
   const map = useMapEvents({
@@ -82,6 +97,8 @@ export default function FullscreenMapComponent({
   const markers = [];
   const annotations = [];
 
+  const markerRef = useRef(null);
+
   // Add all json markers to a flat markers array to display on the map
   Object.keys(mapData).forEach((markerType) => {
     if (selectedLayers.includes(markerType)) {
@@ -104,6 +121,7 @@ export default function FullscreenMapComponent({
         <Marker
           key={marker['@id']}
           position={[marker.position.y, marker.position.x]}
+          ref={marker['@id'] === initialMapPosition?.poi ? markerRef : null}
           icon={
             L.icon({
               iconUrl: `${process.env.PUBLIC_URL}/assets/maps/markers/${
@@ -207,6 +225,7 @@ export default function FullscreenMapComponent({
       zoomSnap={mapParameters.zoom.snap}
       wheelPxPerZoomLevel={mapParameters.zoom.scrollPx}
     >
+      <PopupHelper markerRef={markerRef} />
       <LocationMarker handleMouseMove={handleMouseMove} />
       <ImageOverlay
         url={`${process.env.PUBLIC_URL}/assets/maps/${mapParameters.imageUrl}`}
