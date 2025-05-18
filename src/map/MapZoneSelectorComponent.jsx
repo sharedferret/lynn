@@ -26,7 +26,7 @@ export default function MapZoneSelectorComponent({
             onChange={(e) => handleZoneSelectorUpdate(e.target.value)}
           >
             <FormLabel>Occult Crescent</FormLabel>
-            <FormControlLabel value="south-horn" control={<Radio disabled />} label="South Horn" />
+            <FormControlLabel value="southhorn" control={<Radio />} label="South Horn" />
             <FormLabel>Bozja</FormLabel>
             <FormControlLabel value="zadnor" control={<Radio disabled />} label="Zadnor" />
             <FormControlLabel value="bsf" control={<Radio />} label="The Bozjan Southern Front" />

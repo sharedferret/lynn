@@ -22,11 +22,53 @@ L.Icon.Default.mergeOptions({
 /* eslint-enable no-underscore-dangle, global-require, comma-dangle */
 
 function LocationMarker({ handleMouseMove }) {
-  useMapEvents({
+  const map = useMapEvents({
     mousemove: (e) => {
       handleMouseMove(e);
     },
+    moveend: () => {
+      const center = map.getCenter();
+      const zoom = map.getZoom();
+
+      const params = new URLSearchParams(window.location.search);
+      params.set('x', center.lng.toFixed(2));
+      params.set('y', center.lat.toFixed(2));
+      params.set('zoom', zoom.toFixed(1));
+
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    },
+    zoomend: () => {
+      const center = map.getCenter();
+      const zoom = map.getZoom();
+
+      const params = new URLSearchParams(window.location.search);
+      params.set('x', center.lng.toFixed(2));
+      params.set('y', center.lat.toFixed(2));
+      params.set('zoom', zoom.toFixed(1));
+
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    },
+    popupopen: (e) => {
+      // Push popup id to query params
+      const params = new URLSearchParams(window.location.search);
+      params.set('poi', e.popup.options.id);
+
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    },
+    popupclose: () => {
+      // Remove popup id from query params
+      const params = new URLSearchParams(window.location.search);
+      params.delete('poi');
+
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    },
   });
+
+  return null;
 }
 
 export default function FullscreenMapComponent({
@@ -35,6 +77,7 @@ export default function FullscreenMapComponent({
   displayLabels,
   selectedLayers,
   handleMouseMove,
+  initialMapPosition,
 }) {
   const markers = [];
   const annotations = [];
@@ -73,7 +116,7 @@ export default function FullscreenMapComponent({
             })
           }
         >
-          <Popup m={0}>
+          <Popup m={0} id={marker['@id']}>
             <TooltipBaseComponent
               markerData={marker}
               icon={marker.iconOverride ? marker.iconOverride : mapData[markerType].markerIcon}
@@ -146,12 +189,18 @@ export default function FullscreenMapComponent({
     }
   });
 
+  const initialMapSettings = {
+    lat: initialMapPosition?.lat || mapParameters.center.lat,
+    lon: initialMapPosition?.lon || mapParameters.center.lon,
+    zoom: initialMapPosition?.zoom || mapParameters.zoom.default,
+  };
+
   return (
     <MapContainer
       className="full-screen-map"
       crs={L.CRS.Simple}
-      center={[mapParameters.center.lat, mapParameters.center.lon]}
-      zoom={mapParameters.zoom.default}
+      center={[initialMapSettings.lat, initialMapSettings.lon]}
+      zoom={initialMapSettings.zoom}
       minZoom={mapParameters.zoom.min}
       maxZoom={mapParameters.zoom.max}
       zoomDelta={mapParameters.zoom.delta}

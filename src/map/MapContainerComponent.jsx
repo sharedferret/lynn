@@ -21,6 +21,7 @@ import MapLayerSelectorComponent from './MapLayerSelectorComponent';
 // TODO: Attempt to lazy-load these
 import bsfMapData from './lib/poi/bsf.json';
 import hydMapData from './lib/poi/hydatos.json';
+import oshMapData from './lib/poi/southhorn.json';
 import MapZoneSelectorComponent from './MapZoneSelectorComponent';
 // import MapData from './MapData';
 
@@ -31,6 +32,7 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
   const mapData = {};
   mapData.hydatos = hydMapData;
   mapData.bsf = bsfMapData;
+  mapData.southhorn = oshMapData;
 
   // const mapDataManager = MapData.getInstance();
 
@@ -44,6 +46,17 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
   const [displayLabels, setDisplayLabels] = React.useState(true);
   const [mouseCoordinates, setMouseCoordinates] = React.useState({ lat: 1, lon: -1 });
   const availableLayers = mapData[selectedMapId].categories;
+
+  const params = new URLSearchParams(window.location.search);
+  let initialMapPosition;
+  if (params.has('x') && params.has('y') && params.has('zoom')) {
+    initialMapPosition = {
+      lat: parseFloat(params.get('y')),
+      lon: parseFloat(params.get('x')),
+      zoom: parseFloat(params.get('zoom')),
+      poi: params.get('poi') || null,
+    };
+  }
 
   const handleLayerSelectorUpdate = useCallback((newLayers) => {
     setSelectedLayers(newLayers);
@@ -72,6 +85,7 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
       mapId={selectedMapId}
       mapData={mapData[selectedMapId].mapData}
       mapParameters={mapData[selectedMapId].parameters}
+      initialMapPosition={initialMapPosition}
       selectedLayers={selectedLayers}
       displayLabels={displayLabels}
       handleLayerSelectorUpdate={handleLayerSelectorUpdate}
