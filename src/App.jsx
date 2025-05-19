@@ -24,13 +24,12 @@ import ChangelogComponent from './ChangelogComponent';
 import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
 import DRSRunHolsterCreatorContainerComponent from './drs/create/DRSRunHolsterCreatorContainerComponent';
 import BAMorbolMapComponent from './BAMorbolMapComponent';
+import MapPageComponent from './map/MapPageComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
 function WrappedMainComponent({ component, page }) {
   const params = useParams();
-
-  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
   if (page === 'forecast') {
     const forecastFilter = ResultsFilter.getFilter(params.forecastfilter);
@@ -101,6 +100,15 @@ function WrappedMainComponent({ component, page }) {
           }
         }
         encodedHolster={params.holsterstring}
+        colorModeContext={ColorModeContext}
+      />
+    );
+  } if (page === 'map') {
+    return (
+      <MainComponent
+        component={component}
+        mapId={params.mapId}
+        page={page}
         colorModeContext={ColorModeContext}
       />
     );
@@ -191,6 +199,16 @@ const router = createBrowserRouter([
       {
         path: '/bozja/lostaction/:lostaction',
         element: <WrappedMainComponent component={<BozjaLostActionHelperComponent />} page="bozjalostaction" />,
+      },
+    ],
+  },
+  {
+    path: '/map',
+    element: <WrappedMainComponent component={<MapPageComponent />} page="map" />,
+    children: [
+      {
+        path: '/map/:mapId',
+        element: <WrappedMainComponent component={<MapPageComponent />} page="map" />,
       },
     ],
   },
@@ -299,6 +317,10 @@ function App() {
     }),
     [mode],
   );
+
+  useEffect(() => {
+    document.body.setAttribute('data-theme', mode);
+  }, [mode]);
 
   return (
     <ColorModeContext.Provider value={colorMode}>

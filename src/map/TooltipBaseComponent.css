@@ -1,0 +1,18 @@
+.tooltip-base-component {
+  width: 520px;
+  min-height: 50px;
+}
+
+.tooltip-no-margin p {
+  margin: 0 !important;
+}
+
+/* Stronger specificity to override .leaflet-popup-content p */
+.leaflet-popup-content .tooltip-no-margin p {
+  margin: 0 !important;
+}
+
+/* Further increase specificity */
+.leaflet-popup-content :where(.tooltip-no-margin) p {
+  margin: 0 !important;
+}

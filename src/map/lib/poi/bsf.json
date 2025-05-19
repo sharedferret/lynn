@@ -1,0 +1,900 @@
+{
+  "name": "The Bozjan Southern Front",
+  "categories": [
+    {
+      "name": "General",
+      "enabled": true,
+      "layers": [
+        {
+          "id": "namedLocations",
+          "name": "Named Locations",
+          "enabled": true
+        },
+        {
+          "id": "aetherytes",
+          "name": "Aetherytes",
+          "enabled": true
+        },
+        {
+          "id": "lostFindCaches",
+          "name": "Lost Find Caches",
+          "enabled": true
+        },
+        {
+          "id": "traders",
+          "name": "Traders",
+          "enabled": true
+        },
+        {
+          "id": "shops",
+          "name": "Shops",
+          "enabled": true
+        },
+        {
+          "id": "repair",
+          "name": "Repair",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "Encounters",
+      "enabled": true,
+      "layers": [
+        {
+          "id": "skirmishes",
+          "name": "Skirmishes",
+          "enabled": true
+        },
+        {
+          "id": "criticalEngagements",
+          "name": "Critical Engagements",
+          "enabled": true
+        },
+        {
+          "id": "duels",
+          "name": "Duels",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "Enemies",
+      "enabled": false,
+      "layers": [
+        {
+          "id": "starMobs",
+          "name": "Star Mobs",
+          "enabled": false
+        },
+        {
+          "id": "magitekMobs",
+          "name": "Magitek Mobs",
+          "enabled": false
+        },
+        {
+          "id": "fragmentMobs",
+          "name": "Fragment Mobs",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "name": "Progression",
+      "enabled": false,
+      "layers": [
+        {
+          "id": "quests",
+          "name": "Quests",
+          "enabled": false
+        },
+        {
+          "id": "fieldNotes",
+          "name": "Field Notes",
+          "enabled": false
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "id": "aetherytes"
+    },
+    {
+      "id": "lostFindCaches"
+    },
+    {
+      "id": "criticalEngagements"
+    }
+  ],
+  "parameters": {
+    "imageUrl": "bsf.png",
+    "bounds": {
+      "min": {
+        "lat": -1,
+        "lon": 1
+      },
+      "max": {
+        "lat": -42,
+        "lon": 42
+      }
+    },
+    "center": {
+      "lat": -21,
+      "lon": 21
+    },
+    "zoom": {
+      "default": 5,
+      "min": 3,
+      "max": 8,
+      "delta": 0.5,
+      "snap": 0.5,
+      "scrollPx": 200
+    }
+  },
+  "mapData": {
+    "namedLocations": {
+      "markerIcon": "poi-pin.png",
+      "waymarks": [
+        {
+          "name": "Orphaned Ruins",
+          "@id": "bsf_orphanedruins",
+          "position": {
+            "x": 16,
+            "y": -17.7
+          }
+        },
+        {
+          "name": "Firelight's Coffin",
+          "@id": "bsf_firelightscoffin",
+          "position": {
+            "x": 25.2,
+            "y": -35.4
+          }
+        },
+        {
+          "name": "Castrum Lacus Litore",
+          "@id": "bsf_castrumlacuslitore",
+          "position": {
+            "x": 16.9,
+            "y": -9.4
+          }
+        },
+        {
+          "name": "The Alermuc Climb",
+          "@id": "bsf_thealermucclimb",
+          "position": {
+            "x": 19.9,
+            "y": -14.8
+          }
+        },
+        {
+          "name": "Old Bozja",
+          "@id": "bsf_oldbozja",
+          "position": {
+            "x": 20.7,
+            "y": -22.1
+          }
+        },
+        {
+          "name": "Southern Entrenchment",
+          "@id": "bsf_southernentrenchment",
+          "position": {
+            "x": 20.1,
+            "y": -28.2
+          }
+        }
+      ]
+    },
+    "lostFindCaches": {
+      "markerIcon": "lostfindscache.png",
+      "waymarks": [
+        {
+          "name": "",
+          "popupTitle": "Lost Finds Cache",
+          "@id": "bsf_lostfindcache1",
+          "position": {
+            "x": 15.1,
+            "y": -30.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Lost Finds Cache",
+          "@id": "bsf_lostfindcache2",
+          "position": {
+            "x": 28.9,
+            "y": -23.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Lost Finds Cache",
+          "@id": "bsf_lostfindcache3",
+          "position": {
+            "x": 13.6,
+            "y": -23.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Lost Finds Cache",
+          "@id": "bsf_lostfindcache4",
+          "position": {
+            "x": 22.1,
+            "y": -16.6
+          }
+        }
+      ]
+    },
+    "repair": {
+      "markerIcon": "repair.png",
+      "waymarks": [
+        {
+          "name": "",
+          "@id": "bsf_repair1",
+          "position": {
+            "x": 14.6,
+            "y": -30.6
+          }
+        }
+      ]
+    },
+    "traders": {
+      "markerIcon": "trader.png",
+      "waymarks": [
+        {
+          "name": "Resistance Quartermaster",
+          "@id": "bsf_trader01",
+          "position": {
+            "x": 14.2,
+            "y": -29.7
+          }
+        },
+        {
+          "name": "Resistance Historian",
+          "@id": "bsf_trader02",
+          "position": {
+            "x": 15.0,
+            "y": -29.1
+          }
+        },
+        {
+          "name": "Resistance Supplier",
+          "@id": "bsf_trader03",
+          "position": {
+            "x": 15.3,
+            "y": -29.9
+          }
+        },
+        {
+          "name": "Resistance Appraiser",
+          "@id": "bsf_trader04",
+          "position": {
+            "x": 15.2,
+            "y": -30.1
+          }
+        },
+        {
+          "name": "Resistance Appraiser",
+          "@id": "bsf_trader05",
+          "position": {
+            "x": 28.9,
+            "y": -23.6
+          }
+        },
+        {
+          "name": "Resistance Appraiser",
+          "@id": "bsf_trader06",
+          "position": {
+            "x": 13.8,
+            "y": -23.8
+          }
+        },
+        {
+          "name": "Resistance Appraiser",
+          "@id": "bsf_trader07",
+          "position": {
+            "x": 22.2,
+            "y": -16.6
+          }
+        }
+      ]
+    },
+    "shops": {
+      "markerIcon": "shop.png",
+      "waymarks": [
+        {
+          "name": "Resistance Locksmith",
+          "@id": "bsf_shop01",
+          "position": {
+            "x": 15.1,
+            "y": -29.7
+          }
+        }
+      ]
+    },
+    "aetherytes": {
+      "markerIcon": "aetheryte.png",
+      "waymarks": [
+        {
+          "name": "Utya's Aegis",
+          "@id": "bsf_utyasaegis",
+          "position": {
+            "x": 14.9,
+            "y": -29.9
+          }
+        },
+        {
+          "name": "Olana's Stand",
+          "@id": "bsf_olanastand",
+          "position": {
+            "x": 28.6,
+            "y": -23.6
+          }
+        },
+        {
+          "name": "Lunya's Stand",
+          "@id": "bsf_lunyasstand",
+          "position": {
+            "x": 13.7,
+            "y": -23.6
+          }
+        },
+        {
+          "name": "Camp Steva",
+          "@id": "bsf_campsteva",
+          "position": {
+            "x": 22.3,
+            "y": -16.8
+          }
+        }
+      ]
+    },
+    "skirmishes": {
+      "markerIcon": "fate-enemies.png",
+      "circle": {
+        "radius": 0.9,
+        "color": "#03c2fc"
+      },
+      "waymarks": [
+        {
+          "name": "All Pets Are Off",
+          "@id": "bsf_skirmish01",
+          "position": {
+            "x": 17,
+            "y": -26.8
+          }
+        },
+        {
+          "name": "Brought to Heal",
+          "@id": "bsf_skirmish02",
+          "position": {
+            "x": 28.6,
+            "y": -26.1
+          }
+        },
+        {
+          "name": "Can Carnivorous Plants Bloom Even on a Battlefield?",
+          "@id": "bsf_skirmish03",
+          "position": {
+            "x": 33.7,
+            "y": -29.5
+          }
+        },
+        {
+          "name": "Conflicting with the First Law",
+          "@id": "bsf_skirmish04",
+          "position": {
+            "x": 33.5,
+            "y": -29.3
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "More Machine Now than Man",
+          "@id": "bsf_skirmish05",
+          "position": {
+            "x": 27.9,
+            "y": -28.9
+          }
+        },
+        {
+          "name": "None of Them Knew They Were Robots",
+          "@id": "bsf_skirmish06",
+          "position": {
+            "x": 24.5,
+            "y": -27.8
+          }
+        },
+        {
+          "name": "Seeq and Destroy",
+          "@id": "bsf_skirmish07",
+          "position": {
+            "x": 28.8,
+            "y": -26.3
+          }
+        },
+        {
+          "name": "Sneak and Spell",
+          "@id": "bsf_skirmish08",
+          "position": {
+            "x": 20.2,
+            "y": -26.9
+          }
+        },
+        {
+          "name": "The Beasts Must Die",
+          "@id": "bsf_skirmish09",
+          "position": {
+            "x": 20.4,
+            "y": -27.1
+          }
+        },
+        {
+          "name": "Unrest for the Wicked",
+          "@id": "bsf_skirmish10",
+          "position": {
+            "x": 24.3,
+            "y": -27.6
+          }
+        },
+        {
+          "name": "Heavy Boots of Lead",
+          "@id": "bsf_skirmish11",
+          "position": {
+            "x": 30.6,
+            "y": -22
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "Help Wanted",
+          "@id": "bsf_skirmish12",
+          "position": {
+            "x": 18.2,
+            "y": -20.9
+          },
+          "iconOverride": "fate-defense.png"
+        },
+        {
+          "name": "No Camping Allowed",
+          "@id": "bsf_skirmish13",
+          "position": {
+            "x": 17.8,
+            "y": -23.5
+          }
+        },
+        {
+          "name": "Parts and Recreation",
+          "@id": "bsf_skirmish14",
+          "position": {
+            "x": 25.4,
+            "y": -21.9
+          },
+          "iconOverride": "fate-gather.png"
+        },
+        {
+          "name": "Pyromancer Supreme",
+          "@id": "bsf_skirmish15",
+          "position": {
+            "x": 18.2,
+            "y": -20.9
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "Red (Chocobo) Alert",
+          "@id": "bsf_skirmish16",
+          "position": {
+            "x": 27,
+            "y": -18.5
+          }
+        },
+        {
+          "name": "Scavengers of Man's Sorrow",
+          "@id": "bsf_skirmish17",
+          "position": {
+            "x": 25.2,
+            "y": -22.8
+          }
+        },
+        {
+          "name": "The Element of Supplies",
+          "@id": "bsf_skirmish18",
+          "position": {
+            "x": 17.6,
+            "y": -23.3
+          }
+        },
+        {
+          "name": "The Monster Mash",
+          "@id": "bsf_skirmish19",
+          "position": {
+            "x": 30.8,
+            "y": -22.2
+          }
+        },
+        {
+          "name": "Unicorn Flakes",
+          "@id": "bsf_skirmish20",
+          "position": {
+            "x": 31.6,
+            "y": -17.3
+          },
+          "iconOverride": "fate-defense.png"
+        },
+        {
+          "name": "Demonstrably Demonic",
+          "@id": "bsf_skirmish21",
+          "position": {
+            "x": 11.3,
+            "y": -20.4
+          }
+        },
+        {
+          "name": "Desperately Seeking Something",
+          "@id": "bsf_skirmish22",
+          "position": {
+            "x": 24.5,
+            "y": -17.3
+          }
+        },
+        {
+          "name": "For Absent Friends",
+          "@id": "bsf_skirmish23",
+          "position": {
+            "x": 14.3,
+            "y": -18.2
+          }
+        },
+        {
+          "name": "I'm a Mechanical Man",
+          "@id": "bsf_skirmish24",
+          "position": {
+            "x": 20.8,
+            "y": -18
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "Let Slip the Dogs of War",
+          "@id": "bsf_skirmish25",
+          "position": {
+            "x": 14.1,
+            "y": -15.7
+          }
+        },
+        {
+          "name": "Murder Death Kill",
+          "@id": "bsf_skirmish26",
+          "position": {
+            "x": 14.3,
+            "y": -15.9
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "My Family and Other Animals",
+          "@id": "bsf_skirmish27",
+          "position": {
+            "x": 11.3,
+            "y": -15.2
+          }
+        },
+        {
+          "name": "Of Steel and Flame",
+          "@id": "bsf_skirmish28",
+          "position": {
+            "x": 14.5,
+            "y": -18.4
+          },
+          "iconOverride": "fate-boss.png"
+        },
+        {
+          "name": "Supplies Party",
+          "@id": "bsf_skirmish29",
+          "position": {
+            "x": 20.9,
+            "y": -14.7
+          },
+          "iconOverride": "fate-gather.png"
+        },
+        {
+          "name": "The War Against the Machines",
+          "@id": "bsf_skirmish30",
+          "position": {
+            "x": 11.5,
+            "y": -20.6
+          }
+        },
+        {
+          "name": "The Wild Bunch",
+          "@id": "bsf_skirmish31",
+          "position": {
+            "x": 21.1,
+            "y": -14.9
+          }
+        },
+        {
+          "name": "Waste the Rainbow",
+          "@id": "bsf_skirmish32",
+          "position": {
+            "x": 24.7,
+            "y": -17.5
+          },
+          "iconOverride": "fate-boss.png"
+        }
+      ]
+    },
+    "criticalEngagements": {
+      "markerIcon": "fate-nm.png",
+      "circle": {
+        "radius": 0.9,
+        "color": "#e0635a"
+      },
+      "waymarks": [
+        {
+          "name": "Kill It with Fire",
+          "@id": "bsf_ce01",
+          "position": {
+            "x": 17.2,
+            "y": -27
+          },
+          "metadata": {
+            "boss": "Peerifool",
+            "spawnedBy": {
+              "type": "skirmish",
+              "name": "All Pets Are Off"
+            },
+            "rewards": [
+              {
+                "name": "Field Notes on Clarricie",
+                "type": "fieldNote"
+              },
+              {
+                "name": "Garlean Synthetic Fabric",
+                "type": "garleanFabric"
+              }
+            ]
+          }
+        },
+        {
+          "name": "The Baying of the Hound(s)",
+          "@id": "bsf_ce02",
+          "position": {
+            "x": 22,
+            "y": -29
+          },
+          "metadata": {
+            "boss": "Canus Dirus",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "4th Legion Death Claw"
+            }
+          }
+        },
+        {
+          "name": "The Shadow of Death's Hand",
+          "@id": "bsf_ce03",
+          "position": {
+            "x": 35.4,
+            "y": -26.2
+          },
+          "metadata": {
+            "boss": "Akbaba",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "4th Legion Roader"
+            },
+            "rewards": [
+              {
+                "name": "Field Notes on Xeven",
+                "type": "fieldNote"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Vigil for the Lost",
+          "@id": "bsf_ce04",
+          "position": {
+            "x": 27.9,
+            "y": -30
+          },
+          "metadata": {
+            "boss": "Vigilia",
+            "spawnedBy": {
+              "type": "skirmish",
+              "name": "More Machine Now than Man"
+            }
+          }
+        },
+        {
+          "name": "Patriot Games",
+          "@id": "bsf_ce05",
+          "position": {
+            "x": 14.2,
+            "y": -21.3
+          },
+          "metadata": {
+            "boss": "Patriot",
+            "spawnedBy": {
+              "type": "skirmish",
+              "name": "The Fires of War"
+            }
+          }
+        },
+        {
+          "name": "The Final Furlong",
+          "@id": "bsf_ce06",
+          "position": {
+            "x": 31.9,
+            "y": -17.6
+          },
+          "metadata": {
+            "boss": "Spartoi",
+            "spawnedBy": {
+              "type": "skirmish",
+              "name": "Unicorn Flakes"
+            },
+            "rewards": [
+              {
+                "name": "Field Notes on Llofii",
+                "type": "fieldNote"
+              }
+            ]
+          }
+        },
+        {
+          "name": "The Fires of War",
+          "@id": "bsf_ce07",
+          "position": {
+            "x": 20.6,
+            "y": -24.3
+          },
+          "iconOverride": "fate-wave.png",
+          "metadata": {
+            "boss": "Pyrobolus Mater",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "4th Legion Gunship"
+            }
+          }
+        },
+        {
+          "name": "The Hunt for Red Choctober",
+          "@id": "bsf_ce08",
+          "position": {
+            "x": 26.8,
+            "y": -18.4
+          },
+          "metadata": {
+            "boss": "Red Comet",
+            "spawnedBy": {
+              "type": "skirmish",
+              "name": "Red (Chocobo) Alert"
+            }
+          }
+        },
+        {
+          "name": "Metal Fox Chaos",
+          "@id": "bsf_ce09",
+          "position": {
+            "x": 14.3,
+            "y": -18.3
+          },
+          "metadata": {
+            "boss": "Dáinsleif",
+            "spawnedBy": {
+              "type": "skirmish",
+              "name": "Of Steel and Flame"
+            },
+            "rewards": [
+              {
+                "name": "10x Forgotten Fragment of Resolve",
+                "type": "bsfFragment"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Rise of the Robots",
+          "@id": "bsf_ce10",
+          "position": {
+            "x": 21,
+            "y": -17.8
+          },
+          "metadata": {
+            "boss": "Mark XIII-X Magitek Laborer",
+            "spawnedBy": {
+              "type": "skirmish",
+              "name": "I'm a Mechanical Man"
+            },
+            "rewards": [
+              {
+                "name": "Field Notes on Sicinius",
+                "type": "fieldNote"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Trampled under Hoof",
+          "@id": "bsf_ce11",
+          "position": {
+            "x": 9.9,
+            "y": -18.3
+          },
+          "metadata": {
+            "boss": "Eale",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "4th Legion Armored Weapon"
+            },
+            "rewards": [
+              {
+                "name": "10x Forgotten Fragment of Resolve",
+                "type": "bsfFragment"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Where Strode the Behemoth",
+          "@id": "bsf_ce12",
+          "position": {
+            "x": 23.6,
+            "y": -14.9
+          },
+          "metadata": {
+            "boss": "Chlevnik",
+            "spawnedBy": {
+              "type": "skirmish",
+              "name": "Trampled under Hoof"
+            },
+            "rewards": [
+              {
+                "name": "10x Forgotten Fragment of Resolve",
+                "type": "bsfFragment"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "duels": {
+      "markerIcon": "fate-duel.png",
+      "circle": {
+        "radius": 0.5,
+        "color": "#e0635a"
+      },
+      "waymarks": [
+        {
+          "name": "Aces High",
+          "@id": "bsf_duel1",
+          "position": {
+            "x": 31.6,
+            "y": -26.8
+          }
+        },
+        {
+          "name": "Beast of Man",
+          "@id": "bsf_duel2",
+          "position": {
+            "x": 23.2,
+            "y": -20.6
+          }
+        },
+        {
+          "name": "And the Flames Went Higher",
+          "@id": "bsf_duel3",
+          "position": {
+            "x": 18.7,
+            "y": -15.9
+          }
+        }
+      ]
+    }
+  }
+}
