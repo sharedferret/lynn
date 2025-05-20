@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Divider, Grid, Stack, Typography,
+  Container, Divider, Grid, Paper, Stack, Typography, useTheme, alpha,
 } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
@@ -15,6 +15,8 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
    */
   const [actionPriceData, setActionPriceData] = useState(null);
   const [lastUpdated, setLastUpdated] = useState(new Date());
+
+  const theme = useTheme();
 
   function updateGuideState(priceData) {
     setActionPriceData(priceData);
@@ -40,27 +42,40 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
   const fragmentData = DRSLostActionHelper.getFragmentData(actionData.fragment);
 
   return (
-    <Stack spacing={2} p={1} alignItems="flex-start" width={1000}>
-      <Divider variant="middle" />
-      <BozjaLostActionInformationComponent
-        lostAction={lostAction}
-        actionData={actionData}
-      />
-      <Stack direction="row" alignItems="center" spacing={1}>
-        <Typography variant="h6">Drops from:</Typography>
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/icons/Yellow_Fragment.png`}
-          width={24}
-          height={24}
-          alt="Forgotten Fragment of Care"
+    <Container maxWidth="lg" sx={{ width: '100%' }}>
+      <Stack spacing={4} alignItems="flex-start" width="100%">
+        <Divider sx={{ width: '50%', margin: '0 auto', mb: 3 }} />
+        <BozjaLostActionInformationComponent
+          lostAction={lostAction}
+          actionData={actionData}
         />
-        <Typography variant="h6">{fragmentData.name}</Typography>
-      </Stack>
-      <Grid
-        container
-        spacing={2}
-      >
-        {
+
+        <Paper
+          elevation={3}
+          sx={{
+            width: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            background: alpha(theme.palette.background.paper, 0.85),
+            backdropFilter: 'blur(10px)',
+          }}
+        >
+          <Stack direction="row" alignItems="center" spacing={1} pt={3} pl={3} pr={3}>
+            <Typography fontWeight={700} variant="h6">Appraised from</Typography>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/icons/Yellow_Fragment.png`}
+              width={24}
+              height={24}
+              alt="Forgotten Fragment of Care"
+            />
+            <Typography variant="h6">{fragmentData.name}</Typography>
+          </Stack>
+          <Grid
+            container
+            spacing={2}
+            p={3}
+          >
+            {
           fragmentData.acquisition.map((i) => (
             <Grid item key={uuidv4()}>
               <ActionAcquisitionMethodCardComponent
@@ -77,7 +92,10 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
             </Grid>
           ))
         }
-      </Grid>
-    </Stack>
+          </Grid>
+        </Paper>
+
+      </Stack>
+    </Container>
   );
 }

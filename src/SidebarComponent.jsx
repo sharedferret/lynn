@@ -102,7 +102,15 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Maps</Typography>
+        <Typography>Occult Crescent Maps</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'occult/phantomjob'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Phantom Jobs</Typography>
       </StyledButton>
 
       <Stack direction="row" height="3rem" alignItems="center">
