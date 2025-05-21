@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
 import {
-  Box, Container, Paper, Stack, Typography, useTheme, alpha,
+  Box, Container, Stack, Typography,
 } from '@mui/material';
 import BozjaLostActionSelectorComponent from './BozjaLostActionSelectorComponent';
 import BozjaLostActionHelperDataComponent from './BozjaLostActionHelperDataComponent';
@@ -13,8 +13,6 @@ export default function BozjaLostActionHelperComponent({ lostAction }) {
   let action = lostAction ?? '';
   action = action.replaceAll('_', ' ');
   const [lostActionState, setLostActionState] = useState(action);
-
-  const theme = useTheme();
 
   const handleActionUpdate = useCallback((event) => {
     const lostActionUrl = event.target.value.replaceAll(' ', '_');
@@ -37,31 +35,23 @@ export default function BozjaLostActionHelperComponent({ lostAction }) {
       sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
     >
       <Container maxWidth="lg">
-        <Paper
-          elevation={6}
-          sx={{
-            borderRadius: 2,
-            overflow: 'hidden',
-            background: alpha(theme.palette.background.paper, 0.85),
-            backdropFilter: 'blur(10px)',
-          }}
-        >
-          <Box p={3}>
-            <Stack spacing={2} minHeight={100} p={1} alignItems="center">
-              <Typography fontWeight={700} variant="h4">Bozja Lost Action Helper</Typography>
-              <Stack direction="row" spacing={2} alignItems="center">
-                <Typography>Action: </Typography>
-                <Box width={325}>
-                  <BozjaLostActionSelectorComponent
-                    lostAction={lostActionState}
-                    handleActionUpdate={handleActionUpdate}
-                  />
-                </Box>
-              </Stack>
-              <BozjaLostActionHelperDataComponent lostAction={lostActionState} />
+
+        <Box p={3}>
+          <Stack spacing={2} minHeight={100} p={1} alignItems="center">
+            <Typography fontWeight={700} variant="h4">Bozja Lost Action Helper</Typography>
+            <Stack direction="row" spacing={2} alignItems="center">
+              <Typography>Action: </Typography>
+              <Box width={325}>
+                <BozjaLostActionSelectorComponent
+                  lostAction={lostActionState}
+                  handleActionUpdate={handleActionUpdate}
+                />
+              </Box>
             </Stack>
-          </Box>
-        </Paper>
+            <BozjaLostActionHelperDataComponent lostAction={lostActionState} />
+          </Stack>
+        </Box>
+
       </Container>
     </Box>
   );

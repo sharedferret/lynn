@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Paper } from '@mui/material';
+import { Box, Container, Paper } from '@mui/material';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkToc from 'remark-toc';
@@ -60,19 +60,28 @@ export default function OccultCrescentGuideMain({ guidePage }) {
   });
 
   return (
-    <Box sx={{
-      pl: 4, pt: 4, pr: 4, width: '90%', minWidth: '400px', maxWidth: '1000px', alignItems: 'flex-start', textAlign: 'left',
-    }}
+    <Box
+      component="main"
+      margin="auto"
+      sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
     >
-      <Paper sx={{ p: 2, minHeight: '700px' }}>
-        <ReactMarkdown
-          rehypePlugins={[rehypeSlug, rehypeAutolinkHeadings]}
-          remarkPlugins={[remarkGfm, remarkToc]}
-          components={components}
+      <Container maxWidth="lg">
+
+        <Box sx={{
+          pl: 4, pt: 4, pr: 4, alignItems: 'flex-start', textAlign: 'left',
+        }}
         >
-          { content }
-        </ReactMarkdown>
-      </Paper>
+          <Paper sx={{ p: 2, minHeight: '700px' }}>
+            <ReactMarkdown
+              rehypePlugins={[rehypeSlug, rehypeAutolinkHeadings]}
+              remarkPlugins={[remarkGfm, remarkToc]}
+              components={components}
+            >
+              { content }
+            </ReactMarkdown>
+          </Paper>
+        </Box>
+      </Container>
     </Box>
   );
 }

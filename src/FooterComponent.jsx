@@ -18,7 +18,7 @@ export default function FooterComponent() {
         alignItems="center"
       >
         <Typography variant="subtitle2" fontSize={12} maxWidth={600} textAlign="left">
-          FINAL FANTASY XIV © 2010 - 2023 SQUARE ENIX CO., LTD. FINAL FANTASY, FINAL FANTASY
+          FINAL FANTASY XIV © 2010 - 2025 SQUARE ENIX CO., LTD. FINAL FANTASY, FINAL FANTASY
           XIV, and FFXIV are registered trademarks or trademarks of Square Enix Holdings Co.,
           Ltd. All material used under license.
         </Typography>

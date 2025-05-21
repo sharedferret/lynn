@@ -26,7 +26,7 @@ import DRSRunHolsterCreatorContainerComponent from './drs/create/DRSRunHolsterCr
 import BAMorbolMapComponent from './BAMorbolMapComponent';
 import MapPageComponent from './map/MapPageComponent';
 import OccultCrescentGuideMain from './occult/OccultCrescentGuideMain';
-import ForayActionDisplayMainComponent from './common/foray_action_display/ForayActionDisplayMainComponent';
+import OccultPhantomJobHelperComponent from './occult/phantom_jobs/OccultPhantomJobHelperComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -56,8 +56,7 @@ function WrappedMainComponent({ component, page }) {
     return (
       <MainComponent
         component={component}
-        page={page}
-        type={params.type}
+        phantomJob={params.phantomJob}
         colorModeContext={ColorModeContext}
       />
     );
@@ -146,7 +145,13 @@ const router = createBrowserRouter([
   },
   {
     path: '/occult/phantomjob',
-    element: <WrappedMainComponent component={<ForayActionDisplayMainComponent />} page="occultphantomjob" />,
+    element: <WrappedMainComponent component={<OccultPhantomJobHelperComponent />} page="occultphantomjob" />,
+    children: [
+      {
+        path: '/occult/phantomjob/:phantomjob',
+        element: <WrappedMainComponent component={<OccultPhantomJobHelperComponent />} page="occultphantomjob" />,
+      },
+    ],
   },
   {
     path: '/occult/guide',

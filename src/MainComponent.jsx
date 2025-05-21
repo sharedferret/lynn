@@ -18,6 +18,8 @@ export default function MainComponent({
   logosAction,
   mapId,
   initialMapPosition,
+  inputAction,
+  forayName,
   colorModeContext,
 }) {
   /**
@@ -92,6 +94,8 @@ export default function MainComponent({
               logosAction,
               mapId,
               initialMapPosition,
+              inputAction,
+              forayName,
               resetTimer,
             })}
 

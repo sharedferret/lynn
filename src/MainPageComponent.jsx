@@ -87,13 +87,14 @@ export default function MainPageComponent() {
           {' '}
           {getSiteName()}
           , a home for tools to help with Final Fantasy XIV side
-          content - primarily Eureka (Baldesion Arsenal) and Bozja (Delubrum Reginae
-          Savage). Find out how to build and gather materials for Lost Actions and
-          Logos Actions, what to bring for Baldesion Arsenal or Delubrum Reginae
-          Savage runs, when the next Cassie or Crab spawn is, and more!
+          content - including the Occult Crescent (Forked Tower), Eureka (The Baldesion
+          Arsenal), and Bozja (Delubrum Reginae Savage). Find out how to build and gather
+          materials for Lost Actions and Logos Actions, what to bring for The Baldesion
+          Arsenal or Delubrum Reginae Savage runs, when the next Cassie or Crab spawn is,
+          and more!
         </Typography>
         <Typography textAlign="left" fontSize={textSize}>
-          Looking for a group to run BA or DRS with? Most of the content on this site
+          Looking for a group to run Forked Tower, BA, or DRS with? Most of the content on this site
           was designed for runs on
           {' '}
           <a

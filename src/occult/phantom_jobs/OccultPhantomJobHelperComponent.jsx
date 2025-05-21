@@ -1,0 +1,62 @@
+import React, { useCallback, useState } from 'react';
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+} from '@mui/material';
+import OccultPhantomJobSelectorComponent from './OccultPhantomJobSelectorComponent';
+import OccultPhantomJobHelperDataComponent from './OccultPhantomJobHelperDataComponent';
+
+export default function OccultPhantomJobHelperComponent({ phantomJob }) {
+  /**
+   * Component state
+   *
+   */
+  let job = phantomJob ?? '';
+  job = job.replaceAll('_', ' ');
+
+  const [jobState, setJobState] = useState(job);
+
+  const handleJobUpdate = useCallback((event) => {
+    const jobUri = event.target.value.replaceAll(' ', '_');
+    window.history.pushState(
+      jobUri,
+      `${event.target.value} - forays.info`,
+      `/occult/phantomjob/${jobUri}`,
+    );
+
+    setJobState(event.target.value);
+  }, [window, setJobState]);
+
+  /**
+   * Render logic
+   */
+  return (
+    <Box
+      component="main"
+      margin="auto"
+      sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
+    >
+      <Container maxWidth="lg">
+
+        <Box p={3}>
+          <Stack spacing={2} minHeight={100} p={1} alignItems="center">
+            <Typography fontWeight={700} variant="h4">Occult Crescent Phantom Job Helper</Typography>
+            <Stack direction="row" spacing={2} alignItems="center">
+              <Typography>Phantom Job: </Typography>
+              <Box width={325}>
+                <OccultPhantomJobSelectorComponent
+                  phantomJob={jobState}
+                  handleJobUpdate={handleJobUpdate}
+                />
+              </Box>
+            </Stack>
+            <OccultPhantomJobHelperDataComponent phantomJob={phantomJob} />
+          </Stack>
+        </Box>
+
+      </Container>
+    </Box>
+  );
+}
