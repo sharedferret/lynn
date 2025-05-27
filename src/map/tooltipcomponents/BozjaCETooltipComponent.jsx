@@ -24,7 +24,7 @@ export default function BozjaCETooltipComponent({ markerData }) {
   const renderRewards = () => {
     if (markerData.metadata.rewards) {
       return markerData.metadata.rewards.map((reward) => (
-        <Stack direction="row" alignItems="center">
+        <Stack direction="row" alignItems="center" spacing={1}>
           <Box>
             <img
               src={`${process.env.PUBLIC_URL}/assets/maps/markers/${reward.type}.png`}

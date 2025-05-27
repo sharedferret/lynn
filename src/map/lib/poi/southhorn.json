@@ -143,7 +143,7 @@
       "markerIcon": "aetheryte.png",
       "waymarks": [
         {
-          "name": "",
+          "name": "Expedition Base Camp",
           "@id": "osh_1",
           "position": {
             "x": 38.0,
@@ -151,7 +151,7 @@
           }
         },
         {
-          "name": "",
+          "name": "The Wanderer's Haven",
           "@id": "osh_2",
           "position": {
             "x": 17.9,
@@ -159,7 +159,7 @@
           }
         },
         {
-          "name": "",
+          "name": "Crystallized Caverns",
           "@id": "osh_3",
           "position": {
             "x": 14.1,
@@ -167,7 +167,7 @@
           }
         },
         {
-          "name": "",
+          "name": "Stonemarsh",
           "@id": "osh_4",
           "position": {
             "x": 13.7,
@@ -175,7 +175,7 @@
           }
         },
         {
-          "name": "",
+          "name": "Eldergrowth",
           "@id": "osh_5",
           "position": {
             "x": 27.5,
@@ -347,6 +347,23 @@
           "metadata": {
             "boss": "???"
           }
+        },
+        {
+          "name": "Shark Attack",
+          "@id": "osh_ce09",
+          "position": {
+            "x": 19.1,
+            "y": -4.4
+          },
+          "metadata": {
+            "boss": "Nymian Petalodus",
+            "rewards": [
+            {
+              "name": "Notes on the Nymian Petalodus",
+              "type": "fieldNote"
+            }
+          ]
+          }
         }
       ]
     },
@@ -367,6 +384,22 @@
           "position": {
             "x": 31.3,
             "y": -17.0
+          }
+        },
+        {
+          "name": "#13: The Fell Warren",
+          "@id": "osh_survey13",
+          "position": {
+            "x": 10.1,
+            "y": -22.5
+          }
+        },
+        {
+          "name": "#23: The Wanderer's Haven",
+          "@id": "osh_survey23",
+          "position": {
+            "x": 3.7,
+            "y": -5.8
           }
         }
       ]
