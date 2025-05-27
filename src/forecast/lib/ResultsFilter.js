@@ -1,4 +1,4 @@
-import EorzeaWeather from 'eorzea-weather';
+import EorzeaWeather from 'lynn-eorzea-weather';
 import FarmType from './FarmType';
 import Weather from './Weather';
 

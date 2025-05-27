@@ -1,4 +1,4 @@
-import EorzeaWeather from 'eorzea-weather';
+import EorzeaWeather from 'lynn-eorzea-weather';
 import { sortBy } from 'underscore';
 // import sortBy from 'underscore/modules/sortBy.js'
 

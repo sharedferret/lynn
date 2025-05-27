@@ -14,7 +14,7 @@ import {
   Typography,
 } from '@mui/material';
 import EorzeaTime from 'eorzea-time';
-import EorzeaWeather from 'eorzea-weather';
+import EorzeaWeather from 'lynn-eorzea-weather';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { v4 as uuidv4 } from 'uuid';
 import dayjs from 'dayjs';
@@ -33,6 +33,18 @@ export default function TimeAndWeatherPopoverComponent() {
 
   const regionsToFetchWeatherFor = [
     {
+      name: 'South Horn',
+      zone: EorzeaWeather.ZONE_SOUTH_HORN,
+    },
+    {
+      name: 'The Bozjan Southern Front',
+      zone: EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT,
+    },
+    {
+      name: 'Zadnor',
+      zone: EorzeaWeather.ZONE_ZADNOR,
+    },
+    {
       name: 'Eureka Anemos',
       zone: EorzeaWeather.ZONE_EUREKA_ANEMOS,
     },
@@ -47,14 +59,6 @@ export default function TimeAndWeatherPopoverComponent() {
     {
       name: 'Eureka Hydatos',
       zone: EorzeaWeather.ZONE_EUREKA_HYDATOS,
-    },
-    {
-      name: 'The Bozjan Southern Front',
-      zone: EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT,
-    },
-    {
-      name: 'Zadnor',
-      zone: EorzeaWeather.ZONE_ZADNOR,
     },
   ];
 

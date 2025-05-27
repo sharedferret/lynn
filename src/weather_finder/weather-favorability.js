@@ -1,4 +1,4 @@
-import EorzeaWeather from 'eorzea-weather';
+import EorzeaWeather from 'lynn-eorzea-weather';
 import sortBy from 'underscore/modules/sortBy';
 
 const EORZEA_TIME_DILATION = 20.571428571428573;
@@ -40,6 +40,7 @@ zoneMapping[EorzeaWeather.ZONE_NORTHERN_THANALAN] = 'Northern Thanalan';
 zoneMapping[EorzeaWeather.ZONE_OUTER_LA_NOSCEA] = 'Outer La Noscea';
 zoneMapping[EorzeaWeather.ZONE_RHALGRS_REACH] = 'Rhalgr\'s Reach';
 zoneMapping[EorzeaWeather.ZONE_SHIROGANE] = 'Shirogane';
+zoneMapping[EorzeaWeather.ZONE_SOUTH_HORN] = 'Occult Crescent: South Horn';
 zoneMapping[EorzeaWeather.ZONE_SOUTH_SHROUD] = 'South Shroud';
 zoneMapping[EorzeaWeather.ZONE_SOUTHERN_THANALAN] = 'Southern Thanalan';
 zoneMapping[EorzeaWeather.ZONE_THE_AZIM_STEPPE] = 'The Azim Steppe';

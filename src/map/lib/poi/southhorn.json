@@ -85,7 +85,7 @@
     }
   ],
   "parameters": {
-    "imageUrl": "southhorn.png",
+    "imageUrl": "southhorn.jpg",
     "bounds": {
       "min": {
         "lat": -1,
