@@ -229,6 +229,14 @@
             "x": 25.6,
             "y": -17.1
           }
+        },
+        {
+          "name": "Pleading Pots",
+          "@id": "osh_potfate2",
+          "position": {
+            "x": 11.9,
+            "y": -32.0
+          }
         }
       ]
     },
@@ -310,6 +318,14 @@
             "x": 20.1,
             "y": -32.7
           }
+        },
+        {
+          "name": "Serving Darkness",
+          "@id": "osh_fate10",
+          "position": {
+            "x": 29.6,
+            "y": -21.0
+          }
         }
       ]
     },
@@ -328,7 +344,7 @@
             "y": -16.1
           },
           "metadata": {
-            "boss": "???"
+            "boss": "Occult Knight"
           }
         },
         {
@@ -339,7 +355,7 @@
             "y": -18.2
           },
           "metadata": {
-            "boss": "???"
+            "boss": "Hinkypunk"
           }
         },
         {
@@ -350,7 +366,7 @@
             "y": -20.1
           },
           "metadata": {
-            "boss": "Hinkypunk"
+            "boss": "???"
           }
         },
         {
@@ -381,17 +397,6 @@
           "position": {
             "x": 30.6,
             "y": -28.7
-          },
-          "metadata": {
-            "boss": "???"
-          }
-        },
-        {
-          "name": "Pleading Pots",
-          "@id": "osh_ce07",
-          "position": {
-            "x": 11.9,
-            "y": -32.0
           },
           "metadata": {
             "boss": "???"
@@ -433,7 +438,13 @@
             "y": -37.5
           },
           "metadata": {
-            "boss": "???"
+            "boss": "???",
+            "rewards": [
+              {
+                "name": "Berserker Soul Crystal",
+                "type": ""
+              }
+            ]
           }
         },
         {
