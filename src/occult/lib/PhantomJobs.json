@@ -33,7 +33,7 @@
       "name": "Knight",
       "image": "knight-icon",
       "sprite": "knight-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "South Horn intro quests.",
       "code": "kn",
       "jobText": "Emulate these ancient memories of a loyal, honorable knight and defend your comrades from harm.",
       "supportActions": {
@@ -52,7 +52,7 @@
       "name": "Monk",
       "image": "monk-icon",
       "sprite": "monk-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "South Horn intro quests.",
       "code": "mo",
       "jobText": "These memories of a monk's unflinching discipline and quiet meditation offer a path to unparalleled combat mastery.",
       "supportActions": {
@@ -72,7 +72,7 @@
       "name": "Time Mage",
       "image": "timemage-icon",
       "sprite": "timemage-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "Purchase - 1,000 Silver Pieces from the Expedition .",
       "code": "ti",
       "jobText": "Time Mage job text placeholder.",
       "supportActions": {

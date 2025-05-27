@@ -224,6 +224,24 @@
           "x": 6.6,
           "y": -38.0
           }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "occultcoffer03",
+          "position": {
+          "x": 8.5,
+          "y": -19.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "occultcoffer04",
+          "position": {
+          "x": 9.4,
+          "y": -38.6
+          }
         }
       ]
     },
@@ -389,7 +407,7 @@
             "y": -32.2
           },
           "metadata": {
-            "boss": "???"
+            "boss": "Death Claw"
           }
         },
         {
@@ -453,7 +471,7 @@
             "boss": "???",
             "rewards": [
               {
-                "name": "Berserker Soul Crystal",
+                "name": "Berserker Soul Shard",
                 "type": ""
               }
             ]
@@ -488,25 +506,25 @@
           }
         },
         {
-          "name": "???",
+          "name": "With Extreme Prejudice",
           "@id": "osh_ce12",
           "position": {
             "x": 14.5,
             "y": -9.2
           },
           "metadata": {
-            "boss": "???"
+            "boss": "Command Urn"
           }
         },
         {
-          "name": "???",
+          "name": "Eternal Watch",
           "@id": "osh_ce13",
           "position": {
             "x": 38.9,
             "y": -25.0
           },
           "metadata": {
-            "boss": "???"
+            "boss": "Repaired Lion"
           }
         },
         {
