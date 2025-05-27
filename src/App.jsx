@@ -56,7 +56,7 @@ function WrappedMainComponent({ component, page }) {
     return (
       <MainComponent
         component={component}
-        phantomJob={params.phantomJob}
+        phantomJob={params.phantomjob}
         colorModeContext={ColorModeContext}
       />
     );

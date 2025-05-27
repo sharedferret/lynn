@@ -19,6 +19,7 @@ export default function MainComponent({
   mapId,
   initialMapPosition,
   inputAction,
+  phantomJob,
   forayName,
   colorModeContext,
 }) {
@@ -95,6 +96,7 @@ export default function MainComponent({
               mapId,
               initialMapPosition,
               inputAction,
+              phantomJob,
               forayName,
               resetTimer,
             })}

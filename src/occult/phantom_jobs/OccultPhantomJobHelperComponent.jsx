@@ -16,6 +16,8 @@ export default function OccultPhantomJobHelperComponent({ phantomJob }) {
   let job = phantomJob ?? '';
   job = job.replaceAll('_', ' ');
 
+  console.log('INPUT', job);
+
   const [jobState, setJobState] = useState(job);
 
   /**
