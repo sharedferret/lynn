@@ -3,9 +3,7 @@ import EurekaLogosActionHelper from '../../eureka/lib/EurekaLogosActionHelper';
 import EurekaLogosActionDataComponentInnerShim from './EurekaLogosActionDataComponentInnerShim';
 
 export default function EurekaLogosActionDataComponentOuterShim({ action }) {
-  console.log('action', action);
   const logosActionData = EurekaLogosActionHelper.getLogosActionData(action);
-  console.log('data', logosActionData);
   let initialSelectedRecipe = null;
   if (logosActionData) {
     [initialSelectedRecipe] = logosActionData.recipes;

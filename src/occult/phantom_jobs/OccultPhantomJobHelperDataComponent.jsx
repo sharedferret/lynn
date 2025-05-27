@@ -7,8 +7,6 @@ import PhantomJobHelper from '../lib/PhantomJobHelper';
 export default function OccultPhantomJobHelperDataComponent({ phantomJob }) {
   const phantomJobData = PhantomJobHelper.getPhantomJobData(phantomJob);
 
-  console.log('phantom job from data compt', phantomJob);
-
   return (
     <Container maxWidth="lg" sx={{ width: '100%' }}>
       <Stack spacing={4} alignItems="flex-start" width="100%">

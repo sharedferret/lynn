@@ -53,7 +53,6 @@ export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJo
         </Stack>
       );
     }
-    console.log('selector job name', jobName);
     const job = PhantomJobHelper.getPhantomJobData(jobName);
 
     return (

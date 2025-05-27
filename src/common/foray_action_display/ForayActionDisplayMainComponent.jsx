@@ -82,7 +82,6 @@ export default function ForayActionDisplayMainComponent({ inputAction, forayName
   function getForayDataComponent() {
     switch (forayActionDisplaySettings.name) {
       case 'eureka':
-        console.log('calling outer shim with action', actionState);
         return <EurekaLogosActionDataComponentOuterShim action={actionState} />;
       case 'bozja':
         return <BozjaLostActionHelperDataComponent lostAction={actionState} />;
