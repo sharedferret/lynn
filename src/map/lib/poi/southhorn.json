@@ -42,6 +42,11 @@
           "enabled": true
         },
         {
+          "id": "magicPotFates",
+          "name": "Magic Pot FATEs",
+          "enabled": true
+        },
+        {
           "id": "criticalEngagements",
           "name": "Critical Engagements",
           "enabled": true
@@ -210,6 +215,23 @@
         }
       ]
     },
+    "magicPotFates": {
+      "markerIcon": "fate-enemies.png",
+      "circle": {
+        "radius": 0.9,
+        "color": "#03c2fc"
+      },
+      "waymarks": [
+        {
+          "name": "Persistent Pots",
+          "@id": "osh_potfate1",
+          "position": {
+            "x": 25.6,
+            "y": -17.1
+          }
+        }
+      ]
+    },
     "fates": {
       "markerIcon": "fate-enemies.png",
       "circle": {
@@ -280,6 +302,14 @@
             "x": 17.0,
             "y": -22.3
           }
+        },
+        {
+          "name": "An Prying Eye",
+          "@id": "osh_fate09",
+          "position": {
+            "x": 20.1,
+            "y": -32.7
+          }
         }
       ]
     },
@@ -320,7 +350,7 @@
             "y": -20.1
           },
           "metadata": {
-            "boss": "???"
+            "boss": "Hinkypunk"
           }
         },
         {
@@ -434,8 +464,8 @@
           "name": "#9: The Vanishing Slope",
           "@id": "osh_survey09",
           "position": {
-            "x": 31.3,
-            "y": -17.0
+            "x": 19.2,
+            "y": -13.1
           }
         },
         {
