@@ -55,6 +55,23 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
         >
           {phantomJobData.jobText}
         </Typography>
+        <Stack direction="row" spacing={2} pt={3} alignItems="center">
+          <Typography
+            textAlign="left"
+            pl={3}
+            fontWeight={700}
+          >
+            Unlock:
+            {' '}
+          </Typography>
+          <Typography
+            textAlign="left"
+            style={{ whiteSpace: 'pre-wrap' }}
+          >
+            {phantomJobData.unlockGuide}
+          </Typography>
+        </Stack>
+
       </Box>
     </Paper>
   );

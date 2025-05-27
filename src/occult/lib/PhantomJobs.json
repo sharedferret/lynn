@@ -6,7 +6,8 @@
       "sprite": "freelancer-sprite",
       "unlockLevel": 0,
       "code": "fr",
-      "jobText": "Freelancer job text placeholder.",
+      "jobText": "Reminiscences of journeys just begun and those long ended embody the freelancer's myriad supportive techniques.",
+      "unlockGuide": "Unlocked by default.",
       "supportActions": {
         "Occult Resuscitation": {
           "name": "Occult Resuscitation",
@@ -34,8 +35,18 @@
       "sprite": "knight-sprite",
       "unlockLevel": 0,
       "code": "kn",
-      "jobText": "Knight job text placeholder.",
-      "supportActions": {}
+      "jobText": "Emulate these ancient memories of a loyal, honorable knight and defend your comrades from harm.",
+      "supportActions": {
+        "Phantom Guard": {
+          "name": "Phantom Guard",
+          "image": "placeholder.jpg",
+          "unlockLevel": 1,
+          "description": "Reduces damage taken by 60%.",
+          "abilityType": "Ability",
+          "recast": 120,
+          "code": "kn1"
+        }
+      }
     },
     "Monk": {
       "name": "Monk",
