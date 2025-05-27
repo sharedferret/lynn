@@ -47,8 +47,8 @@
           "enabled": true
         },
         {
-          "id": "magicPots",
-          "name": "Magic Pots",
+          "id": "magicPotCoffers",
+          "name": "Magic Pot Coffers",
           "enabled": true
         }
       ]
@@ -196,6 +196,20 @@
       "markerIcon": "repair.png",
       "waymarks": []
     },
+    "magicPotCoffers": {
+      "markerIcon": "coffer.png",
+      "waymarks": [
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "occultcoffer01",
+          "position": {
+          "x": 15.2,
+          "y": -20.7
+          }
+        }
+      ]
+    },
     "fates": {
       "markerIcon": "fate-enemies.png",
       "circle": {
@@ -249,6 +263,14 @@
           "position": {
             "x": 24.6,
             "y": -34.8
+          }
+        },
+        {
+          "name": "The Winged Terror",
+          "@id": "osh_fate07",
+          "position": {
+            "x": 10.4,
+            "y": -9.7
           }
         }
       ]
@@ -364,6 +386,17 @@
             }
           ]
           }
+        },
+        {
+          "name": "The Unbridled",
+          "@id": "osh_ce10",
+          "position": {
+            "x": 33.9,
+            "y": -37.5
+          },
+          "metadata": {
+            "boss": "???"
+          }
         }
       ]
     },
@@ -387,11 +420,27 @@
           }
         },
         {
+          "name": "#12: Heathcliff",
+          "@id": "osh_survey12",
+          "position": {
+            "x": 23.2,
+            "y": -21.5
+          }
+        },
+        {
           "name": "#13: The Fell Warren",
           "@id": "osh_survey13",
           "position": {
             "x": 10.1,
             "y": -22.5
+          }
+        },
+        {
+          "name": "#15: The Shadowed City",
+          "@id": "osh_survey15",
+          "position": {
+            "x": 24.2,
+            "y": -32.9
           }
         },
         {
