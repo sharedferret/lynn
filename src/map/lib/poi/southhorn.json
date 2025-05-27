@@ -242,6 +242,14 @@
             "x": 17.0,
             "y": -26.5
           }
+        },
+        {
+          "name": "Rough Waters",
+          "@id": "osh_fate06",
+          "position": {
+            "x": 24.6,
+            "y": -34.8
+          }
         }
       ]
     },
@@ -328,6 +336,17 @@
           "metadata": {
             "boss": "???"
           }
+        },
+        {
+          "name": "Trial by Claw",
+          "@id": "osh_ce08",
+          "position": {
+            "x": 13.1,
+            "y": -22.8
+          },
+          "metadata": {
+            "boss": "???"
+          }
         }
       ]
     },
@@ -335,9 +354,16 @@
       "markerIcon": "poi-pin.png",
       "waymarks": [
         {
-          "name": "Lv2: The Lost Citadel",
-          "@id": "osh_survey01",
-          "level": 2,
+          "name": "#7: The Lost Citadel",
+          "@id": "osh_survey07",
+          "position": {
+            "x": 31.3,
+            "y": -17.0
+          }
+        },
+        {
+          "name": "#9: The Vanishing Slope",
+          "@id": "osh_survey09",
           "position": {
             "x": 31.3,
             "y": -17.0
