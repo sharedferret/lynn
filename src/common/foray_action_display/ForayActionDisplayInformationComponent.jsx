@@ -1,11 +1,54 @@
 import React from 'react';
 import {
-  Box, Paper, Stack, Typography, useTheme, alpha,
+  Box,
+  Paper,
+  Stack,
+  Typography,
+  useTheme,
+  alpha,
 } from '@mui/material';
+
 import ScaleIcon from '@mui/icons-material/Scale';
 
-export default function BozjaLostActionInformationComponent({ lostAction, actionData }) {
+export default function ForayActionDisplayInformationComponent({
+  forayActionDisplaySettings,
+  action,
+  actionData,
+}) {
   const theme = useTheme();
+
+  function getTitleExtraComponent() {
+    if (forayActionDisplaySettings.name === 'bozja') {
+      return (
+        <Stack direction="row" alignItems="center" spacing={2}>
+          <ScaleIcon />
+          <Typography fontWeight={700} variant="h4" pr={3} pl={1}>{actionData.weight}</Typography>
+        </Stack>
+      );
+    }
+
+    return null;
+  }
+
+  function getDescriptionExtraComponent() {
+    if (forayActionDisplaySettings.name === 'bozja') {
+      return (
+        <Typography
+          textAlign="left"
+          pl={3}
+          pr={2}
+          fontWeight={700}
+        >
+          Rank:
+          {' '}
+          {actionData.rank}
+        </Typography>
+      );
+    }
+
+    return null;
+  }
+
   return (
     <Paper
       elevation={3}
@@ -26,16 +69,15 @@ export default function BozjaLostActionInformationComponent({ lostAction, action
       >
         <Stack direction="row" alignItems="center" spacing={2}>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/lostactions/${actionData.image}.jpg`}
+            src={`${process.env.PUBLIC_URL}/assets/${forayActionDisplaySettings.assetUriPrefix}/${actionData.image}.${forayActionDisplaySettings.assetUriType}`}
             width={48}
             height={48}
-            alt={lostAction}
+            alt={action}
           />
           <Box width={12} />
-          <Typography fontWeight={700} variant="h4">{lostAction}</Typography>
+          <Typography fontWeight={700} variant="h4">{action}</Typography>
           <Box flexGrow={1} />
-          <ScaleIcon />
-          <Typography fontWeight={700} variant="h4" pr={3} pl={1}>{actionData.weight}</Typography>
+          { getTitleExtraComponent() }
         </Stack>
       </Box>
 
@@ -99,16 +141,9 @@ export default function BozjaLostActionInformationComponent({ lostAction, action
         >
           {actionData.actionText}
         </Typography>
-        <Typography
-          textAlign="left"
-          pl={3}
-          pr={2}
-          fontWeight={700}
-        >
-          Rank:
-          {' '}
-          {actionData.rank}
-        </Typography>
+
+        { getDescriptionExtraComponent() }
+
         <Stack direction="row" spacing={1}>
           <Typography fontWeight={700} pl={3}>Usable by:</Typography>
           {

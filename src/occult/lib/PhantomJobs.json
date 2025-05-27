@@ -1,0 +1,142 @@
+{
+  "phantomJobs": {
+    "Freelancer": {
+      "name": "Freelancer",
+      "image": "freelancer-icon",
+      "sprite": "freelancer-sprite",
+      "unlockLevel": 0,
+      "code": "fr",
+      "jobText": "Freelancer job text placeholder.",
+      "supportActions": {}
+    },
+    "Knight": {
+      "name": "Knight",
+      "image": "knight-icon",
+      "sprite": "knight-sprite",
+      "unlockLevel": 0,
+      "code": "kn",
+      "jobText": "Knight job text placeholder.",
+      "supportActions": {}
+    },
+    "Monk": {
+      "name": "Monk",
+      "image": "monk-icon",
+      "sprite": "monk-sprite",
+      "unlockLevel": 0,
+      "code": "mo",
+      "jobText": "Monk job text placeholder.",
+      "supportActions": {}
+    },
+    "Time Mage": {
+      "name": "Time Mage",
+      "image": "timemage-icon",
+      "sprite": "timemage-sprite",
+      "unlockLevel": 0,
+      "code": "ti",
+      "jobText": "Time Mage job text placeholder.",
+      "supportActions": {
+        "Occult Slowga": {
+          "name": "Occult Slowga",
+          "image": "placeholder.jpg",
+          "unlockLevel": 1,
+          "description": "Support action description placeholder.",
+          "abilityType": "Spell",
+          "duration": "30s",
+          "code": "t1"
+        },
+        "Occult Comet": {
+          "name": "Occult Comet",
+          "image": "placeholder.jpg",
+          "unlockLevel": 1,
+          "description": "Support action description placeholder.",
+          "abilityType": "Spell",
+          "castTime": 8,
+          "recastTime": 60,
+          "duration": "30s",
+          "code": "t2"
+        }
+      }
+    },
+    "Bard": {
+      "name": "Bard",
+      "image": "bard-icon",
+      "sprite": "bard-sprite",
+      "unlockLevel": 0,
+      "code": "ba",
+      "jobText": "Bard job text placeholder.",
+      "supportActions": {}
+    },
+    "Geomancer": {
+      "name": "Geomancer",
+      "image": "geomancer-icon",
+      "sprite": "geomancer-sprite",
+      "unlockLevel": 0,
+      "code": "ge",
+      "jobText": "Geomancer job text placeholder.",
+      "supportActions": {}
+    },
+    "Ranger": {
+      "name": "Ranger",
+      "image": "ranger-icon",
+      "sprite": "ranger-sprite",
+      "unlockLevel": 0,
+      "code": "ra",
+      "jobText": "Ranger job text placeholder.",
+      "supportActions": {}
+    },
+    "Berserker": {
+      "name": "Berserker",
+      "image": "berserker-icon",
+      "sprite": "berserker-sprite",
+      "unlockLevel": 0,
+      "code": "be",
+      "jobText": "Berserker job text placeholder.",
+      "supportActions": {}
+    },
+    "Chemist": {
+      "name": "Chemist",
+      "image": "chemist-icon",
+      "sprite": "chemist-sprite",
+      "unlockLevel": 0,
+      "code": "ch",
+      "jobText": "Chemist job text placeholder.",
+      "supportActions": {}
+    },
+    "Cannoneer": {
+      "name": "Cannoneer",
+      "image": "cannoneer-icon",
+      "sprite": "cannoneer-sprite",
+      "unlockLevel": 0,
+      "code": "ca",
+      "jobText": "Cannoneer job text placeholder.",
+      "supportActions": {}
+    },
+    "Samurai": {
+      "name": "Samurai",
+      "image": "samurai-icon",
+      "sprite": "samurai-sprite",
+      "unlockLevel": 0,
+      "code": "sa",
+      "jobText": "Samurai job text placeholder.",
+      "supportActions": {}
+    },
+    "Thief": {
+      "name": "Thief",
+      "image": "thief-icon",
+      "sprite": "thief-sprite",
+      "unlockLevel": 0,
+      "code": "th",
+      "jobText": "Thief job text placeholder.",
+      "supportActions": {}
+    },
+    "Oracle": {
+      "name": "Oracle",
+      "image": "oracle-icon",
+      "sprite": "oracle-sprite",
+      "unlockLevel": 0,
+      "code": "or",
+      "jobText": "Oracle job text placeholder.",
+      "supportActions": {}
+    }
+  }
+}

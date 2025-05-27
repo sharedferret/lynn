@@ -90,12 +90,27 @@ function SidebarComponent({
       </Stack>
 
       <StyledButton
-        disabled
-        onClick={(e) => { handleSidebarClickFromSidebar(e, 'oc'); }}
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'occult/guide'); }}
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Coming soon!</Typography>
+        <Typography>Guide</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/southhorn'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Occult Crescent Maps</Typography>
+      </StyledButton>
+
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'occult/phantomjob'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography>Phantom Jobs</Typography>
       </StyledButton>
 
       <Stack direction="row" height="3rem" alignItems="center">

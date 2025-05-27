@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import 'leaflet/dist/leaflet.css';
 import {
@@ -21,12 +21,69 @@ L.Icon.Default.mergeOptions({
 });
 /* eslint-enable no-underscore-dangle, global-require, comma-dangle */
 
+function PopupHelper({ markerRef }) {
+  React.useEffect(() => {
+    if (markerRef?.current) {
+      // Small timeout to ensure marker is fully initialized
+      // There has to be a better way to do this...
+      setTimeout(() => {
+        if (markerRef.current) {
+          markerRef.current.openPopup();
+        }
+      }, 100);
+    }
+  }, [markerRef]);
+  return null;
+}
+
 function LocationMarker({ handleMouseMove }) {
-  useMapEvents({
+  const map = useMapEvents({
     mousemove: (e) => {
       handleMouseMove(e);
     },
+    moveend: () => {
+      const center = map.getCenter();
+      const zoom = map.getZoom();
+
+      const params = new URLSearchParams(window.location.search);
+      params.set('x', center.lng.toFixed(2));
+      params.set('y', center.lat.toFixed(2));
+      params.set('zoom', zoom.toFixed(1));
+
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    },
+    zoomend: () => {
+      const center = map.getCenter();
+      const zoom = map.getZoom();
+
+      const params = new URLSearchParams(window.location.search);
+      params.set('x', center.lng.toFixed(2));
+      params.set('y', center.lat.toFixed(2));
+      params.set('zoom', zoom.toFixed(1));
+
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    },
+    popupopen: (e) => {
+      // Push popup id to query params
+      const params = new URLSearchParams(window.location.search);
+      params.set('poi', e.popup.options.id);
+
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    },
+    popupclose: () => {
+      // Remove popup id from query params
+      const params = new URLSearchParams(window.location.search);
+      params.delete('poi');
+
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    },
   });
+
+  return null;
 }
 
 export default function FullscreenMapComponent({
@@ -35,9 +92,12 @@ export default function FullscreenMapComponent({
   displayLabels,
   selectedLayers,
   handleMouseMove,
+  initialMapPosition,
 }) {
   const markers = [];
   const annotations = [];
+
+  const markerRef = useRef(null);
 
   // Add all json markers to a flat markers array to display on the map
   Object.keys(mapData).forEach((markerType) => {
@@ -61,6 +121,7 @@ export default function FullscreenMapComponent({
         <Marker
           key={marker['@id']}
           position={[marker.position.y, marker.position.x]}
+          ref={marker['@id'] === initialMapPosition?.poi ? markerRef : null}
           icon={
             L.icon({
               iconUrl: `${process.env.PUBLIC_URL}/assets/maps/markers/${
@@ -73,7 +134,7 @@ export default function FullscreenMapComponent({
             })
           }
         >
-          <Popup m={0}>
+          <Popup m={0} id={marker['@id']}>
             <TooltipBaseComponent
               markerData={marker}
               icon={marker.iconOverride ? marker.iconOverride : mapData[markerType].markerIcon}
@@ -146,18 +207,25 @@ export default function FullscreenMapComponent({
     }
   });
 
+  const initialMapSettings = {
+    lat: initialMapPosition?.lat || mapParameters.center.lat,
+    lon: initialMapPosition?.lon || mapParameters.center.lon,
+    zoom: initialMapPosition?.zoom || mapParameters.zoom.default,
+  };
+
   return (
     <MapContainer
       className="full-screen-map"
       crs={L.CRS.Simple}
-      center={[mapParameters.center.lat, mapParameters.center.lon]}
-      zoom={mapParameters.zoom.default}
+      center={[initialMapSettings.lat, initialMapSettings.lon]}
+      zoom={initialMapSettings.zoom}
       minZoom={mapParameters.zoom.min}
       maxZoom={mapParameters.zoom.max}
       zoomDelta={mapParameters.zoom.delta}
       zoomSnap={mapParameters.zoom.snap}
       wheelPxPerZoomLevel={mapParameters.zoom.scrollPx}
     >
+      <PopupHelper markerRef={markerRef} />
       <LocationMarker handleMouseMove={handleMouseMove} />
       <ImageOverlay
         url={`${process.env.PUBLIC_URL}/assets/maps/${mapParameters.imageUrl}`}

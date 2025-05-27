@@ -1,0 +1,229 @@
+{
+  "name": "Occult Crescent: South Horn",
+  "categories": [
+    {
+      "name": "General",
+      "enabled": true,
+      "layers": [
+        {
+          "id": "namedLocations",
+          "name": "Named Locations",
+          "enabled": true
+        },
+        {
+          "id": "aetherytes",
+          "name": "Aetherytes",
+          "enabled": true
+        },
+        {
+          "id": "traders",
+          "name": "Traders",
+          "enabled": true
+        },
+        {
+          "id": "shops",
+          "name": "Shops",
+          "enabled": true
+        },
+        {
+          "id": "repair",
+          "name": "Repair",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "Encounters",
+      "enabled": true,
+      "layers": [
+        {
+          "id": "fates",
+          "name": "FATEs",
+          "enabled": true
+        },
+        {
+          "id": "criticalEngagements",
+          "name": "Critical Engagements",
+          "enabled": true
+        },
+        {
+          "id": "magicPots",
+          "name": "Magic Pots",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "Enemies",
+      "enabled": false,
+      "layers": [
+        {
+          "id": "mobs",
+          "name": "Mobs",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "name": "Progression",
+      "enabled": false,
+      "layers": [
+        {
+          "id": "quests",
+          "name": "Quests",
+          "enabled": false
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "id": "aetherytes"
+    },
+    {
+      "id": "criticalEngagements"
+    }
+  ],
+  "parameters": {
+    "imageUrl": "southhorn.png",
+    "bounds": {
+      "min": {
+        "lat": -1,
+        "lon": 1
+      },
+      "max": {
+        "lat": -42,
+        "lon": 42
+      }
+    },
+    "center": {
+      "lat": -21,
+      "lon": 21
+    },
+    "zoom": {
+      "default": 4.5,
+      "min": 3,
+      "max": 8,
+      "delta": 0.5,
+      "snap": 0.5,
+      "scrollPx": 200
+    }
+  },
+  "mapData": {
+    "namedLocations": {
+      "markerIcon": "poi-pin.png",
+      "waymarks": [
+        {
+          "name": "",
+          "@id": "osh_loc1",
+          "position": {
+            "x": 22.9,
+            "y": -21.6
+          }
+        },
+        {
+          "name": "",
+          "@id": "osh_loc2",
+          "position": {
+            "x": 14.8,
+            "y": -37.6
+          }
+        }
+      ]
+    },
+    "aetherytes": {
+      "markerIcon": "aetheryte.png",
+      "waymarks": [
+        {
+          "name": "",
+          "@id": "osh_1",
+          "position": {
+            "x": 38.2,
+            "y": -7.7
+          }
+        },
+        {
+          "name": "",
+          "@id": "osh_2",
+          "position": {
+            "x": 18.1,
+            "y": -9.4
+          }
+        },
+        {
+          "name": "",
+          "@id": "osh_3",
+          "position": {
+            "x": 14.4,
+            "y": -19.1
+          }
+        },
+        {
+          "name": "",
+          "@id": "osh_4",
+          "position": {
+            "x": 14.0,
+            "y": -27.2
+          }
+        },
+        {
+          "name": "",
+          "@id": "osh_5",
+          "position": {
+            "x": 27.8,
+            "y": -27.7
+          }
+        }
+      ]
+    },
+    "traders": {
+      "markerIcon": "trader.png",
+      "waymarks": []
+    },
+    "shops": {
+      "markerIcon": "shop.png",
+      "waywmarks": []
+    },
+    "repair": {
+      "markerIcon": "repair.png",
+      "waymarks": []
+    },
+    "fates": {
+      "markerIcon": "fate-enemies.png",
+      "circle": {
+        "radius": 0.9,
+        "color": "#03c2fc"
+      },
+      "waymarks": [
+        {
+          "name": "FATE",
+          "@id": "osh_fate01",
+          "position": {
+            "x": 14.2,
+            "y": -34.6
+          }
+        }
+      ]
+    },
+    "criticalEngagements": {
+      "markerIcon": "fate-nm.png",
+      "circle": {
+        "radius": 0.9,
+        "color": "#e0635a"
+      },
+      "waymarks": [
+        {
+          "name": "CE",
+          "@id": "osh_ce01",
+          "position": {
+            "x": 25.6,
+            "y": -17.3
+          },
+          "metadata": {
+            "boss": "???"
+          }
+        }
+      ]
+    }
+  }
+}

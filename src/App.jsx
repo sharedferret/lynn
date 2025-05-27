@@ -25,6 +25,8 @@ import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
 import DRSRunHolsterCreatorContainerComponent from './drs/create/DRSRunHolsterCreatorContainerComponent';
 import BAMorbolMapComponent from './BAMorbolMapComponent';
 import MapPageComponent from './map/MapPageComponent';
+import OccultCrescentGuideMain from './occult/OccultCrescentGuideMain';
+import OccultPhantomJobHelperComponent from './occult/phantom_jobs/OccultPhantomJobHelperComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -38,6 +40,23 @@ function WrappedMainComponent({ component, page }) {
         component={component}
         page={page}
         forecastFilter={forecastFilter}
+        colorModeContext={ColorModeContext}
+      />
+    );
+  } if (page === 'occult') {
+    return (
+      <MainComponent
+        component={component}
+        page={page}
+        guidePage={params.guidepage}
+        colorModeContext={ColorModeContext}
+      />
+    );
+  } if (page === 'occultphantomjob') {
+    return (
+      <MainComponent
+        component={component}
+        phantomJob={params.phantomjob}
         colorModeContext={ColorModeContext}
       />
     );
@@ -123,6 +142,26 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <WrappedMainComponent component={<MainPageComponent />} page="main" />,
+  },
+  {
+    path: '/occult/phantomjob',
+    element: <WrappedMainComponent component={<OccultPhantomJobHelperComponent />} page="occultphantomjob" />,
+    children: [
+      {
+        path: '/occult/phantomjob/:phantomjob',
+        element: <WrappedMainComponent component={<OccultPhantomJobHelperComponent />} page="occultphantomjob" />,
+      },
+    ],
+  },
+  {
+    path: '/occult/guide',
+    element: <WrappedMainComponent component={<OccultCrescentGuideMain />} page="occult" />,
+    children: [
+      {
+        path: '/occult/guide/:guidepage',
+        element: <WrappedMainComponent component={<OccultCrescentGuideMain />} page="occult" />,
+      },
+    ],
   },
   {
     path: '/forecast',

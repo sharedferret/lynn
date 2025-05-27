@@ -11,11 +11,16 @@ export default function MainComponent({
   component,
   page,
   type,
+  guidePage,
   holster,
   encodedHolster,
   lostAction,
   logosAction,
   mapId,
+  initialMapPosition,
+  inputAction,
+  phantomJob,
+  forayName,
   colorModeContext,
 }) {
   /**
@@ -83,11 +88,16 @@ export default function MainComponent({
             {React.cloneElement(component, {
               passedFilter,
               type,
+              guidePage,
               holster,
               encodedHolster,
               lostAction,
               logosAction,
               mapId,
+              initialMapPosition,
+              inputAction,
+              phantomJob,
+              forayName,
               resetTimer,
             })}
 
