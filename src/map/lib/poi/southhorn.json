@@ -418,11 +418,11 @@
           "metadata": {
             "boss": "Nymian Petalodus",
             "rewards": [
-            {
-              "name": "Notes on the Nymian Petalodus",
-              "type": "fieldNote"
-            }
-          ]
+              {
+                "name": "Notes on the Nymian Petalodus",
+                "type": "fieldNote"
+              }
+            ]
           }
         },
         {
@@ -445,6 +445,23 @@
           },
           "metadata": {
             "boss": "???"
+          }
+        },
+        {
+          "name": "Cursed Concern",
+          "@id": "osh_ce12",
+          "position": {
+            "x": 22.9,
+            "y": -10.5
+          },
+          "metadata": {
+            "boss": "Trade Tortoise",
+            "rewards": [
+              {
+                "name": "Notes on the Trade Tortoise",
+                "type": "fieldNote"
+              }
+            ]
           }
         }
       ]
