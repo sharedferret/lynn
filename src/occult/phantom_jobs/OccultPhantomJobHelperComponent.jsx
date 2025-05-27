@@ -18,6 +18,10 @@ export default function OccultPhantomJobHelperComponent({ phantomJob }) {
 
   const [jobState, setJobState] = useState(job);
 
+  /**
+   * TODO: If actions are selectable, add the ability to keep state for them here.
+   */
+
   const handleJobUpdate = useCallback((event) => {
     const jobUri = event.target.value.replaceAll(' ', '_');
     window.history.pushState(
@@ -46,13 +50,14 @@ export default function OccultPhantomJobHelperComponent({ phantomJob }) {
             <Stack direction="row" spacing={2} alignItems="center">
               <Typography>Phantom Job: </Typography>
               <Box width={325}>
+                { /* TODO: Update this to be a portrait grid selector */ }
                 <OccultPhantomJobSelectorComponent
                   phantomJob={jobState}
                   handleJobUpdate={handleJobUpdate}
                 />
               </Box>
             </Stack>
-            <OccultPhantomJobHelperDataComponent phantomJob={phantomJob} />
+            { jobState ? <OccultPhantomJobHelperDataComponent phantomJob={jobState} /> : null }
           </Stack>
         </Box>
 

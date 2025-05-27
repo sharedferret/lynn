@@ -31,7 +31,7 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
       >
         <Stack direction="row" alignItems="center" spacing={2}>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/lostactions/${phantomJobData.image}.jpg`}
+            src={`${process.env.PUBLIC_URL}/assets/phantomjobs/${phantomJobData.sprite}.png`}
             width={48}
             height={48}
             alt={phantomJob}
@@ -53,23 +53,8 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
           pr={2}
           style={{ whiteSpace: 'pre-wrap' }}
         >
-          {phantomJobData.actionText}
+          {phantomJobData.jobText}
         </Typography>
-        <Stack direction="row" spacing={1}>
-          <Typography fontWeight={700} pl={3}>Usable by:</Typography>
-          {
-            phantomJobData.roles.map((i) => (
-              <Box>
-                <img
-                  src={`${process.env.PUBLIC_URL}/assets/roles/${i}.png`}
-                  width={24}
-                  height={24}
-                  alt={i}
-                />
-              </Box>
-            ))
-          }
-        </Stack>
       </Box>
     </Paper>
   );

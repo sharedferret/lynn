@@ -1,22 +1,29 @@
 import { Container, Divider, Stack } from '@mui/material';
 import React from 'react';
 import OccultPhantomJobInformationComponent from './OccultPhantomJobInformationComponent';
+import OccultPhantomJobSupportActionContainerComponent from './OccultPhantomJobSupportActionContainerComponent';
+import PhantomJobHelper from '../lib/PhantomJobHelper';
 
-export default function OccultPhantomJobHelperDataComponent({ phantomJob = 'None' }) {
-  const phantomJobData = {
-    abilityType: 'Test',
-    actionText: 'Action text',
-    roles: ['caster'],
-    image: '',
-  };
+export default function OccultPhantomJobHelperDataComponent({ phantomJob }) {
+  const phantomJobData = PhantomJobHelper.getPhantomJobData(phantomJob);
+
+  console.log('phantom job from data compt', phantomJob);
 
   return (
     <Container maxWidth="lg" sx={{ width: '100%' }}>
       <Stack spacing={4} alignItems="flex-start" width="100%">
         <Divider sx={{ width: '50%', margin: '0 auto', mb: 3 }} />
-        <OccultPhantomJobInformationComponent
-          phantomJob={phantomJob}
-          phantomJobData={phantomJobData}
+        { phantomJobData ? (
+          <OccultPhantomJobInformationComponent
+            phantomJob={phantomJob}
+            phantomJobData={phantomJobData}
+          />
+        ) : null }
+        { /* TODO: Add Support Actions down here, as its own component. For now, show all of
+             them, but if we want them to be selectable we can store that info on the
+             helper component. */ }
+        <OccultPhantomJobSupportActionContainerComponent
+          supportActions={phantomJobData.supportActions}
         />
       </Stack>
     </Container>

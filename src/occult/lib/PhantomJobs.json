@@ -1,0 +1,34 @@
+{
+  "phantomJobs": {
+    "Time Mage": {
+      "name": "Time Mage",
+      "image": "timemage-icon",
+      "sprite": "timemage-sprite",
+      "unlockLevel": 0,
+      "code": "t",
+      "jobText": "Job text placeholder.",
+      "supportActions": {
+        "Occult Slowga": {
+          "name": "Occult Slowga",
+          "image": "placeholder.jpg",
+          "unlockLevel": 1,
+          "description": "Support action description placeholder.",
+          "abilityType": "Spell",
+          "duration": 30,
+          "code": "t1"
+        },
+        "Occult Comet": {
+          "name": "Occult Comet",
+          "image": "placeholder.jpg",
+          "unlockLevel": 1,
+          "description": "Support action description placeholder.",
+          "abilityType": "Spell",
+          "castTime": 8,
+          "recastTime": 60,
+          "duration": 30,
+          "code": "t2"
+        }
+      }
+    }
+  }
+}
