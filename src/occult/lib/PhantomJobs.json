@@ -54,8 +54,19 @@
       "sprite": "monk-sprite",
       "unlockLevel": 0,
       "code": "mo",
-      "jobText": "Monk job text placeholder.",
-      "supportActions": {}
+      "jobText": "These memories of a monk's unflinching discipline and quiet meditation offer a path to unparalleled combat mastery.",
+      "supportActions": {
+        "Phantom Kick": {
+          "name": "Phantom Kick",
+          "image": "placeholder.jpg",
+          "unlockLevel": 1,
+          "description": "Leap towards your target, delivering an attack with a potency of 100 to all enemies in a straight line before you.\nPotency scales with item level.\nAdditional Effect: Grants a stack of Phantom Kick up to a maximum of 3, increasing damage dealt by 5%.\nLevel 4: Potency increases to 7%.\nLevel 6: Potency increases to 9%.",
+          "abilityType": "Ability",
+          "duration": "40s",
+          "recast": 30,
+          "code": "mo1"
+        }
+      }
     },
     "Time Mage": {
       "name": "Time Mage",

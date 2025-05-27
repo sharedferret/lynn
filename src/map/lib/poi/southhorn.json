@@ -66,8 +66,13 @@
     },
     {
       "name": "Progression",
-      "enabled": false,
+      "enabled": true,
       "layers": [
+        {
+          "id": "surveyPoints",
+          "name": "Survey Points",
+          "enabled": true
+        },
         {
           "id": "quests",
           "name": "Quests",
@@ -82,6 +87,9 @@
     },
     {
       "id": "criticalEngagements"
+    },
+    {
+      "id": "surveyPoints"
     }
   ],
   "parameters": {
@@ -210,6 +218,22 @@
             "x": 22.9,
             "y": -27.1
           }
+        },
+        {
+          "name": "The Golden Guardian",
+          "@id": "osh_fate03",
+          "position": {
+            "x": 28.8,
+            "y": -31.2
+          }
+        },
+        {
+          "name": "Brain Drain",
+          "@id": "osh_fate04",
+          "position": {
+            "x": 20.6,
+            "y": -15.1
+          }
         }
       ]
     },
@@ -240,6 +264,42 @@
           },
           "metadata": {
             "boss": "???"
+          }
+        },
+        {
+          "name": "On The Hunt",
+          "@id": "osh_ce03",
+          "position": {
+            "x": 34.0,
+            "y": -20.1
+          },
+          "metadata": {
+            "boss": "???"
+          }
+        },
+        {
+          "name": "Crawling Death",
+          "@id": "osh_ce04",
+          "position": {
+            "x": 35.1,
+            "y": -32.2
+          },
+          "metadata": {
+            "boss": "???"
+          }
+        }
+      ]
+    },
+    "surveyPoints": {
+      "markerIcon": "poi-pin.png",
+      "waymarks": [
+        {
+          "name": "Lv2: The Lost Citadel",
+          "@id": "osh_survey01",
+          "level": 2,
+          "position": {
+            "x": 31.3,
+            "y": -17.0
           }
         }
       ]
