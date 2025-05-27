@@ -7,7 +7,26 @@
       "unlockLevel": 0,
       "code": "fr",
       "jobText": "Freelancer job text placeholder.",
-      "supportActions": {}
+      "supportActions": {
+        "Occult Resuscitation": {
+          "name": "Occult Resuscitation",
+          "image": "placeholder.jpg",
+          "unlockLevel": 5,
+          "description": "Restores 30% of maximum HP.",
+          "abilityType": "Weaponskill",
+          "recast": 2.5,
+          "code": "fr1"
+        },
+        "Occult Treasuresight": {
+          "name": "Occult Treasuresight",
+          "image": "placeholder.jpg",
+          "unlockLevel": 10,
+          "description": "Detects the number of treasure coffers presently on the Occult Crescent.",
+          "abilityType": "Ability",
+          "recast": 10,
+          "code": "fr2"
+        }
+      }
     },
     "Knight": {
       "name": "Knight",
