@@ -52,7 +52,6 @@ export default function OccultPhantomJobHelperComponent({ phantomJob }) {
             <Stack direction="row" spacing={2} alignItems="center">
               <Typography>Phantom Job: </Typography>
               <Box width={325}>
-                { /* TODO: Update this to be a portrait grid selector */ }
                 <OccultPhantomJobSelectorComponent
                   phantomJob={jobState}
                   handleJobUpdate={handleJobUpdate}

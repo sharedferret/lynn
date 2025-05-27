@@ -1,28 +1,51 @@
 import {
-  Box, Container, Stack, Typography,
+  Box, Container, Stack, Typography, useTheme, alpha,
 } from '@mui/material';
+import LockOpenIcon from '@mui/icons-material/LockOpen';
 import React from 'react';
 
 export default function OccultPhantomJobSupportActionComponent({ action }) {
-  // const theme = useTheme();
+  const theme = useTheme();
+
+  function renderEnhancement(enhancement) {
+    return (
+      <Typography fontStyle="italic" textAlign="start" pl={3}>
+        Lv
+        {' '}
+        { enhancement.level }
+        {' '}
+        Trait:
+        {' '}
+        { enhancement.effect }
+      </Typography>
+    );
+  }
+
   return (
-    <Container>
-      <Box>
+    <Container sx={{
+      border: `1px solid ${alpha(theme.palette.divider, 0.1)}`,
+      borderRadius: '12px',
+    }}
+    >
+      <Box p={2}>
         <Stack direction="row" alignItems="center" spacing={2}>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/lostactions/Dynamis_Dice.jpg`}
+            src={`${process.env.PUBLIC_URL}/assets/occultactions/${action.image}`}
             width={48}
             height={48}
-            alt="test"
+            alt={action.name}
           />
           <Box width={12} />
           <Typography fontWeight={700} variant="h5">{ action.name }</Typography>
+          <Box flexGrow={1} />
+          <LockOpenIcon />
+          <Typography fontWeight={700} variant="h5">{ `Lv ${action.unlockLevel}` }</Typography>
         </Stack>
         <Box
-          p={2}
+          pt={2}
           pl={9}
         >
-          <Stack direction="row" pl={3} alignItems="center" spacing={3} pb={2}>
+          <Stack direction="row" pl={3} alignItems="center" spacing={3} pb={1}>
             <Typography fontWeight={700}>{action.abilityType}</Typography>
             {action.duration
               ? (
@@ -81,16 +104,12 @@ export default function OccultPhantomJobSupportActionComponent({ action }) {
           >
             {action.description}
           </Typography>
-          <Typography
-            textAlign="left"
-            pl={3}
-            pr={2}
-            fontWeight={700}
-          >
-            Unlock Level:
-            {' '}
-            {action.unlockLevel}
-          </Typography>
+          <Box height={8} />
+          {
+            action.enhancements
+              ? action.enhancements.map((enhancement) => renderEnhancement(enhancement))
+              : null
+          }
         </Box>
       </Box>
     </Container>

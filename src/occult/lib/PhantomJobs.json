@@ -11,7 +11,7 @@
       "supportActions": {
         "Occult Resuscitation": {
           "name": "Occult Resuscitation",
-          "image": "placeholder.jpg",
+          "image": "occult-resuscitation.png",
           "unlockLevel": 5,
           "description": "Restores 30% of maximum HP.",
           "abilityType": "Weaponskill",
@@ -20,7 +20,7 @@
         },
         "Occult Treasuresight": {
           "name": "Occult Treasuresight",
-          "image": "placeholder.jpg",
+          "image": "occult-treasuresight.png",
           "unlockLevel": 10,
           "description": "Detects the number of treasure coffers presently on the Occult Crescent.",
           "abilityType": "Ability",
@@ -72,7 +72,7 @@
       "name": "Time Mage",
       "image": "timemage-icon",
       "sprite": "timemage-sprite",
-      "unlockGuide": "Purchase - 1,000 Silver Pieces from the Expedition .",
+      "unlockGuide": "Purchase - Time Mage's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian.",
       "code": "ti",
       "jobText": "Time Mage job text placeholder.",
       "supportActions": {
@@ -102,16 +102,16 @@
       "name": "Bard",
       "image": "bard-icon",
       "sprite": "bard-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "South Horn intro quests.",
       "code": "ba",
-      "jobText": "Bard job text placeholder.",
+      "jobText": "These memories echo with the vivid imagery of a bard's uplifting song. Utilize them to employ the very same ballads in battle.",
       "supportActions": {}
     },
     "Geomancer": {
       "name": "Geomancer",
       "image": "geomancer-icon",
       "sprite": "geomancer-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "Purchase - Geomancer's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian.",
       "code": "ge",
       "jobText": "Geomancer job text placeholder.",
       "supportActions": {}
@@ -138,7 +138,7 @@
       "name": "Chemist",
       "image": "chemist-icon",
       "sprite": "chemist-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "Purchase - Chemist's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian.",
       "code": "ch",
       "jobText": "Chemist job text placeholder.",
       "supportActions": {}
@@ -147,16 +147,71 @@
       "name": "Cannoneer",
       "image": "cannoneer-icon",
       "sprite": "cannoneer-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "Purchase - Cannoneer's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian.",
       "code": "ca",
-      "jobText": "Cannoneer job text placeholder.",
-      "supportActions": {}
+      "jobText": "A mastery of ballistics both scholarly and practical infuse this cannoneer's recollections. Emulate them to bombard foes with powerful projectiles.",
+      "supportActions": {
+        "Phantom Fire": {
+          "name": "Phantom Fire",
+          "image": "phantom-fire.png",
+          "unlockLevel": 1,
+          "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.",
+          "enhancements": [
+            {
+              "level": 5,
+              "effect": "Grants a 5% chance to instantly kill targets when executing Phantom Fire, with some exceptions."
+            }
+          ],
+          "abilityType": "Weaponskill",
+          "recast": 30,
+          "code": "ca1"
+        },
+        "Holy Cannon": {
+          "name": "Holy Cannon",
+          "image": "holy-cannon.png",
+          "unlockLevel": 2,
+          "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency increases to 500 when used against undead enemies.\nPotency scales with item level.",
+          "abilityType": "Weaponskill",
+          "recast": 30,
+          "code": "ca2"
+        },
+        "Dark Cannon": {
+          "name": "Dark Cannon",
+          "image": "dark-cannon.png",
+          "unlockLevel": 3,
+          "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Blind",
+          "abilityType": "Weaponskill",
+          "recast": 30,
+          "duration": "30s",
+          "code": "ca3"
+        },
+        "Shock Cannon": {
+          "name": "Shock Cannon",
+          "image": "shock-cannon.png",
+          "unlockLevel": 4,
+          "description": "Deals lightning damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Paralysis\nShares a recast timer with Dark Cannon.",
+          "abilityType": "Weaponskill",
+          "recast": 30,
+          "duration": "18s",
+          "code": "ca4"
+        },
+        "Silver Cannon": {
+          "name": "Silver Cannon",
+          "image": "silver-cannon.png",
+          "unlockLevel": 6,
+          "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Afflicts target with Silver Sickness, reducing damage target deals by 10% and increasing damage taken by 5%.\nShares a recast timer with Holy Cannon.",
+          "abilityType": "Weaponskill",
+          "recast": 30,
+          "duration": "70s",
+          "code": "ca5"
+        }
+      }
     },
     "Samurai": {
       "name": "Samurai",
       "image": "samurai-icon",
       "sprite": "samurai-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "Purchase - Samurai's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian.",
       "code": "sa",
       "jobText": "Samurai job text placeholder.",
       "supportActions": {}
@@ -165,7 +220,7 @@
       "name": "Thief",
       "image": "thief-icon",
       "sprite": "thief-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "Purchase - Thief's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian.",
       "code": "th",
       "jobText": "Thief job text placeholder.",
       "supportActions": {}
