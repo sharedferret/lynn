@@ -8,10 +8,6 @@ import PhantomJobHelper from '../lib/PhantomJobHelper';
 
 export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJobUpdate }) {
   function renderJob(job) {
-    // const jobData = PhantomJobHelper.getPhantomJobData(job);
-
-    console.log('item', job);
-
     return (
       <MenuItem value={job.name} key={`selector-${uuidv4()}`}>
         <Tooltip
@@ -39,9 +35,6 @@ export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJo
 
   function renderSelectorMenu() {
     const phantomJobs = PhantomJobHelper.getPhantomJobs();
-
-    // Create sections
-    // const actionsBySection = groupBy(phantomJobs, (i) => i.type);
 
     const menuItems = [];
 
