@@ -33,7 +33,7 @@ export default function TimeAndWeatherPopoverComponent() {
 
   const regionsToFetchWeatherFor = [
     {
-      name: 'South Horn',
+      name: 'The Occult Crescent: South Horn',
       zone: EorzeaWeather.ZONE_SOUTH_HORN,
     },
     {
@@ -64,7 +64,7 @@ export default function TimeAndWeatherPopoverComponent() {
 
   const fetchWeather = (region) => {
     const currentTime = new Date();
-    return UpcomingSpawnCalculator.getUpcomingWeather(3, currentTime, region);
+    return UpcomingSpawnCalculator.getUpcomingWeather(5, currentTime, region);
   };
 
   const initialTime = new EorzeaTime(new Date());
@@ -171,6 +171,16 @@ export default function TimeAndWeatherPopoverComponent() {
         .toDate(),
     )
       .getHours().toLocaleString('en-US', { minimumIntegerDigits: 2 })}:00`,
+    `${new EorzeaTime(
+      dayjs(dummyFetch[3].time.getTime())
+        .toDate(),
+    )
+      .getHours().toLocaleString('en-US', { minimumIntegerDigits: 2 })}:00`,
+    `${new EorzeaTime(
+      dayjs(dummyFetch[4].time.getTime())
+        .toDate(),
+    )
+      .getHours().toLocaleString('en-US', { minimumIntegerDigits: 2 })}:00`,
   ];
 
   const timeWidget = (
@@ -195,6 +205,8 @@ export default function TimeAndWeatherPopoverComponent() {
               <Typography>{weatherTimes[0]}</Typography>
               <Typography pl={1.3}>{weatherTimes[1]}</Typography>
               <Typography pl={1.3}>{weatherTimes[2]}</Typography>
+              <Typography pl={1.3}>{weatherTimes[3]}</Typography>
+              <Typography pl={1.3}>{weatherTimes[4]}</Typography>
             </Stack>
             {regionsToFetchWeatherFor.map(
               (region) => (

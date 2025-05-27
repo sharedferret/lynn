@@ -114,7 +114,7 @@
       "markerIcon": "poi-pin.png",
       "waymarks": [
         {
-          "name": "",
+          "name": "Solitary Pavilion",
           "@id": "osh_loc1",
           "position": {
             "x": 22.9,
@@ -122,7 +122,7 @@
           }
         },
         {
-          "name": "",
+          "name": "Occult Cloister",
           "@id": "osh_loc2",
           "position": {
             "x": 14.8,
@@ -138,40 +138,40 @@
           "name": "",
           "@id": "osh_1",
           "position": {
-            "x": 38.2,
-            "y": -7.7
+            "x": 38.0,
+            "y": -7.5
           }
         },
         {
           "name": "",
           "@id": "osh_2",
           "position": {
-            "x": 18.1,
-            "y": -9.4
+            "x": 17.9,
+            "y": -9.0
           }
         },
         {
           "name": "",
           "@id": "osh_3",
           "position": {
-            "x": 14.4,
-            "y": -19.1
+            "x": 14.1,
+            "y": -18.8
           }
         },
         {
           "name": "",
           "@id": "osh_4",
           "position": {
-            "x": 14.0,
-            "y": -27.2
+            "x": 13.7,
+            "y": -27.1
           }
         },
         {
           "name": "",
           "@id": "osh_5",
           "position": {
-            "x": 27.8,
-            "y": -27.7
+            "x": 27.5,
+            "y": -27.5
           }
         }
       ]
@@ -196,10 +196,10 @@
       },
       "waymarks": [
         {
-          "name": "FATE",
+          "name": "A Delicate Balance",
           "@id": "osh_fate01",
           "position": {
-            "x": 14.2,
+            "x": 14.1,
             "y": -34.6
           }
         }
@@ -213,11 +213,11 @@
       },
       "waymarks": [
         {
-          "name": "CE",
+          "name": "Company of Stone",
           "@id": "osh_ce01",
           "position": {
-            "x": 25.6,
-            "y": -17.3
+            "x": 35.0,
+            "y": -16.1
           },
           "metadata": {
             "boss": "???"
