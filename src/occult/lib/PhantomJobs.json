@@ -286,15 +286,74 @@
       "unlockGuide": "Purchase - Geomancer's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian.",
       "code": "ge",
       "jobText": "This geomancer's recollections brim with boundless understanding of nature's laws. Access them to employ weather-dependent techniques.",
-      "supportActions": {}
+      "supportActions": {
+        "Battle Bell": {
+          "name": "Battle Bell",
+          "image": "battle-bell.png",
+          "unlockLevel": 1,
+          "enhancements": [
+            {
+              "level": 5,
+              "effect": "Increases the effectiveness of Battle Bell to 5%."
+            }
+          ],
+          "description": "Grants Battle Bell to self or target player.\nBattle Bell Effect: Grants a stack of Battle's Clangor upon taking damage, up to a maximum of 8\nBattle's Clangor Effect: Increases damage dealt by 3％ for 30s.",
+          "abilityType": "Ability",
+          "duration": "60s",
+          "recastTime": 30,
+          "code": "ge1"
+        },
+        "Weather": {
+          "name": "Weather",
+          "image": "weather.png",
+          "unlockLevel": 2,
+          "enhancements": [
+            {
+              "level": 5,
+              "effect": "Increases the effectiveness of Battle Bell to 5%."
+            }
+          ],
+          "description": "Grants a beneficial effect to self and nearby party members based on the weather.\nSunbath Effect: Restores own HP and the HP of nearby party members. Cure Potency: 50,000.\nCloudy Caress: Increases HP recovery via healing actions for self and nearby party members by 30%.\nBlessed Rain Effect: Creates a barrier around self and nearby party members that absorbs 30,000 damage.\nMisty Mirage Effect: Increases evasion for self and nearby party members by 40%.\nHasty Mirage Effect: Increases movement speed for self and nearby party members by 20%.\nAetherial Gain Effect: Increases damage dealt by self and nearby party members by 10%.",
+          "abilityType": "Spell",
+          "duration": "20s",
+          "recastTime": 40,
+          "code": "ge2"
+        },
+        "Ringing Respite": {
+          "name": "Ringing Respite",
+          "image": "ringing-respite.png",
+          "unlockLevel": 3,
+          "enhancements": [
+            {
+              "level": 5,
+              "effect": "Increases the effectiveness of Ringing Respite to 3,000."
+            }
+          ],
+          "description": "Grants Ringing Respite to self or target player.\nRinging Respite Effect: Heals self or target player when damage is taken.\nCure Potency: 2,000",
+          "abilityType": "Ability",
+          "duration": "60s",
+          "recastTime": 30,
+          "code": "ge3"
+        },
+        "Suspend": {
+          "name": "Suspend",
+          "image": "suspend.png",
+          "unlockLevel": 4,
+          "description": "Grants Suspend to self or target party member, becoming lighter than air and immune to certain mechanics.",
+          "abilityType": "Ability",
+          "duration": "60s",
+          "recastTime": 2.5,
+          "code": "ge4"
+        }
+      }
     },
     "Ranger": {
       "name": "Ranger",
       "image": "ranger-icon",
       "sprite": "ranger-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "Unlocked from the Ranger's Soul Shard, acquired from the Critical Engagement \"The Black Regiment.\"",
       "code": "ra",
-      "jobText": "Ranger job text placeholder.",
+      "jobText": "Channel these memories of a proud, passionate ranger and learn to call forth the forces of nature in battle. ",
       "supportActions": {}
     },
     "Berserker": {

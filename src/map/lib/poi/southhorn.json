@@ -242,6 +242,15 @@
           "x": 9.4,
           "y": -38.6
           }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "occultcoffer05",
+          "position": {
+          "x": 35.5,
+          "y": -28.6
+          }
         }
       ]
     },
@@ -356,6 +365,14 @@
             "x": 29.6,
             "y": -21.0
           }
+        },
+        {
+          "name": "Sworn to Soil",
+          "@id": "osh_fate11",
+          "position": {
+            "x": 9.5,
+            "y": -27.9
+          }
         }
       ]
     },
@@ -429,7 +446,13 @@
             "y": -28.7
           },
           "metadata": {
-            "boss": "???"
+            "boss": "Black Star",
+            "rewards": [
+              {
+                "name": "Ranger's Soul Shard",
+                "type": ""
+              }
+            ]
           }
         },
         {
@@ -468,10 +491,10 @@
             "y": -37.5
           },
           "metadata": {
-            "boss": "???",
+            "boss": "Crescent Berserker",
             "rewards": [
               {
-                "name": "Berserker Soul Shard",
+                "name": "Berserker's Soul Shard",
                 "type": ""
               }
             ]
