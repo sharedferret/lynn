@@ -404,7 +404,7 @@
       "name": "Berserker",
       "image": "berserker-icon",
       "sprite": "berserker-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "Unlocked from the Berserker's Soul Shard, acquired from the Critical Engagement \"The Unbridled.\"",
       "code": "be",
       "jobText": "Savagery and unfailing courage characterize the recollections of this former berserker. These techniques entail great risk and even greater reward.",
       "supportActions": {
@@ -606,17 +606,162 @@
       "sprite": "thief-sprite",
       "unlockGuide": "Purchase - Thief's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian.",
       "code": "th",
-      "jobText": "Thief job text placeholder.",
-      "supportActions": {}
+      "jobText": "These recollections of a dextrous, principled thief grant access to survival techniques that will doubtless prove useful upon the isle.",
+      "supportActions": {
+        "Occult Sprint": {
+          "name": "Occult Sprint",
+          "image": "occult-sprint.png",
+          "unlockLevel": 1,
+          "description": "Greatly increases movement speed.",
+          "abilityType": "Ability",
+          "recastTime": 30,
+          "duration": "10s",
+          "code": "th1"
+        },
+        "Steal": {
+          "name": "Steal",
+          "image": "steal.png",
+          "unlockLevel": 2,
+          "description": "Increases the chance of additional items being dropped by target if Steal is dealt before, or as, the finishing blow.",
+          "abilityType": "Ability",
+          "recastTime": 30,
+          "code": "th2"
+        },
+        "Vigilance": {
+          "name": "Vigilance",
+          "image": "vigilance.png",
+          "unlockLevel": 3,
+          "description": "Grants Vigilance.\nEffect changes to Foreseen Offense when entering combat.\nForeseen Offense Effect: Increases critical hit rate by 60% for 20s.\nCannot be executed while in combat.",
+          "abilityType": "Ability",
+          "duration": "20s",
+          "recastTime": 10,
+          "code": "th3"
+        },
+        "Trap Detection": {
+          "name": "Trap Detection",
+          "image": "trap-detection.png",
+          "unlockLevel": 4,
+          "description": "Reveals all traps and secret passages within a 15-yalm radius.\nCan only be executed when inside a dungeon. ",
+          "abilityType": "Ability",
+          "recastTime": 2,
+          "code": "th4"
+        },
+        "Pilfer Weapon": {
+          "name": "Pilfer Weapon",
+          "image": "pilfer-weapon.png",
+          "unlockLevel": 5,
+          "description": "Lowers target's physical attack power by 10%.",
+          "abilityType": "Ability",
+          "duration": "60s",
+          "recastTime": 30,
+          "code": "th5"
+        },
+        "Lockpicker": {
+          "name": "Lockpicker",
+          "image": "lockpicker.png",
+          "unlockLevel": 6,
+          "description": "Allows you to open locked doors in dungeons.",
+          "abilityType": "Passive Trait",
+          "code": "th6"
+        }
+      }
     },
     "Oracle": {
       "name": "Oracle",
       "image": "oracle-icon",
       "sprite": "oracle-sprite",
-      "unlockLevel": 0,
+      "unlockGuide": "Unlocked from the Oracle's Soul Shard, acquired from the Critical Engagement \"On The Hunt.\"",
       "code": "or",
-      "jobText": "Oracle job text placeholder.",
-      "supportActions": {}
+      "jobText": "Endowed with an oracle's supernatural senses and prophetic insights, these memories promise mastery over a wealth of supportive skills. ",
+      "supportActions": {
+        "Predict": {
+          "name": "Predict",
+          "image": "predict.png",
+          "unlockLevel": 1,
+          "description": "Grants Prediction of Judgment, Prediction of Cleansing, Prediction of Blessing, or Prediction of Starfall, allowing the execution of an action depending on the prophecy granted.\nPhantom Judgment Action Effect: Deals unaspected damage to nearby enemies while healing self and nearby party members\nCleansing Action Effect: Deals unaspected damage to nearby enemies and freezes time\nBlessing Action Effect: Heals self and nearby party members, as well as granting Regen\nStarfall Action Effect: Deals unaspected damage to self and nearby enemies\nWhen the effect of a prediction expires, a new prophecy is granted. If all predictions expire without a commensurate action being used, the prophecy changes to False Prediction, causing damage over time to self with a potency of 50,000.",
+          "abilityType": "Spell",
+          "recastTime": 60,
+          "duration": "30s",
+          "code": "or1"
+        },
+        "Phantom Judgment": {
+          "name": "Phantom Judgment",
+          "image": "phantom-judgment.png",
+          "unlockLevel": 1,
+          "description": "Deals unaspected damage with a potency of 400 to all nearby enemies.\nPotency scales with item level.\nAdditional Effect: Restores own HP and the HP of all nearby party members.\nCure Potency: 40,000",
+          "abilityType": "Ability",
+          "recastTime": 1,
+          "code": "or1a"
+        },
+        "Cleansing": {
+          "name": "Cleansing",
+          "image": "cleansing.png",
+          "unlockLevel": 1,
+          "description": "Deals unaspected damage with a potency of 500 to all nearby enemies.\nPotency scales with item level.\nAdditional Effect: Freezes time for nearby enemies readying an attack",
+          "abilityType": "Ability",
+          "duration": "4s",
+          "recastTime": 1,
+          "code": "or1b"
+        },
+        "Blessing": {
+          "name": "Blessing",
+          "image": "blessing.png",
+          "unlockLevel": 1,
+          "description": "Restores own HP and the HP of all nearby party members.\nCure Potency: 70,000\nAdditional Effect: Regen\nCure Potency: 3,000\nDuration: 15s ",
+          "abilityType": "Ability",
+          "recastTime": 1,
+          "code": "or1c"
+        },
+        "Starfall": {
+          "name": "Starfall",
+          "image": "starfall.png",
+          "unlockLevel": 1,
+          "description": "Deals unaspected damage to self totaling up to 90% of maximum HP, and to all nearby enemies with a potency of 1,000.\nPotency against enemies increases according to your item level. ",
+          "abilityType": "Ability",
+          "recastTime": 1,
+          "code": "or1d"
+        },
+        "Recuperation": {
+          "name": "Recuperation",
+          "image": "recuperation.png",
+          "unlockLevel": 2,
+          "description": "Grants Recuperation to self or target party member.\nWhen effect expires, removes a single detrimental effect from target and all nearby party members.\nRecuperation changes to Fortified Recuperation if effect is not triggered.\nFortified Recuperation Effect: Removes a detrimental effect from target and nearby party members if afflicted with a detrimental effect\nDuration: 3s\nShares a recast timer with Phantom Doom. ",
+          "abilityType": "Ability",
+          "duration": "20s",
+          "recastTime": 30,
+          "code": "or2"
+        },
+        "Phantom Doom": {
+          "name": "Phantom Doom",
+          "image": "phantom-doom.png",
+          "unlockLevel": 3,
+          "description": "Chance to afflict target with Phantom Doom.\nTarget is incapacitated when effect expires.\nShares a recast timer with Recuperation.\nHas no effect on targets outside of combat.\nEffect ends upon target leaving combat",
+          "abilityType": "Ability",
+          "duration": "8s - 60s",
+          "recastTime": 30,
+          "code": "or3"
+        },
+        "Phantom Rejuvenation": {
+          "name": "Phantom Rejuvenation",
+          "image": "phantom-rejuvenation.png",
+          "unlockLevel": 4,
+          "description": "Grants Phantom Rejuvenation to self or target party member.\nPhantom Rejuvenation Effect: Restores HP of target and nearby party members within 30 yalms when effect expires\nCure Potency: 90,000",
+          "abilityType": "Ability",
+          "duration": "20s",
+          "recastTime": 60,
+          "code": "or4"
+        },
+        "Invulnerability": {
+          "name": "Invulnerability",
+          "image": "invulnerability.png",
+          "unlockLevel": 5,
+          "description": "Prevents attacks from reducing a target party member's HP to less than 1.",
+          "abilityType": "Ability",
+          "duration": "8s",
+          "recastTime": 180,
+          "code": "or5"
+        }
+      }
     }
   }
 }
