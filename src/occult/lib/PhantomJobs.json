@@ -307,12 +307,6 @@
           "name": "Weather",
           "image": "weather.png",
           "unlockLevel": 2,
-          "enhancements": [
-            {
-              "level": 5,
-              "effect": "Increases the effectiveness of Battle Bell to 5%."
-            }
-          ],
           "description": "Grants a beneficial effect to self and nearby party members based on the weather.\nSunbath Effect: Restores own HP and the HP of nearby party members. Cure Potency: 50,000.\nCloudy Caress: Increases HP recovery via healing actions for self and nearby party members by 30%.\nBlessed Rain Effect: Creates a barrier around self and nearby party members that absorbs 30,000 damage.\nMisty Mirage Effect: Increases evasion for self and nearby party members by 40%.\nHasty Mirage Effect: Increases movement speed for self and nearby party members by 20%.\nAetherial Gain Effect: Increases damage dealt by self and nearby party members by 10%.",
           "abilityType": "Spell",
           "duration": "20s",
