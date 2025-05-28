@@ -348,7 +348,57 @@
       "unlockGuide": "Unlocked from the Ranger's Soul Shard, acquired from the Critical Engagement \"The Black Regiment.\"",
       "code": "ra",
       "jobText": "Channel these memories of a proud, passionate ranger and learn to call forth the forces of nature in battle. ",
-      "supportActions": {}
+      "supportActions": {
+        "Phantom Aim": {
+          "name": "Phantom Aim",
+          "image": "phantom-aim.png",
+          "unlockLevel": 1,
+          "enhancements": [
+            {
+              "level": 3,
+              "effect": "Improves Phantom Aim's critical hit rate and direct hit rate increase to 30%, and guarantees all attacks land."
+            },
+            {
+              "level": 5,
+              "effect": "Improves Phantom Aim's critical hit rate and direct hit rate increase to 50%, and guarantees all attacks land."
+            }
+          ],
+          "description": "Increases critical hit rate and direct hit rate by 15％, and guarantees that all attacks land.",
+          "abilityType": "Ability",
+          "duration": "30s",
+          "recastTime": 120,
+          "code": "ra1"
+        },
+        "Occult Featherfoot": {
+          "name": "Occult Featherfoot",
+          "image": "occult-featherfoot.png",
+          "unlockLevel": 2,
+          "description": "Quickly dash 15 yalms forward.",
+          "abilityType": "Ability",
+          "recastTime": 10,
+          "code": "ra2"
+        },
+        "Occult Falcon": {
+          "name": "Occult Falcon",
+          "image": "occult-falcon.png",
+          "unlockLevel": 4,
+          "description": "Delivers an attack with a potency of 10 to all enemies at the designated area.\nPotency scales with item level.\nAdditional Effect: Stun\nAdditional Effect: Triggers traps at the designated area.",
+          "abilityType": "Weaponskill",
+          "duration": "4s",
+          "recastTime": 2.5,
+          "code": "ra3"
+        },
+        "Occult Unicorn": {
+          "name": "Occult Unicorn",
+          "image": "occult-unicorn.png",
+          "unlockLevel": 6,
+          "description": "Creates a barrier around self and all party members near you that absorbs 40,000 damage.",
+          "abilityType": "Ability",
+          "duration": "20s",
+          "recastTime": 120,
+          "code": "ra4"
+        }
+      }
     },
     "Berserker": {
       "name": "Berserker",
@@ -356,8 +406,34 @@
       "sprite": "berserker-sprite",
       "unlockLevel": 0,
       "code": "be",
-      "jobText": "Berserker job text placeholder.",
-      "supportActions": {}
+      "jobText": "Savagery and unfailing courage characterize the recollections of this former berserker. These techniques entail great risk and even greater reward.",
+      "supportActions": {
+        "Rage": {
+          "name": "Rage",
+          "image": "rage.png",
+          "unlockLevel": 1,
+          "enhancements": [
+            {
+              "level": 3,
+              "effect": "Grants the effect of Pent-up Rage, increasing the potency of Deadly Blow based on the amount of damage you have taken while the effect is active.\nDuration: 15s"
+            }
+          ],
+          "description": "Become enraged, delivering an attack with a potency of 150 to all enemies in a cone before you.\nPotency scales with item level.\nImmune to certain status effects, as well as most knockback and draw-in effects.",
+          "abilityType": "Ability",
+          "duration": "10s",
+          "recastTime": 60,
+          "code": "be1"
+        },
+        "Deadly Blow": {
+          "name": "Deadly Blow",
+          "image": "deadly-blow.png",
+          "unlockLevel": 2,
+          "description": "Delivers an attack with a potency of 200.\nPotency scales with item level.\nAdditional Effect: Potency increases by up to 250 as your HP decreases.\nAdditional Effect: Increases potency up to 2,000 based on the amount of damage taken while under the effect of Pent-up Rage.",
+          "abilityType": "Weaponskill",
+          "recastTime": 30,
+          "code": "be2"
+        }
+      }
     },
     "Chemist": {
       "name": "Chemist",
@@ -365,8 +441,45 @@
       "sprite": "chemist-sprite",
       "unlockGuide": "Purchase - Chemist's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian.",
       "code": "ch",
-      "jobText": "Chemist job text placeholder.",
-      "supportActions": {}
+      "jobText": "This chemist's memories offer knowledge of ancient medicinal theory, including restorative techniques sure to turn the tide of battle in your favor. ",
+      "supportActions": {
+        "Occult Potion": {
+          "name": "Occult Potion",
+          "image": "occult-potion.png",
+          "unlockLevel": 1,
+          "description": "Consume an Occult Potion to completely restore HP of self or target.\nCan only be executed while you possess an Occult Potion.",
+          "abilityType": "Weaponskill",
+          "recastTime": 5,
+          "code": "ch1"
+        },
+        "Occult Ether": {
+          "name": "Occult Ether",
+          "image": "occult-ether.png",
+          "unlockLevel": 2,
+          "description": "Consume an Occult Potion to completely restore MP of self or target.\nCan only be executed while you possess an Occult Potion.",
+          "abilityType": "Weaponskill",
+          "recastTime": 5,
+          "code": "ch2"
+        },
+        "Revive": {
+          "name": "Revive",
+          "image": "revive.png",
+          "unlockLevel": 3,
+          "description": "Resurrects target to a weakened state.\nCan also be cast on targets with Resurrection Restriction.",
+          "abilityType": "Weaponskill",
+          "recastTime": 5,
+          "code": "ch3"
+        },
+        "Occult Elixir": {
+          "name": "Occult Elixir",
+          "image": "occult-elixir.png",
+          "unlockLevel": 4,
+          "description": "Consume an Occult Elixir to completely restore HP and MP of self and nearby party members.\nCan only be executed while you possess an Occult Elixir.",
+          "abilityType": "Weaponskill",
+          "recastTime": 5,
+          "code": "ch3"
+        }
+      }
     },
     "Cannoneer": {
       "name": "Cannoneer",
@@ -438,8 +551,54 @@
       "sprite": "samurai-sprite",
       "unlockGuide": "Purchase - Samurai's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian.",
       "code": "sa",
-      "jobText": "Samurai job text placeholder.",
-      "supportActions": {}
+      "jobText": "Rigorous training and a strict code of chivalry personify these recollections of an ancient samurai. Access them to fell foes in a single deadly strike.",
+      "supportActions": {
+        "Mineuchi": {
+          "name": "Mineuchi",
+          "image": "mineuchi.png",
+          "unlockLevel": 1,
+          "description": "Stuns target.",
+          "abilityType": "Weaponskill",
+          "recastTime": 10,
+          "duration": "6s",
+          "code": "sa1"
+        },
+        "Shirahadori": {
+          "name": "Shirahadori",
+          "image": "shirahadori.png",
+          "unlockLevel": 2,
+          "description": "Renders you impervious to physical damage for one attack.",
+          "abilityType": "Ability",
+          "recastTime": 30,
+          "duration": "4s",
+          "code": "sa2"
+        },
+        "Iainuki": {
+          "name": "Iainuki",
+          "image": "iainuki.png",
+          "unlockLevel": 3,
+          "enhancements": [
+            {
+              "level": 5,
+              "effect": "Increases the potency of Iainuki to 500, and increases chance to instantly kill target to 10%."
+            }
+          ],
+          "description": "Delivers an attack with a potency of 300 to all enemies in a cone before you.\nPotency scales with item level.\nAdditional Effect: 5% chance to kill target instantly, with some exceptions.",
+          "abilityType": "Weaponskill",
+          "castTime": 1.3,
+          "recastTime": 40,
+          "code": "sa3"
+        },
+        "Zeninage": {
+          "name": "Zeninage",
+          "image": "zeninage.png",
+          "unlockLevel": 4,
+          "description": "Consume an Occult Coffer to deliver a guaranteed strike with a potency of 1,500.\nPotency scales with item level.\nCan only be executed while you possess an Occult Coffer. ",
+          "abilityType": "Weaponskill",
+          "recastTime": 120,
+          "code": "sa4"
+        }
+      }
     },
     "Thief": {
       "name": "Thief",
