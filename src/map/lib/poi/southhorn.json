@@ -444,7 +444,7 @@
             "y": -20.1
           },
           "metadata": {
-            "boss": "???"
+            "boss": "Lion Rampant"
           }
         },
         {
@@ -539,7 +539,7 @@
             "y": -26.2
           },
           "metadata": {
-            "boss": "???"
+            "boss": "Mythic Idol"
           }
         },
         {
@@ -595,6 +595,17 @@
               "name": "Crescent Inkstain",
               "level": 20
             }
+          }
+        },
+        {
+          "name": "Scourge of the Mind",
+          "@id": "osh_ce15",
+          "position": {
+            "x": 27.4,
+            "y": -36.0
+          },
+          "metadata": {
+            "boss": "Mysterious Mindflayer"
           }
         }
       ]
