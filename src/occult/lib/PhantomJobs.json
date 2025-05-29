@@ -55,7 +55,7 @@
         },
         "Pray": {
           "name": "Pray",
-          "image": "pray.png",
+          "image": "Pray.png",
           "unlockLevel": 2,
           "enhancements": [
             {
@@ -81,7 +81,7 @@
         },
         "Pledge": {
           "name": "Pledge",
-          "image": "pledge.png",
+          "image": "Pledge.png",
           "unlockLevel": 6,
           "description": "Grants 2 stacks of Pledge to self or target party member.\nPledge Effect: Renders target impervious to most attacks.",
           "abilityType": "Ability",
@@ -130,7 +130,7 @@
         },
         "Counterstance": {
           "name": "Counterstance",
-          "image": "counterstance.png",
+          "image": "Counterstance.png",
           "unlockLevel": 3,
           "description": "Increases parry rate by 100%.\nAdditional Effect: Grants Fleetfooted to self and nearby party members when executed within proximity of a knowledge crystal.\nFleetfooted Effect: Increases movement speed for 30m.",
           "abilityType": "Weaponskill",
@@ -331,7 +331,7 @@
         },
         "Suspend": {
           "name": "Suspend",
-          "image": "suspend.png",
+          "image": "Suspend.png",
           "unlockLevel": 4,
           "description": "Grants Suspend to self or target party member, becoming lighter than air and immune to certain mechanics.",
           "abilityType": "Ability",
@@ -410,7 +410,7 @@
       "supportActions": {
         "Rage": {
           "name": "Rage",
-          "image": "rage.png",
+          "image": "Rage.png",
           "unlockLevel": 1,
           "enhancements": [
             {
@@ -555,7 +555,7 @@
       "supportActions": {
         "Mineuchi": {
           "name": "Mineuchi",
-          "image": "mineuchi.png",
+          "image": "Mineuchi.png",
           "unlockLevel": 1,
           "description": "Stuns target.",
           "abilityType": "Weaponskill",
@@ -565,7 +565,7 @@
         },
         "Shirahadori": {
           "name": "Shirahadori",
-          "image": "shirahadori.png",
+          "image": "Shirahadori.png",
           "unlockLevel": 2,
           "description": "Renders you impervious to physical damage for one attack.",
           "abilityType": "Ability",
@@ -575,7 +575,7 @@
         },
         "Iainuki": {
           "name": "Iainuki",
-          "image": "iainuki.png",
+          "image": "Iainuki.png",
           "unlockLevel": 3,
           "enhancements": [
             {
@@ -591,7 +591,7 @@
         },
         "Zeninage": {
           "name": "Zeninage",
-          "image": "zeninage.png",
+          "image": "Zeninage.png",
           "unlockLevel": 4,
           "description": "Consume an Occult Coffer to deliver a guaranteed strike with a potency of 1,500.\nPotency scales with item level.\nCan only be executed while you possess an Occult Coffer. ",
           "abilityType": "Weaponskill",
