@@ -1,6 +1,6 @@
 {
   "name": "lynn",
-  "version": "24.20.0",
+  "version": "24.21.0",
   "private": true,
   "dependencies": {
     "@date-io/dayjs": "^2.16.0",
@@ -19,8 +19,9 @@
     "buffer": "^6.0.3",
     "dayjs": "^1.11.7",
     "eorzea-time": "^3.0.0",
-    "lynn-eorzea-weather": "^3.3.0",
     "leaflet": "^1.9.4",
+    "leaflet-draw": "^1.0.4",
+    "lynn-eorzea-weather": "^3.3.0",
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
     "react-custom-scrollbars-2": "^4.5.0",

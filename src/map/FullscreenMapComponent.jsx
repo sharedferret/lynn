@@ -1,14 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 import 'leaflet/dist/leaflet.css';
 import {
   Circle,
   ImageOverlay,
-  MapContainer, Marker, Polyline, Popup, Tooltip,
+  MapContainer, Marker, Polygon, Polyline, Popup, Tooltip,
   useMapEvents,
 } from 'react-leaflet';
 import L from 'leaflet';
 import TooltipBaseComponent from './TooltipBaseComponent';
+import PolygonDrawingComponent from './PolygonDrawingComponent';
+import PolygonCoordinatesDisplay from './PolygonCoordinatesDisplay';
 
 // Hack to support leaflet, see https://github.com/PaulLeCam/react-leaflet/issues/255
 /* eslint-disable no-underscore-dangle, global-require, comma-dangle */
@@ -96,8 +98,22 @@ export default function FullscreenMapComponent({
 }) {
   const markers = [];
   const annotations = [];
-
   const markerRef = useRef(null);
+
+  const shouldDisplayPolygonDrawingComponent = false;
+
+  // State for polygon drawing
+  const [polygonCoordinates, setPolygonCoordinates] = useState(null);
+
+  // Handle when polygon drawing is complete
+  const handlePolygonComplete = (vertices) => {
+    setPolygonCoordinates(vertices);
+  };
+
+  // Close the coordinates display
+  const handleCloseCoordinates = () => {
+    setPolygonCoordinates(null);
+  };
 
   // Add all json markers to a flat markers array to display on the map
   Object.keys(mapData).forEach((markerType) => {
@@ -199,6 +215,26 @@ export default function FullscreenMapComponent({
                   })}
                 />
               );
+            case 'polygon':
+              return (
+                <Polygon
+                  key={annotation['@id']}
+                  pathOptions={{
+                    fillColor: annotation.color,
+                    color: annotation.color,
+                    fillOpacity: 0.2,
+                  }}
+                  positions={annotation.path.map((point) => [point[1], point[0]])}
+                >
+                  <Popup m={0} id={annotation['@id']}>
+                    <TooltipBaseComponent
+                      markerData={annotation.popup}
+                      type={markerType}
+                      icon={annotation.popup.icon}
+                    />
+                  </Popup>
+                </Polygon>
+              );
             default:
               return null;
           }
@@ -243,6 +279,18 @@ export default function FullscreenMapComponent({
       />
       {markers}
       {annotations}
+      {shouldDisplayPolygonDrawingComponent
+        ? <PolygonDrawingComponent onPolygonComplete={handlePolygonComplete} />
+        : null}
+      {shouldDisplayPolygonDrawingComponent
+        ? (
+          <PolygonCoordinatesDisplay
+            coordinates={polygonCoordinates}
+            onClose={handleCloseCoordinates}
+          />
+        )
+        : null}
+
     </MapContainer>
   );
 }
