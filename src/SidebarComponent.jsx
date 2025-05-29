@@ -89,13 +89,13 @@ function SidebarComponent({
         <Typography color="#fff" fontWeight={600} fontSize={16}>OCCULT CRESCENT</Typography>
       </Stack>
 
-      <StyledButton
+      { /* <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'occult/guide'); }}
         key={uuidv4()}
       >
         <Box width={32} />
         <Typography>Guide</Typography>
-      </StyledButton>
+      </StyledButton> */ }
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/southhorn'); }}
