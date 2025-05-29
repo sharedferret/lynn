@@ -15,7 +15,7 @@
           "unlockLevel": 5,
           "description": "Restores 30% of maximum HP.",
           "abilityType": "Weaponskill",
-          "recast": 2.5,
+          "recastTime": 2.5,
           "code": "fr1"
         },
         "Occult Treasuresight": {
@@ -24,7 +24,7 @@
           "unlockLevel": 10,
           "description": "Detects the number of treasure coffers presently on the Occult Crescent.",
           "abilityType": "Ability",
-          "recast": 10,
+          "recastTime": 10,
           "code": "fr2"
         }
       }
@@ -49,7 +49,7 @@
           ],
           "description": "Reduces damage taken by 60%.",
           "abilityType": "Ability",
-          "recast": 120,
+          "recastTime": 120,
           "duration": "10s",
           "code": "kn1"
         },
@@ -65,7 +65,7 @@
           ],
           "description": "Gradually restores HP.\nCure Potency: 3,000\nAdditional Effect: Grants Enduring Fortitude to self and nearby party members when executed within proximity of a knowledge crystal.\nEnduring Fortitude Effect: Reduces target's damage taken by 10% (duration: 30m).",
           "abilityType": "Ability",
-          "recast": 120,
+          "recastTime": 120,
           "duration": "10s",
           "code": "kn2"
         },
@@ -75,7 +75,7 @@
           "unlockLevel": 3,
           "description": "Restores target's HP.\nCure Potency: 30,000",
           "abilityType": "Ability",
-          "recast": 5,
+          "recastTime": 5,
           "mpCost": 5000,
           "code": "kn3"
         },
@@ -85,7 +85,7 @@
           "unlockLevel": 6,
           "description": "Grants 2 stacks of Pledge to self or target party member.\nPledge Effect: Renders target impervious to most attacks.",
           "abilityType": "Ability",
-          "recast": 120,
+          "recastTime": 120,
           "duration": "10s",
           "code": "kn4"
         }
@@ -116,7 +116,7 @@
           "description": "Leap towards your target, delivering an attack with a potency of 100 to all enemies in a straight line before you.\nPotency scales with item level.\nAdditional Effect: Grants a stack of Phantom Kick up to a maximum of 3, increasing damage dealt by 5%.",
           "abilityType": "Ability",
           "duration": "40s",
-          "recast": 30,
+          "recastTime": 30,
           "code": "mo1"
         },
         "Occult Counter": {
@@ -125,7 +125,7 @@
           "unlockLevel": 2,
           "description": "Delivers an attack with a potency of 150 to all enemies in a cone before you.\nPotency scales with item level.\nCan only be executed immediately after parrying an attack.",
           "abilityType": "Ability",
-          "recast": 30,
+          "recastTime": 30,
           "code": "mo2"
         },
         "Counterstance": {
@@ -135,7 +135,7 @@
           "description": "Increases parry rate by 100%.\nAdditional Effect: Grants Fleetfooted to self and nearby party members when executed within proximity of a knowledge crystal.\nFleetfooted Effect: Increases movement speed for 30m.",
           "abilityType": "Weaponskill",
           "duration": "60s",
-          "recast": 2.5,
+          "recastTime": 2.5,
           "code": "mo3"
         },
         "Occult Chakra": {
@@ -144,7 +144,7 @@
           "unlockLevel": 5,
           "description": "Restores 30% of maximum HP and MP.\nAdditional Effect: When HP is less than 30%, restores 70% of maximum HP.\nAdditional Effect: When MP is less than 30%, restores 70% of maximum MP.",
           "abilityType": "Ability",
-          "recast": 90,
+          "recastTime": 90,
           "code": "mo4"
         }
       }
@@ -501,7 +501,7 @@
             }
           ],
           "abilityType": "Weaponskill",
-          "recast": 30,
+          "recastTime": 30,
           "code": "ca1"
         },
         "Holy Cannon": {
@@ -510,7 +510,7 @@
           "unlockLevel": 2,
           "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency increases to 500 when used against undead enemies.\nPotency scales with item level.",
           "abilityType": "Weaponskill",
-          "recast": 30,
+          "recastTime": 30,
           "code": "ca2"
         },
         "Dark Cannon": {
@@ -519,7 +519,7 @@
           "unlockLevel": 3,
           "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Blind",
           "abilityType": "Weaponskill",
-          "recast": 30,
+          "recastTime": 30,
           "duration": "30s",
           "code": "ca3"
         },
@@ -529,7 +529,7 @@
           "unlockLevel": 4,
           "description": "Deals lightning damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Paralysis\nShares a recast timer with Dark Cannon.",
           "abilityType": "Weaponskill",
-          "recast": 30,
+          "recastTime": 30,
           "duration": "18s",
           "code": "ca4"
         },
@@ -539,7 +539,7 @@
           "unlockLevel": 6,
           "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Afflicts target with Silver Sickness, reducing damage target deals by 10% and increasing damage taken by 5%.\nShares a recast timer with Holy Cannon.",
           "abilityType": "Weaponskill",
-          "recast": 30,
+          "recastTime": 30,
           "duration": "70s",
           "code": "ca5"
         }
