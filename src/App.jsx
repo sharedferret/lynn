@@ -364,7 +364,7 @@ function App() {
   // Set up analytics
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = './um.js';
+    script.src = '/um.js';
     script.defer = true;
     script.setAttribute('data-website-id', 'b8340562-63d2-4def-b4f5-f1d4bf5eb06f');
     script.setAttribute('data-host-url', 'https://api-gateway.umami.dev/api/send');
