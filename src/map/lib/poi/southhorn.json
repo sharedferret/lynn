@@ -24,6 +24,16 @@
           "id": "repair",
           "name": "Repair",
           "enabled": true
+        },
+        {
+          "id": "treasureCoffers",
+          "name": "Treasure Coffers",
+          "enabled": true
+        },
+        {
+          "id": "carrots",
+          "name": "Half-Eaten Carrots",
+          "enabled": true
         }
       ]
     },
@@ -235,13 +245,638 @@
         }
       ]
     },
+    "treasureCoffers": {
+      "markerIcon": "coffer-bronze.png",
+      "waymarks": [
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer01",
+          "position": {
+          "x": 33.1,
+          "y": -6.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer02",
+          "position": {
+          "x": 34.6,
+          "y": -11.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer03",
+          "position": {
+          "x": 39.1,
+          "y": -13.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer04",
+          "position": {
+          "x": 37.3,
+          "y": -16.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer05",
+          "position": {
+          "x": 30.6,
+          "y": -9.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer06",
+          "position": {
+          "x": 29.0,
+          "y": -11.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer07",
+          "position": {
+          "x": 29.1,
+          "y": -6.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer08",
+          "position": {
+          "x": 24.2,
+          "y": -9.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer09",
+          "position": {
+          "x": 19.1,
+          "y": -6.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer10",
+          "position": {
+          "x": 18.1,
+          "y": -12.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer11",
+          "position": {
+          "x": 13.5,
+          "y": -13.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer12",
+          "position": {
+          "x": 12.6,
+          "y": -6.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer13",
+          "position": {
+          "x": 9.9,
+          "y": -4.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer14",
+          "position": {
+          "x": 6.5,
+          "y": -6.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer15",
+          "position": {
+          "x": 4.0,
+          "y": -7.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer16",
+          "position": {
+          "x": 27.6,
+          "y": -16.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer17",
+          "position": {
+          "x": 23.6,
+          "y": -15.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer18",
+          "position": {
+          "x": 22.3,
+          "y": -17.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer19",
+          "position": {
+          "x": 18.6,
+          "y": -18.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer20",
+          "position": {
+          "x": 10.3,
+          "y": -17.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer21",
+          "position": {
+          "x": 11.2,
+          "y": -11.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer22",
+          "position": {
+          "x": 8.3,
+          "y": -10.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer23",
+          "position": {
+          "x": 7.5,
+          "y": -13.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer24",
+          "position": {
+          "x": 6.3,
+          "y": -17.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer25",
+          "position": {
+          "x": 4.5,
+          "y": -17.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer26",
+          "position": {
+          "x": 16.3,
+          "y": -24.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer27",
+          "position": {
+          "x": 12.4,
+          "y": -22.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer28",
+          "position": {
+          "x": 8.5,
+          "y": -22.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer29",
+          "position": {
+          "x": 6.2,
+          "y": -23.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer30",
+          "position": {
+          "x": 30.8,
+          "y": -19.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer31",
+          "position": {
+          "x": 27.5,
+          "y": -20.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer32",
+          "position": {
+          "x": 36.0,
+          "y": -20.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer33",
+          "position": {
+          "x": 37.8,
+          "y": -23.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer34",
+          "position": {
+          "x": 33.5,
+          "y": -23.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer35",
+          "position": {
+          "x": 27.3,
+          "y": -26.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer36",
+          "position": {
+          "x": 8.1,
+          "y": -29.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer37",
+          "position": {
+          "x": 5.8,
+          "y": -33.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer38",
+          "position": {
+          "x": 4.7,
+          "y": -35.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer39",
+          "position": {
+          "x": 7.4,
+          "y": -37.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer40",
+          "position": {
+          "x": 8.3,
+          "y": -34.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer41",
+          "position": {
+          "x": 11.2,
+          "y": -35.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer42",
+          "position": {
+          "x": 14.1,
+          "y": -32.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer43",
+          "position": {
+          "x": 17.9,
+          "y": -33.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer44",
+          "position": {
+          "x": 16.7,
+          "y": -37.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer45",
+          "position": {
+          "x": 22.2,
+          "y": -34.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer46",
+          "position": {
+          "x": 24.6,
+          "y": -37.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer47",
+          "position": {
+          "x": 26.7,
+          "y": -31.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer48",
+          "position": {
+          "x": 26.5,
+          "y": -34.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer49",
+          "position": {
+          "x": 27.7,
+          "y": -33.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer50",
+          "position": {
+          "x": 30.3,
+          "y": -35.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer51",
+          "position": {
+          "x": 31.5,
+          "y": -32.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer52",
+          "position": {
+          "x": 33.7,
+          "y": -33.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer53",
+          "position": {
+          "x": 38.7,
+          "y": -33.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer54",
+          "position": {
+          "x": 38.2,
+          "y": -35.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer55",
+          "position": {
+          "x": 38.3,
+          "y": -30.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer56",
+          "position": {
+          "x": 13.4,
+          "y": -25.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer57",
+          "position": {
+          "x": 13.2,
+          "y": -27.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer58",
+          "position": {
+          "x": 34.6,
+          "y": -28.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer59",
+          "position": {
+          "x": 21.6,
+          "y": -30.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "@id": "osh_coffer60",
+          "position": {
+          "x": 7.1,
+          "y": -19.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "@id": "osh_coffer61",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 4.8,
+          "y": -4.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "@id": "osh_coffer62",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 5.6,
+          "y": -15.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "@id": "osh_coffer63",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 8.0,
+          "y": -17.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "@id": "osh_coffer64",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 15.8,
+          "y": -28.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "@id": "osh_coffer65",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 8.3,
+          "y": -35.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "@id": "osh_coffer66",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 32.0,
+          "y": -26.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "@id": "osh_coffer67",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 35.5,
+          "y": -33.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "@id": "osh_coffer67",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 36.7,
+          "y": -18.8
+          }
+        }
+      ]
+    },
     "magicPotCoffers": {
       "markerIcon": "coffer.png",
       "waymarks": [
         {
           "name": "",
           "popupTitle": "Magic Pot Coffer Spawn Location",
-          "@id": "occultcoffer01",
+          "@id": "osh_potcoffer01",
           "position": {
           "x": 15.2,
           "y": -20.7
@@ -250,7 +885,7 @@
         {
           "name": "",
           "popupTitle": "Magic Pot Coffer Spawn Location",
-          "@id": "occultcoffer02",
+          "@id": "osh_potcoffer02",
           "position": {
           "x": 6.6,
           "y": -38.0
@@ -259,7 +894,7 @@
         {
           "name": "",
           "popupTitle": "Magic Pot Coffer Spawn Location",
-          "@id": "occultcoffer03",
+          "@id": "osh_potcoffer03",
           "position": {
           "x": 8.5,
           "y": -19.9
@@ -268,7 +903,7 @@
         {
           "name": "",
           "popupTitle": "Magic Pot Coffer Spawn Location",
-          "@id": "occultcoffer04",
+          "@id": "osh_potcoffer04",
           "position": {
           "x": 9.4,
           "y": -38.6
@@ -277,7 +912,7 @@
         {
           "name": "",
           "popupTitle": "Magic Pot Coffer Spawn Location",
-          "@id": "occultcoffer05",
+          "@id": "osh_potcoffer05",
           "position": {
           "x": 35.5,
           "y": -28.6
@@ -445,7 +1080,13 @@
           },
           "metadata": {
             "boss": "Lion Rampant"
-          }
+          },
+          "rewards": [
+              {
+                "name": "Oracle's Soul Shard",
+                "type": ""
+              }
+            ]
         },
         {
           "name": "Crawling Death",
