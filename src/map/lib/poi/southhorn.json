@@ -871,7 +871,7 @@
       ]
     },
     "magicPotCoffers": {
-      "markerIcon": "coffer.png",
+      "markerIcon": "coffer-gold.png",
       "waymarks": [
         {
           "name": "",
@@ -916,6 +916,605 @@
           "position": {
           "x": 35.5,
           "y": -28.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer06",
+          "position": {
+          "x": 32.8,
+          "y": -5.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer07",
+          "position": {
+          "x": 38.2,
+          "y": -14.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer08",
+          "position": {
+          "x": 35.1,
+          "y": -17.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer09",
+          "position": {
+          "x": 38.9,
+          "y": -19.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer10",
+          "position": {
+          "x": 39.0,
+          "y": -21.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer11",
+          "position": {
+          "x": 31.1,
+          "y": -22.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer12",
+          "position": {
+          "x": 35.4,
+          "y": -24.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer13",
+          "position": {
+          "x": 32.6,
+          "y": -27.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer14",
+          "position": {
+          "x": 37.1,
+          "y": -33.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer15",
+          "position": {
+          "x": 29.7,
+          "y": -33.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer16",
+          "position": {
+          "x": 30.2,
+          "y": -38.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer17",
+          "position": {
+          "x": 29.6,
+          "y": -18.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer18",
+          "position": {
+          "x": 27.3,
+          "y": -22.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer19",
+          "position": {
+          "x": 26.3,
+          "y": -27.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer20",
+          "position": {
+          "x": 25.4,
+          "y": -33.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer21",
+          "position": {
+          "x": 18.1,
+          "y": -30.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer22",
+          "position": {
+          "x": 8.2,
+          "y": -17.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer23",
+          "position": {
+          "x": 6.0,
+          "y": -34.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer24",
+          "position": {
+          "x": 5.0,
+          "y": -33.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer25",
+          "position": {
+          "x": 18.1,
+          "y": -7.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer26",
+          "position": {
+          "x": 18.3,
+          "y": -12.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer27",
+          "position": {
+          "x": 11.9,
+          "y": -8.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer28",
+          "position": {
+          "x": 7.9,
+          "y": -6.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer29",
+          "position": {
+          "x": 7.5,
+          "y": -8.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer30",
+          "position": {
+          "x": 5.3,
+          "y": -8.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer31",
+          "position": {
+          "x": 15.4,
+          "y": -4.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer32",
+          "position": {
+          "x": 20.2,
+          "y": -37.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer33",
+          "position": {
+          "x": 20.5,
+          "y": -14.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer34",
+          "position": {
+          "x": 20.4,
+          "y": -17.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer35",
+          "position": {
+          "x": 12.1,
+          "y": -19.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer36",
+          "position": {
+          "x": 7.0,
+          "y": -19.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer37",
+          "position": {
+          "x": 15.0,
+          "y": -23.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer38",
+          "position": {
+          "x": 5.5,
+          "y": -21.4
+          }
+        }
+      ]
+    },
+    "carrots": {
+      "markerIcon": "carrot.png",
+      "waymarks": [
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot01",
+          "position": {
+          "x": 27.8,
+          "y": -9.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot02",
+          "position": {
+          "x": 19.4,
+          "y": -5.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot03",
+          "position": {
+          "x": 11.7,
+          "y": -6.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot04",
+          "position": {
+          "x": 14.3,
+          "y": -11.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot05",
+          "position": {
+          "x": 5.7,
+          "y": -9.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot06",
+          "position": {
+          "x": 7.0,
+          "y": -12.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot07",
+          "position": {
+          "x": 10.8,
+          "y": -14.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot08",
+          "position": {
+          "x": 4.4,
+          "y": -20.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot09",
+          "position": {
+          "x": 5.0,
+          "y": -23.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot10",
+          "position": {
+          "x": 6.6,
+          "y": -23.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot11",
+          "position": {
+          "x": 12.9,
+          "y": -25.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot12",
+          "position": {
+          "x": 18.4,
+          "y": -23.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot13",
+          "position": {
+          "x": 6.9,
+          "y": -28.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot14",
+          "position": {
+          "x": 9.9,
+          "y": -34.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot15",
+          "position": {
+          "x": 8.2,
+          "y": -35.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot16",
+          "position": {
+          "x": 5.5,
+          "y": -38.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot17",
+          "position": {
+          "x": 16.0,
+          "y": -38.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot18",
+          "position": {
+          "x": 17.7,
+          "y": -38.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot19",
+          "position": {
+          "x": 20.8,
+          "y": -37.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot20",
+          "position": {
+          "x": 26.3,
+          "y": -37.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot21",
+          "position": {
+          "x": 29.3,
+          "y": -38.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot22",
+          "position": {
+          "x": 27.3,
+          "y": -32.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot23",
+          "position": {
+          "x": 30.3,
+          "y": -32.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot24",
+          "position": {
+          "x": 36.7,
+          "y": -32.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot25",
+          "position": {
+          "x": 38.3,
+          "y": -37.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot26",
+          "position": {
+          "x": 38.6,
+          "y": -17.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot27",
+          "position": {
+          "x": 38.0,
+          "y": -18.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot28",
+          "position": {
+          "x": 38.9,
+          "y": -19.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot29",
+          "position": {
+          "x": 31.0,
+          "y": -24.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot30",
+          "position": {
+          "x": 30.9,
+          "y": -25.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot31",
+          "position": {
+          "x": 35.2,
+          "y": -24.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot32",
+          "position": {
+          "x": 34.2,
+          "y": -24.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "@id": "osh_carrot33",
+          "position": {
+          "x": 36.0,
+          "y": -27.0
           }
         }
       ]
