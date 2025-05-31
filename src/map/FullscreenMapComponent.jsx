@@ -100,7 +100,7 @@ export default function FullscreenMapComponent({
   const annotations = [];
   const markerRef = useRef(null);
 
-  const shouldDisplayPolygonDrawingComponent = false;
+  const shouldDisplayPolygonDrawingComponent = true; // TODO DO NOT CHECK IN
 
   // State for polygon drawing
   const [polygonCoordinates, setPolygonCoordinates] = useState(null);
