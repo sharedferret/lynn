@@ -1696,14 +1696,14 @@
             "y": -20.1
           },
           "metadata": {
-            "boss": "Lion Rampant"
-          },
-          "rewards": [
+            "boss": "Lion Rampant",
+            "rewards": [
               {
                 "name": "Oracle's Soul Shard",
                 "type": ""
               }
             ]
+          }
         },
         {
           "name": "Crawling Death",
