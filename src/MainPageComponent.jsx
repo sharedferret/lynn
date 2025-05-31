@@ -137,13 +137,13 @@ export default function MainPageComponent() {
   return (
     <Box flexGrow={1} height="100%" sx={{ pt: { xs: 14, md: 5 } }}>
       <Helmet bodyAttributes={{ style: `background-color : ${pageTheme.color}` }}>
-        <meta name="description" content="Tools for FFXIV Baldesion Arsenal, Delubrum Reginae Savage, and Eureka by Lynn Kaneko @ Exodus" />
-        <meta name="keywords" content="FFXIV, Final Fantasy 14, Final Fantasy XIV, Eureka, Eureka Anemos, Eureka Pagos, Eureka Pyros, Eureka Hydatos, Bozjan Southern Front, Zadnor, Delubrum Reginae, Delubrum Reginae Savage, DRS Holsters, BA Loadout, NM Tracker, Fragment Farm" />
+        <meta name="description" content="Tools for FFXIV Occult Crescent, Forked Tower, Baldesion Arsenal, Delubrum Reginae Savage, and Eureka by Lynn Kaneko @ Exodus" />
+        <meta name="keywords" content="FFXIV, Final Fantasy 14, Occult Crescent, Forked Tower, South Horn, Final Fantasy XIV, Eureka, Eureka Anemos, Eureka Pagos, Eureka Pyros, Eureka Hydatos, Bozjan Southern Front, Zadnor, Delubrum Reginae, Delubrum Reginae Savage, DRS Holsters, BA Loadout, NM Tracker, Fragment Farm" />
         <meta property="og:title" content={getSiteName()} />
-        <meta property="og:url" content="https://forays.info/" />
-        <meta property="og:image" content="https://forays.info/logo.png" />
+        <meta property="og:url" content="https://lynn.pet/" />
+        <meta property="og:image" content="https://lynn.pet/logo.png" />
         <meta property="og:description" content="Tools for FFXIV Baldesion Arsenal, Delubrum Reginae Savage, and Eureka by Lynn Kaneko @ Exodus" />
-        <meta property="og:site_name" content="forays.info" />
+        <meta property="og:site_name" content="lynn.pet" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@reflexyui" />
         <title>
@@ -176,7 +176,7 @@ export default function MainPageComponent() {
           <Box width="100%">
             <img
               src={pageTheme.image}
-              alt="forays.info"
+              alt="lynn.pet"
             />
           </Box>
         </Stack>
