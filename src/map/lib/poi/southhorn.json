@@ -1243,15 +1243,6 @@
           "popupTitle": "Half-Eaten Carrot Spawn Location",
           "@id": "osh_carrot01",
           "position": {
-          "x": 27.8,
-          "y": -9.3
-          }
-        },
-        {
-          "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot02",
-          "position": {
           "x": 19.4,
           "y": -5.4
           }
@@ -1259,7 +1250,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot03",
+          "@id": "osh_carrot02",
           "position": {
           "x": 11.7,
           "y": -6.6
@@ -1268,25 +1259,25 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot04",
+          "@id": "osh_carrot03",
           "position": {
-          "x": 14.3,
+          "x": 13.8,
           "y": -11.2
           }
         },
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot05",
+          "@id": "osh_carrot04",
           "position": {
-          "x": 5.7,
-          "y": -9.6
+          "x": 6.0,
+          "y": -7.6
           }
         },
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot06",
+          "@id": "osh_carrot05",
           "position": {
           "x": 7.0,
           "y": -12.4
@@ -1295,7 +1286,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot07",
+          "@id": "osh_carrot06",
           "position": {
           "x": 10.8,
           "y": -14.3
@@ -1304,7 +1295,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot08",
+          "@id": "osh_carrot07",
           "position": {
           "x": 4.4,
           "y": -20.5
@@ -1313,16 +1304,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot09",
-          "position": {
-          "x": 5.0,
-          "y": -23.2
-          }
-        },
-        {
-          "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot10",
+          "@id": "osh_carrot08",
           "position": {
           "x": 6.6,
           "y": -23.3
@@ -1331,7 +1313,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot11",
+          "@id": "osh_carrot09",
           "position": {
           "x": 12.9,
           "y": -25.2
@@ -1340,7 +1322,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot12",
+          "@id": "osh_carrot10",
           "position": {
           "x": 18.4,
           "y": -23.6
@@ -1349,7 +1331,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot13",
+          "@id": "osh_carrot11",
           "position": {
           "x": 6.9,
           "y": -28.0
@@ -1358,7 +1340,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot14",
+          "@id": "osh_carrot12",
           "position": {
           "x": 9.9,
           "y": -34.9
@@ -1367,16 +1349,16 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot15",
+          "@id": "osh_carrot13",
           "position": {
-          "x": 8.2,
+          "x": 7.5,
           "y": -35.9
           }
         },
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot16",
+          "@id": "osh_carrot14",
           "position": {
           "x": 5.5,
           "y": -38.8
@@ -1385,7 +1367,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot17",
+          "@id": "osh_carrot15",
           "position": {
           "x": 16.0,
           "y": -38.3
@@ -1394,25 +1376,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot18",
-          "position": {
-          "x": 17.7,
-          "y": -38.0
-          }
-        },
-        {
-          "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot19",
-          "position": {
-          "x": 20.8,
-          "y": -37.7
-          }
-        },
-        {
-          "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot20",
+          "@id": "osh_carrot16",
           "position": {
           "x": 26.3,
           "y": -37.5
@@ -1421,16 +1385,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot21",
-          "position": {
-          "x": 29.3,
-          "y": -38.4
-          }
-        },
-        {
-          "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot22",
+          "@id": "osh_carrot17",
           "position": {
           "x": 27.3,
           "y": -32.8
@@ -1439,16 +1394,16 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot23",
+          "@id": "osh_carrot18",
           "position": {
-          "x": 30.3,
-          "y": -32.9
+          "x": 30.8,
+          "y": -32.8
           }
         },
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot24",
+          "@id": "osh_carrot19",
           "position": {
           "x": 36.7,
           "y": -32.2
@@ -1457,7 +1412,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot25",
+          "@id": "osh_carrot20",
           "position": {
           "x": 38.3,
           "y": -37.4
@@ -1466,7 +1421,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot26",
+          "@id": "osh_carrot21",
           "position": {
           "x": 38.6,
           "y": -17.2
@@ -1475,7 +1430,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot27",
+          "@id": "osh_carrot22",
           "position": {
           "x": 38.0,
           "y": -18.6
@@ -1484,16 +1439,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot28",
-          "position": {
-          "x": 38.9,
-          "y": -19.5
-          }
-        },
-        {
-          "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot29",
+          "@id": "osh_carrot23",
           "position": {
           "x": 31.0,
           "y": -24.4
@@ -1502,16 +1448,7 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot30",
-          "position": {
-          "x": 30.9,
-          "y": -25.1
-          }
-        },
-        {
-          "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot31",
+          "@id": "osh_carrot24",
           "position": {
           "x": 35.2,
           "y": -24.0
@@ -1520,19 +1457,37 @@
         {
           "name": "",
           "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot32",
-          "position": {
-          "x": 34.2,
-          "y": -24.6
-          }
-        },
-        {
-          "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
-          "@id": "osh_carrot33",
+          "@id": "osh_carrot25",
           "position": {
           "x": 36.0,
           "y": -27.0
+          }
+        },
+                {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location (Unverified)",
+          "@id": "osh_carrot30",
+          "position": {
+          "x": 27.8,
+          "y": -9.3
+          }
+        },
+                {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location (Unverified)",
+          "@id": "osh_carrot31",
+          "position": {
+          "x": 29.3,
+          "y": -38.4
+          }
+        },
+                {
+          "name": "",
+          "popupTitle": "Half-Eaten Carrot Spawn Location (Unverified)",
+          "@id": "osh_carrot32",
+          "position": {
+          "x": 20.8,
+          "y": -37.7
           }
         }
       ]
