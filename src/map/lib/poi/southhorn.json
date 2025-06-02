@@ -932,8 +932,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer07",
           "position": {
-          "x": 38.2,
-          "y": -14.1
+          "x": 37.6,
+          "y": -14.4
           }
         },
         {
@@ -968,8 +968,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer11",
           "position": {
-          "x": 31.1,
-          "y": -22.8
+          "x": 32.9,
+          "y": -26.9
           }
         },
         {
@@ -977,8 +977,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer12",
           "position": {
-          "x": 35.4,
-          "y": -24.4
+          "x": 34.7,
+          "y": -24.7
           }
         },
         {
@@ -986,8 +986,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer13",
           "position": {
-          "x": 32.6,
-          "y": -27.1
+          "x": 33.6,
+          "y": -25.1
           }
         },
         {
@@ -996,7 +996,7 @@
           "@id": "osh_potcoffer14",
           "position": {
           "x": 37.1,
-          "y": -33.1
+          "y": -32.7
           }
         },
         {
@@ -1022,8 +1022,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer17",
           "position": {
-          "x": 29.6,
-          "y": -18.4
+          "x": 29.4,
+          "y": -19.0
           }
         },
         {
@@ -1040,8 +1040,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer19",
           "position": {
-          "x": 26.3,
-          "y": -27.8
+          "x": 26.8,
+          "y": -28.0
           }
         },
         {
@@ -1076,8 +1076,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer23",
           "position": {
-          "x": 6.0,
-          "y": -34.9
+          "x": 6.8,
+          "y": -35.1
           }
         },
         {
@@ -1094,8 +1094,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer25",
           "position": {
-          "x": 18.1,
-          "y": -7.6
+          "x": 17.7,
+          "y": -7.1
           }
         },
         {
@@ -1103,8 +1103,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer26",
           "position": {
-          "x": 18.3,
-          "y": -12.6
+          "x": 17.6,
+          "y": -15.7
           }
         },
         {
@@ -1112,7 +1112,7 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer27",
           "position": {
-          "x": 11.9,
+          "x": 10.8,
           "y": -8.6
           }
         },
@@ -1148,7 +1148,7 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer31",
           "position": {
-          "x": 15.4,
+          "x": 14.8,
           "y": -4.2
           }
         },
@@ -1166,8 +1166,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer33",
           "position": {
-          "x": 20.5,
-          "y": -14.2
+          "x": 21.9,
+          "y": -13.1
           }
         },
         {
@@ -1175,8 +1175,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer34",
           "position": {
-          "x": 20.4,
-          "y": -17.4
+          "x": 20.7,
+          "y": -18.0
           }
         },
         {
@@ -1193,8 +1193,8 @@
           "popupTitle": "Magic Pot Coffer Spawn Location",
           "@id": "osh_potcoffer36",
           "position": {
-          "x": 7.0,
-          "y": -19.8
+          "x": 7.3,
+          "y": -18.7
           }
         },
         {
@@ -1231,6 +1231,366 @@
           "position": {
           "x": 28.1,
           "y": -8.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer41",
+          "position": {
+          "x": 3.8,
+          "y": -35.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer42",
+          "position": {
+          "x": 4.1,
+          "y": -20.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer43",
+          "position": {
+          "x": 4.6,
+          "y": -19.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer44",
+          "position": {
+          "x": 4.7,
+          "y": -16.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer45",
+          "position": {
+          "x": 4.8,
+          "y": -36.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer46",
+          "position": {
+          "x": 4.9,
+          "y": -22.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer47",
+          "position": {
+          "x": 5.0,
+          "y": -35.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer48",
+          "position": {
+          "x": 5.4,
+          "y": -9.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer49",
+          "position": {
+          "x": 5.6,
+          "y": -16.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer50",
+          "position": {
+          "x": 5.6,
+          "y": -6.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer51",
+          "position": {
+          "x": 5.8,
+          "y": -37.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer52",
+          "position": {
+          "x": 6.0,
+          "y": -11.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer53",
+          "position": {
+          "x": 6.3,
+          "y": -17.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer54",
+          "position": {
+          "x": 6.9,
+          "y": -38.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer55",
+          "position": {
+          "x": 6.9,
+          "y": -14.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer56",
+          "position": {
+          "x": 7.2,
+          "y": -35.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer57",
+          "position": {
+          "x": 7.3,
+          "y": -34.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer58",
+          "position": {
+          "x": 7.9,
+          "y": -36.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer59",
+          "position": {
+          "x": 8.0,
+          "y": -21.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer60",
+          "position": {
+          "x": 8.3,
+          "y": -11.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer61",
+          "position": {
+          "x": 9.0,
+          "y": -37.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer62",
+          "position": {
+          "x": 10.4,
+          "y": -15.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer63",
+          "position": {
+          "x": 12.3,
+          "y": -21.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer64",
+          "position": {
+          "x": 13.8,
+          "y": -12.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer65",
+          "position": {
+          "x": 13.8,
+          "y": -17.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer66",
+          "position": {
+          "x": 13.9,
+          "y": -13.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer67",
+          "position": {
+          "x": 15.0,
+          "y": -25.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer68",
+          "position": {
+          "x": 17.2,
+          "y": -11.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer69",
+          "position": {
+          "x": 20.4,
+          "y": -29.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer70",
+          "position": {
+          "x": 21.9,
+          "y": -35.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer71",
+          "position": {
+          "x": 22.8,
+          "y": -36.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer72",
+          "position": {
+          "x": 22.9,
+          "y": -16.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer73",
+          "position": {
+          "x": 23.0,
+          "y": -13.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer74",
+          "position": {
+          "x": 23.1,
+          "y": -29.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer75",
+          "position": {
+          "x": 23.6,
+          "y": -24.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer76",
+          "position": {
+          "x": 26.0,
+          "y": -31.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer77",
+          "position": {
+          "x": 28.3,
+          "y": -25.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer78",
+          "position": {
+          "x": 29.4,
+          "y": -38.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer79",
+          "position": {
+          "x": 33.3,
+          "y": -10.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "@id": "osh_potcoffer80",
+          "position": {
+          "x": 38.0,
+          "y": -36.9
           }
         }
       ]

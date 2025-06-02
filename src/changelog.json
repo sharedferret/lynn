@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "version": "25.0",
+      "timestamp": "2025-06-01",
+      "changes": [
+        "Added and verified locations for all Occult Crescent South Horn map entries",
+        "Note: There are three carrot spawn locations that I haven't been able to verify, but also haven't been able to disprove. If you see a carrot spawn at (27.8, 9.3), (29.3, 38.4), or (20.8, 37.7), or a spot that isn't on the map, please let me know.",
+        "Thank you for all your support! I'm really happy that this site has been a useful resource for people while they explore Occult Crescent, as well as Bozja and Eureka. If you see anything that doesn't look right, or have a suggestion, feel free to contact me on Discord at @lynnkaneko."
+      ]
+    },
+    {
       "version": "24.0",
       "timestamp": "2025-05-27",
       "changes": [
