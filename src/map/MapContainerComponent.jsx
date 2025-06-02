@@ -175,7 +175,7 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
       <Box className="mouse-coordinates" sx={{ backgroundColor: theme.palette.background.paper }}>
         {`${mouseCoordinates.lon.toFixed(1)}, ${(mouseCoordinates.lat * -1.0).toFixed(1)}`}
       </Box>
-      <Box className="map-footer">
+      <Box className="map-footer" sx={{ display: { xs: 'none', md: 'block' } }}>
         <Stack direction="row" spacing={3}>
           { displayFooter
             ? (
