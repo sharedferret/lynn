@@ -5,16 +5,16 @@ import {
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { useNavigate } from 'react-router-dom';
 
-export default function FooterComponent() {
+export default function FooterComponent({ includePadding = true }) {
   const navigate = useNavigate();
   return (
     <Box width="100%">
       <Stack
         direction={{ xs: 'none', md: 'row' }}
-        pt={10}
-        pb={2}
-        pl={5}
-        pr={5}
+        pt={includePadding ? 10 : 0}
+        pb={includePadding ? 2 : 0}
+        pl={includePadding ? 5 : 0}
+        pr={includePadding ? 5 : 0}
         alignItems="center"
       >
         <Typography variant="subtitle2" fontSize={12} maxWidth={600} textAlign="left">
@@ -24,6 +24,14 @@ export default function FooterComponent() {
         </Typography>
         <Box flexGrow={1} />
         <Stack direction="row">
+          <IconButton href="https://ko-fi.com/lynnkaneko" target="_blank" rel="noreferrer">
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/support_me_on_kofi_blue.png`}
+              width={160}
+              height={32}
+              alt="Support me on Ko-fi"
+            />
+          </IconButton>
           <IconButton href="https://discord.gg/thehelplines" target="_blank" rel="noreferrer">
             <SvgIcon width="24" height="24" viewBox="0 0 23 24">
               <g id="surface1" transform="translate(0,3)">

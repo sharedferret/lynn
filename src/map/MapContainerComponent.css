@@ -48,6 +48,21 @@
   opacity: 0.8;
 }
 
+.map-footer {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  padding-bottom: 20px;
+  z-index: 1000;
+  
+}
+
+.map-footer-component {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 .layer-selector-button {
   position: absolute;
   top: 20px;

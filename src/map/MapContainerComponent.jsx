@@ -2,6 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 import {
   Box,
   Button,
+  Fab,
   Stack,
   Typography,
   useTheme,
@@ -13,6 +14,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import AbcIcon from '@mui/icons-material/Abc';
+import InfoIcon from '@mui/icons-material/Info';
+import CancelIcon from '@mui/icons-material/Cancel';
 import './MapContainerComponent.css';
 
 import FullscreenMapComponent from './FullscreenMapComponent';
@@ -23,6 +26,7 @@ import bsfMapData from './lib/poi/bsf.json';
 import hydMapData from './lib/poi/hydatos.json';
 import oshMapData from './lib/poi/southhorn.json';
 import MapZoneSelectorComponent from './MapZoneSelectorComponent';
+import FooterComponent from '../FooterComponent';
 // import MapData from './MapData';
 
 export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
@@ -44,6 +48,7 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
   const [displayLayerSelector, setDisplayLayerSelector] = React.useState(false);
   const [displayZoneSelector, setDisplayZoneSelector] = React.useState(false);
   const [displayLabels, setDisplayLabels] = React.useState(true);
+  const [displayFooter, setDisplayFooter] = React.useState(false);
   const [mouseCoordinates, setMouseCoordinates] = React.useState({ lat: 1, lon: -1 });
   const availableLayers = mapData[selectedMapId].categories;
 
@@ -75,6 +80,10 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
       `/map/${data}`,
     );
   }, [setSelectedMapId, setDisplayZoneSelector]);
+
+  const handleFooterSelectorUpdate = useCallback(() => {
+    setDisplayFooter(!displayFooter);
+  }, [displayFooter, setDisplayFooter]);
 
   const handleMouseMove = useCallback((e) => {
     setMouseCoordinates({ lat: e.latlng.lat, lon: e.latlng.lng });
@@ -166,8 +175,22 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
       <Box className="mouse-coordinates" sx={{ backgroundColor: theme.palette.background.paper }}>
         {`${mouseCoordinates.lon.toFixed(1)}, ${(mouseCoordinates.lat * -1.0).toFixed(1)}`}
       </Box>
-    </Box>
+      <Box className="map-footer">
+        <Stack direction="row" spacing={3}>
+          { displayFooter
+            ? (
+              <Box className="map-footer-component">
+                <FooterComponent includePadding={false} />
+              </Box>
+            )
+            : null }
+          <Fab onClick={handleFooterSelectorUpdate}>
+            { displayFooter ? <CancelIcon /> : <InfoIcon /> }
+          </Fab>
+        </Stack>
 
+      </Box>
+    </Box>
   );
 }
 
