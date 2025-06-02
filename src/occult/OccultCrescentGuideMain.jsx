@@ -60,28 +60,22 @@ export default function OccultCrescentGuideMain({ guidePage }) {
   });
 
   return (
-    <Box
-      component="main"
-      margin="auto"
-      sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
-    >
-      <Container maxWidth="lg">
+    <Container maxWidth="lg">
 
-        <Box sx={{
-          pl: 4, pt: 4, pr: 4, alignItems: 'flex-start', textAlign: 'left',
-        }}
-        >
-          <Paper sx={{ p: 2, minHeight: '700px' }}>
-            <ReactMarkdown
-              rehypePlugins={[rehypeSlug, rehypeAutolinkHeadings]}
-              remarkPlugins={[remarkGfm, remarkToc]}
-              components={components}
-            >
-              { content }
-            </ReactMarkdown>
-          </Paper>
-        </Box>
-      </Container>
-    </Box>
+      <Box sx={{
+        pl: 4, pt: 4, pr: 4, alignItems: 'flex-start', textAlign: 'left',
+      }}
+      >
+        <Paper sx={{ p: 2, minHeight: '700px' }}>
+          <ReactMarkdown
+            rehypePlugins={[rehypeSlug, rehypeAutolinkHeadings]}
+            remarkPlugins={[remarkGfm, remarkToc]}
+            components={components}
+          >
+            { content }
+          </ReactMarkdown>
+        </Paper>
+      </Box>
+    </Container>
   );
 }

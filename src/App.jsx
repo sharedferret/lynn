@@ -13,20 +13,20 @@ import MainPageComponent from './MainPageComponent';
 import ForecastMainComponent from './forecast/ForecastMainComponent';
 import BAMainComponent from './ba/BAMainComponent';
 import MainComponent from './MainComponent';
-import FavorableWeatherFinderComponent from './weather_finder/FavorableWeatherFinder';
+import FavorableWeatherFinderContainerComponent from './weather_finder/FavorableWeatherFinderContainerComponent';
 import BAPortalMapComponent from './BAPortalMapComponent';
 import ResultsFilter from './forecast/lib/ResultsFilter';
 import LynnReferenceComponent from './reference/LynnReferenceComponent';
-import BozjaLostActionHelperComponent from './drs/BozjaLostActionHelperComponent';
+import BozjaLostActionHelperContainerComponent from './drs/BozjaLostActionHelperContainerComponent';
 import EurekaLoadoutMainComponent from './eureka/EurekaLoadoutMainComponent';
-import EurekaLogosActionHelperComponent from './eureka/EurekaLogosActionHelperComponent';
+import EurekaLogosActionHelperContainerComponent from './eureka/EurekaLogosActionHelperContainerComponent';
 import ChangelogComponent from './ChangelogComponent';
 import DRSNewHolsterMainComponent from './drs/DRSNewHolsterMainComponent';
 import DRSRunHolsterCreatorContainerComponent from './drs/create/DRSRunHolsterCreatorContainerComponent';
 import BAMorbolMapComponent from './BAMorbolMapComponent';
 import MapPageComponent from './map/MapPageComponent';
-import OccultCrescentGuideMain from './occult/OccultCrescentGuideMain';
-import OccultPhantomJobHelperComponent from './occult/phantom_jobs/OccultPhantomJobHelperComponent';
+import OccultCrescentGuideContainer from './occult/OccultCrescentGuideContainer';
+import OccultPhantomJobHelperContainerComponent from './occult/phantom_jobs/OccultPhantomJobHelperContainerComponent';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -145,21 +145,21 @@ const router = createBrowserRouter([
   },
   {
     path: '/occult/phantomjob',
-    element: <WrappedMainComponent component={<OccultPhantomJobHelperComponent />} page="occultphantomjob" />,
+    element: <WrappedMainComponent component={<OccultPhantomJobHelperContainerComponent />} page="occultphantomjob" />,
     children: [
       {
         path: '/occult/phantomjob/:phantomjob',
-        element: <WrappedMainComponent component={<OccultPhantomJobHelperComponent />} page="occultphantomjob" />,
+        element: <WrappedMainComponent component={<OccultPhantomJobHelperContainerComponent />} page="occultphantomjob" />,
       },
     ],
   },
   {
     path: '/occult/guide',
-    element: <WrappedMainComponent component={<OccultCrescentGuideMain />} page="occult" />,
+    element: <WrappedMainComponent component={<OccultCrescentGuideContainer />} page="occult" />,
     children: [
       {
         path: '/occult/guide/:guidepage',
-        element: <WrappedMainComponent component={<OccultCrescentGuideMain />} page="occult" />,
+        element: <WrappedMainComponent component={<OccultCrescentGuideContainer />} page="occult" />,
       },
     ],
   },
@@ -195,11 +195,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/eureka/logos',
-    element: <WrappedMainComponent component={<EurekaLogosActionHelperComponent />} page="eurekalogosaction" />,
+    element: <WrappedMainComponent component={<EurekaLogosActionHelperContainerComponent />} page="eurekalogosaction" />,
     children: [
       {
         path: '/eureka/logos/:logosaction',
-        element: <WrappedMainComponent component={<EurekaLogosActionHelperComponent />} page="eurekalogosaction" />,
+        element: <WrappedMainComponent component={<EurekaLogosActionHelperContainerComponent />} page="eurekalogosaction" />,
       },
     ],
   },
@@ -233,11 +233,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/bozja/lostaction',
-    element: <WrappedMainComponent component={<BozjaLostActionHelperComponent />} page="bozjalostaction" />,
+    element: <WrappedMainComponent component={<BozjaLostActionHelperContainerComponent />} page="bozjalostaction" />,
     children: [
       {
         path: '/bozja/lostaction/:lostaction',
-        element: <WrappedMainComponent component={<BozjaLostActionHelperComponent />} page="bozjalostaction" />,
+        element: <WrappedMainComponent component={<BozjaLostActionHelperContainerComponent />} page="bozjalostaction" />,
       },
     ],
   },
@@ -253,7 +253,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/weather-finder',
-    element: <WrappedMainComponent component={<FavorableWeatherFinderComponent />} page="weatherfinder" />,
+    element: <WrappedMainComponent component={<FavorableWeatherFinderContainerComponent />} page="weatherfinder" />,
   },
   {
     path: '/portals',

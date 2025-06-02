@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Box, Stack } from '@mui/material';
+import { Container, Stack } from '@mui/material';
 import EorzeaWeather from 'lynn-eorzea-weather';
 import ForecastResultsComponent from './ForecastResultsComponent';
 import ForecastOptionsSelectorComponent from './ForecastOptionsSelectorComponent';
@@ -36,11 +36,7 @@ export default function FavorableWeatherFinderComponent() {
    * Render Logic
    */
   return (
-    <Box
-      component="main"
-      margin="auto"
-      sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
-    >
+    <Container maxWidth="lg">
       <Stack spacing={2} sx={{ paddingTop: 6 }}>
         <ForecastOptionsSelectorComponent
           location={location}
@@ -58,7 +54,7 @@ export default function FavorableWeatherFinderComponent() {
           ranking={ranking}
         />
       </Stack>
-    </Box>
+    </Container>
 
   );
 }

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Box } from '@mui/material';
 import { Helmet } from 'react-helmet';
 
-import BAMainContentComponent from './BAMainContentComponent';
+const BAMainContentComponent = React.lazy(() => import('./BAMainContentComponent'));
 
 export default function BAMainComponent({
   holster,
@@ -28,11 +28,14 @@ export default function BAMainComponent({
         <meta name="twitter:creator" content="@reflexyui" />
       </Helmet>
 
-      <BAMainContentComponent
-        holster={holster}
-        encodedHolster={encodedHolster}
-        resetTimer={resetTimer}
-      />
+      <Suspense fallback={<div>Loading...</div>}>
+        <BAMainContentComponent
+          holster={holster}
+          encodedHolster={encodedHolster}
+          resetTimer={resetTimer}
+        />
+      </Suspense>
+
     </Box>
 
   );
