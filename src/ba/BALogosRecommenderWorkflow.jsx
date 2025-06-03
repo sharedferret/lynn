@@ -1,8 +1,11 @@
 import React from 'react';
-import {
-  Avatar, Box, Button, Divider, Stack, Typography,
-} from '@mui/material';
-import { findIndex } from 'underscore';
+import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import findIndex from 'underscore/modules/findIndex';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 import BALogosHolsterComponent from './BALogosHolsterComponent';

@@ -1,7 +1,9 @@
 import React from 'react';
-import {
-  Accordion, AccordionDetails, AccordionSummary, Box, Typography,
-} from '@mui/material';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function ForecastResultsMapComponent({ filter }) {

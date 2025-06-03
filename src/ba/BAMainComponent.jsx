@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Box } from '@mui/material';
+import Box from '@mui/material/Box';
 import { Helmet } from 'react-helmet';
 
 const BAMainContentComponent = React.lazy(() => import('./BAMainContentComponent'));

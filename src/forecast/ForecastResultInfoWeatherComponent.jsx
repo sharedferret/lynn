@@ -1,6 +1,7 @@
-import {
-  Grid, Stack, Tooltip, Typography,
-} from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
 import React from 'react';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { v4 as uuidv4 } from 'uuid';

@@ -1,8 +1,9 @@
-import { Box, Stack, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import React, { Suspense } from 'react';
 
 const DRSNewHolsterSelectorComponent = React.lazy(() => import('./DRSNewHolsterSelectorComponent'));
-// import DRSNewHolsterSelectorComponent from './DRSNewHolsterSelectorComponent';
 
 export default function DRSNewHolsterMainComponent({
   holster, encodedHolster, resetTimer,

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
-import {
-  Box, Divider, Stack, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import { v4 as uuidv4 } from 'uuid';
 import DRSHolsterActionAcquisitionLostActionComponent from './DRSHolsterActionAcquisitionLostActionComponent';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';

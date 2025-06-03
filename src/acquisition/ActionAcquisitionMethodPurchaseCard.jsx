@@ -1,7 +1,13 @@
 import React from 'react';
-import {
-  Box, Button, Card, CardActions, CardContent, CircularProgress, Divider, Stack, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CircularProgress from '@mui/material/CircularProgress';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import { v4 as uuidv4 } from 'uuid';
 
 export default function ActionAcquisitionMethodPurchaseCard({ priceData, fragmentId }) {

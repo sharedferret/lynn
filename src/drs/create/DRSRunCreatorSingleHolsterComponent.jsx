@@ -1,18 +1,16 @@
 import React, { useCallback } from 'react';
 
-import {
-  Avatar,
-  Box,
-  Button,
-  FormControl,
-  FormHelperText,
-  MenuItem,
-  Paper,
-  Select,
-  Stack,
-  TextField,
-  Typography,
-} from '@mui/material';
+import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import FormControl from '@mui/material/FormControl';
+import FormHelperText from '@mui/material/FormHelperText';
+import MenuItem from '@mui/material/MenuItem';
+import Paper from '@mui/material/Paper';
+import Select from '@mui/material/Select';
+import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 import DRSLostActionHelper from '../lib/DRSLostActionHelper';
 
 export default function DRSRunCreatorSingleHolsterComponent({

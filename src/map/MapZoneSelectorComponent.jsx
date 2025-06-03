@@ -1,6 +1,10 @@
-import {
-  Box, FormControlLabel, FormGroup, FormLabel, Radio, RadioGroup, useTheme,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormGroup from '@mui/material/FormGroup';
+import FormLabel from '@mui/material/FormLabel';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import useTheme from '@mui/material/styles/useTheme';
 import React from 'react';
 import Scrollbars from 'react-custom-scrollbars-2';
 

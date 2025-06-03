@@ -1,11 +1,19 @@
-import {
-  Avatar, Box, Button, Divider, Stack, Step, StepContent, StepLabel, Stepper, Typography,
-} from '@mui/material';
 import React, { useCallback } from 'react';
 
+import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
+import Step from '@mui/material/Step';
+import StepContent from '@mui/material/StepContent';
+import StepLabel from '@mui/material/StepLabel';
+import Stepper from '@mui/material/Stepper';
+import Typography from '@mui/material/Typography';
+import findIndex from 'underscore/modules/findIndex';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import { findIndex } from 'underscore';
+
 import recommendedActionsJson from './lib/RecommendedActions.json';
 import BALogosHolsterComponent from './BALogosHolsterComponent';
 

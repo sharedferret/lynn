@@ -1,11 +1,8 @@
-import {
-  alpha,
-  Box,
-  Paper,
-  Stack,
-  Typography,
-  useTheme,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import { alpha, useTheme } from '@mui/material/styles';
 import React from 'react';
 
 export default function OccultPhantomJobInformationComponent({ phantomJob, phantomJobData }) {

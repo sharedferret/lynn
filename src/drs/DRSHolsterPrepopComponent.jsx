@@ -1,10 +1,12 @@
 import React from 'react';
-import { Box, Stack, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 
 import { v4 as uuidv4 } from 'uuid';
 import DRSBagLostActionComponent from './DRSBagLostActionComponent';
 
-export default function DRSHolsterPrepopComponent({ holsterData, handleHolsterUpdate }) {
+export default function DRSHolsterPrepopComponent({ holsterData }) {
   /**
    * Render Logic
    */

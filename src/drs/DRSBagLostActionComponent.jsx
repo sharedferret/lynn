@@ -1,8 +1,10 @@
 import React, { useCallback } from 'react';
 
-import {
-  Box, Divider, Stack, TextField, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 import ClearIcon from '@mui/icons-material/Clear';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 import BozjaLostActionSelectorComponent from './BozjaLostActionSelectorComponent';

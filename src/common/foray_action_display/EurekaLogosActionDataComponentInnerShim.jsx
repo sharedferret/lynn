@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Divider, Stack, Typography } from '@mui/material';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import { v4 as uuidv4 } from 'uuid';
 import EurekaLogosActionHelper from '../../eureka/lib/EurekaLogosActionHelper';
 import universalisPriceHelperInstance from '../../acquisition/UniversalisPriceHelper';

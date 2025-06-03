@@ -1,6 +1,7 @@
-import {
-  Box, Stack, ToggleButton, ToggleButtonGroup,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import EurekaLogogramRecipeComponent from './EurekaLogogramRecipeComponent';

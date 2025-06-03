@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { Stack } from '@mui/material';
+import Stack from '@mui/material/Stack';
 import ForecastResultsDisplayComponent from './ForecastResultsDisplayComponent';
 
 import UpcomingSpawnCalculator from './lib/UpcomingSpawnCalculator';

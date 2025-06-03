@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import {
-  Container, Divider, Grid, Paper, Stack, Typography, useTheme, alpha,
-} from '@mui/material';
+import Container from '@mui/material/Container';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import { useTheme, alpha } from '@mui/material/styles';
 import { v4 as uuidv4 } from 'uuid';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 

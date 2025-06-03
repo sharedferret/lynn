@@ -1,8 +1,14 @@
 import React from 'react';
 
-import {
-  Box, Divider, FormControl, InputLabel, MenuItem, Select, Stack, useMediaQuery, useTheme,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import Stack from '@mui/material/Stack';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import useTheme from '@mui/material/styles/useTheme';
 import { v4 as uuidv4 } from 'uuid';
 import BALogogramComponent from './BALogogramComponent';
 import logosActionData from './lib/LogosActions.json';

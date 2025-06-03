@@ -1,5 +1,7 @@
 import React from 'react';
-import { Divider, Paper, Stack } from '@mui/material';
+import Divider from '@mui/material/Divider';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
 
 import ForecastResultDateComponent from './ForecastResultDateComponent';
 import ForecastResultInfoComponent from './ForecastResultInfoComponent';

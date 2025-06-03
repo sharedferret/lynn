@@ -1,8 +1,9 @@
 import React, { useState, useCallback } from 'react';
 
-import {
-  Box, Button, Paper, Stack,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { v4 as uuidv4 } from 'uuid';
 import LinkIcon from '@mui/icons-material/Link';

@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Box, Stack, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import EurekaLogosActionHelper from './lib/EurekaLogosActionHelper';
 import data from '../ba/lib/Logograms.json';
 

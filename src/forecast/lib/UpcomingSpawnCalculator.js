@@ -1,6 +1,5 @@
 import EorzeaWeather from 'lynn-eorzea-weather';
-import { sortBy } from 'underscore';
-// import sortBy from 'underscore/modules/sortBy.js'
+import sortBy from 'underscore/modules/sortBy';
 
 const EORZEA_TIME_DILATION = 20.571428571428573;
 const EIGHT_HOURS_IN_MS = 8 * 1000 * 60 * 60;

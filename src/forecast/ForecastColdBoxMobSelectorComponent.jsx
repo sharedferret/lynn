@@ -1,7 +1,9 @@
 import React from 'react';
-import {
-  Box, Stack, ToggleButton, ToggleButtonGroup, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import Typography from '@mui/material/Typography';
 import Weather from './lib/Weather';
 
 export default function ForecastColdBoxMobSelectorComponent(

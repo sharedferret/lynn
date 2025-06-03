@@ -1,5 +1,6 @@
 import React from 'react';
-import { Paper, Stack } from '@mui/material';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
 import { Helmet } from 'react-helmet';
 
 import ForecastResultsHeaderComponent from './ForecastResultsHeaderComponent';

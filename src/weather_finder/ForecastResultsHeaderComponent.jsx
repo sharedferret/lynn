@@ -1,10 +1,15 @@
 import React from 'react';
-import { Container, Grid, Stack } from '@mui/material';
+
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AvTimerIcon from '@mui/icons-material/AvTimer';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import HistoryIcon from '@mui/icons-material/History';
-import Typography from '@mui/material/Typography';
+
 import WeatherFavorability from './weather-favorability';
 
 export default function ForecastResultsHeaderComponent({

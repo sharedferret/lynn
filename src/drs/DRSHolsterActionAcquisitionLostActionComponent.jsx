@@ -1,8 +1,9 @@
 import React from 'react';
 
-import {
-  Box, Grid, Stack, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
 

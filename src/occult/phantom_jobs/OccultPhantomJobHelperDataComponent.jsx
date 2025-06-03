@@ -1,4 +1,6 @@
-import { Container, Divider, Stack } from '@mui/material';
+import Container from '@mui/material/Container';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
 import React from 'react';
 import OccultPhantomJobInformationComponent from './OccultPhantomJobInformationComponent';
 import OccultPhantomJobSupportActionContainerComponent from './OccultPhantomJobSupportActionContainerComponent';

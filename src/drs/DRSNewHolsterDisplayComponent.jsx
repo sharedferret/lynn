@@ -1,7 +1,8 @@
 import React, { useState, useCallback } from 'react';
-import {
-  Box, Button, Stack, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import LinkIcon from '@mui/icons-material/Link';
 import { DefaultCopyField } from '@eisberg-labs/mui-copy-field';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';

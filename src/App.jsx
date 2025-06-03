@@ -2,7 +2,8 @@ import './App.css';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import createTheme from '@mui/material/styles/createTheme';
+import ThemeProvider from '@mui/material/styles/ThemeProvider';
 import {
   createBrowserRouter,
   RouterProvider,

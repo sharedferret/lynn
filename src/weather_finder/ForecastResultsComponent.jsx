@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper } from '@mui/material';
+import Paper from '@mui/material/Paper';
 
 import './ForecastResults.css';
 import { v4 as uuidv4 } from 'uuid';

@@ -1,5 +1,7 @@
 import React, { useCallback, useState } from 'react';
-import { Box, CssBaseline, Stack } from '@mui/material';
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+import Stack from '@mui/material/Stack';
 import SidebarComponent from './SidebarComponent';
 
 import MobileTopbarComponent from './MobileTopbarComponent';

@@ -1,9 +1,7 @@
-import {
-  Box,
-  Divider,
-  Stack,
-  Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import React from 'react';
 import EurekaNMTooltipComponent from './tooltipcomponents/EurekaNMTooltipComponent';
 import AetheryteTooltipComponent from './tooltipcomponents/AetheryteTooltipComponent';

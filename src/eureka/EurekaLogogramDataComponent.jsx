@@ -1,7 +1,9 @@
 import React from 'react';
-import {
-  Box, Divider, Grid, Stack, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import { v4 as uuidv4 } from 'uuid';
 import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
 

@@ -1,6 +1,8 @@
-import {
-  Box, Grid, Tooltip, useMediaQuery, useTheme,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Tooltip from '@mui/material/Tooltip';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import useTheme from '@mui/material/styles/useTheme';
 import React from 'react';
 import OccultPhantomJobInformationTooltipComponent from './OccultPhantomJobInformationTooltipComponent';
 

@@ -1,10 +1,8 @@
 import React, { useCallback, useState } from 'react';
-import {
-  Box,
-  Container,
-  Stack,
-  Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import OccultPhantomJobSelectorComponent from './OccultPhantomJobSelectorComponent';
 import OccultPhantomJobHelperDataComponent from './OccultPhantomJobHelperDataComponent';
 import OccultPhantomJobIconSelectorComponent from './OccultPhantomJobIconSelectorComponent';

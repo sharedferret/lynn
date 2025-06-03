@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
-import { Container, Stack } from '@mui/material';
+import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 import EorzeaWeather from 'lynn-eorzea-weather';
 import ForecastResultsComponent from './ForecastResultsComponent';
 import ForecastOptionsSelectorComponent from './ForecastOptionsSelectorComponent';

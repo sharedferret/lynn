@@ -1,9 +1,14 @@
 import React, { useCallback } from 'react';
 
-import {
-  Box, Divider, FormControl, MenuItem, Select, Stack, Tooltip, Typography,
-} from '@mui/material';
-import { groupBy } from 'underscore';
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+import FormControl from '@mui/material/FormControl';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import Stack from '@mui/material/Stack';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
+import groupBy from 'underscore/modules/groupBy';
 import { v4 as uuidv4 } from 'uuid';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 import BozjaLostActionInformationTooltipComponent from './BozjaLostActionInformationTooltipComponent';

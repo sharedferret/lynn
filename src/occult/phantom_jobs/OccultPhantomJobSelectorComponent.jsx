@@ -1,6 +1,10 @@
-import {
-  Box, FormControl, MenuItem, Select, Stack, Tooltip, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import FormControl from '@mui/material/FormControl';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import Stack from '@mui/material/Stack';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
 import React, { useCallback } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import OccultPhantomJobInformationTooltipComponent from './OccultPhantomJobInformationTooltipComponent';

@@ -1,14 +1,11 @@
 import React, { useCallback, useState } from 'react';
-import {
-  Box,
-  Container,
-  Divider,
-  Paper,
-  Stack,
-  Typography,
-  useTheme,
-  alpha,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Divider from '@mui/material/Divider';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import { useTheme, alpha } from '@mui/material/styles';
 import BozjaLostActionSelectorComponent from '../../drs/BozjaLostActionSelectorComponent';
 import BozjaLostActionHelperDataComponent from '../../drs/BozjaLostActionHelperDataComponent';
 import EurekaLogosActionDataComponentOuterShim from './EurekaLogosActionDataComponentOuterShim';

@@ -1,8 +1,9 @@
 import React, { useCallback } from 'react';
 
-import {
-  FormControl, MenuItem, Select, Typography,
-} from '@mui/material';
+import FormControl from '@mui/material/FormControl';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import Typography from '@mui/material/Typography';
 
 export default function UniversalisRegionPicker() {
   const servers = {

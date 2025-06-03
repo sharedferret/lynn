@@ -1,4 +1,6 @@
-import { Box, Stack, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import React from 'react';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import FarmType from './lib/FarmType';

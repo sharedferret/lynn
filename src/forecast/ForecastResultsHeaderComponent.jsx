@@ -1,7 +1,7 @@
 import React from 'react';
-import {
-  Box, Stack, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import FarmType from './lib/FarmType';
 import ForecastResultsGuideComponent from './ForecastResultsGuideComponent';
 import ForecastResultsMapComponent from './ForecastResultsMapComponent';

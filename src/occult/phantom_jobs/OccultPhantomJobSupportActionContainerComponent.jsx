@@ -1,9 +1,9 @@
-import {
-  Box, Paper, useTheme, alpha,
-  Stack,
-  Typography,
-  Divider,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import { useTheme, alpha } from '@mui/material/styles';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
 import React from 'react';
 import OccultPhantomJobSupportActionComponent from './OccultPhantomJobSupportActionComponent';
 

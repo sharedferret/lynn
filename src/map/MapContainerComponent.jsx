@@ -1,12 +1,10 @@
 import React, { useCallback, useMemo } from 'react';
-import {
-  Box,
-  Button,
-  Fab,
-  Stack,
-  Typography,
-  useTheme,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Fab from '@mui/material/Fab';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import { useTheme } from '@mui/material/styles';
 import LayersIcon from '@mui/icons-material/Layers';
 import MapIcon from '@mui/icons-material/Map';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
