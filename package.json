@@ -76,5 +76,8 @@
     "postcss": "^8.4.20",
     "source-map-explorer": "^2.5.3"
   },
+  "overrides": {
+    "typescript": "^5.0.2"
+  },
   "sideEffects": false
 }

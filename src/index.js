@@ -1,16 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import './index.css';
-import { hydrate } from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const rootElement = document.getElementById('root');
 if (rootElement.hasChildNodes()) {
   /* eslint-disable react/jsx-filename-extension */
-  hydrate(<App />, rootElement);
+  hydrateRoot(rootElement, <App />);
 } else {
-  const root = ReactDOM.createRoot(document.getElementById('root'));
+  const root = createRoot(rootElement);
   root.render(
     <App />,
   );
