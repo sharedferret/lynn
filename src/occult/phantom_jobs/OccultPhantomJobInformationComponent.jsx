@@ -3,6 +3,7 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
+import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import React from 'react';
 
 export default function OccultPhantomJobInformationComponent({ phantomJob, phantomJobData }) {
@@ -36,6 +37,17 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
           <Box width={12} />
           <Typography fontWeight={700} variant="h4">{phantomJob}</Typography>
           <Box flexGrow={1} />
+          {
+            phantomJobData.totalExp
+              ? (
+                <Stack direction="row" alignItems="center" spacing={2}>
+                  <AutoGraphIcon />
+                  <Typography fontWeight={700} variant="h5">{ `${phantomJobData.totalExp} EXP` }</Typography>
+                </Stack>
+              )
+              : null
+          }
+
         </Stack>
       </Box>
 
@@ -68,7 +80,6 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
             {phantomJobData.unlockGuide}
           </Typography>
         </Stack>
-
       </Box>
     </Paper>
   );

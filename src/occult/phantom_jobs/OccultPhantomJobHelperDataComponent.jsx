@@ -5,6 +5,7 @@ import React from 'react';
 import OccultPhantomJobInformationComponent from './OccultPhantomJobInformationComponent';
 import OccultPhantomJobSupportActionContainerComponent from './OccultPhantomJobSupportActionContainerComponent';
 import PhantomJobHelper from '../lib/PhantomJobHelper';
+import OccultPhantomJobLevelingComponent from './OccultPhantomJobLevelingComponent';
 
 export default function OccultPhantomJobHelperDataComponent({ phantomJob }) {
   const phantomJobData = PhantomJobHelper.getPhantomJobData(phantomJob);
@@ -19,6 +20,7 @@ export default function OccultPhantomJobHelperDataComponent({ phantomJob }) {
             phantomJobData={phantomJobData}
           />
         ) : null }
+        <OccultPhantomJobLevelingComponent expByLevel={phantomJobData.exp} isFreelancer={phantomJob === 'Freelancer'} />
         { /* TODO: Add Support Actions down here, as its own component. For now, show all of
              them, but if we want them to be selectable we can store that info on the
              helper component. */ }

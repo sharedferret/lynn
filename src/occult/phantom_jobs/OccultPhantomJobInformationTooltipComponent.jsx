@@ -78,6 +78,18 @@ export default function OccultPhantomJobInformationTooltipComponent({ phantomJob
         >
           {jobData.jobText}
         </Typography>
+        {
+          jobData.totalExp
+            ? (
+              <Typography fontWeight={700} fontSize={12} textAlign="left" pl={2} pr={1}>
+                Total EXP:
+                {' '}
+                {jobData.totalExp}
+              </Typography>
+            )
+            : null
+        }
+
       </Stack>
     </Box>
   );

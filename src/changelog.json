@@ -1,6 +1,13 @@
 {
   "changes": [
     {
+      "version": "26.0",
+      "timestamp": "2025-06-07",
+      "changes": [
+        "Added EXP needed to level up each Phantom Job."
+      ]
+    },
+    {
       "version": "25.0",
       "timestamp": "2025-06-01",
       "changes": [
