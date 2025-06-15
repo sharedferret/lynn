@@ -15,6 +15,7 @@ import AbcIcon from '@mui/icons-material/Abc';
 import InfoIcon from '@mui/icons-material/Info';
 import CancelIcon from '@mui/icons-material/Cancel';
 import './MapContainerComponent.css';
+import { useTranslation } from 'react-i18next';
 
 import FullscreenMapComponent from './FullscreenMapComponent';
 import MapLayerSelectorComponent from './MapLayerSelectorComponent';
@@ -29,6 +30,7 @@ import FooterComponent from '../FooterComponent';
 
 export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
   const theme = useTheme();
+  const { t } = useTranslation('map');
 
   // TODO: Have a mapping so we can use multiple identifiers for each zone
   const mapData = {};
@@ -151,7 +153,7 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
             <Typography
               display={{ xs: 'none', md: 'block' }}
             >
-              { mapData[selectedMapId].name }
+              { t(`${mapData[selectedMapId].name}.full`, { ns: 'zones' }) }
             </Typography>
           </Button>
           <Button

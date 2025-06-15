@@ -1,6 +1,7 @@
 import './App.css';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
+import { I18nextProvider } from 'react-i18next';
 
 import createTheme from '@mui/material/styles/createTheme';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
@@ -9,6 +10,8 @@ import {
   RouterProvider,
   useParams,
 } from 'react-router-dom';
+
+import i18n from './i18n';
 
 import MainPageComponent from './MainPageComponent';
 import ForecastMainComponent from './forecast/ForecastMainComponent';
@@ -375,23 +378,22 @@ function App() {
   });
 
   return (
-    <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        <Helmet>
-          <title>FFXIV Field Operations Assistant - forays.info</title>
-          <meta name="description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
-          <meta property="og:title" content="forays.info" />
-          <meta property="og:url" content="https://forays.info/" />
-          <meta property="og:image" content="https://forays.info/logo.png" />
-          <meta property="og:description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
-          <meta property="og:site_name" content="forays.info" />
-          <meta name="twitter:card" content="summary" />
-          <meta name="twitter:creator" content="@reflexyui" />
-        </Helmet>
-        <RouterProvider router={router} />
-      </ThemeProvider>
-    </ColorModeContext.Provider>
-
+    <I18nextProvider i18n={i18n}>
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={theme}>
+          <Helmet>
+            <title>FFXIV Field Operations Assistant - forays.info</title>
+            <meta name="description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
+            <meta property="og:title" content="forays.info" />
+            <meta property="og:url" content="https://forays.info/" />
+            <meta property="og:image" content="https://forays.info/logo.png" />
+            <meta property="og:description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
+            <meta property="og:site_name" content="forays.info" />
+          </Helmet>
+          <RouterProvider router={router} />
+        </ThemeProvider>
+      </ColorModeContext.Provider>
+    </I18nextProvider>
   );
 }
 

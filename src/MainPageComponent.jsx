@@ -4,8 +4,11 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { Helmet } from 'react-helmet';
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function MainPageComponent() {
+  const { t } = useTranslation('common');
+
   function getSiteName() {
     const host = window.location.hostname;
 
@@ -84,46 +87,44 @@ export default function MainPageComponent() {
     <Paper elevation={3}>
       <Stack p={5} spacing={2}>
         <Typography textAlign="left" fontSize={textSize}>
-          Welcome to
-          {' '}
-          {getSiteName()}
-          , a home for tools to help with Final Fantasy XIV side
-          content - including the Occult Crescent (Forked Tower), Eureka (The Baldesion
-          Arsenal), and Bozja (Delubrum Reginae Savage). Find out how to build and gather
-          materials for Lost Actions and Logos Actions, what to bring for The Baldesion
-          Arsenal or Delubrum Reginae Savage runs, when the next Cassie or Crab spawn is,
-          and more!
+          <Trans i18nKey="main.intro.p1" ns="common" values={{ sitename: getSiteName() }} />
         </Typography>
         <Typography textAlign="left" fontSize={textSize}>
-          Looking for a group to run Forked Tower, BA, or DRS with? Most of the content on this site
-          was designed for runs on
-          {' '}
-          <a
-            href="https://discord.gg/thehelplines"
-            target="_blank"
-            rel="noreferrer"
-          >
-            The Help Lines
-
-          </a>
-          {' '}
-          on Primal.
+          <Trans
+            i18nKey="main.intro.p2"
+            ns="common"
+            components={[
+              <a
+                href="https://discord.gg/thehelplines"
+                target="_blank"
+                rel="noreferrer"
+              >
+                The Help Lines
+              </a>,
+            ]}
+          />
         </Typography>
         <Typography textAlign="left" fontSize={textSize}>
-          Built by Lynn Kaneko @ Exodus. Issues/suggestions? You can reach out to me
-          on Discord (@lynnkaneko).
+          <Trans i18nKey="main.intro.p3" ns="common" />
         </Typography>
         <Typography textAlign="left" fontSize={textSize}>
-          Home page artwork by
-          {' '}
-          <a
-            href={pageTheme.imageCreditLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {pageTheme.imageCredit}
-            !
-          </a>
+          <Trans
+            i18nKey="main.intro.p4"
+            ns="common"
+            components={[
+              <a
+                href={pageTheme.imageCreditLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {pageTheme.imageCredit}
+                !
+              </a>,
+            ]}
+            values={{
+              artist: pageTheme.imageCredit,
+            }}
+          />
         </Typography>
       </Stack>
     </Paper>
@@ -148,13 +149,11 @@ export default function MainPageComponent() {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@reflexyui" />
         <title>
-          {getSiteName()}
-          {' '}
-          - FFXIV Field Operations Assistant
+          {t('main.header.title', { sitename: getSiteName() })}
         </title>
       </Helmet>
       <Box>
-        <Typography variant="h3" fontWeight={700}>FFXIV Field Operations Assistant</Typography>
+        <Typography variant="h3" fontWeight={700}><Trans i18nKey="main.title" ns="common" /></Typography>
       </Box>
       <Box pl={5} sx={{ display: { xs: 'none', md: 'block' } }}>
         <Stack direction="row">

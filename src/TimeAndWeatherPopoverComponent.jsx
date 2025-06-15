@@ -16,10 +16,12 @@ import EorzeaWeather from 'lynn-eorzea-weather';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { v4 as uuidv4 } from 'uuid';
 import dayjs from 'dayjs';
+import { useTranslation } from 'react-i18next';
 import UpcomingSpawnCalculator from './forecast/lib/UpcomingSpawnCalculator';
 
 export default function TimeAndWeatherPopoverComponent() {
   const [open, setOpen] = React.useState(false);
+  const { t } = useTranslation();
 
   const handleTimeWidgetClick = () => {
     setOpen(true);
@@ -31,31 +33,31 @@ export default function TimeAndWeatherPopoverComponent() {
 
   const regionsToFetchWeatherFor = [
     {
-      name: 'The Occult Crescent: South Horn',
+      name: t('occult.southhorn.full', { ns: 'zones' }),
       zone: EorzeaWeather.ZONE_SOUTH_HORN,
     },
     {
-      name: 'The Bozjan Southern Front',
+      name: t('bozja.bsf.full', { ns: 'zones' }),
       zone: EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT,
     },
     {
-      name: 'Zadnor',
+      name: t('bozja.zadnor.full', { ns: 'zones' }),
       zone: EorzeaWeather.ZONE_ZADNOR,
     },
     {
-      name: 'Eureka Anemos',
+      name: t('eureka.anemos.full', { ns: 'zones' }),
       zone: EorzeaWeather.ZONE_EUREKA_ANEMOS,
     },
     {
-      name: 'Eureka Pagos',
+      name: t('eureka.pagos.full', { ns: 'zones' }),
       zone: EorzeaWeather.ZONE_EUREKA_PAGOS,
     },
     {
-      name: 'Eureka Pyros',
+      name: t('eureka.pyros.full', { ns: 'zones' }),
       zone: EorzeaWeather.ZONE_EUREKA_PYROS,
     },
     {
-      name: 'Eureka Hydatos',
+      name: t('eureka.hydatos.full', { ns: 'zones' }),
       zone: EorzeaWeather.ZONE_EUREKA_HYDATOS,
     },
   ];
@@ -187,7 +189,7 @@ export default function TimeAndWeatherPopoverComponent() {
         <Typography color="#fff" fontWeight={600} fontSize={16}>{time}</Typography>
       </Box>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Current Time</DialogTitle>
+        <DialogTitle>{t('weather-popover.current-time')}</DialogTitle>
         <DialogContent>
           <Typography fontWeight={700} fontSize={24} pl={2}>
             {time}
@@ -195,7 +197,7 @@ export default function TimeAndWeatherPopoverComponent() {
             ET
           </Typography>
         </DialogContent>
-        <DialogTitle>Current Weather</DialogTitle>
+        <DialogTitle>{t('weather-popover.current-weather')}</DialogTitle>
         <DialogContent>
           <Stack divider={<Divider variant="middle" />} spacing={1}>
             <Stack direction="row" spacing={1}>
@@ -215,7 +217,7 @@ export default function TimeAndWeatherPopoverComponent() {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>
-            Close
+            { t('common.close') }
           </Button>
         </DialogActions>
       </Dialog>

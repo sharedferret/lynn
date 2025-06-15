@@ -1,0 +1,207 @@
+{
+  "map": {
+    "regions": {
+      "southhorn": {
+        "name": "Kreszentia (Südexpedition)",
+        "short": "Südliches Kreszentia",
+        "namedLocation": {
+          "1": "Stille Laube",
+          "2": "Falscher Kreuzgang"
+        },
+        "aetheryte": {
+          "1": "Basislager der Expedition",
+          "2": "Zuflucht des Wanderers",
+          "3": "Kristallgrotte",
+          "4": "Holderwuchs",
+          "5": "Felsfenn"
+        },
+        "trader": {
+          "1": "Antiquarin der Expedition",
+          "2": "Händler der Expedition",
+          "3": "Rüstmeister der Expedition"
+        },
+        "repair": "Reparatur",
+        "fate": {
+          "pot1": {
+            "name": "Freude im Pott"
+          },
+          "pot2": {
+            "name": "Wunder im Pott"
+          },
+          "1": {
+            "name": "Kampf um Leben und Schweiß",
+            "boss": "Entfeuchter"
+          },
+          "2": {
+            "name": "Tückische Schönheit",
+            "boss": "Exekutor"
+          },
+          "3": {
+            "name": "Brocken statt Barren",
+            "boss": "Goldener Grabstein"
+          },
+          "4": {
+            "name": "Aspho … asphy … scheintot!",
+            "boss": "Entwickelter Avis"
+          },
+          "5": {
+            "name": "Geißel Kreszentias",
+            "boss": "Loploth"
+          },
+          "6": {
+            "name": "Die Wogen glätte",
+            "boss": "Nammu"
+          },
+          "7": {
+            "name": "Dämonenvogel am Spieß",
+            "boss": "Roch"
+          },
+          "8": {
+            "name": "Los, Sisyphos, Donnerblitz!",
+            "boss": "Sisyphos"
+          },
+          "9": {
+            "name": "Wächter des Lebens",
+            "boss": "Inselbeobachter"
+          },
+          "10": {
+            "name": "Seelen sammeln für den bösen Zwec",
+            "boss": "Seelensammler"
+          },
+          "11": {
+            "name": "Kampf um Leben und Boden unter den Füßen",
+            "boss": "Schlickschlamm"
+          }
+        },
+        "ce": {
+          "1": {
+            "name": "Die steinerne Staffel",
+            "boss": "Megalo-Ritter"
+          },
+          "2": {
+            "name": "Das finsterste Feuer",
+            "boss": "Irrwisch"
+          },
+          "3": {
+            "name": "Gefürchtetes Gebrüll",
+            "boss": "Ungezügelter Löwe",
+            "drop": {
+              "oracle": "Seher-Seelensplitter"
+            }
+          },
+          "4": {
+            "name": "Das messerscharfe Schicksal",
+            "boss": "Todesklaue"
+          },
+          "5": {
+            "name": "Keine Gnade dem Gefieder",
+            "boss": "Neo Garula",
+            "spawn": "Kreszentia-Garula"
+          },
+          "6": {
+            "name": "Das schwarze Regiment",
+            "boss": "Schwarzer Stern",
+            "drop": {
+              "ranger": "Jäger-Seelensplitter",
+              "note": "Chronikeintrag „Schwarze Chocobos“"
+            },
+            "spawn": "Kreszentia-Panther"
+          },
+          "7": {
+            "name": "Tödliche Schönheit",
+            "boss": "Kristalldrache"
+          },
+          "8": {
+            "name": "Jäger aus alten Legenden",
+            "boss": "Nymeischer Petalodus",
+            "drop": {
+              "note": "Chronikeintrag „Nymeischer Petalodus“ "
+            },
+            "spawn": "Niederer Kreszentia-Petalodus"
+          },
+          "9": {
+            "name": "Zorn auf zwei Beinen",
+            "boss": "Kreszenter Berserker",
+            "drop": {
+              "berserker": "Berserker-Seelensplitter",
+              "note": "Chronikeintrag „Kreszenter Berserker“ "
+            }
+          },
+          "10": {
+            "name": "Von uralten Magien",
+            "boss": "Mystisches Idol",
+            "drop": {
+              "note": "Chronikeintrag „Mystisches Idol“"
+            },
+            "spawn": "Kreszentia-Byblos"
+          },
+          "11": {
+            "name": "Das Feilschen ums Verfluchte",
+            "boss": "Münzkröte",
+            "drop": {
+              "note": "Chronikeintrag „Münzkröte“"
+            }
+          },
+          "12": {
+            "name": "Mit absoluter Sicherheit",
+            "boss": "Kommandopott"
+          },
+          "13": {
+            "name": "Ausgebessert und verbessert",
+            "boss": "Restaurierter Löwe"
+          },
+          "14": {
+            "name": "Das versiegelte Unheil",
+            "boss": "Klosterdämon",
+            "drop": {
+              "note": "Chronikeintrag „Klosterdämon“"
+            },
+            "spawn": "Kreszentia-Tintenfleck"
+          },
+          "15": {
+            "name": "Die Geißel des Geistes",
+            "boss": "Gedankenschinder",
+            "spawn": "Kreszentia-Mönch"
+          }
+        },
+        "surveyPoint": {
+          "7": "#7: Die verlorene Festung",
+          "9": "#9: Trughalde",
+          "12": "#12: Heidklipp",
+          "13": "#13: Die unterirdische Stadt",
+          "15": "#15: Die Stadt der Schemen",
+          "18": "#18: Holderwuchs",
+          "19": "#19: Die Leeren Stufen",
+          "21": "#21: Die verfallenen Hochhäuser",
+          "22": "#22: Die alte Werkstätte",
+          "23": "#23: Zuflucht des Wanderers",
+          "24": "#24: Die Feuerstätte"
+        },
+        "demiatma": {
+          "orpiment": "Demi-Atma Orpiment",
+          "caputMortuum": "Demi-Atma Caput Mortuum",
+          "realgar": "Demi-Atma Realgar",
+          "malachite": "Demi-Atma Malachit",
+          "azurite": "Demi-Atma Azurit",
+          "verdigris": "Demi-Atma Verdigris"
+        }
+      }
+    },
+    "category": {
+      "encounters": "Begegnungen"
+    },
+    "layer": {
+      "aetherytes": "Ätheryten",
+      "surveyPoints": "Prüfstelle",
+      "criticalEngagements": "Kritische Begegnungen",
+      "fates": "Fates"
+    },
+    "regionHeaders": {
+      "occult": "Kreszentia",
+      "southhorn": "Südliches Kreszentia"
+    },
+    "captions": {
+      "ce": "Kritische Begegnungen"
+    }
+  }
+}

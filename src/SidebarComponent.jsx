@@ -15,6 +15,7 @@ import { styled, useTheme } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { v4 as uuidv4 } from 'uuid';
+import { Trans } from 'react-i18next';
 
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
@@ -84,7 +85,9 @@ function SidebarComponent({
     <List pt={4} pb={4} sx={{ overflowX: 'hidden' }}>
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>OCCULT CRESCENT</Typography>
+        <Typography color="#fff" fontWeight={600} fontSize={16}>
+          <Trans i18nKey="sidebar.occult.header" ns="common" />
+        </Typography>
       </Stack>
 
       { /* <StyledButton
@@ -100,7 +103,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Occult Crescent Maps</Typography>
+        <Typography><Trans i18nKey="sidebar.occult.map" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -108,12 +111,14 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Phantom Jobs</Typography>
+        <Typography><Trans i18nKey="sidebar.occult.job" ns="common" /></Typography>
       </StyledButton>
 
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>BOZJA AND DRS</Typography>
+        <Typography color="#fff" fontWeight={600} fontSize={16}>
+          <Trans i18nKey="sidebar.bozja.header" ns="common" />
+        </Typography>
       </Stack>
 
       <StyledButton
@@ -121,7 +126,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>DRS Holsters</Typography>
+        <Typography><Trans i18nKey="sidebar.bozja.holster" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -129,7 +134,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Holster Creator</Typography>
+        <Typography><Trans i18nKey="sidebar.bozja.holstercreator" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -137,7 +142,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Bozja Maps</Typography>
+        <Typography><Trans i18nKey="sidebar.bozja.map" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -145,7 +150,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Lost Action Info</Typography>
+        <Typography><Trans i18nKey="sidebar.bozja.lostaction" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -153,12 +158,14 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Fragment Farm Times</Typography>
+        <Typography><Trans i18nKey="sidebar.bozja.fragmentfarm" ns="common" /></Typography>
       </StyledButton>
 
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>EUREKA AND BA</Typography>
+        <Typography color="#fff" fontWeight={600} fontSize={16}>
+          <Trans i18nKey="sidebar.eureka.header" ns="common" />
+        </Typography>
       </Stack>
 
       <StyledButton
@@ -166,7 +173,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>BA Loadouts</Typography>
+        <Typography><Trans i18nKey="sidebar.eureka.baloadout" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -174,7 +181,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>BA Portal Map</Typography>
+        <Typography><Trans i18nKey="sidebar.eureka.bamap" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -182,7 +189,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Eureka Maps</Typography>
+        <Typography><Trans i18nKey="sidebar.eureka.map" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -190,7 +197,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Logos Action Info</Typography>
+        <Typography><Trans i18nKey="sidebar.eureka.logosaction" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -198,7 +205,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Loadout Creator</Typography>
+        <Typography><Trans i18nKey="sidebar.eureka.loadout" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -206,7 +213,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>NM Spawn Times</Typography>
+        <Typography><Trans i18nKey="sidebar.eureka.nm" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -214,12 +221,14 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Logogram/Box Farm Times</Typography>
+        <Typography><Trans i18nKey="sidebar.eureka.farm" ns="common" /></Typography>
       </StyledButton>
 
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>FORAYS</Typography>
+        <Typography color="#fff" fontWeight={600} fontSize={16}>
+          <Trans i18nKey="sidebar.forays.header" ns="common" />
+        </Typography>
       </Stack>
 
       <StyledButton
@@ -227,7 +236,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Expeditionary Forecast</Typography>
+        <Typography><Trans i18nKey="sidebar.forays.forecast" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
@@ -235,12 +244,14 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <Typography>Advanced Weather Finder</Typography>
+        <Typography><Trans i18nKey="sidebar.forays.weather" ns="common" /></Typography>
       </StyledButton>
 
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>ABOUT</Typography>
+        <Typography color="#fff" fontWeight={600} fontSize={16}>
+          <Trans i18nKey="sidebar.about.header" ns="common" />
+        </Typography>
       </Stack>
 
       <StyledButton
@@ -248,7 +259,7 @@ function SidebarComponent({
         key={uuidv4()}
       >
         <Box width={32} />
-        <ListItemText>Lynn Kaneko @ Exodus</ListItemText>
+        <ListItemText><Trans i18nKey="sidebar.about.lynn" ns="common" /></ListItemText>
       </StyledButton>
     </List>
   );
@@ -262,12 +273,14 @@ function SidebarComponent({
         <ListItemAvatar>
           <ArrowBackIcon />
         </ListItemAvatar>
-        <ListItemText>Home</ListItemText>
+        <ListItemText><Trans i18nKey="common.home" ns="common" /></ListItemText>
       </StyledButton>
 
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>ALL</Typography>
+        <Typography color="#fff" fontWeight={600} fontSize={16}>
+          <Trans i18nKey="sidebar.forecast.header.all" ns="common" />
+        </Typography>
       </Stack>
       {[
         ResultsFilter.ALL,
@@ -288,13 +301,17 @@ function SidebarComponent({
             )
             : <ListItemAvatar />}
 
-          <ListItemText>{resultsfilter.name}</ListItemText>
+          <ListItemText>
+            <Trans i18nKey={resultsfilter.key} ns="common" />
+          </ListItemText>
         </StyledButton>
       ))}
 
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>EUREKA NMS</Typography>
+        <Typography color="#fff" fontWeight={600} fontSize={16}>
+          <Trans i18nKey="sidebar.forecast.header.eurekanm" ns="common" />
+        </Typography>
       </Stack>
       {[
         ResultsFilter.EUREKA_NMS,
@@ -320,13 +337,17 @@ function SidebarComponent({
             )
             : <ListItemAvatar />}
 
-          <ListItemText>{resultsfilter.name}</ListItemText>
+          <ListItemText>
+            <Trans i18nKey={resultsfilter.key} ns="common" />
+          </ListItemText>
         </StyledButton>
       ))}
 
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>EUREKA FARMS</Typography>
+        <Typography color="#fff" fontWeight={600} fontSize={16}>
+          <Trans i18nKey="sidebar.forecast.header.eurekafarm" ns="common" />
+        </Typography>
       </Stack>
       {[
         ResultsFilter.EUREKA_FARMS,
@@ -352,13 +373,15 @@ function SidebarComponent({
             )
             : <ListItemAvatar />}
 
-          <ListItemText>{resultsfilter.name}</ListItemText>
+          <ListItemText><Trans i18nKey={resultsfilter.key} ns="common" /></ListItemText>
         </StyledButton>
       ))}
 
       <Stack direction="row" height="3rem" alignItems="center">
         <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>BOZJA FRAGMENT FARMS</Typography>
+        <Typography color="#fff" fontWeight={600} fontSize={16}>
+          <Trans i18nKey="sidebar.forecast.header.bozjafarm" ns="common" />
+        </Typography>
       </Stack>
       {[
         ResultsFilter.FRAGMENT_FARM,
@@ -384,7 +407,7 @@ function SidebarComponent({
             )
             : <ListItemAvatar />}
 
-          <ListItemText>{resultsfilter.name}</ListItemText>
+          <ListItemText><Trans i18nKey={resultsfilter.key} ns="common" /></ListItemText>
         </StyledButton>
       ))}
     </List>

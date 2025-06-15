@@ -1,0 +1,572 @@
+{
+  "map": {
+    "regions": {
+      "southhorn": {
+        "namedLocation": {
+          "1": "Solitary Pavilion",
+          "2": "Occult Cloister"
+        },
+        "aetheryte": {
+          "1": "Expedition Base Camp",
+          "2": "The Wanderer's Haven",
+          "3": "Crystallized Caverns",
+          "4": "Stonemarsh",
+          "5": "Eldergrowth"
+        },
+        "trader": {
+          "1": "Expedition Antiquarian",
+          "2": "Expedition Trader",
+          "3": "Expedition Armorer"
+        },
+        "repair": "Repair",
+        "treasureCoffer": {
+          "bronze": "Bronze Treasure Coffer Spawn Location",
+          "silver": "Silver Treasure Coffer Spawn Location",
+          "pot": "Magic Pot Coffer Spawn Location",
+          "carrot": "Half-Eaten Carrot Spawn Location",
+          "carrot_unv": "Half-Eaten Carrot Spawn Location (Unverified)"
+        },
+        "fate": {
+          "pot1": {
+            "name": "Persistent Pots"
+          },
+          "pot2": {
+            "name": "Pleading Pots"
+          },
+          "1": {
+            "name": "A Delicate Balance",
+            "boss": "Dehumidifier"
+          },
+          "2": {
+            "name": "Fatal Allure",
+            "boss": "Execrator"
+          },
+          "3": {
+            "name": "The Golden Guardian",
+            "boss": "Gilded Headstone"
+          },
+          "4": {
+            "name": "Brain Drain",
+            "boss": "Advanced Aevis"
+          },
+          "5": {
+            "name": "King of the Crescent",
+            "boss": "Ropross"
+          },
+          "6": {
+            "name": "Rough Waters",
+            "boss": "Nammu"
+          },
+          "7": {
+            "name": "The Winged Terror",
+            "boss": "Giant Bird"
+          },
+          "8": {
+            "name": "An Unending Duty",
+            "boss": "Sisyphus"
+          },
+          "9": {
+            "name": "A Prying Eye",
+            "boss": "Observer"
+          },
+          "10": {
+            "name": "Serving Darkness",
+            "boss": "Lifereaper"
+          },
+          "11": {
+            "name": "Sworn to Soil",
+            "boss": "Mad Mudarch"
+          }
+        },
+        "ce": {
+          "1": {
+            "name": "Company of Stone",
+            "boss": "Megaloknight"
+          },
+          "2": {
+            "name": "Flame of Dusk",
+            "boss": "Hinkypunk"
+          },
+          "3": {
+            "name": "On the Hunt",
+            "boss": "Lion Rampant",
+            "drop": {
+              "oracle": "Oracle's Soul Shard"
+            },
+            "spawn": "Crescent Fan"
+          },
+          "4": {
+            "name": "Crawling Death",
+            "boss": "Death Claw"
+          },
+          "5": {
+            "name": "Noise Complaint",
+            "boss": "Neo Garula",
+            "spawn": "Crescent Garula"
+          },
+          "6": {
+            "name": "The Black Regiment",
+            "boss": "Black Star",
+            "drop": {
+              "ranger": "Ranger's Soul Shard",
+              "note": "Notes on Black Chocobos"
+            },
+            "spawn": "Crescent Panther"
+          },
+          "7": {
+            "name": "Trial by Claw",
+            "boss": "Crystal Dragon"
+          },
+          "8": {
+            "name": "Shark Attack",
+            "boss": "Nymian Petalodus",
+            "drop": {
+              "note": "Notes on the Nymian Petalodus"
+            },
+            "spawn": "Crescent Petalodite"
+          },
+          "9": {
+            "name": "The Unbridled",
+            "boss": "Crescent Berserker",
+            "drop": {
+              "berserker": "Berserker's Soul Shard",
+              "note": "Notes on the Crescent Berserker"
+            }
+          },
+          "10": {
+            "name": "From Times Bygone",
+            "boss": "Mythic Idol",
+            "drop": {
+              "note": "Notes on the Mythic Idol"
+            },
+            "spawn": "Crescent Byblos"
+          },
+          "11": {
+            "name": "Cursed Concern",
+            "boss": "Trade Tortoise",
+            "drop": {
+              "note": "Notes on the Trade Tortoise"
+            }
+          },
+          "12": {
+            "name": "With Extreme Prejudice",
+            "boss": "Command Urn"
+          },
+          "13": {
+            "name": "Eternal Watch",
+            "boss": "Repaired Lion"
+          },
+          "14": {
+            "name": "Calamity Bound",
+            "boss": "Cloister Demon",
+            "drop": {
+              "note": "Notes on the Cloister Demon"
+            },
+            "spawn": "Crescent Inkstain"
+          },
+          "15": {
+            "name": "Scourge of the Mind",
+            "boss": "Mysterious Mindflayer",
+            "spawn": "Crescent Monk"
+          }
+        },
+        "surveyPoint": {
+          "7": "#7: The Lost Citadel",
+          "9": "#9: The Vanishing Slope",
+          "12": "#12: Heathcliff",
+          "13": "#13: The Fell Warren",
+          "15": "#15: The Shadowed City",
+          "18": "#18: Eldergrowth",
+          "19": "#19: The Abandoned Ascent",
+          "21": "#21: The Silent Streets",
+          "22": "#22: The Ancient Stoneworks",
+          "23": "#23: The Wanderer's Haven",
+          "24": "#24: The Brazier"
+        },
+        "demiatma": {
+          "orpiment": "Orpiment Demiatma",
+          "caputMortuum": "Caput Mortuum Demiatma",
+          "realgar": "Realgar Demiatma",
+          "malachite": "Malachite Demiatma",
+          "azurite": "Azurite Demiatma",
+          "verdigris": "Verdigris Demiatma"
+        }
+      },
+      "bsf": {
+        "namedLocation": {
+          "1": "Orphaned Ruins",
+          "2": "Firelight's Coffin",
+          "3": "Castrum Lacus Litore",
+          "4": "The Alermuc Climb",
+          "5": "Old Bozja",
+          "6": "Southern Entrenchment"
+        },
+        "lostFindsCache": "Lost Finds Cache",
+        "trader": {
+          "quartermaster": "Resistance Quartermaster",
+          "historian": "Resistance Historian",
+          "supplier": "Resistance Supplier",
+          "appraiser": "Resistance Appraiser",
+          "locksmith": "Resistance Locksmith"
+        },
+        "aetheryte": {
+          "1": "Utya's Aegis",
+          "2": "Olana's Stand",
+          "3": "Lunya's Stand",
+          "4": "Camp Steva"
+        },
+        "skirmish": {
+          "1": {
+            "name": "All Pets Are Off"
+          },
+          "2": {
+            "name": "Brought to Heal"
+          },
+          "3": {
+            "name": "Can Carnivorous Plants Bloom Even on a Battlefield?"
+          },
+          "4": {
+            "name": "Conflicting with the First Law"
+          },
+          "5": {
+            "name": "More Machine Now than Man"
+          },
+          "6": {
+            "name": "None of Them Knew They Were Robots"
+          },
+          "7": {
+            "name": "Seeq and Destroy"
+          },
+          "8": {
+            "name": "Sneak and Spell"
+          },
+          "9": {
+            "name": "The Beasts Must Die"
+          },
+          "10": {
+            "name": "Unrest for the Wicked"
+          },
+          "11": {
+            "name": "Heavy Boots of Lead"
+          },
+          "12": {
+            "name": "Help Wanted"
+          },
+          "13": {
+            "name": "No Camping Allowed"
+          },
+          "14": {
+            "name": "Parts and Recreation"
+          },
+          "15": {
+            "name": "Pyromancer Supreme"
+          },
+          "16": {
+            "name": "Red (Chocobo) Alert"
+          },
+          "17": {
+            "name": "Scavengers of Man's Sorrow"
+          },
+          "18": {
+            "name": "The Element of Supplies"
+          },
+          "19": {
+            "name": "The Monster Mash"
+          },
+          "20": {
+            "name": "Unicorn Flakes"
+          },
+          "21": {
+            "name": "Demonstrably Demonic"
+          },
+          "22": {
+            "name": "Desperately Seeking Something"
+          },
+          "23": {
+            "name": "For Absent Friends"
+          },
+          "24": {
+            "name": "I'm a Mechanical Man"
+          },
+          "25": {
+            "name": "Let Slip the Dogs of War"
+          },
+          "26": {
+            "name": "Murder Death Kill"
+          },
+          "27": {
+            "name": "My Family and Other Animals"
+          },
+          "28": {
+            "name": "Of Steel and Flame"
+          },
+          "29": {
+            "name": "Supplies Party"
+          },
+          "30": {
+            "name": "The War Against the Machines"
+          },
+          "31": {
+            "name": "The Wild Bunch"
+          },
+          "32": {
+            "name": "Waste the Rainbow"
+          }
+        },
+        "ce": {
+          "1": {
+            "name": "Kill It with Fire",
+            "boss": "Peerifool",
+            "drop": {
+              "note": "Field Notes on Clarricie",
+              "fabric": "Garlean Synthetic Fabric"
+            },
+            "spawn": "All Pets Are Off"
+          },
+          "2": {
+            "name": "The Baying of the Hound(s)",
+            "boss": "Canus Dirus",
+            "spawn": "4th Legion Death Claw"
+          },
+          "3": {
+            "name": "The Shadow of Death's Hand",
+            "boss": "Akbaba",
+            "drop": {
+              "note": "Field Notes on Xeven"
+            },
+            "spawn": "4th Legion Roader"
+          },
+          "4": {
+            "name": "Vigil for the Lost",
+            "boss": "Vigilia",
+            "spawn": "More Machine Now than Man"
+          },
+          "5": {
+            "name": "Patriot Games",
+            "boss": "Patriot",
+            "spawn": "The Fires of War"
+          },
+          "6": {
+            "name": "The Final Furlong",
+            "boss": "Spartoi",
+            "drop": {
+              "note": "Field Notes on Llofii"
+            },
+            "spawn": "Unicorn Flakes"
+          },
+          "7": {
+            "name": "The Fires of War",
+            "boss": "Pyrobolus Mater",
+            "spawn": "4th Legion Gunship"
+          },
+          "8": {
+            "name": "The Hunt for Red Choctober",
+            "boss": "Red Comet",
+            "spawn": "Red (Chocobo) Alert"
+          },
+          "9": {
+            "name": "Metal Fox Chaos",
+            "boss": "Dáinsleif",
+            "drop": {
+              "resolve": "10x Forgotten Fragment of Resolve"
+            },
+            "spawn": "Of Steel and Flame"
+          },
+          "10": {
+            "name": "Rise of the Robots",
+            "boss": "Mark XIII-X Magitek Laborer",
+            "drop": {
+              "note": "Field Notes on Sicinius"
+            },
+            "spawn": "I'm a Mechanical Man"
+          },
+          "11": {
+            "name": "Trampled under Hoof",
+            "boss": "Eale",
+            "drop": {
+              "resolve": "10x Forgotten Fragment of Resolve"
+            },
+            "spawn": "4th Legion Armored Weapon"
+          },
+          "12": {
+            "name": "Where Strode the Behemoth",
+            "boss": "Chlevnik",
+            "drop": {
+              "resolve": "10x Forgotten Fragment of Resolve"
+            },
+            "spawn": "Trampled under Hoof"
+          }
+        },
+        "duel": {
+          "1": {
+            "name": "Aces High"
+          },
+          "2": {
+            "name": "Beast of Man"
+          },
+          "3": {
+            "name": "And the Flames Went Higher"
+          }
+        }
+      },
+      "hydatos": {
+        "namedLocation": {
+          "1": "The Aetherbridge Foundation",
+          "2": "The Western Columns",
+          "3": "The Central Columns",
+          "4": "The Eastern Columns",
+          "5": "The Crystal Dragon's Bloom"
+        },
+        "aetheryte": {
+          "1": "Central Point",
+          "2": "Unverified Research",
+          "3": "The Dormitory"
+        },
+        "elemental": "Elemental Spawn Location",
+        "logosManipulator": "Logos Manipulator",
+        "magiaMelder": "Magia Melder",
+        "trader": {
+          "trader": "Trader",
+          "shop": "Shop",
+          "engineer": "Expedition Engineer",
+          "alchemist": "Expedition Alchemist",
+          "drake": "Drake",
+          "gear": "Eureka Weapons & Gear"
+        },
+        "repair": "Repair",
+        "coffer": "Bunny Coffer Spawn Location",
+        "nm": {
+          "50": {
+            "name": "Lv50 Khalamari",
+            "title": "I Ink, Therefore I Am",
+            "boss": "Khalamari",
+            "spawn": "Xzomit"
+          },
+          "bunny": {
+            "name": "Bunny",
+            "title": "Drink Me",
+            "boss": "Bunny FATE"
+          },
+          "51": {
+            "name": "Lv51 Stegodon",
+            "title": "From Tusk till Dawn",
+            "boss": "Stegodon",
+            "spawn": "Hydatos Primelephas"
+          },
+          "52": {
+            "name": "Lv52 Molech",
+            "title": "Bullheaded Berserker",
+            "boss": "Molech",
+            "spawn": "Val Nullchu"
+          },
+          "53": {
+            "name": "Lv53 Piasa",
+            "title": "Mad, Bad, and Fabulous to Know",
+            "boss": "Piasa",
+            "spawn": "Vivid Gastornis"
+          },
+          "54": {
+            "name": "Lv54 Frostmane",
+            "title": "Fearful Symmetry",
+            "boss": "Frostmane",
+            "spawn": "Northern Tiger"
+          },
+          "55": {
+            "name": "Lv55 Daphne",
+            "title": "Crawling Chaos",
+            "boss": "Daphne",
+            "spawn": "Dark Void Monk"
+          },
+          "56": {
+            "name": "Lv56 King Goldemar",
+            "title": "Duty-free",
+            "boss": "King Goldemar",
+            "spawn": "Hydatos Wraith"
+          },
+          "57": {
+            "name": "Lv57 Leuke",
+            "title": "Leukewarm Reception",
+            "boss": "Leuke",
+            "spawn": "Tigerhawk"
+          },
+          "58": {
+            "name": "Lv58 Barong",
+            "title": "Robber Barong",
+            "boss": "Barong",
+            "spawn": "Laboratory Lion"
+          },
+          "59": {
+            "name": "Lv59 Ceto",
+            "title": "Stone-cold Killer",
+            "boss": "Ceto",
+            "spawn": "Hydatos Delphine"
+          },
+          "60": {
+            "name": "Lv60 Provenance Watcher",
+            "title": "Crystalline Provenance",
+            "boss": "Provenance Watcher",
+            "spawn": "Crystal Claw"
+          },
+          "ovni": {
+            "name": "Ovni",
+            "title": "I Don't Want to Believe",
+            "boss": "Ovni"
+          },
+          "support": {
+            "name": "Support",
+            "title": "The Baldesion Arsenal: Expedition Support",
+            "boss": "Tristitia"
+          }
+        }
+      }
+    },
+    "category": {
+      "general": "General",
+      "encounters": "Encounters",
+      "enemies": "Enemies",
+      "progression": "Progression"
+    },
+    "layer": {
+      "namedLocations": "Named Locations",
+      "aetherytes": "Aetherytes",
+      "traders": "Traders",
+      "repair": "Repair",
+      "treasureCoffers": "Treasure Coffers",
+      "carrots": "Half-Eaten Carrots",
+      "fates": "FATEs",
+      "magicPotFates": "Magic Pot FATEs",
+      "criticalEngagements": "Critical Engagements",
+      "magicPotCoffers": "Magic Pot Coffers",
+      "mobLevels": "Mob Levels",
+      "surveyPoints": "Survey Points",
+      "demiatmaAreas": "Demiatma Areas",
+      "shops": "Shops",
+      "skirmishes": "Skirmishes",
+      "duels": "Duels",
+      "starMobs": "Star Mobs",
+      "magitekMobs": "Magitek Mobs",
+      "fragmentMobs": "Fragment Mobs",
+      "quests": "Quests",
+      "fieldNotes": "Field Notes",
+      "lostFindCaches": "Lost Finds Caches",
+      "elementals": "Elementals",
+      "logosManipulators": "Logos Manipulators",
+      "magiaMelders": "Magia Melders",
+      "nms": "NMs",
+      "bunnyCoffers": "Bunny Coffers",
+      "baPortals": "BA Portals",
+      "mobs": "Mobs",
+      "nmPrepMobs": "NM Prep Mobs",
+      "sprites": "Sprites"
+    },
+    "captions": {
+      "ce": "Critical Engagement",
+      "boss": "Boss",
+      "spawnedBy": "Spawned by",
+      "rewards": "Rewards",
+      "unlocksAt": "Unlocks at",
+      "level": "Level",
+      "nm": "Notorious Monster"
+    }
+  }
+}

@@ -2,8 +2,11 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function BozjaCETooltipComponent({ markerData }) {
+  const { t } = useTranslation('map');
+
   const renderSpawnedBy = () => {
     if (markerData.metadata.spawnedBy) {
       return (
@@ -16,7 +19,7 @@ export default function BozjaCETooltipComponent({ markerData }) {
               height="32px"
             />
           </Box>
-          <Typography variant="button">{markerData.metadata.spawnedBy.name}</Typography>
+          <Typography variant="button">{t(`map.regions.${markerData.metadata.spawnedBy.name}`)}</Typography>
         </Stack>
       );
     }
@@ -35,7 +38,7 @@ export default function BozjaCETooltipComponent({ markerData }) {
               height="32px"
             />
           </Box>
-          <Typography variant="button">{reward.name}</Typography>
+          <Typography variant="button">{t(`map.regions.${reward.name}`)}</Typography>
         </Stack>
       ));
     }
@@ -44,12 +47,12 @@ export default function BozjaCETooltipComponent({ markerData }) {
 
   return (
     <Stack>
-      <Typography variant="h6">Critical Engagement</Typography>
-      <Typography variant="h6">Boss</Typography>
-      <Typography variant="button">{markerData.metadata.boss}</Typography>
-      {markerData.metadata.spawnedBy ? <Typography variant="h6">Spawned by</Typography> : null}
+      <Typography variant="h6">{t('map.captions.ce')}</Typography>
+      <Typography variant="h6">{t('map.captions.boss')}</Typography>
+      <Typography variant="button">{t(`map.regions.${markerData.metadata.boss}`)}</Typography>
+      {markerData.metadata.spawnedBy ? <Typography variant="h6">{t('map.captions.spawnedBy')}</Typography> : null}
       {renderSpawnedBy()}
-      {markerData.metadata.rewards ? <Typography variant="h6">Rewards</Typography> : null}
+      {markerData.metadata.rewards ? <Typography variant="h6">{t('map.captions.rewards')}</Typography> : null}
       {renderRewards()}
     </Stack>
   );
