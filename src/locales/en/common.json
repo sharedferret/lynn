@@ -80,6 +80,21 @@
     "current-time": "Current Time",
     "current-weather": "Current Weather"
   },
+  "skill-type": {
+    "ability": "Ability",
+    "weaponskill": "Weaponskill",
+    "spell": "Spell"
+  },
+  "action-detail-label": {
+    "duration": "<0>Duration:</0> <1>{{duration}}</1>",
+    "cast": "<0>Cast:</0> <1>{{cast}}s</1>",
+    "recast": "<0>Recast:</0> <1>{{recast}}s</1>",
+    "mp": "<0>MP:</0> <1>{{mp}}</1>",
+    "charges": "<0>Charges:</0> <1>{{charges}}</1>",
+    "rank": "Rank: {{rank}}",
+    "usable-by": "Usable by: ",
+    "unlock": "Unlock:"
+  },
   "settings": {
     "title": "Settings",
     "theme_title": "Site Theme",
@@ -93,6 +108,8 @@
   },
   "common": {
     "home": "Home",
-    "close": "Close"
+    "close": "Close",
+    "back": "Back",
+    "start-over": "Start Over"
   }
 }

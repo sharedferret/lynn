@@ -1,4 +1,9 @@
 {
+  "sidebar": {
+    "occult": {
+      "header": "KRESZENTIA"
+    }
+  },
   "settings": {
     "title": "Einstellungen",
     "theme_title": "Site Theme",

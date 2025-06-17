@@ -1,20 +1,18 @@
 {
   "phantomJobs": {
     "Freelancer": {
-      "name": "Freelancer",
+      "key": "freelancer",
       "image": "freelancer-icon",
       "sprite": "freelancer-sprite",
       "unlockLevel": 0,
       "code": "fr",
-      "jobText": "Reminiscences of journeys just begun and those long ended embody the freelancer's myriad supportive techniques.",
-      "unlockGuide": "Unlocked by default.",
       "supportActions": {
         "Occult Resuscitation": {
           "name": "Occult Resuscitation",
           "image": "occult-resuscitation.png",
           "unlockLevel": 5,
           "description": "Restores 30% of maximum HP.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 2.5,
           "code": "fr1"
         },
@@ -23,19 +21,17 @@
           "image": "occult-treasuresight.png",
           "unlockLevel": 10,
           "description": "Detects the number of treasure coffers presently on the Occult Crescent.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 10,
           "code": "fr2"
         }
       }
     },
     "Knight": {
-      "name": "Knight",
+      "key": "knight",
       "image": "knight-icon",
       "sprite": "knight-sprite",
-      "unlockGuide": "South Horn intro quests.",
       "code": "kn",
-      "jobText": "Emulate these ancient memories of a loyal, honorable knight and defend your comrades from harm.",
       "supportActions": {
         "Phantom Guard": {
           "name": "Phantom Guard",
@@ -48,7 +44,7 @@
             }
           ],
           "description": "Reduces damage taken by 60%.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 120,
           "duration": "10s",
           "code": "kn1"
@@ -64,7 +60,7 @@
             }
           ],
           "description": "Gradually restores HP.\nCure Potency: 3,000\nAdditional Effect: Grants Enduring Fortitude to self and nearby party members when executed within proximity of a knowledge crystal.\nEnduring Fortitude Effect: Reduces target's damage taken by 10% (duration: 30m).",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 120,
           "duration": "10s",
           "code": "kn2"
@@ -74,7 +70,7 @@
           "image": "occult-heal.png",
           "unlockLevel": 3,
           "description": "Restores target's HP.\nCure Potency: 30,000",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 5,
           "mpCost": 5000,
           "code": "kn3"
@@ -84,7 +80,7 @@
           "image": "Pledge.png",
           "unlockLevel": 6,
           "description": "Grants 2 stacks of Pledge to self or target party member.\nPledge Effect: Renders target impervious to most attacks.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 120,
           "duration": "10s",
           "code": "kn4"
@@ -101,12 +97,10 @@
       "totalExp": "16,800"
     },
     "Monk": {
-      "name": "Monk",
+      "key": "monk",
       "image": "monk-icon",
       "sprite": "monk-sprite",
-      "unlockGuide": "South Horn intro quests.",
       "code": "mo",
-      "jobText": "These memories of a monk's unflinching discipline and quiet meditation offer a path to unparalleled combat mastery.",
       "supportActions": {
         "Phantom Kick": {
           "name": "Phantom Kick",
@@ -123,7 +117,7 @@
             }
           ],
           "description": "Leap towards your target, delivering an attack with a potency of 100 to all enemies in a straight line before you.\nPotency scales with item level.\nAdditional Effect: Grants a stack of Phantom Kick up to a maximum of 3, increasing damage dealt by 5%.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "40s",
           "recastTime": 30,
           "code": "mo1"
@@ -133,7 +127,7 @@
           "image": "occult-counter.png",
           "unlockLevel": 2,
           "description": "Delivers an attack with a potency of 150 to all enemies in a cone before you.\nPotency scales with item level.\nCan only be executed immediately after parrying an attack.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 30,
           "code": "mo2"
         },
@@ -142,7 +136,7 @@
           "image": "Counterstance.png",
           "unlockLevel": 3,
           "description": "Increases parry rate by 100%.\nAdditional Effect: Grants Fleetfooted to self and nearby party members when executed within proximity of a knowledge crystal.\nFleetfooted Effect: Increases movement speed for 30m.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "duration": "60s",
           "recastTime": 2.5,
           "code": "mo3"
@@ -152,7 +146,7 @@
           "image": "occult-chakra.png",
           "unlockLevel": 5,
           "description": "Restores 30% of maximum HP and MP.\nAdditional Effect: When HP is less than 30%, restores 70% of maximum HP.\nAdditional Effect: When MP is less than 30%, restores 70% of maximum MP.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 90,
           "code": "mo4"
         }
@@ -168,19 +162,17 @@
       "totalExp": "16,800"
     },
     "Time Mage": {
-      "name": "Time Mage",
+      "key": "time-mage",
       "image": "timemage-icon",
       "sprite": "timemage-sprite",
-      "unlockGuide": "Purchase - Time Mage's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian.",
       "code": "ti",
-      "jobText": "The memories of this former time mage reveal much about the laws of time and how to manipulate them to your advantage.",
       "supportActions": {
         "Occult Slowga": {
           "name": "Occult Slowga",
           "image": "occult-slowga.png",
           "unlockLevel": 1,
           "description": "Afflict target and all enemies nearby it with Slow +80%.",
-          "abilityType": "Spell",
+          "abilityType": "spell",
           "duration": "30s",
           "castTime": 1.5,
           "recastTime": 2.5,
@@ -191,7 +183,7 @@
           "image": "occult-comet.png",
           "unlockLevel": 2,
           "description": "Deals unaspected damage with a potency of 500 to target and all enemies nearby it.\nPotency scales with item level. ",
-          "abilityType": "Spell",
+          "abilityType": "spell",
           "castTime": 8,
           "recastTime": 60,
           "code": "ti2"
@@ -201,7 +193,7 @@
           "image": "occult-mage-masher.png",
           "unlockLevel": 3,
           "description": "Lowers target's magic attack power by 10%.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "30s",
           "recastTime": 30,
           "code": "ti3"
@@ -211,7 +203,7 @@
           "image": "occult-dispel.png",
           "unlockLevel": 4,
           "description": "Removes one beneficial status from target, with some exceptions.",
-          "abilityType": "Spell",
+          "abilityType": "spell",
           "recastTime": 2.5,
           "code": "ti4"
         },
@@ -220,7 +212,7 @@
           "image": "occult-quick.png",
           "unlockLevel": 5,
           "description": "Reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay of self or target party member by 10%, and reduces cast times for spells by 10 seconds.\nAdditional Effect: Greatly increases movement speed for 10s.",
-          "abilityType": "Spell",
+          "abilityType": "spell",
           "castTime": 1.5,
           "recastTime": 120,
           "code": "ti5"
@@ -236,12 +228,10 @@
       "totalExp": "16,800"
     },
     "Bard": {
-      "name": "Bard",
+      "key": "bard",
       "image": "bard-icon",
       "sprite": "bard-sprite",
-      "unlockGuide": "South Horn intro quests.",
       "code": "ba",
-      "jobText": "These memories echo with the vivid imagery of a bard's uplifting song. Utilize them to employ the very same ballads in battle.",
       "supportActions": {
         "Offensive Aria": {
           "name": "Offensive Aria",
@@ -262,7 +252,7 @@
             }
           ],
           "description": "Increases damage dealt by self and nearby party members by 1%.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "70s",
           "recastTime": 5,
           "code": "ba1"
@@ -272,7 +262,7 @@
           "image": "romeos-ballad.png",
           "unlockLevel": 2,
           "description": "Freezes time for all nearby enemies readying an attack.\nAdditional Effect: Grants Romeo's Ballad to self and nearby party members when executed within proximity of a knowledge crystal\nRomeo's Ballad Effect: Increases Phantom EXP earned through battle by 10% for 30m.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "3s",
           "recastTime": 15,
           "code": "ba2"
@@ -288,7 +278,7 @@
             }
           ],
           "description": "Gradually restores own HP and the HP of all nearby party members.\nCure Potency: 3,000\nAdditional Effect: Increases maximum HP by 20% and restores the amount increased.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "30s",
           "recastTime": 15,
           "code": "ba3"
@@ -298,7 +288,7 @@
           "image": "heros-rime.png",
           "unlockLevel": 4,
           "description": "Increases damage dealt and healing potency of self and nearby party members by 10%, while reducing damage taken by 10%.\nEffect cannot be stacked with Offensive Aria.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "20s",
           "recastTime": 120,
           "code": "ba4"
@@ -313,12 +303,10 @@
       "totalExp": "14,400"
     },
     "Geomancer": {
-      "name": "Geomancer",
+      "key": "geomancer",
       "image": "geomancer-icon",
       "sprite": "geomancer-sprite",
-      "unlockGuide": "Purchase - Geomancer's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian.",
       "code": "ge",
-      "jobText": "This geomancer's recollections brim with boundless understanding of nature's laws. Access them to employ weather-dependent techniques.",
       "supportActions": {
         "Battle Bell": {
           "name": "Battle Bell",
@@ -331,7 +319,7 @@
             }
           ],
           "description": "Grants Battle Bell to self or target player.\nBattle Bell Effect: Grants a stack of Battle's Clangor upon taking damage, up to a maximum of 8\nBattle's Clangor Effect: Increases damage dealt by 3％ for 30s.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "60s",
           "recastTime": 30,
           "code": "ge1"
@@ -341,7 +329,7 @@
           "image": "weather.png",
           "unlockLevel": 2,
           "description": "Grants a beneficial effect to self and nearby party members based on the weather.\nSunbath Effect: Restores own HP and the HP of nearby party members. Cure Potency: 50,000.\nCloudy Caress: Increases HP recovery via healing actions for self and nearby party members by 30%.\nBlessed Rain Effect: Creates a barrier around self and nearby party members that absorbs 30,000 damage.\nMisty Mirage Effect: Increases evasion for self and nearby party members by 40%.\nHasty Mirage Effect: Increases movement speed for self and nearby party members by 20%.\nAetherial Gain Effect: Increases damage dealt by self and nearby party members by 10%.",
-          "abilityType": "Spell",
+          "abilityType": "spell",
           "duration": "20s",
           "recastTime": 40,
           "code": "ge2"
@@ -357,7 +345,7 @@
             }
           ],
           "description": "Grants Ringing Respite to self or target player.\nRinging Respite Effect: Heals self or target player when damage is taken.\nCure Potency: 2,000",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "60s",
           "recastTime": 30,
           "code": "ge3"
@@ -367,7 +355,7 @@
           "image": "Suspend.png",
           "unlockLevel": 4,
           "description": "Grants Suspend to self or target party member, becoming lighter than air and immune to certain mechanics.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "60s",
           "recastTime": 2.5,
           "code": "ge4"
@@ -383,12 +371,10 @@
       "totalExp": "14,400"
     },
     "Ranger": {
-      "name": "Ranger",
+      "key": "ranger",
       "image": "ranger-icon",
       "sprite": "ranger-sprite",
-      "unlockGuide": "Unlocked from the Ranger's Soul Shard, acquired from the Critical Engagement \"The Black Regiment.\"",
       "code": "ra",
-      "jobText": "Channel these memories of a proud, passionate ranger and learn to call forth the forces of nature in battle. ",
       "supportActions": {
         "Phantom Aim": {
           "name": "Phantom Aim",
@@ -405,7 +391,7 @@
             }
           ],
           "description": "Increases critical hit rate and direct hit rate by 15％, and guarantees that all attacks land.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "30s",
           "recastTime": 120,
           "code": "ra1"
@@ -415,7 +401,7 @@
           "image": "occult-featherfoot.png",
           "unlockLevel": 2,
           "description": "Quickly dash 15 yalms forward.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 10,
           "code": "ra2"
         },
@@ -424,7 +410,7 @@
           "image": "occult-falcon.png",
           "unlockLevel": 4,
           "description": "Delivers an attack with a potency of 10 to all enemies at the designated area.\nPotency scales with item level.\nAdditional Effect: Stun\nAdditional Effect: Triggers traps at the designated area.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "duration": "4s",
           "recastTime": 2.5,
           "code": "ra3"
@@ -434,7 +420,7 @@
           "image": "occult-unicorn.png",
           "unlockLevel": 6,
           "description": "Creates a barrier around self and all party members near you that absorbs 40,000 damage.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "20s",
           "recastTime": 120,
           "code": "ra4"
@@ -451,12 +437,10 @@
       "totalExp": "16,800"
     },
     "Berserker": {
-      "name": "Berserker",
+      "key": "berserker",
       "image": "berserker-icon",
       "sprite": "berserker-sprite",
-      "unlockGuide": "Unlocked from the Berserker's Soul Shard, acquired from the Critical Engagement \"The Unbridled.\"",
       "code": "be",
-      "jobText": "Savagery and unfailing courage characterize the recollections of this former berserker. These techniques entail great risk and even greater reward.",
       "supportActions": {
         "Rage": {
           "name": "Rage",
@@ -469,7 +453,7 @@
             }
           ],
           "description": "Become enraged, delivering an attack with a potency of 150 to all enemies in a cone before you.\nPotency scales with item level.\nImmune to certain status effects, as well as most knockback and draw-in effects.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "10s",
           "recastTime": 60,
           "code": "be1"
@@ -479,7 +463,7 @@
           "image": "deadly-blow.png",
           "unlockLevel": 2,
           "description": "Delivers an attack with a potency of 200.\nPotency scales with item level.\nAdditional Effect: Potency increases by up to 250 as your HP decreases.\nAdditional Effect: Increases potency up to 2,000 based on the amount of damage taken while under the effect of Pent-up Rage.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 30,
           "code": "be2"
         }
@@ -492,19 +476,17 @@
       "totalExp": "14,400"
     },
     "Chemist": {
-      "name": "Chemist",
+      "key": "chemist",
       "image": "chemist-icon",
       "sprite": "chemist-sprite",
-      "unlockGuide": "Purchase - Chemist's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian.",
       "code": "ch",
-      "jobText": "This chemist's memories offer knowledge of ancient medicinal theory, including restorative techniques sure to turn the tide of battle in your favor. ",
       "supportActions": {
         "Occult Potion": {
           "name": "Occult Potion",
           "image": "occult-potion.png",
           "unlockLevel": 1,
           "description": "Consume an Occult Potion to completely restore HP of self or target.\nCan only be executed while you possess an Occult Potion.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 5,
           "code": "ch1"
         },
@@ -513,7 +495,7 @@
           "image": "occult-ether.png",
           "unlockLevel": 2,
           "description": "Consume an Occult Potion to completely restore MP of self or target.\nCan only be executed while you possess an Occult Potion.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 5,
           "code": "ch2"
         },
@@ -522,7 +504,7 @@
           "image": "revive.png",
           "unlockLevel": 3,
           "description": "Resurrects target to a weakened state.\nCan also be cast on targets with Resurrection Restriction.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 5,
           "code": "ch3"
         },
@@ -531,9 +513,9 @@
           "image": "occult-elixir.png",
           "unlockLevel": 4,
           "description": "Consume an Occult Elixir to completely restore HP and MP of self and nearby party members.\nCan only be executed while you possess an Occult Elixir.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 5,
-          "code": "ch3"
+          "code": "ch4"
         }
       },
       "exp": {
@@ -545,12 +527,10 @@
       "totalExp": "14,400"
     },
     "Cannoneer": {
-      "name": "Cannoneer",
+      "key": "cannoneer",
       "image": "cannoneer-icon",
       "sprite": "cannoneer-sprite",
-      "unlockGuide": "Purchase - Cannoneer's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian.",
       "code": "ca",
-      "jobText": "A mastery of ballistics both scholarly and practical infuse this cannoneer's recollections. Emulate them to bombard foes with powerful projectiles.",
       "supportActions": {
         "Phantom Fire": {
           "name": "Phantom Fire",
@@ -563,7 +543,7 @@
               "effect": "Grants a 5% chance to instantly kill targets when executing Phantom Fire, with some exceptions."
             }
           ],
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 30,
           "code": "ca1"
         },
@@ -572,7 +552,7 @@
           "image": "holy-cannon.png",
           "unlockLevel": 2,
           "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency increases to 500 when used against undead enemies.\nPotency scales with item level.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 30,
           "code": "ca2"
         },
@@ -581,7 +561,7 @@
           "image": "dark-cannon.png",
           "unlockLevel": 3,
           "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Blind",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 30,
           "duration": "30s",
           "code": "ca3"
@@ -591,7 +571,7 @@
           "image": "shock-cannon.png",
           "unlockLevel": 4,
           "description": "Deals lightning damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Paralysis\nShares a recast timer with Dark Cannon.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 30,
           "duration": "18s",
           "code": "ca4"
@@ -601,7 +581,7 @@
           "image": "silver-cannon.png",
           "unlockLevel": 6,
           "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Afflicts target with Silver Sickness, reducing damage target deals by 10% and increasing damage taken by 5%.\nShares a recast timer with Holy Cannon.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 30,
           "duration": "70s",
           "code": "ca5"
@@ -618,19 +598,17 @@
       "totalExp": "14,400"
     },
     "Samurai": {
-      "name": "Samurai",
+      "key": "samurai",
       "image": "samurai-icon",
       "sprite": "samurai-sprite",
-      "unlockGuide": "Purchase - Samurai's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian.",
       "code": "sa",
-      "jobText": "Rigorous training and a strict code of chivalry personify these recollections of an ancient samurai. Access them to fell foes in a single deadly strike.",
       "supportActions": {
         "Mineuchi": {
           "name": "Mineuchi",
           "image": "Mineuchi.png",
           "unlockLevel": 1,
           "description": "Stuns target.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 10,
           "duration": "6s",
           "code": "sa1"
@@ -640,7 +618,7 @@
           "image": "Shirahadori.png",
           "unlockLevel": 2,
           "description": "Renders you impervious to physical damage for one attack.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 30,
           "duration": "4s",
           "code": "sa2"
@@ -656,7 +634,7 @@
             }
           ],
           "description": "Delivers an attack with a potency of 300 to all enemies in a cone before you.\nPotency scales with item level.\nAdditional Effect: 5% chance to kill target instantly, with some exceptions.",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "castTime": 1.3,
           "recastTime": 40,
           "code": "sa3"
@@ -666,7 +644,7 @@
           "image": "Zeninage.png",
           "unlockLevel": 4,
           "description": "Consume an Occult Coffer to deliver a guaranteed strike with a potency of 1,500.\nPotency scales with item level.\nCan only be executed while you possess an Occult Coffer. ",
-          "abilityType": "Weaponskill",
+          "abilityType": "weaponskill",
           "recastTime": 120,
           "code": "sa4"
         }
@@ -681,19 +659,17 @@
       "totalExp": "19,200"
     },
     "Thief": {
-      "name": "Thief",
+      "key": "thief",
       "image": "thief-icon",
       "sprite": "thief-sprite",
-      "unlockGuide": "Purchase - Thief's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian.",
       "code": "th",
-      "jobText": "These recollections of a dextrous, principled thief grant access to survival techniques that will doubtless prove useful upon the isle.",
       "supportActions": {
         "Occult Sprint": {
           "name": "Occult Sprint",
           "image": "occult-sprint.png",
           "unlockLevel": 1,
           "description": "Greatly increases movement speed.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 30,
           "duration": "10s",
           "code": "th1"
@@ -703,7 +679,7 @@
           "image": "steal.png",
           "unlockLevel": 2,
           "description": "Increases the chance of additional items being dropped by target if Steal is dealt before, or as, the finishing blow.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 30,
           "code": "th2"
         },
@@ -712,7 +688,7 @@
           "image": "vigilance.png",
           "unlockLevel": 3,
           "description": "Grants Vigilance.\nEffect changes to Foreseen Offense when entering combat.\nForeseen Offense Effect: Increases critical hit rate by 60% for 20s.\nCannot be executed while in combat.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "20s",
           "recastTime": 10,
           "code": "th3"
@@ -722,7 +698,7 @@
           "image": "trap-detection.png",
           "unlockLevel": 4,
           "description": "Reveals all traps and secret passages within a 15-yalm radius.\nCan only be executed when inside a dungeon. ",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 2,
           "code": "th4"
         },
@@ -731,7 +707,7 @@
           "image": "pilfer-weapon.png",
           "unlockLevel": 5,
           "description": "Lowers target's physical attack power by 10%.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "60s",
           "recastTime": 30,
           "code": "th5"
@@ -756,19 +732,17 @@
       "totalExp": "19,200"
     },
     "Oracle": {
-      "name": "Oracle",
+      "key": "oracle",
       "image": "oracle-icon",
       "sprite": "oracle-sprite",
-      "unlockGuide": "Unlocked from the Oracle's Soul Shard, acquired from the Critical Engagement \"On The Hunt.\"",
       "code": "or",
-      "jobText": "Endowed with an oracle's supernatural senses and prophetic insights, these memories promise mastery over a wealth of supportive skills. ",
       "supportActions": {
         "Predict": {
           "name": "Predict",
           "image": "predict.png",
           "unlockLevel": 1,
           "description": "Grants Prediction of Judgment, Prediction of Cleansing, Prediction of Blessing, or Prediction of Starfall, allowing the execution of an action depending on the prophecy granted.\nPhantom Judgment Action Effect: Deals unaspected damage to nearby enemies while healing self and nearby party members\nCleansing Action Effect: Deals unaspected damage to nearby enemies and freezes time\nBlessing Action Effect: Heals self and nearby party members, as well as granting Regen\nStarfall Action Effect: Deals unaspected damage to self and nearby enemies\nWhen the effect of a prediction expires, a new prophecy is granted. If all predictions expire without a commensurate action being used, the prophecy changes to False Prediction, causing damage over time to self with a potency of 50,000.",
-          "abilityType": "Spell",
+          "abilityType": "spell",
           "recastTime": 60,
           "duration": "30s",
           "code": "or1"
@@ -778,7 +752,7 @@
           "image": "phantom-judgment.png",
           "unlockLevel": 1,
           "description": "Deals unaspected damage with a potency of 400 to all nearby enemies.\nPotency scales with item level.\nAdditional Effect: Restores own HP and the HP of all nearby party members.\nCure Potency: 40,000",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 1,
           "code": "or1a"
         },
@@ -787,7 +761,7 @@
           "image": "cleansing.png",
           "unlockLevel": 1,
           "description": "Deals unaspected damage with a potency of 500 to all nearby enemies.\nPotency scales with item level.\nAdditional Effect: Freezes time for nearby enemies readying an attack",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "4s",
           "recastTime": 1,
           "code": "or1b"
@@ -797,7 +771,7 @@
           "image": "blessing.png",
           "unlockLevel": 1,
           "description": "Restores own HP and the HP of all nearby party members.\nCure Potency: 70,000\nAdditional Effect: Regen\nCure Potency: 3,000\nDuration: 15s ",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 1,
           "code": "or1c"
         },
@@ -806,7 +780,7 @@
           "image": "starfall.png",
           "unlockLevel": 1,
           "description": "Deals unaspected damage to self totaling up to 90% of maximum HP, and to all nearby enemies with a potency of 1,000.\nPotency against enemies increases according to your item level. ",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "recastTime": 1,
           "code": "or1d"
         },
@@ -815,7 +789,7 @@
           "image": "recuperation.png",
           "unlockLevel": 2,
           "description": "Grants Recuperation to self or target party member.\nWhen effect expires, removes a single detrimental effect from target and all nearby party members.\nRecuperation changes to Fortified Recuperation if effect is not triggered.\nFortified Recuperation Effect: Removes a detrimental effect from target and nearby party members if afflicted with a detrimental effect\nDuration: 3s\nShares a recast timer with Phantom Doom. ",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "20s",
           "recastTime": 30,
           "code": "or2"
@@ -825,7 +799,7 @@
           "image": "phantom-doom.png",
           "unlockLevel": 3,
           "description": "Chance to afflict target with Phantom Doom.\nTarget is incapacitated when effect expires.\nShares a recast timer with Recuperation.\nHas no effect on targets outside of combat.\nEffect ends upon target leaving combat",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "8s - 60s",
           "recastTime": 30,
           "code": "or3"
@@ -835,7 +809,7 @@
           "image": "phantom-rejuvenation.png",
           "unlockLevel": 4,
           "description": "Grants Phantom Rejuvenation to self or target party member.\nPhantom Rejuvenation Effect: Restores HP of target and nearby party members within 30 yalms when effect expires\nCure Potency: 90,000",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "20s",
           "recastTime": 60,
           "code": "or4"
@@ -845,7 +819,7 @@
           "image": "invulnerability.png",
           "unlockLevel": 5,
           "description": "Prevents attacks from reducing a target party member's HP to less than 1.",
-          "abilityType": "Ability",
+          "abilityType": "ability",
           "duration": "8s",
           "recastTime": 180,
           "code": "or5"

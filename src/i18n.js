@@ -6,7 +6,7 @@ import resourcesToBackend from 'i18next-resources-to-backend';
 const localStorageLanguage = localStorage.getItem('language');
 
 // Define the namespaces you want to use
-const namespaces = ['common', 'map', 'zones'];
+const namespaces = ['common', 'map', 'zones', 'bsf', 'occult'];
 const defaultNamespace = 'common';
 
 i18n
