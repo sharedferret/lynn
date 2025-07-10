@@ -280,7 +280,7 @@
           "description": "Gradually restores own HP and the HP of all nearby party members.\nCure Potency: 3,000\nAdditional Effect: Increases maximum HP by 20% and restores the amount increased.",
           "abilityType": "ability",
           "duration": "30s",
-          "recastTime": 15,
+          "recastTime": 120,
           "code": "ba3"
         },
         "Hero's Rime": {

@@ -1,7 +1,9 @@
 {
   "sidebar": {
     "occult": {
-      "header": "KRESZENTIA"
+      "header": "KRESZENTIA",
+      "map": "Kreszentia-Karten",
+      "job": "Phantomjobs"
     }
   },
   "settings": {

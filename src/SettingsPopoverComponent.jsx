@@ -22,6 +22,7 @@ export default function SettingsPopoverComponent({ setColorMode }) {
   const { t } = useTranslation('common');
   const [open, setOpen] = React.useState(false);
 
+  /**
   const getFlag = () => {
     const language = localStorage.getItem('i18nextLng').substring(0, 2);
 
@@ -36,6 +37,7 @@ export default function SettingsPopoverComponent({ setColorMode }) {
         return '🇨🇦';
     }
   };
+  */
 
   const handleSettingsButtonClick = () => {
     setOpen(true);
@@ -57,7 +59,7 @@ export default function SettingsPopoverComponent({ setColorMode }) {
       onClick={(e) => handleSettingsButtonClick(e)}
     >
       <SettingsApplicationsIcon sx={{ color: 'white' }} />
-      <Typography fontWeight={600} fontSize={16}>{getFlag()}</Typography>
+      { /* <Typography fontWeight={600} fontSize={16}>{getFlag()}</Typography> */ }
       <Box>
         <Typography color="#fff" fontWeight={600} fontSize={16}>{t('settings.title')}</Typography>
       </Box>

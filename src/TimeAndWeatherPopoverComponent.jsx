@@ -106,6 +106,9 @@ export default function TimeAndWeatherPopoverComponent() {
             title={(
               <Stack>
                 <Typography textAlign="center">
+                  {item.condition}
+                </Typography>
+                <Typography textAlign="center">
                   {dayjs(item.time.getTime())
                     .format('h:mm:ss A')}
                 </Typography>

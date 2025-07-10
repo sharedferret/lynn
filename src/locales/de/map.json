@@ -188,13 +188,25 @@
       }
     },
     "category": {
-      "encounters": "Begegnungen"
+      "general": "Allgemein",
+      "encounters": "Begegnungen",
+      "enemies": "Gegner",
+      "progression": "Fortschritt"
     },
     "layer": {
+      "namedLocations": "Benannte Orte",
       "aetherytes": "Ätheryten",
+      "traders": "Händler",
+      "repair": "Reparatur",
+      "treasureCoffers": "Schatztruhen",
+      "carrots": "Wonnemöhrchen",
+      "fates": "FATEs",
+      "magicPotFates": "Magietopf-FATEs",
       "surveyPoints": "Prüfstelle",
       "criticalEngagements": "Kritische Begegnungen",
-      "fates": "Fates"
+      "magicPotCoffers": "Magietopf-Schatztruhen",
+      "mobLevels": "Gegner-Stufen",
+      "demiatmaAreas": "Demiatma-Gebiete"
     },
     "regionHeaders": {
       "occult": "Kreszentia",
