@@ -1,91 +1,91 @@
 {
-  "name": "Occult Crescent: South Horn",
+  "name": "occult.southhorn",
   "categories": [
     {
-      "name": "General",
+      "name": "category.general",
       "enabled": true,
       "layers": [
         {
           "id": "namedLocations",
-          "name": "Named Locations",
+          "name": "layer.namedLocations",
           "enabled": true
         },
         {
           "id": "aetherytes",
-          "name": "Aetherytes",
+          "name": "layer.aetherytes",
           "enabled": true
         },
         {
           "id": "traders",
-          "name": "Traders",
+          "name": "layer.traders",
           "enabled": true
         },
         {
           "id": "repair",
-          "name": "Repair",
+          "name": "layer.repair",
           "enabled": true
         },
         {
           "id": "treasureCoffers",
-          "name": "Treasure Coffers",
+          "name": "layer.treasureCoffers",
           "enabled": true
         },
         {
           "id": "carrots",
-          "name": "Half-Eaten Carrots",
+          "name": "layer.carrots",
           "enabled": true
         }
       ]
     },
     {
-      "name": "Encounters",
+      "name": "category.encounters",
       "enabled": true,
       "layers": [
         {
           "id": "fates",
-          "name": "FATEs",
+          "name": "layer.fates",
           "enabled": true
         },
         {
           "id": "magicPotFates",
-          "name": "Magic Pot FATEs",
+          "name": "layer.magicPotFates",
           "enabled": true
         },
         {
           "id": "criticalEngagements",
-          "name": "Critical Engagements",
+          "name": "layer.criticalEngagements",
           "enabled": true
         },
         {
           "id": "magicPotCoffers",
-          "name": "Magic Pot Coffers",
+          "name": "layer.magicPotCoffers",
           "enabled": true
         }
       ]
     },
     {
-      "name": "Enemies",
+      "name": "category.enemies",
       "enabled": false,
       "layers": [
         {
           "id": "mobLevels",
-          "name": "Mob Levels",
+          "name": "layer.mobLevels",
           "enabled": false
         }
       ]
     },
     {
-      "name": "Progression",
+      "name": "category.progression",
       "enabled": true,
       "layers": [
         {
           "id": "surveyPoints",
-          "name": "Survey Points",
+          "name": "layer.surveyPoints",
           "enabled": true
         },
         {
           "id": "demiatmaAreas",
-          "name": "Demiatma Areas",
+          "name": "layer.demiatmaAreas",
           "enabled": true
         }
       ]
@@ -141,7 +141,7 @@
       "markerIcon": "poi-pin.png",
       "waymarks": [
         {
-          "name": "Solitary Pavilion",
+          "name": "southhorn.namedLocation.1",
           "@id": "osh_loc1",
           "position": {
             "x": 22.9,
@@ -149,7 +149,7 @@
           }
         },
         {
-          "name": "Occult Cloister",
+          "name": "southhorn.namedLocation.2",
           "@id": "osh_loc2",
           "position": {
             "x": 14.8,
@@ -162,40 +162,40 @@
       "markerIcon": "aetheryte.png",
       "waymarks": [
         {
-          "name": "Expedition Base Camp",
-          "@id": "osh_1",
+          "name": "southhorn.aetheryte.1",
+          "@id": "osh_a1",
           "position": {
             "x": 38.0,
             "y": -7.5
           }
         },
         {
-          "name": "The Wanderer's Haven",
-          "@id": "osh_2",
+          "name": "southhorn.aetheryte.2",
+          "@id": "osh_a2",
           "position": {
             "x": 17.9,
             "y": -9.0
           }
         },
         {
-          "name": "Crystallized Caverns",
-          "@id": "osh_3",
+          "name": "southhorn.aetheryte.3",
+          "@id": "osh_a3",
           "position": {
             "x": 14.1,
             "y": -18.8
           }
         },
         {
-          "name": "Stonemarsh",
-          "@id": "osh_4",
+          "name": "southhorn.aetheryte.4",
+          "@id": "osh_a4",
           "position": {
             "x": 13.7,
             "y": -27.1
           }
         },
         {
-          "name": "Eldergrowth",
-          "@id": "osh_5",
+          "name": "southhorn.aetheryte.5",
+          "@id": "osh_a5",
           "position": {
             "x": 27.5,
             "y": -27.5
@@ -207,7 +207,7 @@
       "markerIcon": "trader.png",
       "waymarks": [
         {
-          "name": "Expedition Antiquarian",
+          "name": "southhorn.trader.1",
           "@id": "osh_trader1",
           "position": {
             "x": 38.1,
@@ -215,7 +215,7 @@
           }
         },
         {
-          "name": "Expedition Trader",
+          "name": "southhorn.trader.2",
           "@id": "osh_trader2",
           "position": {
             "x": 37.9,
@@ -223,8 +223,8 @@
           }
         },
         {
-          "name": "Expedition Armorer",
-          "@id": "osh_trader2",
+          "name": "southhorn.trader.3",
+          "@id": "osh_trader3",
           "position": {
             "x": 37.7,
             "y": -7.1
@@ -236,7 +236,7 @@
       "markerIcon": "repair.png",
       "waymarks": [
         {
-          "name": "Repair",
+          "name": "southhorn.repair",
           "@id": "osh_repair1",
           "position": {
             "x": 37.9,
@@ -250,7 +250,7 @@
       "waymarks": [
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer01",
           "position": {
           "x": 33.8,
@@ -259,7 +259,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer02",
           "position": {
           "x": 34.6,
@@ -268,7 +268,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer03",
           "position": {
           "x": 39.1,
@@ -277,7 +277,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer04",
           "position": {
           "x": 37.3,
@@ -286,7 +286,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer05",
           "position": {
           "x": 30.6,
@@ -295,7 +295,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer06",
           "position": {
           "x": 29.0,
@@ -304,7 +304,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer07",
           "position": {
           "x": 29.1,
@@ -313,7 +313,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer08",
           "position": {
           "x": 24.2,
@@ -322,7 +322,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer09",
           "position": {
           "x": 19.1,
@@ -331,7 +331,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer10",
           "position": {
           "x": 18.6,
@@ -340,7 +340,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer11",
           "position": {
           "x": 14.6,
@@ -349,7 +349,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer12",
           "position": {
           "x": 12.6,
@@ -358,7 +358,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer13",
           "position": {
           "x": 9.9,
@@ -367,7 +367,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer14",
           "position": {
           "x": 6.5,
@@ -376,7 +376,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer15",
           "position": {
           "x": 4.0,
@@ -385,7 +385,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer16",
           "position": {
           "x": 28.6,
@@ -394,7 +394,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer17",
           "position": {
           "x": 22.6,
@@ -403,7 +403,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer18",
           "position": {
           "x": 21.2,
@@ -412,7 +412,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer19",
           "position": {
           "x": 18.6,
@@ -421,7 +421,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer20",
           "position": {
           "x": 11.7,
@@ -430,7 +430,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer21",
           "position": {
           "x": 11.7,
@@ -439,7 +439,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer22",
           "position": {
           "x": 8.3,
@@ -448,7 +448,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer23",
           "position": {
           "x": 7.5,
@@ -457,7 +457,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer24",
           "position": {
           "x": 6.3,
@@ -466,7 +466,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer25",
           "position": {
           "x": 4.4,
@@ -475,7 +475,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer26",
           "position": {
           "x": 16.3,
@@ -484,7 +484,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer27",
           "position": {
           "x": 12.4,
@@ -493,7 +493,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer28",
           "position": {
           "x": 7.2,
@@ -502,7 +502,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer29",
           "position": {
           "x": 6.2,
@@ -511,7 +511,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer30",
           "position": {
           "x": 30.8,
@@ -520,7 +520,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer31",
           "position": {
           "x": 26.4,
@@ -529,7 +529,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer32",
           "position": {
           "x": 36.0,
@@ -538,7 +538,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer33",
           "position": {
           "x": 37.8,
@@ -547,7 +547,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer34",
           "position": {
           "x": 33.5,
@@ -556,7 +556,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer35",
           "position": {
           "x": 27.3,
@@ -565,7 +565,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer36",
           "position": {
           "x": 8.5,
@@ -574,7 +574,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer37",
           "position": {
           "x": 6.9,
@@ -583,7 +583,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer38",
           "position": {
           "x": 5.8,
@@ -592,7 +592,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer39",
           "position": {
           "x": 7.4,
@@ -601,7 +601,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer40",
           "position": {
           "x": 8.3,
@@ -610,7 +610,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer41",
           "position": {
           "x": 10.5,
@@ -619,7 +619,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer42",
           "position": {
           "x": 14.1,
@@ -628,7 +628,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer43",
           "position": {
           "x": 17.9,
@@ -637,7 +637,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer44",
           "position": {
           "x": 16.7,
@@ -646,7 +646,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer45",
           "position": {
           "x": 22.2,
@@ -655,7 +655,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer46",
           "position": {
           "x": 24.6,
@@ -664,7 +664,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer47",
           "position": {
           "x": 26.7,
@@ -673,7 +673,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer48",
           "position": {
           "x": 27.4,
@@ -682,7 +682,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer49",
           "position": {
           "x": 9.5,
@@ -691,7 +691,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer50",
           "position": {
           "x": 30.3,
@@ -700,7 +700,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer51",
           "position": {
           "x": 31.5,
@@ -709,7 +709,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer52",
           "position": {
           "x": 33.7,
@@ -718,7 +718,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer53",
           "position": {
           "x": 38.7,
@@ -727,7 +727,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer54",
           "position": {
           "x": 38.2,
@@ -736,7 +736,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer55",
           "position": {
           "x": 38.3,
@@ -745,7 +745,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer56",
           "position": {
           "x": 13.4,
@@ -754,7 +754,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer57",
           "position": {
           "x": 13.2,
@@ -763,7 +763,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer58",
           "position": {
           "x": 34.6,
@@ -772,7 +772,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer59",
           "position": {
           "x": 21.6,
@@ -781,7 +781,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bronze Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
           "@id": "osh_coffer60",
           "position": {
           "x": 7.1,
@@ -790,7 +790,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.silver",
           "@id": "osh_coffer61",
           "iconOverride": "coffer-silver.png",
           "position": {
@@ -800,7 +800,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.silver",
           "@id": "osh_coffer62",
           "iconOverride": "coffer-silver.png",
           "position": {
@@ -810,7 +810,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.silver",
           "@id": "osh_coffer63",
           "iconOverride": "coffer-silver.png",
           "position": {
@@ -820,7 +820,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.silver",
           "@id": "osh_coffer64",
           "iconOverride": "coffer-silver.png",
           "position": {
@@ -830,7 +830,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.silver",
           "@id": "osh_coffer65",
           "iconOverride": "coffer-silver.png",
           "position": {
@@ -840,7 +840,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.silver",
           "@id": "osh_coffer66",
           "iconOverride": "coffer-silver.png",
           "position": {
@@ -850,7 +850,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.silver",
           "@id": "osh_coffer67",
           "iconOverride": "coffer-silver.png",
           "position": {
@@ -860,7 +860,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Silver Treasure Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.silver",
           "@id": "osh_coffer68",
           "iconOverride": "coffer-silver.png",
           "position": {
@@ -875,7 +875,7 @@
       "waymarks": [
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer01",
           "position": {
           "x": 15.2,
@@ -884,7 +884,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer02",
           "position": {
           "x": 6.6,
@@ -893,7 +893,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer03",
           "position": {
           "x": 8.5,
@@ -902,7 +902,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer04",
           "position": {
           "x": 9.4,
@@ -911,7 +911,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer05",
           "position": {
           "x": 35.5,
@@ -920,7 +920,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer06",
           "position": {
           "x": 32.8,
@@ -929,7 +929,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer07",
           "position": {
           "x": 37.6,
@@ -938,7 +938,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer08",
           "position": {
           "x": 35.1,
@@ -947,7 +947,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer09",
           "position": {
           "x": 38.9,
@@ -956,7 +956,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer10",
           "position": {
           "x": 39.0,
@@ -965,7 +965,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer11",
           "position": {
           "x": 32.9,
@@ -974,7 +974,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer12",
           "position": {
           "x": 34.7,
@@ -983,7 +983,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer13",
           "position": {
           "x": 33.6,
@@ -992,7 +992,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer14",
           "position": {
           "x": 37.1,
@@ -1001,7 +1001,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer15",
           "position": {
           "x": 29.7,
@@ -1010,7 +1010,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer16",
           "position": {
           "x": 30.2,
@@ -1019,7 +1019,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer17",
           "position": {
           "x": 29.4,
@@ -1028,7 +1028,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer18",
           "position": {
           "x": 27.3,
@@ -1037,7 +1037,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer19",
           "position": {
           "x": 26.8,
@@ -1046,7 +1046,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer20",
           "position": {
           "x": 25.4,
@@ -1055,7 +1055,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer21",
           "position": {
           "x": 18.1,
@@ -1064,7 +1064,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer22",
           "position": {
           "x": 8.2,
@@ -1073,7 +1073,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer23",
           "position": {
           "x": 6.8,
@@ -1082,7 +1082,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer24",
           "position": {
           "x": 5.0,
@@ -1091,7 +1091,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer25",
           "position": {
           "x": 17.7,
@@ -1100,7 +1100,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer26",
           "position": {
           "x": 17.6,
@@ -1109,7 +1109,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer27",
           "position": {
           "x": 10.8,
@@ -1118,7 +1118,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer28",
           "position": {
           "x": 7.9,
@@ -1127,7 +1127,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer29",
           "position": {
           "x": 7.5,
@@ -1136,7 +1136,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer30",
           "position": {
           "x": 5.3,
@@ -1145,7 +1145,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer31",
           "position": {
           "x": 14.8,
@@ -1154,7 +1154,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer32",
           "position": {
           "x": 20.2,
@@ -1163,7 +1163,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer33",
           "position": {
           "x": 21.9,
@@ -1172,7 +1172,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer34",
           "position": {
           "x": 20.7,
@@ -1181,7 +1181,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer35",
           "position": {
           "x": 12.1,
@@ -1190,7 +1190,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer36",
           "position": {
           "x": 7.3,
@@ -1199,7 +1199,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer37",
           "position": {
           "x": 15.0,
@@ -1208,7 +1208,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer38",
           "position": {
           "x": 5.5,
@@ -1217,7 +1217,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer39",
           "position": {
           "x": 5.2,
@@ -1226,7 +1226,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer40",
           "position": {
           "x": 28.1,
@@ -1235,7 +1235,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer41",
           "position": {
           "x": 3.8,
@@ -1244,7 +1244,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer42",
           "position": {
           "x": 4.1,
@@ -1253,7 +1253,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer43",
           "position": {
           "x": 4.6,
@@ -1262,7 +1262,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer44",
           "position": {
           "x": 4.7,
@@ -1271,7 +1271,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer45",
           "position": {
           "x": 4.8,
@@ -1280,7 +1280,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer46",
           "position": {
           "x": 4.9,
@@ -1289,7 +1289,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer47",
           "position": {
           "x": 5.0,
@@ -1298,7 +1298,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer48",
           "position": {
           "x": 5.4,
@@ -1307,7 +1307,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer49",
           "position": {
           "x": 5.6,
@@ -1316,7 +1316,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer50",
           "position": {
           "x": 5.6,
@@ -1325,7 +1325,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer51",
           "position": {
           "x": 5.8,
@@ -1334,7 +1334,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer52",
           "position": {
           "x": 6.0,
@@ -1343,7 +1343,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer53",
           "position": {
           "x": 6.3,
@@ -1352,7 +1352,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer54",
           "position": {
           "x": 6.9,
@@ -1361,7 +1361,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer55",
           "position": {
           "x": 6.9,
@@ -1370,7 +1370,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer56",
           "position": {
           "x": 7.2,
@@ -1379,7 +1379,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer57",
           "position": {
           "x": 7.3,
@@ -1388,7 +1388,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer58",
           "position": {
           "x": 7.9,
@@ -1397,7 +1397,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer59",
           "position": {
           "x": 8.0,
@@ -1406,7 +1406,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer60",
           "position": {
           "x": 8.3,
@@ -1415,7 +1415,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer61",
           "position": {
           "x": 9.0,
@@ -1424,7 +1424,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer62",
           "position": {
           "x": 10.4,
@@ -1433,7 +1433,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer63",
           "position": {
           "x": 12.3,
@@ -1442,7 +1442,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer64",
           "position": {
           "x": 13.8,
@@ -1451,7 +1451,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer65",
           "position": {
           "x": 13.8,
@@ -1460,7 +1460,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer66",
           "position": {
           "x": 13.9,
@@ -1469,7 +1469,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer67",
           "position": {
           "x": 15.0,
@@ -1478,7 +1478,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer68",
           "position": {
           "x": 17.2,
@@ -1487,7 +1487,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer69",
           "position": {
           "x": 20.4,
@@ -1496,7 +1496,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer70",
           "position": {
           "x": 21.9,
@@ -1505,7 +1505,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer71",
           "position": {
           "x": 22.8,
@@ -1514,7 +1514,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer72",
           "position": {
           "x": 22.9,
@@ -1523,7 +1523,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer73",
           "position": {
           "x": 23.0,
@@ -1532,7 +1532,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer74",
           "position": {
           "x": 23.1,
@@ -1541,7 +1541,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer75",
           "position": {
           "x": 23.6,
@@ -1550,7 +1550,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer76",
           "position": {
           "x": 26.0,
@@ -1559,7 +1559,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer77",
           "position": {
           "x": 28.3,
@@ -1568,7 +1568,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer78",
           "position": {
           "x": 29.4,
@@ -1577,7 +1577,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer79",
           "position": {
           "x": 33.3,
@@ -1586,7 +1586,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Magic Pot Coffer Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.pot",
           "@id": "osh_potcoffer80",
           "position": {
           "x": 38.0,
@@ -1600,7 +1600,7 @@
       "waymarks": [
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot01",
           "position": {
           "x": 19.4,
@@ -1609,7 +1609,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot02",
           "position": {
           "x": 11.7,
@@ -1618,7 +1618,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot03",
           "position": {
           "x": 13.8,
@@ -1627,7 +1627,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot04",
           "position": {
           "x": 6.0,
@@ -1636,7 +1636,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot05",
           "position": {
           "x": 7.0,
@@ -1645,7 +1645,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot06",
           "position": {
           "x": 10.8,
@@ -1654,7 +1654,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot07",
           "position": {
           "x": 4.4,
@@ -1663,7 +1663,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot08",
           "position": {
           "x": 6.6,
@@ -1672,7 +1672,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot09",
           "position": {
           "x": 12.9,
@@ -1681,7 +1681,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot10",
           "position": {
           "x": 18.4,
@@ -1690,7 +1690,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot11",
           "position": {
           "x": 6.9,
@@ -1699,7 +1699,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot12",
           "position": {
           "x": 9.9,
@@ -1708,7 +1708,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot13",
           "position": {
           "x": 7.5,
@@ -1717,7 +1717,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot14",
           "position": {
           "x": 5.5,
@@ -1726,7 +1726,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot15",
           "position": {
           "x": 16.0,
@@ -1735,7 +1735,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot16",
           "position": {
           "x": 26.3,
@@ -1744,7 +1744,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot17",
           "position": {
           "x": 27.3,
@@ -1753,7 +1753,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot18",
           "position": {
           "x": 30.8,
@@ -1762,7 +1762,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot19",
           "position": {
           "x": 36.7,
@@ -1771,7 +1771,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot20",
           "position": {
           "x": 38.3,
@@ -1780,7 +1780,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot21",
           "position": {
           "x": 38.6,
@@ -1789,7 +1789,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot22",
           "position": {
           "x": 38.0,
@@ -1798,7 +1798,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot23",
           "position": {
           "x": 31.0,
@@ -1807,7 +1807,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot24",
           "position": {
           "x": 35.2,
@@ -1816,7 +1816,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
           "@id": "osh_carrot25",
           "position": {
           "x": 36.0,
@@ -1825,7 +1825,7 @@
         },
                 {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location (Unverified)",
+          "popupTitle": "southhorn.treasureCoffer.carrot_unv",
           "@id": "osh_carrot30",
           "position": {
           "x": 27.8,
@@ -1834,7 +1834,7 @@
         },
                 {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location (Unverified)",
+          "popupTitle": "southhorn.treasureCoffer.carrot_unv",
           "@id": "osh_carrot31",
           "position": {
           "x": 29.3,
@@ -1843,7 +1843,7 @@
         },
                 {
           "name": "",
-          "popupTitle": "Half-Eaten Carrot Spawn Location (Unverified)",
+          "popupTitle": "southhorn.treasureCoffer.carrot_unv",
           "@id": "osh_carrot32",
           "position": {
           "x": 20.8,
@@ -1860,7 +1860,7 @@
       },
       "waymarks": [
         {
-          "name": "Persistent Pots",
+          "name": "southhorn.fate.pot1.name",
           "@id": "osh_potfate1",
           "position": {
             "x": 25.6,
@@ -1868,7 +1868,7 @@
           }
         },
         {
-          "name": "Pleading Pots",
+          "name": "southhorn.fate.pot2.name",
           "@id": "osh_potfate2",
           "position": {
             "x": 11.9,
@@ -1885,91 +1885,124 @@
       },
       "waymarks": [
         {
-          "name": "A Delicate Balance",
+          "name": "southhorn.fate.1.name",
           "@id": "osh_fate01",
           "position": {
             "x": 14.1,
             "y": -34.6
+          },
+          "metadata": {
+            "boss": "southhorn.fate.1.boss"
           }
         },
         {
-          "name": "Fatal Allure",
+          "name": "southhorn.fate.2.name",
           "@id": "osh_fate02",
           "position": {
             "x": 22.9,
             "y": -27.1
+          },
+          "metadata": {
+            "boss": "southhorn.fate.2.boss"
           }
         },
         {
-          "name": "The Golden Guardian",
+          "name": "southhorn.fate.3.name",
           "@id": "osh_fate03",
           "position": {
             "x": 28.8,
             "y": -31.2
+          },
+          "metadata": {
+            "boss": "southhorn.fate.3.boss"
           }
         },
         {
-          "name": "Brain Drain",
+          "name": "southhorn.fate.4.name",
           "@id": "osh_fate04",
           "position": {
             "x": 20.6,
             "y": -15.1
+          },
+          "metadata": {
+            "boss": "southhorn.fate.4.boss"
           }
         },
         {
-          "name": "King of the Crescent",
+          "name": "southhorn.fate.5.name",
           "@id": "osh_fate05",
           "position": {
             "x": 17.0,
             "y": -26.5
+          },
+          "metadata": {
+            "boss": "southhorn.fate.5.boss"
           }
         },
         {
-          "name": "Rough Waters",
+          "name": "southhorn.fate.6.name",
           "@id": "osh_fate06",
           "position": {
             "x": 24.6,
             "y": -34.8
+          },
+          "metadata": {
+            "boss": "southhorn.fate.6.boss"
           }
         },
         {
-          "name": "The Winged Terror",
+          "name": "southhorn.fate.7.name",
           "@id": "osh_fate07",
           "position": {
             "x": 10.4,
             "y": -9.7
+          },
+          "metadata": {
+            "boss": "southhorn.fate.7.boss"
           }
         },
         {
-          "name": "An Unending Duty",
+          "name": "southhorn.fate.8.name",
           "@id": "osh_fate08",
           "position": {
             "x": 17.0,
             "y": -22.3
+          },
+          "metadata": {
+            "boss": "southhorn.fate.8.boss"
           }
         },
         {
-          "name": "A Prying Eye",
+          "name": "southhorn.fate.9.name",
           "@id": "osh_fate09",
           "position": {
             "x": 20.1,
             "y": -32.7
+          },
+          "metadata": {
+            "boss": "southhorn.fate.9.boss"
           }
         },
         {
-          "name": "Serving Darkness",
+          "name": "southhorn.fate.10.name",
           "@id": "osh_fate10",
           "position": {
             "x": 29.6,
             "y": -21.0
+          },
+          "metadata": {
+            "boss": "southhorn.fate.10.boss"
           }
         },
         {
-          "name": "Sworn to Soil",
+          "name": "southhorn.fate.11.name",
           "@id": "osh_fate11",
           "position": {
             "x": 9.5,
             "y": -27.9
+          },
+          "metadata": {
+            "boss": "southhorn.fate.11.boss"
           }
         }
       ]
@@ -1982,203 +2015,253 @@
       },
       "waymarks": [
         {
-          "name": "Company of Stone",
+          "name": "southhorn.ce.1.name",
           "@id": "osh_ce01",
           "position": {
             "x": 35.0,
             "y": -16.1
           },
           "metadata": {
-            "boss": "Occult Knight"
+            "boss": "southhorn.ce.1.boss"
           }
         },
         {
-          "name": "Flame of Dusk",
+          "name": "southhorn.ce.2.name",
           "@id": "osh_ce02",
           "position": {
             "x": 10.1,
             "y": -18.2
           },
           "metadata": {
-            "boss": "Hinkypunk"
+            "boss": "southhorn.ce.2.boss"
           }
         },
         {
-          "name": "On The Hunt",
+          "name": "southhorn.ce.3.name",
           "@id": "osh_ce03",
           "position": {
             "x": 34.0,
             "y": -20.1
           },
           "metadata": {
-            "boss": "Lion Rampant",
+            "boss": "southhorn.ce.3.boss",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "southhorn.ce.3.spawn",
+              "level": 5
+            },
             "rewards": [
               {
-                "name": "Oracle's Soul Shard",
-                "type": ""
+                "name": "southhorn.ce.3.drop.oracle",
+                "type": "ocSoulShard"
               }
             ]
           }
         },
         {
-          "name": "Crawling Death",
+          "name": "southhorn.ce.4.name",
           "@id": "osh_ce04",
           "position": {
             "x": 35.1,
             "y": -32.2
           },
           "metadata": {
-            "boss": "Death Claw"
+            "boss": "southhorn.ce.4.boss"
           }
         },
         {
-          "name": "Noise Complaint",
+          "name": "southhorn.ce.5.name",
           "@id": "osh_ce05",
           "position": {
             "x": 30.5,
             "y": -14.1
           },
           "metadata": {
-            "boss": "Neo Garula"
+            "boss": "southhorn.ce.5.boss",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "southhorn.ce.5.spawn",
+              "level": 1
+            }
           }
         },
         {
-          "name": "The Black Regiment",
+          "name": "southhorn.ce.6.name",
           "@id": "osh_ce06",
           "position": {
             "x": 30.6,
             "y": -28.7
           },
           "metadata": {
-            "boss": "Black Star",
+            "boss": "southhorn.ce.6.boss",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "southhorn.ce.6.spawn",
+              "level": 14
+            },
             "rewards": [
               {
-                "name": "Ranger's Soul Shard",
-                "type": ""
+                "name": "southhorn.ce.6.drop.ranger",
+                "type": "ocSoulShard"
+              },
+              {
+                "name": "southhorn.ce.6.drop.note",
+                "type": "fieldNote"
               }
             ]
           }
         },
         {
-          "name": "Trial by Claw",
+          "name": "southhorn.ce.7.name",
           "@id": "osh_ce07",
           "position": {
             "x": 13.1,
             "y": -22.8
           },
           "metadata": {
-            "boss": "Crystal Dragon"
+            "boss": "southhorn.ce.7.boss"
           }
         },
         {
-          "name": "Shark Attack",
+          "name": "southhorn.ce.8.name",
           "@id": "osh_ce08",
           "position": {
             "x": 19.1,
             "y": -4.4
           },
           "metadata": {
-            "boss": "Nymian Petalodus",
+            "boss": "southhorn.ce.8.boss",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "southhorn.ce.8.spawn",
+              "level": 7
+            },
             "rewards": [
               {
-                "name": "Notes on the Nymian Petalodus",
+                "name": "southhorn.ce.8.drop.note",
                 "type": "fieldNote"
               }
             ]
           }
         },
         {
-          "name": "The Unbridled",
+          "name": "southhorn.ce.9.name",
           "@id": "osh_ce09",
           "position": {
             "x": 33.9,
             "y": -37.5
           },
           "metadata": {
-            "boss": "Crescent Berserker",
+            "boss": "southhorn.ce.9.boss",
             "rewards": [
               {
-                "name": "Berserker's Soul Shard",
-                "type": ""
-              }
-            ]
-          }
-        },
-        {
-          "name": "From Times Bygone",
-          "@id": "osh_ce10",
-          "position": {
-            "x": 5.5,
-            "y": -26.2
-          },
-          "metadata": {
-            "boss": "Mythic Idol"
-          }
-        },
-        {
-          "name": "Cursed Concern",
-          "@id": "osh_ce11",
-          "position": {
-            "x": 22.9,
-            "y": -10.5
-          },
-          "metadata": {
-            "boss": "Trade Tortoise",
-            "rewards": [
+                "name": "southhorn.ce.9.drop.berserker",
+                "type": "ocSoulShard"
+              },
               {
-                "name": "Notes on the Trade Tortoise",
+                "name": "southhorn.ce.9.drop.note",
                 "type": "fieldNote"
               }
             ]
           }
         },
         {
-          "name": "With Extreme Prejudice",
+          "name": "southhorn.ce.10.name",
+          "@id": "osh_ce10",
+          "position": {
+            "x": 5.5,
+            "y": -26.2
+          },
+          "metadata": {
+            "boss": "southhorn.ce.10.boss",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "southhorn.ce.10.spawn",
+              "level": 13
+            },
+            "rewards": [
+              {
+                "name": "southhorn.ce.10.drop.note",
+                "type": "fieldNote"
+              }
+            ]
+          }
+        },
+        {
+          "name": "southhorn.ce.11.name",
+          "@id": "osh_ce11",
+          "position": {
+            "x": 22.9,
+            "y": -10.5
+          },
+          "metadata": {
+            "boss": "southhorn.ce.11.boss",
+            "rewards": [
+              {
+                "name": "southhorn.ce.11.drop.note",
+                "type": "fieldNote"
+              }
+            ]
+          }
+        },
+        {
+          "name": "southhorn.ce.12.name",
           "@id": "osh_ce12",
           "position": {
             "x": 14.5,
             "y": -9.2
           },
           "metadata": {
-            "boss": "Command Urn"
+            "boss": "southhorn.ce.12.boss"
           }
         },
         {
-          "name": "Eternal Watch",
+          "name": "southhorn.ce.13.name",
           "@id": "osh_ce13",
           "position": {
             "x": 38.9,
             "y": -25.0
           },
           "metadata": {
-            "boss": "Repaired Lion"
+            "boss": "southhorn.ce.13.boss"
           }
         },
         {
-          "name": "Calamity Bound",
+          "name": "southhorn.ce.14.name",
           "@id": "osh_ce14",
           "position": {
             "x": 14.7,
             "y": -37.5
           },
           "metadata": {
-            "boss": "Cloister Demon",
+            "boss": "southhorn.ce.14.boss",
             "spawnedBy": {
               "type": "mob",
-              "name": "Crescent Inkstain",
+              "name": "southhorn.ce.14.spawn",
               "level": 20
-            }
+            },
+            "rewards": [
+              {
+                "name": "southhorn.ce.14.drop.note",
+                "type": "fieldNote"
+              }
+            ]
           }
         },
         {
-          "name": "Scourge of the Mind",
+          "name": "southhorn.ce.15.name",
           "@id": "osh_ce15",
           "position": {
             "x": 27.4,
             "y": -36.0
           },
           "metadata": {
-            "boss": "Mysterious Mindflayer"
+            "boss": "southhorn.ce.15.boss",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "southhorn.ce.15.spawn",
+              "level": 15
+            }
           }
         }
       ]
@@ -2187,7 +2270,7 @@
       "markerIcon": "poi-pin.png",
       "waymarks": [
         {
-          "name": "#7: The Lost Citadel",
+          "name": "southhorn.surveyPoint.7",
           "@id": "osh_survey07",
           "position": {
             "x": 31.3,
@@ -2195,7 +2278,7 @@
           }
         },
         {
-          "name": "#9: The Vanishing Slope",
+          "name": "southhorn.surveyPoint.9",
           "@id": "osh_survey09",
           "position": {
             "x": 19.2,
@@ -2203,7 +2286,7 @@
           }
         },
         {
-          "name": "#12: Heathcliff",
+          "name": "southhorn.surveyPoint.12",
           "@id": "osh_survey12",
           "position": {
             "x": 23.2,
@@ -2211,7 +2294,7 @@
           }
         },
         {
-          "name": "#13: The Fell Warren",
+          "name": "southhorn.surveyPoint.13",
           "@id": "osh_survey13",
           "position": {
             "x": 10.1,
@@ -2219,7 +2302,7 @@
           }
         },
         {
-          "name": "#15: The Shadowed City",
+          "name": "southhorn.surveyPoint.15",
           "@id": "osh_survey15",
           "position": {
             "x": 24.2,
@@ -2227,7 +2310,7 @@
           }
         },
         {
-          "name": "#18: Eldergrowth",
+          "name": "southhorn.surveyPoint.18",
           "@id": "osh_survey18",
           "position": {
             "x": 18.5,
@@ -2235,7 +2318,7 @@
           }
         },
         {
-          "name": "#19: The Abandoned Ascent",
+          "name": "southhorn.surveyPoint.19",
           "@id": "osh_survey19",
           "position": {
             "x": 15.6,
@@ -2243,7 +2326,7 @@
           }
         },
         {
-          "name": "#21: The Silent Streets",
+          "name": "southhorn.surveyPoint.21",
           "@id": "osh_survey21",
           "position": {
             "x": 36.6,
@@ -2251,7 +2334,7 @@
           }
         },
         {
-          "name": "#22: The Ancient Stoneworks",
+          "name": "southhorn.surveyPoint.22",
           "@id": "osh_survey22",
           "position": {
             "x": 36.0,
@@ -2259,7 +2342,7 @@
           }
         },
         {
-          "name": "#23: The Wanderer's Haven",
+          "name": "southhorn.surveyPoint.23",
           "@id": "osh_survey23",
           "position": {
             "x": 3.7,
@@ -2267,7 +2350,7 @@
           }
         },
         {
-          "name": "#24: The Brazier",
+          "name": "southhorn.surveyPoint.24",
           "@id": "osh_survey24",
           "position": {
             "x": 8.7,
@@ -2285,7 +2368,7 @@
           "type": "polygon",
           "color": "#e6e045",
           "popup": {
-            "name": "Orpiment Demiatma",
+            "name": "southhorn.demiatma.orpiment",
             "icon": "orpiment-demiatma.png"
           },
           "path": [
@@ -2439,7 +2522,7 @@
           "type": "polygon",
           "color": "#aa40c3",
           "popup": {
-            "name": "Caput Mortuum Demiatma",
+            "name": "southhorn.demiatma.caputMortuum",
             "icon": "caput-demiatma.png"
           },
           "path": [
@@ -2511,7 +2594,7 @@
           "type": "polygon",
           "color": "#da8c33",
           "popup": {
-            "name": "Realgar Demiatma",
+            "name": "southhorn.demiatma.realgar",
             "icon": "realgar-demiatma.png"
           },
           "path": [
@@ -2703,7 +2786,7 @@
           "type": "polygon",
           "color": "#23b17a",
           "popup": {
-            "name": "Malachite Demiatma",
+            "name": "southhorn.demiatma.malachite",
             "icon": "malachite-demiatma.png"
           },
           "path": [
@@ -2833,7 +2916,7 @@
           "type": "polygon",
           "color": "#6c79c4",
           "popup": {
-            "name": "Azurite Demiatma",
+            "name": "southhorn.demiatma.azurite",
             "icon": "azurite-demiatma.png"
           },
           "path": [
@@ -2931,7 +3014,7 @@
           "type": "polygon",
           "color": "#3294be",
           "popup": {
-            "name": "Verdigris Demiatma",
+            "name": "southhorn.demiatma.verdigris",
             "icon": "verdigris-demiatma.png"
           },
           "path": [

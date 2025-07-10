@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "version": "27.0",
+      "timestamp": "2025-07-09",
+      "changes": [
+        "Added German language support for Occult Crescent map",
+        "Other bugfixes"
+      ]
+    },
+    {
       "version": "26.0",
       "timestamp": "2025-06-07",
       "changes": [

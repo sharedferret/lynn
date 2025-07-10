@@ -6,6 +6,7 @@ export default class ResultsFilter {
   // Eureka NMs
   static COPYCAT_CASSIE = new ResultsFilter({
     name: 'Copycat Cassie',
+    key: 'sidebar.forecast.cassie',
     type: FarmType.EUREKA_NM,
     zone: EorzeaWeather.ZONE_EUREKA_PAGOS,
     requiredWeather: [Weather.BLIZZARDS],
@@ -28,6 +29,7 @@ export default class ResultsFilter {
 
   static KING_ARTHO = new ResultsFilter({
     name: 'King Artho',
+    key: 'sidebar.forecast.crab',
     type: FarmType.EUREKA_NM,
     zone: EorzeaWeather.ZONE_EUREKA_PAGOS,
     requiredWeather: [Weather.FOG],
@@ -50,6 +52,7 @@ export default class ResultsFilter {
 
   static SKOLL = new ResultsFilter({
     name: 'Skoll',
+    key: 'sidebar.forecast.skoll',
     type: FarmType.EUREKA_NM,
     zone: EorzeaWeather.ZONE_EUREKA_PYROS,
     requiredWeather: [Weather.BLIZZARDS],
@@ -72,6 +75,7 @@ export default class ResultsFilter {
 
   static PAZUZU = new ResultsFilter({
     name: 'Pazuzu',
+    key: 'sidebar.forecast.pazuzu',
     type: FarmType.EUREKA_NM,
     zone: EorzeaWeather.ZONE_EUREKA_ANEMOS,
     requiredWeather: [Weather.GALES],
@@ -94,6 +98,7 @@ export default class ResultsFilter {
 
   static PENTHESILEA = new ResultsFilter({
     name: 'Penthesilea',
+    key: 'sidebar.forecast.penny',
     type: FarmType.EUREKA_NM,
     zone: EorzeaWeather.ZONE_EUREKA_PYROS,
     requiredWeather: [Weather.HEAT_WAVES],
@@ -117,6 +122,7 @@ export default class ResultsFilter {
   // Eureka Farms
   static COLD_WARPED_LOCKBOX = new ResultsFilter({
     name: 'Cold-Warped Lockbox',
+    key: 'sidebar.forecast.coldbox',
     type: FarmType.EUREKA_FARM,
     zone: EorzeaWeather.ZONE_EUREKA_PAGOS,
     requiredWeather: [Weather.THUNDER],
@@ -149,6 +155,7 @@ export default class ResultsFilter {
 
   static HEAT_WARPED_LOCKBOX = new ResultsFilter({
     name: 'Heat-Warped Lockbox',
+    key: 'sidebar.forecast.heatbox',
     type: FarmType.EUREKA_FARM,
     zone: EorzeaWeather.ZONE_EUREKA_PYROS,
     requiredWeather: [Weather.UMBRAL_WIND],
@@ -171,6 +178,7 @@ export default class ResultsFilter {
 
   static OFFENSIVE_LOGOGRAM = new ResultsFilter({
     name: 'Offensive Logogram',
+    key: 'sidebar.forecast.offensive',
     type: FarmType.EUREKA_FARM,
     zone: EorzeaWeather.ZONE_EUREKA_HYDATOS,
     requiredWeather: [Weather.SNOW],
@@ -193,6 +201,7 @@ export default class ResultsFilter {
 
   static CONCEPTUAL_LOGOGRAM = new ResultsFilter({
     name: 'Conceptual Logogram',
+    key: 'sidebar.forecast.conceptual',
     type: FarmType.EUREKA_FARM,
     zone: EorzeaWeather.ZONE_EUREKA_HYDATOS,
     requiredWeather: [Weather.SHOWERS, Weather.THUNDERSTORMS],
@@ -220,6 +229,7 @@ export default class ResultsFilter {
 
   static MITIGATIVE_LOGOGRAM = new ResultsFilter({
     name: 'Mitigative Logogram',
+    key: 'sidebar.forecast.mitigative',
     type: FarmType.EUREKA_FARM,
     zone: EorzeaWeather.ZONE_EUREKA_PYROS,
     requiredWeather: [Weather.THUNDER, Weather.HEAT_WAVES],
@@ -253,6 +263,7 @@ export default class ResultsFilter {
 
   static PREPARATION_FRAGMENT = new ResultsFilter({
     name: 'Preparation',
+    key: 'sidebar.forecast.preparation',
     type: FarmType.FRAGMENT_FARM,
     zone: EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT,
     requiredWeather: [Weather.THUNDER],
@@ -273,6 +284,7 @@ export default class ResultsFilter {
 
   static CARE_FRAGMENT = new ResultsFilter({
     name: 'Care',
+    key: 'sidebar.forecast.care',
     type: FarmType.FRAGMENT_FARM,
     zone: EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT,
     requiredWeather: [Weather.DUST_STORMS, Weather.WIND],
@@ -298,6 +310,7 @@ export default class ResultsFilter {
 
   static SUPPORT_FRAGMENT = new ResultsFilter({
     name: 'Support',
+    key: 'sidebar.forecast.support',
     type: FarmType.FRAGMENT_FARM,
     zone: EorzeaWeather.ZONE_BOZJAN_SOUTHERN_FRONT,
     requiredWeather: [Weather.SNOW, Weather.WIND],
@@ -322,6 +335,7 @@ export default class ResultsFilter {
 
   static HISTORY_FRAGMENT = new ResultsFilter({
     name: 'History',
+    key: 'sidebar.forecast.history',
     type: FarmType.FRAGMENT_FARM,
     zone: EorzeaWeather.ZONE_ZADNOR,
     requiredWeather: [Weather.SNOW, Weather.WIND],
@@ -346,6 +360,7 @@ export default class ResultsFilter {
 
   static ARTISTRY_FRAGMENT = new ResultsFilter({
     name: 'Artistry',
+    key: 'sidebar.forecast.artistry',
     type: FarmType.FRAGMENT_FARM,
     zone: EorzeaWeather.ZONE_ZADNOR,
     requiredWeather: [Weather.THUNDER, Weather.RAIN],
@@ -372,6 +387,7 @@ export default class ResultsFilter {
   // Collections
   static EUREKA_NMS = new ResultsFilter({
     name: 'All Eureka NMs',
+    key: 'sidebar.forecast.all-eureka-nms',
     type: FarmType.EUREKA_NM,
     zone: null,
     requiredWeather: null,
@@ -388,6 +404,7 @@ export default class ResultsFilter {
 
   static FRAGMENT_FARM = new ResultsFilter({
     name: 'All Bozja Fragment Farms',
+    key: 'sidebar.forecast.all-bozja-farms',
     type: FarmType.FRAGMENT_FARM,
     zone: null,
     requiredWeather: null,
@@ -404,6 +421,7 @@ export default class ResultsFilter {
 
   static EUREKA_FARMS = new ResultsFilter({
     name: 'All Eureka Farms',
+    key: 'sidebar.forecast.all-eureka-farms',
     type: FarmType.EUREKA_FARM,
     zone: null,
     requiredWeather: null,
@@ -420,6 +438,7 @@ export default class ResultsFilter {
 
   static ALL = new ResultsFilter({
     name: 'All Upcoming Spawns',
+    key: 'sidebar.forecast.all-spawns',
     type: FarmType.ALL,
     zone: null,
     requiredWeather: null,
@@ -482,6 +501,7 @@ export default class ResultsFilter {
 
   constructor(data) {
     this.name = data.name;
+    this.key = data.key;
     this.type = data.type;
     this.zone = data.zone;
     this.requiredWeather = data.requiredWeather;

@@ -3,9 +3,11 @@ import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import EurekaNMTooltipComponent from './tooltipcomponents/EurekaNMTooltipComponent';
 import AetheryteTooltipComponent from './tooltipcomponents/AetheryteTooltipComponent';
 import BozjaCETooltipComponent from './tooltipcomponents/BozjaCETooltipComponent';
+import OccultFateTooltipComponent from './tooltipcomponents/OccultFateTooltipComponent';
 
 export default function TooltipBaseComponent(
   {
@@ -14,6 +16,8 @@ export default function TooltipBaseComponent(
     type,
   },
 ) {
+  const { t } = useTranslation('map');
+
   const renderContent = () => {
     switch (type) {
       case 'nms':
@@ -22,6 +26,8 @@ export default function TooltipBaseComponent(
         return <AetheryteTooltipComponent markerData={markerData} />;
       case 'criticalEngagements':
         return <BozjaCETooltipComponent markerData={markerData} />;
+      case 'fates':
+        return <OccultFateTooltipComponent markerData={markerData} />;
       default:
         return null;
     }
@@ -40,7 +46,7 @@ export default function TooltipBaseComponent(
             />
           </Box>
           <Typography fontWeight={700} variant="h6">
-            {markerData.popupTitle ?? markerData.name}
+            {t(`map.regions.${markerData.popupTitle ?? markerData.name}`)}
           </Typography>
         </Stack>
         <Box my={1}>

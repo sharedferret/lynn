@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import { Trans } from 'react-i18next';
 import OccultPhantomJobSelectorComponent from './OccultPhantomJobSelectorComponent';
 import OccultPhantomJobHelperDataComponent from './OccultPhantomJobHelperDataComponent';
 import OccultPhantomJobIconSelectorComponent from './OccultPhantomJobIconSelectorComponent';
@@ -45,10 +46,10 @@ export default function OccultPhantomJobHelperComponent({ phantomJob }) {
 
         <Box p={3}>
           <Stack spacing={2} minHeight={100} p={1} alignItems="center">
-            <Typography fontWeight={700} variant="h4">Occult Crescent Phantom Job Helper</Typography>
+            <Typography fontWeight={700} variant="h4"><Trans i18nKey="job-helper.title" ns="occult" /></Typography>
             <OccultPhantomJobIconSelectorComponent handleJobUpdate={handleJobUpdate} />
             <Stack direction="row" spacing={2} alignItems="center">
-              <Typography>Phantom Job: </Typography>
+              <Typography><Trans i18nKey="job-helper.label" ns="occult" /></Typography>
               <Box width={325}>
                 <OccultPhantomJobSelectorComponent
                   phantomJob={jobState}

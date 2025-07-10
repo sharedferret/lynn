@@ -7,6 +7,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme, alpha } from '@mui/material/styles';
 import { v4 as uuidv4 } from 'uuid';
+import { Trans } from 'react-i18next';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 
 import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
@@ -65,7 +66,7 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
           }}
         >
           <Stack direction="row" alignItems="center" spacing={1} pt={3} pl={3} pr={3}>
-            <Typography fontWeight={700} variant="h6">Appraised from</Typography>
+            <Typography fontWeight={700} variant="h6"><Trans i18nKey="lost-action-helper.appraised-label" ns="bsf" /></Typography>
             <img
               src={`${process.env.PUBLIC_URL}/assets/icons/Yellow_Fragment.png`}
               width={24}

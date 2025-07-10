@@ -1,0 +1,343 @@
+{
+  "job-helper": {
+    "title": "Occult Crescent Phantom Job Helper",
+    "label": "Phantom Job: ",
+    "total-exp": "Total EXP: {{exp}}",
+    "leveling-up": "Leveling Up",
+    "freelancer-leveling": "Freelancer is a special Phantom Job. Instead of leveling up via Phantom Job experience points, Freelancer gains levels based on how many Phantom Jobs you've mastered. Freelancer starts at Level 1, and gains a level each time you master a Phantom Job.",
+    "enhancement": "Lv {{level}} Trait: {{effect}}",
+    "support-actions": "Support Actions",
+    "none": "None"
+  },
+  "phantom-job": {
+    "freelancer": {
+      "name": "Freelancer",
+      "text": "Reminiscences of journeys just begun and those long ended embody the freelancer's myriad supportive techniques.",
+      "unlock": "Unlocked by default."
+    },
+    "knight": {
+      "name": "Knight",
+      "text": "Emulate these ancient memories of a loyal, honorable knight and defend your comrades from harm.",
+      "unlock": "South Horn intro quests."
+    },
+    "monk": {
+      "name": "Monk",
+      "text": "These memories of a monk's unflinching discipline and quiet meditation offer a path to unparalleled combat mastery.",
+      "unlock": "South Horn intro quests."
+    },
+    "time-mage": {
+      "name": "Time Mage",
+      "text": "The memories of this former time mage reveal much about the laws of time and how to manipulate them to your advantage.",
+      "unlock": "Purchase - Time Mage's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
+    },
+    "bard": {
+      "name": "Bard",
+      "text": "These memories echo with the vivid imagery of a bard's uplifting song. Utilize them to employ the very same ballads in battle.",
+      "unlock": "South Horn intro quests."
+    },
+    "geomancer": {
+      "name": "Geomancer",
+      "text": "This geomancer's recollections brim with boundless understanding of nature's laws. Access them to employ weather-dependent techniques.",
+      "unlock": "Purchase - Geomancer's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian."
+    },
+    "ranger": {
+      "name": "Ranger",
+      "text": "Channel these memories of a proud, passionate ranger and learn to call forth the forces of nature in battle.",
+      "unlock": "Unlocked from the Ranger's Soul Shard, acquired from the Critical Engagement \"The Black Regiment.\""
+    },
+    "berserker": {
+      "name": "Berserker",
+      "text": "Savagery and unfailing courage characterize the recollections of this former berserker. These techniques entail great risk and even greater reward.",
+      "unlock": "Unlocked from the Berserker's Soul Shard, acquired from the Critical Engagement \"The Unbridled.\""
+    },
+    "chemist": {
+      "name": "Chemist",
+      "text": "This chemist's memories offer knowledge of ancient medicinal theory, including restorative techniques sure to turn the tide of battle in your favor.",
+      "unlock": "Purchase - Chemist's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
+    },
+    "cannoneer": {
+      "name": "Cannoneer",
+      "text": "A mastery of ballistics both scholarly and practical infuse this cannoneer's recollections. Emulate them to bombard foes with powerful projectiles.",
+      "unlock": "Purchase - Cannoneer's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
+    },
+    "samurai": {
+      "name": "Samurai",
+      "text": "Rigorous training and a strict code of chivalry personify these recollections of an ancient samurai. Access them to fell foes in a single deadly strike.",
+      "unlock": "Purchase - Samurai's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian."
+    },
+    "thief": {
+      "name": "Thief",
+      "text": "These recollections of a dextrous, principled thief grant access to survival techniques that will doubtless prove useful upon the isle.",
+      "unlock": "Purchase - Thief's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian."
+    },
+    "oracle": {
+      "name": "Oracle",
+      "text": "Endowed with an oracle's supernatural senses and prophetic insights, these memories promise mastery over a wealth of supportive skills.",
+      "unlock": "Unlocked from the Oracle's Soul Shard, acquired from the Critical Engagement \"On The Hunt.\""
+    }
+  },
+  "support-action": {
+    "fr1": {
+      "name": "Occult Resuscitation",
+      "description": "Restores 30% of maximum HP."
+    },
+    "fr2": {
+      "name": "Occult Treasuresight",
+      "description": "Detects the number of treasure coffers presently on the Occult Crescent."
+    },
+    "kn1": {
+      "name": "Phantom Guard",
+      "description": "Reduces damage taken by 60%.",
+      "enhancement": {
+        "4": "Improves Phantom Guard's damage reduction effect to 90%."
+      }
+    },
+    "kn2": {
+      "name": "Pray",
+      "description": "Gradually restores HP.\nCure Potency: 3,000\nAdditional Effect: Grants Enduring Fortitude to self and nearby party members when executed within proximity of a knowledge crystal.\nEnduring Fortitude Effect: Reduces target's damage taken by 10% (duration: 30m).",
+      "enhancement": {
+        "5": "Increases the healing potency of Pray to 5,000."
+      }
+    },
+    "kn3": {
+      "name": "Occult Heal",
+      "description": "Restores target's HP.\nCure Potency: 30,000"
+    },
+    "kn4": {
+      "name": "Pledge",
+      "description": "Grants 2 stacks of Pledge to self or target party member.\nPledge Effect: Renders target impervious to most attacks."
+    },
+    "mo1": {
+      "name": "Phantom Kick",
+      "description": "Leap towards your target, delivering an attack with a potency of 100 to all enemies in a straight line before you.\nPotency scales with item level.\nAdditional Effect: Grants a stack of Phantom Kick up to a maximum of 3, increasing damage dealt by 5%.",
+      "enhancement": {
+        "4": "Improves Phantom Kick's damage increase to 7%.",
+        "5": "Improves Phantom Kick's damage increase to 9%."
+      }
+    },
+    "mo2": {
+      "name": "Occult Counter",
+      "description": "Delivers an attack with a potency of 150 to all enemies in a cone before you.\nPotency scales with item level.\nCan only be executed immediately after parrying an attack."
+    },
+    "mo3": {
+      "name": "Counterstance",
+      "description": "Increases parry rate by 100%.\nAdditional Effect: Grants Fleetfooted to self and nearby party members when executed within proximity of a knowledge crystal.\nFleetfooted Effect: Increases movement speed for 30m."
+    },
+    "mo4": {
+      "name": "Occult Chakra",
+      "description": "Restores 30% of maximum HP and MP.\nAdditional Effect: When HP is less than 30%, restores 70% of maximum HP.\nAdditional Effect: When MP is less than 30%, restores 70% of maximum MP."
+    },
+    "ti1": {
+      "name": "Occult Slowga",
+      "description": "Afflict target and all enemies nearby it with Slow +80%."
+    },
+    "ti2": {
+      "name": "Occult Comet",
+      "description": "Deals unaspected damage with a potency of 500 to target and all enemies nearby it.\nPotency scales with item level."
+    },
+    "ti3": {
+      "name": "Occult Mage Masher",
+      "description": "Lowers target's magic attack power by 10%."
+    },
+    "ti4": {
+      "name": "Occult Dispel",
+      "description": "Removes one beneficial status from target, with some exceptions."
+    },
+    "ti5": {
+      "name": "Occult Quick",
+      "description": "Reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay of self or target party member by 10%, and reduces cast times for spells by 10 seconds.\nAdditional Effect: Greatly increases movement speed for 10s."
+    },
+    "ba1": {
+      "name": "Offensive Aria",
+      "description": "Increases damage dealt by self and nearby party members by 1%.",
+      "enhancement": {
+        "2": "Improves Offensive Aria's damage increase to 2%.",
+        "3": "Improves Offensive Aria's damage increase to 3%.",
+        "4": "Improves Offensive Aria's damage increase to 4%."
+      }
+    },
+    "ba2": {
+      "name": "Romeo's Ballad",
+      "description": "Freezes time for all nearby enemies readying an attack.\nAdditional Effect: Grants Romeo's Ballad to self and nearby party members when executed within proximity of a knowledge crystal\nRomeo's Ballad Effect: Increases Phantom EXP earned through battle by 10% for 30m."
+    },
+    "ba3": {
+      "name": "Mighty March",
+      "description": "Gradually restores own HP and the HP of all nearby party members.\nCure Potency: 3,000\nAdditional Effect: Increases maximum HP by 20% and restores the amount increased.",
+      "enhancement": {
+        "4": "Improves Mighty March's Cure potency to 3,500."
+      }
+    },
+    "ba4": {
+      "name": "Hero's Rime",
+      "description": "Increases damage dealt and healing potency of self and nearby party members by 10%, while reducing damage taken by 10%.\nEffect cannot be stacked with Offensive Aria."
+    },
+    "ge1": {
+      "name": "Battle Bell",
+      "description": "Grants Battle Bell to self or target player.\nBattle Bell Effect: Grants a stack of Battle's Clangor upon taking damage, up to a maximum of 8\nBattle's Clangor Effect: Increases damage dealt by 3％ for 30s.",
+      "enhancement": {
+        "5": "Increases the effectiveness of Battle Bell to 5%."
+      }
+    },
+    "ge2": {
+      "name": "Weather",
+      "description": "Grants a beneficial effect to self and nearby party members based on the weather.\nSunbath Effect: Restores own HP and the HP of nearby party members. Cure Potency: 50,000.\nCloudy Caress: Increases HP recovery via healing actions for self and nearby party members by 30%.\nBlessed Rain Effect: Creates a barrier around self and nearby party members that absorbs 30,000 damage.\nMisty Mirage Effect: Increases evasion for self and nearby party members by 40%.\nHasty Mirage Effect: Increases movement speed for self and nearby party members by 20%.\nAetherial Gain Effect: Increases damage dealt by self and nearby party members by 10%."
+    },
+    "ge3": {
+      "name": "Ringing Respite",
+      "description": "Grants Ringing Respite to self or target player.\nRinging Respite Effect: Heals self or target player when damage is taken.\nCure Potency: 2,000",
+      "enhancement": {
+        "5": "Increases the effectiveness of Ringing Respite to 3,000."
+      }
+    },
+    "ge4": {
+      "name": "Suspend",
+      "description": "Grants Suspend to self or target party member, becoming lighter than air and immune to certain mechanics."
+    },
+    "ra1": {
+      "name": "Phantom Aim",
+      "description": "Increases critical hit rate and direct hit rate by 15％, and guarantees that all attacks land.",
+      "enhancement": {
+        "3": "Improves Phantom Aim's critical hit rate and direct hit rate increase to 30%, and guarantees all attacks land.",
+        "5": "Improves Phantom Aim's critical hit rate and direct hit rate increase to 50%, and guarantees all attacks land."
+      }
+    },
+    "ra2": {
+      "name": "Occult Featherfoot",
+      "description": "Quickly dash 15 yalms forward."
+    },
+    "ra3": {
+      "name": "Occult Falcon",
+      "description": "Delivers an attack with a potency of 10 to all enemies at the designated area.\nPotency scales with item level.\nAdditional Effect: Stun\nAdditional Effect: Triggers traps at the designated area."
+    },
+    "ra4": {
+      "name": "Occult Unicorn",
+      "description": "Creates a barrier around self and all party members near you that absorbs 40,000 damage."
+    },
+    "be1": {
+      "name": "Rage",
+      "description": "Become enraged, delivering an attack with a potency of 150 to all enemies in a cone before you.\nPotency scales with item level.\nImmune to certain status effects, as well as most knockback and draw-in effects."
+    },
+    "be2": {
+      "name": "Deadly Blow",
+      "description": "Delivers an attack with a potency of 200.\nPotency scales with item level.\nAdditional Effect: Potency increases by up to 250 as your HP decreases.\nAdditional Effect: Increases potency up to 2,000 based on the amount of damage taken while under the effect of Pent-up Rage."
+    },
+    "ch1": {
+      "name": "Occult Potion",
+      "description": "Consume an Occult Potion to completely restore HP of self or target.\nCan only be executed while you possess an Occult Potion."
+    },
+    "ch2": {
+      "name": "Occult Ether",
+      "description": "Consume an Occult Potion to completely restore MP of self or target.\nCan only be executed while you possess an Occult Potion."
+    },
+    "ch3": {
+      "name": "Revive",
+      "description": "Resurrects target to a weakened state.\nCan also be cast on targets with Resurrection Restriction."
+    },
+    "ch4": {
+      "name": "Occult Elixir",
+      "description": "Consume an Occult Elixir to completely restore HP and MP of self and nearby party members.\nCan only be executed while you possess an Occult Elixir."
+    },
+    "ca1": {
+      "name": "Phantom Fire",
+      "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.",
+      "enhancement": {
+        "5": "Grants a 5% chance to instantly kill targets when executing Phantom Fire, with some exceptions."
+      }
+    },
+    "ca2": {
+      "name": "Holy Cannon",
+      "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency increases to 500 when used against undead enemies.\nPotency scales with item level."
+    },
+    "ca3": {
+      "name": "Dark Cannon",
+      "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Blind"
+    },
+    "ca4": {
+      "name": "Shock Cannon",
+      "description": "Deals lightning damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Paralysis\nShares a recast timer with Dark Cannon."
+    },
+    "ca5": {
+      "name": "Silver Cannon",
+      "description": "Deals unaspected damage with a potency of 210 to target and all enemies nearby it.\nPotency scales with item level.\nAdditional Effect: Afflicts target with Silver Sickness, reducing damage target deals by 10% and increasing damage taken by 5%.\nShares a recast timer with Holy Cannon."
+    },
+    "sa1": {
+      "name": "Mineuchi",
+      "description": "Stuns target."
+    },
+    "sa2": {
+      "name": "Shirahadori",
+      "description": "Renders you impervious to physical damage for one attack."
+    },
+    "sa3": {
+      "name": "Iainuki",
+      "description": "Delivers an attack with a potency of 300 to all enemies in a cone before you.\nPotency scales with item level.\nAdditional Effect: 5% chance to kill target instantly, with some exceptions.",
+      "enhancement": {
+        "5": "Increases the potency of Iainuki to 500, and increases chance to instantly kill target to 10%."
+      }
+    },
+    "sa4": {
+      "name": "Zeninage",
+      "description": "Consume an Occult Coffer to deliver a guaranteed strike with a potency of 1,500.\nPotency scales with item level.\nCan only be executed while you possess an Occult Coffer."
+    },
+    "th1": {
+      "name": "Occult Sprint",
+      "description": "Greatly increases movement speed."
+    },
+    "th2": {
+      "name": "Steal",
+      "description": "Increases the chance of additional items being dropped by target if Steal is dealt before, or as, the finishing blow."
+    },
+    "th3": {
+      "name": "Vigilance",
+      "description": "Grants Vigilance.\nEffect changes to Foreseen Offense when entering combat.\nForeseen Offense Effect: Increases critical hit rate by 60% for 20s.\nCannot be executed while in combat."
+    },
+    "th4": {
+      "name": "Trap Detection",
+      "description": "Reveals all traps and secret passages within a 15-yalm radius.\nCan only be executed when inside a dungeon."
+    },
+    "th5": {
+      "name": "Pilfer Weapon",
+      "description": "Lowers target's physical attack power by 10%."
+    },
+    "th6": {
+      "name": "Lockpicker",
+      "description": "Allows you to open locked doors in dungeons."
+    },
+    "or1": {
+      "name": "Predict",
+      "description": "Grants Prediction of Judgment, Prediction of Cleansing, Prediction of Blessing, or Prediction of Starfall, allowing the execution of an action depending on the prophecy granted.\nPhantom Judgment Action Effect: Deals unaspected damage to nearby enemies while healing self and nearby party members\nCleansing Action Effect: Deals unaspected damage to nearby enemies and freezes time\nBlessing Action Effect: Heals self and nearby party members, as well as granting Regen\nStarfall Action Effect: Deals unaspected damage to self and nearby enemies\nWhen the effect of a prediction expires, a new prophecy is granted. If all predictions expire without a commensurate action being used, the prophecy changes to False Prediction, causing damage over time to self with a potency of 50,000."
+    },
+    "or1a": {
+      "name": "Phantom Judgment",
+      "description": "Deals unaspected damage with a potency of 400 to all nearby enemies.\nPotency scales with item level.\nAdditional Effect: Restores own HP and the HP of all nearby party members.\nCure Potency: 40,000"
+    },
+    "or1b": {
+      "name": "Cleansing",
+      "description": "Deals unaspected damage with a potency of 500 to all nearby enemies.\nPotency scales with item level.\nAdditional Effect: Freezes time for nearby enemies readying an attack"
+    },
+    "or1c": {
+      "name": "Blessing",
+      "description": "Restores own HP and the HP of all nearby party members.\nCure Potency: 70,000\nAdditional Effect: Regen\nCure Potency: 3,000\nDuration: 15s"
+    },
+    "or1d": {
+      "name": "Starfall",
+      "description": "Deals unaspected damage to self totaling up to 90% of maximum HP, and to all nearby enemies with a potency of 1,000.\nPotency against enemies increases according to your item level."
+    },
+    "or2": {
+      "name": "Recuperation",
+      "description": "Grants Recuperation to self or target party member.\nWhen effect expires, removes a single detrimental effect from target and all nearby party members.\nRecuperation changes to Fortified Recuperation if effect is not triggered.\nFortified Recuperation Effect: Removes a detrimental effect from target and nearby party members if afflicted with a detrimental effect\nDuration: 3s\nShares a recast timer with Phantom Doom."
+    },
+    "or3": {
+      "name": "Phantom Doom",
+      "description": "Chance to afflict target with Phantom Doom.\nTarget is incapacitated when effect expires.\nShares a recast timer with Recuperation.\nHas no effect on targets outside of combat.\nEffect ends upon target leaving combat"
+    },
+    "or4": {
+      "name": "Phantom Rejuvenation",
+      "description": "Grants Phantom Rejuvenation to self or target party member.\nPhantom Rejuvenation Effect: Restores HP of target and nearby party members within 30 yalms when effect expires\nCure Potency: 90,000"
+    },
+    "or5": {
+      "name": "Invulnerability",
+      "description": "Prevents attacks from reducing a target party member's HP to less than 1."
+    }
+  }
+}

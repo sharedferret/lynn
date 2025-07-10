@@ -13,6 +13,7 @@ import {
   useMapEvents,
 } from 'react-leaflet';
 import L from 'leaflet';
+import { useTranslation } from 'react-i18next';
 import TooltipBaseComponent from './TooltipBaseComponent';
 import PolygonDrawingComponent from './PolygonDrawingComponent';
 import PolygonCoordinatesDisplay from './PolygonCoordinatesDisplay';
@@ -105,6 +106,8 @@ export default function FullscreenMapComponent({
   const annotations = [];
   const markerRef = useRef(null);
 
+  const { t } = useTranslation('map');
+
   const shouldDisplayPolygonDrawingComponent = false;
 
   // State for polygon drawing
@@ -163,7 +166,7 @@ export default function FullscreenMapComponent({
             />
           </Popup>
           <Tooltip permanent>
-            {displayLabels ? marker.name : ''}
+            {displayLabels && marker.name ? t(`map.regions.${marker.name}`) : ''}
           </Tooltip>
           {
             mapData[markerType].circle && (

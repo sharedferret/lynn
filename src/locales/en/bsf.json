@@ -1,0 +1,60 @@
+{
+  "drs": {
+    "holster-helper": {
+      "title": "DRS Holster Helper",
+      "window-title": "FFXIV Field Operations Assistant - forays.info",
+      "window-title-viewing-holster": "DRS Holster - {{type}} - forays.info",
+      "custom": "Custom",
+      "intro": {
+        "p1": "Use this tool to see what Lost Actions you should bring on your DRS run.",
+        "p2": "Are you a DRS host? Use the <0>DRS Run Holster Creator</0> to get your holsters added to this page!"
+      },
+      "last-updated": "(Last Updated: {{updated}})",
+      "steps": {
+        "1": {
+          "label": "Select host",
+          "description": "Select your run's host"
+        },
+        "2": {
+          "label": "Select run type",
+          "description": "Select your run's type."
+        },
+        "3": {
+          "label": "Select role",
+          "description": "What role are you playing in DRS?"
+        },
+        "4": {
+          "label": "Select holster",
+          "description": "Pick a holster."
+        }
+      }
+    }
+  },
+  "lost-action-helper": {
+    "title": "Bozja Lost Action Helper",
+    "action-label": "Action: ",
+    "appraised-label": "Appraised from"
+  },
+  "lost-action": {
+    "lost-focus": {
+      "name": "Lost Focus",
+      "text": "Grants a stack of Boost, up to a maximum of 16.\nBoost Bonus: Increases potency of next weaponskill by 15% per stack.\nEffect ends upon using another lost action.\nShares a recast timer with all other weaponskills and spells."
+    },
+    "lost-font-of-magic": {
+      "name": "Lost Font of Magic",
+      "text": "Increases damage dealt by 70%, draining MP while in use.\nSpirit of the Veteran Effect: Grants Spell Shield to self.\nSpell Shield Effect: Reduces magic damage taken by 50%.\nDuration: 15s\nCan only be executed while in combat."
+    },
+    "lost-font-of-power": {
+      "name": "Lost Font of Power",
+      "text": "Increases damage dealt by 30% and critical hit rate by 40%.\nSpirit of the Irregular Effect: Damage bonus is increased to 40%.\nSpirit of the Platebearer Effect: Grants Solid Shield to self.\nSolid Shield Effect: Reduces phyiscal damage taken by 50%.\nDuration: 15s\nCan only be executed while in combat."
+    },
+    "lost-slash": {
+      "name": "Lost Slash",
+      "text": "Delivers an attack with a potency of 800 to all enemies in a cone before you. When critical damage is dealt, potency is tripled.\nThis action does not share a recast timer with any other actions. Furthermore, the recast timer cannot be affected by other actions."
+    },
+    "lost-death": {
+      "name": "Lost Death",
+      "text": "KOs target. The less the target's HP, the greater the chance of success.\nSpirit of the Ordained Effect: Chance of success is increased.\nThis action does not share a recast timer with any other actions. Furthermore, the recast timer cannot be affected by other actions."
+    }
+  }
+}

@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import React from 'react';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
+import { useTranslation, Trans } from 'react-i18next';
 import DRSNewHolsterDisplayComponent from './DRSNewHolsterDisplayComponent';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import holsterMapping from './lib/HolsterMapping.json';
@@ -27,6 +28,8 @@ export default function DRSNewHolsterSelectorComponent({
   const [activeStep, setActiveStep] = React.useState(0);
   const [firstHolster, setFirstHolster] = React.useState(holster);
   const [resetTimerState, setResetTimerState] = React.useState(resetTimer);
+
+  const { t } = useTranslation('bsf');
 
   if (resetTimer !== resetTimerState) {
     setActiveStep(0);
@@ -58,23 +61,23 @@ export default function DRSNewHolsterSelectorComponent({
 
   const steps = [
     {
-      label: 'Select host',
-      description: 'Select your run\'s host.',
+      label: t('drs.holster-helper.steps.1.label'),
+      description: t('drs.holster-helper.steps.1.description'),
       hosts,
     },
     {
-      label: 'Select run type',
-      description: 'Select your run\'s type.',
+      label: t('drs.holster-helper.steps.2.label'),
+      description: t('drs.holster-helper.steps.2.description'),
       runTypes,
     },
     {
-      label: 'Select role',
-      description: 'What role are you playing in DRS?',
+      label: t('drs.holster-helper.steps.3.label'),
+      description: t('drs.holster-helper.steps.3.description'),
       roles,
     },
     {
-      label: 'Select holster',
-      description: 'Pick a holster.',
+      label: t('drs.holster-helper.steps.4.label'),
+      description: t('drs.holster-helper.steps.4.description'),
       availableHolsters,
     },
   ];
@@ -104,7 +107,7 @@ export default function DRSNewHolsterSelectorComponent({
     setFirstHolster(null);
     window.history.pushState(
       {},
-      'FFXIV Field Operations Assistant - forays.info',
+      t('drs.holster-helper.window-title'),
       '/drs/holster',
     );
   }, [setActiveStep,
@@ -192,14 +195,14 @@ export default function DRSNewHolsterSelectorComponent({
 
     window.history.pushState(
       selectedHolster,
-      `DRS Holster - ${initialHolster.holsterFriendlyType} - forays.info`,
+      t('drs.holster-helper.window-title-viewing-holster', { type: initialHolster.holsterFriendlyType }),
       `/drs/holster/${selectedHost}/${selectedRunType}/${selectedHolster}`,
     );
   } else if (encodedHolster !== undefined) {
     const holsters = DRSHolsterHelper.decodeHolster(encodedHolster);
     initialHolster = {
       holsterHost: '',
-      holsterName: 'Custom',
+      holsterName: t('drs.holster-helper.custom'),
       holsterType: 'custom',
       holsterFriendlyType: 'Custom',
       holsterMetadata: {
@@ -216,7 +219,7 @@ export default function DRSNewHolsterSelectorComponent({
   } else if (window.location.pathname === '/drs/holster/c') {
     initialHolster = {
       holsterHost: '',
-      holsterName: 'Custom',
+      holsterName: t('drs.holster-helper.custom'),
       holsterType: 'custom',
       holsterFriendlyType: 'Custom',
       holsterMetadata: {
@@ -252,7 +255,7 @@ export default function DRSNewHolsterSelectorComponent({
           startIcon={<RestartAltIcon />}
           onClick={handleReset}
         >
-          Start Over
+          <Trans i18nKey="common.start-over" />
         </Button>
       </Box>
       {holster && firstHolster && holster.name
@@ -265,7 +268,7 @@ export default function DRSNewHolsterSelectorComponent({
               startIcon={<ArrowBackIosNewIcon />}
               onClick={handleBack}
             >
-              Back
+              <Trans i18nKey="common.back" />
             </Button>
           </Box>
         )}
@@ -289,10 +292,13 @@ export default function DRSNewHolsterSelectorComponent({
                       {holsterMapping.hosts[selectedHost].lastUpdated
                         ? (
                           <Typography fontSize={12}>
-                            (Last Updated:
-                            {' '}
-                            {holsterMapping.hosts[selectedHost].lastUpdated}
-                            )
+                            <Trans
+                              i18nKey="drs.holster-helper.last-updated"
+                              ns="bsf"
+                              values={{
+                                updated: holsterMapping.hosts[selectedHost].lastUpdated,
+                              }}
+                            />
                           </Typography>
                         )
                         : null}
@@ -438,14 +444,16 @@ export default function DRSNewHolsterSelectorComponent({
   const displayStepperIntroText = (() => (
     <Box>
       <Typography textAlign="left">
-        Use this tool to see what Lost Actions you should bring on your DRS run.
+        { t('drs.holster-helper.intro.p1') }
       </Typography>
       <Typography textAlign="left" pt={1}>
-        Are you a DRS host? Use the
-        {' '}
-        <a href="/createdrsholsters">DRS Run Holster Creator</a>
-        {' '}
-        to get your holsters added to this page!
+        <Trans
+          i18nKey="drs.holster-helper.intro.p2"
+          ns="bsf"
+          components={[
+            <a href="/createdrsholsters">DRS Run Holster Creator</a>,
+          ]}
+        />
       </Typography>
     </Box>
   ));

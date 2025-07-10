@@ -7,12 +7,15 @@ import RadioGroup from '@mui/material/RadioGroup';
 import useTheme from '@mui/material/styles/useTheme';
 import React from 'react';
 import Scrollbars from 'react-custom-scrollbars-2';
+import { useTranslation } from 'react-i18next';
 
 export default function MapZoneSelectorComponent({
   currentZone,
   handleZoneSelectorUpdate,
 }) {
   const theme = useTheme();
+  const { t } = useTranslation('map');
+
   return (
     <Box
       className="map-zone-selector"
@@ -29,16 +32,16 @@ export default function MapZoneSelectorComponent({
             value={currentZone}
             onChange={(e) => handleZoneSelectorUpdate(e.target.value)}
           >
-            <FormLabel>Occult Crescent</FormLabel>
-            <FormControlLabel value="southhorn" control={<Radio />} label="South Horn" />
-            <FormLabel>Bozja</FormLabel>
-            <FormControlLabel value="zadnor" control={<Radio disabled />} label="Zadnor" />
-            <FormControlLabel value="bsf" control={<Radio />} label="The Bozjan Southern Front" />
-            <FormLabel>Eureka</FormLabel>
-            <FormControlLabel value="hydatos" control={<Radio />} label="Eureka Hydatos" />
-            <FormControlLabel value="pyros" control={<Radio disabled />} label="Eureka Pyros" />
-            <FormControlLabel value="pagos" control={<Radio disabled />} label="Eureka Pagos" />
-            <FormControlLabel value="anemos" control={<Radio disabled />} label="Eureka Anemos" />
+            <FormLabel>{t('occult.name', { ns: 'zones' })}</FormLabel>
+            <FormControlLabel value="southhorn" control={<Radio />} label={t('occult.southhorn.short', { ns: 'zones' })} />
+            <FormLabel>{t('bozja.name', { ns: 'zones' })}</FormLabel>
+            <FormControlLabel value="zadnor" control={<Radio disabled />} label={t('bozja.zadnor.full', { ns: 'zones' })} />
+            <FormControlLabel value="bsf" control={<Radio />} label={t('bozja.bsf.full', { ns: 'zones' })} />
+            <FormLabel>{t('eureka.name', { ns: 'zones' })}</FormLabel>
+            <FormControlLabel value="hydatos" control={<Radio />} label={t('eureka.hydatos.full', { ns: 'zones' })} />
+            <FormControlLabel value="pyros" control={<Radio disabled />} label={t('eureka.pyros.full', { ns: 'zones' })} />
+            <FormControlLabel value="pagos" control={<Radio disabled />} label={t('eureka.pagos.full', { ns: 'zones' })} />
+            <FormControlLabel value="anemos" control={<Radio disabled />} label={t('eureka.anemos.full', { ns: 'zones' })} />
           </RadioGroup>
         </FormGroup>
       </Scrollbars>

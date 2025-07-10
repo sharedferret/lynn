@@ -1,0 +1,39 @@
+{
+  "occult": {
+    "name": "Kreszentia",
+    "southhorn": {
+      "full": "Kreszentia (Südexpedition)",
+      "short": "Südliches Kreszentia"
+    }
+  },
+  "bozja": {
+    "name": "Bozja",
+    "bsf": {
+      "full": "The Bozjan Southern Front",
+      "short": "Bozja"
+    },
+    "zadnor": {
+      "full": "Zadnor",
+      "short": "Zadnor"
+    }
+  },
+  "eureka": {
+    "name": "Eureka",
+    "hydatos": {
+      "full": "Eureka Hydatos",
+      "short": "Hydatos"
+    },
+    "pyros": {
+      "full": "Eureka Pyros",
+      "short": "Pyros"
+    },
+    "pagos": {
+      "full": "Eureka Pagos",
+      "short": "Pagos"
+    },
+    "anemos": {
+      "full": "Eureka Anemos",
+      "short": "Anemos"
+    }
+  }
+}

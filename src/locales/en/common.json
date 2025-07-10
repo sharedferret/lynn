@@ -1,0 +1,115 @@
+{
+  "main": {
+    "title": "FFXIV Field Operations Assistant",
+    "header": {
+      "title": "{{sitename}} - FFXIV Field Operations Assistant"
+    },
+    "intro": {
+      "p1": "Welcome to {{sitename}}, a home for tools to help with Final Fantasy XIV side content - including the Occult Crescent (Forked Tower), Eureka (The Baldesion Arsenal), and Bozja (Delubrum Reginae Savage). Find out how to build and gather materials for Lost Actions and Logos Actions, what to bring for The Baldesion Arsenal or Delubrum Reginae Savage runs, when the next Cassie or Crab spawn is, and more!",
+      "p2": "Looking for a group to run Forked Tower, BA, or DRS with? Most of the content on this site was designed for runs on <0>The Help Lines</0> on Primal.",
+      "p3": "Built by Lynn Kaneko @ Exodus. Issues or suggestions? You can reach out to me on Discord (@lynnkaneko).",
+      "p4": "Home page artwork by <0>{{artist}}</0>!"
+    }
+  },
+  "footer": {
+    "copyright": "FINAL FANTASY XIV © 2010 - 2025 SQUARE ENIX CO., LTD. FINAL FANTASY, FINAL FANTASY XIV, and FFXIV are registered trademarks or trademarks of Square Enix Holdings Co., Ltd. All material used under license.",
+    "version": "Version {{ver}}"
+  },
+  "sidebar": {
+    "occult": {
+      "header": "OCCULT CRESCENT",
+      "map": "Occult Crescent Maps",
+      "job": "Phantom Jobs"
+    },
+    "bozja": {
+      "header": "BOZJA AND DRS",
+      "holster": "DRS Holsters",
+      "holstercreator": "Hoslter Creator",
+      "map": "Bozja Maps",
+      "lostaction": "Lost Action Info",
+      "fragmentfarm": "Fragment Farm Times"
+    },
+    "eureka": {
+      "header": "EUREKA AND BA",
+      "baloadout": "BA Loadouts",
+      "bamap": "BA Portal Map",
+      "map": "Eureka Maps",
+      "logosaction": "Logos Action Info",
+      "loadout": "Loadout Creator",
+      "nm": "NM Spawn Times",
+      "farm": "Logogram/Box Farm Times"
+    },
+    "forays": {
+      "header": "FORAYS",
+      "forecast": "Expeditionary Forecast",
+      "weather": "Advanced Weather Finder"
+    },
+    "about": {
+      "header": "ABOUT",
+      "lynn": "Lynn Kaneko @ Exodus"
+    },
+    "forecast": {
+      "header": {
+        "all": "ALL",
+        "eurekanm": "EUREKA NMS",
+        "eurekafarm": "EUREKA FARMS",
+        "bozjafarm": "BOZJA FRAGMENT FARMS"
+      },
+      "cassie": "Copycat Cassie",
+      "crab": "King Artho",
+      "skoll": "Skoll",
+      "pazuzu": "Pazuzu",
+      "penny": "Penthesilea",
+      "coldbox": "Cold-Warped Lockbox",
+      "heatbox": "Heat-Warped Lockbox",
+      "offensive": "Offensive Logogram",
+      "conceptual": "Conceptual Logogram",
+      "mitigative": "Mitigative Logogram",
+      "preparation": "Preparation",
+      "care": "Care",
+      "support": "Support",
+      "history": "History",
+      "artistry": "Artistry",
+      "all-eureka-nms": "All Eureka NMs",
+      "all-bozja-farms": "All Bozja Fragment Farms",
+      "all-eureka-farms": "All Eureka Farms",
+      "all-spawns": "All Upcoming Spawns"
+    }
+  },
+  "weather-popover": {
+    "current-time": "Current Time",
+    "current-weather": "Current Weather"
+  },
+  "skill-type": {
+    "ability": "Ability",
+    "weaponskill": "Weaponskill",
+    "spell": "Spell"
+  },
+  "action-detail-label": {
+    "duration": "<0>Duration:</0> <1>{{duration}}</1>",
+    "cast": "<0>Cast:</0> <1>{{cast}}s</1>",
+    "recast": "<0>Recast:</0> <1>{{recast}}s</1>",
+    "mp": "<0>MP:</0> <1>{{mp}}</1>",
+    "charges": "<0>Charges:</0> <1>{{charges}}</1>",
+    "rank": "Rank: {{rank}}",
+    "usable-by": "Usable by: ",
+    "unlock": "Unlock:"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme_title": "Site Theme",
+    "themes": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language_title": "Language",
+    "universalis_region_title": "Universalis Region"
+  },
+  "common": {
+    "home": "Home",
+    "close": "Close",
+    "back": "Back",
+    "start-over": "Start Over"
+  }
+}

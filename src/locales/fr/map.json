@@ -1,0 +1,201 @@
+{
+  "map": {
+    "regions": {
+      "southhorn": {
+        "namedLocation": {
+          "1": "Pavillon solitaire",
+          "2": "Cloître occulte"
+        },
+        "aetheryte": {
+          "1": "Camp de base",
+          "2": "Refuge du Vagabond",
+          "3": "Cavernes de cristal",
+          "4": "Lagune lapidaire",
+          "5": "Vieilleracine"
+        },
+        "trader": {
+          "1": "Numismate de l'expédition",
+          "2": "Fournisseur de l'expédition",
+          "3": "Équipementier de l'expédition"
+        },
+        "repair": "Réparations",
+        "treasureCoffer": {
+          "bronze": "Bronze Treasure Coffer Spawn Location",
+          "silver": "Silver Treasure Coffer Spawn Location",
+          "pot": "Magic Pot Coffer Spawn Location",
+          "carrot": "Half-Eaten Carrot Spawn Location",
+          "carrot_unv": "Half-Eaten Carrot Spawn Location (Unverified)"
+        },
+        "fate": {
+          "pot1": {
+            "name": "Persistent Pots"
+          },
+          "pot2": {
+            "name": "Pleading Pots"
+          },
+          "1": {
+            "name": "Défi : humidité zéro",
+            "boss": "Déshumidificateur"
+          },
+          "2": {
+            "name": "Défi : la belle mort",
+            "boss": "Bourrelle"
+          },
+          "3": {
+            "name": "Défi : tombe vingt-quatre carats",
+            "boss": "Pierre tombale dorée"
+          },
+          "4": {
+            "name": "Défi : le poison de l'évolution",
+            "boss": "Eibis évolué"
+          },
+          "5": {
+            "name": "Défi : la bête sadique",
+            "boss": "Ropross"
+          },
+          "6": {
+            "name": "Défi : pas de vagues",
+            "boss": "Nammu"
+          },
+          "7": {
+            "name": "Défi : je fus zu",
+            "boss": "Oiseau géant"
+          },
+          "8": {
+            "name": "Défi : pierre de tonnerre",
+            "boss": "Sisyphos"
+          },
+          "9": {
+            "name": "Défi : un œil sur l'île",
+            "boss": "Insulobservateur"
+          },
+          "10": {
+            "name": "Défi : collecte mortelle",
+            "boss": "Collecteur de vies"
+          },
+          "11": {
+            "name": "Défi : rester de boue",
+            "boss": "Boue démente"
+          }
+        },
+        "ce": {
+          "1": {
+            "name": "L'armée des argileux",
+            "boss": "Mégalochevalier"
+          },
+          "2": {
+            "name": "Défi : les ailes de pierre",
+            "boss": "Follet folâtre"
+          },
+          "3": {
+            "name": "Défi : à rugir debout",
+            "boss": "Lion rampant",
+            "drop": {
+              "oracle": "Éclat d'âme de devin"
+            },
+            "spawn": "Ventilateur de Lunule"
+          },
+          "4": {
+            "name": "Défi : face de griffes",
+            "boss": "Griffe de mort"
+          },
+          "5": {
+            "name": "Défi : mammouth fâché",
+            "boss": "Néo-garula",
+            "spawn": "Garula de Lunule"
+          },
+          "6": {
+            "name": "Plumes d'encre",
+            "boss": "Étoile noire",
+            "drop": {
+              "ranger": "Éclat d'âme de rôdeur",
+              "note": "Article sur les chocobos noirs "
+            },
+            "spawn": "Coeurl de Lunule"
+          },
+          "7": {
+            "name": "Défi : écailles de cristal",
+            "boss": "Dragon cristallin"
+          },
+          "8": {
+            "name": "Défi : homo selachus",
+            "boss": "Petalodus de Nym",
+            "drop": {
+              "note": "Article sur le petalodus de Nym "
+            },
+            "spawn": "Petalodus inférieur de Lunule"
+          },
+          "9": {
+            "name": "Défi : le rageux",
+            "boss": "Berserker de Lunule",
+            "drop": {
+              "berserker": "Éclat d'âme de berserker",
+              "note": "Article sur le berserker de Lunule "
+            }
+          },
+          "10": {
+            "name": "Défi : idole surprise",
+            "boss": "Idole mythique",
+            "drop": {
+              "note": "Article sur l'idole mythique "
+            },
+            "spawn": "Byblos de Lunule"
+          },
+          "11": {
+            "name": "Défi : être aux pièces",
+            "boss": "Tortue à pièces",
+            "drop": {
+              "note": "Article sur la tortue à pièces "
+            }
+          },
+          "12": {
+            "name": "Cordon de sécurité",
+            "boss": "Urne de commande"
+          },
+          "13": {
+            "name": "Défi : comme un lion nouveau",
+            "boss": "Lion réparé"
+          },
+          "14": {
+            "name": "Défi : Cloître à perpétuité",
+            "boss": "Démon du Cloître",
+            "drop": {
+              "note": "Article sur le démon du Cloître"
+            },
+            "spawn": "Tache d'encre de Lunule"
+          },
+          "15": {
+            "name": "Défi : l'encéphalophage",
+            "boss": "Ensorceleur",
+            "spawn": "Moine de Lunule"
+          }
+        },
+        "surveyPoint": {
+          "7": "#7: Forteresse perdue",
+          "9": "#9: Versant des Visions",
+          "12": "#12: Quiètes collines",
+          "13": "#13: Cité dédaléenne",
+          "15": "#15: Cité des Interdits",
+          "18": "#18: Vieilleracine",
+          "19": "#19: L'Ascension archaïque",
+          "21": "#21: Immeubles d'habitation élevés",
+          "22": "#22: Atelier à golems",
+          "23": "#23: Refuge du Vagabond",
+          "24": "#24: Grand brasier céleste"
+        },
+        "demiatma": {
+          "orpiment": "Demi-âtma ambre",
+          "caputMortuum": "Demi-âtma améthyste",
+          "realgar": "Demi-âtma corail",
+          "malachite": "Demi-âtma émeraude",
+          "azurite": "Demi-âtma saphir",
+          "verdigris": "Demi-âtma turquoise"
+        }
+      }
+    },
+    "layer": {
+      "traders": "Échangeur",
+      "repair": "Réparations"
+    }
+  }
+}
