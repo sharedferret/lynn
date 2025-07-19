@@ -1,6 +1,13 @@
 {
   "changes": [
     {
+      "version": "28.0",
+      "timestamp": "2025-07-19",
+      "changes": [
+        "Added /drs/anyprog guide for THL DRS anyprog runs"
+      ]
+    },
+    {
       "version": "27.0",
       "timestamp": "2025-07-09",
       "changes": [

@@ -31,6 +31,7 @@ import BAMorbolMapComponent from './BAMorbolMapComponent';
 import MapPageComponent from './map/MapPageComponent';
 import OccultCrescentGuideContainer from './occult/OccultCrescentGuideContainer';
 import OccultPhantomJobHelperContainerComponent from './occult/phantom_jobs/OccultPhantomJobHelperContainerComponent';
+import DRSAnyprogGuideContainer from './drs/anyprog/DRSAnyprogGuideContainer';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -234,6 +235,10 @@ const router = createBrowserRouter([
         ],
       },
     ],
+  },
+  {
+    path: '/drs/anyprog',
+    element: <WrappedMainComponent component={<DRSAnyprogGuideContainer />} page="drsanyprogguide" />,
   },
   {
     path: '/bozja/lostaction',
