@@ -24,7 +24,8 @@
     "bozja": {
       "header": "BOZJA AND DRS",
       "holster": "DRS Holsters",
-      "holstercreator": "Hoslter Creator",
+      "drsguide": "DRS Guide",
+      "holstercreator": "Holster Creator",
       "map": "Bozja Maps",
       "lostaction": "Lost Action Info",
       "fragmentfarm": "Fragment Farm Times"

@@ -47,3 +47,19 @@ img {
   text-decoration: none;
   color: #1e88e5;
 }
+
+.left-aligned-markdown {
+  text-align: left;
+}
+
+.left-aligned-markdown p,
+.left-aligned-markdown h1,
+.left-aligned-markdown h2,
+.left-aligned-markdown h3,
+.left-aligned-markdown h4,
+.left-aligned-markdown h5,
+.left-aligned-markdown h6,
+.left-aligned-markdown ul,
+.left-aligned-markdown ol {
+  text-align: left;
+}

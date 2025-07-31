@@ -1,6 +1,6 @@
 {
   "name": "lynn",
-  "version": "28.0.0",
+  "version": "28.1.g1",
   "private": true,
   "dependencies": {
     "@date-io/dayjs": "^2.16.0",

@@ -31,6 +31,7 @@ import BAMorbolMapComponent from './BAMorbolMapComponent';
 import MapPageComponent from './map/MapPageComponent';
 import OccultCrescentGuideContainer from './occult/OccultCrescentGuideContainer';
 import OccultPhantomJobHelperContainerComponent from './occult/phantom_jobs/OccultPhantomJobHelperContainerComponent';
+import DRSGuideContainer from './drs/guide/DRSGuideContainer';
 import DRSAnyprogGuideContainer from './drs/anyprog/DRSAnyprogGuideContainer';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
@@ -86,6 +87,14 @@ function WrappedMainComponent({ component, page }) {
           }
         }
         encodedHolster={params.holsterstring}
+        colorModeContext={ColorModeContext}
+      />
+    );
+  } if (page === 'drsguide') {
+    return (
+      <MainComponent
+        component={component}
+        guidePage={params.page}
         colorModeContext={ColorModeContext}
       />
     );
@@ -239,6 +248,16 @@ const router = createBrowserRouter([
   {
     path: '/drs/anyprog',
     element: <WrappedMainComponent component={<DRSAnyprogGuideContainer />} page="drsanyprogguide" />,
+  },
+  {
+    path: '/drs/guide',
+    element: <WrappedMainComponent component={<DRSGuideContainer />} page="drsguide" />,
+    children: [
+      {
+        path: '/drs/guide/:page',
+        element: <WrappedMainComponent component={<DRSGuideContainer />} page="drsguide" />,
+      },
+    ],
   },
   {
     path: '/bozja/lostaction',

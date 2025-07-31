@@ -129,6 +129,16 @@ function SidebarComponent({
         <Typography><Trans i18nKey="sidebar.bozja.holster" ns="common" /></Typography>
       </StyledButton>
 
+      { /**
+      <StyledButton
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/guide'); }}
+        key={uuidv4()}
+      >
+        <Box width={32} />
+        <Typography><Trans i18nKey="sidebar.bozja.drsguide" ns="common" /></Typography>
+      </StyledButton>
+      */ }
+
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/holster/c'); }}
         key={uuidv4()}
