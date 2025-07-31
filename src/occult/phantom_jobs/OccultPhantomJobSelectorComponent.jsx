@@ -7,6 +7,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import React, { useCallback } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { Trans } from 'react-i18next';
 import OccultPhantomJobInformationTooltipComponent from './OccultPhantomJobInformationTooltipComponent';
 import PhantomJobHelper from '../lib/PhantomJobHelper';
 
@@ -30,7 +31,7 @@ export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJo
               src={`${process.env.PUBLIC_URL}/assets/phantomjobs/${job.image}.png`}
               alt={job.name}
             />
-            <Typography>{job.name}</Typography>
+            <Typography><Trans i18nKey={`phantom-job.${job.key}.name`} ns="occult" /></Typography>
           </Stack>
         </Tooltip>
       </MenuItem>
@@ -42,7 +43,7 @@ export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJo
 
     const menuItems = [];
 
-    menuItems.push(<MenuItem value="" key={`selector-${uuidv4()}`}>None</MenuItem>);
+    menuItems.push(<MenuItem value="" key={`selector-${uuidv4()}`}><Trans i18nKey="job-helper.none" ns="occult" /></MenuItem>);
     menuItems.push(...Object.values(phantomJobs).map((job) => renderJob(job)));
 
     return menuItems;
@@ -74,7 +75,7 @@ export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJo
       >
         <Stack direction="row" spacing={2} alignItems="center">
           <img src={`${process.env.PUBLIC_URL}/assets/phantomjobs/${job.image}.png`} width={32} height={32} alt={job.full} />
-          <Typography>{job.name}</Typography>
+          <Typography><Trans i18nKey={`phantom-job.${job.key}.name`} ns="occult" /></Typography>
         </Stack>
       </Tooltip>
     );

@@ -1,0 +1,23 @@
+{
+  "sidebar": {
+    "occult": {
+      "header": "KRESZENTIA",
+      "map": "Kreszentia-Karten",
+      "job": "Phantomjobs"
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "theme_title": "Site Theme",
+    "themes": {
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    },
+    "language_title": "Sprache",
+    "universalis_region_title": "Universalis-Welt"
+  },
+  "common": {
+    "close": "Schließen"
+  }
+}

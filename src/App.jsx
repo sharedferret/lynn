@@ -1,6 +1,7 @@
 import './App.css';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
+import { I18nextProvider } from 'react-i18next';
 
 import createTheme from '@mui/material/styles/createTheme';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
@@ -9,6 +10,8 @@ import {
   RouterProvider,
   useParams,
 } from 'react-router-dom';
+
+import i18n from './i18n';
 
 import MainPageComponent from './MainPageComponent';
 import ForecastMainComponent from './forecast/ForecastMainComponent';
@@ -28,6 +31,8 @@ import BAMorbolMapComponent from './BAMorbolMapComponent';
 import MapPageComponent from './map/MapPageComponent';
 import OccultCrescentGuideContainer from './occult/OccultCrescentGuideContainer';
 import OccultPhantomJobHelperContainerComponent from './occult/phantom_jobs/OccultPhantomJobHelperContainerComponent';
+import DRSGuideContainer from './drs/guide/DRSGuideContainer';
+import DRSAnyprogGuideContainer from './drs/anyprog/DRSAnyprogGuideContainer';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -82,6 +87,14 @@ function WrappedMainComponent({ component, page }) {
           }
         }
         encodedHolster={params.holsterstring}
+        colorModeContext={ColorModeContext}
+      />
+    );
+  } if (page === 'drsguide') {
+    return (
+      <MainComponent
+        component={component}
+        guidePage={params.page}
         colorModeContext={ColorModeContext}
       />
     );
@@ -233,6 +246,20 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: '/drs/anyprog',
+    element: <WrappedMainComponent component={<DRSAnyprogGuideContainer />} page="drsanyprogguide" />,
+  },
+  {
+    path: '/drs/guide',
+    element: <WrappedMainComponent component={<DRSGuideContainer />} page="drsguide" />,
+    children: [
+      {
+        path: '/drs/guide/:page',
+        element: <WrappedMainComponent component={<DRSGuideContainer />} page="drsguide" />,
+      },
+    ],
+  },
+  {
     path: '/bozja/lostaction',
     element: <WrappedMainComponent component={<BozjaLostActionHelperContainerComponent />} page="bozjalostaction" />,
     children: [
@@ -375,23 +402,22 @@ function App() {
   });
 
   return (
-    <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        <Helmet>
-          <title>FFXIV Field Operations Assistant - forays.info</title>
-          <meta name="description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
-          <meta property="og:title" content="forays.info" />
-          <meta property="og:url" content="https://forays.info/" />
-          <meta property="og:image" content="https://forays.info/logo.png" />
-          <meta property="og:description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
-          <meta property="og:site_name" content="forays.info" />
-          <meta name="twitter:card" content="summary" />
-          <meta name="twitter:creator" content="@reflexyui" />
-        </Helmet>
-        <RouterProvider router={router} />
-      </ThemeProvider>
-    </ColorModeContext.Provider>
-
+    <I18nextProvider i18n={i18n}>
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={theme}>
+          <Helmet>
+            <title>FFXIV Field Operations Assistant - forays.info</title>
+            <meta name="description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
+            <meta property="og:title" content="forays.info" />
+            <meta property="og:url" content="https://forays.info/" />
+            <meta property="og:image" content="https://forays.info/logo.png" />
+            <meta property="og:description" content="A collection of tools for Final Fantasy XIV side content created by Lynn Kaneko @ Exodus" />
+            <meta property="og:site_name" content="forays.info" />
+          </Helmet>
+          <RouterProvider router={router} />
+        </ThemeProvider>
+      </ColorModeContext.Provider>
+    </I18nextProvider>
   );
 }
 

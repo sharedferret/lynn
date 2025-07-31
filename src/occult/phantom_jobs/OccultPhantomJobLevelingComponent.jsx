@@ -4,6 +4,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { useTheme, alpha } from '@mui/material/styles';
+import { Trans } from 'react-i18next';
 
 import React from 'react';
 import {
@@ -54,7 +55,9 @@ export default function OccultPhantomJobLevelingComponent({ expByLevel, isFreela
         }}
       >
         <Stack spacing={3} pt={2}>
-          <Typography textAlign="start" fontWeight={700} variant="h4">Leveling Up</Typography>
+          <Typography textAlign="start" fontWeight={700} variant="h4">
+            <Trans i18nKey="job-helper.leveling-up" ns="occult" />
+          </Typography>
           <Divider sx={{
             width: '80%',
             margin: '0 auto',
@@ -66,10 +69,7 @@ export default function OccultPhantomJobLevelingComponent({ expByLevel, isFreela
             { isFreelancer
               ? (
                 <Typography textAlign="start">
-                  Freelancer is a special Phantom Job. Instead of leveling up via Phantom Job
-                  experience points, Freelancer gains levels based on how many Phantom Jobs
-                  you&apos;ve mastered. Freelancer starts at Level 1, and gains a level each time
-                  you master a Phantom Job.
+                  <Trans i18nKey="job-helper.freelancer-leveling" ns="occult" />
                 </Typography>
               )
               : (

@@ -513,12 +513,12 @@
               "astral": "Wisdom of the Aetherweaver"
             },
             {
-              "umbral": "Refresh L",
-              "astral": "Wisdom of the Aetherweaver"
-            },
-            {
               "umbral": "Magic Burst L",
               "astral": "Wisdom of the Ordained"
+            },
+            {
+              "umbral": "Protect L",
+              "astral": "Shell L"
             },
             {
               "umbral": null,
@@ -543,6 +543,10 @@
             {
               "umbral": "Refresh L",
               "astral": "Wisdom of the Aetherweaver"
+            },
+            {
+              "umbral": "Protect L",
+              "astral": "Shell L"
             },
             {
               "umbral": "Rejuvenate L",
@@ -591,6 +595,10 @@
             {
               "umbral": "Refresh L",
               "astral": "Wisdom of the Aetherweaver"
+            },
+            {
+              "umbral": "Protect L",
+              "astral": "Shell L"
             },
             {
               "umbral": "Feint L",

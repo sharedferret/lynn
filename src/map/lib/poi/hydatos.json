@@ -1,103 +1,103 @@
 {
-  "name": "Eureka Hydatos",
+  "name": "eureka.hydatos",
   "id": "hydatos",
   "region": "Eureka",
   "categories": [
     {
-      "name": "General",
+      "name": "category.general",
       "enabled": true,
       "layers": [
         {
           "id": "namedLocations",
-          "name": "Named Locations",
+          "name": "layer.namedLocations",
           "enabled": true
         },
         {
           "id": "aetherytes",
-          "name": "Aetherytes",
+          "name": "layer.aetherytes",
           "enabled": true
         },
         {
           "id": "elementals",
-          "name": "Elementals",
+          "name": "layer.elementals",
           "enabled": true
         },
         {
           "id": "logosManipulators",
-          "name": "Logos Manipulators",
+          "name": "layer.logosManipulators",
           "enabled": true
         },
         {
           "id": "magiaMelders",
-          "name": "Magia Melders",
+          "name": "layer.magiaMelders",
           "enabled": true
         },
         {
           "id": "traders",
-          "name": "Traders",
+          "name": "layer.traders",
           "enabled": true
         },
         {
           "id": "shops",
-          "name": "Shops",
+          "name": "layer.shops",
           "enabled": true
         },
         {
           "id": "repair",
-          "name": "Repair",
+          "name": "layer.repair",
           "enabled": true
         }
       ]
     },
     {
-      "name": "Encounters",
+      "name": "category.encounters",
       "enabled": true,
       "layers": [
         {
           "id": "nms",
-          "name": "NMs",
+          "name": "layer.nms",
           "enabled": true
         },
         {
           "id": "bunnyCoffers",
-          "name": "Bunny Coffers",
+          "name": "layer.bunnyCoffers",
           "enabled": true
         },
         {
           "id": "baPortals",
-          "name": "BA Portals",
+          "name": "layer.baPortals",
           "enabled": true
         }
       ]
     },
     {
-      "name": "Enemies",
+      "name": "category.enemies",
       "enabled": false,
       "layers": [
         {
           "id": "mobs",
-          "name": "Mobs",
+          "name": "layer.mobs",
           "enabled": false
         },
         {
           "id": "nmPrepMobs",
-          "name": "NM Prep Mobs",
+          "name": "layer.nmPrepMobs",
           "enabled": false
         },
         {
           "id": "sprites",
-          "name": "Sprites",
+          "name": "layer.sprites",
           "enabled": false
         }
       ]
     },
     {
-      "name": "Progression",
+      "name": "category.progression",
       "enabled": false,
       "layers": [
         {
           "id": "quests",
-          "name": "Quests",
+          "name": "layer.quests",
           "enabled": false
         }
       ]
@@ -144,7 +144,7 @@
       "markerIcon": "poi-pin.png",
       "waymarks": [
         {
-          "name": "The Aetherbridge Foundation",
+          "name": "hydatos.namedLocation.1",
           "@id": "hyd_aetherbridgefoundation",
           "position": {
             "x": 24.0,
@@ -152,7 +152,7 @@
           }
         },
         {
-          "name": "The Western Columns",
+          "name": "hydatos.namedLocation.2",
           "@id": "hyd_westerncolumns",
           "position": {
             "x": 10.7,
@@ -160,7 +160,7 @@
           }
         },
         {
-          "name": "The Central Columns",
+          "name": "hydatos.namedLocation.3",
           "@id": "hyd_centralcolumns",
           "position": {
             "x": 20.3,
@@ -168,7 +168,7 @@
           }
         },
         {
-          "name": "The Eastern Columns",
+          "name": "hydatos.namedLocation.4",
           "@id": "hyd_easterncolumns",
           "position": {
             "x": 31.2,
@@ -176,7 +176,7 @@
           }
         },
         {
-          "name": "The Crystal Dragon's Bloom",
+          "name": "hydatos.namedLocation.5",
           "@id": "hyd_crystaldragonsbloom",
           "position": {
             "x": 32.8,
@@ -189,7 +189,7 @@
       "markerIcon": "aetheryte.png",
       "waymarks": [
         {
-          "name": "Central Point",
+          "name": "hydatos.aetheryte.1",
           "@id": "hyd_centralpoint",
           "position": {
             "x": 20.4,
@@ -200,7 +200,7 @@
           }
         },
         {
-          "name": "Unverified Research",
+          "name": "hydatos.aetheryte.2",
           "@id": "hyd_unverifiedresearch",
           "position": {
             "x": 9.9,
@@ -211,7 +211,7 @@
           }
         },
         {
-          "name": "The Dormitory",
+          "name": "hydatos.aetheryte.3",
           "@id": "hyd_dormitory",
           "position": {
             "x": 37.0,
@@ -228,7 +228,7 @@
       "waymarks": [
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental01",
           "position": {
             "x": 5.1,
@@ -237,7 +237,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental02",
           "position": {
             "x": 10.0,
@@ -246,7 +246,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental03",
           "position": {
             "x": 16.0,
@@ -255,7 +255,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental04",
           "position": {
             "x": 14.6,
@@ -264,7 +264,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental05",
           "position": {
             "x": 13.0,
@@ -273,7 +273,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental06",
           "position": {
             "x": 7.8,
@@ -282,7 +282,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental07",
           "position": {
             "x": 4.4,
@@ -291,7 +291,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental08",
           "position": {
             "x": 7.1,
@@ -300,7 +300,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental09",
           "position": {
             "x": 5.5,
@@ -309,7 +309,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental10",
           "position": {
             "x": 9.2,
@@ -318,7 +318,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental11",
           "position": {
             "x": 9.8,
@@ -327,7 +327,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental12",
           "position": {
             "x": 14.2,
@@ -336,7 +336,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental13",
           "position": {
             "x": 18.2,
@@ -345,7 +345,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental14",
           "position": {
             "x": 19.2,
@@ -354,7 +354,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental15",
           "position": {
             "x": 22.1,
@@ -363,7 +363,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental16",
           "position": {
             "x": 23.7,
@@ -372,7 +372,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental17",
           "position": {
             "x": 28.6,
@@ -381,7 +381,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental18",
           "position": {
             "x": 30.8,
@@ -390,7 +390,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental19",
           "position": {
             "x": 29.5,
@@ -399,7 +399,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental20",
           "position": {
             "x": 34.2,
@@ -408,7 +408,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental21",
           "position": {
             "x": 38.2,
@@ -417,7 +417,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental22",
           "position": {
             "x": 33.9,
@@ -426,7 +426,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental23",
           "position": {
             "x": 37.9,
@@ -435,7 +435,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental24",
           "position": {
             "x": 35.6,
@@ -444,7 +444,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Elemental Spawn Location",
+          "popupTitle": "hydatos.elemental",
           "@id": "hyd_elemental25",
           "position": {
             "x": 36.9,
@@ -457,7 +457,7 @@
       "markerIcon": "logos-manipulator.png",
       "waymarks": [
         {
-          "name": "Logos Manipulator",
+          "name": "hydatos.logosManipulator",
           "@id": "hyd_logosmanipulator1",
           "position": {
             "x": 21.4,
@@ -470,7 +470,7 @@
       "markerIcon": "magia-melder.png",
       "waymarks": [
         {
-          "name": "Magia Melder",
+          "name": "hydatos.magiaMelder",
           "@id": "hyd_magiamelder1",
           "position": {
             "x": 19.7,
@@ -483,7 +483,7 @@
       "markerIcon": "trader.png",
       "waymarks": [
         {
-          "name": "Trader",
+          "name": "hydatos.trader.trader",
           "@id": "hyd_trader1",
           "position": {
             "x": 20.5,
@@ -496,7 +496,7 @@
       "markerIcon": "shop.png",
       "waymarks": [
         {
-          "name": "Expedition Engineer",
+          "name": "hydatos.trader.engineer",
           "@id": "hyd_shop1",
           "position": {
             "x": 19.7,
@@ -504,7 +504,7 @@
           }
         },
         {
-          "name": "Shop",
+          "name": "hydatos.trader.shop",
           "@id": "hyd_shop2",
           "position": {
             "x": 19.8,
@@ -512,7 +512,7 @@
           }
         },
         {
-          "name": "Shop",
+          "name": "hydatos.trader.shop",
           "@id": "hyd_shop3",
           "position": {
             "x": 20.0,
@@ -520,7 +520,7 @@
           }
         },
         {
-          "name": "Expedition Alchemist",
+          "name": "hydatos.trader.alchemist",
           "@id": "hyd_shop4",
           "position": {
             "x": 20.9,
@@ -528,7 +528,7 @@
           }
         },
         {
-          "name": "Drake",
+          "name": "hydatos.trader.drake",
           "@id": "hyd_shop5",
           "position": {
             "x": 21.3,
@@ -536,7 +536,7 @@
           }
         },
         {
-          "name": "Eureka Weapons & Gear",
+          "name": "hydatos.trader.gear",
           "@id": "hyd_shop1",
           "position": {
             "x": 21.4,
@@ -549,7 +549,7 @@
       "markerIcon": "repair.png",
       "waymarks": [
         {
-          "name": "Repair",
+          "name": "hydatos.repair",
           "@id": "hyd_repair1",
           "position": {
             "x": 19.7,
@@ -562,7 +562,7 @@
       "markerIcon": "baportal.png",
       "waymarks": [
         {
-          "name": "1-1",
+          "name": "hydatos.portal.1-1",
           "@id": "ba-1-1",
           "position": {
             "x": 4.2,
@@ -570,7 +570,7 @@
           }
         },
         {
-          "name": "1-2",
+          "name": "hydatos.portal.1-2",
           "@id": "ba-1-2",
           "position": {
             "x": 7.2,
@@ -578,7 +578,7 @@
           }
         },
         {
-          "name": "1-3",
+          "name": "hydatos.portal.1-3",
           "@id": "ba-1-3",
           "position": {
             "x": 10.6,
@@ -586,7 +586,7 @@
           }
         },
         {
-          "name": "1-4",
+          "name": "hydatos.portal.1-4",
           "@id": "ba-1-4",
           "position": {
             "x": 6.9,
@@ -594,7 +594,7 @@
           }
         },
         {
-          "name": "1-5",
+          "name": "hydatos.portal.1-5",
           "@id": "ba-1-5",
           "position": {
             "x": 10.1,
@@ -602,7 +602,7 @@
           }
         },
         {
-          "name": "1-6",
+          "name": "hydatos.portal.1-6",
           "@id": "ba-1-6",
           "position": {
             "x": 6.2,
@@ -610,7 +610,7 @@
           }
         },
         {
-          "name": "1-7",
+          "name": "hydatos.portal.1-7",
           "@id": "ba-1-7",
           "position": {
             "x": 4.3,
@@ -618,7 +618,7 @@
           }
         },
         {
-          "name": "1-8",
+          "name": "hydatos.portal.1-8",
           "@id": "ba-1-8",
           "position": {
             "x": 7.2,
@@ -626,7 +626,7 @@
           }
         },
         {
-          "name": "2-1",
+          "name": "hydatos.portal.2-1",
           "@id": "ba-2-1",
           "position": {
             "x": 15.9,
@@ -634,7 +634,7 @@
           }
         },
         {
-          "name": "2-2",
+          "name": "hydatos.portal.2-2",
           "@id": "ba-2-2",
           "position": {
             "x": 16.4,
@@ -642,7 +642,7 @@
           }
         },
         {
-          "name": "2-3",
+          "name": "hydatos.portal.2-3",
           "@id": "ba-2-3",
           "position": {
             "x": 10.7,
@@ -650,7 +650,7 @@
           }
         },
         {
-          "name": "2-4",
+          "name": "hydatos.portal.2-4",
           "@id": "ba-2-4",
           "position": {
             "x": 15.9,
@@ -658,7 +658,7 @@
           }
         },
         {
-          "name": "2-5",
+          "name": "hydatos.portal.2-5",
           "@id": "ba-2-5",
           "position": {
             "x": 13.7,
@@ -666,7 +666,7 @@
           }
         },
         {
-          "name": "2-6",
+          "name": "hydatos.portal.2-6",
           "@id": "ba-2-6",
           "position": {
             "x": 10.6,
@@ -674,7 +674,7 @@
           }
         },
         {
-          "name": "2-7",
+          "name": "hydatos.portal.2-7",
           "@id": "ba-2-7",
           "position": {
             "x": 14.8,
@@ -682,7 +682,7 @@
           }
         },
         {
-          "name": "2-8",
+          "name": "hydatos.portal.2-8",
           "@id": "ba-2-8",
           "position": {
             "x": 16.7,
@@ -690,7 +690,7 @@
           }
         },
         {
-          "name": "3-1",
+          "name": "hydatos.portal.3-1",
           "@id": "ba-3-1",
           "position": {
             "x": 21.2,
@@ -698,7 +698,7 @@
           }
         },
         {
-          "name": "3-2",
+          "name": "hydatos.portal.3-2",
           "@id": "ba-3-2",
           "position": {
             "x": 19.4,
@@ -706,7 +706,7 @@
           }
         },
         {
-          "name": "3-3",
+          "name": "hydatos.portal.3-3",
           "@id": "ba-3-3",
           "position": {
             "x": 23.8,
@@ -714,7 +714,7 @@
           }
         },
         {
-          "name": "3-4",
+          "name": "hydatos.portal.3-4",
           "@id": "ba-3-4",
           "position": {
             "x": 19.2,
@@ -722,7 +722,7 @@
           }
         },
         {
-          "name": "3-5",
+          "name": "hydatos.portal.3-5",
           "@id": "ba-3-5",
           "position": {
             "x": 23.0,
@@ -730,7 +730,7 @@
           }
         },
         {
-          "name": "3-6",
+          "name": "hydatos.portal.3-6",
           "@id": "ba-3-6",
           "position": {
             "x": 19.2,
@@ -738,7 +738,7 @@
           }
         },
         {
-          "name": "3-7",
+          "name": "hydatos.portal.3-7",
           "@id": "ba-3-7",
           "position": {
             "x": 20.8,
@@ -746,7 +746,7 @@
           }
         },
         {
-          "name": "3-8",
+          "name": "hydatos.portal.3-8",
           "@id": "ba-3-8",
           "position": {
             "x": 22.9,
@@ -754,7 +754,7 @@
           }
         },
         {
-          "name": "4-1",
+          "name": "hydatos.portal.4-1",
           "@id": "ba-4-1",
           "position": {
             "x": 25.0,
@@ -762,7 +762,7 @@
           }
         },
         {
-          "name": "4-2",
+          "name": "hydatos.portal.4-2",
           "@id": "ba-4-2",
           "position": {
             "x": 26.6,
@@ -770,7 +770,7 @@
           }
         },
         {
-          "name": "4-3",
+          "name": "hydatos.portal.4-3",
           "@id": "ba-4-3",
           "position": {
             "x": 28.7,
@@ -778,7 +778,7 @@
           }
         },
         {
-          "name": "4-4",
+          "name": "hydatos.portal.4-4",
           "@id": "ba-4-4",
           "position": {
             "x": 25.2,
@@ -786,7 +786,7 @@
           }
         },
         {
-          "name": "4-5",
+          "name": "hydatos.portal.4-5",
           "@id": "ba-4-5",
           "position": {
             "x": 26.9,
@@ -794,7 +794,7 @@
           }
         },
         {
-          "name": "4-6",
+          "name": "hydatos.portal.4-6",
           "@id": "ba-4-6",
           "position": {
             "x": 26.0,
@@ -802,7 +802,7 @@
           }
         },
         {
-          "name": "4-7",
+          "name": "hydatos.portal.4-7",
           "@id": "ba-4-7",
           "position": {
             "x": 25.4,
@@ -810,7 +810,7 @@
           }
         },
         {
-          "name": "4-8",
+          "name": "hydatos.portal.4-8",
           "@id": "ba-4-8",
           "position": {
             "x": 25.7,
@@ -818,7 +818,7 @@
           }
         },
         {
-          "name": "5-1",
+          "name": "hydatos.portal.5-1",
           "@id": "ba-5-1",
           "position": {
             "x": 28.9,
@@ -826,7 +826,7 @@
           }
         },
         {
-          "name": "5-2",
+          "name": "hydatos.portal.5-2",
           "@id": "ba-5-2",
           "position": {
             "x": 33.3,
@@ -834,7 +834,7 @@
           }
         },
         {
-          "name": "5-3",
+          "name": "hydatos.portal.5-3",
           "@id": "ba-5-3",
           "position": {
             "x": 29.9,
@@ -842,7 +842,7 @@
           }
         },
         {
-          "name": "5-4",
+          "name": "hydatos.portal.5-4",
           "@id": "ba-5-4",
           "position": {
             "x": 32.3,
@@ -850,7 +850,7 @@
           }
         },
         {
-          "name": "5-5",
+          "name": "hydatos.portal.5-5",
           "@id": "ba-5-5",
           "position": {
             "x": 29.6,
@@ -858,7 +858,7 @@
           }
         },
         {
-          "name": "5-6",
+          "name": "hydatos.portal.5-6",
           "@id": "ba-5-6",
           "position": {
             "x": 30.8,
@@ -866,7 +866,7 @@
           }
         },
         {
-          "name": "5-7",
+          "name": "hydatos.portal.5-7",
           "@id": "ba-5-7",
           "position": {
             "x": 30.3,
@@ -874,7 +874,7 @@
           }
         },
         {
-          "name": "5-8",
+          "name": "hydatos.portal.5-8",
           "@id": "ba-5-8",
           "position": {
             "x": 31.7,
@@ -882,7 +882,7 @@
           }
         },
         {
-          "name": "6-1",
+          "name": "hydatos.portal.6-1",
           "@id": "ba-6-1",
           "position": {
             "x": 35.2,
@@ -890,7 +890,7 @@
           }
         },
         {
-          "name": "6-2",
+          "name": "hydatos.portal.6-2",
           "@id": "ba-6-2",
           "position": {
             "x": 37.9,
@@ -898,7 +898,7 @@
           }
         },
         {
-          "name": "6-3",
+          "name": "hydatos.portal.6-3",
           "@id": "ba-6-3",
           "position": {
             "x": 36.0,
@@ -906,7 +906,7 @@
           }
         },
         {
-          "name": "6-4",
+          "name": "hydatos.portal.6-4",
           "@id": "ba-6-4",
           "position": {
             "x": 37.3,
@@ -914,7 +914,7 @@
           }
         },
         {
-          "name": "6-5",
+          "name": "hydatos.portal.6-5",
           "@id": "ba-6-5",
           "position": {
             "x": 33.0,
@@ -922,7 +922,7 @@
           }
         },
         {
-          "name": "6-6",
+          "name": "hydatos.portal.6-6",
           "@id": "ba-6-6",
           "position": {
             "x": 37.2,
@@ -930,7 +930,7 @@
           }
         },
         {
-          "name": "6-7",
+          "name": "hydatos.portal.6-7",
           "@id": "ba-6-7",
           "position": {
             "x": 32.7,
@@ -938,7 +938,7 @@
           }
         },
         {
-          "name": "6-8",
+          "name": "hydatos.portal.6-8",
           "@id": "ba-6-8",
           "position": {
             "x": 35.8,
@@ -1102,7 +1102,7 @@
       "waymarks": [
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer01",
           "position": {
           "x": 5.4,
@@ -1111,7 +1111,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer02",
           "position": {
           "x": 9.4,
@@ -1120,7 +1120,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer03",
           "position": {
           "x": 3.0,
@@ -1129,7 +1129,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer04",
           "position": {
           "x": 8.4,
@@ -1138,7 +1138,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer05",
           "position": {
           "x": 4.1,
@@ -1147,7 +1147,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer06",
           "position": {
           "x": 7.8,
@@ -1156,7 +1156,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer07",
           "position": {
           "x": 3.1,
@@ -1165,7 +1165,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer08",
           "position": {
           "x": 5.5,
@@ -1174,7 +1174,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer09",
           "position": {
           "x": 10.2,
@@ -1183,7 +1183,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer10",
           "position": {
           "x": 14.4,
@@ -1192,7 +1192,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer11",
           "position": {
           "x": 18.1,
@@ -1201,7 +1201,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer12",
           "position": {
           "x": 17.7,
@@ -1210,7 +1210,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer13",
           "position": {
           "x": 12.7,
@@ -1219,7 +1219,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer14",
           "position": {
           "x": 15.1,
@@ -1228,7 +1228,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer15",
           "position": {
           "x": 19.1,
@@ -1237,7 +1237,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer16",
           "position": {
           "x": 23.9,
@@ -1246,7 +1246,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer17",
           "position": {
           "x": 21.6,
@@ -1255,7 +1255,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer18",
           "position": {
           "x": 24.7,
@@ -1264,7 +1264,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer19",
           "position": {
           "x": 24.2,
@@ -1273,7 +1273,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer20",
           "position": {
           "x": 26.1,
@@ -1282,7 +1282,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer21",
           "position": {
           "x": 27.2,
@@ -1291,7 +1291,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer22",
           "position": {
           "x": 28.9,
@@ -1300,7 +1300,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer23",
           "position": {
           "x": 28.3,
@@ -1309,7 +1309,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer24",
           "position": {
           "x": 30.8,
@@ -1318,7 +1318,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer25",
           "position": {
           "x": 38.4,
@@ -1327,7 +1327,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer26",
           "position": {
           "x": 34.6,
@@ -1336,7 +1336,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer27",
           "position": {
           "x": 38.2,
@@ -1345,7 +1345,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer28",
           "position": {
           "x": 34.8,
@@ -1354,7 +1354,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer29",
           "position": {
           "x": 38.9,
@@ -1363,7 +1363,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer30",
           "position": {
           "x": 38.4,
@@ -1372,7 +1372,7 @@
         },
         {
           "name": "",
-          "popupTitle": "Bunny Coffer Spawn Location",
+          "popupTitle": "hydatos.coffer",
           "@id": "hydatoscoffer31",
           "position": {
           "x": 33.1,
@@ -1389,147 +1389,147 @@
       },
       "waymarks": [
         {
-          "name": "Lv50 Khalamari",
-          "popupTitle": "I Ink, Therefore I Am",
+          "name": "hydatos.nm.50.name",
+          "popupTitle": "hydatos.nm.50.title",
           "@id": "hyd_nm1",
           "position": {
             "x": 10.8,
             "y": -25.6
           },
           "metadata": {
-            "boss": "Khalamari",
+            "boss": "hydatos.nm.50.boss",
             "level": 50,
             "element": "Water",
             "spawnedBy": {
-              "name": "Xzomit",
+              "name": "hydatos.nm.50.spawn",
               "element": "Water",
               "level": 55
             }
           }
         },
         {
-          "name": "Bunny",
-          "popupTitle": "Drink Me",
+          "name": "hydatos.nm.bunny.name",
+          "popupTitle": "hydatos.nm.bunny.title",
           "@id": "hyd_nmbunny",
           "position": {
             "x": 13.8,
             "y": -21.6
           },
           "metadata": {
-            "boss": "Bunny FATE",
+            "boss": "hydatos.nm.bunny.boss",
             "level": 50,
             "element": "Water"
           }
         },
         {
-          "name": "Lv51 Stegodon",
-          "popupTitle": "From Tusk till Dawn",
+          "name": "hydatos.nm.51.name",
+          "popupTitle": "hydatos.nm.51.title",
           "@id": "hyd_nm2",
           "position": {
             "x": 10.4,
             "y": -17.2
           },
           "metadata": {
-            "boss": "Stegodon",
+            "boss": "hydatos.nm.51.boss",
             "level": 51,
             "element": "Earth",
             "spawnedBy": {
-              "name": "Hydatos Primelephas",
+              "name": "hydatos.nm.51.spawn",
               "element": "Earth",
               "level": 56
             }
           }
         },
         {
-          "name": "Lv52 Molech",
-          "popupTitle": "Bullheaded Berserker",
+          "name": "hydatos.nm.52.name",
+          "popupTitle": "hydatos.nm.52.title",
           "@id": "hyd_nm3",
           "position": {
             "x": 8.1,
             "y": -21.8
           },
           "metadata": {
-            "boss": "Molech",
+            "boss": "hydatos.nm.52.boss",
             "level": 52,
             "element": "Ice",
             "spawnedBy": {
-              "name": "Val Nullchu",
+              "name": "hydatos.nm.52.spawn",
               "element": "Earth",
               "level": 57
             }
           }
         },
         {
-          "name": "Lv 53 Piasa",
-          "popupTitle": "Mad, Bad, and Fabulous to Know",
+          "name": "hydatos.nm.53.name",
+          "popupTitle": "hydatos.nm.53.title",
           "@id": "hyd_nm4",
           "position": {
             "x": 7.1,
             "y": -14.5
           },
           "metadata": {
-            "boss": "Piasa",
+            "boss": "hydatos.nm.53.boss",
             "level": 53,
             "element": "Wind",
             "spawnedBy": {
-              "name": "Vivid Gastornis",
+              "name": "hydatos.nm.53.spawn",
               "element": "Wind",
               "level": 58
             }
           }
         },
         {
-          "name": "Lv54 Frostmane",
-          "popupTitle": "Fearful Symmetry",
+          "name": "hydatos.nm.54.name",
+          "popupTitle": "hydatos.nm.54.title",
           "@id": "hyd_nm5",
           "position": {
             "x": 8.2,
             "y": -26.1
           },
           "metadata": {
-            "boss": "Frostmane",
+            "boss": "hydatos.nm.54.boss",
             "level": 54,
             "element": "Fire",
             "spawnedBy": {
-              "name": "Northern Tiger",
+              "name": "hydatos.nm.54.spawn",
               "element": "Earth",
               "level": 59
             }
           }
         },
         {
-          "name": "Lv55 Daphne",
-          "popupTitle": "Crawling Chaos",
+          "name": "hydatos.nm.55.name",
+          "popupTitle": "hydatos.nm.55.title",
           "@id": "hyd_nm6",
           "position": {
             "x": 24.2,
             "y": -19.0
           },
           "metadata": {
-            "boss": "Daphne",
+            "boss": "hydatos.nm.55.boss",
             "level": 55,
             "element": "Water",
             "spawnedBy": {
-              "name": "Dark Void Monk",
+              "name": "hydatos.nm.55.spawn",
               "element": "Water",
               "level": 60
             }
           }
         },
         {
-          "name": "Lv56 King Goldemar",
-          "popupTitle": "Duty-free",
+          "name": "hydatos.nm.56.name",
+          "popupTitle": "hydatos.nm.56.title",
           "@id": "hyd_nm7",
           "position": {
             "x": 29.1,
             "y": -23.0
           },
           "metadata": {
-            "boss": "King Goldemar",
+            "boss": "hydatos.nm.56.boss",
             "level": 56,
             "element": "Lightning",
             "spawnedBy": {
-              "name": "Hydatos Wraith",
+              "name": "hydatos.nm.56.spawn",
               "element": "Fire",
               "level": 61,
               "spawnCondition": {
@@ -1539,91 +1539,91 @@
           }
         },
         {
-          "name": "Lv57 Leuke",
-          "popupTitle": "Leukewarm Reception",
+          "name": "hydatos.nm.57.name",
+          "popupTitle": "hydatos.nm.57.title",
           "@id": "hyd_nm8",
           "position": {
             "x": 37.4,
             "y": -26.4
           },
           "metadata": {
-            "boss": "Leuke",
+            "boss": "hydatos.nm.57.boss",
             "level": 57,
             "element": "Earth",
             "spawnedBy": {
-              "name": "Tigerhawk",
+              "name": "hydatos.nm.57.spawn",
               "element": "Wind",
               "level": 62
             }
           }
         },
         {
-          "name": "Lv58 Barong",
-          "popupTitle": "Robber Barong",
+          "name": "hydatos.nm.58.name",
+          "popupTitle": "hydatos.nm.58.title",
           "@id": "hyd_nm9",
           "position": {
             "x": 32.2,
             "y": -25.3
           },
           "metadata": {
-            "boss": "Barong",
+            "boss": "hydatos.nm.58.boss",
             "level": 58,
             "element": "Fire",
             "spawnedBy": {
-              "name": "Laboratory Lion",
+              "name": "hydatos.nm.58.spawn",
               "element": "Earth",
               "level": 63
             }
           }
         },
         {
-          "name": "Lv59 Ceto",
-          "popupTitle": "Stone-cold Killer",
+          "name": "hydatos.nm.59.name",
+          "popupTitle": "hydatos.nm.59.title",
           "@id": "hyd_nm10",
           "position": {
             "x": 36.3,
             "y": -14.0
           },
           "metadata": {
-            "boss": "Ceto",
+            "boss": "hydatos.nm.59.boss",
             "level": 59,
             "element": "Water",
             "spawnedBy": {
-              "name": "Hydatos Delphine",
+              "name": "hydatos.nm.59.spawn",
               "element": "Fire",
               "level": 64
             }
           }
         },
         {
-          "name": "Lv60 Provenance Watcher",
-          "popupTitle": "Crystalline Provenance",
+          "name": "hydatos.nm.60.name",
+          "popupTitle": "hydatos.nm.60.title",
           "@id": "hyd_nm11",
           "position": {
             "x": 32.8,
             "y": -19.6
           },
           "metadata": {
-            "boss": "Provenance Watcher",
+            "boss": "hydatos.nm.60.boss",
             "level": 60,
             "element": "Fire",
             "spawnedBy": {
-              "name": "Crystal Claw",
+              "name": "hydatos.nm.60.spawn",
               "element": "Fire",
               "level": 65
             }
           }
         },
         {
-          "name": "Ovni",
-          "popupTitle": "I Don't Want to Believe",
+          "name": "hydatos.nm.ovni.name",
+          "popupTitle": "hydatos.nm.ovni.title",
           "@id": "hyd_nm12",
           "position": {
             "x": 26.3,
             "y": -29.2
           },
           "metadata": {
-            "boss": "Ovni",
+            "boss": "hydatos.nm.ovni.boss",
             "level": 60,
             "element": "Ice",
             "spawnCondition": {
@@ -1632,15 +1632,15 @@
           }
         },
         {
-          "name": "Support",
-          "popupTitle": "The Baldesion Arsenal: Expedition Support",
+          "name": "hydatos.nm.support.name",
+          "popupTitle": "hydatos.nm.support.title",
           "@id": "hyd_nm13",
           "position": {
             "x": 18.7,
             "y": -28.4
           },
           "metadata": {
-            "boss": "Tristitia",
+            "boss": "hydatos.nm.support.boss",
             "level": 60,
             "element": "Wind",
             "spawnCondition": {

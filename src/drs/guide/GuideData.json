@@ -1,0 +1,56 @@
+{
+  "encounters": [
+    {
+      "id": "entrance",
+      "name": "Entrance"
+    },
+    {
+      "id": "slimes",
+      "name": "Slimes"
+    },
+    {
+      "id": "golems",
+      "name": "Golems"
+    },
+    {
+      "id": "trinity-seeker",
+      "name": "Trinity Seeker"
+    },
+    {
+      "id": "after-seeker",
+      "name": "After Seeker"
+    },
+    {
+      "id": "dahu",
+      "name": "Dahu"
+    },
+    {
+      "id": "queens-guard",
+      "name": "Queen's Guard"
+    },
+    {
+      "id": "phantom",
+      "name": "Phantom"
+    },
+    {
+      "id": "after-phantom",
+      "name": "After Phantom"
+    },
+    {
+      "id": "trinity-avowed",
+      "name": "Trinity Avowed"
+    },
+    {
+      "id": "after-avowed",
+      "name": "After Avowed"
+    },
+    {
+      "id": "minotaur",
+      "name": "Minotaur"
+    },
+    {
+      "id": "queen",
+      "name": "The Queen"
+    }
+  ]
+}

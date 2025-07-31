@@ -7,9 +7,12 @@ import SvgIcon from '@mui/material/SvgIcon';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function FooterComponent({ includePadding = true }) {
   const navigate = useNavigate();
+  const { t } = useTranslation('common');
+
   return (
     <Box width="100%">
       <Stack
@@ -21,9 +24,7 @@ export default function FooterComponent({ includePadding = true }) {
         alignItems="center"
       >
         <Typography variant="subtitle2" fontSize={12} maxWidth={600} textAlign="left">
-          FINAL FANTASY XIV © 2010 - 2025 SQUARE ENIX CO., LTD. FINAL FANTASY, FINAL FANTASY
-          XIV, and FFXIV are registered trademarks or trademarks of Square Enix Holdings Co.,
-          Ltd. All material used under license.
+          {t('footer.copyright')}
         </Typography>
         <Box flexGrow={1} />
         <Stack direction="row">
@@ -72,7 +73,7 @@ export default function FooterComponent({ includePadding = true }) {
             }}
           >
             <Typography variant="subtitle2" fontSize={12} pl={1} pr={1}>
-              {`Version ${process.env.REACT_APP_VERSION}`}
+              {t('footer.version', { ver: process.env.REACT_APP_VERSION })}
             </Typography>
           </Button>
         </Stack>

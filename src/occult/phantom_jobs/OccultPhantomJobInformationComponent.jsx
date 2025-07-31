@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import React from 'react';
+import { Trans } from 'react-i18next';
 
 export default function OccultPhantomJobInformationComponent({ phantomJob, phantomJobData }) {
   const theme = useTheme();
@@ -35,7 +36,9 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
             alt={phantomJob}
           />
           <Box width={12} />
-          <Typography fontWeight={700} variant="h4">{phantomJob}</Typography>
+          <Typography fontWeight={700} variant="h4">
+            <Trans i18nKey={`phantom-job.${phantomJobData.key}.name`} ns="occult" />
+          </Typography>
           <Box flexGrow={1} />
           {
             phantomJobData.totalExp
@@ -62,7 +65,7 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
           pr={2}
           style={{ whiteSpace: 'pre-wrap' }}
         >
-          {phantomJobData.jobText}
+          <Trans i18nKey={`phantom-job.${phantomJobData.key}.text`} ns="occult" />
         </Typography>
         <Stack direction="row" spacing={2} pt={3} alignItems="center">
           <Typography
@@ -70,14 +73,13 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
             pl={3}
             fontWeight={700}
           >
-            Unlock:
-            {' '}
+            <Trans i18nKey="action-detail-label.unlock" />
           </Typography>
           <Typography
             textAlign="left"
             style={{ whiteSpace: 'pre-wrap' }}
           >
-            {phantomJobData.unlockGuide}
+            <Trans i18nKey={`phantom-job.${phantomJobData.key}.unlock`} ns="occult" />
           </Typography>
         </Stack>
       </Box>

@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 import React from 'react';
 import Scrollbars from 'react-custom-scrollbars-2';
+import { useTranslation } from 'react-i18next';
 
 export default function MapLayerSelectorComponent({
   selectedLayers,
@@ -13,6 +14,7 @@ export default function MapLayerSelectorComponent({
   handleLayerSelectorUpdate,
 }) {
   const theme = useTheme();
+  const { t } = useTranslation('map');
 
   const checkboxesToDisplay = [];
 
@@ -22,7 +24,7 @@ export default function MapLayerSelectorComponent({
     // Push parent checkbox
     checkboxesToDisplay.push(
       <FormControlLabel
-        label={<Typography fontWeight={700}>{category.name}</Typography>}
+        label={<Typography fontWeight={700}>{t(`map.${category.name}`)}</Typography>}
         key={category.name}
         control={
           (
@@ -37,7 +39,6 @@ export default function MapLayerSelectorComponent({
           )
         }
         onChange={(e) => {
-          // TODO: This doesn't work yet, need to see why
           const newLayers = [...selectedLayers];
           if (e.target.checked) {
             category.layers.forEach((layer) => {
@@ -70,7 +71,7 @@ export default function MapLayerSelectorComponent({
             />
           )
         }
-        label={layer.name}
+        label={t(`map.${layer.name}`)}
         onChange={(e) => {
           const newLayers = [...selectedLayers];
           if (e.target.checked) {
