@@ -65,12 +65,17 @@
     },
     {
       "name": "category.enemies",
-      "enabled": false,
+      "enabled": true,
       "layers": [
         {
           "id": "mobLevels",
           "name": "layer.mobLevels",
           "enabled": false
+        },
+        {
+          "id": "sanguineRecluse",
+          "name": "Sanguine Recluse",
+          "enabled": true
         }
       ]
     },
@@ -2355,6 +2360,75 @@
           "position": {
             "x": 8.7,
             "y": -35.8
+          }
+        }
+      ]
+    },
+    "sanguineRecluse": {
+      "markerIcon": "mob6.png",
+      "waymarks": [
+        {
+          "name": "Sanguine Recluse",
+          "@id": "recluse_spawn_1",
+          "position": {
+            "x": 13.6,
+            "y": -4.5
+          }
+        },
+        {
+          "name": "Sanguine Recluse",
+          "@id": "recluse_spawn_2",
+          "position": {
+            "x": 28.5,
+            "y": -5.0
+          }
+        },
+        {
+          "name": "Sanguine Recluse",
+          "@id": "recluse_spawn_3",
+          "position": {
+            "x": 9.7,
+            "y": -13.5
+          }
+        },
+        {
+          "name": "Sanguine Recluse",
+          "@id": "recluse_spawn_4",
+          "position": {
+            "x": 7.1,
+            "y": -17.9
+          }
+        },
+        {
+          "name": "Sanguine Recluse",
+          "@id": "recluse_spawn_5",
+          "position": {
+            "x": 5.6,
+            "y": -30.7
+          }
+        },
+        {
+          "name": "Sanguine Recluse",
+          "@id": "recluse_spawn_6",
+          "position": {
+            "x": 25.5,
+            "y": -27.2
+          }
+        },
+        {
+          "name": "Sanguine Recluse",
+          "@id": "recluse_spawn_7",
+          "position": {
+            "x": 34.5,
+            "y": -29.2
+          }
+        },
+        {
+          "name": "Sanguine Recluse",
+          "@id": "recluse_spawn_8",
+          "position": {
+            "x": 22.2,
+            "y": -38.0
           }
         }
       ]
