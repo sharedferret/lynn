@@ -41,11 +41,11 @@ export default function DRSGuideMain({ guidePage }) {
           }}
         >
           <Tab value="explanation" label="Info and Explanations" />
-          <Tab value="timeline" label="Timeline" />
+          <Tab disabled value="timeline" label="Timeline" />
         </Tabs>
         <Box sx={{ mt: 2 }}>
           {currentTab === 'explanation' && <DRSGuideExplanationsComponent guidePage={currentPage} />}
-          {currentTab === 'timeline' && <div>Timeline content will go here</div>}
+          {currentTab === 'timeline' && <div>Coming soon, I guess?</div>}
         </Box>
       </Box>
     </Container>
