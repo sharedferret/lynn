@@ -343,6 +343,22 @@
     "or5": {
       "name": "Invulnerability",
       "description": "Prevents attacks from reducing a target party member's HP to less than 1."
+    },
+    "mk1": {
+      "name": "Sundering Spellblade",
+      "description": "Delivers an attack with a potency of 200.\nHoned Spellblade Potency: 300\nPotency scales with item level.\nAdditional Effect: 20% chance to Petrify target\nPetrify Effect: Incapacitated upon taking damage\nDuration: 10s\nShares a recast timer with Holy Spellblade and Blazing Spellblade."
+    },
+    "mk2": {
+      "name": "Magic Shell",
+      "description": "Creates a barrier around self or target party member that absorbs damage equivalent to 20% of the caster's maximum HP.\nWhen the barrier is completely absorbed, grants Honed Spellblade to the caster.\nHoned Spellblade Effect: Increases damage dealt by next Spellblade\nDuration: 30s"
+    },
+    "mk3": {
+      "name": "Holy Spellblade",
+      "description": "Delivers an attack with a potency of 300.\nPotency increases to 500 when used against undead enemies.\nHoned Spellblade Potency: 400\nSpellblade potency increases to 600 when used against undead enemies.\nPotency scales with item level.\nShares a recast timer with Sundering Spellblade and Blazing Spellblade."
+    },
+    "mk4": {
+      "name": "Blazing Spellblade",
+      "description": "Delivers an attack with a potency of 200.\nHoned Spellblade Potency: 300\nPotency scales with item level.\nAdditional Effect: Increases target's damage taken by 5%\nDuration: 70s\nAdditional Effect: Increases damage dealt by 5%\nDuration: 70s\nShares a recast timer with Sundering Spellblade and Holy Spellblade."
     }
   }
 }
