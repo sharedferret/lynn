@@ -74,6 +74,11 @@
       "name": "Oracle",
       "text": "Endowed with an oracle's supernatural senses and prophetic insights, these memories promise mastery over a wealth of supportive skills.",
       "unlock": "Unlocked from the Oracle's Soul Shard, acquired from the Critical Engagement \"On The Hunt.\""
+    },
+    "mystic-knight": {
+      "name": "Mystic Knight",
+      "text": "Suffused with a mystic knight's diligence and arcane prowess, these memories are key to imbuing your weaponry with potent magicks.",
+      "unlock": "Purchase - Mystic Knight's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
     }
   },
   "support-action": {

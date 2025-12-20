@@ -833,6 +833,89 @@
         "5": 7200
       },
       "totalExp": "16,800"
-    }
-  }
+    },
+  "Mystic Knight": {
+    "key": "mystic-knight",
+    "image": "mysticknight-icon",
+    "sprite": "mysticknight-sprite",
+    "code": "mk",
+    "supportActions": {
+      "Sundering Spellblade": {
+        "name": "Sundering Spellblade",
+        "image": "sundering-spellblade.png",
+        "unlockLevel": 1,
+        "description": "Delivers an attack with a potency of 200.\nHoned Spellblade Potency: 300\nPotency scales with item level.\nAdditional Effect: 20% chance to Petrify target\nPetrify Effect: Incapacitated upon taking damage\nDuration: 10s\nShares a recast timer with Holy Spellblade and Blazing Spellblade.",
+        "abilityType": "weaponskill",
+        "recastTime": 30,
+        "code": "mk1"
+      },
+      "Magic Shell": {
+        "name": "Magic Shell",
+        "image": "magic-shell.png",
+        "unlockLevel": 2,
+        "description": "Creates a barrier around self or target party member that absorbs damage equivalent to 20% of the caster's maximum HP.\nWhen the barrier is completely absorbed, grants Honed Spellblade to the caster.\nHoned Spellblade Effect: Increases damage dealt by next Spellblade\nDuration: 30s",
+        "abilityType": "ability",
+        "recastTime": 60,
+        "duration": "60s",
+        "code": "mk2"
+      },
+      "Holy Spellblade": {
+        "name": "Holy Spellblade",
+        "image": "holy-spellblade.png",
+        "unlockLevel": 3,
+        "description": "Delivers an attack with a potency of 300.\nPotency increases to 500 when used against undead enemies.\nHoned Spellblade Potency: 400\nSpellblade potency increases to 600 when used against undead enemies.\nPotency scales with item level.\nShares a recast timer with Sundering Spellblade and Blazing Spellblade.",
+        "abilityType": "weaponskill",
+        "recastTime": 30,
+        "code": "mk3"
+      },
+      "Blazing Spellblade": {
+        "name": "Blazing Spellblade",
+        "image": "blazing-spellblade.png",
+        "unlockLevel": 4,
+        "description": "Delivers an attack with a potency of 200.\nHoned Spellblade Potency: 300\nPotency scales with item level.\nAdditional Effect: Increases target's damage taken by 5%\nDuration: 70s\nAdditional Effect: Increases damage dealt by 5%\nDuration: 70s\nShares a recast timer with Sundering Spellblade and Holy Spellblade.",
+        "abilityType": "weaponskill",
+        "recastTime": 30,
+        "code": "mk4"
+      }
+    },
+    "exp": {
+      "1": 0,
+      "2": 400,
+      "3": 4400,
+      "4": 9600
+    },
+    "totalExp": "14,400"
+  },
+  "Gladiator": {
+    "key": "gladiator",
+    "image": "gladiator-image",
+    "sprite": "gladiator-sprite",
+    "code": "gl",
+    "supportActions": {
+
+    },
+    "exp": {
+      "1": 0,
+      "2": 400,
+      "3": 5200,
+      "4": 8800
+    },
+    "totalExp": "14,400"
+  },
+  "Dancer": {
+    "key": "dancer",
+    "image": "dancer-image",
+    "sprite": "dancer-sprite",
+    "supportActions": {
+
+    },
+    "exp": {
+      "1": 0,
+      "2": 400,
+      "3": 6000,
+      "4": 8000
+    },
+    "totalExp": "14,400"
+  } 
+}
 }
