@@ -84,7 +84,8 @@
   "skill-type": {
     "ability": "Ability",
     "weaponskill": "Weaponskill",
-    "spell": "Spell"
+    "spell": "Spell",
+    "passive-trait": "Passive Trait"
   },
   "action-detail-label": {
     "duration": "<0>Duration:</0> <1>{{duration}}</1>",
