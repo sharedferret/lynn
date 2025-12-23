@@ -717,7 +717,7 @@
           "image": "lockpicker.png",
           "unlockLevel": 6,
           "description": "Allows you to open locked doors in dungeons.",
-          "abilityType": "Passive Trait",
+          "abilityType": "passive-trait",
           "code": "th6"
         }
       },
@@ -888,11 +888,47 @@
   },
   "Gladiator": {
     "key": "gladiator",
-    "image": "gladiator-image",
+    "image": "gladiator-icon",
     "sprite": "gladiator-sprite",
     "code": "gl",
     "supportActions": {
-
+      "Finisher": {
+        "name": "Finisher",
+        "image": "finisher.png",
+        "unlockLevel": 1,
+        "description": "Delivers an attack to target.\n60% chance for an attack with a potency of 600, the chance increasing by 15% for every stack of Finishing Fervor.\n20% chance for an attack with a potency of 1,000 potency, the chance increasing by 20% for every stack of Finishing Fervor.\n20% chance for your attack to miss, the chance decreasing by 5% for every stack of Finishing Fervor.\nPotency scales with item level.\nAdditional Effect: 25% chance to kill target instantly, with some exceptions.",
+        "abilityType": "weaponskill",
+        "recastTime": 60,
+        "code": "gl1"
+      },
+      "Defend": {
+        "name": "Defend",
+        "image": "defend.png",
+        "unlockLevel": 2,
+        "description": "Reduces damage taken by 50%.\nAdditional Effect: Grants a stack of Finishing Fervor upon taking reduced damage\nMaximum Stacks: 4\nDuration: 120s\nRemoves a stack of Finishing Fervor upon taking damage when the action is not on cooldown.",
+        "abilityType": "weaponskill",
+        "recastTime": 30,
+        "duration": "5s",
+        "code": "gl2"
+      },
+      "Long Reach": {
+        "name": "Long Reach",
+        "image": "long-reach.png",
+        "unlockLevel": 3,
+        "description": "Delivers an attack with a potency of 400.\nPotency scales with item level.",
+        "abilityType": "weaponskill",
+        "recastTime": 120,
+        "code": "gl3"
+      },
+      "Bladeblitz": {
+        "name": "Bladeblitz",
+        "image": "bladeblitz.png",
+        "unlockLevel": 4,
+        "description": "Delivers an attack with a potency of 600 to all nearby enemies.\nPotency scales with item level.",
+        "abilityType": "weaponskill",
+        "recastTime": 120,
+        "code": "gl4"
+      }
     },
     "exp": {
       "1": 0,
@@ -903,11 +939,92 @@
     "totalExp": "14,400"
   },
   "Dancer": {
+    "name": "Dancer",
     "key": "dancer",
-    "image": "dancer-image",
+    "image": "dancer-icon",
     "sprite": "dancer-sprite",
     "supportActions": {
-
+      "Dance": {
+        "name": "Dance",
+        "image": "dance.png",
+        "unlockLevel": 1,
+        "abilityType": "ability",
+        "description": "Grants Poised to Sword Dance, Tempted to Tango, Jitterbugged, or Willing to Waltz, allowing the execution of an action depending on the effect granted.\nPhantom Sword Dance Effect: Delivers an attack with high potency\nTempting Tango Effect: Deals unaspected damage and freezes time\nJitterbug Effect: Deals unaspected damage, absorbing a portion of damage dealt as HP, and afflicts target with Paralysis\nMystery Waltz Effect: Deals unaspected damage, afflicts target with Blind, and restores MP",
+        "recastTime": 30,
+        "code": "da1"
+      },
+      "Phantom Sword Dance": {
+        "name": "Phantom Sword Dance",
+        "key": "phantom-sword-dance",
+        "image": "phantom-sword-dance.png",
+        "unlockLevel": 1,
+        "abilityType": "weaponskill",
+        "description": "Delivers an attack with a potency of 600.\nPotency scales with item level.",
+        "recastTime": 2.5,
+        "code": "da2"
+      },
+      "Tempting Tango": {
+        "name": "Tempting Tango",
+        "key": "tempting-tango",
+        "image": "tempting-tango.png",
+        "unlockLevel": 1,
+        "abilityType": "weaponskill",
+        "description": "Deals unaspected damage with a potency of 400.\nPotency scales with item level.\nAdditional Effect: Freezes time\nDuration: 8s",
+        "recastTime": 2.5,
+        "code": "da3"
+      },
+      "Jitterbug": {
+        "name": "Jitterbug",
+        "key": "jitterbug",
+        "image": "jitterbug.png",
+        "unlockLevel": 1,
+        "abilityType": "weaponskill",
+        "description": "Deals unaspected damage with a potency of 400.\nPotency scales with item level.\nAdditional Effect: Absorbs a portion of damage dealt as HP\nAdditional Effect: Paralysis\nDuration: 30s",
+        "recastTime": 2.5,
+        "code": "da4"
+      },
+      "Mystery Waltz": {
+        "name": "Mystery Waltz",
+        "key": "mystery-waltz",
+        "image": "mystery-waltz.png",
+        "unlockLevel": 1,
+        "abilityType": "weaponskill",
+        "description": "Deals unaspected damage with a potency of 400.\nPotency scales with item level.\nAdditional Effect: Restores MP\nAdditional Effect: Blind\nDuration: 30s",
+        "recastTime": 2.5,
+        "code": "da5"
+      },
+      "Quickstep": {
+        "name": "Quickstep",
+        "key": "quickstep",
+        "image": "quickstep.png",
+        "unlockLevel": 2,
+        "abilityType": "weaponskill",
+        "description": "Increases evasion by 20%.\nAdditional Effect: Grants Quicker Step to self and nearby party members when executed within proximity of a knowledge crystal\nQuicker Step Effect: Increases damage dealt by 2%\nDuration: 30m",
+        "recastTime": 2.5,
+        "duration": "90s",
+        "code": "da6"
+      },
+      "Steadfast Stance": {
+        "name": "Steadfast Stance",
+        "key": "steadfast-stance",
+        "image": "steadfast-stance.png",
+        "unlockLevel": 3,
+        "abilityType": "ability",
+        "description": "Grants Steadfast Stance.\nSteadfast Stance Effect: Grants a barrier that absorbs damage equal to 10% of maximum HP\nDuration: 30s",
+        "recastTime": 60,
+        "code": "da7"
+      },
+      "Mesmerize": {
+        "name": "Mesmerize",
+        "key": "mesmerize",
+        "image": "mesmerize.png",
+        "unlockLevel": 4,
+        "abilityType": "ability",
+        "description": "Afflicts target with Enamored, reducing damage dealt by 40%.\nAdditional Effect: Afflicts target with Mesmerized\nMesmerized Effect: Reduces damage dealt by 10% and increases damage taken by 5%\nDuration: 100s\nEffect cannot be stacked with Phantom Cannoneer's Silver Sickness.",
+        "recastTime": 90,
+        "duration": "4s",
+        "code": "da8"
+      }
     },
     "exp": {
       "1": 0,
