@@ -85,6 +85,10 @@
       "name": "Occult Treasuresight",
       "description": "Detects the number of treasure coffers presently on the Occult Crescent."
     },
+    "fr3": {
+      "name": "Inquiring Mind",
+      "description": "When executed near a knowledge crystal, grants an effect to self and nearby party members based on your phantom job and its level.\nPhantom Knight Effect (Level 2 or Higher): Grants Enduring Fortitude\nEnduring Fortitude Effect: Reduces damage taken by 10%\nDuration: 30m\nPhantom Monk Effect (Level 3 or Higher): Grants Fleetfooted\nFleetfooted Effect: Increases movement speed\nDuration: 30m"
+    },
     "kn1": {
       "name": "Phantom Guard",
       "description": "Reduces damage taken by 60%.",

@@ -24,6 +24,15 @@
           "abilityType": "ability",
           "recastTime": 10,
           "code": "fr2"
+        },
+        "Inquiring Mind": {
+          "name": "Inquiring Mind",
+          "image": "inquiring-mind.png",
+          "unlockLevel": 15,
+          "description": "When executed near a knowledge crystal, grants an effect to self and nearby party members based on your phantom job and its level.\nPhantom Knight Effect (Level 2 or Higher): Grants Enduring Fortitude\nEnduring Fortitude Effect: Reduces damage taken by 10%\nDuration: 30m\nPhantom Monk Effect (Level 3 or Higher): Grants Fleetfooted\nFleetfooted Effect: Increases movement speed\nDuration: 30m",
+          "recastTime": 5,
+          "abilityType": "ability",
+          "code": "fr3"
         }
       }
     },
