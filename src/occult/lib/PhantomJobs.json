@@ -2,6 +2,7 @@
   "phantomJobs": {
     "Freelancer": {
       "key": "freelancer",
+      "name": "Freelancer",
       "image": "freelancer-icon",
       "sprite": "freelancer-sprite",
       "unlockLevel": 0,
@@ -38,6 +39,7 @@
     },
     "Knight": {
       "key": "knight",
+      "name": "Knight",
       "image": "knight-icon",
       "sprite": "knight-sprite",
       "code": "kn",
@@ -107,6 +109,7 @@
     },
     "Monk": {
       "key": "monk",
+      "name": "Monk",
       "image": "monk-icon",
       "sprite": "monk-sprite",
       "code": "mo",
@@ -172,6 +175,7 @@
     },
     "Time Mage": {
       "key": "time-mage",
+      "name": "Time Mage",
       "image": "timemage-icon",
       "sprite": "timemage-sprite",
       "code": "ti",
@@ -238,6 +242,7 @@
     },
     "Bard": {
       "key": "bard",
+      "name": "Bard",
       "image": "bard-icon",
       "sprite": "bard-sprite",
       "code": "ba",
@@ -313,6 +318,7 @@
     },
     "Geomancer": {
       "key": "geomancer",
+      "name": "Geomancer",
       "image": "geomancer-icon",
       "sprite": "geomancer-sprite",
       "code": "ge",
@@ -381,6 +387,7 @@
     },
     "Ranger": {
       "key": "ranger",
+      "name": "Ranger",
       "image": "ranger-icon",
       "sprite": "ranger-sprite",
       "code": "ra",
@@ -447,6 +454,7 @@
     },
     "Berserker": {
       "key": "berserker",
+      "name": "Berserker",
       "image": "berserker-icon",
       "sprite": "berserker-sprite",
       "code": "be",
@@ -486,6 +494,7 @@
     },
     "Chemist": {
       "key": "chemist",
+      "name": "Chemist",
       "image": "chemist-icon",
       "sprite": "chemist-sprite",
       "code": "ch",
@@ -537,6 +546,7 @@
     },
     "Cannoneer": {
       "key": "cannoneer",
+      "name": "Cannoneer",
       "image": "cannoneer-icon",
       "sprite": "cannoneer-sprite",
       "code": "ca",
@@ -608,6 +618,7 @@
     },
     "Samurai": {
       "key": "samurai",
+      "name": "Samurai",
       "image": "samurai-icon",
       "sprite": "samurai-sprite",
       "code": "sa",
@@ -669,6 +680,7 @@
     },
     "Thief": {
       "key": "thief",
+      "name": "Thief",
       "image": "thief-icon",
       "sprite": "thief-sprite",
       "code": "th",
@@ -742,6 +754,7 @@
     },
     "Oracle": {
       "key": "oracle",
+      "name": "Oracle",
       "image": "oracle-icon",
       "sprite": "oracle-sprite",
       "code": "or",
@@ -845,6 +858,7 @@
     },
   "Mystic Knight": {
     "key": "mystic-knight",
+    "name": "Mystic Knight",
     "image": "mysticknight-icon",
     "sprite": "mysticknight-sprite",
     "code": "mk",
@@ -897,6 +911,7 @@
   },
   "Gladiator": {
     "key": "gladiator",
+    "name": "Gladiator",
     "image": "gladiator-icon",
     "sprite": "gladiator-sprite",
     "code": "gl",
