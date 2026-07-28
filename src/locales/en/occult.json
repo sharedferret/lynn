@@ -234,7 +234,11 @@
     },
     "be1": {
       "name": "Rage",
-      "description": "Become enraged, delivering an attack with a potency of 150 to all enemies in a cone before you.\nPotency scales with item level.\nImmune to certain status effects, as well as most knockback and draw-in effects."
+      "description": "Become enraged, delivering an attack with a potency of 150 to all enemies in a cone before you.\nPotency scales with item level.\nImmune to certain status effects, as well as most knockback and draw-in effects.",
+      "enhancement": {
+        "3": "Grants the effect of Pent-up Rage, increasing the potency of Deadly Blow based on the amount of damage you have taken while the effect is active.\nDuration: 15s"
+      }
+    
     },
     "be2": {
       "name": "Deadly Blow",

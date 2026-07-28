@@ -17,7 +17,7 @@ function PolygonDrawingComponent({ onPolygonComplete }) {
   useMapEvents({
     click: (e) => {
       if (isDrawing) {
-        const newVertex = [e.latlng.lat, e.latlng.lng];
+        const newVertex = [e.latlng.lat, -(e.latlng.lng)];
         setVertices([...vertices, newVertex]);
       }
     },

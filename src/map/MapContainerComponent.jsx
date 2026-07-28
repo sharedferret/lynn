@@ -56,7 +56,7 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
   let initialMapPosition;
   if (params.has('x') && params.has('y') && params.has('zoom')) {
     initialMapPosition = {
-      lat: parseFloat(params.get('y')),
+      lat: -(parseFloat(params.get('y'))),
       lon: parseFloat(params.get('x')),
       zoom: parseFloat(params.get('zoom')),
       poi: params.get('poi') || null,

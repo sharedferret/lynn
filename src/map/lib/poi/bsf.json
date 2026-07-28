@@ -111,16 +111,16 @@
     "imageUrl": "bsf.png",
     "bounds": {
       "min": {
-        "lat": -1,
+        "lat": 1,
         "lon": 1
       },
       "max": {
-        "lat": -42,
+        "lat": -2,
         "lon": 42
       }
     },
     "center": {
-      "lat": -21,
+      "lat": 21,
       "lon": 21
     },
     "zoom": {
@@ -141,7 +141,7 @@
           "@id": "bsf_orphanedruins",
           "position": {
             "x": 16,
-            "y": -17.7
+            "y": 17.7
           }
         },
         {
@@ -149,7 +149,7 @@
           "@id": "bsf_firelightscoffin",
           "position": {
             "x": 25.2,
-            "y": -35.4
+            "y": 35.4
           }
         },
         {
@@ -157,7 +157,7 @@
           "@id": "bsf_castrumlacuslitore",
           "position": {
             "x": 16.9,
-            "y": -9.4
+            "y": 9.4
           }
         },
         {
@@ -165,7 +165,7 @@
           "@id": "bsf_thealermucclimb",
           "position": {
             "x": 19.9,
-            "y": -14.8
+            "y": 14.8
           }
         },
         {
@@ -173,7 +173,7 @@
           "@id": "bsf_oldbozja",
           "position": {
             "x": 20.7,
-            "y": -22.1
+            "y": 22.1
           }
         },
         {
@@ -181,7 +181,7 @@
           "@id": "bsf_southernentrenchment",
           "position": {
             "x": 20.1,
-            "y": -28.2
+            "y": 28.2
           }
         }
       ]
@@ -195,7 +195,7 @@
           "@id": "bsf_lostfindcache1",
           "position": {
             "x": 15.1,
-            "y": -30.2
+            "y": 30.2
           }
         },
         {
@@ -204,7 +204,7 @@
           "@id": "bsf_lostfindcache2",
           "position": {
             "x": 28.9,
-            "y": -23.6
+            "y": 23.6
           }
         },
         {
@@ -213,7 +213,7 @@
           "@id": "bsf_lostfindcache3",
           "position": {
             "x": 13.6,
-            "y": -23.8
+            "y": 23.8
           }
         },
         {
@@ -222,7 +222,7 @@
           "@id": "bsf_lostfindcache4",
           "position": {
             "x": 22.1,
-            "y": -16.6
+            "y": 16.6
           }
         }
       ]
@@ -235,7 +235,7 @@
           "@id": "bsf_repair1",
           "position": {
             "x": 14.6,
-            "y": -30.6
+            "y": 30.6
           }
         }
       ]
@@ -248,7 +248,7 @@
           "@id": "bsf_trader01",
           "position": {
             "x": 14.2,
-            "y": -29.7
+            "y": 29.7
           }
         },
         {
@@ -256,7 +256,7 @@
           "@id": "bsf_trader02",
           "position": {
             "x": 15.0,
-            "y": -29.1
+            "y": 29.1
           }
         },
         {
@@ -264,7 +264,7 @@
           "@id": "bsf_trader03",
           "position": {
             "x": 15.3,
-            "y": -29.9
+            "y": 29.9
           }
         },
         {
@@ -272,7 +272,7 @@
           "@id": "bsf_trader04",
           "position": {
             "x": 15.2,
-            "y": -30.1
+            "y": 30.1
           }
         },
         {
@@ -280,7 +280,7 @@
           "@id": "bsf_trader05",
           "position": {
             "x": 28.9,
-            "y": -23.6
+            "y": 23.6
           }
         },
         {
@@ -288,7 +288,7 @@
           "@id": "bsf_trader06",
           "position": {
             "x": 13.8,
-            "y": -23.8
+            "y": 23.8
           }
         },
         {
@@ -296,7 +296,7 @@
           "@id": "bsf_trader07",
           "position": {
             "x": 22.2,
-            "y": -16.6
+            "y": 16.6
           }
         }
       ]
@@ -309,7 +309,7 @@
           "@id": "bsf_shop01",
           "position": {
             "x": 15.1,
-            "y": -29.7
+            "y": 29.7
           }
         }
       ]
@@ -322,7 +322,7 @@
           "@id": "bsf_utyasaegis",
           "position": {
             "x": 14.9,
-            "y": -29.9
+            "y": 29.9
           }
         },
         {
@@ -330,7 +330,7 @@
           "@id": "bsf_olanastand",
           "position": {
             "x": 28.6,
-            "y": -23.6
+            "y": 23.6
           }
         },
         {
@@ -338,7 +338,7 @@
           "@id": "bsf_lunyasstand",
           "position": {
             "x": 13.7,
-            "y": -23.6
+            "y": 23.6
           }
         },
         {
@@ -346,7 +346,7 @@
           "@id": "bsf_campsteva",
           "position": {
             "x": 22.3,
-            "y": -16.8
+            "y": 16.8
           }
         }
       ]
@@ -363,7 +363,7 @@
           "@id": "bsf_skirmish01",
           "position": {
             "x": 17,
-            "y": -26.8
+            "y": 26.8
           }
         },
         {
@@ -371,7 +371,7 @@
           "@id": "bsf_skirmish02",
           "position": {
             "x": 28.6,
-            "y": -26.1
+            "y": 26.1
           }
         },
         {
@@ -379,7 +379,7 @@
           "@id": "bsf_skirmish03",
           "position": {
             "x": 33.7,
-            "y": -29.5
+            "y": 29.5
           }
         },
         {
@@ -387,7 +387,7 @@
           "@id": "bsf_skirmish04",
           "position": {
             "x": 33.5,
-            "y": -29.3
+            "y": 29.3
           },
           "iconOverride": "fate-boss.png"
         },
@@ -396,7 +396,7 @@
           "@id": "bsf_skirmish05",
           "position": {
             "x": 27.9,
-            "y": -28.9
+            "y": 28.9
           }
         },
         {
@@ -404,7 +404,7 @@
           "@id": "bsf_skirmish06",
           "position": {
             "x": 24.5,
-            "y": -27.8
+            "y": 27.8
           }
         },
         {
@@ -412,7 +412,7 @@
           "@id": "bsf_skirmish07",
           "position": {
             "x": 28.8,
-            "y": -26.3
+            "y": 26.3
           }
         },
         {
@@ -420,7 +420,7 @@
           "@id": "bsf_skirmish08",
           "position": {
             "x": 20.2,
-            "y": -26.9
+            "y": 26.9
           }
         },
         {
@@ -428,7 +428,7 @@
           "@id": "bsf_skirmish09",
           "position": {
             "x": 20.4,
-            "y": -27.1
+            "y": 27.1
           }
         },
         {
@@ -436,7 +436,7 @@
           "@id": "bsf_skirmish10",
           "position": {
             "x": 24.3,
-            "y": -27.6
+            "y": 27.6
           }
         },
         {
@@ -444,7 +444,7 @@
           "@id": "bsf_skirmish11",
           "position": {
             "x": 30.6,
-            "y": -22
+            "y": 22
           },
           "iconOverride": "fate-boss.png"
         },
@@ -453,7 +453,7 @@
           "@id": "bsf_skirmish12",
           "position": {
             "x": 18.2,
-            "y": -20.9
+            "y": 20.9
           },
           "iconOverride": "fate-defense.png"
         },
@@ -462,7 +462,7 @@
           "@id": "bsf_skirmish13",
           "position": {
             "x": 17.8,
-            "y": -23.5
+            "y": 23.5
           }
         },
         {
@@ -470,7 +470,7 @@
           "@id": "bsf_skirmish14",
           "position": {
             "x": 25.4,
-            "y": -21.9
+            "y": 21.9
           },
           "iconOverride": "fate-gather.png"
         },
@@ -479,7 +479,7 @@
           "@id": "bsf_skirmish15",
           "position": {
             "x": 18.2,
-            "y": -20.9
+            "y": 20.9
           },
           "iconOverride": "fate-boss.png"
         },
@@ -488,7 +488,7 @@
           "@id": "bsf_skirmish16",
           "position": {
             "x": 27,
-            "y": -18.5
+            "y": 18.5
           }
         },
         {
@@ -496,7 +496,7 @@
           "@id": "bsf_skirmish17",
           "position": {
             "x": 25.2,
-            "y": -22.8
+            "y": 22.8
           }
         },
         {
@@ -504,7 +504,7 @@
           "@id": "bsf_skirmish18",
           "position": {
             "x": 17.6,
-            "y": -23.3
+            "y": 23.3
           }
         },
         {
@@ -512,7 +512,7 @@
           "@id": "bsf_skirmish19",
           "position": {
             "x": 30.8,
-            "y": -22.2
+            "y": 22.2
           }
         },
         {
@@ -520,7 +520,7 @@
           "@id": "bsf_skirmish20",
           "position": {
             "x": 31.6,
-            "y": -17.3
+            "y": 17.3
           },
           "iconOverride": "fate-defense.png"
         },
@@ -529,7 +529,7 @@
           "@id": "bsf_skirmish21",
           "position": {
             "x": 11.3,
-            "y": -20.4
+            "y": 20.4
           }
         },
         {
@@ -537,7 +537,7 @@
           "@id": "bsf_skirmish22",
           "position": {
             "x": 24.5,
-            "y": -17.3
+            "y": 17.3
           }
         },
         {
@@ -545,7 +545,7 @@
           "@id": "bsf_skirmish23",
           "position": {
             "x": 14.3,
-            "y": -18.2
+            "y": 18.2
           }
         },
         {
@@ -553,7 +553,7 @@
           "@id": "bsf_skirmish24",
           "position": {
             "x": 20.8,
-            "y": -18
+            "y": 18
           },
           "iconOverride": "fate-boss.png"
         },
@@ -562,7 +562,7 @@
           "@id": "bsf_skirmish25",
           "position": {
             "x": 14.1,
-            "y": -15.7
+            "y": 15.7
           }
         },
         {
@@ -570,7 +570,7 @@
           "@id": "bsf_skirmish26",
           "position": {
             "x": 14.3,
-            "y": -15.9
+            "y": 15.9
           },
           "iconOverride": "fate-boss.png"
         },
@@ -579,7 +579,7 @@
           "@id": "bsf_skirmish27",
           "position": {
             "x": 11.3,
-            "y": -15.2
+            "y": 15.2
           }
         },
         {
@@ -587,7 +587,7 @@
           "@id": "bsf_skirmish28",
           "position": {
             "x": 14.5,
-            "y": -18.4
+            "y": 18.4
           },
           "iconOverride": "fate-boss.png"
         },
@@ -596,7 +596,7 @@
           "@id": "bsf_skirmish29",
           "position": {
             "x": 20.9,
-            "y": -14.7
+            "y": 14.7
           },
           "iconOverride": "fate-gather.png"
         },
@@ -605,7 +605,7 @@
           "@id": "bsf_skirmish30",
           "position": {
             "x": 11.5,
-            "y": -20.6
+            "y": 20.6
           }
         },
         {
@@ -613,7 +613,7 @@
           "@id": "bsf_skirmish31",
           "position": {
             "x": 21.1,
-            "y": -14.9
+            "y": 14.9
           }
         },
         {
@@ -621,7 +621,7 @@
           "@id": "bsf_skirmish32",
           "position": {
             "x": 24.7,
-            "y": -17.5
+            "y": 17.5
           },
           "iconOverride": "fate-boss.png"
         }
@@ -639,7 +639,7 @@
           "@id": "bsf_ce01",
           "position": {
             "x": 17.2,
-            "y": -27
+            "y": 27
           },
           "metadata": {
             "boss": "bsf.ce.1.boss",
@@ -664,7 +664,7 @@
           "@id": "bsf_ce02",
           "position": {
             "x": 22,
-            "y": -29
+            "y": 29
           },
           "metadata": {
             "boss": "bsf.ce.2.boss",
@@ -679,7 +679,7 @@
           "@id": "bsf_ce03",
           "position": {
             "x": 35.4,
-            "y": -26.2
+            "y": 26.2
           },
           "metadata": {
             "boss": "bsf.ce.3.boss",
@@ -700,7 +700,7 @@
           "@id": "bsf_ce04",
           "position": {
             "x": 27.9,
-            "y": -30
+            "y": 30
           },
           "metadata": {
             "boss": "bsf.ce.4.boss",
@@ -715,7 +715,7 @@
           "@id": "bsf_ce05",
           "position": {
             "x": 14.2,
-            "y": -21.3
+            "y": 21.3
           },
           "metadata": {
             "boss": "bsf.ce.5.boss",
@@ -730,7 +730,7 @@
           "@id": "bsf_ce06",
           "position": {
             "x": 31.9,
-            "y": -17.6
+            "y": 17.6
           },
           "metadata": {
             "boss": "bsf.ce.6.boss",
@@ -751,7 +751,7 @@
           "@id": "bsf_ce07",
           "position": {
             "x": 20.6,
-            "y": -24.3
+            "y": 24.3
           },
           "iconOverride": "fate-wave.png",
           "metadata": {
@@ -767,7 +767,7 @@
           "@id": "bsf_ce08",
           "position": {
             "x": 26.8,
-            "y": -18.4
+            "y": 18.4
           },
           "metadata": {
             "boss": "bsf.ce.8.boss",
@@ -782,7 +782,7 @@
           "@id": "bsf_ce09",
           "position": {
             "x": 14.3,
-            "y": -18.3
+            "y": 18.3
           },
           "metadata": {
             "boss": "bsf.ce.9.boss",
@@ -803,7 +803,7 @@
           "@id": "bsf_ce10",
           "position": {
             "x": 21,
-            "y": -17.8
+            "y": 17.8
           },
           "metadata": {
             "boss": "bsf.ce.10.boss",
@@ -824,7 +824,7 @@
           "@id": "bsf_ce11",
           "position": {
             "x": 9.9,
-            "y": -18.3
+            "y": 18.3
           },
           "metadata": {
             "boss": "bsf.ce.11.boss",
@@ -845,7 +845,7 @@
           "@id": "bsf_ce12",
           "position": {
             "x": 23.6,
-            "y": -14.9
+            "y": 14.9
           },
           "metadata": {
             "boss": "bsf.ce.12.boss",
@@ -875,7 +875,7 @@
           "@id": "bsf_duel1",
           "position": {
             "x": 31.6,
-            "y": -26.8
+            "y": 26.8
           }
         },
         {
@@ -883,7 +883,7 @@
           "@id": "bsf_duel2",
           "position": {
             "x": 23.2,
-            "y": -20.6
+            "y": 20.6
           }
         },
         {
@@ -891,7 +891,7 @@
           "@id": "bsf_duel3",
           "position": {
             "x": 18.7,
-            "y": -15.9
+            "y": 15.9
           }
         }
       ]

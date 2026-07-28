@@ -1,6 +1,10 @@
 {
   "occult": {
     "name": "Occult Crescent",
+    "northhorn": {
+      "full": "The Occult Crescent: North Horn",
+      "short": "North Horn"
+    },
     "southhorn": {
       "full": "The Occult Crescent: South Horn",
       "short": "South Horn"

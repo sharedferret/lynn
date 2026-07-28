@@ -74,7 +74,7 @@
         },
         {
           "id": "sanguineRecluse",
-          "name": "Sanguine Recluse",
+          "name": "layer.sanguineRecluse",
           "enabled": true
         }
       ]
@@ -120,16 +120,16 @@
     "imageUrl": "southhorn.jpg",
     "bounds": {
       "min": {
-        "lat": -1,
+        "lat": 1,
         "lon": 1
       },
       "max": {
-        "lat": -42,
+        "lat": 42,
         "lon": 42
       }
     },
     "center": {
-      "lat": -21,
+      "lat": 21,
       "lon": 21
     },
     "zoom": {
@@ -150,7 +150,7 @@
           "@id": "osh_loc1",
           "position": {
             "x": 22.9,
-            "y": -21.6
+            "y": 21.6
           }
         },
         {
@@ -158,7 +158,7 @@
           "@id": "osh_loc2",
           "position": {
             "x": 14.8,
-            "y": -37.6
+            "y": 37.6
           }
         }
       ]
@@ -171,7 +171,7 @@
           "@id": "osh_a1",
           "position": {
             "x": 38.0,
-            "y": -7.5
+            "y": 7.5
           }
         },
         {
@@ -179,7 +179,7 @@
           "@id": "osh_a2",
           "position": {
             "x": 17.9,
-            "y": -9.0
+            "y": 9.0
           }
         },
         {
@@ -187,7 +187,7 @@
           "@id": "osh_a3",
           "position": {
             "x": 14.1,
-            "y": -18.8
+            "y": 18.8
           }
         },
         {
@@ -195,7 +195,7 @@
           "@id": "osh_a4",
           "position": {
             "x": 13.7,
-            "y": -27.1
+            "y": 27.1
           }
         },
         {
@@ -203,7 +203,7 @@
           "@id": "osh_a5",
           "position": {
             "x": 27.5,
-            "y": -27.5
+            "y": 27.5
           }
         }
       ]
@@ -216,7 +216,7 @@
           "@id": "osh_trader1",
           "position": {
             "x": 38.1,
-            "y": -7.1
+            "y": 7.1
           }
         },
         {
@@ -224,7 +224,7 @@
           "@id": "osh_trader2",
           "position": {
             "x": 37.9,
-            "y": -6.9
+            "y": 6.9
           }
         },
         {
@@ -232,7 +232,7 @@
           "@id": "osh_trader3",
           "position": {
             "x": 37.7,
-            "y": -7.1
+            "y": 7.1
           }
         }
       ]
@@ -245,7 +245,7 @@
           "@id": "osh_repair1",
           "position": {
             "x": 37.9,
-            "y": -8.0
+            "y": 8.0
           }
         }
       ]
@@ -259,7 +259,7 @@
           "@id": "osh_coffer01",
           "position": {
           "x": 33.8,
-          "y": -7.4
+          "y": 7.4
           }
         },
         {
@@ -268,7 +268,7 @@
           "@id": "osh_coffer02",
           "position": {
           "x": 34.6,
-          "y": -11.6
+          "y": 11.6
           }
         },
         {
@@ -277,7 +277,7 @@
           "@id": "osh_coffer03",
           "position": {
           "x": 39.1,
-          "y": -13.8
+          "y": 13.8
           }
         },
         {
@@ -286,7 +286,7 @@
           "@id": "osh_coffer04",
           "position": {
           "x": 37.3,
-          "y": -16.2
+          "y": 16.2
           }
         },
         {
@@ -295,7 +295,7 @@
           "@id": "osh_coffer05",
           "position": {
           "x": 30.6,
-          "y": -9.0
+          "y": 9.0
           }
         },
         {
@@ -304,7 +304,7 @@
           "@id": "osh_coffer06",
           "position": {
           "x": 29.0,
-          "y": -11.9
+          "y": 11.9
           }
         },
         {
@@ -313,7 +313,7 @@
           "@id": "osh_coffer07",
           "position": {
           "x": 29.1,
-          "y": -6.3
+          "y": 6.3
           }
         },
         {
@@ -322,7 +322,7 @@
           "@id": "osh_coffer08",
           "position": {
           "x": 24.2,
-          "y": -9.6
+          "y": 9.6
           }
         },
         {
@@ -331,7 +331,7 @@
           "@id": "osh_coffer09",
           "position": {
           "x": 19.1,
-          "y": -6.9
+          "y": 6.9
           }
         },
         {
@@ -340,7 +340,7 @@
           "@id": "osh_coffer10",
           "position": {
           "x": 18.6,
-          "y": -13.2
+          "y": 13.2
           }
         },
         {
@@ -349,7 +349,7 @@
           "@id": "osh_coffer11",
           "position": {
           "x": 14.6,
-          "y": -13.8
+          "y": 13.8
           }
         },
         {
@@ -358,7 +358,7 @@
           "@id": "osh_coffer12",
           "position": {
           "x": 12.6,
-          "y": -6.0
+          "y": 6.0
           }
         },
         {
@@ -367,7 +367,7 @@
           "@id": "osh_coffer13",
           "position": {
           "x": 9.9,
-          "y": -4.2
+          "y": 4.2
           }
         },
         {
@@ -376,7 +376,7 @@
           "@id": "osh_coffer14",
           "position": {
           "x": 6.5,
-          "y": -6.9
+          "y": 6.9
           }
         },
         {
@@ -385,7 +385,7 @@
           "@id": "osh_coffer15",
           "position": {
           "x": 4.0,
-          "y": -7.8
+          "y": 7.8
           }
         },
         {
@@ -394,7 +394,7 @@
           "@id": "osh_coffer16",
           "position": {
           "x": 28.6,
-          "y": -15.7
+          "y": 15.7
           }
         },
         {
@@ -403,7 +403,7 @@
           "@id": "osh_coffer17",
           "position": {
           "x": 22.6,
-          "y": -15.7
+          "y": 15.7
           }
         },
         {
@@ -412,7 +412,7 @@
           "@id": "osh_coffer18",
           "position": {
           "x": 21.2,
-          "y": -24.6
+          "y": 24.6
           }
         },
         {
@@ -421,7 +421,7 @@
           "@id": "osh_coffer19",
           "position": {
           "x": 18.6,
-          "y": -18.6
+          "y": 18.6
           }
         },
         {
@@ -430,7 +430,7 @@
           "@id": "osh_coffer20",
           "position": {
           "x": 11.7,
-          "y": -17.4
+          "y": 17.4
           }
         },
         {
@@ -439,7 +439,7 @@
           "@id": "osh_coffer21",
           "position": {
           "x": 11.7,
-          "y": -10.9
+          "y": 10.9
           }
         },
         {
@@ -448,7 +448,7 @@
           "@id": "osh_coffer22",
           "position": {
           "x": 8.3,
-          "y": -10.2
+          "y": 10.2
           }
         },
         {
@@ -457,7 +457,7 @@
           "@id": "osh_coffer23",
           "position": {
           "x": 7.5,
-          "y": -13.8
+          "y": 13.8
           }
         },
         {
@@ -466,7 +466,7 @@
           "@id": "osh_coffer24",
           "position": {
           "x": 6.3,
-          "y": -17.0
+          "y": 17.0
           }
         },
         {
@@ -475,7 +475,7 @@
           "@id": "osh_coffer25",
           "position": {
           "x": 4.4,
-          "y": -19.6
+          "y": 19.6
           }
         },
         {
@@ -484,7 +484,7 @@
           "@id": "osh_coffer26",
           "position": {
           "x": 16.3,
-          "y": -24.2
+          "y": 24.2
           }
         },
         {
@@ -493,7 +493,7 @@
           "@id": "osh_coffer27",
           "position": {
           "x": 12.4,
-          "y": -22.1
+          "y": 22.1
           }
         },
         {
@@ -502,7 +502,7 @@
           "@id": "osh_coffer28",
           "position": {
           "x": 7.2,
-          "y": -25.4
+          "y": 25.4
           }
         },
         {
@@ -511,7 +511,7 @@
           "@id": "osh_coffer29",
           "position": {
           "x": 6.2,
-          "y": -23.3
+          "y": 23.3
           }
         },
         {
@@ -520,7 +520,7 @@
           "@id": "osh_coffer30",
           "position": {
           "x": 30.8,
-          "y": -19.8
+          "y": 19.8
           }
         },
         {
@@ -529,7 +529,7 @@
           "@id": "osh_coffer31",
           "position": {
           "x": 26.4,
-          "y": -21.1
+          "y": 21.1
           }
         },
         {
@@ -538,7 +538,7 @@
           "@id": "osh_coffer32",
           "position": {
           "x": 36.0,
-          "y": -20.3
+          "y": 20.3
           }
         },
         {
@@ -547,7 +547,7 @@
           "@id": "osh_coffer33",
           "position": {
           "x": 37.8,
-          "y": -23.8
+          "y": 23.8
           }
         },
         {
@@ -556,7 +556,7 @@
           "@id": "osh_coffer34",
           "position": {
           "x": 33.5,
-          "y": -23.7
+          "y": 23.7
           }
         },
         {
@@ -565,7 +565,7 @@
           "@id": "osh_coffer35",
           "position": {
           "x": 27.3,
-          "y": -26.0
+          "y": 26.0
           }
         },
         {
@@ -574,7 +574,7 @@
           "@id": "osh_coffer36",
           "position": {
           "x": 8.5,
-          "y": -29.6
+          "y": 29.6
           }
         },
         {
@@ -583,7 +583,7 @@
           "@id": "osh_coffer37",
           "position": {
           "x": 6.9,
-          "y": -32.7
+          "y": 32.7
           }
         },
         {
@@ -592,7 +592,7 @@
           "@id": "osh_coffer38",
           "position": {
           "x": 5.8,
-          "y": -35.5
+          "y": 35.5
           }
         },
         {
@@ -601,7 +601,7 @@
           "@id": "osh_coffer39",
           "position": {
           "x": 7.4,
-          "y": -37.4
+          "y": 37.4
           }
         },
         {
@@ -610,7 +610,7 @@
           "@id": "osh_coffer40",
           "position": {
           "x": 8.3,
-          "y": -34.3
+          "y": 34.3
           }
         },
         {
@@ -619,7 +619,7 @@
           "@id": "osh_coffer41",
           "position": {
           "x": 10.5,
-          "y": -34.0
+          "y": 34.0
           }
         },
         {
@@ -628,7 +628,7 @@
           "@id": "osh_coffer42",
           "position": {
           "x": 14.1,
-          "y": -32.4
+          "y": 32.4
           }
         },
         {
@@ -637,7 +637,7 @@
           "@id": "osh_coffer43",
           "position": {
           "x": 17.9,
-          "y": -33.4
+          "y": 33.4
           }
         },
         {
@@ -646,7 +646,7 @@
           "@id": "osh_coffer44",
           "position": {
           "x": 16.7,
-          "y": -37.9
+          "y": 37.9
           }
         },
         {
@@ -655,7 +655,7 @@
           "@id": "osh_coffer45",
           "position": {
           "x": 22.2,
-          "y": -34.3
+          "y": 34.3
           }
         },
         {
@@ -664,7 +664,7 @@
           "@id": "osh_coffer46",
           "position": {
           "x": 24.6,
-          "y": -37.0
+          "y": 37.0
           }
         },
         {
@@ -673,7 +673,7 @@
           "@id": "osh_coffer47",
           "position": {
           "x": 26.7,
-          "y": -31.6
+          "y": 31.6
           }
         },
         {
@@ -682,7 +682,7 @@
           "@id": "osh_coffer48",
           "position": {
           "x": 27.4,
-          "y": -34.3
+          "y": 34.3
           }
         },
         {
@@ -691,7 +691,7 @@
           "@id": "osh_coffer49",
           "position": {
           "x": 9.5,
-          "y": -37.5
+          "y": 37.5
           }
         },
         {
@@ -700,7 +700,7 @@
           "@id": "osh_coffer50",
           "position": {
           "x": 30.3,
-          "y": -35.3
+          "y": 35.3
           }
         },
         {
@@ -709,7 +709,7 @@
           "@id": "osh_coffer51",
           "position": {
           "x": 31.5,
-          "y": -32.4
+          "y": 32.4
           }
         },
         {
@@ -718,7 +718,7 @@
           "@id": "osh_coffer52",
           "position": {
           "x": 33.7,
-          "y": -33.9
+          "y": 33.9
           }
         },
         {
@@ -727,7 +727,7 @@
           "@id": "osh_coffer53",
           "position": {
           "x": 38.7,
-          "y": -33.2
+          "y": 33.2
           }
         },
         {
@@ -736,7 +736,7 @@
           "@id": "osh_coffer54",
           "position": {
           "x": 38.2,
-          "y": -35.4
+          "y": 35.4
           }
         },
         {
@@ -745,7 +745,7 @@
           "@id": "osh_coffer55",
           "position": {
           "x": 38.3,
-          "y": -30.1
+          "y": 30.1
           }
         },
         {
@@ -754,7 +754,7 @@
           "@id": "osh_coffer56",
           "position": {
           "x": 13.4,
-          "y": -25.2
+          "y": 25.2
           }
         },
         {
@@ -763,7 +763,7 @@
           "@id": "osh_coffer57",
           "position": {
           "x": 13.2,
-          "y": -27.3
+          "y": 27.3
           }
         },
         {
@@ -772,7 +772,7 @@
           "@id": "osh_coffer58",
           "position": {
           "x": 34.6,
-          "y": -28.9
+          "y": 28.9
           }
         },
         {
@@ -781,7 +781,7 @@
           "@id": "osh_coffer59",
           "position": {
           "x": 21.6,
-          "y": -30.2
+          "y": 30.2
           }
         },
         {
@@ -790,7 +790,7 @@
           "@id": "osh_coffer60",
           "position": {
           "x": 7.1,
-          "y": -19.8
+          "y": 19.8
           }
         },
         {
@@ -800,7 +800,7 @@
           "iconOverride": "coffer-silver.png",
           "position": {
           "x": 4.8,
-          "y": -4.8
+          "y": 4.8
           }
         },
         {
@@ -810,7 +810,7 @@
           "iconOverride": "coffer-silver.png",
           "position": {
           "x": 5.6,
-          "y": -15.1
+          "y": 15.1
           }
         },
         {
@@ -820,7 +820,7 @@
           "iconOverride": "coffer-silver.png",
           "position": {
           "x": 8.0,
-          "y": -17.5
+          "y": 17.5
           }
         },
         {
@@ -830,7 +830,7 @@
           "iconOverride": "coffer-silver.png",
           "position": {
           "x": 15.8,
-          "y": -28.8
+          "y": 28.8
           }
         },
         {
@@ -840,7 +840,7 @@
           "iconOverride": "coffer-silver.png",
           "position": {
           "x": 8.3,
-          "y": -35.6
+          "y": 35.6
           }
         },
         {
@@ -850,7 +850,7 @@
           "iconOverride": "coffer-silver.png",
           "position": {
           "x": 32.0,
-          "y": -26.2
+          "y": 26.2
           }
         },
         {
@@ -860,7 +860,7 @@
           "iconOverride": "coffer-silver.png",
           "position": {
           "x": 35.5,
-          "y": -33.5
+          "y": 33.5
           }
         },
         {
@@ -870,7 +870,7 @@
           "iconOverride": "coffer-silver.png",
           "position": {
           "x": 36.7,
-          "y": -18.8
+          "y": 18.8
           }
         }
       ]
@@ -884,7 +884,7 @@
           "@id": "osh_potcoffer01",
           "position": {
           "x": 15.2,
-          "y": -20.7
+          "y": 20.7
           }
         },
         {
@@ -893,7 +893,7 @@
           "@id": "osh_potcoffer02",
           "position": {
           "x": 6.6,
-          "y": -38.0
+          "y": 38.0
           }
         },
         {
@@ -902,7 +902,7 @@
           "@id": "osh_potcoffer03",
           "position": {
           "x": 8.5,
-          "y": -19.9
+          "y": 19.9
           }
         },
         {
@@ -911,7 +911,7 @@
           "@id": "osh_potcoffer04",
           "position": {
           "x": 9.4,
-          "y": -38.6
+          "y": 38.6
           }
         },
         {
@@ -920,7 +920,7 @@
           "@id": "osh_potcoffer05",
           "position": {
           "x": 35.5,
-          "y": -28.6
+          "y": 28.6
           }
         },
         {
@@ -929,7 +929,7 @@
           "@id": "osh_potcoffer06",
           "position": {
           "x": 32.8,
-          "y": -5.3
+          "y": 5.3
           }
         },
         {
@@ -938,7 +938,7 @@
           "@id": "osh_potcoffer07",
           "position": {
           "x": 37.6,
-          "y": -14.4
+          "y": 14.4
           }
         },
         {
@@ -947,7 +947,7 @@
           "@id": "osh_potcoffer08",
           "position": {
           "x": 35.1,
-          "y": -17.9
+          "y": 17.9
           }
         },
         {
@@ -956,7 +956,7 @@
           "@id": "osh_potcoffer09",
           "position": {
           "x": 38.9,
-          "y": -19.8
+          "y": 19.8
           }
         },
         {
@@ -965,7 +965,7 @@
           "@id": "osh_potcoffer10",
           "position": {
           "x": 39.0,
-          "y": -21.2
+          "y": 21.2
           }
         },
         {
@@ -974,7 +974,7 @@
           "@id": "osh_potcoffer11",
           "position": {
           "x": 32.9,
-          "y": -26.9
+          "y": 26.9
           }
         },
         {
@@ -983,7 +983,7 @@
           "@id": "osh_potcoffer12",
           "position": {
           "x": 34.7,
-          "y": -24.7
+          "y": 24.7
           }
         },
         {
@@ -992,7 +992,7 @@
           "@id": "osh_potcoffer13",
           "position": {
           "x": 33.6,
-          "y": -25.1
+          "y": 25.1
           }
         },
         {
@@ -1001,7 +1001,7 @@
           "@id": "osh_potcoffer14",
           "position": {
           "x": 37.1,
-          "y": -32.7
+          "y": 32.7
           }
         },
         {
@@ -1010,7 +1010,7 @@
           "@id": "osh_potcoffer15",
           "position": {
           "x": 29.7,
-          "y": -33.1
+          "y": 33.1
           }
         },
         {
@@ -1019,7 +1019,7 @@
           "@id": "osh_potcoffer16",
           "position": {
           "x": 30.2,
-          "y": -38.9
+          "y": 38.9
           }
         },
         {
@@ -1028,7 +1028,7 @@
           "@id": "osh_potcoffer17",
           "position": {
           "x": 29.4,
-          "y": -19.0
+          "y": 19.0
           }
         },
         {
@@ -1037,7 +1037,7 @@
           "@id": "osh_potcoffer18",
           "position": {
           "x": 27.3,
-          "y": -22.6
+          "y": 22.6
           }
         },
         {
@@ -1046,7 +1046,7 @@
           "@id": "osh_potcoffer19",
           "position": {
           "x": 26.8,
-          "y": -28.0
+          "y": 28.0
           }
         },
         {
@@ -1055,7 +1055,7 @@
           "@id": "osh_potcoffer20",
           "position": {
           "x": 25.4,
-          "y": -33.8
+          "y": 33.8
           }
         },
         {
@@ -1064,7 +1064,7 @@
           "@id": "osh_potcoffer21",
           "position": {
           "x": 18.1,
-          "y": -30.2
+          "y": 30.2
           }
         },
         {
@@ -1073,7 +1073,7 @@
           "@id": "osh_potcoffer22",
           "position": {
           "x": 8.2,
-          "y": -17.2
+          "y": 17.2
           }
         },
         {
@@ -1082,7 +1082,7 @@
           "@id": "osh_potcoffer23",
           "position": {
           "x": 6.8,
-          "y": -35.1
+          "y": 35.1
           }
         },
         {
@@ -1091,7 +1091,7 @@
           "@id": "osh_potcoffer24",
           "position": {
           "x": 5.0,
-          "y": -33.2
+          "y": 33.2
           }
         },
         {
@@ -1100,7 +1100,7 @@
           "@id": "osh_potcoffer25",
           "position": {
           "x": 17.7,
-          "y": -7.1
+          "y": 7.1
           }
         },
         {
@@ -1109,7 +1109,7 @@
           "@id": "osh_potcoffer26",
           "position": {
           "x": 17.6,
-          "y": -15.7
+          "y": 15.7
           }
         },
         {
@@ -1118,7 +1118,7 @@
           "@id": "osh_potcoffer27",
           "position": {
           "x": 10.8,
-          "y": -8.6
+          "y": 8.6
           }
         },
         {
@@ -1127,7 +1127,7 @@
           "@id": "osh_potcoffer28",
           "position": {
           "x": 7.9,
-          "y": -6.3
+          "y": 6.3
           }
         },
         {
@@ -1136,7 +1136,7 @@
           "@id": "osh_potcoffer29",
           "position": {
           "x": 7.5,
-          "y": -8.8
+          "y": 8.8
           }
         },
         {
@@ -1145,7 +1145,7 @@
           "@id": "osh_potcoffer30",
           "position": {
           "x": 5.3,
-          "y": -8.5
+          "y": 8.5
           }
         },
         {
@@ -1154,7 +1154,7 @@
           "@id": "osh_potcoffer31",
           "position": {
           "x": 14.8,
-          "y": -4.2
+          "y": 4.2
           }
         },
         {
@@ -1163,7 +1163,7 @@
           "@id": "osh_potcoffer32",
           "position": {
           "x": 20.2,
-          "y": -37.9
+          "y": 37.9
           }
         },
         {
@@ -1172,7 +1172,7 @@
           "@id": "osh_potcoffer33",
           "position": {
           "x": 21.9,
-          "y": -13.1
+          "y": 13.1
           }
         },
         {
@@ -1181,7 +1181,7 @@
           "@id": "osh_potcoffer34",
           "position": {
           "x": 20.7,
-          "y": -18.0
+          "y": 18.0
           }
         },
         {
@@ -1190,7 +1190,7 @@
           "@id": "osh_potcoffer35",
           "position": {
           "x": 12.1,
-          "y": -19.7
+          "y": 19.7
           }
         },
         {
@@ -1199,7 +1199,7 @@
           "@id": "osh_potcoffer36",
           "position": {
           "x": 7.3,
-          "y": -18.7
+          "y": 18.7
           }
         },
         {
@@ -1208,7 +1208,7 @@
           "@id": "osh_potcoffer37",
           "position": {
           "x": 15.0,
-          "y": -23.1
+          "y": 23.1
           }
         },
         {
@@ -1217,7 +1217,7 @@
           "@id": "osh_potcoffer38",
           "position": {
           "x": 5.5,
-          "y": -21.4
+          "y": 21.4
           }
         },
         {
@@ -1226,7 +1226,7 @@
           "@id": "osh_potcoffer39",
           "position": {
           "x": 5.2,
-          "y": -16.9
+          "y": 16.9
           }
         },
         {
@@ -1235,7 +1235,7 @@
           "@id": "osh_potcoffer40",
           "position": {
           "x": 28.1,
-          "y": -8.3
+          "y": 8.3
           }
         },
         {
@@ -1244,7 +1244,7 @@
           "@id": "osh_potcoffer41",
           "position": {
           "x": 3.8,
-          "y": -35.7
+          "y": 35.7
           }
         },
         {
@@ -1253,7 +1253,7 @@
           "@id": "osh_potcoffer42",
           "position": {
           "x": 4.1,
-          "y": -20.3
+          "y": 20.3
           }
         },
         {
@@ -1262,7 +1262,7 @@
           "@id": "osh_potcoffer43",
           "position": {
           "x": 4.6,
-          "y": -19.0
+          "y": 19.0
           }
         },
         {
@@ -1271,7 +1271,7 @@
           "@id": "osh_potcoffer44",
           "position": {
           "x": 4.7,
-          "y": -16.5
+          "y": 16.5
           }
         },
         {
@@ -1280,7 +1280,7 @@
           "@id": "osh_potcoffer45",
           "position": {
           "x": 4.8,
-          "y": -36.9
+          "y": 36.9
           }
         },
         {
@@ -1289,7 +1289,7 @@
           "@id": "osh_potcoffer46",
           "position": {
           "x": 4.9,
-          "y": -22.8
+          "y": 22.8
           }
         },
         {
@@ -1298,7 +1298,7 @@
           "@id": "osh_potcoffer47",
           "position": {
           "x": 5.0,
-          "y": -35.1
+          "y": 35.1
           }
         },
         {
@@ -1307,7 +1307,7 @@
           "@id": "osh_potcoffer48",
           "position": {
           "x": 5.4,
-          "y": -9.4
+          "y": 9.4
           }
         },
         {
@@ -1316,7 +1316,7 @@
           "@id": "osh_potcoffer49",
           "position": {
           "x": 5.6,
-          "y": -16.9
+          "y": 16.9
           }
         },
         {
@@ -1325,7 +1325,7 @@
           "@id": "osh_potcoffer50",
           "position": {
           "x": 5.6,
-          "y": -6.0
+          "y": 6.0
           }
         },
         {
@@ -1334,7 +1334,7 @@
           "@id": "osh_potcoffer51",
           "position": {
           "x": 5.8,
-          "y": -37.3
+          "y": 37.3
           }
         },
         {
@@ -1343,7 +1343,7 @@
           "@id": "osh_potcoffer52",
           "position": {
           "x": 6.0,
-          "y": -11.8
+          "y": 11.8
           }
         },
         {
@@ -1352,7 +1352,7 @@
           "@id": "osh_potcoffer53",
           "position": {
           "x": 6.3,
-          "y": -17.8
+          "y": 17.8
           }
         },
         {
@@ -1361,7 +1361,7 @@
           "@id": "osh_potcoffer54",
           "position": {
           "x": 6.9,
-          "y": -38.1
+          "y": 38.1
           }
         },
         {
@@ -1370,7 +1370,7 @@
           "@id": "osh_potcoffer55",
           "position": {
           "x": 6.9,
-          "y": -14.1
+          "y": 14.1
           }
         },
         {
@@ -1379,7 +1379,7 @@
           "@id": "osh_potcoffer56",
           "position": {
           "x": 7.2,
-          "y": -35.7
+          "y": 35.7
           }
         },
         {
@@ -1388,7 +1388,7 @@
           "@id": "osh_potcoffer57",
           "position": {
           "x": 7.3,
-          "y": -34.9
+          "y": 34.9
           }
         },
         {
@@ -1397,7 +1397,7 @@
           "@id": "osh_potcoffer58",
           "position": {
           "x": 7.9,
-          "y": -36.3
+          "y": 36.3
           }
         },
         {
@@ -1406,7 +1406,7 @@
           "@id": "osh_potcoffer59",
           "position": {
           "x": 8.0,
-          "y": -21.5
+          "y": 21.5
           }
         },
         {
@@ -1415,7 +1415,7 @@
           "@id": "osh_potcoffer60",
           "position": {
           "x": 8.3,
-          "y": -11.3
+          "y": 11.3
           }
         },
         {
@@ -1424,7 +1424,7 @@
           "@id": "osh_potcoffer61",
           "position": {
           "x": 9.0,
-          "y": -37.7
+          "y": 37.7
           }
         },
         {
@@ -1433,7 +1433,7 @@
           "@id": "osh_potcoffer62",
           "position": {
           "x": 10.4,
-          "y": -15.3
+          "y": 15.3
           }
         },
         {
@@ -1442,7 +1442,7 @@
           "@id": "osh_potcoffer63",
           "position": {
           "x": 12.3,
-          "y": -21.6
+          "y": 21.6
           }
         },
         {
@@ -1451,7 +1451,7 @@
           "@id": "osh_potcoffer64",
           "position": {
           "x": 13.8,
-          "y": -12.3
+          "y": 12.3
           }
         },
         {
@@ -1460,7 +1460,7 @@
           "@id": "osh_potcoffer65",
           "position": {
           "x": 13.8,
-          "y": -17.1
+          "y": 17.1
           }
         },
         {
@@ -1469,7 +1469,7 @@
           "@id": "osh_potcoffer66",
           "position": {
           "x": 13.9,
-          "y": -13.9
+          "y": 13.9
           }
         },
         {
@@ -1478,7 +1478,7 @@
           "@id": "osh_potcoffer67",
           "position": {
           "x": 15.0,
-          "y": -25.6
+          "y": 25.6
           }
         },
         {
@@ -1487,7 +1487,7 @@
           "@id": "osh_potcoffer68",
           "position": {
           "x": 17.2,
-          "y": -11.3
+          "y": 11.3
           }
         },
         {
@@ -1496,7 +1496,7 @@
           "@id": "osh_potcoffer69",
           "position": {
           "x": 20.4,
-          "y": -29.6
+          "y": 29.6
           }
         },
         {
@@ -1505,7 +1505,7 @@
           "@id": "osh_potcoffer70",
           "position": {
           "x": 21.9,
-          "y": -35.0
+          "y": 35.0
           }
         },
         {
@@ -1514,7 +1514,7 @@
           "@id": "osh_potcoffer71",
           "position": {
           "x": 22.8,
-          "y": -36.4
+          "y": 36.4
           }
         },
         {
@@ -1523,7 +1523,7 @@
           "@id": "osh_potcoffer72",
           "position": {
           "x": 22.9,
-          "y": -16.7
+          "y": 16.7
           }
         },
         {
@@ -1532,7 +1532,7 @@
           "@id": "osh_potcoffer73",
           "position": {
           "x": 23.0,
-          "y": -13.6
+          "y": 13.6
           }
         },
         {
@@ -1541,7 +1541,7 @@
           "@id": "osh_potcoffer74",
           "position": {
           "x": 23.1,
-          "y": -29.3
+          "y": 29.3
           }
         },
         {
@@ -1550,7 +1550,7 @@
           "@id": "osh_potcoffer75",
           "position": {
           "x": 23.6,
-          "y": -24.4
+          "y": 24.4
           }
         },
         {
@@ -1559,7 +1559,7 @@
           "@id": "osh_potcoffer76",
           "position": {
           "x": 26.0,
-          "y": -31.9
+          "y": 31.9
           }
         },
         {
@@ -1568,7 +1568,7 @@
           "@id": "osh_potcoffer77",
           "position": {
           "x": 28.3,
-          "y": -25.4
+          "y": 25.4
           }
         },
         {
@@ -1577,7 +1577,7 @@
           "@id": "osh_potcoffer78",
           "position": {
           "x": 29.4,
-          "y": -38.4
+          "y": 38.4
           }
         },
         {
@@ -1586,7 +1586,7 @@
           "@id": "osh_potcoffer79",
           "position": {
           "x": 33.3,
-          "y": -10.6
+          "y": 10.6
           }
         },
         {
@@ -1595,7 +1595,7 @@
           "@id": "osh_potcoffer80",
           "position": {
           "x": 38.0,
-          "y": -36.9
+          "y": 36.9
           }
         }
       ]
@@ -1609,7 +1609,7 @@
           "@id": "osh_carrot01",
           "position": {
           "x": 19.4,
-          "y": -5.4
+          "y": 5.4
           }
         },
         {
@@ -1618,7 +1618,7 @@
           "@id": "osh_carrot02",
           "position": {
           "x": 11.7,
-          "y": -6.6
+          "y": 6.6
           }
         },
         {
@@ -1627,7 +1627,7 @@
           "@id": "osh_carrot03",
           "position": {
           "x": 13.8,
-          "y": -11.2
+          "y": 11.2
           }
         },
         {
@@ -1636,7 +1636,7 @@
           "@id": "osh_carrot04",
           "position": {
           "x": 6.0,
-          "y": -7.6
+          "y": 7.6
           }
         },
         {
@@ -1645,7 +1645,7 @@
           "@id": "osh_carrot05",
           "position": {
           "x": 7.0,
-          "y": -12.4
+          "y": 12.4
           }
         },
         {
@@ -1654,7 +1654,7 @@
           "@id": "osh_carrot06",
           "position": {
           "x": 10.8,
-          "y": -14.3
+          "y": 14.3
           }
         },
         {
@@ -1663,7 +1663,7 @@
           "@id": "osh_carrot07",
           "position": {
           "x": 4.4,
-          "y": -20.5
+          "y": 20.5
           }
         },
         {
@@ -1672,7 +1672,7 @@
           "@id": "osh_carrot08",
           "position": {
           "x": 6.6,
-          "y": -23.3
+          "y": 23.3
           }
         },
         {
@@ -1681,7 +1681,7 @@
           "@id": "osh_carrot09",
           "position": {
           "x": 12.9,
-          "y": -25.2
+          "y": 25.2
           }
         },
         {
@@ -1690,7 +1690,7 @@
           "@id": "osh_carrot10",
           "position": {
           "x": 18.4,
-          "y": -23.6
+          "y": 23.6
           }
         },
         {
@@ -1699,7 +1699,7 @@
           "@id": "osh_carrot11",
           "position": {
           "x": 6.9,
-          "y": -28.0
+          "y": 28.0
           }
         },
         {
@@ -1708,7 +1708,7 @@
           "@id": "osh_carrot12",
           "position": {
           "x": 9.9,
-          "y": -34.9
+          "y": 34.9
           }
         },
         {
@@ -1717,7 +1717,7 @@
           "@id": "osh_carrot13",
           "position": {
           "x": 7.5,
-          "y": -35.9
+          "y": 35.9
           }
         },
         {
@@ -1726,7 +1726,7 @@
           "@id": "osh_carrot14",
           "position": {
           "x": 5.5,
-          "y": -38.8
+          "y": 38.8
           }
         },
         {
@@ -1735,7 +1735,7 @@
           "@id": "osh_carrot15",
           "position": {
           "x": 16.0,
-          "y": -38.3
+          "y": 38.3
           }
         },
         {
@@ -1744,7 +1744,7 @@
           "@id": "osh_carrot16",
           "position": {
           "x": 26.3,
-          "y": -37.5
+          "y": 37.5
           }
         },
         {
@@ -1753,7 +1753,7 @@
           "@id": "osh_carrot17",
           "position": {
           "x": 27.3,
-          "y": -32.8
+          "y": 32.8
           }
         },
         {
@@ -1762,7 +1762,7 @@
           "@id": "osh_carrot18",
           "position": {
           "x": 30.8,
-          "y": -32.8
+          "y": 32.8
           }
         },
         {
@@ -1771,7 +1771,7 @@
           "@id": "osh_carrot19",
           "position": {
           "x": 36.7,
-          "y": -32.2
+          "y": 32.2
           }
         },
         {
@@ -1780,7 +1780,7 @@
           "@id": "osh_carrot20",
           "position": {
           "x": 38.3,
-          "y": -37.4
+          "y": 37.4
           }
         },
         {
@@ -1789,7 +1789,7 @@
           "@id": "osh_carrot21",
           "position": {
           "x": 38.6,
-          "y": -17.2
+          "y": 17.2
           }
         },
         {
@@ -1798,7 +1798,7 @@
           "@id": "osh_carrot22",
           "position": {
           "x": 38.0,
-          "y": -18.6
+          "y": 18.6
           }
         },
         {
@@ -1807,7 +1807,7 @@
           "@id": "osh_carrot23",
           "position": {
           "x": 31.0,
-          "y": -24.4
+          "y": 24.4
           }
         },
         {
@@ -1816,7 +1816,7 @@
           "@id": "osh_carrot24",
           "position": {
           "x": 35.2,
-          "y": -24.0
+          "y": 24.0
           }
         },
         {
@@ -1825,7 +1825,7 @@
           "@id": "osh_carrot25",
           "position": {
           "x": 36.0,
-          "y": -27.0
+          "y": 27.0
           }
         },
                 {
@@ -1834,7 +1834,7 @@
           "@id": "osh_carrot30",
           "position": {
           "x": 27.8,
-          "y": -9.3
+          "y": 9.3
           }
         },
                 {
@@ -1843,7 +1843,7 @@
           "@id": "osh_carrot31",
           "position": {
           "x": 29.3,
-          "y": -38.4
+          "y": 38.4
           }
         },
                 {
@@ -1852,7 +1852,7 @@
           "@id": "osh_carrot32",
           "position": {
           "x": 20.8,
-          "y": -37.7
+          "y": 37.7
           }
         }
       ]
@@ -1869,7 +1869,7 @@
           "@id": "osh_potfate1",
           "position": {
             "x": 25.6,
-            "y": -17.1
+            "y": 17.1
           }
         },
         {
@@ -1877,7 +1877,7 @@
           "@id": "osh_potfate2",
           "position": {
             "x": 11.9,
-            "y": -32.0
+            "y": 32.0
           }
         }
       ]
@@ -1894,7 +1894,7 @@
           "@id": "osh_fate01",
           "position": {
             "x": 14.1,
-            "y": -34.6
+            "y": 34.6
           },
           "metadata": {
             "boss": "southhorn.fate.1.boss"
@@ -1905,7 +1905,7 @@
           "@id": "osh_fate02",
           "position": {
             "x": 22.9,
-            "y": -27.1
+            "y": 27.1
           },
           "metadata": {
             "boss": "southhorn.fate.2.boss"
@@ -1916,7 +1916,7 @@
           "@id": "osh_fate03",
           "position": {
             "x": 28.8,
-            "y": -31.2
+            "y": 31.2
           },
           "metadata": {
             "boss": "southhorn.fate.3.boss"
@@ -1927,7 +1927,7 @@
           "@id": "osh_fate04",
           "position": {
             "x": 20.6,
-            "y": -15.1
+            "y": 15.1
           },
           "metadata": {
             "boss": "southhorn.fate.4.boss"
@@ -1938,7 +1938,7 @@
           "@id": "osh_fate05",
           "position": {
             "x": 17.0,
-            "y": -26.5
+            "y": 26.5
           },
           "metadata": {
             "boss": "southhorn.fate.5.boss"
@@ -1949,7 +1949,7 @@
           "@id": "osh_fate06",
           "position": {
             "x": 24.6,
-            "y": -34.8
+            "y": 34.8
           },
           "metadata": {
             "boss": "southhorn.fate.6.boss"
@@ -1960,7 +1960,7 @@
           "@id": "osh_fate07",
           "position": {
             "x": 10.4,
-            "y": -9.7
+            "y": 9.7
           },
           "metadata": {
             "boss": "southhorn.fate.7.boss"
@@ -1971,7 +1971,7 @@
           "@id": "osh_fate08",
           "position": {
             "x": 17.0,
-            "y": -22.3
+            "y": 22.3
           },
           "metadata": {
             "boss": "southhorn.fate.8.boss"
@@ -1982,7 +1982,7 @@
           "@id": "osh_fate09",
           "position": {
             "x": 20.1,
-            "y": -32.7
+            "y": 32.7
           },
           "metadata": {
             "boss": "southhorn.fate.9.boss"
@@ -1993,7 +1993,7 @@
           "@id": "osh_fate10",
           "position": {
             "x": 29.6,
-            "y": -21.0
+            "y": 21.0
           },
           "metadata": {
             "boss": "southhorn.fate.10.boss"
@@ -2004,7 +2004,7 @@
           "@id": "osh_fate11",
           "position": {
             "x": 9.5,
-            "y": -27.9
+            "y": 27.9
           },
           "metadata": {
             "boss": "southhorn.fate.11.boss"
@@ -2024,7 +2024,7 @@
           "@id": "osh_ce01",
           "position": {
             "x": 35.0,
-            "y": -16.1
+            "y": 16.1
           },
           "metadata": {
             "boss": "southhorn.ce.1.boss"
@@ -2035,7 +2035,7 @@
           "@id": "osh_ce02",
           "position": {
             "x": 10.1,
-            "y": -18.2
+            "y": 18.2
           },
           "metadata": {
             "boss": "southhorn.ce.2.boss"
@@ -2046,7 +2046,7 @@
           "@id": "osh_ce03",
           "position": {
             "x": 34.0,
-            "y": -20.1
+            "y": 20.1
           },
           "metadata": {
             "boss": "southhorn.ce.3.boss",
@@ -2068,7 +2068,7 @@
           "@id": "osh_ce04",
           "position": {
             "x": 35.1,
-            "y": -32.2
+            "y": 32.2
           },
           "metadata": {
             "boss": "southhorn.ce.4.boss"
@@ -2079,7 +2079,7 @@
           "@id": "osh_ce05",
           "position": {
             "x": 30.5,
-            "y": -14.1
+            "y": 14.1
           },
           "metadata": {
             "boss": "southhorn.ce.5.boss",
@@ -2095,7 +2095,7 @@
           "@id": "osh_ce06",
           "position": {
             "x": 30.6,
-            "y": -28.7
+            "y": 28.7
           },
           "metadata": {
             "boss": "southhorn.ce.6.boss",
@@ -2121,7 +2121,7 @@
           "@id": "osh_ce07",
           "position": {
             "x": 13.1,
-            "y": -22.8
+            "y": 22.8
           },
           "metadata": {
             "boss": "southhorn.ce.7.boss"
@@ -2132,7 +2132,7 @@
           "@id": "osh_ce08",
           "position": {
             "x": 19.1,
-            "y": -4.4
+            "y": 4.4
           },
           "metadata": {
             "boss": "southhorn.ce.8.boss",
@@ -2154,7 +2154,7 @@
           "@id": "osh_ce09",
           "position": {
             "x": 33.9,
-            "y": -37.5
+            "y": 37.5
           },
           "metadata": {
             "boss": "southhorn.ce.9.boss",
@@ -2175,7 +2175,7 @@
           "@id": "osh_ce10",
           "position": {
             "x": 5.5,
-            "y": -26.2
+            "y": 26.2
           },
           "metadata": {
             "boss": "southhorn.ce.10.boss",
@@ -2197,7 +2197,7 @@
           "@id": "osh_ce11",
           "position": {
             "x": 22.9,
-            "y": -10.5
+            "y": 10.5
           },
           "metadata": {
             "boss": "southhorn.ce.11.boss",
@@ -2214,7 +2214,7 @@
           "@id": "osh_ce12",
           "position": {
             "x": 14.5,
-            "y": -9.2
+            "y": 9.2
           },
           "metadata": {
             "boss": "southhorn.ce.12.boss"
@@ -2225,7 +2225,7 @@
           "@id": "osh_ce13",
           "position": {
             "x": 38.9,
-            "y": -25.0
+            "y": 25.0
           },
           "metadata": {
             "boss": "southhorn.ce.13.boss"
@@ -2236,7 +2236,7 @@
           "@id": "osh_ce14",
           "position": {
             "x": 14.7,
-            "y": -37.5
+            "y": 37.5
           },
           "metadata": {
             "boss": "southhorn.ce.14.boss",
@@ -2258,7 +2258,7 @@
           "@id": "osh_ce15",
           "position": {
             "x": 27.4,
-            "y": -36.0
+            "y": 36.0
           },
           "metadata": {
             "boss": "southhorn.ce.15.boss",
@@ -2279,7 +2279,7 @@
           "@id": "osh_survey07",
           "position": {
             "x": 31.3,
-            "y": -17.0
+            "y": 17.0
           }
         },
         {
@@ -2287,7 +2287,7 @@
           "@id": "osh_survey09",
           "position": {
             "x": 19.2,
-            "y": -13.1
+            "y": 13.1
           }
         },
         {
@@ -2295,7 +2295,7 @@
           "@id": "osh_survey12",
           "position": {
             "x": 23.2,
-            "y": -21.5
+            "y": 21.5
           }
         },
         {
@@ -2303,7 +2303,7 @@
           "@id": "osh_survey13",
           "position": {
             "x": 10.1,
-            "y": -22.5
+            "y": 22.5
           }
         },
         {
@@ -2311,7 +2311,7 @@
           "@id": "osh_survey15",
           "position": {
             "x": 24.2,
-            "y": -32.9
+            "y": 32.9
           }
         },
         {
@@ -2319,7 +2319,7 @@
           "@id": "osh_survey18",
           "position": {
             "x": 18.5,
-            "y": -33.8
+            "y": 33.8
           }
         },
         {
@@ -2327,7 +2327,7 @@
           "@id": "osh_survey19",
           "position": {
             "x": 15.6,
-            "y": -29.5
+            "y": 29.5
           }
         },
         {
@@ -2335,7 +2335,7 @@
           "@id": "osh_survey21",
           "position": {
             "x": 36.6,
-            "y": -33.7
+            "y": 33.7
           }
         },
         {
@@ -2343,7 +2343,7 @@
           "@id": "osh_survey22",
           "position": {
             "x": 36.0,
-            "y": -22.6
+            "y": 22.6
           }
         },
         {
@@ -2351,7 +2351,7 @@
           "@id": "osh_survey23",
           "position": {
             "x": 3.7,
-            "y": -5.8
+            "y": 5.8
           }
         },
         {
@@ -2359,7 +2359,7 @@
           "@id": "osh_survey24",
           "position": {
             "x": 8.7,
-            "y": -35.8
+            "y": 35.8
           }
         }
       ]
@@ -2368,67 +2368,67 @@
       "markerIcon": "mob6.png",
       "waymarks": [
         {
-          "name": "Sanguine Recluse",
+          "name": "southhorn.sanguinerecluse",
           "@id": "recluse_spawn_1",
           "position": {
             "x": 13.6,
-            "y": -4.5
+            "y": 4.5
           }
         },
         {
-          "name": "Sanguine Recluse",
+          "name": "southhorn.sanguinerecluse",
           "@id": "recluse_spawn_2",
           "position": {
             "x": 28.5,
-            "y": -5.0
+            "y": 5.0
           }
         },
         {
-          "name": "Sanguine Recluse",
+          "name": "southhorn.sanguinerecluse",
           "@id": "recluse_spawn_3",
           "position": {
             "x": 9.7,
-            "y": -13.5
+            "y": 13.5
           }
         },
         {
-          "name": "Sanguine Recluse",
+          "name": "southhorn.sanguinerecluse",
           "@id": "recluse_spawn_4",
           "position": {
             "x": 7.1,
-            "y": -17.9
+            "y": 17.9
           }
         },
         {
-          "name": "Sanguine Recluse",
+          "name": "southhorn.sanguinerecluse",
           "@id": "recluse_spawn_5",
           "position": {
             "x": 5.6,
-            "y": -30.7
+            "y": 30.7
           }
         },
         {
-          "name": "Sanguine Recluse",
+          "name": "southhorn.sanguinerecluse",
           "@id": "recluse_spawn_6",
           "position": {
             "x": 25.5,
-            "y": -27.2
+            "y": 27.2
           }
         },
         {
-          "name": "Sanguine Recluse",
+          "name": "southhorn.sanguinerecluse",
           "@id": "recluse_spawn_7",
           "position": {
             "x": 34.5,
-            "y": -29.2
+            "y": 29.2
           }
         },
         {
-          "name": "Sanguine Recluse",
+          "name": "southhorn.sanguinerecluse",
           "@id": "recluse_spawn_8",
           "position": {
             "x": 22.2,
-            "y": -38.0
+            "y": 38.0
           }
         }
       ]
@@ -2446,149 +2446,149 @@
             "icon": "orpiment-demiatma.png"
           },
           "path": [
-            [37.77, -6.44],
-            [37.72, -6.17],
-            [37.93, -6.01],
-            [37.76, -5.81],
-            [37.39, -5.75],
-            [37.05, -5.81],
-            [36.84, -5.77],
-            [36.43, -5.87],
-            [36.17, -5.88],
-            [36.10, -5.98],
-            [35.71, -6.12],
-            [35.51, -6.24],
-            [35.53, -6.46],
-            [35.09, -6.81],
-            [34.63, -6.89],
-            [34.49, -6.65],
-            [34.32, -6.61],
-            [34.11, -6.39],
-            [34.06, -6.18],
-            [33.82, -6.19],
-            [33.60, -5.94],
-            [33.60, -5.51],
-            [33.13, -5.29],
-            [32.94, -5.05],
-            [32.57, -5.24],
-            [32.31, -5.59],
-            [31.63, -5.75],
-            [31.58, -5.88],
-            [31.26, -5.99],
-            [31.07, -6.05],
-            [30.45, -6.33],
-            [30.34, -6.50],
-            [30.48, -6.67],
-            [30.35, -6.94],
-            [30.17, -6.97],
-            [30.25, -7.35],
-            [30.12, -7.70],
-            [29.85, -7.86],
-            [29.79, -8.09],
-            [29.94, -8.42],
-            [29.96, -8.89],
-            [29.85, -9.18],
-            [30.02, -9.44],
-            [30.07, -10.12],
-            [29.70, -10.35],
-            [29.30, -10.29],
-            [28.54, -10.02],
-            [27.38, -9.90],
-            [26.52, -10.28],
-            [26.30, -10.33],
-            [26.22, -10.52],
-            [25.64, -10.88],
-            [25.46, -11.08],
-            [25.52, -11.24],
-            [24.97, -11.87],
-            [24.03, -12.64],
-            [22.93, -13.13],
-            [19.34, -21.95],
-            [19.16, -22.56],
-            [19.02, -22.69],
-            [18.64, -22.70],
-            [18.38, -22.84],
-            [18.39, -23.22],
-            [18.45, -23.34],
-            [18.20, -23.44],
-            [17.28, -23.91],
-            [16.44, -23.94],
-            [15.66, -24.22],
-            [15.06, -24.63],
-            [14.42, -25.39],
-            [14.19, -25.84],
-            [13.95, -25.80],
-            [13.77, -25.67],
-            [13.68, -25.86],
-            [13.47, -26.12],
-            [12.88, -26.21],
-            [12.69, -26.09],
-            [12.22, -26.12],
-            [11.92, -25.89],
-            [11.46, -25.87],
-            [11.41, -26.39],
-            [11.81, -27.02],
-            [12.38, -27.51],
-            [12.78, -27.65],
-            [12.94, -28.21],
-            [13.30, -28.27],
-            [13.59, -28.60],
-            [14.11, -28.48],
-            [16.68, -29.77],
-            [17.20, -29.81],
-            [18.16, -30.64],
-            [18.59, -30.63],
-            [18.78, -30.84],
-            [19.23, -30.98],
-            [19.33, -31.20],
-            [19.87, -31.20],
-            [20.34, -30.97],
-            [21.34, -31.21],
-            [22.59, -30.98],
-            [23.21, -31.54],
-            [23.59, -31.27],
-            [23.87, -31.20],
-            [24.42, -31.10],
-            [25.21, -31.04],
-            [25.51, -30.86],
-            [25.71, -30.32],
-            [25.66, -29.87],
-            [25.77, -29.80],
-            [26.07, -29.77],
-            [28.73, -29.88],
-            [29.91, -31.16],
-            [33.80, -29.77],
-            [36.26, -29.78],
-            [34.68, -26.95],
-            [31.48, -26.90],
-            [31.02, -26.41],
-            [30.73, -26.27],
-            [27.63, -26.29],
-            [27.70, -24.51],
-            [27.80, -23.49],
-            [28.18, -21.90],
-            [29.20, -19.52],
-            [30.63, -17.53],
-            [32.27, -16.07],
-            [35.10, -14.54],
-            [37.27, -14.05],
-            [39.31, -13.93],
-            [39.38, -13.11],
-            [39.25, -12.58],
-            [39.02, -12.20],
-            [39.09, -11.87],
-            [38.48, -11.58],
-            [38.45, -11.23],
-            [38.75, -10.70],
-            [38.69, -10.19],
-            [38.38, -10.25],
-            [38.14, -10.05],
-            [38.09, -9.68],
-            [37.69, -9.25],
-            [37.74, -8.84],
-            [37.85, -8.72],
-            [37.60, -7.77],
-            [37.50, -6.70]
+            [37.77, 6.44],
+            [37.72, 6.17],
+            [37.93, 6.01],
+            [37.76, 5.81],
+            [37.39, 5.75],
+            [37.05, 5.81],
+            [36.84, 5.77],
+            [36.43, 5.87],
+            [36.17, 5.88],
+            [36.10, 5.98],
+            [35.71, 6.12],
+            [35.51, 6.24],
+            [35.53, 6.46],
+            [35.09, 6.81],
+            [34.63, 6.89],
+            [34.49, 6.65],
+            [34.32, 6.61],
+            [34.11, 6.39],
+            [34.06, 6.18],
+            [33.82, 6.19],
+            [33.60, 5.94],
+            [33.60, 5.51],
+            [33.13, 5.29],
+            [32.94, 5.05],
+            [32.57, 5.24],
+            [32.31, 5.59],
+            [31.63, 5.75],
+            [31.58, 5.88],
+            [31.26, 5.99],
+            [31.07, 6.05],
+            [30.45, 6.33],
+            [30.34, 6.50],
+            [30.48, 6.67],
+            [30.35, 6.94],
+            [30.17, 6.97],
+            [30.25, 7.35],
+            [30.12, 7.70],
+            [29.85, 7.86],
+            [29.79, 8.09],
+            [29.94, 8.42],
+            [29.96, 8.89],
+            [29.85, 9.18],
+            [30.02, 9.44],
+            [30.07, 10.12],
+            [29.70, 10.35],
+            [29.30, 10.29],
+            [28.54, 10.02],
+            [27.38, 9.90],
+            [26.52, 10.28],
+            [26.30, 10.33],
+            [26.22, 10.52],
+            [25.64, 10.88],
+            [25.46, 11.08],
+            [25.52, 11.24],
+            [24.97, 11.87],
+            [24.03, 12.64],
+            [22.93, 13.13],
+            [19.34, 21.95],
+            [19.16, 22.56],
+            [19.02, 22.69],
+            [18.64, 22.70],
+            [18.38, 22.84],
+            [18.39, 23.22],
+            [18.45, 23.34],
+            [18.20, 23.44],
+            [17.28, 23.91],
+            [16.44, 23.94],
+            [15.66, 24.22],
+            [15.06, 24.63],
+            [14.42, 25.39],
+            [14.19, 25.84],
+            [13.95, 25.80],
+            [13.77, 25.67],
+            [13.68, 25.86],
+            [13.47, 26.12],
+            [12.88, 26.21],
+            [12.69, 26.09],
+            [12.22, 26.12],
+            [11.92, 25.89],
+            [11.46, 25.87],
+            [11.41, 26.39],
+            [11.81, 27.02],
+            [12.38, 27.51],
+            [12.78, 27.65],
+            [12.94, 28.21],
+            [13.30, 28.27],
+            [13.59, 28.60],
+            [14.11, 28.48],
+            [16.68, 29.77],
+            [17.20, 29.81],
+            [18.16, 30.64],
+            [18.59, 30.63],
+            [18.78, 30.84],
+            [19.23, 30.98],
+            [19.33, 31.20],
+            [19.87, 31.20],
+            [20.34, 30.97],
+            [21.34, 31.21],
+            [22.59, 30.98],
+            [23.21, 31.54],
+            [23.59, 31.27],
+            [23.87, 31.20],
+            [24.42, 31.10],
+            [25.21, 31.04],
+            [25.51, 30.86],
+            [25.71, 30.32],
+            [25.66, 29.87],
+            [25.77, 29.80],
+            [26.07, 29.77],
+            [28.73, 29.88],
+            [29.91, 31.16],
+            [33.80, 29.77],
+            [36.26, 29.78],
+            [34.68, 26.95],
+            [31.48, 26.90],
+            [31.02, 26.41],
+            [30.73, 26.27],
+            [27.63, 26.29],
+            [27.70, 24.51],
+            [27.80, 23.49],
+            [28.18, 21.90],
+            [29.20, 19.52],
+            [30.63, 17.53],
+            [32.27, 16.07],
+            [35.10, 14.54],
+            [37.27, 14.05],
+            [39.31, 13.93],
+            [39.38, 13.11],
+            [39.25, 12.58],
+            [39.02, 12.20],
+            [39.09, 11.87],
+            [38.48, 11.58],
+            [38.45, 11.23],
+            [38.75, 10.70],
+            [38.69, 10.19],
+            [38.38, 10.25],
+            [38.14, 10.05],
+            [38.09, 9.68],
+            [37.69, 9.25],
+            [37.74, 8.84],
+            [37.85, 8.72],
+            [37.60, 7.77],
+            [37.50, 6.70]
           ]
         },
         {
@@ -2600,67 +2600,67 @@
             "icon": "caput-demiatma.png"
           },
           "path": [
-            [39.32, -13.95],
-            [37.34, -14.13],
-            [35.14, -14.68],
-            [32.28, -16.25],
-            [30.66, -17.71],
-            [29.37, -19.50],
-            [28.21, -22.36],
-            [27.84, -24.58],
-            [27.85, -25.47],
-            [33.11, -25.44],
-            [33.13, -25.28],
-            [34.71, -25.26],
-            [34.72, -25.48],
-            [34.96, -25.44],
-            [35.18, -25.63],
-            [35.37, -26.47],
-            [36.01, -27.57],
-            [36.73, -28.21],
-            [37.47, -28.59],
-            [38.50, -28.87],
-            [38.52, -28.72],
-            [39.28, -28.74],
-            [39.15, -28.22],
-            [39.18, -28.00],
-            [38.84, -27.34],
-            [38.89, -26.77],
-            [39.08, -26.13],
-            [39.60, -25.46],
-            [39.69, -25.04],
-            [39.44, -24.53],
-            [39.06, -24.32],
-            [39.02, -23.97],
-            [39.26, -23.78],
-            [39.15, -23.38],
-            [39.09, -22.87],
-            [38.99, -22.62],
-            [39.01, -22.42],
-            [39.28, -21.90],
-            [39.17, -21.63],
-            [39.29, -21.36],
-            [39.38, -20.91],
-            [39.06, -20.87],
-            [39.05, -19.83],
-            [39.17, -19.82],
-            [39.19, -19.11],
-            [39.34, -18.92],
-            [39.24, -18.73],
-            [39.25, -18.51],
-            [39.33, -18.46],
-            [39.31, -18.17],
-            [39.13, -18.02],
-            [39.31, -17.76],
-            [38.87, -17.58],
-            [38.86, -16.87],
-            [39.00, -15.67],
-            [39.10, -15.57],
-            [39.09, -15.22],
-            [39.15, -14.94],
-            [39.25, -14.88],
-            [39.23, -14.56],
-            [39.38, -14.32]
+            [39.32, 13.95],
+            [37.34, 14.13],
+            [35.14, 14.68],
+            [32.28, 16.25],
+            [30.66, 17.71],
+            [29.37, 19.50],
+            [28.21, 22.36],
+            [27.84, 24.58],
+            [27.85, 25.47],
+            [33.11, 25.44],
+            [33.13, 25.28],
+            [34.71, 25.26],
+            [34.72, 25.48],
+            [34.96, 25.44],
+            [35.18, 25.63],
+            [35.37, 26.47],
+            [36.01, 27.57],
+            [36.73, 28.21],
+            [37.47, 28.59],
+            [38.50, 28.87],
+            [38.52, 28.72],
+            [39.28, 28.74],
+            [39.15, 28.22],
+            [39.18, 28.00],
+            [38.84, 27.34],
+            [38.89, 26.77],
+            [39.08, 26.13],
+            [39.60, 25.46],
+            [39.69, 25.04],
+            [39.44, 24.53],
+            [39.06, 24.32],
+            [39.02, 23.97],
+            [39.26, 23.78],
+            [39.15, 23.38],
+            [39.09, 22.87],
+            [38.99, 22.62],
+            [39.01, 22.42],
+            [39.28, 21.90],
+            [39.17, 21.63],
+            [39.29, 21.36],
+            [39.38, 20.91],
+            [39.06, 20.87],
+            [39.05, 19.83],
+            [39.17, 19.82],
+            [39.19, 19.11],
+            [39.34, 18.92],
+            [39.24, 18.73],
+            [39.25, 18.51],
+            [39.33, 18.46],
+            [39.31, 18.17],
+            [39.13, 18.02],
+            [39.31, 17.76],
+            [38.87, 17.58],
+            [38.86, 16.87],
+            [39.00, 15.67],
+            [39.10, 15.57],
+            [39.09, 15.22],
+            [39.15, 14.94],
+            [39.25, 14.88],
+            [39.23, 14.56],
+            [39.38, 14.32]
           ]
         },
         {
@@ -2672,187 +2672,187 @@
             "icon": "realgar-demiatma.png"
           },
           "path": [
-            [29.13, -10.13],
-            [29.21, -9.77],
-            [29.10, -9.62],
-            [29.08, -9.46],
-            [29.19, -9.32],
-            [29.04, -8.88],
-            [29.06, -7.94],
-            [29.25, -7.13],
-            [29.23, -6.89],
-            [29.46, -6.50],
-            [29.26, -6.21],
-            [29.23, -6.02],
-            [29.59, -5.44],
-            [29.63, -5.17],
-            [29.92, -4.52],
-            [28.94, -4.31],
-            [27.60, -4.33],
-            [26.10, -4.64],
-            [25.47, -4.99],
-            [24.89, -5.54],
-            [24.23, -5.72],
-            [23.23, -5.70],
-            [21.67, -5.57],
-            [20.58, -5.44],
-            [20.05, -5.49],
-            [19.24, -5.18],
-            [19.23, -4.84],
-            [19.45, -4.72],
-            [19.54, -4.46],
-            [19.44, -4.22],
-            [19.16, -4.07],
-            [18.95, -4.12],
-            [18.78, -4.33],
-            [18.77, -4.57],
-            [18.95, -4.81],
-            [19.06, -4.87],
-            [19.08, -5.18],
-            [18.53, -5.36],
-            [18.03, -5.73],
-            [17.80, -5.91],
-            [16.38, -5.32],
-            [16.33, -4.86],
-            [15.95, -4.33],
-            [15.48, -4.11],
-            [15.04, -4.10],
-            [14.66, -4.31],
-            [14.35, -4.60],
-            [14.07, -4.30],
-            [13.52, -4.11],
-            [13.17, -4.20],
-            [12.94, -4.52],
-            [12.82, -5.09],
-            [13.08, -5.55],
-            [13.65, -5.69],
-            [14.17, -5.42],
-            [14.46, -5.91],
-            [14.79, -6.26],
-            [14.67, -6.35],
-            [14.48, -6.22],
-            [12.33, -5.80],
-            [12.13, -5.25],
-            [11.64, -4.88],
-            [11.20, -4.79],
-            [10.71, -4.85],
-            [10.59, -4.41],
-            [10.30, -4.09],
-            [9.75, -4.02],
-            [9.32, -4.27],
-            [9.15, -4.65],
-            [8.57, -4.18],
-            [8.00, -3.85],
-            [7.49, -3.70],
-            [7.23, -4.75],
-            [7.42, -4.84],
-            [7.15, -5.61],
-            [6.89, -5.64],
-            [6.79, -5.55],
-            [6.64, -5.70],
-            [6.32, -5.66],
-            [6.15, -5.80],
-            [5.95, -5.64],
-            [6.03, -5.48],
-            [5.59, -5.80],
-            [5.39, -6.12],
-            [4.90, -5.88],
-            [5.37, -5.22],
-            [4.64, -4.37],
-            [3.91, -5.27],
-            [3.60, -6.21],
-            [3.73, -7.72],
-            [4.25, -8.73],
-            [4.81, -9.30],
-            [5.48, -9.71],
-            [6.33, -9.89],
-            [6.29, -10.73],
-            [5.96, -10.90],
-            [5.49, -11.61],
-            [5.51, -12.06],
-            [5.73, -12.47],
-            [5.41, -12.52],
-            [5.62, -12.75],
-            [5.56, -13.00],
-            [5.55, -13.28],
-            [5.35, -13.52],
-            [5.43, -13.80],
-            [5.27, -13.93],
-            [5.45, -14.26],
-            [5.41, -14.63],
-            [5.70, -14.72],
-            [6.33, -14.20],
-            [6.28, -13.80],
-            [6.38, -13.49],
-            [6.38, -13.10],
-            [5.98, -12.84],
-            [5.98, -12.69],
-            [6.16, -12.75],
-            [6.48, -12.92],
-            [7.30, -12.63],
-            [7.59, -12.28],
-            [7.69, -11.67],
-            [7.53, -11.15],
-            [7.12, -10.80],
-            [6.88, -10.73],
-            [6.89, -9.91],
-            [7.39, -9.84],
-            [7.80, -9.72],
-            [8.13, -10.42],
-            [7.93, -10.77],
-            [7.88, -11.07],
-            [8.39, -12.16],
-            [8.57, -11.96],
-            [8.29, -11.39],
-            [8.54, -11.30],
-            [8.77, -11.39],
-            [9.02, -11.20],
-            [9.12, -11.00],
-            [9.34, -10.91],
-            [9.63, -11.47],
-            [9.78, -11.37],
-            [9.30, -10.34],
-            [8.65, -10.07],
-            [8.38, -9.46],
-            [8.74, -9.18],
-            [9.09, -8.90],
-            [9.65, -9.29],
-            [9.83, -9.35],
-            [9.74, -9.63],
-            [9.91, -10.08],
-            [10.21, -10.31],
-            [10.59, -10.35],
-            [10.56, -11.55],
-            [10.27, -12.38],
-            [10.46, -12.23],
-            [11.24, -12.84],
-            [11.52, -12.62],
-            [11.88, -12.48],
-            [12.41, -12.55],
-            [13.41, -12.93],
-            [13.06, -13.31],
-            [13.51, -13.78],
-            [13.71, -13.59],
-            [14.18, -13.88],
-            [14.30, -14.16],
-            [14.51, -14.08],
-            [14.81, -14.61],
-            [15.28, -14.62],
-            [15.91, -14.86],
-            [16.64, -14.63],
-            [16.97, -15.08],
-            [17.47, -15.32],
-            [17.68, -15.28],
-            [20.93, -17.95],
-            [22.91, -13.05],
-            [24.00, -12.61],
-            [24.95, -11.79],
-            [25.44, -11.20],
-            [25.39, -11.02],
-            [26.16, -10.42],
-            [26.24, -10.25],
-            [27.31, -9.82],
-            [28.48, -9.91]
+            [29.13, 10.13],
+            [29.21, 9.77],
+            [29.10, 9.62],
+            [29.08, 9.46],
+            [29.19, 9.32],
+            [29.04, 8.88],
+            [29.06, 7.94],
+            [29.25, 7.13],
+            [29.23, 6.89],
+            [29.46, 6.50],
+            [29.26, 6.21],
+            [29.23, 6.02],
+            [29.59, 5.44],
+            [29.63, 5.17],
+            [29.92, 4.52],
+            [28.94, 4.31],
+            [27.60, 4.33],
+            [26.10, 4.64],
+            [25.47, 4.99],
+            [24.89, 5.54],
+            [24.23, 5.72],
+            [23.23, 5.70],
+            [21.67, 5.57],
+            [20.58, 5.44],
+            [20.05, 5.49],
+            [19.24, 5.18],
+            [19.23, 4.84],
+            [19.45, 4.72],
+            [19.54, 4.46],
+            [19.44, 4.22],
+            [19.16, 4.07],
+            [18.95, 4.12],
+            [18.78, 4.33],
+            [18.77, 4.57],
+            [18.95, 4.81],
+            [19.06, 4.87],
+            [19.08, 5.18],
+            [18.53, 5.36],
+            [18.03, 5.73],
+            [17.80, 5.91],
+            [16.38, 5.32],
+            [16.33, 4.86],
+            [15.95, 4.33],
+            [15.48, 4.11],
+            [15.04, 4.10],
+            [14.66, 4.31],
+            [14.35, 4.60],
+            [14.07, 4.30],
+            [13.52, 4.11],
+            [13.17, 4.20],
+            [12.94, 4.52],
+            [12.82, 5.09],
+            [13.08, 5.55],
+            [13.65, 5.69],
+            [14.17, 5.42],
+            [14.46, 5.91],
+            [14.79, 6.26],
+            [14.67, 6.35],
+            [14.48, 6.22],
+            [12.33, 5.80],
+            [12.13, 5.25],
+            [11.64, 4.88],
+            [11.20, 4.79],
+            [10.71, 4.85],
+            [10.59, 4.41],
+            [10.30, 4.09],
+            [9.75, 4.02],
+            [9.32, 4.27],
+            [9.15, 4.65],
+            [8.57, 4.18],
+            [8.00, 3.85],
+            [7.49, 3.70],
+            [7.23, 4.75],
+            [7.42, 4.84],
+            [7.15, 5.61],
+            [6.89, 5.64],
+            [6.79, 5.55],
+            [6.64, 5.70],
+            [6.32, 5.66],
+            [6.15, 5.80],
+            [5.95, 5.64],
+            [6.03, 5.48],
+            [5.59, 5.80],
+            [5.39, 6.12],
+            [4.90, 5.88],
+            [5.37, 5.22],
+            [4.64, 4.37],
+            [3.91, 5.27],
+            [3.60, 6.21],
+            [3.73, 7.72],
+            [4.25, 8.73],
+            [4.81, 9.30],
+            [5.48, 9.71],
+            [6.33, 9.89],
+            [6.29, 10.73],
+            [5.96, 10.90],
+            [5.49, 11.61],
+            [5.51, 12.06],
+            [5.73, 12.47],
+            [5.41, 12.52],
+            [5.62, 12.75],
+            [5.56, 13.00],
+            [5.55, 13.28],
+            [5.35, 13.52],
+            [5.43, 13.80],
+            [5.27, 13.93],
+            [5.45, 14.26],
+            [5.41, 14.63],
+            [5.70, 14.72],
+            [6.33, 14.20],
+            [6.28, 13.80],
+            [6.38, 13.49],
+            [6.38, 13.10],
+            [5.98, 12.84],
+            [5.98, 12.69],
+            [6.16, 12.75],
+            [6.48, 12.92],
+            [7.30, 12.63],
+            [7.59, 12.28],
+            [7.69, 11.67],
+            [7.53, 11.15],
+            [7.12, 10.80],
+            [6.88, 10.73],
+            [6.89, 9.91],
+            [7.39, 9.84],
+            [7.80, 9.72],
+            [8.13, 10.42],
+            [7.93, 10.77],
+            [7.88, 11.07],
+            [8.39, 12.16],
+            [8.57, 11.96],
+            [8.29, 11.39],
+            [8.54, 11.30],
+            [8.77, 11.39],
+            [9.02, 11.20],
+            [9.12, 11.00],
+            [9.34, 10.91],
+            [9.63, 11.47],
+            [9.78, 11.37],
+            [9.30, 10.34],
+            [8.65, 10.07],
+            [8.38, 9.46],
+            [8.74, 9.18],
+            [9.09, 8.90],
+            [9.65, 9.29],
+            [9.83, 9.35],
+            [9.74, 9.63],
+            [9.91, 10.08],
+            [10.21, 10.31],
+            [10.59, 10.35],
+            [10.56, 11.55],
+            [10.27, 12.38],
+            [10.46, 12.23],
+            [11.24, 12.84],
+            [11.52, 12.62],
+            [11.88, 12.48],
+            [12.41, 12.55],
+            [13.41, 12.93],
+            [13.06, 13.31],
+            [13.51, 13.78],
+            [13.71, 13.59],
+            [14.18, 13.88],
+            [14.30, 14.16],
+            [14.51, 14.08],
+            [14.81, 14.61],
+            [15.28, 14.62],
+            [15.91, 14.86],
+            [16.64, 14.63],
+            [16.97, 15.08],
+            [17.47, 15.32],
+            [17.68, 15.28],
+            [20.93, 17.95],
+            [22.91, 13.05],
+            [24.00, 12.61],
+            [24.95, 11.79],
+            [25.44, 11.20],
+            [25.39, 11.02],
+            [26.16, 10.42],
+            [26.24, 10.25],
+            [27.31, 9.82],
+            [28.48, 9.91]
           ]
         },
         {
@@ -2864,125 +2864,125 @@
             "icon": "malachite-demiatma.png"
           },
           "path": [
-            [20.90, -18.00],
-            [17.69, -15.32],
-            [17.45, -15.36],
-            [16.95, -15.11],
-            [16.63, -14.70],
-            [15.91, -14.91],
-            [15.27, -14.66],
-            [14.81, -14.67],
-            [14.50, -14.16],
-            [14.30, -14.21],
-            [14.12, -13.88],
-            [13.71, -13.65],
-            [13.48, -13.81],
-            [13.23, -13.60],
-            [12.95, -13.12],
-            [12.73, -13.16],
-            [12.59, -13.30],
-            [12.27, -13.02],
-            [11.98, -13.02],
-            [11.81, -13.34],
-            [11.45, -13.46],
-            [11.27, -13.35],
-            [11.37, -13.24],
-            [11.07, -12.97],
-            [10.93, -13.01],
-            [10.44, -12.95],
-            [10.31, -12.74],
-            [10.10, -12.90],
-            [9.97, -12.72],
-            [9.52, -12.97],
-            [9.29, -13.04],
-            [9.09, -12.79],
-            [8.35, -13.04],
-            [8.08, -12.90],
-            [7.98, -13.10],
-            [6.89, -13.66],
-            [6.73, -13.95],
-            [6.61, -14.03],
-            [6.59, -14.31],
-            [6.42, -14.66],
-            [5.86, -14.97],
-            [5.26, -14.90],
-            [5.15, -15.30],
-            [4.95, -15.57],
-            [5.21, -16.02],
-            [5.10, -16.16],
-            [4.59, -16.18],
-            [4.04, -17.10],
-            [3.85, -17.16],
-            [3.84, -17.54],
-            [3.60, -17.77],
-            [3.73, -18.12],
-            [4.03, -18.29],
-            [4.21, -19.41],
-            [4.14, -19.71],
-            [4.16, -19.87],
-            [3.98, -19.84],
-            [4.07, -20.19],
-            [3.98, -21.19],
-            [4.13, -21.16],
-            [4.18, -21.59],
-            [4.38, -21.63],
-            [4.38, -22.24],
-            [4.67, -22.23],
-            [4.66, -23.29],
-            [4.85, -23.26],
-            [4.84, -24.36],
-            [4.38, -24.36],
-            [4.38, -24.84],
-            [4.54, -24.87],
-            [4.52, -25.38],
-            [5.38, -25.41],
-            [5.37, -25.77],
-            [5.01, -26.02],
-            [4.88, -26.36],
-            [5.04, -26.76],
-            [5.34, -26.99],
-            [5.41, -27.68],
-            [6.20, -27.72],
-            [6.65, -27.42],
-            [6.80, -26.52],
-            [6.75, -25.84],
-            [7.89, -25.87],
-            [7.91, -25.55],
-            [8.44, -25.55],
-            [8.44, -25.26],
-            [8.99, -25.30],
-            [9.02, -25.03],
-            [9.73, -24.73],
-            [10.14, -24.23],
-            [10.38, -24.12],
-            [10.48, -23.26],
-            [10.80, -23.09],
-            [11.27, -23.08],
-            [11.30, -23.61],
-            [11.11, -23.81],
-            [11.01, -24.25],
-            [11.68, -24.72],
-            [12.24, -25.10],
-            [12.52, -25.13],
-            [12.58, -25.39],
-            [13.17, -25.49],
-            [13.70, -25.38],
-            [13.72, -24.99],
-            [14.21, -24.53],
-            [14.83, -24.38],
-            [15.08, -23.36],
-            [15.52, -23.30],
-            [15.27, -23.05],
-            [15.33, -22.81],
-            [15.84, -22.73],
-            [16.02, -22.59],
-            [16.68, -23.14],
-            [17.18, -23.24],
-            [17.54, -23.04],
-            [17.98, -23.03],
-            [18.37, -22.80],
-            [18.61, -22.67],
-            [19.02, -22.65]
+            [20.90, 18.00],
+            [17.69, 15.32],
+            [17.45, 15.36],
+            [16.95, 15.11],
+            [16.63, 14.70],
+            [15.91, 14.91],
+            [15.27, 14.66],
+            [14.81, 14.67],
+            [14.50, 14.16],
+            [14.30, 14.21],
+            [14.12, 13.88],
+            [13.71, 13.65],
+            [13.48, 13.81],
+            [13.23, 13.60],
+            [12.95, 13.12],
+            [12.73, 13.16],
+            [12.59, 13.30],
+            [12.27, 13.02],
+            [11.98, 13.02],
+            [11.81, 13.34],
+            [11.45, 13.46],
+            [11.27, 13.35],
+            [11.37, 13.24],
+            [11.07, 12.97],
+            [10.93, 13.01],
+            [10.44, 12.95],
+            [10.31, 12.74],
+            [10.10, 12.90],
+            [9.97, 12.72],
+            [9.52, 12.97],
+            [9.29, 13.04],
+            [9.09, 12.79],
+            [8.35, 13.04],
+            [8.08, 12.90],
+            [7.98, 13.10],
+            [6.89, 13.66],
+            [6.73, 13.95],
+            [6.61, 14.03],
+            [6.59, 14.31],
+            [6.42, 14.66],
+            [5.86, 14.97],
+            [5.26, 14.90],
+            [5.15, 15.30],
+            [4.95, 15.57],
+            [5.21, 16.02],
+            [5.10, 16.16],
+            [4.59, 16.18],
+            [4.04, 17.10],
+            [3.85, 17.16],
+            [3.84, 17.54],
+            [3.60, 17.77],
+            [3.73, 18.12],
+            [4.03, 18.29],
+            [4.21, 19.41],
+            [4.14, 19.71],
+            [4.16, 19.87],
+            [3.98, 19.84],
+            [4.07, 20.19],
+            [3.98, 21.19],
+            [4.13, 21.16],
+            [4.18, 21.59],
+            [4.38, 21.63],
+            [4.38, 22.24],
+            [4.67, 22.23],
+            [4.66, 23.29],
+            [4.85, 23.26],
+            [4.84, 24.36],
+            [4.38, 24.36],
+            [4.38, 24.84],
+            [4.54, 24.87],
+            [4.52, 25.38],
+            [5.38, 25.41],
+            [5.37, 25.77],
+            [5.01, 26.02],
+            [4.88, 26.36],
+            [5.04, 26.76],
+            [5.34, 26.99],
+            [5.41, 27.68],
+            [6.20, 27.72],
+            [6.65, 27.42],
+            [6.80, 26.52],
+            [6.75, 25.84],
+            [7.89, 25.87],
+            [7.91, 25.55],
+            [8.44, 25.55],
+            [8.44, 25.26],
+            [8.99, 25.30],
+            [9.02, 25.03],
+            [9.73, 24.73],
+            [10.14, 24.23],
+            [10.38, 24.12],
+            [10.48, 23.26],
+            [10.80, 23.09],
+            [11.27, 23.08],
+            [11.30, 23.61],
+            [11.11, 23.81],
+            [11.01, 24.25],
+            [11.68, 24.72],
+            [12.24, 25.10],
+            [12.52, 25.13],
+            [12.58, 25.39],
+            [13.17, 25.49],
+            [13.70, 25.38],
+            [13.72, 24.99],
+            [14.21, 24.53],
+            [14.83, 24.38],
+            [15.08, 23.36],
+            [15.52, 23.30],
+            [15.27, 23.05],
+            [15.33, 22.81],
+            [15.84, 22.73],
+            [16.02, 22.59],
+            [16.68, 23.14],
+            [17.18, 23.24],
+            [17.54, 23.04],
+            [17.98, 23.03],
+            [18.37, 22.80],
+            [18.61, 22.67],
+            [19.02, 22.65]
           ]
         },
         {
@@ -2994,93 +2994,93 @@
             "icon": "azurite-demiatma.png"
           },
           "path": [
-            [18.15, -30.70],
-            [17.57, -38.25],
-            [19.63, -37.77],
-            [20.02, -37.90],
-            [20.24, -38.20],
-            [20.66, -37.98],
-            [20.90, -38.01],
-            [21.13, -38.18],
-            [21.65, -38.04],
-            [21.95, -38.14],
-            [22.23, -38.84],
-            [22.45, -38.91],
-            [22.48, -38.55],
-            [22.70, -38.30],
-            [23.41, -38.27],
-            [23.52, -38.09],
-            [23.91, -38.05],
-            [24.16, -38.27],
-            [24.41, -38.23],
-            [24.79, -37.95],
-            [25.01, -38.34],
-            [24.75, -38.51],
-            [24.84, -38.62],
-            [25.12, -38.48],
-            [25.96, -38.46],
-            [26.40, -38.18],
-            [26.63, -38.15],
-            [26.85, -38.29],
-            [27.27, -38.18],
-            [27.66, -38.44],
-            [28.08, -38.52],
-            [28.92, -38.83],
-            [29.48, -38.84],
-            [29.63, -39.08],
-            [30.42, -39.09],
-            [30.43, -37.63],
-            [33.32, -37.58],
-            [33.54, -37.99],
-            [34.05, -38.07],
-            [34.38, -37.91],
-            [34.50, -37.60],
-            [38.52, -37.62],
-            [38.55, -36.04],
-            [38.88, -36.02],
-            [39.01, -32.95],
-            [37.83, -32.86],
-            [37.84, -32.30],
-            [38.77, -32.30],
-            [38.80, -32.44],
-            [39.13, -32.42],
-            [39.16, -30.20],
-            [38.80, -30.16],
-            [38.82, -29.80],
-            [39.06, -29.81],
-            [39.02, -28.80],
-            [38.83, -28.77],
-            [38.81, -29.56],
-            [38.59, -29.66],
-            [38.57, -29.88],
-            [38.00, -29.93],
-            [38.00, -30.27],
-            [38.58, -30.28],
-            [38.58, -30.37],
-            [38.78, -30.39],
-            [38.77, -32.08],
-            [36.15, -32.03],
-            [36.13, -30.16],
-            [36.25, -29.83],
-            [33.80, -29.81],
-            [29.90, -31.20],
-            [28.70, -29.94],
-            [26.03, -29.83],
-            [25.70, -29.91],
-            [25.74, -30.31],
-            [25.54, -30.86],
-            [25.24, -31.06],
-            [24.41, -31.13],
-            [23.61, -31.30],
-            [23.21, -31.56],
-            [22.58, -31.04],
-            [21.34, -31.24],
-            [20.34, -31.02],
-            [19.90, -31.22],
-            [19.32, -31.23],
-            [19.20, -31.00],
-            [18.75, -30.86],
-            [18.56, -30.68]
+            [18.15, 30.70],
+            [17.57, 38.25],
+            [19.63, 37.77],
+            [20.02, 37.90],
+            [20.24, 38.20],
+            [20.66, 37.98],
+            [20.90, 38.01],
+            [21.13, 38.18],
+            [21.65, 38.04],
+            [21.95, 38.14],
+            [22.23, 38.84],
+            [22.45, 38.91],
+            [22.48, 38.55],
+            [22.70, 38.30],
+            [23.41, 38.27],
+            [23.52, 38.09],
+            [23.91, 38.05],
+            [24.16, 38.27],
+            [24.41, 38.23],
+            [24.79, 37.95],
+            [25.01, 38.34],
+            [24.75, 38.51],
+            [24.84, 38.62],
+            [25.12, 38.48],
+            [25.96, 38.46],
+            [26.40, 38.18],
+            [26.63, 38.15],
+            [26.85, 38.29],
+            [27.27, 38.18],
+            [27.66, 38.44],
+            [28.08, 38.52],
+            [28.92, 38.83],
+            [29.48, 38.84],
+            [29.63, 39.08],
+            [30.42, 39.09],
+            [30.43, 37.63],
+            [33.32, 37.58],
+            [33.54, 37.99],
+            [34.05, 38.07],
+            [34.38, 37.91],
+            [34.50, 37.60],
+            [38.52, 37.62],
+            [38.55, 36.04],
+            [38.88, 36.02],
+            [39.01, 32.95],
+            [37.83, 32.86],
+            [37.84, 32.30],
+            [38.77, 32.30],
+            [38.80, 32.44],
+            [39.13, 32.42],
+            [39.16, 30.20],
+            [38.80, 30.16],
+            [38.82, 29.80],
+            [39.06, 29.81],
+            [39.02, 28.80],
+            [38.83, 28.77],
+            [38.81, 29.56],
+            [38.59, 29.66],
+            [38.57, 29.88],
+            [38.00, 29.93],
+            [38.00, 30.27],
+            [38.58, 30.28],
+            [38.58, 30.37],
+            [38.78, 30.39],
+            [38.77, 32.08],
+            [36.15, 32.03],
+            [36.13, 30.16],
+            [36.25, 29.83],
+            [33.80, 29.81],
+            [29.90, 31.20],
+            [28.70, 29.94],
+            [26.03, 29.83],
+            [25.70, 29.91],
+            [25.74, 30.31],
+            [25.54, 30.86],
+            [25.24, 31.06],
+            [24.41, 31.13],
+            [23.61, 31.30],
+            [23.21, 31.56],
+            [22.58, 31.04],
+            [21.34, 31.24],
+            [20.34, 31.02],
+            [19.90, 31.22],
+            [19.32, 31.23],
+            [19.20, 31.00],
+            [18.75, 30.86],
+            [18.56, 30.68]
           ]
         },
         {
@@ -3092,96 +3092,96 @@
             "icon": "verdigris-demiatma.png"
           },
           "path": [
-            [18.12, -30.69],
-            [17.16, -29.88],
-            [16.68, -29.84],
-            [14.11, -28.54],
-            [13.60, -28.66],
-            [13.27, -28.32],
-            [12.91, -28.26],
-            [12.75, -27.67],
-            [12.34, -27.54],
-            [11.77, -27.08],
-            [11.37, -26.41],
-            [11.42, -25.90],
-            [11.22, -25.88],
-            [10.89, -26.14],
-            [10.61, -26.24],
-            [9.72, -25.87],
-            [9.63, -25.73],
-            [9.41, -25.83],
-            [9.32, -25.96],
-            [9.11, -26.03],
-            [8.96, -26.43],
-            [8.52, -26.47],
-            [7.76, -26.23],
-            [7.55, -26.33],
-            [7.49, -26.59],
-            [7.59, -26.91],
-            [7.75, -27.32],
-            [7.67, -27.55],
-            [7.46, -27.80],
-            [6.88, -27.83],
-            [6.76, -27.98],
-            [6.61, -28.73],
-            [5.80, -29.04],
-            [5.80, -29.27],
-            [5.67, -29.35],
-            [5.66, -29.51],
-            [5.20, -29.66],
-            [5.38, -30.59],
-            [5.10, -30.96],
-            [5.00, -31.22],
-            [5.00, -31.54],
-            [4.90, -31.79],
-            [4.78, -31.91],
-            [4.72, -32.13],
-            [4.52, -32.20],
-            [4.44, -32.35],
-            [4.26, -32.33],
-            [4.07, -32.94],
-            [3.92, -33.02],
-            [3.60, -34.22],
-            [4.07, -34.58],
-            [3.79, -35.54],
-            [3.75, -36.34],
-            [3.89, -37.15],
-            [3.66, -37.64],
-            [3.73, -37.89],
-            [3.78, -38.43],
-            [4.11, -38.80],
-            [4.14, -38.97],
-            [4.73, -39.22],
-            [4.99, -39.07],
-            [5.14, -39.30],
-            [5.44, -39.35],
-            [6.07, -39.30],
-            [7.11, -39.63],
-            [7.22, -39.14],
-            [7.72, -38.97],
-            [7.95, -39.01],
-            [8.15, -39.22],
-            [8.93, -39.04],
-            [9.80, -38.52],
-            [10.00, -38.64],
-            [9.80, -38.81],
-            [10.46, -39.53],
-            [10.95, -39.25],
-            [10.83, -38.97],
-            [10.96, -38.86],
-            [11.20, -39.04],
-            [11.97, -38.91],
-            [12.14, -38.55],
-            [12.59, -38.55],
-            [12.76, -38.28],
-            [13.26, -38.24],
-            [13.61, -38.55],
-            [13.85, -38.55],
-            [14.02, -38.39],
-            [14.61, -38.62],
-            [15.09, -38.55],
-            [15.25, -38.80],
-            [17.53, -38.25]
+            [18.12, 30.69],
+            [17.16, 29.88],
+            [16.68, 29.84],
+            [14.11, 28.54],
+            [13.60, 28.66],
+            [13.27, 28.32],
+            [12.91, 28.26],
+            [12.75, 27.67],
+            [12.34, 27.54],
+            [11.77, 27.08],
+            [11.37, 26.41],
+            [11.42, 25.90],
+            [11.22, 25.88],
+            [10.89, 26.14],
+            [10.61, 26.24],
+            [9.72, 25.87],
+            [9.63, 25.73],
+            [9.41, 25.83],
+            [9.32, 25.96],
+            [9.11, 26.03],
+            [8.96, 26.43],
+            [8.52, 26.47],
+            [7.76, 26.23],
+            [7.55, 26.33],
+            [7.49, 26.59],
+            [7.59, 26.91],
+            [7.75, 27.32],
+            [7.67, 27.55],
+            [7.46, 27.80],
+            [6.88, 27.83],
+            [6.76, 27.98],
+            [6.61, 28.73],
+            [5.80, 29.04],
+            [5.80, 29.27],
+            [5.67, 29.35],
+            [5.66, 29.51],
+            [5.20, 29.66],
+            [5.38, 30.59],
+            [5.10, 30.96],
+            [5.00, 31.22],
+            [5.00, 31.54],
+            [4.90, 31.79],
+            [4.78, 31.91],
+            [4.72, 32.13],
+            [4.52, 32.20],
+            [4.44, 32.35],
+            [4.26, 32.33],
+            [4.07, 32.94],
+            [3.92, 33.02],
+            [3.60, 34.22],
+            [4.07, 34.58],
+            [3.79, 35.54],
+            [3.75, 36.34],
+            [3.89, 37.15],
+            [3.66, 37.64],
+            [3.73, 37.89],
+            [3.78, 38.43],
+            [4.11, 38.80],
+            [4.14, 38.97],
+            [4.73, 39.22],
+            [4.99, 39.07],
+            [5.14, 39.30],
+            [5.44, 39.35],
+            [6.07, 39.30],
+            [7.11, 39.63],
+            [7.22, 39.14],
+            [7.72, 38.97],
+            [7.95, 39.01],
+            [8.15, 39.22],
+            [8.93, 39.04],
+            [9.80, 38.52],
+            [10.00, 38.64],
+            [9.80, 38.81],
+            [10.46, 39.53],
+            [10.95, 39.25],
+            [10.83, 38.97],
+            [10.96, 38.86],
+            [11.20, 39.04],
+            [11.97, 38.91],
+            [12.14, 38.55],
+            [12.59, 38.55],
+            [12.76, 38.28],
+            [13.26, 38.24],
+            [13.61, 38.55],
+            [13.85, 38.55],
+            [14.02, 38.39],
+            [14.61, 38.62],
+            [15.09, 38.55],
+            [15.25, 38.80],
+            [17.53, 38.25]
           ]
         }
       ]

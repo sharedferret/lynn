@@ -27,7 +27,7 @@ function PolygonCoordinatesDisplay({ coordinates, onClose }) {
           type="button"
           onClick={() => {
             const coordText = coordinates
-              .map((coord) => `[${coord[1].toFixed(2)}, ${coord[0].toFixed(2)}]`)
+              .map((coord) => `[${coord[1].toFixed(2)}, ${-(coord[0].toFixed(2))}]`)
               .join(',\n');
             navigator.clipboard.writeText(`[\n${coordText}\n]`);
           }}
@@ -50,7 +50,7 @@ function PolygonCoordinatesDisplay({ coordinates, onClose }) {
             <tr key={`point-${coord[0]}-${coord[1]}`}>
               <td style={{ border: '1px solid #ddd', padding: '8px' }}>{index + 1}</td>
               <td style={{ border: '1px solid #ddd', padding: '8px' }}>{coord[1].toFixed(2)}</td>
-              <td style={{ border: '1px solid #ddd', padding: '8px' }}>{coord[0].toFixed(2)}</td>
+              <td style={{ border: '1px solid #ddd', padding: '8px' }}>{-(coord[0].toFixed(2))}</td>
             </tr>
           ))}
         </tbody>

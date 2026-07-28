@@ -1,6 +1,11 @@
 {
   "map": {
     "regions": {
+      "northhorn": {
+        "namedLocation": {
+          "1": "TBD"
+        }
+      },
       "southhorn": {
         "namedLocation": {
           "1": "Solitary Pavilion",
@@ -190,7 +195,8 @@
           "malachite": "Malachite Demiatma",
           "azurite": "Azurite Demiatma",
           "verdigris": "Verdigris Demiatma"
-        }
+        },
+        "sanguinerecluse": "Sanguine Recluse"
       },
       "bsf": {
         "namedLocation": {
@@ -607,7 +613,8 @@
       "baPortals": "BA Portals",
       "mobs": "Mobs",
       "nmPrepMobs": "NM Prep Mobs",
-      "sprites": "Sprites"
+      "sprites": "Sprites",
+      "sanguineRecluse": "Sanguine Recluse"
     },
     "captions": {
       "ce": "Critical Engagement",

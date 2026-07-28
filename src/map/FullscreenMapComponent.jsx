@@ -55,7 +55,7 @@ function LocationMarker({ handleMouseMove }) {
 
       const params = new URLSearchParams(window.location.search);
       params.set('x', center.lng.toFixed(2));
-      params.set('y', center.lat.toFixed(2));
+      params.set('y', -(center.lat.toFixed(2)));
       params.set('zoom', zoom.toFixed(1));
 
       const newUrl = `${window.location.pathname}?${params.toString()}`;
@@ -67,7 +67,7 @@ function LocationMarker({ handleMouseMove }) {
 
       const params = new URLSearchParams(window.location.search);
       params.set('x', center.lng.toFixed(2));
-      params.set('y', center.lat.toFixed(2));
+      params.set('y', -(center.lat.toFixed(2)));
       params.set('zoom', zoom.toFixed(1));
 
       const newUrl = `${window.location.pathname}?${params.toString()}`;
@@ -144,7 +144,7 @@ export default function FullscreenMapComponent({
       markers.push(...(mapData[markerType].waymarks.map((marker) => (
         <Marker
           key={marker['@id']}
-          position={[marker.position.y, marker.position.x]}
+          position={[-(marker.position.y), marker.position.x]}
           ref={marker['@id'] === initialMapPosition?.poi ? markerRef : null}
           icon={
             L.icon({
@@ -171,7 +171,7 @@ export default function FullscreenMapComponent({
           {
             mapData[markerType].circle && (
               <Circle
-                center={[marker.position.y, marker.position.x]}
+                center={[-(marker.position.y), marker.position.x]}
                 pathOptions={{
                   color: mapData[markerType].circle.color,
                   fillColor: mapData[markerType].circle.color,
@@ -203,7 +203,7 @@ export default function FullscreenMapComponent({
                     dashArray: '4, 12',
                   }}
                   positions={annotation.path.map((point) => (
-                    [point.y, point.x]
+                    [-point.y, point.x]
                   ))}
                 />
               );
@@ -212,7 +212,7 @@ export default function FullscreenMapComponent({
               return (
                 <Marker
                   key={annotation['@id']}
-                  position={[annotation.position.y, annotation.position.x]}
+                  position={[-(annotation.position.y), annotation.position.x]}
                   icon={L.divIcon({
                     className: 'large-text',
                     html: `<div style="font-size:48pt;font-weight:bold;">${annotation.text}</div>`,
@@ -232,7 +232,7 @@ export default function FullscreenMapComponent({
                     color: annotation.color,
                     fillOpacity: 0.2,
                   }}
-                  positions={annotation.path.map((point) => [point[1], point[0]])}
+                  positions={annotation.path.map((point) => [-point[1], point[0]])}
                 >
                   <Popup m={0} id={annotation['@id']}>
                     <TooltipBaseComponent
@@ -252,7 +252,7 @@ export default function FullscreenMapComponent({
   });
 
   const initialMapSettings = {
-    lat: initialMapPosition?.lat || mapParameters.center.lat,
+    lat: initialMapPosition?.lat || -(mapParameters.center.lat),
     lon: initialMapPosition?.lon || mapParameters.center.lon,
     zoom: initialMapPosition?.zoom || mapParameters.zoom.default,
   };
@@ -276,10 +276,10 @@ export default function FullscreenMapComponent({
         noWrap
         bounds={
           [
-            [mapParameters.bounds.min.lat,
+            [-(mapParameters.bounds.min.lat),
               mapParameters.bounds.min.lon,
             ], [
-              mapParameters.bounds.max.lat,
+              -(mapParameters.bounds.max.lat),
               mapParameters.bounds.max.lon,
             ],
           ]
