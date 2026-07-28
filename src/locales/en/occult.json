@@ -103,31 +103,32 @@
     "white-mage": {
       "name": "White Mage",
       "text": "Attain mastery of restorative techniques with the soothing memories of a devoted white mage.",
-      "unlock": ""
+      "unlock": "Purchase - White Mage's Soul Shard - 1,000 Silver Obols from the Expedition Antiquarian in North Horn."
     },
     "dragoon": {
       "name": "Dragoon",
-      "unlock": "The memories of a trained dragoon's travels shall teach you to lunge and impale with impunity."
+      "text": "The memories of a trained dragoon's travels shall teach you to lunge and impale with impunity.",
+      "unlock": "Purchase - Dragoon's Soul Shard - 1,600 Gold Obols from the Expedition Antiquarian in North Horn."
     },
     "summoner": {
       "name": "Summoner",
       "text": "Channel the reminiscences of an educated, practiced summoner and learn to call forth powerful creatures adept at both offense and defense.",
-      "unlock": ""
+      "unlock": "Purchase - Summoner's Soul Shard - 1,600 Gold Obols from the Expedition Antiquarian in North Horn."
     },
     "necromancer": {
       "name": "Necromancer",
       "text": "Tainted with the tenacity of a desecrated necromancer, these memories promise the power to fight beyond death.",
-      "unlock": ""
+      "unlock": "Unlocked from the Necromancer's Soul Shard, acquired from the Critical Engagement \"Dark Artistry\"."
     },
     "blue-mage": {
       "name": "Blue Mage",
       "text": "The memories of this world-weary sorcerer are tinged with deep paranoia. Access them to gain monstrous power in arcane form.",
-      "unlock": ""
+      "unlock": "Unlocked from the Blue Mage's Soul Shard, acquired from the Critical Engagement \"Appalling Behavior\"."
     },
     "red-mage": {
       "name": "Red Mage",
       "text": "These recollections of a witty wandering red mage will allow you to wield black and white magicks in perfect balance.",
-      "unlock": ""
+      "unlock": "Purchase - Red Mage's Soul Shard - 1,000 Silver Obols from the Expedition Antiquarian in North Horn."
     }
   },
   "support-action": {
@@ -508,6 +509,41 @@
     "bl5": {
       "name": "Occult Flare",
       "description": "Deals unaspected damage with a potency of 500 to target and all enemies nearby it.\nPotency scales with item level."
+    },
+    "dr1": {
+      "name": "Occult Jump",
+      "description": "Delivers an attack with a potency of 400.\nPotency scales with item level.\nAdditional Effect: Reduces damage taken by 60%.",
+      "enhancement": {
+        "4": "Increases potency of Occult Jump to 500, and increases potency of reduced damage taken effect to 90%."
+      }
+    },
+    "dr2": {
+      "name": "Step Forth",
+      "description": "Quickly move 10 yalms in the selected direction."
+    },
+    "dr3": {
+      "name": "Lance",
+      "description": "Delivers an attack with a potency of 300.\nPotency scales with item level.\nAdditional Effect: Absorbs a portion of damage dealt as HP.\nAdditional Effect: Absorbed HP that exceeds maximum HP will be applied as a barrier."
+    },
+    "su1": {
+      "name": "Hellfire",
+      "description": "Deals fire damage with a potency of 600 to target and all enemies nearby it.\nPotency increases to 780 when used against targets weak to fire.\nPotency scales with item level.\nCast and recast timer cannot be affected by status effects or gear attributes.\nShares a recast timer with Judgment Bolt and Thunderstorm."
+    },
+    "su2": {
+      "name": "Judgment Bolt",
+      "description": "Deals lightning damage with a potency of 600 to target and all enemies nearby it.\nPotency increases to 780 when used against targets weak to lightning.\nPotency scales with item level.\nCast and recast timer cannot be affected by status effects or gear attributes.\nShares a recast timer with Hellfire and Thunderstorm."
+    },
+    "su3": {
+      "name": "Earthen Wall",
+      "description": "Creates a barrier around self and all nearby party members that absorbs damage equivalent to a heal of 40,000 potency.\nCast and recast timer cannot be affected by status effects or gear attributes."
+    },
+    "su4": {
+      "name": "Thunderstorm",
+      "description": "Deals wind damage with a potency of 600 to all enemies in a cone before you.\nPotency increases to 780 when used against targets weak to wind.\nPotency scales with item level.\nCast and recast timer cannot be affected by status effects or gear attributes.\nShares a recast timer with Hellfire and Judgment Bolt."
+    },
+    "su5": {
+      "name": "Megaflare",
+      "description": "Deals unaspected damage with a potency of 1,000 to target and all enemies nearby it.\nPotency scales with item level.\nCast and recast timer cannot be affected by status effects or gear attributes."
     }
   }
 }

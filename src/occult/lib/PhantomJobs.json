@@ -1044,6 +1044,37 @@
       "image": "dragoon-icon",
       "sprite": "dragoon-sprite",
       "supportActions": {
+        "Occult Jump": {
+          "key": "occult-jump",
+          "image": "occult-jump.png",
+          "unlockLevel": 1,
+          "abilityType": "weaponskill",
+          "recastTime": 60,
+          "duration": "2s",
+          "enhancements": [
+            {
+              "level": 4
+            }
+          ],
+          "code": "dr1"
+        },
+        "Step Forth": {
+          "key": "step-forth",
+          "image": "step-forth.png",
+          "unlockLevel": 2,
+          "abilityType": "ability",
+          "recastTime": 10,
+          "code": "dr2"
+        },
+        "Lance": {
+          "key": "lance",
+          "image": "lance.png",
+          "unlockLevel": 3,
+          "abilityType": "ability",
+          "recastTime": 30,
+          "duration": "60s",
+          "code": "dr3"
+        }
       },
       "exp": {
         "1": 0,
@@ -1059,6 +1090,52 @@
       "image": "summoner-icon",
       "sprite": "summoner-sprite",
       "supportActions": {
+        "Hellfire": {
+          "key": "hellfire",
+          "image": "hellfire.png",
+          "unlockLevel": 1,
+          "abilityType": "spell",
+          "castTime": 4,
+          "recastTime": 60,
+          "code": "su1"
+        },
+        "Judgment Bolt": {
+          "key": "judgment-bolt",
+          "image": "judgment-bolt.png",
+          "unlockLevel": 2,
+          "abilityType": "spell",
+          "castTime": 4,
+          "recastTime": 60,
+          "code": "su2"
+        },
+        "Earthen Wall": {
+          "key": "earthen-wall",
+          "image": "earthen-wall.png",
+          "unlockLevel": 3,
+          "abilityType": "spell",
+          "castTime": 2.5,
+          "recastTime": 120,
+          "duration": "10s",
+          "code": "su3"
+        },
+        "Thunderstorm": {
+          "key": "thunderstorm",
+          "image": "thunderstorm.png",
+          "unlockLevel": 4,
+          "abilityType": "spell",
+          "castTime": 4,
+          "recastTime": 60,
+          "code": "su4"
+        },
+        "Megaflare": {
+          "key": "megaflare",
+          "image": "megaflare.png",
+          "unlockLevel": 5,
+          "abilityType": "spell",
+          "castTime": 6,
+          "recastTime": 90,
+          "code": "su5"
+        }
       },
       "exp": {
         "1": 0,
