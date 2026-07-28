@@ -8,7 +8,7 @@
         {
           "id": "namedLocations",
           "name": "layer.namedLocations",
-          "enabled": true
+          "enabled": false
         },
         {
           "id": "aetherytes",
@@ -18,12 +18,12 @@
         {
           "id": "traders",
           "name": "layer.traders",
-          "enabled": true
+          "enabled": false
         },
         {
           "id": "repair",
           "name": "layer.repair",
-          "enabled": true
+          "enabled": false
         },
         {
           "id": "treasureCoffers",
@@ -70,7 +70,7 @@
     },
     {
       "name": "category.enemies",
-      "enabled": true,
+      "enabled": false,
       "layers": [
         {
           "id": "mobLevels",
@@ -80,7 +80,7 @@
         {
           "id": "sanguineRecluse",
           "name": "layer.sanguineRecluse",
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -142,6 +142,59 @@
     }
   },
   "mapData": {
+    "aetherytes": {
+      "markerIcon": "aetheryte.png",
+      "waymarks": [
+        {
+          "name": "northhorn.aetheryte.1",
+          "@id": "onh_a1",
+          "position": {
+            "x": 39,
+            "y": 39
+          }
+        },
+        {
+          "name": "northhorn.aetheryte.2",
+          "@id": "onh_a2",
+          "position": {
+            "x": 30.5,
+            "y": 32
+          }
+        },
+        {
+          "name": "northhorn.aetheryte.3",
+          "@id": "onh_a3",
+          "position": {
+            "x": 28.62,
+            "y": 10.4
+          }
+        },
+        {
+          "name": "northhorn.aetheryte.4",
+          "@id": "onh_a4",
+          "position": {
+            "x": 10.54,
+            "y": 33.36
+          }
+        },
+        {
+          "name": "northhorn.aetheryte.5",
+          "@id": "onh_a5",
+          "position": {
+            "x": 13.7,
+            "y": 12.68
+          }
+        },
+        {
+          "name": "northhorn.aetheryte.6",
+          "@id": "onh_a6",
+          "position": {
+            "x": 21.22,
+            "y": 20.68
+          }
+        }
+      ]
+    },
     "treasureCoffers": {
       "markerIcon": "coffer-bronze.png",
       "waymarks": [

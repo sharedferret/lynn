@@ -5,6 +5,14 @@
         "namedLocation": {
           "1": "TBD"
         },
+        "aetheryte": {
+          "1": "North Horn Base Camp",
+          "2": "Crown of Karnak",
+          "3": "Sinking Sanctuary",
+          "4": "Suspended Masonry",
+          "5": "Moldering Outskirts",
+          "6": "Unhallowed Hamlet"
+        },
         "treasureCoffer": {
           "bronze": "Bronze Treasure Coffer Spawn Location",
           "silver": "Silver Treasure Coffer Spawn Location",
