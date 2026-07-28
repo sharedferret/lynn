@@ -34,6 +34,11 @@
           "id": "carrots",
           "name": "layer.carrots",
           "enabled": true
+        },
+        {
+          "id": "blueMage",
+          "name": "layer.blueMage",
+          "enabled": false
         }
       ]
     },

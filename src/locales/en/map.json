@@ -789,7 +789,8 @@
       "mobs": "Mobs",
       "nmPrepMobs": "NM Prep Mobs",
       "sprites": "Sprites",
-      "sanguineRecluse": "Sanguine Recluse"
+      "sanguineRecluse": "Sanguine Recluse",
+      "blueMage": "Blue Mage Spell Mobs"
     },
     "captions": {
       "ce": "Critical Engagement",
