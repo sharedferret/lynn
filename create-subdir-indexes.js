@@ -7,7 +7,7 @@
 
 const fs = require('fs');
 
-const directories = ['ba', 'forecast', 'reference', 'portals', 'morbols', 'map/southhorn'];
+const directories = ['ba', 'forecast', 'reference', 'portals', 'morbols', 'map/southhorn', 'map/northhorn'];
 
 // Fetch the generated React include headers from the webpack-generated index.html
 const mainIndex = fs.readFileSync('build/index.html').toString();
