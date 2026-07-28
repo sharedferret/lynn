@@ -96,6 +96,9 @@
       "id": "aetherytes"
     },
     {
+      "id": "treasureCoffers"
+    },
+    {
       "id": "fates"
     },
     {
@@ -134,6 +137,631 @@
     }
   },
   "mapData": {
+    "treasureCoffers": {
+      "markerIcon": "coffer-bronze.png",
+      "waymarks": [
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.silver",
+          "@id": "onh_coffer01",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 29.15,
+          "y": 17.97
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.silver",
+          "@id": "onh_coffer02",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 21.43,
+          "y": 5.18
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.silver",
+          "@id": "onh_coffer03",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 21.03,
+          "y": 34.06
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.silver",
+          "@id": "onh_coffer04",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 8.81,
+          "y": 18.56
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.silver",
+          "@id": "onh_coffer05",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 34.18,
+          "y": 4.84
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.silver",
+          "@id": "onh_coffer06",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 8.57,
+          "y": 40.84
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.silver",
+          "@id": "onh_coffer07",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 5.16,
+          "y": 7.49
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.silver",
+          "@id": "onh_coffer08",
+          "iconOverride": "coffer-silver.png",
+          "position": {
+          "x": 25.95,
+          "y": 20.87
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer09",
+          "position": {
+          "x": 35.02,
+          "y": 40.63
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer10",
+          "position": {
+          "x": 37.72,
+          "y": 34.86
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer11",
+          "position": {
+          "x": 34.95,
+          "y": 36.07
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer12",
+          "position": {
+          "x": 36.64,
+          "y": 31.62
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer13",
+          "position": {
+          "x": 26.40,
+          "y": 35.01
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer14",
+          "position": {
+          "x": 35.87,
+          "y": 26.85
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer15",
+          "position": {
+          "x": 30.47,
+          "y": 23.58
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer16",
+          "position": {
+          "x": 34.47,
+          "y": 18.32
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer17",
+          "position": {
+          "x": 31.05,
+          "y": 17.42
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer18",
+          "position": {
+          "x": 26.57,
+          "y": 9.38
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer19",
+          "position": {
+          "x": 20.96,
+          "y": 12.73
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer20",
+          "position": {
+          "x": 16.16,
+          "y": 12.69
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer21",
+          "position": {
+          "x": 16.83,
+          "y": 7.08
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer22",
+          "position": {
+          "x": 24.44,
+          "y": 4.1
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer23",
+          "position": {
+          "x": 34.66,
+          "y": 14.19
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer24",
+          "position": {
+          "x": 40.48,
+          "y": 14.30
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer25",
+          "position": {
+          "x": 34.65,
+          "y": 10.43
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer26",
+          "position": {
+          "x": 29.27,
+          "y": 6.82
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer27",
+          "position": {
+          "x": 23.02,
+          "y": 32.21
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer28",
+          "position": {
+          "x": 21.24,
+          "y": 36.96
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer29",
+          "position": {
+          "x": 15.92,
+          "y": 32.84
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer30",
+          "position": {
+          "x": 12.75,
+          "y": 24.80
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer31",
+          "position": {
+          "x": 16.34,
+          "y": 37.72
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer32",
+          "position": {
+          "x": 11.4,
+          "y": 36.65
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer33",
+          "position": {
+          "x": 9.24,
+          "y": 33.05
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer34",
+          "position": {
+          "x": 5.96,
+          "y": 29.02
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer35",
+          "position": {
+          "x": 8.84,
+          "y": 26.28
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer36",
+          "position": {
+          "x": 3.02,
+          "y": 25.44
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer37",
+          "position": {
+          "x": 9.68,
+          "y": 21.34
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer38",
+          "position": {
+          "x": 3.9,
+          "y": 15.2
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer39",
+          "position": {
+          "x": 9.85,
+          "y": 16.33
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer40",
+          "position": {
+          "x": 16.4,
+          "y": 16.15
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer41",
+          "position": {
+          "x": 7.33,
+          "y": 13.54
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer42",
+          "position": {
+          "x": 7.53,
+          "y": 10.18
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer43",
+          "position": {
+          "x": 12.69,
+          "y": 10.31
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer44",
+          "position": {
+          "x": 10.96,
+          "y": 5.81
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer45",
+          "position": {
+          "x": 23.19,
+          "y": 15.86
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer46",
+          "position": {
+          "x": 22.36,
+          "y": 19.32
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer47",
+          "position": {
+          "x": 18.12,
+          "y": 18.41
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer48",
+          "position": {
+          "x": 18.24,
+          "y": 23.45
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer49",
+          "position": {
+          "x": 34.14,
+          "y": 3.28
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer50",
+          "position": {
+          "x": 34.26,
+          "y": 7.51
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer51",
+          "position": {
+          "x": 37.79,
+          "y": 8.33
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer52",
+          "position": {
+          "x": 38.79,
+          "y": 4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer53",
+          "position": {
+          "x": 9.64,
+          "y": 36.83
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer54",
+          "position": {
+          "x": 7.48,
+          "y": 40
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer55",
+          "position": {
+          "x": 4.32,
+          "y": 37
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer56",
+          "position": {
+          "x": 5.5,
+          "y": 34.15
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer57",
+          "position": {
+          "x": 4.33,
+          "y": 9.28
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer58",
+          "position": {
+          "x": 2.91,
+          "y": 6.58
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer59",
+          "position": {
+          "x": 6.76,
+          "y": 3.85
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer60",
+          "position": {
+          "x": 13.14,
+          "y": 2.57
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer61",
+          "position": {
+          "x": 18.59,
+          "y": 27.58
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer62",
+          "position": {
+          "x": 22.3,
+          "y": 24.85
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer63",
+          "position": {
+          "x": 24.7,
+          "y": 21.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer64",
+          "position": {
+          "x": 27.76,
+          "y": 25
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer65",
+          "position": {
+          "x": 30.44,
+          "y": 30.75
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer66",
+          "position": {
+          "x": 27.06,
+          "y": 14.36
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer67",
+          "position": {
+          "x": 15.73,
+          "y": 24
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.bronze",
+          "@id": "onh_coffer68",
+          "position": {
+          "x": 25.94,
+          "y": 39.75
+          }
+        }
+      ]
+    },
     "magicPotFates": {
       "markerIcon": "fate-enemies.png",
       "circle": {
