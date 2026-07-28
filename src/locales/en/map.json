@@ -5,6 +5,14 @@
         "namedLocation": {
           "1": "TBD"
         },
+        "treasureCoffer": {
+          "bronze": "Bronze Treasure Coffer Spawn Location",
+          "silver": "Silver Treasure Coffer Spawn Location",
+          "pot": "Magic Pot Coffer Spawn Location",
+          "pot_unv": "Magic Pot Coffer Spawn Location (Unverified)",
+          "carrot": "Half-Eaten Carrot Spawn Location",
+          "carrot_unv": "Half-Eaten Carrot Spawn Location (Unverified)"
+        },
         "fate": {
           "pot1": {
             "name": "In a Pot of Bother"

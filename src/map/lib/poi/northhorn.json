@@ -762,6 +762,880 @@
         }
       ]
     },
+    "magicPotCoffers": {
+      "markerIcon": "coffer-gold.png",
+      "waymarks": [
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer01",
+          "position": {
+            "x": 12.36,
+            "y": 14.17
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer02",
+          "position": {
+            "x": 39.26,
+            "y": 24.6
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer03",
+          "position": {
+            "x": 17.0,
+            "y": 14.4
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer04",
+          "position": {
+            "x": 30.53,
+            "y": 15.27
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer05",
+          "position": {
+            "x": 33.34,
+            "y": 22.16
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer06",
+          "position": {
+            "x": 18.03,
+            "y": 23.54
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer07",
+          "position": {
+            "x": 17.79,
+            "y": 34.84
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer08",
+          "position": {
+            "x": 40.07,
+            "y": 21.44
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer09",
+          "position": {
+            "x": 16.09,
+            "y": 38.99
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer10",
+          "position": {
+            "x": 22.52,
+            "y": 32.52
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer11",
+          "position": {
+            "x": 25.29,
+            "y": 17.39
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer12",
+          "position": {
+            "x": 35.77,
+            "y": 26.73
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer13",
+          "position": {
+            "x": 9.75,
+            "y": 7.18
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer14",
+          "position": {
+            "x": 4.8,
+            "y": 9.73
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer15",
+          "position": {
+            "x": 25.36,
+            "y": 28.54
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer16",
+          "position": {
+            "x": 22.9,
+            "y": 40.33
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer17",
+          "position": {
+            "x": 8.91,
+            "y": 12.49
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer18",
+          "position": {
+            "x": 21.52,
+            "y": 4.03
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer19",
+          "position": {
+            "x": 22.43,
+            "y": 17.11
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer20",
+          "position": {
+            "x": 14.88,
+            "y": 8.92
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer21",
+          "position": {
+            "x": 30.29,
+            "y": 2.95
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer22",
+          "position": {
+            "x": 39.73,
+            "y": 12.25
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer23",
+          "position": {
+            "x": 16.44,
+            "y": 3.89
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer24",
+          "position": {
+            "x": 40.06,
+            "y": 14.82
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer25",
+          "position": {
+            "x": 25.68,
+            "y": 39.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer26",
+          "position": {
+            "x": 18.94,
+            "y": 37.65
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer27",
+          "position": {
+            "x": 21.5,
+            "y": 33.95
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer28",
+          "position": {
+            "x": 19.71,
+            "y": 21.58
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer29",
+          "position": {
+            "x": 40.02,
+            "y": 18.38
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer30",
+          "position": {
+            "x": 40.45,
+            "y": 10.14
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer31",
+          "position": {
+            "x": 24.52,
+            "y": 4.64
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer32",
+          "position": {
+            "x": 37.14,
+            "y": 9.24
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer33",
+          "position": {
+            "x": 19.76,
+            "y": 6.74
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer34",
+          "position": {
+            "x": 4.68,
+            "y": 36.28
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer35",
+          "position": {
+            "x": 9.56,
+            "y": 15.78
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer36",
+          "position": {
+            "x": 23.35,
+            "y": 19.19
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer37",
+          "position": {
+            "x": 19.29,
+            "y": 17.28
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer38",
+          "position": {
+            "x": 16.29,
+            "y": 22.62
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer39",
+          "position": {
+            "x": 11.51,
+            "y": 24.06
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer40",
+          "position": {
+            "x": 10.88,
+            "y": 20.32
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer41",
+          "position": {
+            "x": 27.9,
+            "y": 3.68
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer42",
+          "position": {
+            "x": 6.53,
+            "y": 11.64
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer43",
+          "position": {
+            "x": 40.26,
+            "y": 16.02
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer44",
+          "position": {
+            "x": 2.28,
+            "y": 12.96
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer45",
+          "position": {
+            "x": 11.24,
+            "y": 13.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer46",
+          "position": {
+            "x": 38.08,
+            "y": 18.5
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer47",
+          "position": {
+            "x": 29.18,
+            "y": 17.94
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer48",
+          "position": {
+            "x": 22.13,
+            "y": 5.93
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer49",
+          "position": {
+            "x": 8.26,
+            "y": 40.22
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer50",
+          "position": {
+            "x": 37.13,
+            "y": 20.35
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer51",
+          "position": {
+            "x": 37.7,
+            "y": 15.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer52",
+          "position": {
+            "x": 11.72,
+            "y": 2.42
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer53",
+          "position": {
+            "x": 26.24,
+            "y": 27.67
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer54",
+          "position": {
+            "x": 17.68,
+            "y": 6.22
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer55",
+          "position": {
+            "x": 22.04,
+            "y": 21.15
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer56",
+          "position": {
+            "x": 19.21,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer57",
+          "position": {
+            "x": 14.68,
+            "y": 38.71
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer58",
+          "position": {
+            "x": 32.41,
+            "y": 24.35
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer59",
+          "position": {
+            "x": 4.41,
+            "y": 15.0
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer60",
+          "position": {
+            "x": 1.97,
+            "y": 10.95
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer61",
+          "position": {
+            "x": 16.44,
+            "y": 4.19
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer62",
+          "position": {
+            "x": 10.76,
+            "y": 24.48
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer63",
+          "position": {
+            "x": 8.74,
+            "y": 2.47
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer64",
+          "position": {
+            "x": 8.34,
+            "y": 5.49
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer65",
+          "position": {
+            "x": 5.3,
+            "y": 3.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer66",
+          "position": {
+            "x": 10.94,
+            "y": 38.16
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer67",
+          "position": {
+            "x": 34.9,
+            "y": 10.48
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer68",
+          "position": {
+            "x": 34.01,
+            "y": 4.58
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer69",
+          "position": {
+            "x": 35.5,
+            "y": 2.58
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer70",
+          "position": {
+            "x": 21.72,
+            "y": 37.39
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer71",
+          "position": {
+            "x": 39.99,
+            "y": 3.36
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer72",
+          "position": {
+            "x": 8.84,
+            "y": 37.66
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.pot",
+          "@id": "onh_potcoffer73",
+          "position": {
+            "x": 21.16,
+            "y": 21.07
+          }
+        }
+      ]
+    },
+    "carrots": {
+      "markerIcon": "carrot.png",
+      "waymarks": [
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot01",
+          "position": {
+            "x": 16.4,
+            "y": 6.7
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot02",
+          "position": {
+            "x": 21.63,
+            "y": 20.77
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot03",
+          "position": {
+            "x": 10.26,
+            "y": 12.54
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot04",
+          "position": {
+            "x": 9.3,
+            "y": 28.96
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot05",
+          "position": {
+            "x": 4.33,
+            "y": 29.07
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot06",
+          "position": {
+            "x": 16.31,
+            "y": 22.55
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot07",
+          "position": {
+            "x": 27.23,
+            "y": 14.14
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot08",
+          "position": {
+            "x": 5.19,
+            "y": 10.26
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot09",
+          "position": {
+            "x": 5.32,
+            "y": 3.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot10",
+          "position": {
+            "x": 11.48,
+            "y": 4.13
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot11",
+          "position": {
+            "x": 36.62,
+            "y": 19.89
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot12",
+          "position": {
+            "x": 2.36,
+            "y": 35.88
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot13",
+          "position": {
+            "x": 18.88,
+            "y": 18.06
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot14",
+          "position": {
+            "x": 26.0,
+            "y": 39.56
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot15",
+          "position": {
+            "x": 9.4,
+            "y": 40.26
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot16",
+          "position": {
+            "x": 20.78,
+            "y": 4.28
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot17",
+          "position": {
+            "x": 39.94,
+            "y": 15.94
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot18",
+          "position": {
+            "x": 34.0,
+            "y": 4.55
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot19",
+          "position": {
+            "x": 39.12,
+            "y": 23.8
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot20",
+          "position": {
+            "x": 9.86,
+            "y": 37.3
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot21",
+          "position": {
+            "x": 40.68,
+            "y": 3.9
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot22",
+          "position": {
+            "x": 4.52,
+            "y": 25.41
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot23",
+          "position": {
+            "x": 23.64,
+            "y": 10.36
+          }
+        }
+      ]
+    },
     "magicPotFates": {
       "markerIcon": "fate-enemies.png",
       "circle": {
