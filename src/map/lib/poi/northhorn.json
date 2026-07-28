@@ -1692,6 +1692,9 @@
           "position": {
             "x": 24.28,
             "y": 7.32
+          },
+          "metadata": {
+            "boss": "northhorn.fate.1.boss"
           }
         },
         {
@@ -1700,6 +1703,9 @@
           "position": {
             "x": 8.26,
             "y": 20.4
+          },
+          "metadata": {
+            "boss": "northhorn.fate.2.boss"
           }
         },
         {
@@ -1708,6 +1714,9 @@
           "position": {
             "x": 4.37,
             "y": 31.12
+          },
+          "metadata": {
+            "boss": "northhorn.fate.3.boss"
           }
         },
         {
@@ -1716,6 +1725,9 @@
           "position": {
             "x": 12.68,
             "y": 5.68
+          },
+          "metadata": {
+            "boss": "northhorn.fate.4.boss"
           }
         },
         {
@@ -1724,6 +1736,9 @@
           "position": {
             "x": 19.68,
             "y": 38.80
+          },
+          "metadata": {
+            "boss": "northhorn.fate.5.boss"
           }
         },
         {
@@ -1732,6 +1747,9 @@
           "position": {
             "x": 18.08,
             "y": 11.48
+          },
+          "metadata": {
+            "boss": "northhorn.fate.6.boss"
           }
         },
         {
@@ -1740,6 +1758,9 @@
           "position": {
             "x": 13.44,
             "y": 16.42
+          },
+          "metadata": {
+            "boss": "northhorn.fate.7.boss"
           }
         },
         {
@@ -1748,6 +1769,9 @@
           "position": {
             "x": 28.08,
             "y": 16.48
+          },
+          "metadata": {
+            "boss": "northhorn.fate.8.boss"
           }
         },
         {
@@ -1756,6 +1780,9 @@
           "position": {
             "x": 23.38,
             "y": 30.88
+          },
+          "metadata": {
+            "boss": "northhorn.fate.9.boss"
           }
         },
         {
@@ -1764,6 +1791,9 @@
           "position": {
             "x": 31.68,
             "y": 20.88
+          },
+          "metadata": {
+            "boss": "northhorn.fate.10.boss"
           }
         },
         {
@@ -1772,6 +1802,9 @@
           "position": {
             "x": 35.96,
             "y": 25.88
+          },
+          "metadata": {
+            "boss": "northhorn.fate.11.boss"
           }
         }
       ]
@@ -1789,6 +1822,15 @@
           "position": {
             "x": 31.48,
             "y": 15.28
+          },
+          "metadata": {
+            "boss": "northhorn.ce.1.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.1.drop.note",
+                "type": "fieldNote"
+              }
+            ]
           }
         },
         {
@@ -1797,6 +1839,9 @@
           "position": {
             "x": 19.84,
             "y": 31.18
+          },
+          "metadata": {
+            "boss": "northhorn.ce.2.boss"
           }
         },
         {
@@ -1805,6 +1850,20 @@
           "position": {
             "x": 18.48,
             "y": 4.28
+          },
+          "metadata": {
+            "boss": "northhorn.ce.3.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.3.drop.note",
+                "type": "fieldNote"
+              }
+            ],
+            "spawnedBy": {
+              "type": "mob",
+              "name": "northhorn.ce.3.spawn",
+              "level": 0
+            }
           }
         },
         {
@@ -1813,6 +1872,15 @@
           "position": {
             "x": 24.52,
             "y": 35.8
+          },
+          "metadata": {
+            "boss": "northhorn.ce.4.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.4.drop.note",
+                "type": "fieldNote"
+              }
+            ]
           }
         },
         {
@@ -1821,6 +1889,19 @@
           "position": {
             "x": 37.62,
             "y": 10.24
+          },
+          "metadata": {
+            "boss": "northhorn.ce.5.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.5.drop.bluemage",
+                "type": "ocSoulShard"
+              },
+              {
+                "name": "northhorn.ce.5.drop.note",
+                "type": "fieldNote"
+              }
+            ]
           }
         },
         {
@@ -1829,6 +1910,9 @@
           "position": {
             "x": 13.68,
             "y": 35.48
+          },
+          "metadata": {
+            "boss": "northhorn.ce.6.boss"
           }
         },
         {
@@ -1837,6 +1921,19 @@
           "position": {
             "x": 25.96,
             "y": 4.28
+          },
+          "metadata": {
+            "boss": "northhorn.ce.7.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.7.drop.necromancer",
+                "type": "ocSoulShard"
+              },
+              {
+                "name": "northhorn.ce.7.drop.note",
+                "type": "fieldNote"
+              }
+            ]
           }
         },
         {
@@ -1845,6 +1942,9 @@
           "position": {
             "x": 26.24,
             "y": 28.82
+          },
+          "metadata": {
+            "boss": "northhorn.ce.8.boss"
           }
         },
         {
@@ -1853,6 +1953,9 @@
           "position": {
             "x": 24.88,
             "y": 18.76
+          },
+          "metadata": {
+            "boss": "northhorn.ce.9.boss"
           }
         },
         {
@@ -1861,6 +1964,15 @@
           "position": {
             "x": 36.78,
             "y": 21.48
+          },
+          "metadata": {
+            "boss": "northhorn.ce.10.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.10.drop.note",
+                "type": "fieldNote"
+              }
+            ]
           }
         },
         {
@@ -1869,6 +1981,20 @@
           "position": {
             "x": 7.72,
             "y": 24.48
+          },
+          "metadata": {
+            "boss": "northhorn.ce.11.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.11.drop.note",
+                "type": "fieldNote"
+              }
+            ],
+            "spawnedBy": {
+              "type": "mob",
+              "name": "northhorn.ce.11.spawn",
+              "level": 0
+            }
           }
         },
         {
@@ -1877,6 +2003,15 @@
           "position": {
             "x": 34.66,
             "y": 34.66
+          },
+          "metadata": {
+            "boss": "northhorn.ce.12.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.12.drop.note",
+                "type": "fieldNote"
+              }
+            ]
           }
         },
         {
@@ -1885,6 +2020,15 @@
           "position": {
             "x": 11.10,
             "y": 8.66
+          },
+          "metadata": {
+            "boss": "northhorn.ce.13.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.13.drop.note",
+                "type": "fieldNote"
+              }
+            ]
           }
         },
         {
@@ -1893,6 +2037,20 @@
           "position": {
             "x": 17.18,
             "y": 20.18
+          },
+          "metadata": {
+            "boss": "northhorn.ce.14.boss",
+            "rewards": [
+              {
+                "name": "northhorn.ce.14.drop.note",
+                "type": "fieldNote"
+              }
+            ],
+            "spawnedBy": {
+              "type": "mob",
+              "name": "northhorn.ce.14.spawn",
+              "level": 0
+            }
           }
         },
         {
@@ -1901,6 +2059,9 @@
           "position": {
             "x": 4.08,
             "y": 10.28
+          },
+          "metadata": {
+            "boss": "northhorn.ce.15.boss"
           }
         }
       ]

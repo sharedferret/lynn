@@ -15,90 +15,153 @@
         },
         "fate": {
           "pot1": {
-            "name": "In a Pot of Bother"
+            "name": "In a Pot of Bother",
+            "boss": ""
           },
           "pot2": {
-            "name": "Daylight Pottery"
+            "name": "Daylight Pottery",
+            "boss": ""
           },
           "1": {
-            "name": "Thunderregnum"
+            "name": "Thunderregnum",
+            "boss": ""
           },
           "2": {
-            "name": "Scale Model"
+            "name": "Scale Model",
+            "boss": ""
           },
           "3": {
-            "name": "Gale-force Encounter"
+            "name": "Gale-force Encounter",
+            "boss": ""
           },
           "4": {
-            "name": "A Rotten Affair"
+            "name": "A Rotten Affair",
+            "boss": ""
           },
           "5": {
-            "name": "Territorial Dispute"
+            "name": "Territorial Dispute",
+            "boss": ""
           },
           "6": {
-            "name": "Inconstant Gardener"
+            "name": "Inconstant Gardener",
+            "boss": ""
           },
           "7": {
-            "name": "Allure of the Occult"
+            "name": "Allure of the Occult",
+            "boss": ""
           },
           "8": {
-            "name": "Waved Away"
+            "name": "Waved Away",
+            "boss": ""
           },
           "9": {
-            "name": "Shoreline Showdown"
+            "name": "Shoreline Showdown",
+            "boss": ""
           },
           "10": {
-            "name": "Eye to Eye"
+            "name": "Eye to Eye",
+            "boss": ""
           },
           "11": {
-            "name": "Raging Thrall"
+            "name": "Raging Thrall",
+            "boss": ""
           }
         },
         "ce": {
           "1": {
-            "name": "Accept No Imitators"
+            "name": "Accept No Imitators",
+            "boss": "Metamorph",
+            "drop": {
+              "note": "Notes on the Metamorph"
+            }
           },
           "2": {
-            "name": "Ahead of the Competition"
+            "name": "Ahead of the Competition",
+            "boss": ""
           },
           "3": {
-            "name": "Lost on the Wind"
+            "name": "Lost on the Wind",
+            "boss": "Abductor",
+            "drop": {
+              "note": "Notes on the Abductor"
+            },
+            "spawn": "Crescent Wraith"
           },
           "4": {
-            "name": "Tiny Terror"
+            "name": "Tiny Terror",
+            "boss": "Tiny Mage",
+            "drop": {
+              "note": "Notes on the Tiny Mage"
+            }
           },
           "5": {
-            "name": "Appalling Behavior"
+            "name": "Appalling Behavior",
+            "boss": "Pallmagia",
+            "drop": {
+              "bluemage": "Blue Mage's Soul Shard",
+              "note": "Notes on the Pallmagia"
+            }
           },
           "6": {
-            "name": "Familiar Tactics"
+            "name": "Familiar Tactics",
+            "boss": ""
           },
           "7": {
-            "name": "Dark Artistry"
+            "name": "Dark Artistry",
+            "boss": "Phantom Necromancer",
+            "drop": {
+              "necromancer": "Necromancer's Soul Shard",
+              "note": "Notes on the Phantom Necromancer"
+            }
           },
           "8": {
-            "name": "A Beast Unleashed"
+            "name": "A Beast Unleashed",
+            "boss": ""
           },
           "9": {
-            "name": "Web of Terror"
+            "name": "Web of Terror",
+            "boss": ""
           },
           "10": {
-            "name": "Imbalanced Diet"
+            "name": "Imbalanced Diet",
+            "boss": "Algol",
+            "drop": {
+              "note": "Notes on Algol"
+            }
           },
           "11": {
-            "name": "Cursed Resurgence"
+            "name": "Cursed Resurgence",
+            "boss": "Claret Dragon",
+            "drop": {
+              "note": "Notes on the Claret Dragon"
+            },
+            "spawn": "Crescent Big Horn"
           },
           "12": {
-            "name": "Forbidden Folios"
+            "name": "Forbidden Folios",
+            "boss": "Arbatel",
+            "drop": {
+              "note": "Notes on Arbatel"
+            }
           },
           "13": {
-            "name": "Quarried Away"
+            "name": "Quarried Away",
+            "boss": "Alabaster Blade",
+            "drop": {
+              "note": "Notes on the Alabaster Blade"
+            }
           },
           "14": {
-            "name": "Doubled Trouble"
+            "name": "Doubled Trouble",
+            "boss": "Conjured Calofisteri",
+            "drop": {
+              "note": "Notes on the Conjured Calofisteri"
+            },
+            "spawn": "Crescent Blackguard"
           },
           "15": {
-            "name": "Many Mouths to Feed"
+            "name": "Many Mouths to Feed",
+            "boss": ""
           }
         },
         "surveyPoint": {
