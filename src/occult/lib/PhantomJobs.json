@@ -966,6 +966,52 @@
       "image": "blackmage-icon",
       "sprite": "blackmage-sprite",
       "supportActions": {
+        "Occult Fire III": {
+          "key": "occult-fire-iii",
+          "image": "occult-fire-iii.png",
+          "unlockLevel": 1,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 40,
+          "code": "bl1"
+        },
+        "Occult Blizzard III": {
+          "key": "occult-blizzard-iii",
+          "image": "occult-blizzard-iii.png",
+          "unlockLevel": 2,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 40,
+          "code": "bl2"
+        },
+        "Occult Thunder III": {
+          "key": "occult-thunder-iii",
+          "image": "occult-thunder-iii.png",
+          "unlockLevel": 3,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 40,
+          "code": "bl3"
+        },
+        "Occult Toad": {
+          "key": "occult-toad",
+          "image": "occult-toad.png",
+          "unlockLevel": 4,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 2.5,
+          "duration": "20s",
+          "code": "bl4"
+        },
+        "Occult Flare": {
+          "key": "occult-flare",
+          "image": "occult-flare.png",
+          "unlockLevel": 5,
+          "abilityType": "spell",
+          "castTime": 2.3,
+          "recastTime": 60,
+          "code": "bl5"
+        }
       },
       "exp": {
         "1": 0,

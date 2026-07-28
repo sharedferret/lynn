@@ -98,7 +98,7 @@
     "black-mage": {
       "name": "Black Mage",
       "text": "Imbued with a black mage's dedicated research and experimentation, these recollections shall bestow unto you the arcane art of destruction.",
-      "unlock": ""
+      "unlock": "Purchase - Black Mage's Soul Shard - 1,000 Silver Obols from the Expedition Antiquarian in North Horn."
     },
     "white-mage": {
       "name": "White Mage",
@@ -488,6 +488,26 @@
     "ni6": {
       "name": "First Strike",
       "description": "Grants First Strike when entering combat.\nFirst Strike Effect: Weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay are reduced.\nDuration: 25s."
+    },
+    "bl1": {
+      "name": "Occult Fire III",
+      "description": "Deals fire damage with a potency of 400 to target and all enemies nearby it.\nPotency increases to 520 when used against targets weak to fire.\nPotency scales with item level.\nShares a recast timer with Occult Blizzard III and Occult Thunder III."
+    },
+    "bl2": {
+      "name": "Occult Blizzard III",
+      "description": "Deals ice damage with a potency of 400 to target and all enemies nearby it.\nPotency increases to 520 when used against targets weak to ice.\nPotency scales with item level.\nShares a recast timer with Occult Fire III and Occult Thunder III."
+    },
+    "bl3": {
+      "name": "Occult Thunder III",
+      "description": "Deals lightning damage with a potency of 400 to target and all enemies nearby it.\nPotency increases to 520 when used against targets weak to lightning.\nPotency scales with item level.\nShares a recast timer with Occult Fire III and Occult Blizzard III."
+    },
+    "bl4": {
+      "name": "Occult Toad",
+      "description": "Afflicts target with Occult Toad.\nOccult Toad Effect: Reduces target's damage dealt by 99%, and prevents the execution of actions save for auto-attack."
+    },
+    "bl5": {
+      "name": "Occult Flare",
+      "description": "Deals unaspected damage with a potency of 500 to target and all enemies nearby it.\nPotency scales with item level."
     }
   }
 }
