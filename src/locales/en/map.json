@@ -4,6 +4,94 @@
       "northhorn": {
         "namedLocation": {
           "1": "TBD"
+        },
+        "fate": {
+          "pot1": {
+            "name": "In a Pot of Bother"
+          },
+          "pot2": {
+            "name": "Daylight Pottery"
+          },
+          "1": {
+            "name": "Thunderregnum"
+          },
+          "2": {
+            "name": "Scale Model"
+          },
+          "3": {
+            "name": "Gale-force Encounter"
+          },
+          "4": {
+            "name": "A Rotten Affair"
+          },
+          "5": {
+            "name": "Territorial Dispute"
+          },
+          "6": {
+            "name": "Inconstant Gardener"
+          },
+          "7": {
+            "name": "Allure of the Occult"
+          },
+          "8": {
+            "name": "Waved Away"
+          },
+          "9": {
+            "name": "Shoreline Showdown"
+          },
+          "10": {
+            "name": "Eye to Eye"
+          },
+          "11": {
+            "name": "Raging Thrall"
+          }
+        },
+        "ce": {
+          "1": {
+            "name": "Accept No Imitators"
+          },
+          "2": {
+            "name": "Ahead of the Competition"
+          },
+          "3": {
+            "name": "Lost on the Wind"
+          },
+          "4": {
+            "name": "Tiny Terror"
+          },
+          "5": {
+            "name": "Appalling Behavior"
+          },
+          "6": {
+            "name": "Familiar Tactics"
+          },
+          "7": {
+            "name": "Dark Artistry"
+          },
+          "8": {
+            "name": "A Beast Unleashed"
+          },
+          "9": {
+            "name": "Web of Terror"
+          },
+          "10": {
+            "name": "Imbalanced Diet"
+          },
+          "11": {
+            "name": "Cursed Resurgence"
+          },
+          "12": {
+            "name": "Forbidden Folios"
+          },
+          "13": {
+            "name": "Quarried Away"
+          },
+          "14": {
+            "name": "Doubled Trouble"
+          },
+          "15": {
+            "name": "Many Mouths to Feed"
+          }
         }
       },
       "southhorn": {

@@ -33,6 +33,7 @@ export default function MapZoneSelectorComponent({
             onChange={(e) => handleZoneSelectorUpdate(e.target.value)}
           >
             <FormLabel>{t('occult.name', { ns: 'zones' })}</FormLabel>
+            <FormControlLabel value="northhorn" control={<Radio />} label={t('occult.northhorn.short', { ns: 'zones' })} />
             <FormControlLabel value="southhorn" control={<Radio />} label={t('occult.southhorn.short', { ns: 'zones' })} />
             <FormLabel>{t('bozja.name', { ns: 'zones' })}</FormLabel>
             <FormControlLabel value="zadnor" control={<Radio disabled />} label={t('bozja.zadnor.full', { ns: 'zones' })} />

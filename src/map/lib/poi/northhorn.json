@@ -1,0 +1,389 @@
+{
+  "name": "occult.northhorn",
+  "categories": [
+    {
+      "name": "category.general",
+      "enabled": true,
+      "layers": [
+        {
+          "id": "namedLocations",
+          "name": "layer.namedLocations",
+          "enabled": true
+        },
+        {
+          "id": "aetherytes",
+          "name": "layer.aetherytes",
+          "enabled": true
+        },
+        {
+          "id": "traders",
+          "name": "layer.traders",
+          "enabled": true
+        },
+        {
+          "id": "repair",
+          "name": "layer.repair",
+          "enabled": true
+        },
+        {
+          "id": "treasureCoffers",
+          "name": "layer.treasureCoffers",
+          "enabled": true
+        },
+        {
+          "id": "carrots",
+          "name": "layer.carrots",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "category.encounters",
+      "enabled": true,
+      "layers": [
+        {
+          "id": "fates",
+          "name": "layer.fates",
+          "enabled": true
+        },
+        {
+          "id": "magicPotFates",
+          "name": "layer.magicPotFates",
+          "enabled": true
+        },
+        {
+          "id": "criticalEngagements",
+          "name": "layer.criticalEngagements",
+          "enabled": true
+        },
+        {
+          "id": "magicPotCoffers",
+          "name": "layer.magicPotCoffers",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "category.enemies",
+      "enabled": true,
+      "layers": [
+        {
+          "id": "mobLevels",
+          "name": "layer.mobLevels",
+          "enabled": false
+        },
+        {
+          "id": "sanguineRecluse",
+          "name": "layer.sanguineRecluse",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "category.progression",
+      "enabled": true,
+      "layers": [
+        {
+          "id": "surveyPoints",
+          "name": "layer.surveyPoints",
+          "enabled": true
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "id": "aetherytes"
+    },
+    {
+      "id": "fates"
+    },
+    {
+      "id": "criticalEngagements"
+    },
+    {
+      "id": "surveyPoints"
+    },
+    {
+      "id": "magicPotFates"
+    }
+  ],
+  "parameters": {
+    "imageUrl": "northhorn.jpg",
+    "bounds": {
+      "min": {
+        "lat": 1,
+        "lon": 1
+      },
+      "max": {
+        "lat": 42,
+        "lon": 42
+      }
+    },
+    "center": {
+      "lat": 21,
+      "lon": 21
+    },
+    "zoom": {
+      "default": 4.5,
+      "min": 3,
+      "max": 8,
+      "delta": 0.5,
+      "snap": 0.5,
+      "scrollPx": 200
+    }
+  },
+  "mapData": {
+    "magicPotFates": {
+      "markerIcon": "fate-enemies.png",
+      "circle": {
+        "radius": 0.9,
+        "color": "#03c2fc"
+      },
+      "waymarks": [
+        {
+          "name": "northhorn.fate.pot1.name",
+          "@id": "onh_potfate1",
+          "position": {
+            "x": 11.37,
+            "y": 26.36
+          }
+        },
+        {
+          "name": "northhorn.fate.pot2.name",
+          "@id": "onh_potfate2",
+          "position": {
+            "x": 26.14,
+            "y": 12.08
+          }
+        }
+      ]
+    },
+    "fates": {
+      "markerIcon": "fate-enemies.png",
+      "circle": {
+        "radius": 0.9,
+        "color": "#03c2fc"
+      },
+      "waymarks": [
+        {
+          "name": "northhorn.fate.1.name",
+          "@id": "onh_fate1",
+          "position": {
+            "x": 24.28,
+            "y": 7.32
+          }
+        },
+        {
+          "name": "northhorn.fate.2.name",
+          "@id": "onh_fate2",
+          "position": {
+            "x": 8.26,
+            "y": 20.4
+          }
+        },
+        {
+          "name": "northhorn.fate.3.name",
+          "@id": "onh_fate3",
+          "position": {
+            "x": 4.37,
+            "y": 31.12
+          }
+        },
+        {
+          "name": "northhorn.fate.4.name",
+          "@id": "onh_fate4",
+          "position": {
+            "x": 12.68,
+            "y": 5.68
+          }
+        },
+        {
+          "name": "northhorn.fate.5.name",
+          "@id": "onh_fate5",
+          "position": {
+            "x": 19.68,
+            "y": 38.80
+          }
+        },
+        {
+          "name": "northhorn.fate.6.name",
+          "@id": "onh_fate6",
+          "position": {
+            "x": 18.08,
+            "y": 11.48
+          }
+        },
+        {
+          "name": "northhorn.fate.7.name",
+          "@id": "onh_fate7",
+          "position": {
+            "x": 13.44,
+            "y": 16.42
+          }
+        },
+        {
+          "name": "northhorn.fate.8.name",
+          "@id": "onh_fate8",
+          "position": {
+            "x": 28.08,
+            "y": 16.48
+          }
+        },
+        {
+          "name": "northhorn.fate.9.name",
+          "@id": "onh_fate9",
+          "position": {
+            "x": 23.38,
+            "y": 30.88
+          }
+        },
+        {
+          "name": "northhorn.fate.10.name",
+          "@id": "onh_fate10",
+          "position": {
+            "x": 31.68,
+            "y": 20.88
+          }
+        },
+        {
+          "name": "northhorn.fate.11.name",
+          "@id": "onh_fate11",
+          "position": {
+            "x": 35.96,
+            "y": 25.88
+          }
+        }
+      ]
+    },
+    "criticalEngagements": {
+      "markerIcon": "fate-nm.png",
+      "circle": {
+        "radius": 0.9,
+        "color": "#e0635a"
+      },
+      "waymarks": [
+        {
+          "name": "northhorn.ce.1.name",
+          "@id": "onh_ce01",
+          "position": {
+            "x": 31.48,
+            "y": 15.28
+          }
+        },
+        {
+          "name": "northhorn.ce.2.name",
+          "@id": "onh_ce02",
+          "position": {
+            "x": 19.84,
+            "y": 31.18
+          }
+        },
+        {
+          "name": "northhorn.ce.3.name",
+          "@id": "onh_ce03",
+          "position": {
+            "x": 18.48,
+            "y": 4.28
+          }
+        },
+        {
+          "name": "northhorn.ce.4.name",
+          "@id": "onh_ce04",
+          "position": {
+            "x": 24.52,
+            "y": 35.8
+          }
+        },
+        {
+          "name": "northhorn.ce.5.name",
+          "@id": "onh_ce05",
+          "position": {
+            "x": 37.62,
+            "y": 10.24
+          }
+        },
+        {
+          "name": "northhorn.ce.6.name",
+          "@id": "onh_ce06",
+          "position": {
+            "x": 13.68,
+            "y": 35.48
+          }
+        },
+        {
+          "name": "northhorn.ce.7.name",
+          "@id": "onh_ce07",
+          "position": {
+            "x": 25.96,
+            "y": 4.28
+          }
+        },
+        {
+          "name": "northhorn.ce.8.name",
+          "@id": "onh_ce08",
+          "position": {
+            "x": 26.24,
+            "y": 28.82
+          }
+        },
+        {
+          "name": "northhorn.ce.9.name",
+          "@id": "onh_ce09",
+          "position": {
+            "x": 24.88,
+            "y": 18.76
+          }
+        },
+        {
+          "name": "northhorn.ce.10.name",
+          "@id": "onh_ce10",
+          "position": {
+            "x": 36.78,
+            "y": 21.48
+          }
+        },
+        {
+          "name": "northhorn.ce.11.name",
+          "@id": "onh_ce11",
+          "position": {
+            "x": 7.72,
+            "y": 24.48
+          }
+        },
+        {
+          "name": "northhorn.ce.12.name",
+          "@id": "onh_ce12",
+          "position": {
+            "x": 34.66,
+            "y": 34.66
+          }
+        },
+        {
+          "name": "northhorn.ce.13.name",
+          "@id": "onh_ce13",
+          "position": {
+            "x": 11.10,
+            "y": 8.66
+          }
+        },
+        {
+          "name": "northhorn.ce.14.name",
+          "@id": "onh_ce14",
+          "position": {
+            "x": 17.18,
+            "y": 20.18
+          }
+        },
+        {
+          "name": "northhorn.ce.15.name",
+          "@id": "onh_ce15",
+          "position": {
+            "x": 4.08,
+            "y": 10.28
+          }
+        }
+      ]
+    }
+  }
+}

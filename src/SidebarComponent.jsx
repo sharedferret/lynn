@@ -99,7 +99,7 @@ function SidebarComponent({
       </StyledButton> */ }
 
       <StyledButton
-        onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/southhorn'); }}
+        onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/northhorn'); }}
         key={uuidv4()}
       >
         <Box width={32} />

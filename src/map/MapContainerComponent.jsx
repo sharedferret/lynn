@@ -24,6 +24,7 @@ import MapLayerSelectorComponent from './MapLayerSelectorComponent';
 import bsfMapData from './lib/poi/bsf.json';
 import hydMapData from './lib/poi/hydatos.json';
 import oshMapData from './lib/poi/southhorn.json';
+import onhMapData from './lib/poi/northhorn.json';
 import MapZoneSelectorComponent from './MapZoneSelectorComponent';
 import FooterComponent from '../FooterComponent';
 // import MapData from './MapData';
@@ -37,6 +38,7 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
   mapData.hydatos = hydMapData;
   mapData.bsf = bsfMapData;
   mapData.southhorn = oshMapData;
+  mapData.northhorn = onhMapData;
 
   // const mapDataManager = MapData.getInstance();
 
