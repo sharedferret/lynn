@@ -1012,6 +1012,124 @@
           }
         }
       ]
+    },
+    "surveyPoints": {
+      "markerIcon": "poi-pin.png",
+      "waymarks": [
+        {
+          "name": "northhorn.surveyPoint.31",
+          "@id": "onh_survey31",
+          "position": {
+            "x": 39.1,
+            "y": 38.3
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.32",
+          "@id": "onh_survey32",
+          "position": {
+            "x": 36.6,
+            "y": 31.9
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.36",
+          "@id": "onh_survey36",
+          "position": {
+            "x": 27.3,
+            "y": 27
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.37",
+          "@id": "onh_survey37",
+          "position": {
+            "x": 39.7,
+            "y": 22.6
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.39",
+          "@id": "onh_survey39",
+          "position": {
+            "x": 27.1,
+            "y": 14.2
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.40",
+          "@id": "onh_survey40",
+          "position": {
+            "x": 40,
+            "y": 3.9
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.43",
+          "@id": "onh_survey43",
+          "position": {
+            "x": 17.5,
+            "y": 5.2
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.45",
+          "@id": "onh_survey45",
+          "position": {
+            "x": 11.1,
+            "y": 38.8
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.46",
+          "@id": "onh_survey46",
+          "position": {
+            "x": 4.8,
+            "y": 36.4
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.47",
+          "@id": "onh_survey47",
+          "position": {
+            "x": 3.8,
+            "y": 24.5
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.49",
+          "@id": "onh_survey49",
+          "position": {
+            "x": 7.4,
+            "y": 14.3
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.51",
+          "@id": "onh_survey51",
+          "position": {
+            "x": 4.4,
+            "y": 2.6
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.52",
+          "@id": "onh_survey52",
+          "position": {
+            "x": 21.5,
+            "y": 19.4
+          }
+        },
+        {
+          "name": "northhorn.surveyPoint.54",
+          "@id": "onh_survey54",
+          "verified": false,
+          "position": {
+            "x": 22.9,
+            "y": 24.3
+          }
+        }
+      ]
     }
   }
 }

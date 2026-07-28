@@ -92,6 +92,22 @@
           "15": {
             "name": "Many Mouths to Feed"
           }
+        },
+        "surveyPoint": {
+          "31": "#31: North Horn Base Camp",
+          "32": "#32: The Crown of Karnak",
+          "36": "#36: Shadowdeep",
+          "37": "#37: Labyrinth of the Damned",
+          "39": "#39: Panoptical Pillar",
+          "40": "#40: Sinking Sanctuary",
+          "43": "#43: The Marrowood",
+          "45": "#45: Suspended Masonry",
+          "46": "#46: The Windward Watch",
+          "47": "#47: Shrine of Spheres",
+          "49": "#49: Moldering Streets",
+          "51": "#51: The Moldering Lake",
+          "52": "#52: Unhallowed Hamlet",
+          "54": "#54: Dark Territory"
         }
       },
       "southhorn": {
