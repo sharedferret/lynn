@@ -901,6 +901,54 @@
       "image": "ninja-icon",
       "sprite": "ninja-sprite",
       "supportActions": {
+        "Fuma Shuriken": {
+          "key": "fuma-shuriken",
+          "image": "fuma-shuriken.png",
+          "unlockLevel": 1,
+          "abilityType": "ability",
+          "recastTime": 60,
+          "code": "ni1"
+        },
+        "Smoke": {
+          "key": "smoke",
+          "image": "smoke.png",
+          "unlockLevel": 2,
+          "abilityType": "ability",
+          "recastTime": 5,
+          "duration": "90s",
+          "code": "ni2"
+        },
+        "Lightning Scroll": {
+          "key": "lightning-scroll",
+          "image": "lightning-scroll.png",
+          "unlockLevel": 3,
+          "abilityType": "ability",
+          "recastTime": 60,
+          "code": "ni3"
+        },
+        "Flame Scroll": {
+          "key": "flame-scroll",
+          "image": "flame-scroll.png",
+          "unlockLevel": 4,
+          "abilityType": "ability",
+          "recastTime": 60,
+          "code": "ni4"
+        },
+        "Image": {
+          "key": "image",
+          "image": "image.png",
+          "unlockLevel": 5,
+          "abilityType": "ability",
+          "recastTime": 120,
+          "duration": "5s",
+          "code": "ni5"
+        },
+        "First Strike": {
+          "image": "first-strike.png",
+          "unlockLevel": 6,
+          "abilityType": "passive-trait",
+          "code": "ni6"
+        }
       },
       "exp": {
         "1": 0,

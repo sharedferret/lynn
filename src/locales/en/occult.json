@@ -28,7 +28,7 @@
     "time-mage": {
       "name": "Time Mage",
       "text": "The memories of this former time mage reveal much about the laws of time and how to manipulate them to your advantage.",
-      "unlock": "Purchase - Time Mage's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
+      "unlock": "Purchase - Time Mage's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian in South Horn."
     },
     "bard": {
       "name": "Bard",
@@ -38,7 +38,7 @@
     "geomancer": {
       "name": "Geomancer",
       "text": "This geomancer's recollections brim with boundless understanding of nature's laws. Access them to employ weather-dependent techniques.",
-      "unlock": "Purchase - Geomancer's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian."
+      "unlock": "Purchase - Geomancer's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian in South Horn."
     },
     "ranger": {
       "name": "Ranger",
@@ -53,22 +53,22 @@
     "chemist": {
       "name": "Chemist",
       "text": "This chemist's memories offer knowledge of ancient medicinal theory, including restorative techniques sure to turn the tide of battle in your favor.",
-      "unlock": "Purchase - Chemist's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
+      "unlock": "Purchase - Chemist's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian in South Horn."
     },
     "cannoneer": {
       "name": "Cannoneer",
       "text": "A mastery of ballistics both scholarly and practical infuse this cannoneer's recollections. Emulate them to bombard foes with powerful projectiles.",
-      "unlock": "Purchase - Cannoneer's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
+      "unlock": "Purchase - Cannoneer's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian in South Horn."
     },
     "samurai": {
       "name": "Samurai",
       "text": "Rigorous training and a strict code of chivalry personify these recollections of an ancient samurai. Access them to fell foes in a single deadly strike.",
-      "unlock": "Purchase - Samurai's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian."
+      "unlock": "Purchase - Samurai's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian in South Horn."
     },
     "thief": {
       "name": "Thief",
       "text": "These recollections of a dextrous, principled thief grant access to survival techniques that will doubtless prove useful upon the isle.",
-      "unlock": "Purchase - Thief's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian."
+      "unlock": "Purchase - Thief's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian in South Horn."
     },
     "oracle": {
       "name": "Oracle",
@@ -78,22 +78,22 @@
     "mystic-knight": {
       "name": "Mystic Knight",
       "text": "Suffused with a mystic knight's diligence and arcane prowess, these memories are key to imbuing your weaponry with potent magicks.",
-      "unlock": "Purchase - Mystic Knight's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
+      "unlock": "Purchase - Mystic Knight's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian in South Horn."
     },
     "gladiator": {
       "name": "Gladiator",
       "text": "This fierce, indomitable gladiator's recollections promise the mastery of myriad offensive and defensive skills.",
-      "unlock": "Purchase - Gladiator's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian."
+      "unlock": "Purchase - Gladiator's Soul Shard - 1,600 Gold Pieces from the Expedition Antiquarian in South Horn."
     },
     "dancer": {
       "name": "Dancer",
       "text": "Absorb the memories of an exalted, expressive dancer to replicate their deft footwork and bequeath yourself a range of boons.",
-      "unlock": "Purchase - Dancer's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
+      "unlock": "Purchase - Dancer's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian in South Horn."
     },
     "ninja": {
       "name": "Ninja",
       "text": "These recollections of a ninja's stealth and stillness will prove useful in a great many precarious situations.",
-      "unlock": ""
+      "unlock": "Purchase - Ninja's Soul Shard - 1,000 Silver Obols from the Expedition Antiquarian in North Horn."
     },
     "black-mage": {
       "name": "Black Mage",
@@ -464,6 +464,30 @@
     "da8": {
       "name": "Mesmerize",
       "description": "Afflicts target with Enamored, reducing damage dealt by 40%.\nAdditional Effect: Afflicts target with Mesmerized\nMesmerized Effect: Reduces damage dealt by 10% and increases damage taken by 5%\nDuration: 100s\nEffect cannot be stacked with Phantom Cannoneer's Silver Sickness."
+    },
+    "ni1": {
+      "name": "Fuma Shuriken",
+      "description": "Delivers an attack with a potency of 230.\nPotency scales with item level."
+    },
+    "ni2": {
+      "name": "Smoke",
+      "description": "Increases evasion by 20%."
+    },
+    "ni3": {
+      "name": "Lightning Scroll",
+      "description": "Deals lightning damage with a potency of 150 to target and all enemies nearby it.\nPotency increases to 195 when used against targets weak to lightning.\nPotency scales with item level."
+    },
+    "ni4": {
+      "name": "Flame Scroll",
+      "description": "Deals fire damage with a potency of 150 to target and all enemies nearby it.\nPotency increases to 195 when used against targets weak to fire.\nPotency scales with item level."
+    },
+    "ni5": {
+      "name": "Image",
+      "description": "Grants three stacks of Image.\nImage Effect: Nullifies most physical attacks."
+    },
+    "ni6": {
+      "name": "First Strike",
+      "description": "Grants First Strike when entering combat.\nFirst Strike Effect: Weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay are reduced.\nDuration: 25s."
     }
   }
 }
