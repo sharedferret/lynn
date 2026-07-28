@@ -894,6 +894,133 @@
         "4": 8000
       },
       "totalExp": "14,400"
+    },
+    "Ninja": {
+      "name": "Ninja",
+      "key": "ninja",
+      "image": "ninja-icon",
+      "sprite": "ninja-sprite",
+      "supportActions": {
+      },
+      "exp": {
+        "1": 0,
+        "2": 600,
+        "3": 3600,
+        "4": 6000,
+        "5": 7800,
+        "6": 10800
+      },
+      "totalExp": "28,800"
+    },
+    "Black Mage": {
+      "name": "Black Mage",
+      "key": "black-mage",
+      "image": "blackmage-icon",
+      "sprite": "blackmage-sprite",
+      "supportActions": {
+      },
+      "exp": {
+        "1": 0,
+        "2": 600,
+        "3": 5400,
+        "4": 8400,
+        "5": 10800
+      },
+      "totalExp": "25,200"
+    },
+    "White Mage": {
+      "name": "White Mage",
+      "key": "white-mage",
+      "image": "whitemage-icon",
+      "sprite": "whitemage-sprite",
+      "supportActions": {
+      },
+      "exp": {
+        "1": 0,
+        "2": 600,
+        "3": 5400,
+        "4": 8400,
+        "5": 10800
+      },
+      "totalExp": "25,200"
+    },
+    "Dragoon": {
+      "name": "Dragoon",
+      "key": "dragoon",
+      "image": "dragoon-icon",
+      "sprite": "dragoon-sprite",
+      "supportActions": {
+      },
+      "exp": {
+        "1": 0,
+        "2": 600,
+        "3": 9300,
+        "4": 11700
+      },
+      "totalExp": "25,200"
+    },
+    "Summoner": {
+      "name": "Summoner",
+      "key": "summoner",
+      "image": "summoner-icon",
+      "sprite": "summoner-sprite",
+      "supportActions": {
+      },
+      "exp": {
+        "1": 0,
+        "2": 1200,
+        "3": 6600,
+        "4": 9300,
+        "5": 11700
+      },
+      "totalExp": "28,800"
+    },
+    "Necromancer": {
+      "name": "Necromancer",
+      "key": "necromancer",
+      "image": "necromancer-icon",
+      "sprite": "necromancer-sprite",
+      "supportActions": {
+      },
+      "exp": {
+        "1": 0,
+        "2": 600,
+        "3": 7200,
+        "4": 9600,
+        "5": 11400
+      },
+      "totalExp": "28,800"
+    },
+    "Blue Mage": {
+      "name": "Blue Mage",
+      "key": "blue-mage",
+      "image": "bluemage-icon",
+      "sprite": "bluemage-sprite",
+      "supportActions": {
+      },
+      "exp": {
+        "1": 0,
+        "2": 9900,
+        "3": 11700
+      },
+      "totalExp": "21,600"
+    },
+    "Red Mage": {
+      "name": "Red Mage",
+      "key": "red-mage",
+      "image": "redmage-icon",
+      "sprite": "redmage-sprite",
+      "supportActions": {
+      },
+      "exp": {
+        "1": 0,
+        "2": 600,
+        "3": 3600,
+        "4": 7200,
+        "5": 10200,
+        "6": 10200
+      },
+      "totalExp": "31,800"
     }
   }
 }

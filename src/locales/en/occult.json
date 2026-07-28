@@ -89,6 +89,45 @@
       "name": "Dancer",
       "text": "Absorb the memories of an exalted, expressive dancer to replicate their deft footwork and bequeath yourself a range of boons.",
       "unlock": "Purchase - Dancer's Soul Shard - 1,000 Silver Pieces from the Expedition Antiquarian."
+    },
+    "ninja": {
+      "name": "Ninja",
+      "text": "These recollections of a ninja's stealth and stillness will prove useful in a great many precarious situations.",
+      "unlock": ""
+    },
+    "black-mage": {
+      "name": "Black Mage",
+      "text": "Imbued with a black mage's dedicated research and experimentation, these recollections shall bestow unto you the arcane art of destruction.",
+      "unlock": ""
+    },
+    "white-mage": {
+      "name": "White Mage",
+      "text": "Attain mastery of restorative techniques with the soothing memories of a devoted white mage.",
+      "unlock": ""
+    },
+    "dragoon": {
+      "name": "Dragoon",
+      "unlock": "The memories of a trained dragoon's travels shall teach you to lunge and impale with impunity."
+    },
+    "summoner": {
+      "name": "Summoner",
+      "text": "Channel the reminiscences of an educated, practiced summoner and learn to call forth powerful creatures adept at both offense and defense.",
+      "unlock": ""
+    },
+    "necromancer": {
+      "name": "Necromancer",
+      "text": "Tainted with the tenacity of a desecrated necromancer, these memories promise the power to fight beyond death.",
+      "unlock": ""
+    },
+    "blue-mage": {
+      "name": "Blue Mage",
+      "text": "The memories of this world-weary sorcerer are tinged with deep paranoia. Access them to gain monstrous power in arcane form.",
+      "unlock": ""
+    },
+    "red-mage": {
+      "name": "Red Mage",
+      "text": "These recollections of a witty wandering red mage will allow you to wield black and white magicks in perfect balance.",
+      "unlock": ""
     }
   },
   "support-action": {
