@@ -1633,6 +1633,24 @@
             "x": 23.64,
             "y": 10.36
           }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot24",
+          "position": {
+            "x": 38.56,
+            "y": 14.61
+          }
+        },
+        {
+          "name": "",
+          "popupTitle": "southhorn.treasureCoffer.carrot",
+          "@id": "onh_carrot25",
+          "position": {
+            "x": 19.0,
+            "y": 37.02
+          }
         }
       ]
     },
