@@ -112,7 +112,7 @@
     }
   ],
   "parameters": {
-    "imageUrl": "northhorn.jpg",
+    "imageUrl": "northhorn-merged.jpg",
     "bounds": {
       "min": {
         "lat": 1,
