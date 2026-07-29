@@ -1152,6 +1152,51 @@
       "image": "necromancer-icon",
       "sprite": "necromancer-sprite",
       "supportActions": {
+        "Drain Touch": {
+          "key": "drain-touch",
+          "image": "drain-touch.png",
+          "unlockLevel": 1,
+          "abilityType": "ability",
+          "recastTime": 40,
+          "duration": "6s",
+          "code": "ne1"
+        },
+        "Deep Freeze": {
+          "key": "deep-freeze",
+          "image": "deep-freeze.png",
+          "unlockLevel": 2,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 40,
+          "code": "ne2"
+        },
+        "Hell Wind": {
+          "key": "hell-wind",
+          "image": "hell-wind.png",
+          "unlockLevel": 3,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 40,
+          "code": "ne3"
+        },
+        "Chaos Drive": {
+          "key": "chaos-drive",
+          "image": "chaos-drive.png",
+          "unlockLevel": 4,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 40,
+          "code": "ne4"
+        },
+        "Doomsday": {
+          "key": "doomsday",
+          "image": "doomsday.png",
+          "unlockLevel": 5,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 120,
+          "code": "ne5"
+        }
       },
       "exp": {
         "1": 0,
@@ -1182,6 +1227,60 @@
       "image": "redmage-icon",
       "sprite": "redmage-sprite",
       "supportActions": {
+        "Occult Fire II": {
+          "key": "occult-fire-ii",
+          "image": "occult-fire-ii.png",
+          "unlockLevel": 1,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 30,
+          "code": "re1"
+        },
+        "Occult Cure II": {
+          "key": "occult-cure-ii",
+          "image": "occult-cure-ii.png",
+          "unlockLevel": 1,
+          "abilityType": "spell",
+          "mpCost": 1500,
+          "castTime": 1.5,
+          "recastTime": 2.5,
+          "code": "re2"
+        },
+        "Occult Libra": {
+          "key": "occult-libra",
+          "image": "occult-libra.png",
+          "unlockLevel": 3,
+          "abilityType": "ability",
+          "recastTime": 5,
+          "duration": "120s",
+          "code": "re3"
+        },
+        "Occult Blizzard II": {
+          "key": "occult-blizzard-ii",
+          "image": "occult-blizzard-ii.png",
+          "unlockLevel": 4,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 30,
+          "code": "re4"
+        },
+        "Occult Thunder II": {
+          "key": "occult-thunder-ii",
+          "image": "occult-thunder-ii.png",
+          "unlockLevel": 5,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 30,
+          "code": "re5"
+        },
+        "Dualcast": {
+          "key": "dualcast",
+          "image": "dualcast.png",
+          "unlockLevel": 6,
+          "abilityType": "passive-trait",
+          "duration": "15s",
+          "code": "re6"
+        }
       },
       "exp": {
         "1": 0,

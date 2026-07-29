@@ -544,6 +544,50 @@
     "su5": {
       "name": "Megaflare",
       "description": "Deals unaspected damage with a potency of 1,000 to target and all enemies nearby it.\nPotency scales with item level.\nCast and recast timer cannot be affected by status effects or gear attributes."
+    },
+    "ne1": {
+      "name": "Drain Touch",
+      "description": "Deals unaspected damage with a potency of 150.\nPotency scales with item level.\nAdditional Effect: Absorbs a portion of damage dealt as HP.\nAdditional Effect: Grants Drain Touch.\nDrain Touch Effect: Most attacks cannot reduce your HP to less than 1, and increases the potency of Phantom Necromancer actions."
+    },
+    "ne2": {
+      "name": "Deep Freeze",
+      "description": "Deals ice damage with a potency of 300 to all enemies in a straight line.\nPotency increases to 390 when used against targets weak to ice.\nDrain Touch Potency: 400\nPotency increases to 520 when used against targets weak to ice.\nPotency scales with item level.\nConsumes 10% of maximum HP when executed.\nAdditional Effect: Freezes time for target when under the effect of Drain Touch.\nDuration: 4s\nAdditional Effect: Afflicts yourself with Doom.\nDuration: 10s\nEffect is dispelled when HP is restored to full.\nShares a recast timer with Hell Wind and Chaos Drive."
+    },
+    "ne3": {
+      "name": "Hell Wind",
+      "description": "Deals wind damage with a potency of 300 to all enemies in a straight line.\nPotency increases to 390 when used against targets weak to wind.\nDrain Touch Potency: 400\nPotency increases to 520 when used against targets weak to wind.\nPotency scales with item level.\nConsumes 10% of maximum HP when executed.\nAdditional Effect: 10% chance to Petrify target when under the effect of Drain Touch.\nPetrify Effect: Incapacitated upon taking damage.\nDuration: 10s\nAdditional Effect: Afflicts yourself with Doom.\nDuration: 10s\nEffect is dispelled when HP is restored to full.\nShares a recast timer with Deep Freeze and Chaos Drive."
+    },
+    "ne4": {
+      "name": "Chaos Drive",
+      "description": "Deals lightning damage with a potency of 300 to all enemies in a straight line.\nPotency increases to 390 when used against targets weak to lightning.\nDrain Touch Potency: 400\nPotency increases to 520 when used against targets weak to lightning.\nPotency scales with item level.\nConsumes 10% of maximum HP when executed.\nAdditional Effect: Afflicts target with Paralysis when under the effect of Drain Touch.\nDuration: 18s\nAdditional Effect: Afflicts yourself with Doom.\nDuration: 10s\nEffect is dispelled when HP is restored to full.\nShares a recast timer with Deep Freeze and Hell Wind."
+    },
+    "ne5": {
+      "name": "Doomsday",
+      "description": "Deals unaspected damage with a potency of 350 to all enemies in a straight line.\nDrain Touch Potency: 500\nPotency scales with item level.\nConsumes 10% of maximum HP when executed.\nAdditional Effect: Removes one beneficial status from target, with some exceptions when under the effect of Drain Touch.\nAdditional Effect: Afflicts yourself with Doom.\nDuration: 10s\nEffect is dispelled when HP is restored to full."
+    },
+    "re1": {
+      "name": "Occult Fire II",
+      "description": "Deals fire damage with a potency of 300 to target and all enemies nearby it.\nPotency increases to 390 when used against targets weak to fire.\nPotency scales with item level.\nShares a recast timer with Occult Blizzard II and Occult Thunder II."
+    },
+    "re2": {
+      "name": "Occult Cure II",
+      "description": "Restores target's HP.\nCure Potency: 40,000"
+    },
+    "re3": {
+      "name": "Occult Libra",
+      "description": "Discern the elemental affinity of enemies, increasing the potency of elemental attacks that exploit their weaknesses."
+    },
+    "re4": {
+      "name": "Occult Blizzard II",
+      "description": "Deals ice damage with a potency of 300 to target and all enemies nearby it.\nPotency increases to 390 when used against targets weak to ice.\nPotency scales with item level.\nShares a recast timer with Occult Fire II and Occult Thunder II."
+    },
+    "re5": {
+      "name": "Occult Thunder II",
+      "description": "Deals lightning damage with a potency of 300 to target and all enemies nearby it.\nPotency increases to 390 when used against targets weak to lightning.\nPotency scales with item level.\nShares a recast timer with Occult Fire II and Occult Blizzard II."
+    },
+    "re6": {
+      "name": "Dualcast",
+      "description": "Grants the effect of Dualcast upon casting any spell with a cast time. While under the effect of Dualcast, your next spell will require no time to cast. Effect is canceled upon execution of any action other than an ability. Auto-attacks do not cancel effect."
     }
   }
 }
