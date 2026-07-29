@@ -142,7 +142,15 @@
     },
     "fr3": {
       "name": "Inquiring Mind",
-      "description": "When executed near a knowledge crystal, grants an effect to self and nearby party members based on your phantom job and its level.\nPhantom Knight Effect (Level 2 or Higher): Grants Enduring Fortitude\nEnduring Fortitude Effect: Reduces damage taken by 10%\nDuration: 30m\nPhantom Monk Effect (Level 3 or Higher): Grants Fleetfooted\nFleetfooted Effect: Increases movement speed\nDuration: 30m"
+      "description": "When executed near a knowledge crystal, grants an effect to self and nearby party members based on your phantom job and its level.\nPhantom Knight Effect (Level 2 or Higher): Grants Enduring Fortitude\nEnduring Fortitude Effect: Reduces damage taken by 10%\nDuration: 30m\nPhantom Monk Effect (Level 3 or Higher): Grants Fleetfooted\nFleetfooted Effect: Increases movement speed\nDuration: 30m\nPhantom Bard effect (Level 2 or Higher): Grants Romeo's Ballad\nRomeo's Ballad Effect: Increases Phantom EXP earned through battle by 10%\nDuration: 30m\nPhantom Dancer Effect (Level 2 or Higher): Grants Quicker Step\nSwiftstrike Effect: Increases damage dealt by 2%\nDuration: 30m"
+    },
+    "fr4": {
+      "name": "Wisdom of the Winds",
+      "description": "Resets the recast timer of most class and job actions."
+    },
+    "fr5": {
+      "name": "Adaptable",
+      "description": "Allows the changing of phantom jobs when normally prohibited, as well as during combat."
     },
     "kn1": {
       "name": "Phantom Guard",
@@ -510,6 +518,26 @@
       "name": "Occult Flare",
       "description": "Deals unaspected damage with a potency of 500 to target and all enemies nearby it.\nPotency scales with item level."
     },
+    "wh1": {
+      "name": "Occult Cure II",
+      "description": "Restores target's HP.\nCure Potency: 40,000"
+    },
+    "wh2": {
+      "name": "Occult Cure III",
+      "description": "Restores own or target party member's HP and all party members nearby target.\nCure Potency: 30,000"
+    },
+    "wh3": {
+      "name": "Occult Blink",
+      "description": "Renders target impervious to most magic damage for one attack."
+    },
+    "wh4": {
+      "name": "Occult Raise",
+      "description": "Resurrects target to a weakened state.\nCan also be cast on targets with Resurrection Restricted."
+    },
+    "wh5": {
+      "name": "Occult Holy",
+      "description": "Deals unaspected damage with a potency of 500 to target and all enemies nearby it.\nPotency increases to 750 when used against undead enemies.\nPotency scales with item level."
+    },
     "dr1": {
       "name": "Occult Jump",
       "description": "Delivers an attack with a potency of 400.\nPotency scales with item level.\nAdditional Effect: Reduces damage taken by 60%.",
@@ -564,6 +592,34 @@
     "ne5": {
       "name": "Doomsday",
       "description": "Deals unaspected damage with a potency of 350 to all enemies in a straight line.\nDrain Touch Potency: 500\nPotency scales with item level.\nConsumes 10% of maximum HP when executed.\nAdditional Effect: Removes one beneficial status from target, with some exceptions when under the effect of Drain Touch.\nAdditional Effect: Afflicts yourself with Doom.\nDuration: 10s\nEffect is dispelled when HP is restored to full."
+    },
+    "bu1": {
+      "name": "Occult Aero",
+      "description": "Deals wind damage with a potency of 150.\nPotency increases to 195 when used against targets weak to wind.\nPotency scales with item level.\n\nUnlock: Unlocked by default"
+    },
+    "bu2": {
+      "name": "Occult Missile",
+      "description": "Delivers an attack with a 35% chance to deal damage equal to 75% of target's current HP, with some exceptions.\n\nUnlock: Appalling Behavior CE - Pallmagia."
+    },
+    "bu3": {
+      "name": "Occult Aqua Breath",
+      "description": "Deals unaspected damage with a potency of 300 to target and all enemies nearby it.\nPotency scales with item level.\n\nUnlock: Mob - Crescent Stoneshell."
+    },
+    "bu4": {
+      "name": "Occult Aero II",
+      "description": "Deals wind damage with a potency of 200.\nPotency increases to 260 when used against targets weak to wind.\nPotency scales with item level.\n\nUnlock: Mob - Crescent Anila. Replaces Occult Aero."
+    },
+    "bu5": {
+      "name": "Occult Mighty Guard",
+      "description": "Reduces damage taken by self and nearby party members by 20%.\n\nUnlock: Mob - Crescent Bibliotaph."
+    },
+    "bu6": {
+      "name": "Occult Aero III",
+      "description": "Deals wind damage with a potency of 250 to target and all enemies nearby it.\nPotency increases to 325 when used against targets weak to wind.\nPotency scales with item level.\n\nUnlock: Quarried Away CE - Alabaster Blade. Replaces Occult Aero II."
+    },
+    "bu7": {
+      "name": "Occult White Wind",
+      "description": "Restores own HP and the HP of all nearby party members by an amount equal to your current HP.\n\nUnlock: Mob - Crescent Flame."
     },
     "re1": {
       "name": "Occult Fire II",

@@ -28,6 +28,19 @@
           "recastTime": 5,
           "abilityType": "ability",
           "code": "fr3"
+        },
+        "Wisdom of the Winds": {
+          "image": "wisdom-of-the-winds.png",
+          "unlockLevel": 20,
+          "recastTime": 360,
+          "abilityType": "ability",
+          "code": "fr4"
+        },
+        "Adaptable": {
+          "image": "adaptable.png",
+          "unlockLevel": 24,
+          "abilityType": "passive-trait",
+          "code": "fr5"
         }
       }
     },
@@ -1028,6 +1041,52 @@
       "image": "whitemage-icon",
       "sprite": "whitemage-sprite",
       "supportActions": {
+        "Occult Cure II": {
+          "key": "occult-cure-ii",
+          "image": "occult-cure-ii.png",
+          "unlockLevel": 1,
+          "abilityType": "spell",
+          "mpCost": 1500,
+          "castTime": 1.5,
+          "recastTime": 2.5,
+          "code": "wh1"
+        },
+        "Occult Cure III": {
+          "key": "occult-cure-iii",
+          "image": "occult-cure-iii.png",
+          "unlockLevel": 2,
+          "abilityType": "spell",
+          "mpCost": 3000,
+          "castTime": 2.3,
+          "recastTime": 2.5,
+          "code": "wh2"
+        },
+        "Occult Blink": {
+          "key": "occult-blink",
+          "image": "occult-blink.png",
+          "unlockLevel": 3,
+          "abilityType": "ability",
+          "recastTime": 90,
+          "duration": "30s",
+          "code": "wh3"
+        },
+        "Occult Raise": {
+          "key": "occult-raise",
+          "image": "occult-raise.png",
+          "unlockLevel": 4,
+          "abilityType": "spell",
+          "recastTime": 5,
+          "code": "wh4"
+        },
+        "Occult Holy": {
+          "key": "occult-holy",
+          "image": "occult-holy.png",
+          "unlockLevel": 5,
+          "abilityType": "spell",
+          "castTime": 2.3,
+          "recastTime": 60,
+          "code": "wh5"
+        }
       },
       "exp": {
         "1": 0,
@@ -1213,6 +1272,69 @@
       "image": "bluemage-icon",
       "sprite": "bluemage-sprite",
       "supportActions": {
+        "Occult Aero": {
+          "key": "occult-aero",
+          "image": "occult-aero.png",
+          "unlockLevel": 1,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 30,
+          "code": "bu1"
+        },
+        "Occult Missile": {
+          "key": "occult-missile",
+          "image": "occult-missile.png",
+          "unlockLevel": 1,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 30,
+          "code": "bu2"
+        },
+        "Occult Aqua Breath": {
+          "key": "occult-aqua-breath",
+          "image": "occult-aqua-breath.png",
+          "unlockLevel": 1,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 60,
+          "code": "bu3"
+        },
+        "Occult Aero II": {
+          "key": "occult-aero-ii",
+          "image": "occult-aero-ii.png",
+          "unlockLevel": 2,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 30,
+          "code": "bu4"
+        },
+        "Occult Mighty Guard": {
+          "key": "occult-mighty-guard",
+          "image": "occult-mighty-guard.png",
+          "unlockLevel": 2,
+          "abilityType": "spell",
+          "recastTime": 120,
+          "duration": "15s",
+          "code": "bu5"
+        },
+        "Occult Aero III": {
+          "key": "occult-aero-iii",
+          "image": "occult-aero-iii.png",
+          "unlockLevel": 3,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 30,
+          "code": "bu6"
+        },
+        "Occult White Wind": {
+          "key": "occult-white-wind",
+          "image": "occult-white-wind.png",
+          "unlockLevel": 3,
+          "abilityType": "spell",
+          "castTime": 1.5,
+          "recastTime": 150,
+          "code": "bu7"
+        }
       },
       "exp": {
         "1": 0,
