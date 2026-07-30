@@ -10,6 +10,17 @@ export default function OccultFateTooltipComponent({ markerData }) {
     <Stack>
       <Typography variant="h6">{t('map.captions.boss')}</Typography>
       <Typography variant="button">{t(`map.regions.${markerData.metadata.boss}`)}</Typography>
+      {
+        markerData.metadata.dispeller && (
+          <Stack>
+            <Typography variant="h6">{t('map.captions.dispeller')}</Typography>
+            <Stack direction="row" spacing={1} alignItems="center">
+              <img src={`/assets/maps/markers/dispeller-${markerData.metadata.dispeller}.png`} alt={markerData.metadata.dispeller} width={24} height={24} />
+              <Typography variant="button">{t(`map.regions.northhorn.dispeller.${markerData.metadata.dispeller}`)}</Typography>
+            </Stack>
+          </Stack>
+        )
+      }
     </Stack>
   );
 }

@@ -1788,6 +1788,9 @@
           "position": {
             "x": 11.37,
             "y": 26.36
+          },
+          "metadata": {
+            "dispeller": "beta"
           }
         },
         {
@@ -1815,7 +1818,8 @@
             "y": 7.32
           },
           "metadata": {
-            "boss": "northhorn.fate.1.boss"
+            "boss": "northhorn.fate.1.boss",
+            "dispeller": "beta"
           }
         },
         {
@@ -1826,7 +1830,8 @@
             "y": 20.4
           },
           "metadata": {
-            "boss": "northhorn.fate.2.boss"
+            "boss": "northhorn.fate.2.boss",
+            "dispeller": "gamma"
           }
         },
         {
@@ -1837,7 +1842,8 @@
             "y": 31.12
           },
           "metadata": {
-            "boss": "northhorn.fate.3.boss"
+            "boss": "northhorn.fate.3.boss",
+            "dispeller": "alpha"
           }
         },
         {
@@ -1848,7 +1854,8 @@
             "y": 5.68
           },
           "metadata": {
-            "boss": "northhorn.fate.4.boss"
+            "boss": "northhorn.fate.4.boss",
+            "dispeller": "alpha"
           }
         },
         {
@@ -1859,7 +1866,8 @@
             "y": 38.80
           },
           "metadata": {
-            "boss": "northhorn.fate.5.boss"
+            "boss": "northhorn.fate.5.boss",
+            "dispeller": "beta"
           }
         },
         {
@@ -1870,7 +1878,8 @@
             "y": 11.48
           },
           "metadata": {
-            "boss": "northhorn.fate.6.boss"
+            "boss": "northhorn.fate.6.boss",
+            "dispeller": "gamma"
           }
         },
         {
@@ -1881,7 +1890,8 @@
             "y": 16.42
           },
           "metadata": {
-            "boss": "northhorn.fate.7.boss"
+            "boss": "northhorn.fate.7.boss",
+            "dispeller": "beta"
           }
         },
         {
@@ -1892,7 +1902,8 @@
             "y": 16.48
           },
           "metadata": {
-            "boss": "northhorn.fate.8.boss"
+            "boss": "northhorn.fate.8.boss",
+            "dispeller": "alpha"
           }
         },
         {
@@ -1903,7 +1914,8 @@
             "y": 30.88
           },
           "metadata": {
-            "boss": "northhorn.fate.9.boss"
+            "boss": "northhorn.fate.9.boss",
+            "dispeller": "gamma"
           }
         },
         {
@@ -1914,7 +1926,8 @@
             "y": 20.88
           },
           "metadata": {
-            "boss": "northhorn.fate.10.boss"
+            "boss": "northhorn.fate.10.boss",
+            "dispeller": "beta"
           }
         },
         {
@@ -1925,7 +1938,8 @@
             "y": 25.88
           },
           "metadata": {
-            "boss": "northhorn.fate.11.boss"
+            "boss": "northhorn.fate.11.boss",
+            "dispeller": "alpha"
           }
         }
       ]
@@ -1951,7 +1965,8 @@
                 "name": "northhorn.ce.1.drop.note",
                 "type": "fieldNote"
               }
-            ]
+            ],
+            "dispeller": "gamma"
           }
         },
         {
@@ -1962,7 +1977,8 @@
             "y": 31.18
           },
           "metadata": {
-            "boss": "northhorn.ce.2.boss"
+            "boss": "northhorn.ce.2.boss",
+            "dispeller": "alpha"
           }
         },
         {
@@ -1980,6 +1996,7 @@
                 "type": "fieldNote"
               }
             ],
+            "dispeller": "gamma",
             "spawnedBy": {
               "type": "mob",
               "name": "northhorn.ce.3.spawn",
@@ -2001,7 +2018,8 @@
                 "name": "northhorn.ce.4.drop.note",
                 "type": "fieldNote"
               }
-            ]
+            ],
+            "dispeller": "beta"
           }
         },
         {
@@ -2022,7 +2040,8 @@
                 "name": "northhorn.ce.5.drop.note",
                 "type": "fieldNote"
               }
-            ]
+            ],
+            "dispeller": "alpha"
           }
         },
         {
@@ -2033,7 +2052,8 @@
             "y": 35.48
           },
           "metadata": {
-            "boss": "northhorn.ce.6.boss"
+            "boss": "northhorn.ce.6.boss",
+            "dispeller": "gamma"
           }
         },
         {
@@ -2054,7 +2074,8 @@
                 "name": "northhorn.ce.7.drop.note",
                 "type": "fieldNote"
               }
-            ]
+            ],
+            "dispeller": "beta"
           }
         },
         {
@@ -2065,7 +2086,8 @@
             "y": 28.82
           },
           "metadata": {
-            "boss": "northhorn.ce.8.boss"
+            "boss": "northhorn.ce.8.boss",
+            "dispeller": "gamma"
           }
         },
         {
@@ -2076,7 +2098,8 @@
             "y": 18.76
           },
           "metadata": {
-            "boss": "northhorn.ce.9.boss"
+            "boss": "northhorn.ce.9.boss",
+            "dispeller": "alpha"
           }
         },
         {
@@ -2093,7 +2116,8 @@
                 "name": "northhorn.ce.10.drop.note",
                 "type": "fieldNote"
               }
-            ]
+            ],
+            "dispeller": "beta"
           }
         },
         {
@@ -2111,6 +2135,7 @@
                 "type": "fieldNote"
               }
             ],
+            "dispeller": "beta",
             "spawnedBy": {
               "type": "mob",
               "name": "northhorn.ce.11.spawn",
@@ -2132,7 +2157,8 @@
                 "name": "northhorn.ce.12.drop.note",
                 "type": "fieldNote"
               }
-            ]
+            ],
+            "dispeller": "alpha"
           }
         },
         {
@@ -2149,7 +2175,8 @@
                 "name": "northhorn.ce.13.drop.note",
                 "type": "fieldNote"
               }
-            ]
+            ],
+            "dispeller": "beta"
           }
         },
         {
@@ -2167,6 +2194,7 @@
                 "type": "fieldNote"
               }
             ],
+            "dispeller": "gamma",
             "spawnedBy": {
               "type": "mob",
               "name": "northhorn.ce.14.spawn",
@@ -2182,7 +2210,8 @@
             "y": 10.28
           },
           "metadata": {
-            "boss": "northhorn.ce.15.boss"
+            "boss": "northhorn.ce.15.boss",
+            "dispeller": "alpha"
           }
         }
       ]

@@ -54,6 +54,17 @@ export default function BozjaCETooltipComponent({ markerData }) {
       {renderSpawnedBy()}
       {markerData.metadata.rewards ? <Typography variant="h6">{t('map.captions.rewards')}</Typography> : null}
       {renderRewards()}
+      {
+        markerData.metadata.dispeller && (
+          <Stack>
+            <Typography variant="h6">{t('map.captions.dispeller')}</Typography>
+            <Stack direction="row" spacing={1} alignItems="center">
+              <img src={`/assets/maps/markers/dispeller-${markerData.metadata.dispeller}.png`} alt={markerData.metadata.dispeller} width={24} height={24} />
+              <Typography variant="button">{t(`map.regions.northhorn.dispeller.${markerData.metadata.dispeller}`)}</Typography>
+            </Stack>
+          </Stack>
+        )
+      }
     </Stack>
   );
 }

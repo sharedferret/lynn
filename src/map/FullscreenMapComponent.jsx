@@ -165,8 +165,17 @@ export default function FullscreenMapComponent({
               type={markerType}
             />
           </Popup>
-          <Tooltip permanent>
-            {displayLabels && marker.name ? t(`map.regions.${marker.name}`) : ''}
+          <Tooltip permanent direction={marker.metadata?.dispeller ? 'right' : null}>
+            <span style={{ display: 'flex', alignItems: 'center' }}>
+              {marker.metadata?.dispeller && (
+                <img
+                  src={`${process.env.PUBLIC_URL}/assets/maps/markers/dispeller-${marker.metadata.dispeller}.png`}
+                  alt={marker.metadata.dispeller}
+                  style={{ width: 24, height: 24, marginRight: 4 }}
+                />
+              )}
+              {displayLabels && marker.name ? t(`map.regions.${marker.name}`) : ''}
+            </span>
           </Tooltip>
           {
             mapData[markerType].circle && (

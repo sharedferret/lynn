@@ -2,6 +2,11 @@
   "map": {
     "regions": {
       "northhorn": {
+        "dispeller": {
+          "alpha": "Alpha",
+          "beta": "Beta",
+          "gamma": "Gamma"
+        },
         "namedLocation": {
           "1": "TBD"
         },
@@ -807,7 +812,8 @@
       "rewards": "Rewards",
       "unlocksAt": "Unlocks at",
       "level": "Level",
-      "nm": "Notorious Monster"
+      "nm": "Notorious Monster",
+      "dispeller": "Dispeller"
     }
   }
 }
