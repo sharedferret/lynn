@@ -65,6 +65,17 @@ export default function BozjaCETooltipComponent({ markerData }) {
           </Stack>
         )
       }
+      {
+        markerData.metadata.blueSpell && (
+          <Stack>
+            <Typography variant="h6">{t('map.captions.blueSpell')}</Typography>
+            <Stack direction="row" spacing={1} alignItems="center">
+              <img src={`/assets/maps/markers/${markerData.metadata.blueSpell.icon}`} alt={markerData.metadata.blueSpell.name} width={24} height={24} />
+              <Typography variant="button">{t(`map.regions.${markerData.metadata.blueSpell.name}`)}</Typography>
+            </Stack>
+          </Stack>
+        )
+      }
     </Stack>
   );
 }

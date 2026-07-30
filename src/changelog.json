@@ -1,6 +1,14 @@
 {
   "changes": [
     {
+      "version": "30.2",
+      "timestamp": "2026-07-30",
+      "changes": [
+        "Add Blue Mage spell locations for North Horn",
+        "Add dispeller drop for Daylight Pottery"
+      ]
+    },
+    {
       "version": "30.0",
       "timestamp": "2026-07-28",
       "changes": [

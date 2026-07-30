@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import EurekaNMTooltipComponent from './tooltipcomponents/EurekaNMTooltipComponent';
 import AetheryteTooltipComponent from './tooltipcomponents/AetheryteTooltipComponent';
 import BozjaCETooltipComponent from './tooltipcomponents/BozjaCETooltipComponent';
+import OccultBlueSpellComponent from './tooltipcomponents/OccultBlueSpellComponent';
 import OccultFateTooltipComponent from './tooltipcomponents/OccultFateTooltipComponent';
 
 export default function TooltipBaseComponent(
@@ -28,6 +29,8 @@ export default function TooltipBaseComponent(
         return <BozjaCETooltipComponent markerData={markerData} />;
       case 'fates':
         return <OccultFateTooltipComponent markerData={markerData} />;
+      case 'blueMage':
+        return <OccultBlueSpellComponent markerData={markerData} />;
       default:
         return null;
     }

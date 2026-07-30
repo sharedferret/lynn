@@ -192,6 +192,38 @@
           "51": "#51: The Moldering Lake",
           "52": "#52: Unhallowed Hamlet",
           "54": "#54: Dark Territory"
+        },
+        "blueMage": {
+          "missile": {
+            "name": "Occult Missile",
+            "enemy": "Pallmagia",
+            "encounter": "Critical Engagement: Appalling Behavior"
+          },
+          "aero2": {
+            "name": "Occult Aero II",
+            "enemy": "Crescent Anila",
+            "encounter": "Mob"
+          },
+          "aero3": {
+            "name": "Occult Aero III",
+            "enemy": "Alabaster Blade",
+            "encounter": "Critical Engagement: Quarried Away"
+          },
+          "aquabreath": {
+            "name": "Occult Aqua Breath",
+            "enemy": "Crescent Stoneshell",
+            "encounter": "Mob"
+          },
+          "mightyguard": {
+            "name": "Occult Mighty Guard",
+            "enemy": "Crescent Bibliotaph",
+            "encounter": "Mob"
+          },
+          "whitewind": {
+            "name": "Occult White Wind",
+            "enemy": "Crescent Flame",
+            "encounter": "Mob"
+          }
         }
       },
       "southhorn": {
@@ -803,7 +835,7 @@
       "nmPrepMobs": "NM Prep Mobs",
       "sprites": "Sprites",
       "sanguineRecluse": "Sanguine Recluse",
-      "blueMage": "Blue Mage Spell Mobs"
+      "blueMage": "Blue Mage Spells"
     },
     "captions": {
       "ce": "Critical Engagement",
@@ -813,7 +845,9 @@
       "unlocksAt": "Unlocks at",
       "level": "Level",
       "nm": "Notorious Monster",
-      "dispeller": "Dispeller"
+      "dispeller": "Dispeller",
+      "blueSpell": "Phantom Blue Mage Spell",
+      "learnedFrom": "Learned from"
     }
   }
 }

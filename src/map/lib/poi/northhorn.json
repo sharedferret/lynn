@@ -38,7 +38,7 @@
         {
           "id": "blueMage",
           "name": "layer.blueMage",
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -1799,6 +1799,9 @@
           "position": {
             "x": 26.14,
             "y": 12.08
+          },
+          "metadata": {
+            "dispeller": "gamma"
           }
         }
       ]
@@ -2041,7 +2044,11 @@
                 "type": "fieldNote"
               }
             ],
-            "dispeller": "alpha"
+            "dispeller": "alpha",
+            "blueSpell": {
+              "name": "northhorn.blueMage.missile.name",
+              "icon": "occult-missile.png"
+            }
           }
         },
         {
@@ -2176,7 +2183,11 @@
                 "type": "fieldNote"
               }
             ],
-            "dispeller": "beta"
+            "dispeller": "beta",
+            "blueSpell": {
+              "name": "northhorn.blueMage.aero3.name",
+              "icon": "occult-aero-iii.png"
+            }
           }
         },
         {
@@ -2330,6 +2341,89 @@
           "position": {
             "x": 22.9,
             "y": 24.3
+          }
+        }
+      ]
+    },
+    "blueMage": {
+      "markerIcon": "blue-mage.png",
+      "waymarks": [
+        {
+          "name": "northhorn.blueMage.missile.name",
+          "@id": "onh_blue_missile",
+          "iconOverride": "occult-missile.png",
+          "position": {
+            "x": 37.62,
+            "y": 10.24
+          },
+          "metadata": {
+            "enemy": "northhorn.blueMage.missile.enemy",
+            "encounter": "northhorn.blueMage.missile.encounter"
+          }
+        },
+        {
+          "name": "northhorn.blueMage.aero3.name",
+          "@id": "onh_blue_aero3",
+          "iconOverride": "occult-aero-iii.png",
+          "position": {
+            "x": 11.10,
+            "y": 8.66
+          },
+          "metadata": {
+            "enemy": "northhorn.blueMage.aero3.enemy",
+            "encounter": "northhorn.blueMage.aero3.encounter"
+          }
+        },
+        {
+          "name": "northhorn.blueMage.aquabreath.name",
+          "@id": "onh_blue_aquabreath",
+          "iconOverride": "occult-aqua-breath.png",
+          "position": {
+            "x": 31,
+            "y": 8
+          },
+          "metadata": {
+            "enemy": "northhorn.blueMage.aquabreath.enemy",
+            "encounter": "northhorn.blueMage.aquabreath.encounter"
+          }
+        },
+        {
+          "name": "northhorn.blueMage.aero2.name",
+          "@id": "onh_blue_aero2",
+          "iconOverride": "occult-aero-ii.png",
+          "position": {
+            "x": 16,
+            "y": 37
+          },
+          "metadata": {
+            "enemy": "northhorn.blueMage.aero2.enemy",
+            "encounter": "northhorn.blueMage.aero2.encounter"
+          }
+        },
+        {
+          "name": "northhorn.blueMage.mightyguard.name",
+          "@id": "onh_blue_mightyguard",
+          "iconOverride": "occult-mighty-guard.png",
+          "position": {
+            "x": 38,
+            "y": 31
+          },
+          "metadata": {
+            "enemy": "northhorn.blueMage.mightyguard.enemy",
+            "encounter": "northhorn.blueMage.mightyguard.encounter"
+          }
+        },
+        {
+          "name": "northhorn.blueMage.whitewind.name",
+          "@id": "onh_blue_whitewind",
+          "iconOverride": "occult-white-wind.png",
+          "position": {
+            "x": 5,
+            "y": 36
+          },
+          "metadata": {
+            "enemy": "northhorn.blueMage.whitewind.enemy",
+            "encounter": "northhorn.blueMage.whitewind.encounter"
           }
         }
       ]
