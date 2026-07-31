@@ -1790,6 +1790,8 @@
             "y": 26.36
           },
           "metadata": {
+            "boss": "northhorn.fate.pot1.boss",
+            "weakness": "lightning",
             "dispeller": "beta"
           }
         },
@@ -1801,6 +1803,8 @@
             "y": 12.08
           },
           "metadata": {
+            "boss": "northhorn.fate.pot2.boss",
+            "weakness": "fire",
             "dispeller": "gamma"
           }
         }
@@ -1822,7 +1826,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.1.boss",
-            "dispeller": "beta"
+            "dispeller": "beta",
+            "weakness": "fire"
           }
         },
         {
@@ -1834,7 +1839,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.2.boss",
-            "dispeller": "gamma"
+            "dispeller": "gamma",
+            "weakness": "ice"
           }
         },
         {
@@ -1846,7 +1852,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.3.boss",
-            "dispeller": "alpha"
+            "dispeller": "alpha",
+            "weakness": "fire"
           }
         },
         {
@@ -1858,7 +1865,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.4.boss",
-            "dispeller": "alpha"
+            "dispeller": "alpha",
+            "weakness": "wind"
           }
         },
         {
@@ -1870,7 +1878,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.5.boss",
-            "dispeller": "beta"
+            "dispeller": "beta",
+            "weakness": "fire"
           }
         },
         {
@@ -1882,7 +1891,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.6.boss",
-            "dispeller": "gamma"
+            "dispeller": "gamma",
+            "weakness": "fire"
           }
         },
         {
@@ -1894,7 +1904,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.7.boss",
-            "dispeller": "beta"
+            "dispeller": "beta",
+            "weakness": "fire"
           }
         },
         {
@@ -1906,7 +1917,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.8.boss",
-            "dispeller": "alpha"
+            "dispeller": "alpha",
+            "weakness": "lightning"
           }
         },
         {
@@ -1918,7 +1930,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.9.boss",
-            "dispeller": "gamma"
+            "dispeller": "gamma",
+            "weakness": "wind"
           }
         },
         {
@@ -1930,7 +1943,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.10.boss",
-            "dispeller": "beta"
+            "dispeller": "beta",
+            "weakness": "fire"
           }
         },
         {
@@ -1942,7 +1956,8 @@
           },
           "metadata": {
             "boss": "northhorn.fate.11.boss",
-            "dispeller": "alpha"
+            "dispeller": "alpha",
+            "weakness": "fire"
           }
         }
       ]
@@ -1969,7 +1984,8 @@
                 "type": "fieldNote"
               }
             ],
-            "dispeller": "gamma"
+            "dispeller": "gamma",
+            "weakness": "ice"
           }
         },
         {
@@ -1981,7 +1997,8 @@
           },
           "metadata": {
             "boss": "northhorn.ce.2.boss",
-            "dispeller": "alpha"
+            "dispeller": "alpha",
+            "weakness": "ice"
           }
         },
         {
@@ -2000,11 +2017,7 @@
               }
             ],
             "dispeller": "gamma",
-            "spawnedBy": {
-              "type": "mob",
-              "name": "northhorn.ce.3.spawn",
-              "level": 0
-            }
+            "weakness": "lightning"
           }
         },
         {
@@ -2022,7 +2035,8 @@
                 "type": "fieldNote"
               }
             ],
-            "dispeller": "beta"
+            "dispeller": "beta",
+            "weakness": "lightning"
           }
         },
         {
@@ -2048,7 +2062,8 @@
             "blueSpell": {
               "name": "northhorn.blueMage.missile.name",
               "icon": "occult-missile.png"
-            }
+            },
+            "weakness": "fire"
           }
         },
         {
@@ -2060,7 +2075,8 @@
           },
           "metadata": {
             "boss": "northhorn.ce.6.boss",
-            "dispeller": "gamma"
+            "dispeller": "gamma",
+            "weakness": "lightning"
           }
         },
         {
@@ -2082,7 +2098,8 @@
                 "type": "fieldNote"
               }
             ],
-            "dispeller": "beta"
+            "dispeller": "beta",
+            "weakness": "wind"
           }
         },
         {
@@ -2094,7 +2111,8 @@
           },
           "metadata": {
             "boss": "northhorn.ce.8.boss",
-            "dispeller": "gamma"
+            "dispeller": "gamma",
+            "weakness": "ice"
           }
         },
         {
@@ -2106,7 +2124,13 @@
           },
           "metadata": {
             "boss": "northhorn.ce.9.boss",
-            "dispeller": "alpha"
+            "dispeller": "alpha",
+            "weakness": "ice",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "northhorn.ce.9.spawn",
+              "level": 0
+            }
           }
         },
         {
@@ -2124,7 +2148,8 @@
                 "type": "fieldNote"
               }
             ],
-            "dispeller": "beta"
+            "dispeller": "beta",
+            "weakness": "fire"
           }
         },
         {
@@ -2147,7 +2172,8 @@
               "type": "mob",
               "name": "northhorn.ce.11.spawn",
               "level": 0
-            }
+            },
+            "weakness": "fire"
           }
         },
         {
@@ -2165,7 +2191,8 @@
                 "type": "fieldNote"
               }
             ],
-            "dispeller": "alpha"
+            "dispeller": "alpha",
+            "weakness": "fire"
           }
         },
         {
@@ -2187,7 +2214,8 @@
             "blueSpell": {
               "name": "northhorn.blueMage.aero3.name",
               "icon": "occult-aero-iii.png"
-            }
+            },
+            "weakness": "lightning"
           }
         },
         {
@@ -2210,7 +2238,8 @@
               "type": "mob",
               "name": "northhorn.ce.14.spawn",
               "level": 0
-            }
+            },
+            "weakness": "wind"
           }
         },
         {
@@ -2222,7 +2251,13 @@
           },
           "metadata": {
             "boss": "northhorn.ce.15.boss",
-            "dispeller": "alpha"
+            "dispeller": "alpha",
+            "spawnedBy": {
+              "type": "mob",
+              "name": "northhorn.ce.15.spawn",
+              "level": 0
+            },
+            "weakness": "ice"
           }
         }
       ]

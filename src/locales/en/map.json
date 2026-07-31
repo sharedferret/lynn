@@ -7,6 +7,11 @@
           "beta": "Beta",
           "gamma": "Gamma"
         },
+        "accessory": {
+          "bracelet": "Bracelet",
+          "earring": "Earring",
+          "necklace": "Necklace"
+        },
         "namedLocation": {
           "1": "TBD"
         },
@@ -29,55 +34,55 @@
         "fate": {
           "pot1": {
             "name": "In a Pot of Bother",
-            "boss": ""
+            "boss": "Crescent Fan"
           },
           "pot2": {
             "name": "Daylight Pottery",
-            "boss": ""
+            "boss": "Crescent Gremlin"
           },
           "1": {
             "name": "Thunderregnum",
-            "boss": ""
+            "boss": "Creseregiana"
           },
           "2": {
             "name": "Scale Model",
-            "boss": ""
+            "boss": "Demi-Medusa"
           },
           "3": {
             "name": "Gale-force Encounter",
-            "boss": ""
+            "boss": "Stormcaller"
           },
           "4": {
             "name": "A Rotten Affair",
-            "boss": ""
+            "boss": "Patient Kuribu"
           },
           "5": {
             "name": "Territorial Dispute",
-            "boss": ""
+            "boss": "Ruin Hound"
           },
           "6": {
             "name": "Inconstant Gardener",
-            "boss": ""
+            "boss": "Iambe"
           },
           "7": {
             "name": "Allure of the Occult",
-            "boss": ""
+            "boss": "Sensual Sandy"
           },
           "8": {
             "name": "Waved Away",
-            "boss": ""
+            "boss": "Arch Kelpie"
           },
           "9": {
             "name": "Shoreline Showdown",
-            "boss": ""
+            "boss": "Regnant Chimera"
           },
           "10": {
             "name": "Eye to Eye",
-            "boss": ""
+            "boss": "Evil-seer"
           },
           "11": {
             "name": "Raging Thrall",
-            "boss": ""
+            "boss": "Machetaur"
           }
         },
         "ce": {
@@ -90,15 +95,14 @@
           },
           "2": {
             "name": "Ahead of the Competition",
-            "boss": ""
+            "boss": "Phantom Hydra"
           },
           "3": {
             "name": "Lost on the Wind",
             "boss": "Abductor",
             "drop": {
               "note": "Notes on the Abductor"
-            },
-            "spawn": "Crescent Wraith"
+            }
           },
           "4": {
             "name": "Tiny Terror",
@@ -117,7 +121,7 @@
           },
           "6": {
             "name": "Familiar Tactics",
-            "boss": ""
+            "boss": "Elm Gigas"
           },
           "7": {
             "name": "Dark Artistry",
@@ -129,11 +133,12 @@
           },
           "8": {
             "name": "A Beast Unleashed",
-            "boss": ""
+            "boss": "Atlas Carbuncle"
           },
           "9": {
             "name": "Web of Terror",
-            "boss": ""
+            "boss": "Crescent Arachne",
+            "spawn": "Crescent Hellhound"
           },
           "10": {
             "name": "Imbalanced Diet",
@@ -174,7 +179,8 @@
           },
           "15": {
             "name": "Many Mouths to Feed",
-            "boss": ""
+            "boss": "Pelekys",
+            "spawn": "Crescent Wamoura"
           }
         },
         "surveyPoint": {

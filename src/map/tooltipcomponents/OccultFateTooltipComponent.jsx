@@ -9,7 +9,12 @@ export default function OccultFateTooltipComponent({ markerData }) {
   return (
     <Stack>
       <Typography variant="h6">{t('map.captions.boss')}</Typography>
-      <Typography variant="button">{t(`map.regions.${markerData.metadata.boss}`)}</Typography>
+      <Stack direction="row" spacing={1} alignItems="center">
+        {markerData.metadata.weakness && (
+          <img src={`/assets/icons/weakness-${markerData.metadata.weakness}.png`} alt={`Weak to ${markerData.metadata.weakness}`} width={24} height={32} />
+        )}
+        <Typography variant="button">{t(`map.regions.${markerData.metadata.boss}`)}</Typography>
+      </Stack>
       {
         markerData.metadata.dispeller && (
           <Stack>
