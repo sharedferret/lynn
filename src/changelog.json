@@ -1,10 +1,11 @@
 {
   "changes": [
     {
-      "version": "31.1",
+      "version": "31.2",
       "timestamp": "2026-08-03",
       "changes": [
-        "hey uh which pot fate is the north one (fixed Pot Coffer FATE names for North/South coffers)"
+        "hey uh which pot fate is the north one (fixed Pot Coffer FATE names for North/South coffers)",
+        "Updated weakness icons and fixed weakness for A Rotten Affair FATE"
       ]
     },
     {

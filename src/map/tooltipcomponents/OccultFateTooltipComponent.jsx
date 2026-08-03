@@ -11,7 +11,13 @@ export default function OccultFateTooltipComponent({ markerData }) {
       <Typography variant="h6">{t('map.captions.boss')}</Typography>
       <Stack direction="row" spacing={1} alignItems="center">
         {markerData.metadata.weakness && (
-          <img src={`/assets/icons/weakness-${markerData.metadata.weakness}.png`} alt={`Weak to ${markerData.metadata.weakness}`} width={24} height={32} />
+          <img
+            src={`/assets/icons/weakness-${markerData.metadata.weakness}.png`}
+            alt={`Weak to ${markerData.metadata.weakness}`}
+            title={`Weak to ${markerData.metadata.weakness}`}
+            width={markerData.metadata.weakness === 'lightning,wind' ? 48 : 24}
+            height={32}
+          />
         )}
         <Typography variant="button">{t(`map.regions.${markerData.metadata.boss}`)}</Typography>
       </Stack>
@@ -20,7 +26,12 @@ export default function OccultFateTooltipComponent({ markerData }) {
           <Stack>
             <Typography variant="h6">{t('map.captions.dispeller')}</Typography>
             <Stack direction="row" spacing={1} alignItems="center">
-              <img src={`/assets/maps/markers/dispeller-${markerData.metadata.dispeller}.png`} alt={markerData.metadata.dispeller} width={24} height={24} />
+              <img
+                src={`/assets/maps/markers/dispeller-${markerData.metadata.dispeller}.png`}
+                alt={markerData.metadata.dispeller}
+                width={24}
+                height={24}
+              />
               <Typography variant="button">{t(`map.regions.northhorn.dispeller.${markerData.metadata.dispeller}`)}</Typography>
             </Stack>
           </Stack>

@@ -1900,7 +1900,7 @@
           "metadata": {
             "boss": "northhorn.fate.4.boss",
             "dispeller": "alpha",
-            "weakness": "wind"
+            "weakness": "lightning,wind"
           }
         },
         {
