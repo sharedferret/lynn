@@ -226,8 +226,8 @@
           }
         },
         "magicPotZone": {
-          "north": "North - In a Pot of Bother",
-          "south": "South - Daylight Pottery",
+          "north": "North - Daylight Pottery",
+          "south": "South - In a Pot of Bother",
           "reroll": "Second Chance"
         }
       },

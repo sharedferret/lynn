@@ -1,6 +1,13 @@
 {
   "changes": [
     {
+      "version": "31.1",
+      "timestamp": "2026-08-03",
+      "changes": [
+        "hey uh which pot fate is the north one (fixed Pot Coffer FATE names for North/South coffers)"
+      ]
+    },
+    {
       "version": "31.0",
       "timestamp": "2026-08-02",
       "changes": [
