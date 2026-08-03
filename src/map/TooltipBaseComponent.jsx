@@ -9,6 +9,7 @@ import AetheryteTooltipComponent from './tooltipcomponents/AetheryteTooltipCompo
 import BozjaCETooltipComponent from './tooltipcomponents/BozjaCETooltipComponent';
 import OccultBlueSpellComponent from './tooltipcomponents/OccultBlueSpellComponent';
 import OccultFateTooltipComponent from './tooltipcomponents/OccultFateTooltipComponent';
+import OccultTreasureTooltipComponent from './tooltipcomponents/OccultTreasureTooltipComponent';
 
 export default function TooltipBaseComponent(
   {
@@ -31,6 +32,12 @@ export default function TooltipBaseComponent(
         return <OccultFateTooltipComponent markerData={markerData} />;
       case 'blueMage':
         return <OccultBlueSpellComponent markerData={markerData} />;
+      case 'magicPotCoffersNorth':
+        return <OccultTreasureTooltipComponent markerData={markerData} type="north" />;
+      case 'magicPotCoffersSouth':
+        return <OccultTreasureTooltipComponent markerData={markerData} type="south" />;
+      case 'magicPotCoffersReroll':
+        return <OccultTreasureTooltipComponent markerData={markerData} type="reroll" />;
       default:
         return null;
     }

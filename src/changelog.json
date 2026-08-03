@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "version": "31.0",
+      "timestamp": "2026-08-02",
+      "changes": [
+        "Split North Horn Pot Coffer locations into North, South, and Second Chance",
+        "Updated display of pot coffer and Blue Mage spell tooltips",
+        "Changed the location of a few menu items for North Horn map"
+      ]
+    },
+    {
       "version": "30.2",
       "timestamp": "2026-07-30",
       "changes": [

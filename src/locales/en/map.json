@@ -24,12 +24,10 @@
           "6": "Unhallowed Hamlet"
         },
         "treasureCoffer": {
-          "bronze": "Bronze Treasure Coffer Spawn Location",
-          "silver": "Silver Treasure Coffer Spawn Location",
-          "pot": "Magic Pot Coffer Spawn Location",
-          "pot_unv": "Magic Pot Coffer Spawn Location (Unverified)",
-          "carrot": "Half-Eaten Carrot Spawn Location",
-          "carrot_unv": "Half-Eaten Carrot Spawn Location (Unverified)"
+          "bronze": "Bronze Treasure Coffer",
+          "silver": "Silver Treasure Coffer",
+          "pot": "Magic Pot Coffer",
+          "carrot": "Carrot Spawn"
         },
         "fate": {
           "pot1": {
@@ -207,8 +205,7 @@
           },
           "aero2": {
             "name": "Occult Aero II",
-            "enemy": "Crescent Anila",
-            "encounter": "Mob"
+            "enemy": "Crescent Anila"
           },
           "aero3": {
             "name": "Occult Aero III",
@@ -217,19 +214,21 @@
           },
           "aquabreath": {
             "name": "Occult Aqua Breath",
-            "enemy": "Crescent Stoneshell",
-            "encounter": "Mob"
+            "enemy": "Crescent Stoneshell"
           },
           "mightyguard": {
             "name": "Occult Mighty Guard",
-            "enemy": "Crescent Bibliotaph",
-            "encounter": "Mob"
+            "enemy": "Crescent Bibliotaph"
           },
           "whitewind": {
             "name": "Occult White Wind",
-            "enemy": "Crescent Flame",
-            "encounter": "Mob"
+            "enemy": "Crescent Flame"
           }
+        },
+        "magicPotZone": {
+          "north": "North - In a Pot of Bother",
+          "south": "South - Daylight Pottery",
+          "reroll": "Second Chance"
         }
       },
       "southhorn": {
@@ -804,9 +803,11 @@
     },
     "category": {
       "general": "General",
+      "treasure": "Treasure",
       "encounters": "Encounters",
       "enemies": "Enemies",
-      "progression": "Progression"
+      "progression": "Progression",
+      "magicPotCoffers": "Magic Pot Coffers"
     },
     "layer": {
       "namedLocations": "Named Locations",
@@ -814,7 +815,7 @@
       "traders": "Traders",
       "repair": "Repair",
       "treasureCoffers": "Treasure Coffers",
-      "carrots": "Half-Eaten Carrots",
+      "carrots": "Carrot Spawns",
       "fates": "FATEs",
       "magicPotFates": "Magic Pot FATEs",
       "criticalEngagements": "Critical Engagements",
@@ -841,7 +842,10 @@
       "nmPrepMobs": "NM Prep Mobs",
       "sprites": "Sprites",
       "sanguineRecluse": "Sanguine Recluse",
-      "blueMage": "Blue Mage Spells"
+      "blueMage": "Blue Mage Spells",
+      "magicPotCoffersNorth": "North FATE",
+      "magicPotCoffersSouth": "South FATE",
+      "magicPotCoffersReroll": "Second Chance"
     },
     "captions": {
       "ce": "Critical Engagement",
