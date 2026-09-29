@@ -1,6 +1,13 @@
 {
   "changes": [
     {
+      "version": "31.4",
+      "timestamp": "2026-09-28",
+      "changes": [
+        "Updated locations for some North Horn pot coffers after Square changed them"
+      ]
+    },
+    {
       "version": "31.2",
       "timestamp": "2026-08-03",
       "changes": [

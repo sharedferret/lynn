@@ -899,7 +899,7 @@
           "@id": "onh_potcoffer12",
           "position": {
             "x": 35.77,
-            "y": 26.73
+            "y": 26.94
           }
         },
                 {
@@ -1119,8 +1119,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer06",
           "position": {
-            "x": 18.03,
-            "y": 23.54
+            "x": 17.66,
+            "y": 24.16
           }
         },
         {
@@ -1128,8 +1128,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer07",
           "position": {
-            "x": 17.79,
-            "y": 34.84
+            "x": 17.88,
+            "y": 35.02
           }
         },
         {
@@ -1173,8 +1173,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer14",
           "position": {
-            "x": 4.8,
-            "y": 9.73
+            "x": 4.92,
+            "y": 10.20
           }
         },
         {
@@ -1237,8 +1237,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer26",
           "position": {
-            "x": 18.94,
-            "y": 37.65
+            "x": 18.98,
+            "y": 37.59
           }
         },
         {
@@ -1246,7 +1246,7 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer27",
           "position": {
-            "x": 21.5,
+            "x": 21.38,
             "y": 33.95
           }
         },
@@ -1282,7 +1282,7 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer38",
           "position": {
-            "x": 16.29,
+            "x": 16.11,
             "y": 22.62
           }
         },
@@ -1292,8 +1292,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer42",
           "position": {
-            "x": 6.53,
-            "y": 11.64
+            "x": 6.16,
+            "y": 11.38
           }
         },
         
@@ -1408,8 +1408,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer34",
           "position": {
-            "x": 4.68,
-            "y": 36.28
+            "x": 5.90,
+            "y": 35.30
           }
         },
         {
@@ -1417,8 +1417,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer49",
           "position": {
-            "x": 8.26,
-            "y": 40.22
+            "x": 8.19,
+            "y": 40.17
           }
         },
         
@@ -1454,8 +1454,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer65",
           "position": {
-            "x": 5.3,
-            "y": 3.9
+            "x": 5.17,
+            "y": 4.11
           }
         },
         {
@@ -1509,8 +1509,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer72",
           "position": {
-            "x": 8.84,
-            "y": 37.66
+            "x": 8.91,
+            "y": 37.76
           }
         },
         
@@ -1537,8 +1537,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer76",
           "position": {
-            "x": 8.74,
-            "y": 4.1
+            "x": 9.49,
+            "y": 3.98
           }
         },
         {
@@ -1573,8 +1573,8 @@
           "popupTitle": "northhorn.treasureCoffer.pot",
           "@id": "onh_potcoffer80",
           "position": {
-            "x": 9.78,
-            "y": 38.32
+            "x": 9.81,
+            "y": 38.28
           }
         }
       ]
