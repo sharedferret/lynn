@@ -8,9 +8,8 @@ import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import useTheme from '@mui/material/styles/useTheme';
+import { useTheme } from '@mui/material/styles';
 import groupBy from 'underscore/modules/groupBy';
-import { v4 as uuidv4 } from 'uuid';
 import EurekaLogosActionHelper from './lib/EurekaLogosActionHelper';
 import EurekaLogosActionInformationTooltipComponent from './EurekaLogosActionInformationTooltipComponent';
 
@@ -22,7 +21,7 @@ export default function EurekaLogosActionSelectorComponent({ logosAction, handle
     for (let i = 0; i < items.length; i += 1) {
       const action = items[i];
       menuItems.push(
-        <MenuItem value={action.full} key={`selector-${uuidv4()}`}>
+        <MenuItem value={action.full} key={`selector-${crypto.randomUUID()}`}>
           <Tooltip
             arrow
             placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
@@ -38,7 +37,13 @@ export default function EurekaLogosActionSelectorComponent({ logosAction, handle
                 : ''
             }
           >
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
                 alt={action.full}
@@ -62,37 +67,37 @@ export default function EurekaLogosActionSelectorComponent({ logosAction, handle
     const menuItems = [];
 
     menuItems.push(
-      <MenuItem value="" key={`selector-${uuidv4()}`}>None</MenuItem>,
+      <MenuItem value="" key={`selector-${crypto.randomUUID()}`}>None</MenuItem>,
     );
 
     menuItems.push(
-      <Divider textAlign="left" key={`selector-${uuidv4()}`}>Wisdoms</Divider>,
+      <Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Wisdoms</Divider>,
     );
     menuItems.push(
       ...(renderSelectorMenuSection(actionsBySection.wisdom)),
     );
 
     menuItems.push(
-      <Divider textAlign="left" key={`selector-${uuidv4()}`}>Spirits</Divider>,
+      <Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Spirits</Divider>,
     );
     menuItems.push(
       ...(renderSelectorMenuSection(actionsBySection.spirit)),
     );
 
     menuItems.push(
-      <Divider textAlign="left" key={`selector-${uuidv4()}`}>Personal Actions</Divider>,
+      <Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Personal Actions</Divider>,
     );
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.personalAction)));
 
     menuItems.push(
-      <Divider textAlign="left" key={`selector-${uuidv4()}`}>Beneficial Actions</Divider>,
+      <Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Beneficial Actions</Divider>,
     );
     menuItems.push(
       ...(renderSelectorMenuSection(actionsBySection.beneficialAction)),
     );
 
     menuItems.push(
-      <Divider textAlign="left" key={`selector-${uuidv4()}`}>Other Actions</Divider>,
+      <Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Other Actions</Divider>,
     );
     menuItems.push(
       ...(renderSelectorMenuSection(actionsBySection.otherAction)),
@@ -104,8 +109,19 @@ export default function EurekaLogosActionSelectorComponent({ logosAction, handle
   const renderSelectedAction = useCallback((actionName) => {
     if (actionName === '') {
       return (
-        <Stack direction="row" spacing={2} alignItems="center">
-          <Box width={32} height={32} />
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
+          <Box
+            sx={{
+              width: 32,
+              height: 32,
+            }}
+          />
           <Typography>None</Typography>
         </Stack>
       );
@@ -114,7 +130,13 @@ export default function EurekaLogosActionSelectorComponent({ logosAction, handle
     const action = EurekaLogosActionHelper.getLogosActionData(actionName);
 
     return (
-      <Stack direction="row" spacing={2} alignItems="center">
+      <Stack
+        direction="row"
+        spacing={2}
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         <img
           src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
           width={32}
@@ -133,7 +155,10 @@ export default function EurekaLogosActionSelectorComponent({ logosAction, handle
   const menuItems = renderSelectorMenu();
 
   return (
-    <Box width={325}>
+    <Box sx={{
+      width: 325,
+    }}
+    >
       <Stack direction="row">
         <FormControl sx={{ width: 325 }}>
           <Select

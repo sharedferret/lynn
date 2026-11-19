@@ -39,18 +39,47 @@ export default function OccultPhantomJobHelperComponent({ phantomJob }) {
   return (
     <Box
       component="main"
-      margin="auto"
-      sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
+      sx={{
+        margin: 'auto',
+        flexGrow: 1,
+        pt: { xs: 14, md: 5 },
+      }}
     >
       <Container maxWidth="lg">
 
-        <Box p={3}>
-          <Stack spacing={2} minHeight={100} p={1} alignItems="center">
-            <Typography fontWeight={700} variant="h4"><Trans i18nKey="job-helper.title" ns="occult" /></Typography>
+        <Box sx={{
+          p: 3,
+        }}
+        >
+          <Stack
+            spacing={2}
+            sx={{
+              minHeight: 100,
+              p: 1,
+              alignItems: 'center',
+            }}
+          >
+            <Typography
+              variant="h4"
+              sx={{
+                fontWeight: 700,
+              }}
+            >
+              <Trans i18nKey="job-helper.title" ns="occult" />
+            </Typography>
             <OccultPhantomJobIconSelectorComponent handleJobUpdate={handleJobUpdate} />
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <Typography><Trans i18nKey="job-helper.label" ns="occult" /></Typography>
-              <Box width={325}>
+              <Box sx={{
+                width: 325,
+              }}
+              >
                 <OccultPhantomJobSelectorComponent
                   phantomJob={jobState}
                   handleJobUpdate={handleJobUpdate}

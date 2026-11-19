@@ -18,7 +18,15 @@ import './ForecastResultComponent.css';
 export default function ForecastResultComponent({ result, isCollection }) {
   return (
     <Paper variant="outlined" className="ForecastResultPaper">
-      <Stack direction="row" spacing={2} minHeight={70} height="100%" p={1}>
+      <Stack
+        direction="row"
+        spacing={2}
+        sx={{
+          minHeight: 70,
+          height: '100%',
+          p: 1,
+        }}
+      >
         <ForecastResultDateComponent
           time={result.time}
         />

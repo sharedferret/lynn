@@ -36,10 +36,20 @@ export default function MobileTopbarComponent({ handleDrawerToggle, host }) {
         >
           <MenuIcon />
         </IconButton>
-        <Box height={80} />
+        <Box sx={{
+          height: 80,
+        }}
+        />
         <Box>
           <a href="./">
-            <Typography fontSize="30px" color="#fecaca">{getSiteName()}</Typography>
+            <Typography
+              sx={{
+                fontSize: '30px',
+                color: '#fecaca',
+              }}
+            >
+              {getSiteName()}
+            </Typography>
           </a>
         </Box>
       </Toolbar>

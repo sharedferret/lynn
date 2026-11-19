@@ -1,6 +1,13 @@
 {
   "changes": [
     {
+      "version": "32.0",
+      "timestamp": "2026-11-18",
+      "changes": [
+        "Update package versions"
+      ]
+    },
+    {
       "version": "31.4",
       "timestamp": "2026-09-28",
       "changes": [

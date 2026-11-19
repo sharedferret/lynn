@@ -10,7 +10,12 @@ export default function BozjaCETooltipComponent({ markerData }) {
   const renderSpawnedBy = () => {
     if (markerData.metadata.spawnedBy) {
       return (
-        <Stack direction="row" alignItems="center">
+        <Stack
+          direction="row"
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <Box>
             <img
               src={`${process.env.PUBLIC_URL}/assets/maps/markers/${markerData.metadata.spawnedBy.type}.png`}
@@ -29,7 +34,13 @@ export default function BozjaCETooltipComponent({ markerData }) {
   const renderRewards = () => {
     if (markerData.metadata.rewards) {
       return markerData.metadata.rewards.map((reward) => (
-        <Stack direction="row" alignItems="center" spacing={1}>
+        <Stack
+          direction="row"
+          spacing={1}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <Box>
             <img
               src={`${process.env.PUBLIC_URL}/assets/maps/markers/${reward.type}.png`}
@@ -49,7 +60,13 @@ export default function BozjaCETooltipComponent({ markerData }) {
     <Stack>
       <Typography variant="h6">{t('map.captions.ce')}</Typography>
       <Typography variant="h6">{t('map.captions.boss')}</Typography>
-      <Stack direction="row" spacing={1} alignItems="center">
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         {markerData.metadata.weakness && (
           <img src={`/assets/icons/weakness-${markerData.metadata.weakness}.png`} alt={`Weak to ${markerData.metadata.weakness}`} width={24} height={32} />
         )}
@@ -63,7 +80,13 @@ export default function BozjaCETooltipComponent({ markerData }) {
         markerData.metadata.dispeller && (
           <Stack>
             <Typography variant="h6">{t('map.captions.dispeller')}</Typography>
-            <Stack direction="row" spacing={1} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img src={`/assets/maps/markers/dispeller-${markerData.metadata.dispeller}.png`} alt={markerData.metadata.dispeller} width={24} height={24} />
               <Typography variant="button">{t(`map.regions.northhorn.dispeller.${markerData.metadata.dispeller}`)}</Typography>
             </Stack>
@@ -74,7 +97,13 @@ export default function BozjaCETooltipComponent({ markerData }) {
         markerData.metadata.blueSpell && (
           <Stack>
             <Typography variant="h6">{t('map.captions.blueSpell')}</Typography>
-            <Stack direction="row" spacing={1} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img src={`/assets/maps/markers/${markerData.metadata.blueSpell.icon}`} alt={markerData.metadata.blueSpell.name} width={24} height={24} />
               <Typography variant="button">{t(`map.regions.${markerData.metadata.blueSpell.name}`)}</Typography>
             </Stack>

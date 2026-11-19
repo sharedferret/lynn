@@ -1,5 +1,4 @@
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -19,7 +18,13 @@ export default function ActionAcquisitionMethodNMCard({ methodData }) {
   return (
     <Card sx={{ minWidth: 275, minHeight: 300 }}>
       <CardContent>
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/eureka/notorious_monster.png`}
             width={36}
@@ -28,17 +33,29 @@ export default function ActionAcquisitionMethodNMCard({ methodData }) {
           />
           <Typography variant="h5">Notorious Monsters</Typography>
         </Stack>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>{map}</Typography>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Stack spacing={2}>
           {methodData.fates.map((i) => (
-            <Stack key={uuidv4()}>
-              <Stack direction="row" alignItems="center" key={`skirmish-${i}`}>
+            <Stack key={crypto.randomUUID()}>
+              <Stack
+                direction="row"
+                key={`skirmish-${i}`}
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
                 <Typography>
                   Lv
                   {i.level}
@@ -51,8 +68,17 @@ export default function ActionAcquisitionMethodNMCard({ methodData }) {
                 />
                 <Typography>{i.mob}</Typography>
               </Stack>
-              <Stack direction="row" alignItems="center" spacing={1}>
-                <Box width={6} />
+              <Stack
+                direction="row"
+                spacing={1}
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
+                <Box sx={{
+                  width: 6,
+                }}
+                />
                 <img
                   src={`${process.env.PUBLIC_URL}/assets/eureka/notorious_monster.png`}
                   width={24}
@@ -64,9 +90,20 @@ export default function ActionAcquisitionMethodNMCard({ methodData }) {
               {
                 i.spawned_by
                   ? (
-                    <Stack direction="row" alignItems="center">
-                      <Box width={48} />
-                      <Typography fontStyle="italic">
+                    <Stack
+                      direction="row"
+                      sx={{
+                        alignItems: 'center',
+                      }}
+                    >
+                      <Box sx={{
+                        width: 48,
+                      }}
+                      />
+                      <Typography sx={{
+                        fontStyle: 'italic',
+                      }}
+                      >
                         prepped by
                         {' '}
                         {i.spawned_by}
@@ -80,9 +117,20 @@ export default function ActionAcquisitionMethodNMCard({ methodData }) {
               {
                 i.weather
                   ? (
-                    <Stack direction="row" alignItems="center">
-                      <Box width={48} />
-                      <Typography fontStyle="italic">
+                    <Stack
+                      direction="row"
+                      sx={{
+                        alignItems: 'center',
+                      }}
+                    >
+                      <Box sx={{
+                        width: 48,
+                      }}
+                      />
+                      <Typography sx={{
+                        fontStyle: 'italic',
+                      }}
+                      >
                         during
                         {' '}
                         {i.weather}

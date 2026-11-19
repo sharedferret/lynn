@@ -14,7 +14,6 @@ import Typography from '@mui/material/Typography';
 import EorzeaTime from 'eorzea-time';
 import EorzeaWeather from 'lynn-eorzea-weather';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { v4 as uuidv4 } from 'uuid';
 import dayjs from 'dayjs';
 import { useTranslation } from 'react-i18next';
 import UpcomingSpawnCalculator from './forecast/lib/UpcomingSpawnCalculator';
@@ -88,31 +87,49 @@ export default function TimeAndWeatherPopoverComponent() {
     <Stack
       direction="row"
       spacing={1}
-      alignItems="center"
-      justifyContent="center"
-      key={uuidv4()}
+      key={crypto.randomUUID()}
+      sx={{
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
     >
       <Box>
-        <Typography width={300}>{name}</Typography>
+        <Typography sx={{
+          width: 300,
+        }}
+        >
+          {name}
+        </Typography>
       </Box>
       <Stack
         direction="row"
         spacing={1}
-        justifyContent="center"
-        alignItems="center"
+        sx={{
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
       >
         {conditions.map((item, index) => (
           <Tooltip
             title={(
               <Stack>
-                <Typography textAlign="center">
+                <Typography sx={{
+                  textAlign: 'center',
+                }}
+                >
                   {item.condition}
                 </Typography>
-                <Typography textAlign="center">
+                <Typography sx={{
+                  textAlign: 'center',
+                }}
+                >
                   {dayjs(item.time.getTime())
                     .format('h:mm:ss A')}
                 </Typography>
-                <Typography textAlign="center">
+                <Typography sx={{
+                  textAlign: 'center',
+                }}
+                >
                   {
                   new EorzeaTime(
                     dayjs(item.time.getTime())
@@ -133,14 +150,20 @@ export default function TimeAndWeatherPopoverComponent() {
                 </Typography>
               </Stack>
           )}
-            key={uuidv4()}
+            key={crypto.randomUUID()}
           >
-            <Stack direction="row" alignItems="center">
+            <Stack
+              direction="row"
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <Grid
-                item
                 className="IconImageBox"
-                key={uuidv4()}
-                width={32}
+                key={crypto.randomUUID()}
+                sx={{
+                  width: 32,
+                }}
               >
                 <img
                   className="IconImage"
@@ -188,13 +211,33 @@ export default function TimeAndWeatherPopoverComponent() {
 
   const timeWidget = (
     <>
-      <Box pr={2} style={{ cursor: 'pointer' }} onClick={(e) => handleTimeWidgetClick(e)}>
-        <Typography color="#fff" fontWeight={600} fontSize={16}>{time}</Typography>
+      <Box
+        style={{ cursor: 'pointer' }}
+        onClick={(e) => handleTimeWidgetClick(e)}
+        sx={{
+          pr: 2,
+        }}
+      >
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
+          {time}
+        </Typography>
       </Box>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>{t('weather-popover.current-time')}</DialogTitle>
         <DialogContent>
-          <Typography fontWeight={700} fontSize={24} pl={2}>
+          <Typography
+            sx={{
+              fontWeight: 700,
+              fontSize: 24,
+              pl: 2,
+            }}
+          >
             {time}
             {' '}
             ET
@@ -204,12 +247,35 @@ export default function TimeAndWeatherPopoverComponent() {
         <DialogContent>
           <Stack divider={<Divider variant="middle" />} spacing={1}>
             <Stack direction="row" spacing={1}>
-              <Box width={297} />
+              <Box sx={{
+                width: 297,
+              }}
+              />
               <Typography>{weatherTimes[0]}</Typography>
-              <Typography pl={1.3}>{weatherTimes[1]}</Typography>
-              <Typography pl={1.3}>{weatherTimes[2]}</Typography>
-              <Typography pl={1.3}>{weatherTimes[3]}</Typography>
-              <Typography pl={1.3}>{weatherTimes[4]}</Typography>
+              <Typography sx={{
+                pl: 1.3,
+              }}
+              >
+                {weatherTimes[1]}
+              </Typography>
+              <Typography sx={{
+                pl: 1.3,
+              }}
+              >
+                {weatherTimes[2]}
+              </Typography>
+              <Typography sx={{
+                pl: 1.3,
+              }}
+              >
+                {weatherTimes[3]}
+              </Typography>
+              <Typography sx={{
+                pl: 1.3,
+              }}
+              >
+                {weatherTimes[4]}
+              </Typography>
             </Stack>
             {regionsToFetchWeatherFor.map(
               (region) => (

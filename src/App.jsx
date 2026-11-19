@@ -3,8 +3,7 @@ import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
 import { I18nextProvider } from 'react-i18next';
 
-import createTheme from '@mui/material/styles/createTheme';
-import ThemeProvider from '@mui/material/styles/ThemeProvider';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {
   createBrowserRouter,
   RouterProvider,

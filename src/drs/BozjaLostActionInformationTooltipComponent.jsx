@@ -6,27 +6,81 @@ import ScaleIcon from '@mui/icons-material/Scale';
 
 export default function BozjaLostActionInformationTooltipComponent({ lostAction, actionData }) {
   return (
-    <Box maxWidth={{ md: 400 }}>
-      <Stack pt={2} pb={2} spacing={1}>
-        <Stack direction="row" alignItems="center" pl={2} pr={1}>
+    <Box sx={{
+      maxWidth: { md: 400 },
+    }}
+    >
+      <Stack
+        spacing={1}
+        sx={{
+          pt: 2,
+          pb: 2,
+        }}
+      >
+        <Stack
+          direction="row"
+          sx={{
+            alignItems: 'center',
+            pl: 2,
+            pr: 1,
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/lostactions/${actionData.image}.jpg`}
             width={32}
             height={32}
             alt={lostAction}
           />
-          <Box width={12} />
-          <Typography fontWeight={700}>{lostAction}</Typography>
-          <Box flexGrow={1} />
+          <Box sx={{
+            width: 12,
+          }}
+          />
+          <Typography sx={{
+            fontWeight: 700,
+          }}
+          >
+            {lostAction}
+          </Typography>
+          <Box sx={{
+            flexGrow: 1,
+          }}
+          />
           <ScaleIcon />
-          <Typography fontWeight={700} pr={3} pl={1}>{actionData.weight}</Typography>
+          <Typography
+            sx={{
+              fontWeight: 700,
+              pr: 3,
+              pl: 1,
+            }}
+          >
+            {actionData.weight}
+          </Typography>
         </Stack>
 
-        <Stack direction="row" pl={2} alignItems="center" spacing={2}>
-          <Typography fontWeight={700} fontSize={10}>{actionData.abilityType}</Typography>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            pl: 2,
+            alignItems: 'center',
+          }}
+        >
+          <Typography
+            sx={{
+              fontWeight: 700,
+              fontSize: 10,
+            }}
+          >
+            {actionData.abilityType}
+          </Typography>
           {actionData.duration
             ? (
-              <Typography fontWeight={700} fontSize={10}>
+              <Typography
+                sx={{
+                  fontWeight: 700,
+                  fontSize: 10,
+                }}
+              >
                 Duration:
                 {' '}
                 {actionData.duration}
@@ -35,7 +89,12 @@ export default function BozjaLostActionInformationTooltipComponent({ lostAction,
             : null}
           {actionData.castTime
             ? (
-              <Typography fontWeight={700} fontSize={10}>
+              <Typography
+                sx={{
+                  fontWeight: 700,
+                  fontSize: 10,
+                }}
+              >
                 Cast:
                 {' '}
                 {actionData.castTime}
@@ -45,7 +104,12 @@ export default function BozjaLostActionInformationTooltipComponent({ lostAction,
             : null}
           {actionData.recastTime
             ? (
-              <Typography fontWeight={700} fontSize={10}>
+              <Typography
+                sx={{
+                  fontWeight: 700,
+                  fontSize: 10,
+                }}
+              >
                 Recast:
                 {' '}
                 {actionData.recastTime}
@@ -55,7 +119,12 @@ export default function BozjaLostActionInformationTooltipComponent({ lostAction,
             : null}
           {actionData.mpCost
             ? (
-              <Typography fontWeight={700} fontSize={10}>
+              <Typography
+                sx={{
+                  fontWeight: 700,
+                  fontSize: 10,
+                }}
+              >
                 MP:
                 {' '}
                 {actionData.mpCost}
@@ -64,7 +133,12 @@ export default function BozjaLostActionInformationTooltipComponent({ lostAction,
             : null}
           {actionData.charges
             ? (
-              <Typography fontWeight={700} fontSize={10}>
+              <Typography
+                sx={{
+                  fontWeight: 700,
+                  fontSize: 10,
+                }}
+              >
                 Charges:
                 {' '}
                 {actionData.charges}
@@ -74,21 +148,39 @@ export default function BozjaLostActionInformationTooltipComponent({ lostAction,
 
         </Stack>
         <Typography
-          textAlign="left"
-          pl={2}
-          pr={1}
           style={{ whiteSpace: 'pre-wrap' }}
-          fontSize={12}
+          sx={{
+            textAlign: 'left',
+            pl: 2,
+            pr: 1,
+            fontSize: 12,
+          }}
         >
           {actionData.actionText}
         </Typography>
-        <Typography fontWeight={700} fontSize={10} textAlign="left" pl={2} pr={1}>
+        <Typography
+          sx={{
+            fontWeight: 700,
+            fontSize: 10,
+            textAlign: 'left',
+            pl: 2,
+            pr: 1,
+          }}
+        >
           Rank:
           {' '}
           {actionData.rank}
         </Typography>
         <Stack direction="row" spacing={1}>
-          <Typography fontWeight={700} pl={2} fontSize={10}>Usable by:</Typography>
+          <Typography
+            sx={{
+              fontWeight: 700,
+              pl: 2,
+              fontSize: 10,
+            }}
+          >
+            Usable by:
+          </Typography>
           {
             actionData.roles.map((i) => (
               <Box>

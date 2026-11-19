@@ -113,14 +113,29 @@ export default function DRSRunCreatorSingleHolsterComponent({
 
   return (
     <Paper alignSelf="center" elevation={3}>
-      <Stack alignItems="flex-start" spacing={2} width={600} p={2}>
-        <Stack direction="row" width="100%">
+      <Stack
+        spacing={2}
+        sx={{
+          alignItems: 'flex-start',
+          width: 600,
+          p: 2,
+        }}
+      >
+        <Stack
+          direction="row"
+          sx={{
+            width: '100%',
+          }}
+        >
           <Typography variant="h6">
             Holster
             {' '}
             {index + 1}
           </Typography>
-          <Box ml="auto" />
+          <Box sx={{
+            ml: 'auto',
+          }}
+          />
           <Button
             variant="outlined"
             size="small"

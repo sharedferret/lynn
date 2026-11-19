@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Tooltip from '@mui/material/Tooltip';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import useTheme from '@mui/material/styles/useTheme';
+import { useTheme } from '@mui/material/styles';
 import React from 'react';
 import OccultPhantomJobInformationTooltipComponent from './OccultPhantomJobInformationTooltipComponent';
 
@@ -16,12 +16,14 @@ export default function OccultPhantomJobIconSelectorComponent({ handleJobUpdate 
     <Grid
       container
       columns={10}
-      maxWidth={375}
+      sx={{
+        maxWidth: 375,
+      }}
     >
       {jobNames.map((i) => {
         const job = phantomJobs.phantomJobs[i];
         return (
-          <Grid item xs={1}>
+          <Grid size={1}>
             <Box
               onClick={() => handleJobUpdate({ target: { value: i } })}
               style={{ cursor: 'pointer' }}

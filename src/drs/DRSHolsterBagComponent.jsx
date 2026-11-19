@@ -5,7 +5,6 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 
-import { v4 as uuidv4 } from 'uuid';
 import DRSBagLostActionComponent from './DRSBagLostActionComponent';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 
@@ -45,46 +44,91 @@ export default function DRSHolsterBagComponent({ holsterData, bagType, handleHol
   const overweightSx = { color: 'red' };
 
   return (
-    <Box width={525} sx={{ border: 1, borderRadius: '12px', borderColor: '#ddd' }}>
+    <Box
+      sx={{
+        width: 525,
+        border: 1,
+        borderRadius: '12px',
+        borderColor: '#ddd',
+      }}
+    >
       <Stack>
-        <Typography fontSize={30} fontWeight={700}>
+        <Typography
+          sx={{
+            fontSize: 30,
+            fontWeight: 700,
+          }}
+        >
           {bagType === 'prepop' ? 'Pre-Pop' : 'Main'}
         </Typography>
-        <Stack spacing={1} p={1}>
+        <Stack
+          spacing={1}
+          sx={{
+            p: 1,
+          }}
+        >
           {actions.map((i, index) => (
             <DRSBagLostActionComponent
               actionName={i.name}
               actionQuantity={i.quantity}
               index={index}
               handleLostActionUpdate={handleLostActionUpdate}
-              key={`action-${uuidv4()}`}
+              key={`action-${crypto.randomUUID()}`}
             />
           ))}
 
         </Stack>
-        <Stack direction="row" p={1} width={475} alignItems="middle" justifyContent="middle">
-          <Box pl={2}>
+        <Stack
+          direction="row"
+          sx={{
+            p: 1,
+            width: 475,
+            alignItems: 'middle',
+            justifyContent: 'middle',
+          }}
+        >
+          <Box sx={{
+            pl: 2,
+          }}
+          >
             <Stack
               direction="row"
               spacing={1}
-              sx={{ border: 1, borderRadius: '12px', borderColor: '#ddd' }}
-              p={1}
               style={{ cursor: 'pointer' }}
               onClick={handleAddNewAction}
+              sx={{
+                p: 1,
+                border: 1,
+                borderRadius: '12px',
+                borderColor: '#ddd',
+              }}
             >
               <AddCircleIcon />
               <Typography>Add Action</Typography>
             </Stack>
           </Box>
 
-          <Box flexGrow={1} />
+          <Box sx={{
+            flexGrow: 1,
+          }}
+          />
           <Box>
-            <Stack direction="row" height="100%" alignItems="center">
+            <Stack
+              direction="row"
+              sx={{
+                height: '100%',
+                alignItems: 'center',
+              }}
+            >
               <Typography align="right">Total Weight: </Typography>
-              <Box width={10} />
+              <Box sx={{
+                width: 10,
+              }}
+              />
               <Typography
-                fontWeight={700}
-                sx={bagWeight > 99 ? overweightSx : null}
+                sx={[{
+                  fontWeight: 700,
+                }, bagWeight > 99 ? overweightSx : null]}
               >
                 {bagWeight}
               </Typography>

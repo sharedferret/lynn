@@ -51,18 +51,47 @@ export default function EurekaLogosActionHelperComponent({ logosAction }) {
   return (
     <Box
       component="main"
-      margin="auto"
-      sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
+      sx={{
+        margin: 'auto',
+        flexGrow: 1,
+        pt: { xs: 14, md: 5 },
+      }}
     >
-      <Box minHeight={600}>
-        <Stack spacing={2} minHeight={100} p={1} alignItems="center">
-          <Typography fontWeight={700} variant="h4">Eureka Logos Action Helper</Typography>
+      <Box sx={{
+        minHeight: 600,
+      }}
+      >
+        <Stack
+          spacing={2}
+          sx={{
+            minHeight: 100,
+            p: 1,
+            alignItems: 'center',
+          }}
+        >
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 700,
+            }}
+          >
+            Eureka Logos Action Helper
+          </Typography>
           <EurekaLogosActionIconSelectorComponent
             handleActionUpdate={handleActionUpdate}
           />
-          <Stack direction="row" spacing={2} alignItems="center">
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <Typography>Action: </Typography>
-            <Box width={325}>
+            <Box sx={{
+              width: 325,
+            }}
+            >
               <EurekaLogosActionSelectorComponent
                 logosAction={logosActionState}
                 handleActionUpdate={handleActionUpdate}

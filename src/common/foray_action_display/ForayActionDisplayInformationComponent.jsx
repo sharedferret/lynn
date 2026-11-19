@@ -17,9 +17,24 @@ export default function ForayActionDisplayInformationComponent({
   function getTitleExtraComponent() {
     if (forayActionDisplaySettings.name === 'bozja') {
       return (
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <ScaleIcon />
-          <Typography fontWeight={700} variant="h4" pr={3} pl={1}>{actionData.weight}</Typography>
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 700,
+              pr: 3,
+              pl: 1,
+            }}
+          >
+            {actionData.weight}
+          </Typography>
         </Stack>
       );
     }
@@ -31,10 +46,12 @@ export default function ForayActionDisplayInformationComponent({
     if (forayActionDisplaySettings.name === 'bozja') {
       return (
         <Typography
-          textAlign="left"
-          pl={3}
-          pr={2}
-          fontWeight={700}
+          sx={{
+            textAlign: 'left',
+            pl: 3,
+            pr: 2,
+            fontWeight: 700,
+          }}
         >
           Rank:
           {' '}
@@ -64,36 +81,93 @@ export default function ForayActionDisplayInformationComponent({
           px: 2,
         }}
       >
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/${forayActionDisplaySettings.assetUriPrefix}/${actionData.image}.${forayActionDisplaySettings.assetUriType}`}
             width={48}
             height={48}
             alt={action}
           />
-          <Box width={12} />
-          <Typography fontWeight={700} variant="h4">{action}</Typography>
-          <Box flexGrow={1} />
+          <Box sx={{
+            width: 12,
+          }}
+          />
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 700,
+            }}
+          >
+            {action}
+          </Typography>
+          <Box sx={{
+            flexGrow: 1,
+          }}
+          />
           { getTitleExtraComponent() }
         </Stack>
       </Box>
 
-      <Box p={2}>
-        <Stack direction="row" pl={3} alignItems="center" spacing={3} pb={2}>
-          <Typography fontWeight={700}>{actionData.abilityType}</Typography>
+      <Box sx={{
+        p: 2,
+      }}
+      >
+        <Stack
+          direction="row"
+          spacing={3}
+          sx={{
+            pl: 3,
+            alignItems: 'center',
+            pb: 2,
+          }}
+        >
+          <Typography sx={{
+            fontWeight: 700,
+          }}
+          >
+            {actionData.abilityType}
+          </Typography>
           {actionData.duration
             ? (
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                <Typography variant="body2" color="text.secondary">Duration:</Typography>
-                <Typography fontWeight={600}>{actionData.duration}</Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: 'text.secondary',
+                  }}
+                >
+                  Duration:
+                </Typography>
+                <Typography sx={{
+                  fontWeight: 600,
+                }}
+                >
+                  {actionData.duration}
+                </Typography>
               </Box>
             )
             : null}
           {actionData.castTime
             ? (
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                <Typography variant="body2" color="text.secondary">Cast:</Typography>
-                <Typography fontWeight={600}>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: 'text.secondary',
+                  }}
+                >
+                  Cast:
+                </Typography>
+                <Typography sx={{
+                  fontWeight: 600,
+                }}
+                >
                   {actionData.castTime}
                   s
                 </Typography>
@@ -103,8 +177,18 @@ export default function ForayActionDisplayInformationComponent({
           {actionData.recastTime
             ? (
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                <Typography variant="body2" color="text.secondary">Recast:</Typography>
-                <Typography fontWeight={600}>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: 'text.secondary',
+                  }}
+                >
+                  Recast:
+                </Typography>
+                <Typography sx={{
+                  fontWeight: 600,
+                }}
+                >
                   {actionData.recastTime}
                   s
                 </Typography>
@@ -114,16 +198,40 @@ export default function ForayActionDisplayInformationComponent({
           {actionData.mpCost
             ? (
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                <Typography variant="body2" color="text.secondary">MP:</Typography>
-                <Typography fontWeight={600}>{actionData.mpCost}</Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: 'text.secondary',
+                  }}
+                >
+                  MP:
+                </Typography>
+                <Typography sx={{
+                  fontWeight: 600,
+                }}
+                >
+                  {actionData.mpCost}
+                </Typography>
               </Box>
             )
             : null}
           {actionData.charges
             ? (
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                <Typography variant="body2" color="text.secondary">Charges:</Typography>
-                <Typography fontWeight={600}>{actionData.charges}</Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: 'text.secondary',
+                  }}
+                >
+                  Charges:
+                </Typography>
+                <Typography sx={{
+                  fontWeight: 600,
+                }}
+                >
+                  {actionData.charges}
+                </Typography>
               </Box>
             )
             : null}
@@ -131,10 +239,12 @@ export default function ForayActionDisplayInformationComponent({
         </Stack>
 
         <Typography
-          textAlign="left"
-          pl={3}
-          pr={2}
           style={{ whiteSpace: 'pre-wrap' }}
+          sx={{
+            textAlign: 'left',
+            pl: 3,
+            pr: 2,
+          }}
         >
           {actionData.actionText}
         </Typography>
@@ -142,7 +252,14 @@ export default function ForayActionDisplayInformationComponent({
         { getDescriptionExtraComponent() }
 
         <Stack direction="row" spacing={1}>
-          <Typography fontWeight={700} pl={3}>Usable by:</Typography>
+          <Typography
+            sx={{
+              fontWeight: 700,
+              pl: 3,
+            }}
+          >
+            Usable by:
+          </Typography>
           {
             actionData.roles.map((i) => (
               <Box>

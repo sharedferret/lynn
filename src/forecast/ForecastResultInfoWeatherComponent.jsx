@@ -4,7 +4,6 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import React from 'react';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { v4 as uuidv4 } from 'uuid';
 import dayjs from 'dayjs';
 import EorzeaTime from 'eorzea-time';
 
@@ -14,18 +13,26 @@ export default function ForecastResultInfoWeatherComponent({ conditions, startTi
     <Grid
       container
       spacing={1}
-      justifyContent="center"
-      alignItems="center"
-      pt={2}
+      sx={{
+        justifyContent: 'center',
+        alignItems: 'center',
+        pt: 2,
+      }}
     >
       {conditions.map((item, index) => (
         <Tooltip title={(
           <Stack>
-            <Typography textAlign="center">
+            <Typography sx={{
+              textAlign: 'center',
+            }}
+            >
               {dayjs(startTime.getTime() + (index * EORZEA_WEATHER_DURATION_MS))
                 .format('h:mm:ss A')}
             </Typography>
-            <Typography textAlign="center">
+            <Typography sx={{
+              textAlign: 'center',
+            }}
+            >
               {
                 new EorzeaTime(
                   dayjs(startTime.getTime() + (index * EORZEA_WEATHER_DURATION_MS))
@@ -38,13 +45,19 @@ export default function ForecastResultInfoWeatherComponent({ conditions, startTi
           </Stack>
         )}
         >
-          <Stack direction="row" alignItems="center">
+          <Stack
+            direction="row"
+            sx={{
+              alignItems: 'center',
+            }}
+          >
 
             <Grid
-              item
               className="IconImageBox"
-              key={uuidv4()}
-              width={32}
+              key={crypto.randomUUID()}
+              sx={{
+                width: 32,
+              }}
             >
               <img
                 className="IconImage"

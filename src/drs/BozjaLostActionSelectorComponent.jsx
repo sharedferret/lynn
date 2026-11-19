@@ -9,7 +9,6 @@ import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import groupBy from 'underscore/modules/groupBy';
-import { v4 as uuidv4 } from 'uuid';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 import BozjaLostActionInformationTooltipComponent from './BozjaLostActionInformationTooltipComponent';
 
@@ -20,7 +19,7 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
       const action = items[i];
       const actionData = DRSLostActionHelper.getLostActionData(action.full);
       menuItems.push(
-        <MenuItem value={action.full} key={`selector-${uuidv4()}`}>
+        <MenuItem value={action.full} key={`selector-${crypto.randomUUID()}`}>
           <Tooltip
             arrow
             placement="left"
@@ -32,7 +31,13 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
               />
             )}
           >
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={`${process.env.PUBLIC_URL}/assets/lostactions/${action.image}.jpg`}
                 alt={action.full}
@@ -55,36 +60,36 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
 
     const menuItems = [];
 
-    menuItems.push(<MenuItem value="" key={`selector-${uuidv4()}`}>None</MenuItem>);
+    menuItems.push(<MenuItem value="" key={`selector-${crypto.randomUUID()}`}>None</MenuItem>);
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Offensive</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Offensive</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.offensive)));
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Defensive</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Defensive</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.defensive)));
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Restorative</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Restorative</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.restorative)));
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Beneficial</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Beneficial</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.beneficial)));
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Tactical</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Tactical</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.tactical)));
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Detrimental</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Detrimental</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.detrimental)));
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Items</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Items</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.item)));
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Essences</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Essences</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.essence)));
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Deep Essences</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Deep Essences</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.deep_essence)));
 
-    menuItems.push(<Divider textAlign="left" key={`selector-${uuidv4()}`}>Pure Essences</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`selector-${crypto.randomUUID()}`}>Pure Essences</Divider>);
     menuItems.push(...(renderSelectorMenuSection(actionsBySection.pure_essence)));
 
     return menuItems;
@@ -93,8 +98,19 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
   const renderSelectedAction = useCallback((actionName) => {
     if (actionName === '') {
       return (
-        <Stack direction="row" spacing={2} alignItems="center">
-          <Box width={32} height={32} />
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
+          <Box
+            sx={{
+              width: 32,
+              height: 32,
+            }}
+          />
           <Typography>None</Typography>
         </Stack>
       );
@@ -114,7 +130,13 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
           />
         )}
       >
-        <Stack direction="row" spacing={2} alignItems="center">
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img src={`${process.env.PUBLIC_URL}/assets/lostactions/${action.image}.jpg`} width={32} height={32} alt={action.full} />
           <Typography>{action.full}</Typography>
         </Stack>
@@ -126,7 +148,10 @@ export default function BozjaLostActionSelectorComponent({ lostAction, handleAct
   const menuItems = renderSelectorMenu();
 
   return (
-    <Box width={325}>
+    <Box sx={{
+      width: 325,
+    }}
+    >
       <Stack direction="row">
         <FormControl sx={{ width: 325 }}>
           <Select

@@ -41,10 +41,25 @@ export default function DRSGuideNavigationComponent({ currentPage, updatePage })
 
   return (
     <Container>
-      <Stack direction="row" alignItems="center">
+      <Stack
+        direction="row"
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         { lastEntry }
-        <Box flexGrow="1">
-          <Typography fontWeight="700" fontSize="2.5em">{ guideSequence.encounters[pageIndex].name }</Typography>
+        <Box sx={{
+          flexGrow: '1',
+        }}
+        >
+          <Typography
+            sx={{
+              fontWeight: '700',
+              fontSize: '2.5em',
+            }}
+          >
+            { guideSequence.encounters[pageIndex].name }
+          </Typography>
         </Box>
         { nextEntry }
       </Stack>

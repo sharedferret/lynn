@@ -61,7 +61,13 @@ export default function MainComponent({
    * Render Logic
    */
   return (
-    <Stack direction="row" alignItems="center" sx={{ textAlign: 'center' }}>
+    <Stack
+      direction="row"
+      sx={{
+        alignItems: 'center',
+        textAlign: 'center',
+      }}
+    >
       <SidebarComponent
         mobileOpen={mobileOpen}
         handleSidebarClick={handleSidebarClick}
@@ -72,9 +78,10 @@ export default function MainComponent({
         host={host}
       />
       <Box
-        flexGrow={1}
-        height="100%"
         sx={{
+          flexGrow: 1,
+          height: '100%',
+
           width: {
             sm: 'calc(100% - 280px)',
           },
@@ -82,7 +89,10 @@ export default function MainComponent({
       >
         <Stack>
           <CssBaseline />
-          <Box display="flex">
+          <Box sx={{
+            display: 'flex',
+          }}
+          >
             <MobileTopbarComponent
               handleDrawerToggle={handleDrawerToggle}
               host={host}

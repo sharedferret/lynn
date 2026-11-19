@@ -7,11 +7,15 @@ import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { v4 as uuidv4 } from 'uuid';
 
 function ForecastResultsGuideComponent({ filter }) {
   return (
-    <Box width="90%" maxWidth={800}>
+    <Box
+      sx={{
+        width: '90%',
+        maxWidth: 800,
+      }}
+    >
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -19,19 +23,44 @@ function ForecastResultsGuideComponent({ filter }) {
           <Typography>Guide</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Stack alignItems="flex-start">
-            <Typography fontWeight={700}>Zone</Typography>
+          <Stack sx={{
+            alignItems: 'flex-start',
+          }}
+          >
+            <Typography sx={{
+              fontWeight: 700,
+            }}
+            >
+              Zone
+            </Typography>
             <Typography>{filter.guide.zone}</Typography>
-            <Box height={24} />
-            <Typography fontWeight={700}>Mobs</Typography>
+            <Box sx={{
+              height: 24,
+            }}
+            />
+            <Typography sx={{
+              fontWeight: 700,
+            }}
+            >
+              Mobs
+            </Typography>
             <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={1}>
               {
                 filter.guide.mobs.map((i) => (
-                  <Stack direction="row" alignItems="center" key={`mob-${uuidv4()}`}>
+                  <Stack
+                    direction="row"
+                    key={`mob-${crypto.randomUUID()}`}
+                    sx={{
+                      alignItems: 'center',
+                    }}
+                  >
                     {
                       i.rank
                         ? (
-                          <Box pr={1}>
+                          <Box sx={{
+                            pr: 1,
+                          }}
+                          >
                             <img
                               src={`${process.env.PUBLIC_URL}/assets/icons/rank${i.rank}.png`}
                               width={24}
@@ -73,9 +102,20 @@ function ForecastResultsGuideComponent({ filter }) {
                 ))
               }
             </Stack>
-            <Box height={24} />
-            <Typography fontWeight={700}>Method</Typography>
-            <Typography textAlign="left">
+            <Box sx={{
+              height: 24,
+            }}
+            />
+            <Typography sx={{
+              fontWeight: 700,
+            }}
+            >
+              Method
+            </Typography>
+            <Typography sx={{
+              textAlign: 'left',
+            }}
+            >
               {filter.guide.method}
             </Typography>
           </Stack>

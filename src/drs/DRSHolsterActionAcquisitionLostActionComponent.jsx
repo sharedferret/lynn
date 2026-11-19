@@ -19,20 +19,57 @@ export default function DRSHolsterActionAcquisitionLostActionComponent(
   const fragmentData = DRSLostActionHelper.getFragmentData(actionData.fragment);
 
   return (
-    <Stack alignItems="flex-start" p={2} spacing={2}>
-      <Stack direction="row" alignItems="center">
-        <Typography fontWeight={700} variant="h4">{quantity}</Typography>
-        <Box width={12} />
+    <Stack
+      spacing={2}
+      sx={{
+        alignItems: 'flex-start',
+        p: 2,
+      }}
+    >
+      <Stack
+        direction="row"
+        sx={{
+          alignItems: 'center',
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            fontWeight: 700,
+          }}
+        >
+          {quantity}
+        </Typography>
+        <Box sx={{
+          width: 12,
+        }}
+        />
         <img
           src={`${process.env.PUBLIC_URL}/assets/lostactions/${actionData.image}.jpg`}
           width={48}
           height={48}
           alt={action}
         />
-        <Box width={12} />
-        <Typography fontWeight={700} variant="h5">{action}</Typography>
+        <Box sx={{
+          width: 12,
+        }}
+        />
+        <Typography
+          variant="h5"
+          sx={{
+            fontWeight: 700,
+          }}
+        >
+          {action}
+        </Typography>
       </Stack>
-      <Stack direction="row" alignItems="center" spacing={1}>
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         <Typography variant="h6">From:</Typography>
         <img
           src={`${process.env.PUBLIC_URL}/assets/icons/Yellow_Fragment.png`}
@@ -49,7 +86,7 @@ export default function DRSHolsterActionAcquisitionLostActionComponent(
       >
         {
           fragmentData.acquisition.map((i) => (
-            <Grid item>
+            <Grid>
               <ActionAcquisitionMethodCardComponent
                 methodData={i}
                 fragmentId={fragmentData.id}

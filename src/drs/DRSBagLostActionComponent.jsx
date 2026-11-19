@@ -51,16 +51,23 @@ export default function DRSBagLostActionComponent({
       <Stack
         direction="row"
         spacing={2}
-        height={60}
-        p={1}
-        alignItems="center"
-        justifyContent="center"
+        sx={{
+          height: 60,
+          p: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
       >
-        <Box width={10}>
+        <Box sx={{
+          width: 10,
+        }}
+        >
           <Box
             style={{ cursor: 'pointer' }}
             onClick={handleDeleteAction}
-            display={displayDeleteIcon === false ? 'none' : null}
+            sx={{
+              display: displayDeleteIcon === false ? 'none' : null,
+            }}
           >
             <ClearIcon
               fontSize="small"
@@ -68,26 +75,39 @@ export default function DRSBagLostActionComponent({
             />
           </Box>
         </Box>
-        <Box width={60} display={displayQuantity === false ? 'none' : null}>
+        <Box
+          sx={{
+            width: 60,
+            display: displayQuantity === false ? 'none' : null,
+          }}
+        >
           <TextField
             type="number"
-            InputProps={{
-              inputProps: { min: 1, max: 35 },
-            }}
             value={actionQuantity}
             size="small"
             onChange={handleQuantityUpdate}
+            slotProps={{
+              input: {
+                inputProps: { min: 1, max: 35 },
+              },
+            }}
           />
         </Box>
 
-        <Box width={325}>
+        <Box sx={{
+          width: 325,
+        }}
+        >
           <BozjaLostActionSelectorComponent
             lostAction={actionName}
             handleActionUpdate={handleActionUpdate}
           />
         </Box>
         <Divider orientation="vertical" variant="middle" />
-        <Box width={30}>
+        <Box sx={{
+          width: 30,
+        }}
+        >
           <Typography>{combinedActionWeight}</Typography>
         </Box>
       </Stack>

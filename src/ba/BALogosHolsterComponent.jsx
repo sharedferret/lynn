@@ -5,9 +5,8 @@ import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import { v4 as uuidv4 } from 'uuid';
 import LinkIcon from '@mui/icons-material/Link';
-import { DefaultCopyField } from '@eisberg-labs/mui-copy-field';
+import CopyField from '../common/CopyField';
 
 import BALogosActionTrayComponent from './BALogosActionTrayComponent';
 import './BALogosHolsterComponent.css';
@@ -102,22 +101,40 @@ export default function BALogosHolsterComponent({ tray, encodedHolster }) {
    * Render Logic
    */
   return (
-    <Box maxWidth={1000}>
+    <Box sx={{
+      maxWidth: 1000,
+    }}
+    >
       <Paper variant="outlined" className="BALogosHolsterPaper">
-        <Stack spacing={2} minHeight={100} p={1}>
+        <Stack
+          spacing={2}
+          sx={{
+            minHeight: 100,
+            p: 1,
+          }}
+        >
           {
             plates.map((i, index) => (
               <BALogosActionTrayComponent
                 inputTray={i}
                 inputIndex={index}
                 handleLogosActionUpdate={handleLogosActionUpdate}
-                key={uuidv4()}
+                key={crypto.randomUUID()}
               />
             ))
           }
           {plates.length < 8 ? renderAddPlateButton() : null}
-          <Stack direction="row" alignItems="center" height={60}>
-            <Box width={200}>
+          <Stack
+            direction="row"
+            sx={{
+              alignItems: 'center',
+              height: 60,
+            }}
+          >
+            <Box sx={{
+              width: 200,
+            }}
+            >
               <Button
                 variant="outlined"
                 size="large"
@@ -130,8 +147,13 @@ export default function BALogosHolsterComponent({ tray, encodedHolster }) {
             {
               generatedLink
                 ? (
-                  <Box maxWidth={650} alignSelf="center">
-                    <DefaultCopyField fullWidth value={generatedLink} />
+                  <Box
+                    sx={{
+                      maxWidth: 650,
+                      alignSelf: 'center',
+                    }}
+                  >
+                    <CopyField fullWidth value={generatedLink} />
                   </Box>
                 )
                 : null
@@ -140,6 +162,5 @@ export default function BALogosHolsterComponent({ tray, encodedHolster }) {
         </Stack>
       </Paper>
     </Box>
-
   );
 }

@@ -28,8 +28,19 @@ export default function OccultPhantomJobSupportActionContainerComponent({ suppor
           px: 2,
         }}
       >
-        <Stack spacing={3} pt={2}>
-          <Typography textAlign="start" fontWeight={700} variant="h4">
+        <Stack
+          spacing={3}
+          sx={{
+            pt: 2,
+          }}
+        >
+          <Typography
+            variant="h4"
+            sx={{
+              textAlign: 'start',
+              fontWeight: 700,
+            }}
+          >
             <Trans i18nKey="job-helper.support-actions" ns="occult" />
           </Typography>
           <Divider sx={{

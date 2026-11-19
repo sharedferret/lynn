@@ -24,9 +24,22 @@ export default function DRSGuideMain({ guidePage }) {
 
   return (
     <Container maxWidth="lg">
-      <Typography fontWeight="700" fontSize="3em" pb={3}>Delubrum Reginae (Savage) Guide</Typography>
+      <Typography
+        sx={{
+          fontWeight: '700',
+          fontSize: '3em',
+          pb: 3,
+        }}
+      >
+        Delubrum Reginae (Savage) Guide
+      </Typography>
       <DRSGuideNavigationComponent currentPage={currentPage} updatePage={updatePage} />
-      <Box sx={{ width: '100%' }} pt={2}>
+      <Box
+        sx={{
+          pt: 2,
+          width: '100%',
+        }}
+      >
         <Tabs
           value={currentTab}
           onChange={handleTabChange}

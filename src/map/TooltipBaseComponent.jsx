@@ -45,8 +45,17 @@ export default function TooltipBaseComponent(
 
   return (
     <Box className="tooltip-base-component">
-      <Stack width="300px">
-        <Stack direction="row" alignItems="center" spacing={1}>
+      <Stack sx={{
+        width: '300px',
+      }}
+      >
+        <Stack
+          direction="row"
+          spacing={1}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <Box>
             <img
               src={`${process.env.PUBLIC_URL}/assets/maps/markers/${icon}`}
@@ -55,12 +64,27 @@ export default function TooltipBaseComponent(
               height="48px"
             />
           </Box>
-          <Typography fontWeight={700} variant="h6">
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: 700,
+            }}
+          >
             {t(`map.regions.${markerData.popupTitle ?? markerData.name}`)}
           </Typography>
         </Stack>
-        <Box my={1}>
-          <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />
+        <Box sx={{
+          my: 1,
+        }}
+        >
+          <Divider
+            variant="middle"
+            sx={{
+              bgcolor: '#999',
+              mb: 1,
+              opacity: '0.6',
+            }}
+          />
         </Box>
         {renderContent(markerData.type, markerData, icon)}
       </Stack>

@@ -11,7 +11,13 @@ export default function OccultTreasureTooltipComponent({ type }) {
   return (
     <Stack>
       <Typography variant="h6">Magic Pot FATE</Typography>
-      <Stack direction="row" spacing={1} alignItems="center">
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         <img src={imgSrc} alt="Magic Pot FATE" width={24} height={24} />
         <Typography variant="button">{t(`map.regions.northhorn.magicPotZone.${type}`)}</Typography>
       </Stack>

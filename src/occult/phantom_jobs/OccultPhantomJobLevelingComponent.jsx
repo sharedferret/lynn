@@ -54,8 +54,19 @@ export default function OccultPhantomJobLevelingComponent({ expByLevel, isFreela
           px: 2,
         }}
       >
-        <Stack spacing={3} pt={2}>
-          <Typography textAlign="start" fontWeight={700} variant="h4">
+        <Stack
+          spacing={3}
+          sx={{
+            pt: 2,
+          }}
+        >
+          <Typography
+            variant="h4"
+            sx={{
+              textAlign: 'start',
+              fontWeight: 700,
+            }}
+          >
             <Trans i18nKey="job-helper.leveling-up" ns="occult" />
           </Typography>
           <Divider sx={{
@@ -65,10 +76,18 @@ export default function OccultPhantomJobLevelingComponent({ expByLevel, isFreela
             alignSelf: 'center',
           }}
           />
-          <Box sx={{ width: '100%' }} pb={2}>
+          <Box
+            sx={{
+              pb: 2,
+              width: '100%',
+            }}
+          >
             { isFreelancer
               ? (
-                <Typography textAlign="start">
+                <Typography sx={{
+                  textAlign: 'start',
+                }}
+                >
                   <Trans i18nKey="job-helper.freelancer-leveling" ns="occult" />
                 </Typography>
               )
@@ -86,10 +105,18 @@ export default function OccultPhantomJobLevelingComponent({ expByLevel, isFreela
                   <Step key={`levelStep${level}`}>
                     {
                       exp > 0 ? (
-                        <StepLabel StepIconComponent={CustomStepIcon}>
+                        <StepLabel slots={{
+                          stepIcon: CustomStepIcon,
+                        }}
+                        >
                           {`${exp.toLocaleString()} EXP`}
                         </StepLabel>
-                      ) : <StepLabel StepIconComponent={CustomStepIcon} />
+                      ) : (
+                        <StepLabel slots={{
+                          stepIcon: CustomStepIcon,
+                        }}
+                        />
+                      )
                     }
                   </Step>
                 ))

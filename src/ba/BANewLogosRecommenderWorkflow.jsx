@@ -160,10 +160,23 @@ export default function BANewLogosRecommenderWorkflow({
             {getStepLabel(step, index)}
           </StepLabel>
           <StepContent>
-            <Typography textAlign="left" fontSize={20} pb={2}>{step.description}</Typography>
+            <Typography
+              sx={{
+                textAlign: 'left',
+                fontSize: 20,
+                pb: 2,
+              }}
+            >
+              {step.description}
+            </Typography>
             {activeStep === 0
               ? (
-                <Stack spacing={2} width="100%">
+                <Stack
+                  spacing={2}
+                  sx={{
+                    width: '100%',
+                  }}
+                >
                   {roles.map((item) => (
                     <Box key={`rolewf-${item}`}>
                       <Button
@@ -185,7 +198,12 @@ export default function BANewLogosRecommenderWorkflow({
             {
               activeStep === 1
                 ? (
-                  <Stack spacing={2} width="100%">
+                  <Stack
+                    spacing={2}
+                    sx={{
+                      width: '100%',
+                    }}
+                  >
                     {trays.map((item) => (
                       <Box key={`baloadout-${item.title}`}>
                         <Button
@@ -215,7 +233,16 @@ export default function BANewLogosRecommenderWorkflow({
   ));
 
   return (
-    <Box maxWidth={1600} minHeight={600} mt="30px" ml="auto" mr="auto" pb="10px">
+    <Box
+      sx={{
+        maxWidth: 1600,
+        minHeight: 600,
+        mt: '30px',
+        ml: 'auto',
+        mr: 'auto',
+        pb: '10px',
+      }}
+    >
       {displayStepper()}
       {activeStep > 0
         ? displayBackButton()
@@ -223,9 +250,17 @@ export default function BANewLogosRecommenderWorkflow({
       {activeStep === steps.length
         ? (
           <Box className="BALogogramWorkflowContainer">
-            <Stack alignItems="center" spacing={2}>
+            <Stack
+              spacing={2}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <Typography variant="h4">Here are your recommended logos actions!</Typography>
-              <Box maxWidth={600}>
+              <Box sx={{
+                maxWidth: 600,
+              }}
+              >
                 <Typography>
                   You can build these at a Logos Manipulator. Pop and activate your Spirit of
                   the Remembered action before you zone in to the Baldesion Arsenal, then pop your

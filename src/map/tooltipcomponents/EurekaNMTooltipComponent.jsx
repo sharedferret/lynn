@@ -10,7 +10,12 @@ export default function EurekaNMTooltipComponent({ markerData }) {
   const renderSpawnedBy = () => {
     if (markerData.metadata.spawnedBy) {
       return (
-        <Stack direction="row" alignItems="center">
+        <Stack
+          direction="row"
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <Box>
             <img
               src={`${process.env.PUBLIC_URL}/assets/eureka/eureka_${markerData.metadata.spawnedBy.element.toLowerCase()}.png`}
@@ -29,7 +34,12 @@ export default function EurekaNMTooltipComponent({ markerData }) {
   return (
     <Stack>
       <Typography variant="h6">{t('map.captions.nm')}</Typography>
-      <Stack direction="row" alignItems="center">
+      <Stack
+        direction="row"
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         <Box>
           <img
             src={`${process.env.PUBLIC_URL}/assets/eureka/eureka_${markerData.metadata.element.toLowerCase()}.png`}

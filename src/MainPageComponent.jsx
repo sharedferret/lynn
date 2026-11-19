@@ -85,11 +85,26 @@ export default function MainPageComponent() {
 
   const renderIntroParagraph = ((textSize, pageTheme) => (
     <Paper elevation={3}>
-      <Stack p={5} spacing={2}>
-        <Typography textAlign="left" fontSize={textSize}>
+      <Stack
+        spacing={2}
+        sx={{
+          p: 5,
+        }}
+      >
+        <Typography
+          sx={{
+            textAlign: 'left',
+            fontSize: textSize,
+          }}
+        >
           <Trans i18nKey="main.intro.p1" ns="common" values={{ sitename: getSiteName() }} />
         </Typography>
-        <Typography textAlign="left" fontSize={textSize}>
+        <Typography
+          sx={{
+            textAlign: 'left',
+            fontSize: textSize,
+          }}
+        >
           <Trans
             i18nKey="main.intro.p2"
             ns="common"
@@ -104,10 +119,20 @@ export default function MainPageComponent() {
             ]}
           />
         </Typography>
-        <Typography textAlign="left" fontSize={textSize}>
+        <Typography
+          sx={{
+            textAlign: 'left',
+            fontSize: textSize,
+          }}
+        >
           <Trans i18nKey="main.intro.p3" ns="common" />
         </Typography>
-        <Typography textAlign="left" fontSize={textSize}>
+        <Typography
+          sx={{
+            textAlign: 'left',
+            fontSize: textSize,
+          }}
+        >
           <Trans
             i18nKey="main.intro.p4"
             ns="common"
@@ -137,7 +162,13 @@ export default function MainPageComponent() {
    */
   const pageTheme = getPageThemeData();
   return (
-    <Box flexGrow={1} height="100%" sx={{ pt: { xs: 14, md: 5 } }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        height: '100%',
+        pt: { xs: 14, md: 5 },
+      }}
+    >
       <Helmet bodyAttributes={{ style: `background-color : ${pageTheme.color}` }}>
         <meta name="description" content="Tools for FFXIV Occult Crescent, Forked Tower, Baldesion Arsenal, Delubrum Reginae Savage, and Eureka by Lynn Kaneko @ Exodus" />
         <meta name="keywords" content="FFXIV, Final Fantasy 14, Occult Crescent, Forked Tower, South Horn, Final Fantasy XIV, Eureka, Eureka Anemos, Eureka Pagos, Eureka Pyros, Eureka Hydatos, Bozjan Southern Front, Zadnor, Delubrum Reginae, Delubrum Reginae Savage, DRS Holsters, BA Loadout, NM Tracker, Fragment Farm" />
@@ -153,15 +184,39 @@ export default function MainPageComponent() {
         </title>
       </Helmet>
       <Box>
-        <Typography variant="h3" fontWeight={700}><Trans i18nKey="main.title" ns="common" /></Typography>
+        <Typography
+          variant="h3"
+          sx={{
+            fontWeight: 700,
+          }}
+        >
+          <Trans i18nKey="main.title" ns="common" />
+        </Typography>
       </Box>
-      <Box pl={5} sx={{ display: { xs: 'none', md: 'block' } }}>
+      <Box
+        sx={{
+          pl: 5,
+          display: { xs: 'none', md: 'block' },
+        }}
+      >
         <Stack direction="row">
-          <Box minWidth={400} width={600} maxWidth={600} pt={10}>
+          <Box
+            sx={{
+              minWidth: 400,
+              width: 600,
+              maxWidth: 600,
+              pt: 10,
+            }}
+          >
             {renderIntroParagraph(18, pageTheme)}
           </Box>
 
-          <Box maxWidth="70%" p={2}>
+          <Box
+            sx={{
+              maxWidth: '70%',
+              p: 2,
+            }}
+          >
             <img
               src={pageTheme.image}
               alt="forays.info"
@@ -171,9 +226,18 @@ export default function MainPageComponent() {
         </Stack>
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }}>
-        <Stack width="100%" spacing={2} pt={5}>
+        <Stack
+          spacing={2}
+          sx={{
+            width: '100%',
+            pt: 5,
+          }}
+        >
           {renderIntroParagraph(20, pageTheme)}
-          <Box width="100%">
+          <Box sx={{
+            width: '100%',
+          }}
+          >
             <img
               src={pageTheme.image}
               alt="lynn.pet"

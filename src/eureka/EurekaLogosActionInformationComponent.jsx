@@ -5,24 +5,67 @@ import Typography from '@mui/material/Typography';
 
 export default function EurekaLogosActionInformationComponent({ logosAction, actionData }) {
   return (
-    <Box width={{ md: 600 }} border={1} borderRadius="12px">
-      <Stack spacing={1} pt={2} pb={2}>
-        <Stack direction="row" alignItems="center" pl={2}>
+    <Box
+      sx={{
+        width: { md: 600 },
+        border: 1,
+        borderRadius: '12px',
+      }}
+    >
+      <Stack
+        spacing={1}
+        sx={{
+          pt: 2,
+          pb: 2,
+        }}
+      >
+        <Stack
+          direction="row"
+          sx={{
+            alignItems: 'center',
+            pl: 2,
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/logosactions/${actionData.image}.png`}
             width={48}
             height={48}
             alt={logosAction}
           />
-          <Box width={12} />
-          <Typography fontWeight={700} variant="h4">{logosAction}</Typography>
+          <Box sx={{
+            width: 12,
+          }}
+          />
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 700,
+            }}
+          >
+            {logosAction}
+          </Typography>
         </Stack>
 
-        <Stack direction="row" pl={3} alignItems="center" spacing={3}>
-          <Typography fontWeight={700}>{actionData.abilityType}</Typography>
+        <Stack
+          direction="row"
+          spacing={3}
+          sx={{
+            pl: 3,
+            alignItems: 'center',
+          }}
+        >
+          <Typography sx={{
+            fontWeight: 700,
+          }}
+          >
+            {actionData.abilityType}
+          </Typography>
           {actionData.duration
             ? (
-              <Typography fontWeight={700}>
+              <Typography sx={{
+                fontWeight: 700,
+              }}
+              >
                 Duration:
                 {' '}
                 {actionData.duration}
@@ -31,7 +74,10 @@ export default function EurekaLogosActionInformationComponent({ logosAction, act
             : null}
           {actionData.castTime
             ? (
-              <Typography fontWeight={700}>
+              <Typography sx={{
+                fontWeight: 700,
+              }}
+              >
                 Cast:
                 {' '}
                 {actionData.castTime}
@@ -41,7 +87,10 @@ export default function EurekaLogosActionInformationComponent({ logosAction, act
             : null}
           {actionData.recastTime
             ? (
-              <Typography fontWeight={700}>
+              <Typography sx={{
+                fontWeight: 700,
+              }}
+              >
                 Recast:
                 {' '}
                 {actionData.recastTime}
@@ -51,7 +100,10 @@ export default function EurekaLogosActionInformationComponent({ logosAction, act
             : null}
           {actionData.mpCost
             ? (
-              <Typography fontWeight={700}>
+              <Typography sx={{
+                fontWeight: 700,
+              }}
+              >
                 MP:
                 {' '}
                 {actionData.mpCost}
@@ -60,7 +112,10 @@ export default function EurekaLogosActionInformationComponent({ logosAction, act
             : null}
           {actionData.charges
             ? (
-              <Typography fontWeight={700}>
+              <Typography sx={{
+                fontWeight: 700,
+              }}
+              >
                 Charges:
                 {' '}
                 {actionData.charges}
@@ -71,15 +126,24 @@ export default function EurekaLogosActionInformationComponent({ logosAction, act
         </Stack>
 
         <Typography
-          textAlign="left"
-          pl={3}
-          pr={2}
           style={{ whiteSpace: 'pre-wrap' }}
+          sx={{
+            textAlign: 'left',
+            pl: 3,
+            pr: 2,
+          }}
         >
           {actionData.actionText}
         </Typography>
         <Stack direction="row" spacing={1}>
-          <Typography fontWeight={700} pl={3}>Usable by:</Typography>
+          <Typography
+            sx={{
+              fontWeight: 700,
+              pl: 3,
+            }}
+          >
+            Usable by:
+          </Typography>
           {
             actionData.allowedRoles.map((i) => (
               <Box>

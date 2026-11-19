@@ -20,9 +20,24 @@ function ForecastResultsHeaderComponent({ filter }) {
   }
 
   return (
-    <Box pb={4}>
-      <Stack spacing={2} alignItems="center">
-        <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">
+    <Box sx={{
+      pb: 4,
+    }}
+    >
+      <Stack
+        spacing={2}
+        sx={{
+          alignItems: 'center',
+        }}
+      >
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           {filter.collection === false
             ? (
               <Box className="IconImageBox">
@@ -33,7 +48,12 @@ function ForecastResultsHeaderComponent({ filter }) {
                 />
               </Box>
             ) : null}
-          <Typography variant="h4" fontWeight={700}>
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 700,
+            }}
+          >
             {output}
           </Typography>
         </Stack>

@@ -23,22 +23,36 @@ export default function ForecastResultsHeaderComponent({
         </Typography>
       </Container>
       <Grid container spacing={0}>
-        <Grid item xs>
+        <Grid size="grow">
           <Typography variant="overline">
             Location
           </Typography>
-          <Stack direction="row" spacing={1} justifyContent="center" alignItems="center">
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
             <LocationOnIcon />
             <Typography>
               {WeatherFavorability.ZoneMapping[location]}
             </Typography>
           </Stack>
         </Grid>
-        <Grid item xs>
+        <Grid size="grow">
           <Typography variant="overline">
             Session length
           </Typography>
-          <Stack direction="row" spacing={1} justifyContent="center" alignItems="center">
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
             <AvTimerIcon />
             <Typography>
               {sessionLength}
@@ -47,11 +61,18 @@ export default function ForecastResultsHeaderComponent({
             </Typography>
           </Stack>
         </Grid>
-        <Grid item xs>
+        <Grid size="grow">
           <Typography variant="overline">
             Search duration
           </Typography>
-          <Stack direction="row" spacing={1} justifyContent="center" alignItems="center">
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
             <HistoryIcon />
             <Typography>
               {searchDuration}
@@ -60,11 +81,18 @@ export default function ForecastResultsHeaderComponent({
             </Typography>
           </Stack>
         </Grid>
-        <Grid item xs>
+        <Grid size="grow">
           <Typography variant="overline">
             Start Time
           </Typography>
-          <Stack direction="row" spacing={1} justifyContent="center" alignItems="center">
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
             <AccessTimeIcon />
             <Typography>
               {startTime.toLocaleString('en-US', {

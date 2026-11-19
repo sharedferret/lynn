@@ -28,15 +28,28 @@ export default function ForecastColdBoxMobSelectorComponent(
             <Typography>{mob.name}</Typography>
           </Stack>
           <Stack direction="row" spacing={0.5}>
-            <Box width={36} />
-            <Typography fontStyle="italic">during</Typography>
+            <Box sx={{
+              width: 36,
+            }}
+            />
+            <Typography sx={{
+              fontStyle: 'italic',
+            }}
+            >
+              during
+            </Typography>
             <img
               src={`${process.env.PUBLIC_URL}/assets/weathericons/${mob.weather.replaceAll(' ', '')}.png`}
               width={24}
               height={24}
               alt={mob.weather}
             />
-            <Typography fontStyle="italic">{mob.weather}</Typography>
+            <Typography sx={{
+              fontStyle: 'italic',
+            }}
+            >
+              {mob.weather}
+            </Typography>
           </Stack>
         </Stack>
 

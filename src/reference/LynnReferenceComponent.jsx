@@ -14,8 +14,11 @@ export default function LynnReferenceComponent({ type }) {
   return (
     <Box
       component="main"
-      margin="auto"
-      sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
+      sx={{
+        margin: 'auto',
+        flexGrow: 1,
+        pt: { xs: 14, md: 5 },
+      }}
     >
 
       <Helmet>
@@ -30,12 +33,37 @@ export default function LynnReferenceComponent({ type }) {
         <meta name="twitter:creator" content="@reflexyui" />
       </Helmet>
 
-      <Stack alignItems="center">
+      <Stack sx={{
+        alignItems: 'center',
+      }}
+      >
         <Stack direction="row">
-          <Typography variant="h2" fontWeight={700} display="inline">Lynn Kaneko </Typography>
-          <Typography variant="h4" display="inline" sx={{ fontStyle: 'italic' }}> @Exodus</Typography>
+          <Typography
+            variant="h2"
+            sx={{
+              fontWeight: 700,
+              display: 'inline',
+            }}
+          >
+            Lynn Kaneko
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{
+              display: 'inline',
+              fontStyle: 'italic',
+            }}
+          >
+            {' '}
+            @Exodus
+          </Typography>
         </Stack>
-        <Typography variant="h4" pb={4}>
+        <Typography
+          variant="h4"
+          sx={{
+            pb: 4,
+          }}
+        >
           Reference -
           {' '}
           {refType.toUpperCase()}
@@ -44,32 +72,64 @@ export default function LynnReferenceComponent({ type }) {
 
       <Divider variant="middle" sx={{ borderBottomWidth: 5 }} />
 
-      <Stack spacing={2} alignItems="center" mb={10} mt={5}>
-        <Box maxWidth={1200} margin="auto">
+      <Stack
+        spacing={2}
+        sx={{
+          alignItems: 'center',
+          mb: 10,
+          mt: 5,
+        }}
+      >
+        <Box
+          sx={{
+            maxWidth: 1200,
+            margin: 'auto',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${refType}01.jpg`}
             alt="1"
           />
         </Box>
-        <Box maxWidth={1200} margin="auto">
+        <Box
+          sx={{
+            maxWidth: 1200,
+            margin: 'auto',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${refType}02.jpg`}
             alt="2"
           />
         </Box>
-        <Box maxWidth={1200} margin="auto">
+        <Box
+          sx={{
+            maxWidth: 1200,
+            margin: 'auto',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${refType}03.jpg`}
             alt="3"
           />
         </Box>
-        <Box maxWidth={1200} margin="auto">
+        <Box
+          sx={{
+            maxWidth: 1200,
+            margin: 'auto',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${refType}04.jpg`}
             alt="4"
           />
         </Box>
-        <Box maxWidth={1200} margin="auto">
+        <Box
+          sx={{
+            maxWidth: 1200,
+            margin: 'auto',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/reference/lynn/lynn${refType}05.jpg`}
             alt="5"

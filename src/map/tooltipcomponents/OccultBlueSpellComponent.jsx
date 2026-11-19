@@ -12,13 +12,25 @@ export default function OccultBlueSpellComponent({ markerData }) {
       <Typography variant="h6">{t('map.captions.learnedFrom')}</Typography>
       {
         markerData.metadata.enemy.type === 'ce' && (
-          <Stack direction="row" spacing={1} alignItems="center">
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <img src="/assets/maps/markers/fate-nm.png" alt="Critical Engagement" width={24} height={24} />
             <Typography variant="button">{t(`map.regions.${markerData.metadata.enemy.encounter}`)}</Typography>
           </Stack>
         )
       }
-      <Stack direction="row" spacing={1} alignItems="center">
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         <img src="/assets/maps/markers/mob.png" alt={markerData.metadata.enemy.name} width={24} height={24} />
         <Typography variant="button">{t(`map.regions.${markerData.metadata.enemy.name}`)}</Typography>
       </Stack>

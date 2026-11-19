@@ -8,14 +8,19 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { v4 as uuidv4 } from 'uuid';
 
 export default function ActionAcquisitionMethodPurchaseCard({ priceData, fragmentId }) {
   if (!priceData) {
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
-          <Stack direction="row" alignItems="center" spacing={2}>
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/icons/gil.png`}
               width={36}
@@ -24,7 +29,10 @@ export default function ActionAcquisitionMethodPurchaseCard({ priceData, fragmen
             />
             <Typography variant="h5">Purchase</Typography>
           </Stack>
-          <Box py={1}>
+          <Box sx={{
+            py: 1,
+          }}
+          >
             <Divider variant="middle" />
           </Box>
           <CircularProgress />
@@ -45,7 +53,13 @@ export default function ActionAcquisitionMethodPurchaseCard({ priceData, fragmen
   return (
     <Card sx={{ minWidth: 275, minHeight: 300 }}>
       <CardContent>
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/icons/gil.png`}
             width={36}
@@ -54,7 +68,10 @@ export default function ActionAcquisitionMethodPurchaseCard({ priceData, fragmen
           />
           <Typography variant="h5">Purchase</Typography>
         </Stack>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>
@@ -69,14 +86,20 @@ export default function ActionAcquisitionMethodPurchaseCard({ priceData, fragmen
           {' '}
           gil
         </Typography>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
-        <Stack alignItems="flex-start">
+        <Stack sx={{
+          alignItems: 'flex-start',
+        }}
+        >
           <Typography>Cheapest Listings:</Typography>
           {
             priceData.cheapestListings.map((i) => (
-              <Typography key={uuidv4()}>
+              <Typography key={crypto.randomUUID()}>
                 {i.worldName}
                 {' '}
                 •

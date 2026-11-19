@@ -14,19 +14,34 @@ export default function FooterComponent({ includePadding = true }) {
   const { t } = useTranslation('common');
 
   return (
-    <Box width="100%">
+    <Box sx={{
+      width: '100%',
+    }}
+    >
       <Stack
         direction={{ xs: 'none', md: 'row' }}
-        pt={includePadding ? 10 : 0}
-        pb={includePadding ? 2 : 0}
-        pl={includePadding ? 5 : 0}
-        pr={includePadding ? 5 : 0}
-        alignItems="center"
+        sx={{
+          pt: includePadding ? 10 : 0,
+          pb: includePadding ? 2 : 0,
+          pl: includePadding ? 5 : 0,
+          pr: includePadding ? 5 : 0,
+          alignItems: 'center',
+        }}
       >
-        <Typography variant="subtitle2" fontSize={12} maxWidth={600} textAlign="left">
+        <Typography
+          variant="subtitle2"
+          sx={{
+            fontSize: 12,
+            maxWidth: 600,
+            textAlign: 'left',
+          }}
+        >
           {t('footer.copyright')}
         </Typography>
-        <Box flexGrow={1} />
+        <Box sx={{
+          flexGrow: 1,
+        }}
+        />
         <Stack direction="row">
           <IconButton href="https://ko-fi.com/lynnkaneko" target="_blank" rel="noreferrer">
             <img
@@ -72,7 +87,14 @@ export default function FooterComponent({ includePadding = true }) {
               window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             }}
           >
-            <Typography variant="subtitle2" fontSize={12} pl={1} pr={1}>
+            <Typography
+              variant="subtitle2"
+              sx={{
+                fontSize: 12,
+                pl: 1,
+                pr: 1,
+              }}
+            >
               {t('footer.version', { ver: process.env.REACT_APP_VERSION })}
             </Typography>
           </Button>

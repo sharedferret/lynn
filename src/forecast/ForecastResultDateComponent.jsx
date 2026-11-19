@@ -60,7 +60,12 @@ export default function ForecastResultDateComponent({ time }) {
     }}
     >
       <Stack>
-        <Typography variant="overline" fontSize={14}>
+        <Typography
+          variant="overline"
+          sx={{
+            fontSize: 14,
+          }}
+        >
           {time.toLocaleString('en-US', {
             weekday: 'long',
             day: 'numeric',
@@ -72,16 +77,22 @@ export default function ForecastResultDateComponent({ time }) {
         </Typography>
         <Box>
           <Typography
-            display="inline"
-            fontSize={18}
-            fontWeight={700}
-            sx={spawnTime.isBefore(dayjs()) ? activeNowSx : null}
+            sx={[{
+              display: 'inline',
+              fontSize: 18,
+              fontWeight: 700,
+            }, spawnTime.isBefore(dayjs()) ? activeNowSx : null]}
           >
             {spawnTime.isBefore(dayjs())
               ? 'Active Now'
               : fromNowString}
           </Typography>
-          <Typography display="inline" fontSize={14}>
+          <Typography
+            sx={{
+              display: 'inline',
+              fontSize: 14,
+            }}
+          >
             {spawnTime.isBefore(dayjs())
               ? ` (until ${untilETString} ET)`
               : ` (at ${untilETString} ET)`}

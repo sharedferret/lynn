@@ -6,14 +6,19 @@ import CardContent from '@mui/material/CardContent';
 import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { v4 as uuidv4 } from 'uuid';
 
 export default function ActionAcquisitionMethodMobCard({ methodData }) {
   function renderBozjaMobCard(map) {
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
-          <Stack direction="row" alignItems="center" spacing={2}>
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/lostactions/Ranged.jpg`}
               width={36}
@@ -22,7 +27,10 @@ export default function ActionAcquisitionMethodMobCard({ methodData }) {
             />
             <Typography variant="h5">Kill Mobs</Typography>
           </Stack>
-          <Box py={1}>
+          <Box sx={{
+            py: 1,
+          }}
+          >
             <Divider variant="middle" />
           </Box>
           <Typography>{map}</Typography>
@@ -31,12 +39,25 @@ export default function ActionAcquisitionMethodMobCard({ methodData }) {
             {' '}
             {methodData.zone}
           </Typography>
-          <Box py={1}>
+          <Box sx={{
+            py: 1,
+          }}
+          >
             <Divider variant="middle" />
           </Box>
           {methodData.mobs.map((i) => (
-            <Stack direction="row" alignItems="center" spacing={2} key={`mob-${i}`}>
-              <Box width={24} />
+            <Stack
+              direction="row"
+              spacing={2}
+              key={`mob-${i}`}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
+              <Box sx={{
+                width: 24,
+              }}
+              />
               <Typography>{i}</Typography>
             </Stack>
           ))}
@@ -49,7 +70,13 @@ export default function ActionAcquisitionMethodMobCard({ methodData }) {
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
-          <Stack direction="row" alignItems="center" spacing={2}>
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/lostactions/Ranged.jpg`}
               width={36}
@@ -58,16 +85,28 @@ export default function ActionAcquisitionMethodMobCard({ methodData }) {
             />
             <Typography variant="h5">Kill Mobs</Typography>
           </Stack>
-          <Box py={1}>
+          <Box sx={{
+            py: 1,
+          }}
+          >
             <Divider variant="middle" />
           </Box>
           <Typography>{map}</Typography>
-          <Box py={1}>
+          <Box sx={{
+            py: 1,
+          }}
+          >
             <Divider variant="middle" />
           </Box>
           {methodData.mobs.map((i) => (
-            <Stack key={uuidv4()}>
-              <Stack direction="row" alignItems="center" key={`mob-${uuidv4()}`}>
+            <Stack key={crypto.randomUUID()}>
+              <Stack
+                direction="row"
+                key={`mob-${crypto.randomUUID()}`}
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
                 <Typography>{`Lv${i.level}`}</Typography>
                 <img
                   src={`${process.env.PUBLIC_URL}/assets/eureka/eureka_${i.element}.png`}
@@ -78,7 +117,10 @@ export default function ActionAcquisitionMethodMobCard({ methodData }) {
                 {
                   i.adaptation
                     ? (
-                      <Box pr={0.5}>
+                      <Box sx={{
+                        pr: 0.5,
+                      }}
+                      >
                         <img
                           src={`${process.env.PUBLIC_URL}/assets/eureka/adaptation.png`}
                           width={16}
@@ -94,9 +136,20 @@ export default function ActionAcquisitionMethodMobCard({ methodData }) {
               </Stack>
               {i.weather
                 ? (
-                  <Stack direction="row" alignItems="center">
-                    <Box width={48} />
-                    <Typography fontStyle="italic">
+                  <Stack
+                    direction="row"
+                    sx={{
+                      alignItems: 'center',
+                    }}
+                  >
+                    <Box sx={{
+                      width: 48,
+                    }}
+                    />
+                    <Typography sx={{
+                      fontStyle: 'italic',
+                    }}
+                    >
                       during
                       {' '}
                       {i.weather}

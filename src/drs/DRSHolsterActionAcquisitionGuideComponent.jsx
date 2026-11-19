@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { v4 as uuidv4 } from 'uuid';
 import DRSHolsterActionAcquisitionLostActionComponent from './DRSHolsterActionAcquisitionLostActionComponent';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 import universalisPriceHelperInstance from '../acquisition/UniversalisPriceHelper';
@@ -32,8 +31,20 @@ export default function DRSHolsterActionAcquisitionGuideComponent({ neededAction
       maxWidth: 1000, border: 1, borderRadius: '12px', borderColor: '#ddd',
     }}
     >
-      <Stack spacing={2} p={2}>
-        <Typography fontWeight={700} variant="h4">Lost Actions Needed</Typography>
+      <Stack
+        spacing={2}
+        sx={{
+          p: 2,
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            fontWeight: 700,
+          }}
+        >
+          Lost Actions Needed
+        </Typography>
         <Divider />
         <Box>
           <Stack spacing={2} divider={<Divider variant="middle" />}>
@@ -41,7 +52,7 @@ export default function DRSHolsterActionAcquisitionGuideComponent({ neededAction
               const lostActionData = DRSLostActionHelper.getLostActionData(i);
               return (
                 <DRSHolsterActionAcquisitionLostActionComponent
-                  key={uuidv4()}
+                  key={crypto.randomUUID()}
                   action={i}
                   quantity={neededActions[i]}
                   priceData={actionPriceData && lostActionData

@@ -15,21 +15,49 @@ export default function EurekaLogogramRecipeComponent({ logogram }) {
   }
 
   if (logogram == null) {
-    return <Box height={20} />;
+    return (
+      <Box sx={{
+        height: 20,
+      }}
+      />
+    );
   }
 
   return (
-    <Box height={25}>
-      <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={1}>
+    <Box sx={{
+      height: 25,
+    }}
+    >
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+        }}
+      >
         <img
           src={`${process.env.PUBLIC_URL}/assets/logograms/${logograms[logogram].type}.png`}
           width={16}
           height={16}
           alt={logograms[logogram].type}
         />
-        <Typography fontSize={18}>{logogram}</Typography>
-        <Box width={10} />
-        <Typography fontSize={14} fontStyle="italic">
+        <Typography sx={{
+          fontSize: 18,
+        }}
+        >
+          {logogram}
+        </Typography>
+        <Box sx={{
+          width: 10,
+        }}
+        />
+        <Typography
+          sx={{
+            fontSize: 14,
+            fontStyle: 'italic',
+          }}
+        >
           (from:
           {' '}
           {logogramName}

@@ -6,7 +6,6 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme, alpha } from '@mui/material/styles';
-import { v4 as uuidv4 } from 'uuid';
 import { Trans } from 'react-i18next';
 import DRSLostActionHelper from './lib/DRSLostActionHelper';
 
@@ -48,7 +47,13 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
 
   return (
     <Container maxWidth="lg" sx={{ width: '100%' }}>
-      <Stack spacing={4} alignItems="flex-start" width="100%">
+      <Stack
+        spacing={4}
+        sx={{
+          alignItems: 'flex-start',
+          width: '100%',
+        }}
+      >
         <Divider sx={{ width: '50%', margin: '0 auto', mb: 3 }} />
         <BozjaLostActionInformationComponent
           lostAction={lostAction}
@@ -65,8 +70,24 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
             backdropFilter: 'blur(10px)',
           }}
         >
-          <Stack direction="row" alignItems="center" spacing={1} pt={3} pl={3} pr={3}>
-            <Typography fontWeight={700} variant="h6"><Trans i18nKey="lost-action-helper.appraised-label" ns="bsf" /></Typography>
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              alignItems: 'center',
+              pt: 3,
+              pl: 3,
+              pr: 3,
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: 700,
+              }}
+            >
+              <Trans i18nKey="lost-action-helper.appraised-label" ns="bsf" />
+            </Typography>
             <img
               src={`${process.env.PUBLIC_URL}/assets/icons/Yellow_Fragment.png`}
               width={24}
@@ -78,11 +99,13 @@ export default function BozjaLostActionHelperDataComponent({ lostAction }) {
           <Grid
             container
             spacing={2}
-            p={3}
+            sx={{
+              p: 3,
+            }}
           >
             {
           fragmentData.acquisition.map((i) => (
-            <Grid item key={uuidv4()}>
+            <Grid key={crypto.randomUUID()}>
               <ActionAcquisitionMethodCardComponent
                 methodData={i}
                 fragmentId={fragmentData.id}

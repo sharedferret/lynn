@@ -28,24 +28,54 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
           px: 2,
         }}
       >
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/phantomjobs/${phantomJobData.sprite}.png`}
             width={48}
             height={48}
             alt={phantomJob}
           />
-          <Box width={12} />
-          <Typography fontWeight={700} variant="h4">
+          <Box sx={{
+            width: 12,
+          }}
+          />
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 700,
+            }}
+          >
             <Trans i18nKey={`phantom-job.${phantomJobData.key}.name`} ns="occult" />
           </Typography>
-          <Box flexGrow={1} />
+          <Box sx={{
+            flexGrow: 1,
+          }}
+          />
           {
             phantomJobData.totalExp
               ? (
-                <Stack direction="row" alignItems="center" spacing={2}>
+                <Stack
+                  direction="row"
+                  spacing={2}
+                  sx={{
+                    alignItems: 'center',
+                  }}
+                >
                   <AutoGraphIcon />
-                  <Typography fontWeight={700} variant="h5">{ `${phantomJobData.totalExp} EXP` }</Typography>
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontWeight: 700,
+                    }}
+                  >
+                    { `${phantomJobData.totalExp} EXP` }
+                  </Typography>
                 </Stack>
               )
               : null
@@ -54,30 +84,59 @@ export default function OccultPhantomJobInformationComponent({ phantomJob, phant
         </Stack>
       </Box>
 
-      <Box p={2}>
-        <Stack direction="row" pl={3} alignItems="center" spacing={3} pb={2}>
-          <Typography fontWeight={700}>{phantomJobData.abilityType}</Typography>
+      <Box sx={{
+        p: 2,
+      }}
+      >
+        <Stack
+          direction="row"
+          spacing={3}
+          sx={{
+            pl: 3,
+            alignItems: 'center',
+            pb: 2,
+          }}
+        >
+          <Typography sx={{
+            fontWeight: 700,
+          }}
+          >
+            {phantomJobData.abilityType}
+          </Typography>
         </Stack>
 
         <Typography
-          textAlign="left"
-          pl={3}
-          pr={2}
           style={{ whiteSpace: 'pre-wrap' }}
+          sx={{
+            textAlign: 'left',
+            pl: 3,
+            pr: 2,
+          }}
         >
           <Trans i18nKey={`phantom-job.${phantomJobData.key}.text`} ns="occult" />
         </Typography>
-        <Stack direction="row" spacing={2} pt={3} alignItems="center">
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            pt: 3,
+            alignItems: 'center',
+          }}
+        >
           <Typography
-            textAlign="left"
-            pl={3}
-            fontWeight={700}
+            sx={{
+              textAlign: 'left',
+              pl: 3,
+              fontWeight: 700,
+            }}
           >
             <Trans i18nKey="action-detail-label.unlock" />
           </Typography>
           <Typography
-            textAlign="left"
             style={{ whiteSpace: 'pre-wrap' }}
+            sx={{
+              textAlign: 'left',
+            }}
           >
             <Trans i18nKey={`phantom-job.${phantomJobData.key}.unlock`} ns="occult" />
           </Typography>

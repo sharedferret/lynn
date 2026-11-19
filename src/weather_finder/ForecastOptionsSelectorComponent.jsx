@@ -11,10 +11,10 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import Paper from '@mui/material/Paper';
 import Select from '@mui/material/Select';
 import Slider from '@mui/material/Slider';
-import TextField from '@mui/material/TextField';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import Typography from '@mui/material/Typography';
+import dayjs from 'dayjs';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
@@ -55,8 +55,10 @@ export default function ForecastOptionsSelectorComponent(
     setLocationState(event.target.value);
   }, [setLocationState]);
 
-  const handleDateChange = useCallback((event) => {
-    setStartDateState(event.toDate());
+  const handleDateChange = useCallback((value) => {
+    if (value && value.isValid()) {
+      setStartDateState(value.toDate());
+    }
   }, [setStartDateState]);
 
   const handleSessionLengthChange = useCallback((event) => {
@@ -202,8 +204,14 @@ export default function ForecastOptionsSelectorComponent(
   return (
     <div className="ForecastOptionsSelector">
       <Paper className="ForecastOptionsPaper" elevation={1}>
-        <Grid container spacing={2} justifyContent="center">
-          <Grid item xs={4} sx={{ p: 4 }}>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            justifyContent: 'center',
+          }}
+        >
+          <Grid sx={{ p: 4 }} size={4}>
             <ToggleButtonGroup
               color="primary"
               value={rankingState.type}
@@ -214,7 +222,7 @@ export default function ForecastOptionsSelectorComponent(
               <ToggleButton value="custom">Select Conditions</ToggleButton>
             </ToggleButtonGroup>
           </Grid>
-          <Grid item xs={4} sx={{ p: 4 }}>
+          <Grid sx={{ p: 4 }} size={4}>
             <FormControl sx={{ m: 1, width: 300 }}>
               <InputLabel id="forecast-weather-condition-select-label">Conditions</InputLabel>
               <Select
@@ -239,8 +247,14 @@ export default function ForecastOptionsSelectorComponent(
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} justifyContent="center">
-          <Grid item xs={4} sx={{ p: 4 }}>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            justifyContent: 'center',
+          }}
+        >
+          <Grid sx={{ p: 4 }} size={4}>
             <FormControl>
               <InputLabel id="forecast-location-select-label">Location</InputLabel>
               <Select
@@ -263,20 +277,25 @@ export default function ForecastOptionsSelectorComponent(
               </Select>
             </FormControl>
           </Grid>
-          <Grid item xs={4} sx={{ p: 4 }}>
+          <Grid sx={{ p: 4 }} size={4}>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateTimePicker
                 label="Start date"
-                value={startDateState}
+                value={dayjs(startDateState)}
                 onChange={handleDateChange}
-                renderInput={(params) => <TextField {...params} />}
               />
             </LocalizationProvider>
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} justifyContent="center">
-          <Grid item xs={4} sx={{ p: 4 }}>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            justifyContent: 'center',
+          }}
+        >
+          <Grid sx={{ p: 4 }} size={4}>
             <Box>
               <Typography gutterBottom>
                 Session length
@@ -294,7 +313,7 @@ export default function ForecastOptionsSelectorComponent(
               />
             </Box>
           </Grid>
-          <Grid item xs={4} sx={{ p: 4 }}>
+          <Grid sx={{ p: 4 }} size={4}>
             <Box>
               <Typography gutterBottom>
                 Search duration

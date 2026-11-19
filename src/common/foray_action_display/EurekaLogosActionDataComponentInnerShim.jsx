@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { v4 as uuidv4 } from 'uuid';
 import EurekaLogosActionHelper from '../../eureka/lib/EurekaLogosActionHelper';
 import universalisPriceHelperInstance from '../../acquisition/UniversalisPriceHelper';
 import EurekaLogosActionRecipeSelectorComponent from '../../eureka/EurekaLogosActionRecipeSelectorComponent';
@@ -49,15 +48,36 @@ export default function EurekaLogosActionDataComponentInnerShim({
   }
 
   return (
-    <Stack spacing={2} p={1} alignItems="flex-start" width={1000}>
-      <Typography fontWeight={700} variant="h5">Recipes</Typography>
+    <Stack
+      spacing={2}
+      sx={{
+        p: 1,
+        alignItems: 'flex-start',
+        width: 1000,
+      }}
+    >
+      <Typography
+        variant="h5"
+        sx={{
+          fontWeight: 700,
+        }}
+      >
+        Recipes
+      </Typography>
       <EurekaLogosActionRecipeSelectorComponent
         recipes={actionData.recipes}
         selectedRecipe={selectedRecipe}
         handleRecipeUpdate={handleRecipeUpdate}
       />
       <Divider />
-      <Typography fontWeight={700} variant="h5">Logograms Needed</Typography>
+      <Typography
+        variant="h5"
+        sx={{
+          fontWeight: 700,
+        }}
+      >
+        Logograms Needed
+      </Typography>
       <Stack spacing={2} divider={<Divider variant="middle" />}>
         {
           selectedRecipe ? selectedRecipe.map((i) => {
@@ -70,7 +90,7 @@ export default function EurekaLogosActionDataComponentInnerShim({
                 mneme={i}
                 priceData={actionPriceData ? actionPriceData[mnemeData.logogram] : null}
                 lastUpdated={lastUpdated}
-                key={uuidv4()}
+                key={crypto.randomUUID()}
               />
             );
           })

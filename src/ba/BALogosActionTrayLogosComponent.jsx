@@ -1,7 +1,6 @@
 import React from 'react';
 
 import groupBy from 'underscore/modules/groupBy';
-import { v4 as uuidv4 } from 'uuid';
 
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -12,7 +11,7 @@ import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import useTheme from '@mui/material/styles/useTheme';
+import { useTheme } from '@mui/material/styles';
 
 import logosActionsJson from './lib/LogosActions.json';
 import EurekaLogosActionInformationTooltipComponent from '../eureka/EurekaLogosActionInformationTooltipComponent';
@@ -32,13 +31,13 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
 
     const menuItems = [];
 
-    menuItems.push(<MenuItem value="" key={`action-${uuidv4()}`}>None</MenuItem>);
+    menuItems.push(<MenuItem value="" key={`action-${crypto.randomUUID()}`}>None</MenuItem>);
 
-    menuItems.push(<Divider textAlign="left" key={`action-${uuidv4()}`}>Wisdoms</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`action-${crypto.randomUUID()}`}>Wisdoms</Divider>);
     for (let i = 0; i < actionsBySection.wisdom.length; i += 1) {
       const action = actionsBySection.wisdom[i];
       menuItems.push(
-        <MenuItem value={action.full} key={`action-${uuidv4()}`}>
+        <MenuItem value={action.full} key={`action-${crypto.randomUUID()}`}>
           <Tooltip
             arrow
             placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
@@ -54,7 +53,13 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
                 : ''
             }
           >
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
                 alt={action.name}
@@ -66,11 +71,11 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
       );
     }
 
-    menuItems.push(<Divider textAlign="left" key={`action-${uuidv4()}`}>Spirits</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`action-${crypto.randomUUID()}`}>Spirits</Divider>);
     for (let i = 0; i < actionsBySection.spirit.length; i += 1) {
       const action = actionsBySection.spirit[i];
       menuItems.push(
-        <MenuItem value={action.full} key={`action-${uuidv4()}`}>
+        <MenuItem value={action.full} key={`action-${crypto.randomUUID()}`}>
           <Tooltip
             arrow
             placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
@@ -86,7 +91,13 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
                 : ''
             }
           >
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
                 alt={action.name}
@@ -99,12 +110,12 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
     }
 
     menuItems.push(
-      <Divider textAlign="left" key={`action-${uuidv4()}`}>Personal Actions</Divider>,
+      <Divider textAlign="left" key={`action-${crypto.randomUUID()}`}>Personal Actions</Divider>,
     );
     for (let i = 0; i < actionsBySection.personalAction.length; i += 1) {
       const action = actionsBySection.personalAction[i];
       menuItems.push(
-        <MenuItem value={action.full} key={`action-${uuidv4()}`}>
+        <MenuItem value={action.full} key={`action-${crypto.randomUUID()}`}>
           <Tooltip
             arrow
             placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
@@ -120,7 +131,13 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
                 : ''
             }
           >
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
                 alt={action.name}
@@ -133,12 +150,12 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
     }
 
     menuItems.push(
-      <Divider textAlign="left" key={`action-${uuidv4()}`}>Beneficial Actions</Divider>,
+      <Divider textAlign="left" key={`action-${crypto.randomUUID()}`}>Beneficial Actions</Divider>,
     );
     for (let i = 0; i < actionsBySection.beneficialAction.length; i += 1) {
       const action = actionsBySection.beneficialAction[i];
       menuItems.push(
-        <MenuItem value={action.full} key={`action-${uuidv4()}`}>
+        <MenuItem value={action.full} key={`action-${crypto.randomUUID()}`}>
           <Tooltip
             arrow
             placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
@@ -154,7 +171,13 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
                 : ''
             }
           >
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
                 alt={action.name}
@@ -166,11 +189,11 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
       );
     }
 
-    menuItems.push(<Divider textAlign="left" key={`action-${uuidv4()}`}>Other Actions</Divider>);
+    menuItems.push(<Divider textAlign="left" key={`action-${crypto.randomUUID()}`}>Other Actions</Divider>);
     for (let i = 0; i < actionsBySection.otherAction.length; i += 1) {
       const action = actionsBySection.otherAction[i];
       menuItems.push(
-        <MenuItem value={action.full} key={`action-${uuidv4()}`}>
+        <MenuItem value={action.full} key={`action-${crypto.randomUUID()}`}>
           <Tooltip
             arrow
             placement={useMediaQuery(theme.breakpoints.up('md')) ? 'left' : 'top'}
@@ -186,7 +209,13 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
                 : ''
             }
           >
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={`${process.env.PUBLIC_URL}/assets/logosactions/${action.image}.png`}
                 alt={action.name}
@@ -211,8 +240,22 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
   const menuItems = renderTrayMenu();
 
   return (
-    <Box border={0} borderRadius="12px" width={250} height={135}>
-      <Stack direction="row" alignItems="center" justifyContent="center" mt={1}>
+    <Box
+      sx={{
+        border: 0,
+        borderRadius: '12px',
+        width: 250,
+        height: 135,
+      }}
+    >
+      <Stack
+        direction="row"
+        sx={{
+          alignItems: 'center',
+          justifyContent: 'center',
+          mt: 1,
+        }}
+      >
         <FormControl sx={{ width: 120, height: 100 }}>
           <Select
             height={100}
@@ -228,7 +271,12 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
               if (selected === '') {
                 return (
                   <Stack>
-                    <Box width={64} height={64} />
+                    <Box
+                      sx={{
+                        width: 64,
+                        height: 64,
+                      }}
+                    />
                     <Typography variant="caption">None</Typography>
                   </Stack>
                 );
@@ -279,7 +327,12 @@ export default function BALogosActionTrayLogosComponent({ tray, index, handleLog
               if (selected === '') {
                 return (
                   <Stack>
-                    <Box width={64} height={64} />
+                    <Box
+                      sx={{
+                        width: 64,
+                        height: 64,
+                      }}
+                    />
                     <Typography variant="caption">None</Typography>
                   </Stack>
                 );

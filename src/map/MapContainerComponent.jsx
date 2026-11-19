@@ -107,9 +107,9 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
   return (
     <Box
       component="main"
-      margin="auto"
       className="map-container"
       sx={{
+        margin: 'auto',
         height: { xs: 'calc(100dvh - 80px)', md: '100dvh' },
       }}
     >
@@ -153,7 +153,9 @@ export default function MapContainerComponent({ mapId, inputSelectedLayers }) {
             }}
           >
             <Typography
-              display={{ xs: 'none', md: 'block' }}
+              sx={{
+                display: { xs: 'none', md: 'block' },
+              }}
             >
               { t(`${mapData[selectedMapId].name}.full`, { ns: 'zones' }) }
             </Typography>

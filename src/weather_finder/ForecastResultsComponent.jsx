@@ -2,7 +2,6 @@ import React from 'react';
 import Paper from '@mui/material/Paper';
 
 import './ForecastResults.css';
-import { v4 as uuidv4 } from 'uuid';
 import ForecastResultComponent from './ForecastResultComponent';
 import WeatherFavorability from './weather-favorability';
 import ForecastResultsHeaderComponent from './ForecastResultsHeaderComponent';
@@ -32,7 +31,7 @@ export default function ForecastResultsComponent({
         />
         <div className="ForecastResultsContainer">
           {favorabilityData.map((item) => (
-            <ForecastResultComponent data={item} key={`favorability-${uuidv4()}`} />
+            <ForecastResultComponent data={item} key={`favorability-${crypto.randomUUID()}`} />
           ))}
         </div>
       </Paper>

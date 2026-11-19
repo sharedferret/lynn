@@ -8,8 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import Stack from '@mui/material/Stack';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import useTheme from '@mui/material/styles/useTheme';
-import { v4 as uuidv4 } from 'uuid';
+import { useTheme } from '@mui/material/styles';
 import BALogogramComponent from './BALogogramComponent';
 import logosActionData from './lib/LogosActions.json';
 
@@ -23,7 +22,7 @@ export default function BALogosActionRecipeContainerComponent({ tray }) {
     const output = [];
     for (let i = 0; i < recipes.length; i += 1) {
       output.push(
-        <MenuItem value={i} key={`recipe-${uuidv4()}`}>
+        <MenuItem value={i} key={`recipe-${crypto.randomUUID()}`}>
           <Box>
             <Stack>
               <BALogogramComponent logogram={recipes[i][0]} />
@@ -33,7 +32,7 @@ export default function BALogosActionRecipeContainerComponent({ tray }) {
           </Box>
         </MenuItem>,
       );
-      output.push(<Divider key={`action-${uuidv4()}`} />);
+      output.push(<Divider key={`action-${crypto.randomUUID()}`} />);
     }
 
     return output.splice(0, output.length - 1);
@@ -47,9 +46,31 @@ export default function BALogosActionRecipeContainerComponent({ tray }) {
   const astralAction = logosActions[tray.astral];
 
   return (
-    <Box width={{ md: 600 }} height={{ md: 135 }} border={1} borderRadius="12px">
-      <Stack direction={{ md: 'row' }} spacing={{ md: 1 }} pl={1} pr={1}>
-        <Box width={300} height={135} display="flex" alignItems="center" justifyContent="center">
+    <Box
+      sx={{
+        width: { md: 600 },
+        height: { md: 135 },
+        border: 1,
+        borderRadius: '12px',
+      }}
+    >
+      <Stack
+        direction={{ md: 'row' }}
+        spacing={{ md: 1 }}
+        sx={{
+          pl: 1,
+          pr: 1,
+        }}
+      >
+        <Box
+          sx={{
+            width: 300,
+            height: 135,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
           <FormControl sx={{ width: 280 }}>
             <InputLabel id="umbralArraySelectLabel">Umbral Array</InputLabel>
             <Select
@@ -59,7 +80,14 @@ export default function BALogosActionRecipeContainerComponent({ tray }) {
               defaultValue={0}
             >
               {umbralAction != null ? renderRecipes(umbralAction.recipes)
-                : <MenuItem value="0" key={`action-${uuidv4()}`}><Box height={60} /></MenuItem>}
+                : (
+                  <MenuItem value="0" key={`action-${crypto.randomUUID()}`}>
+                    <Box sx={{
+                      height: 60,
+                    }}
+                    />
+                  </MenuItem>
+                )}
             </Select>
           </FormControl>
         </Box>
@@ -70,7 +98,15 @@ export default function BALogosActionRecipeContainerComponent({ tray }) {
           flexItem
         />
 
-        <Box width={300} height={135} display="flex" alignItems="center" justifyContent="center">
+        <Box
+          sx={{
+            width: 300,
+            height: 135,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
           <FormControl sx={{ width: 280 }}>
             <InputLabel id="astralArraySelectLabel">Astral Array</InputLabel>
             <Select
@@ -80,7 +116,14 @@ export default function BALogosActionRecipeContainerComponent({ tray }) {
               defaultValue={0}
             >
               {astralAction != null ? renderRecipes(astralAction.recipes)
-                : <MenuItem value="0" key={`action-${uuidv4()}`}><Box height={60} /></MenuItem>}
+                : (
+                  <MenuItem value="0" key={`action-${crypto.randomUUID()}`}>
+                    <Box sx={{
+                      height: 60,
+                    }}
+                    />
+                  </MenuItem>
+                )}
             </Select>
           </FormControl>
         </Box>

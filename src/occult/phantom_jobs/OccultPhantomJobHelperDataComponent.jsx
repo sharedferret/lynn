@@ -12,7 +12,13 @@ export default function OccultPhantomJobHelperDataComponent({ phantomJob }) {
 
   return (
     <Container maxWidth="lg" sx={{ width: '100%' }}>
-      <Stack spacing={4} alignItems="flex-start" width="100%">
+      <Stack
+        spacing={4}
+        sx={{
+          alignItems: 'flex-start',
+          width: '100%',
+        }}
+      >
         <Divider sx={{ width: '50%', margin: '0 auto', mb: 3 }} />
         { phantomJobData ? (
           <OccultPhantomJobInformationComponent

@@ -18,7 +18,13 @@ export default function ActionAcquisitionMethodBoxFarmCard({ methodData }) {
   return (
     <Card sx={{ minWidth: 275, minHeight: 300 }}>
       <CardContent>
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/eureka/warped_box.png`}
             width={36}
@@ -27,11 +33,17 @@ export default function ActionAcquisitionMethodBoxFarmCard({ methodData }) {
           />
           <Typography variant="h5">Box Farm</Typography>
         </Stack>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>{map}</Typography>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>{methodData.item}</Typography>

@@ -54,9 +54,22 @@ export default function ChangelogComponent() {
   );
 
   return (
-    <Box flexGrow={1} height="100%" sx={{ pt: { xs: 14, md: 5 } }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        height: '100%',
+        pt: { xs: 14, md: 5 },
+      }}
+    >
       <Stack>
-        <Typography variant="h3" fontWeight={700}>Changelog</Typography>
+        <Typography
+          variant="h3"
+          sx={{
+            fontWeight: 700,
+          }}
+        >
+          Changelog
+        </Typography>
         <Timeline
           sx={{
             [`& .${timelineOppositeContentClasses.root}`]: {

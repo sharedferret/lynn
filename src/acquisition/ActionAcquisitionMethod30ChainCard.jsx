@@ -20,17 +20,29 @@ export default function ActionAcquisitionMethod30ChainCard({ methodData }) {
   return (
     <Card sx={{ minWidth: 275, minHeight: 300 }}>
       <CardContent>
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <Avatar variant="rounded" sx={{ width: 32, height: 32 }}>
             <LinkIcon />
           </Avatar>
           <Typography variant="h5">30 Chain</Typography>
         </Stack>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>{map}</Typography>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>Achieve a 30 mob chain</Typography>

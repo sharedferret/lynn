@@ -4,26 +4,53 @@ import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { v4 as uuidv4 } from 'uuid';
 import ActionAcquisitionMethodCardComponent from '../acquisition/ActionAcquisitionMethodCardComponent';
 
 export default function EurekaLogogramDataComponent({
   mneme, mnemeData, logogramData, priceData,
 }) {
   return (
-    <Stack spacing={2} p={1} alignItems="flex-start" width={1000}>
+    <Stack
+      spacing={2}
+      sx={{
+        p: 1,
+        alignItems: 'flex-start',
+        width: 1000,
+      }}
+    >
       <Divider variant="middle" />
-      <Stack direction="row" alignItems="center">
+      <Stack
+        direction="row"
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         <img
           src={`${process.env.PUBLIC_URL}/assets/logograms/${mnemeData.type}.png`}
           width={48}
           height={48}
           alt={mnemeData.type}
         />
-        <Box width={12} />
-        <Typography fontWeight={700} variant="h5">{mneme}</Typography>
+        <Box sx={{
+          width: 12,
+        }}
+        />
+        <Typography
+          variant="h5"
+          sx={{
+            fontWeight: 700,
+          }}
+        >
+          {mneme}
+        </Typography>
       </Stack>
-      <Stack direction="row" alignItems="center" spacing={1}>
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         <Typography variant="h6">Drops from:</Typography>
         <img
           src={`${process.env.PUBLIC_URL}/assets/logograms/${logogramData.short}_logogram.png`}
@@ -36,7 +63,7 @@ export default function EurekaLogogramDataComponent({
       <Grid container spacing={2}>
         {
           logogramData.acquisition.map((i) => (
-            <Grid item key={uuidv4()}>
+            <Grid key={crypto.randomUUID()}>
               <ActionAcquisitionMethodCardComponent
                 methodData={i}
                 logogramName={logogramData.name}

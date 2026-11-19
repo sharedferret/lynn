@@ -20,16 +20,38 @@ export default function BALogosRecommender({ workflow, handleWorkflowUpdate }) {
 
     return (
       <Box className="BALogogramWorkflowContainer">
-        <Stack alignItems="center" spacing={2}>
+        <Stack
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <Box>
-            <Typography variant="h4" fontWeight="700">Welcome!</Typography>
+            <Typography
+              variant="h4"
+              sx={{
+                fontWeight: '700',
+              }}
+            >
+              Welcome!
+            </Typography>
             <Typography variant="h4">What role are you entering BA as?</Typography>
           </Box>
           <Divider />
           <Box>
-            <Stack spacing={2} width="100%">
+            <Stack
+              spacing={2}
+              sx={{
+                width: '100%',
+              }}
+            >
               {roles.map((item) => (
-                <Box width={390} key={`rolewf-${item}`}>
+                <Box
+                  key={`rolewf-${item}`}
+                  sx={{
+                    width: 390,
+                  }}
+                >
                   <Button
                     fullWidth
                     variant="outlined"
@@ -56,15 +78,30 @@ export default function BALogosRecommender({ workflow, handleWorkflowUpdate }) {
 
     return (
       <Box className="BALogogramWorkflowContainer">
-        <Stack alignItems="center" spacing={2}>
+        <Stack
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <Box>
             <Typography variant="h4">Next, pick a loadout:</Typography>
           </Box>
           <Divider />
           <Box>
-            <Stack spacing={2} width="100%">
+            <Stack
+              spacing={2}
+              sx={{
+                width: '100%',
+              }}
+            >
               {trays.map((item) => (
-                <Box width={390} key={`baloadout-${item.title}`}>
+                <Box
+                  key={`baloadout-${item.title}`}
+                  sx={{
+                    width: 390,
+                  }}
+                >
                   <Button
                     fullWidth
                     variant="outlined"
@@ -101,9 +138,17 @@ export default function BALogosRecommender({ workflow, handleWorkflowUpdate }) {
 
   return (
     <Box className="BALogogramWorkflowContainer">
-      <Stack alignItems="center" spacing={2}>
+      <Stack
+        spacing={2}
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         <Typography variant="h4">Here are your recommended logos actions!</Typography>
-        <Box maxWidth={600}>
+        <Box sx={{
+          maxWidth: 600,
+        }}
+        >
           <Typography>
             You can build these at a Logos Manipulator. Pop and activate your Spirit of
             the Remembered action when you zone in to the Baldesion Arsenal, then pop your

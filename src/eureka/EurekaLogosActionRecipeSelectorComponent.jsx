@@ -3,7 +3,6 @@ import Stack from '@mui/material/Stack';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
 import EurekaLogogramRecipeComponent from './EurekaLogogramRecipeComponent';
 
 export default function EurekaLogosActionRecipeSelectorComponent(
@@ -23,7 +22,7 @@ export default function EurekaLogosActionRecipeSelectorComponent(
             style={{ justifyContent: 'flex-start' }}
             value={i.join(',')}
             sx={{ minWidth: 300, width: 600, alignItems: 'flex-start' }}
-            key={uuidv4()}
+            key={crypto.randomUUID()}
           >
             <Stack>
               <EurekaLogogramRecipeComponent logogram={i[0]} />

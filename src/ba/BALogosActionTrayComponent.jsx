@@ -5,7 +5,7 @@ import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import useTheme from '@mui/material/styles/useTheme';
+import { useTheme } from '@mui/material/styles';
 
 import BALogosActionTrayLogosComponent from './BALogosActionTrayLogosComponent';
 import BALogosActionRecipeContainerComponent from './BALogosActionRecipeContainerComponent';
@@ -45,17 +45,25 @@ export default function BALogosActionTrayComponent({
       <Stack
         direction={{ lg: 'row' }}
         spacing={{ xs: 1, md: 2 }}
-        height={{ lg: 150 }}
-        p={1}
-        alignItems="center"
-        justifyContent="center"
+        sx={{
+          height: { lg: 150 },
+          p: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
       >
-        <Box width={{ lg: 25 }}>
+        <Box sx={{
+          width: { lg: 25 },
+        }}
+        >
           <Typography
             align="center"
-            fontWeight={700}
-            width={{ lg: 150 }}
-            sx={{ transform: { lg: 'translateX(-40%) rotate(-90deg)' }, whiteSpace: { lg: 'nowrap' } }}
+            sx={{
+              fontWeight: 700,
+              width: { lg: 150 },
+              transform: { lg: 'translateX(-40%) rotate(-90deg)' },
+              whiteSpace: { lg: 'nowrap' },
+            }}
           >
             {getPlateName()}
           </Typography>

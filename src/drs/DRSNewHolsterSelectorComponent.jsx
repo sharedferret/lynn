@@ -286,12 +286,18 @@ export default function DRSNewHolsterSelectorComponent({
                 i === 0 && selectedHost
                   ? (
                     <Stack>
-                      <Typography fontWeight={700}>
+                      <Typography sx={{
+                        fontWeight: 700,
+                      }}
+                      >
                         {holsterMapping.hosts[selectedHost].name}
                       </Typography>
                       {holsterMapping.hosts[selectedHost].lastUpdated
                         ? (
-                          <Typography fontSize={12}>
+                          <Typography sx={{
+                            fontSize: 12,
+                          }}
+                          >
                             <Trans
                               i18nKey="drs.holster-helper.last-updated"
                               ns="bsf"
@@ -309,7 +315,10 @@ export default function DRSNewHolsterSelectorComponent({
               {
                 i === 1 && selectedRunType
                   ? (
-                    <Typography fontWeight={700}>
+                    <Typography sx={{
+                      fontWeight: 700,
+                    }}
+                    >
                       {holsterMapping.hosts[selectedHost].runTypes[selectedRunType].name}
                     </Typography>
                   )
@@ -318,7 +327,10 @@ export default function DRSNewHolsterSelectorComponent({
               {
                 i === 2 && selectedRole
                   ? (
-                    <Typography fontWeight={700}>
+                    <Typography sx={{
+                      fontWeight: 700,
+                    }}
+                    >
                       {holsterMapping
                         .hosts[selectedHost].runTypes[selectedRunType].roles[selectedRole].name}
                     </Typography>
@@ -328,7 +340,10 @@ export default function DRSNewHolsterSelectorComponent({
               {
                 i === 3 && selectedHolster
                   ? (
-                    <Typography fontWeight={700}>
+                    <Typography sx={{
+                      fontWeight: 700,
+                    }}
+                    >
                       {holsterData
                         .host[selectedHost]
                         .holsters[selectedRunType]
@@ -340,13 +355,31 @@ export default function DRSNewHolsterSelectorComponent({
               }
             </StepLabel>
             <StepContent>
-              <Typography textAlign="left" fontSize={20} pb={2}>{step.description}</Typography>
+              <Typography
+                sx={{
+                  textAlign: 'left',
+                  fontSize: 20,
+                  pb: 2,
+                }}
+              >
+                {step.description}
+              </Typography>
               {
                 activeStep === 0
                   ? (
-                    <Stack spacing={2} width="100%">
+                    <Stack
+                      spacing={2}
+                      sx={{
+                        width: '100%',
+                      }}
+                    >
                       {hosts.map((item) => (
-                        <Box maxWidth={600} key={`hostwf-${item}`}>
+                        <Box
+                          key={`hostwf-${item}`}
+                          sx={{
+                            maxWidth: 600,
+                          }}
+                        >
                           <Button
                             fullWidth
                             variant="outlined"
@@ -368,9 +401,19 @@ export default function DRSNewHolsterSelectorComponent({
               {
                 activeStep === 1
                   ? (
-                    <Stack spacing={2} width="100%">
+                    <Stack
+                      spacing={2}
+                      sx={{
+                        width: '100%',
+                      }}
+                    >
                       {runTypes.map((item) => (
-                        <Box maxWidth={600} key={`runtypewf-${item}`}>
+                        <Box
+                          key={`runtypewf-${item}`}
+                          sx={{
+                            maxWidth: 600,
+                          }}
+                        >
                           <Button
                             fullWidth
                             variant="outlined"
@@ -389,9 +432,19 @@ export default function DRSNewHolsterSelectorComponent({
               {
                 activeStep === 2
                   ? (
-                    <Stack spacing={2} width="100%">
+                    <Stack
+                      spacing={2}
+                      sx={{
+                        width: '100%',
+                      }}
+                    >
                       {roles.map((item) => (
-                        <Box maxWidth={600} key={`rolewf-${item}`}>
+                        <Box
+                          key={`rolewf-${item}`}
+                          sx={{
+                            maxWidth: 600,
+                          }}
+                        >
                           <Button
                             fullWidth
                             variant="outlined"
@@ -413,9 +466,19 @@ export default function DRSNewHolsterSelectorComponent({
               {
                 activeStep === 3
                   ? (
-                    <Stack spacing={2} width="100%">
+                    <Stack
+                      spacing={2}
+                      sx={{
+                        width: '100%',
+                      }}
+                    >
                       {availableHolsters.map((item) => (
-                        <Box maxWidth={600} key={`holsterwf-${item}`}>
+                        <Box
+                          key={`holsterwf-${item}`}
+                          sx={{
+                            maxWidth: 600,
+                          }}
+                        >
                           <Button
                             fullWidth
                             variant="outlined"
@@ -443,10 +506,18 @@ export default function DRSNewHolsterSelectorComponent({
 
   const displayStepperIntroText = (() => (
     <Box>
-      <Typography textAlign="left">
+      <Typography sx={{
+        textAlign: 'left',
+      }}
+      >
         { t('drs.holster-helper.intro.p1') }
       </Typography>
-      <Typography textAlign="left" pt={1}>
+      <Typography
+        sx={{
+          textAlign: 'left',
+          pt: 1,
+        }}
+      >
         <Trans
           i18nKey="drs.holster-helper.intro.p2"
           ns="bsf"
@@ -459,12 +530,27 @@ export default function DRSNewHolsterSelectorComponent({
   ));
 
   return (
-    <Box width="90%" maxWidth={1600} minHeight={600} mt="30px" ml="auto" mr="auto" pb="10px">
+    <Box
+      sx={{
+        width: '90%',
+        maxWidth: 1600,
+        minHeight: 600,
+        mt: '30px',
+        ml: 'auto',
+        mr: 'auto',
+        pb: '10px',
+      }}
+    >
       {!initialHolster || (initialHolster && initialHolster.showStepper)
         ? displayStepperIntroText()
         : null}
 
-      <Stack spacing={2} pt={2}>
+      <Stack
+        spacing={2}
+        sx={{
+          pt: 2,
+        }}
+      >
         {!initialHolster || (initialHolster && initialHolster.showStepper)
           ? displayStepper()
           : null}

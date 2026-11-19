@@ -33,12 +33,38 @@ export default function BozjaLostActionHelperComponent({ lostAction }) {
   return (
     <Container maxWidth="lg">
 
-      <Box p={3}>
-        <Stack spacing={2} minHeight={100} p={1} alignItems="center">
-          <Typography fontWeight={700} variant="h4"><Trans i18nKey="lost-action-helper.title" ns="bsf" /></Typography>
-          <Stack direction="row" spacing={2} alignItems="center">
+      <Box sx={{
+        p: 3,
+      }}
+      >
+        <Stack
+          spacing={2}
+          sx={{
+            minHeight: 100,
+            p: 1,
+            alignItems: 'center',
+          }}
+        >
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 700,
+            }}
+          >
+            <Trans i18nKey="lost-action-helper.title" ns="bsf" />
+          </Typography>
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <Typography><Trans i18nKey="lost-action-helper.action-label" ns="bsf" /></Typography>
-            <Box width={325}>
+            <Box sx={{
+              width: 325,
+            }}
+            >
               <BozjaLostActionSelectorComponent
                 lostAction={lostActionState}
                 handleActionUpdate={handleActionUpdate}

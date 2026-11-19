@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Tooltip from '@mui/material/Tooltip';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import useTheme from '@mui/material/styles/useTheme';
+import { useTheme } from '@mui/material/styles';
 import React from 'react';
 import EurekaLogosActionInformationTooltipComponent from './EurekaLogosActionInformationTooltipComponent';
 
@@ -15,12 +15,14 @@ export default function EurekaLogosActionIconSelectorComponent({ handleActionUpd
     <Grid
       container
       columns={10}
-      maxWidth={375}
+      sx={{
+        maxWidth: 375,
+      }}
     >
       {actionNames.map((i) => {
         const action = logosActions.logosActions[i];
         return (
-          <Grid item xs={1}>
+          <Grid size={1}>
             <Box
               onClick={() => handleActionUpdate({ target: { value: i } })}
               style={{ cursor: 'pointer' }}

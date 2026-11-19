@@ -18,7 +18,13 @@ export default function ActionAcquisitionMethodSkirmishCard({ methodData }) {
   return (
     <Card sx={{ minWidth: 275, minHeight: 300 }}>
       <CardContent>
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/icons/Bozja_Skirmish.png`}
             width={36}
@@ -27,7 +33,10 @@ export default function ActionAcquisitionMethodSkirmishCard({ methodData }) {
           />
           <Typography variant="h5">Skirmishes</Typography>
         </Stack>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>{map}</Typography>
@@ -36,11 +45,21 @@ export default function ActionAcquisitionMethodSkirmishCard({ methodData }) {
           {' '}
           {methodData.zone}
         </Typography>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         {methodData.fates.map((i) => (
-          <Stack direction="row" alignItems="center" spacing={2} key={`skirmish-${i}`}>
+          <Stack
+            direction="row"
+            spacing={2}
+            key={`skirmish-${i}`}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/icons/Bozja_Skirmish.png`}
               width={24}

@@ -33,7 +33,10 @@ export default function WeatherConditionCardComponent({ data }) {
   return (
     <Card className="WeatherConditionCard">
       <CardContent>
-        <Stack alignItems="center">
+        <Stack sx={{
+          alignItems: 'center',
+        }}
+        >
           <Typography>
             {data.condition}
           </Typography>

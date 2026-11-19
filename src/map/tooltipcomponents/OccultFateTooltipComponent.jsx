@@ -9,7 +9,13 @@ export default function OccultFateTooltipComponent({ markerData }) {
   return (
     <Stack>
       <Typography variant="h6">{t('map.captions.boss')}</Typography>
-      <Stack direction="row" spacing={1} alignItems="center">
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{
+          alignItems: 'center',
+        }}
+      >
         {markerData.metadata.weakness && (
           <img
             src={`/assets/icons/weakness-${markerData.metadata.weakness}.png`}
@@ -25,7 +31,13 @@ export default function OccultFateTooltipComponent({ markerData }) {
         markerData.metadata.dispeller && (
           <Stack>
             <Typography variant="h6">{t('map.captions.dispeller')}</Typography>
-            <Stack direction="row" spacing={1} alignItems="center">
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={`/assets/maps/markers/dispeller-${markerData.metadata.dispeller}.png`}
                 alt={markerData.metadata.dispeller}

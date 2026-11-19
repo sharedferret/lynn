@@ -14,7 +14,6 @@ import Typography from '@mui/material/Typography';
 import { styled, useTheme } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import { Scrollbars } from 'react-custom-scrollbars-2';
-import { v4 as uuidv4 } from 'uuid';
 import { Trans } from 'react-i18next';
 
 import Brightness4Icon from '@mui/icons-material/Brightness4';
@@ -83,16 +82,31 @@ function SidebarComponent({
 
   const mainSidebarContent = (
     <List pt={4} pb={4} sx={{ overflowX: 'hidden' }}>
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>
+      <Stack
+        direction="row"
+        sx={{
+          height: '3rem',
+          alignItems: 'center',
+        }}
+      >
+        <Box sx={{
+          width: 24,
+        }}
+        />
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
           <Trans i18nKey="sidebar.occult.header" ns="common" />
         </Typography>
       </Stack>
 
       { /* <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'occult/guide'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
         <Box width={32} />
         <Typography>Guide</Typography>
@@ -100,39 +114,63 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/northhorn'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.occult.map" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'occult/phantomjob'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.occult.job" ns="common" /></Typography>
       </StyledButton>
 
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>
+      <Stack
+        direction="row"
+        sx={{
+          height: '3rem',
+          alignItems: 'center',
+        }}
+      >
+        <Box sx={{
+          width: 24,
+        }}
+        />
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
           <Trans i18nKey="sidebar.bozja.header" ns="common" />
         </Typography>
       </Stack>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/holster'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.bozja.holster" ns="common" /></Typography>
       </StyledButton>
 
       { /**
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/guide'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
         <Box width={32} />
         <Typography><Trans i18nKey="sidebar.bozja.drsguide" ns="common" /></Typography>
@@ -141,134 +179,221 @@ function SidebarComponent({
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'drs/holster/c'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.bozja.holstercreator" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/bsf'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.bozja.map" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'bozja/lostaction'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.bozja.lostaction" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.FRAGMENT_FARM)}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.bozja.fragmentfarm" ns="common" /></Typography>
       </StyledButton>
 
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>
+      <Stack
+        direction="row"
+        sx={{
+          height: '3rem',
+          alignItems: 'center',
+        }}
+      >
+        <Box sx={{
+          width: 24,
+        }}
+        />
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
           <Trans i18nKey="sidebar.eureka.header" ns="common" />
         </Typography>
       </Stack>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'ba'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.eureka.baloadout" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'portals'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.eureka.bamap" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'map/hydatos'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.eureka.map" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'eureka/logos'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.eureka.logosaction" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'eureka/loadout'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.eureka.loadout" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.EUREKA_NMS)}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.eureka.nm" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.EUREKA_FARMS)}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.eureka.farm" ns="common" /></Typography>
       </StyledButton>
 
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>
+      <Stack
+        direction="row"
+        sx={{
+          height: '3rem',
+          alignItems: 'center',
+        }}
+      >
+        <Box sx={{
+          width: 24,
+        }}
+        />
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
           <Trans i18nKey="sidebar.forays.header" ns="common" />
         </Typography>
       </Stack>
 
       <StyledButton
         onClick={(e) => handleSidebarForecastClickFromSidebar(e, ResultsFilter.ALL)}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.forays.forecast" ns="common" /></Typography>
       </StyledButton>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, 'weather-finder'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <Typography><Trans i18nKey="sidebar.forays.weather" ns="common" /></Typography>
       </StyledButton>
 
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>
+      <Stack
+        direction="row"
+        sx={{
+          height: '3rem',
+          alignItems: 'center',
+        }}
+      >
+        <Box sx={{
+          width: 24,
+        }}
+        />
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
           <Trans i18nKey="sidebar.about.header" ns="common" />
         </Typography>
       </Stack>
 
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, '#'); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
-        <Box width={32} />
+        <Box sx={{
+          width: 32,
+        }}
+        />
         <ListItemText><Trans i18nKey="sidebar.about.lynn" ns="common" /></ListItemText>
       </StyledButton>
     </List>
@@ -278,7 +403,7 @@ function SidebarComponent({
     <List pt={4} pb={4} sx={{ overflowX: 'hidden' }}>
       <StyledButton
         onClick={(e) => { handleSidebarClickFromSidebar(e, ''); }}
-        key={uuidv4()}
+        key={crypto.randomUUID()}
       >
         <ListItemAvatar>
           <ArrowBackIcon />
@@ -286,9 +411,24 @@ function SidebarComponent({
         <ListItemText><Trans i18nKey="common.home" ns="common" /></ListItemText>
       </StyledButton>
 
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>
+      <Stack
+        direction="row"
+        sx={{
+          height: '3rem',
+          alignItems: 'center',
+        }}
+      >
+        <Box sx={{
+          width: 24,
+        }}
+        />
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
           <Trans i18nKey="sidebar.forecast.header.all" ns="common" />
         </Typography>
       </Stack>
@@ -297,7 +437,7 @@ function SidebarComponent({
       ].map((resultsfilter) => (
         <StyledButton
           onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
-          key={uuidv4()}
+          key={crypto.randomUUID()}
         >
           {resultsfilter.collection === false
             ? (
@@ -317,9 +457,24 @@ function SidebarComponent({
         </StyledButton>
       ))}
 
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>
+      <Stack
+        direction="row"
+        sx={{
+          height: '3rem',
+          alignItems: 'center',
+        }}
+      >
+        <Box sx={{
+          width: 24,
+        }}
+        />
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
           <Trans i18nKey="sidebar.forecast.header.eurekanm" ns="common" />
         </Typography>
       </Stack>
@@ -333,7 +488,7 @@ function SidebarComponent({
       ].map((resultsfilter) => (
         <StyledButton
           onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
-          key={uuidv4()}
+          key={crypto.randomUUID()}
         >
           {resultsfilter.collection === false
             ? (
@@ -353,9 +508,24 @@ function SidebarComponent({
         </StyledButton>
       ))}
 
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>
+      <Stack
+        direction="row"
+        sx={{
+          height: '3rem',
+          alignItems: 'center',
+        }}
+      >
+        <Box sx={{
+          width: 24,
+        }}
+        />
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
           <Trans i18nKey="sidebar.forecast.header.eurekafarm" ns="common" />
         </Typography>
       </Stack>
@@ -369,7 +539,7 @@ function SidebarComponent({
       ].map((resultsfilter) => (
         <StyledButton
           onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
-          key={uuidv4()}
+          key={crypto.randomUUID()}
         >
           {resultsfilter.collection === false
             ? (
@@ -387,9 +557,24 @@ function SidebarComponent({
         </StyledButton>
       ))}
 
-      <Stack direction="row" height="3rem" alignItems="center">
-        <Box width={24} />
-        <Typography color="#fff" fontWeight={600} fontSize={16}>
+      <Stack
+        direction="row"
+        sx={{
+          height: '3rem',
+          alignItems: 'center',
+        }}
+      >
+        <Box sx={{
+          width: 24,
+        }}
+        />
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
           <Trans i18nKey="sidebar.forecast.header.bozjafarm" ns="common" />
         </Typography>
       </Stack>
@@ -403,7 +588,7 @@ function SidebarComponent({
       ].map((resultsfilter) => (
         <StyledButton
           onClick={(e) => { handleSidebarForecastClickFromSidebar(e, resultsfilter); }}
-          key={uuidv4()}
+          key={crypto.randomUUID()}
         >
           {resultsfilter.collection === false
             ? (
@@ -450,38 +635,87 @@ function SidebarComponent({
         ModalProps={{
           keepMounted: true, // Better open performance on mobile.
         }}
-        PaperProps={{
-          style: {
-            backgroundColor: 'rgb(31,41,55)',
-          },
-        }}
         sx={{
           display: { xs: 'block', md: 'none' },
           '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
         }}
+        slotProps={{
+          paper: {
+            style: {
+              backgroundColor: 'rgb(31,41,55)',
+            },
+          },
+        }}
       >
-        <Stack width="100%" height="100%">
+        <Stack
+          sx={{
+            width: '100%',
+            height: '100%',
+          }}
+        >
 
-          <Stack spacing={2} pt={1}>
+          <Stack
+            spacing={2}
+            sx={{
+              pt: 1,
+            }}
+          >
             <Button
               onClick={(e) => handleSidebarClickFromSidebar(e, '')}
             >
-              <Typography fontSize="30px" color="#fecaca">{getSiteName()}</Typography>
+              <Typography
+                sx={{
+                  fontSize: '30px',
+                  color: '#fecaca',
+                }}
+              >
+                {getSiteName()}
+              </Typography>
             </Button>
             <Box>
-              <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />
+              <Divider
+                variant="middle"
+                sx={{
+                  bgcolor: '#999',
+                  mb: 1,
+                  opacity: '0.6',
+                }}
+              />
             </Box>
           </Stack>
-          <Box flexGrow={1}>
+          <Box sx={{
+            flexGrow: 1,
+          }}
+          >
             <Scrollbars universal>
               {drawer}
             </Scrollbars>
           </Box>
           <Box>
-            <Stack width="100%" height="100%">
-              <Divider variant="middle" light sx={{ bgcolor: '#999', mt: 1 }} />
-              <Stack direction="row" flexGrow={1}>
-                <Box flexGrow={1} />
+            <Stack
+              sx={{
+                width: '100%',
+                height: '100%',
+              }}
+            >
+              <Divider
+                variant="middle"
+                sx={{
+                  bgcolor: '#999',
+                  mt: 1,
+                  opacity: '0.6',
+                }}
+              />
+              <Stack
+                direction="row"
+                sx={{
+                  flexGrow: 1,
+                }}
+              >
+                <Box sx={{
+                  flexGrow: 1,
+                }}
+                />
                 <IconButton
                   sx={{ m: 1 }}
                   onClick={(e) => handleDarkModeClick(e, colorMode)}
@@ -498,29 +732,58 @@ function SidebarComponent({
       </Drawer>
       <Drawer
         variant="permanent"
-        PaperProps={{
-          style: {
-            backgroundColor: 'rgb(31,41,55)',
-          },
-        }}
         sx={{
           display: { xs: 'none', md: 'block' },
           '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
         }}
         open
+        slotProps={{
+          paper: {
+            style: {
+              backgroundColor: 'rgb(31,41,55)',
+            },
+          },
+        }}
       >
-        <Stack width="100%" height="100%">
-          <Stack spacing={2} pt={1}>
+        <Stack
+          sx={{
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <Stack
+            spacing={2}
+            sx={{
+              pt: 1,
+            }}
+          >
             <Button
               onClick={(e) => handleSidebarClickFromSidebar(e, '')}
             >
-              <Typography fontSize="30px" color="#fecaca">{getSiteName()}</Typography>
+              <Typography
+                sx={{
+                  fontSize: '30px',
+                  color: '#fecaca',
+                }}
+              >
+                {getSiteName()}
+              </Typography>
             </Button>
             <Box>
-              <Divider variant="middle" light sx={{ bgcolor: '#999', mb: 1 }} />
+              <Divider
+                variant="middle"
+                sx={{
+                  bgcolor: '#999',
+                  mb: 1,
+                  opacity: '0.6',
+                }}
+              />
             </Box>
           </Stack>
-          <Box flexGrow={1}>
+          <Box sx={{
+            flexGrow: 1,
+          }}
+          >
             <Scrollbars
               universal
               renderTrackVertical={({ style, ...props }) => (
@@ -554,10 +817,30 @@ function SidebarComponent({
             </Scrollbars>
           </Box>
           <Box>
-            <Stack width="100%" height="100%">
-              <Divider variant="middle" light sx={{ bgcolor: '#999', mt: 1 }} />
-              <Stack direction="row" alignItems="center">
-                <Box flexGrow={1}>
+            <Stack
+              sx={{
+                width: '100%',
+                height: '100%',
+              }}
+            >
+              <Divider
+                variant="middle"
+                sx={{
+                  bgcolor: '#999',
+                  mt: 1,
+                  opacity: '0.6',
+                }}
+              />
+              <Stack
+                direction="row"
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
+                <Box sx={{
+                  flexGrow: 1,
+                }}
+                >
                   <SettingsPopoverComponent setColorMode={colorMode.setColorMode} />
                 </Box>
                 <Box>

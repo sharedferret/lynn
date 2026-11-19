@@ -50,18 +50,28 @@ export default function SettingsPopoverComponent({ setColorMode }) {
   const settingsButton = (
     <Stack
       direction="row"
-      m={1}
-      p={1}
       spacing={1}
-      alignItems="center"
-      flexGrow={1}
       style={{ cursor: 'pointer' }}
       onClick={(e) => handleSettingsButtonClick(e)}
+      sx={{
+        m: 1,
+        p: 1,
+        alignItems: 'center',
+        flexGrow: 1,
+      }}
     >
       <SettingsApplicationsIcon sx={{ color: 'white' }} />
       { /* <Typography fontWeight={600} fontSize={16}>{getFlag()}</Typography> */ }
       <Box>
-        <Typography color="#fff" fontWeight={600} fontSize={16}>{t('settings.title')}</Typography>
+        <Typography
+          sx={{
+            color: '#fff',
+            fontWeight: 600,
+            fontSize: 16,
+          }}
+        >
+          {t('settings.title')}
+        </Typography>
       </Box>
     </Stack>
   );
@@ -86,7 +96,10 @@ export default function SettingsPopoverComponent({ setColorMode }) {
 
   return (
     <>
-      <Box flexGrow={1}>
+      <Box sx={{
+        flexGrow: 1,
+      }}
+      >
         {settingsButton}
       </Box>
       <Dialog open={open} onClose={handleClose}>
@@ -104,7 +117,12 @@ export default function SettingsPopoverComponent({ setColorMode }) {
             <FormControlLabel value="system" control={<Radio />} label={t('settings.themes.system')} />
           </RadioGroup>
 
-          <DialogContentText pt={2}>{t('settings.language_title')}</DialogContentText>
+          <DialogContentText sx={{
+            pt: 2,
+          }}
+          >
+            {t('settings.language_title')}
+          </DialogContentText>
 
           <RadioGroup
             row
@@ -117,7 +135,12 @@ export default function SettingsPopoverComponent({ setColorMode }) {
             <FormControlLabel value="jp" control={<Radio />} disabled label="🇯🇵 日本語" />
           </RadioGroup>
 
-          <DialogContentText pt={2}>{t('settings.universalis_region_title')}</DialogContentText>
+          <DialogContentText sx={{
+            pt: 2,
+          }}
+          >
+            {t('settings.universalis_region_title')}
+          </DialogContentText>
           <UniversalisRegionPicker />
         </DialogContent>
         <DialogActions>

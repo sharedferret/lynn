@@ -5,7 +5,6 @@ import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
 
 export default function ActionAcquisitionMethodBunnyFateCard({ methodData }) {
   let map = '';
@@ -33,7 +32,13 @@ export default function ActionAcquisitionMethodBunnyFateCard({ methodData }) {
   return (
     <Card sx={{ minWidth: 275, minHeight: 300 }}>
       <CardContent>
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/eureka/notorious_monster.png`}
             width={36}
@@ -42,15 +47,31 @@ export default function ActionAcquisitionMethodBunnyFateCard({ methodData }) {
           />
           <Typography variant="h5">Bunny FATEs</Typography>
         </Stack>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>{map}</Typography>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
-        <Stack direction="row" alignItems="center" spacing={2} key={uuidv4()}>
-          <Box pr={0.5}>
+        <Stack
+          direction="row"
+          spacing={2}
+          key={crypto.randomUUID()}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
+          <Box sx={{
+            pr: 0.5,
+          }}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/eureka/bunny_chest_${methodData.coffer_rarity}.png`}
               width={24}

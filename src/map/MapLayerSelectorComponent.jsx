@@ -24,7 +24,14 @@ export default function MapLayerSelectorComponent({
     // Push parent checkbox
     checkboxesToDisplay.push(
       <FormControlLabel
-        label={<Typography fontWeight={700}>{t(`map.${category.name}`)}</Typography>}
+        label={(
+          <Typography sx={{
+            fontWeight: 700,
+          }}
+          >
+            {t(`map.${category.name}`)}
+          </Typography>
+)}
         key={category.name}
         control={
           (

@@ -11,7 +11,13 @@ export default function ActionAcquisitionMethodClusterCard({ methodData }) {
   return (
     <Card sx={{ minWidth: 275, minHeight: 300 }}>
       <CardContent>
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/icons/Bozjan_Cluster.png`}
             width={36}
@@ -20,7 +26,10 @@ export default function ActionAcquisitionMethodClusterCard({ methodData }) {
           />
           <Typography variant="h5">Clusters</Typography>
         </Stack>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>

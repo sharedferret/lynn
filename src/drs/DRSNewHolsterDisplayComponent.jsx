@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import LinkIcon from '@mui/icons-material/Link';
-import { DefaultCopyField } from '@eisberg-labs/mui-copy-field';
+import CopyField from '../common/CopyField';
 import DRSHolsterHelper from './lib/DRSHolsterHelper';
 import DRSHolsterContainerComponent from './DRSHolsterContainerComponent';
 import DRSHolsterActionAcquisitionGuideComponent from './DRSHolsterActionAcquisitionGuideComponent';
@@ -48,13 +48,34 @@ export default function DRSNewHolsterDisplayComponent({ holster }) {
    * Render logic
    */
   return (
-    <Box maxWidth={1000} minHeight={600}>
-      <Stack spacing={2} minHeight={100} p={1}>
-        <Stack direction="row" alignItems="center">
+    <Box
+      sx={{
+        maxWidth: 1000,
+        minHeight: 600,
+      }}
+    >
+      <Stack
+        spacing={2}
+        sx={{
+          minHeight: 100,
+          p: 1,
+        }}
+      >
+        <Stack
+          direction="row"
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <Stack>
             {holsterMetadata.name
               ? (
-                <Typography fontWeight={700} variant="h5">
+                <Typography
+                  variant="h5"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
                   Role:
                   {' '}
                   {holsterMetadata.name ? holsterMetadata.name : null}
@@ -65,8 +86,10 @@ export default function DRSNewHolsterDisplayComponent({ holster }) {
         </Stack>
         <Typography
           align="left"
-          p={2}
           style={{ whiteSpace: 'pre-wrap' }}
+          sx={{
+            p: 2,
+          }}
         >
           {holsterMetadata.explanation}
         </Typography>
@@ -78,8 +101,17 @@ export default function DRSNewHolsterDisplayComponent({ holster }) {
           holsterMain={holsterMain}
           handleHolsterUpdate={handleHolsterUpdate}
         />
-        <Stack direction="row" alignItems="center" height={60}>
-          <Box width={200}>
+        <Stack
+          direction="row"
+          sx={{
+            alignItems: 'center',
+            height: 60,
+          }}
+        >
+          <Box sx={{
+            width: 200,
+          }}
+          >
             <Button
               variant="outlined"
               size="large"
@@ -92,14 +124,22 @@ export default function DRSNewHolsterDisplayComponent({ holster }) {
           {
             generatedLink
               ? (
-                <Box maxWidth={650} alignSelf="center">
-                  <DefaultCopyField fullWidth value={generatedLink} />
+                <Box
+                  sx={{
+                    maxWidth: 650,
+                    alignSelf: 'center',
+                  }}
+                >
+                  <CopyField fullWidth value={generatedLink} />
                 </Box>
               )
               : null
           }
         </Stack>
-        <Box height={40} />
+        <Box sx={{
+          height: 40,
+        }}
+        />
         {(holsterPrepop !== undefined && holsterMain !== undefined)
           && (holsterPrepop.length > 0 || holsterMain.length > 0)
           ? (

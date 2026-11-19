@@ -18,7 +18,13 @@ export default function ActionAcquisitionMethodStarMobCard({ methodData }) {
   return (
     <Card sx={{ minWidth: 275, minHeight: 300 }}>
       <CardContent>
-        <Stack direction="row" alignItems="center" spacing={2}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/icons/staricon.png`}
             width={36}
@@ -27,7 +33,10 @@ export default function ActionAcquisitionMethodStarMobCard({ methodData }) {
           />
           <Typography variant="h5">Kill Star Mobs</Typography>
         </Stack>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         <Typography>{map}</Typography>
@@ -36,11 +45,21 @@ export default function ActionAcquisitionMethodStarMobCard({ methodData }) {
           {' '}
           {methodData.zone}
         </Typography>
-        <Box py={1}>
+        <Box sx={{
+          py: 1,
+        }}
+        >
           <Divider variant="middle" />
         </Box>
         {methodData.mobs.map((i) => (
-          <Stack direction="row" alignItems="center" spacing={2} key={`starmob-${i}`}>
+          <Stack
+            direction="row"
+            spacing={2}
+            key={`starmob-${i}`}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/icons/rankstar.png`}
               width={24}

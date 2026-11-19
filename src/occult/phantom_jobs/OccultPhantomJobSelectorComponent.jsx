@@ -25,7 +25,13 @@ export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJo
             />
             )}
         >
-          <Stack direction="row" spacing={2} alignItems="center">
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/phantomjobs/${job.image}.png`}
               alt={job.name}
@@ -51,8 +57,19 @@ export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJo
   const renderSelectedJob = useCallback((jobName) => {
     if (jobName === '') {
       return (
-        <Stack direction="row" spacing={2} alignItems="center">
-          <Box width={32} height={32} />
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
+          <Box
+            sx={{
+              width: 32,
+              height: 32,
+            }}
+          />
           <Typography>None</Typography>
         </Stack>
       );
@@ -73,7 +90,13 @@ export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJo
         )}
         name={jobName}
       >
-        <Stack direction="row" spacing={2} alignItems="center">
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            alignItems: 'center',
+          }}
+        >
           <img src={`${process.env.PUBLIC_URL}/assets/phantomjobs/${job.image}.png`} width={32} height={32} alt={job.full} />
           <Typography><Trans i18nKey={`phantom-job.${job.key}.name`} ns="occult" /></Typography>
         </Stack>
@@ -85,7 +108,10 @@ export default function OccultPhantomJobSelectorComponent({ phantomJob, handleJo
   const menuItems = renderSelectorMenu();
 
   return (
-    <Box width={325}>
+    <Box sx={{
+      width: 325,
+    }}
+    >
       <Stack direction="row">
         <FormControl sx={{ width: 325 }}>
           <Select

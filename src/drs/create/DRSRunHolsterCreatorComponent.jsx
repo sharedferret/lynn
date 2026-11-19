@@ -123,17 +123,39 @@ export default function DRSRunHolsterCreatorComponent() {
   return (
     <Box
       component="main"
-      margin="auto"
-      sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
-      pl={5}
+      sx={{
+        margin: 'auto',
+        pl: 5,
+        flexGrow: 1,
+        pt: { xs: 14, md: 5 },
+      }}
     >
-      <Stack spacing={2} alignItems="center" width={600}>
-        <Typography variant="h4" fontWeight={700}>DRS Run Holster Creator</Typography>
-        <Typography textAlign="left">
+      <Stack
+        spacing={2}
+        sx={{
+          alignItems: 'center',
+          width: 600,
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            fontWeight: 700,
+          }}
+        >
+          DRS Run Holster Creator
+        </Typography>
+        <Typography sx={{
+          textAlign: 'left',
+        }}
+        >
           This tool creates the JSON required to add a new run&apos;s holsters to the
           DRS Holsters section of the site. Any DRS host can add their holsters to the site.
         </Typography>
-        <Typography textAlign="left">
+        <Typography sx={{
+          textAlign: 'left',
+        }}
+        >
           Use the
           {' '}
           <a
@@ -148,14 +170,30 @@ export default function DRSRunHolsterCreatorComponent() {
           page, click &quot;Create Link&quot;, then copy that URL into the &quot;Custom Holster
           Link&quot; field.
         </Typography>
-        <Typography textAlign="left">
+        <Typography sx={{
+          textAlign: 'left',
+        }}
+        >
           After creating your holsters, click Generate Holster JSON. Send both fields to
           @lynnkaneko on Discord for them to be added to the site.  In order to edit holsters, use
           this tool to re-create the holsters you&apos;d like to change, and send the changes
           to Lynn.
         </Typography>
-        <Box minWidth={600} maxWidth={1600} minHeight={600} pt={2}>
-          <Stack alignItems="flex-start" spacing={2} width={600}>
+        <Box
+          sx={{
+            minWidth: 600,
+            maxWidth: 1600,
+            minHeight: 600,
+            pt: 2,
+          }}
+        >
+          <Stack
+            spacing={2}
+            sx={{
+              alignItems: 'flex-start',
+              width: 600,
+            }}
+          >
             <TextField
               required
               id="run-name"
@@ -175,7 +213,13 @@ export default function DRSRunHolsterCreatorComponent() {
             />
             {
               holsters.map((i, index) => (
-                <Box width={600} alignSelf="center" pt={2}>
+                <Box
+                  sx={{
+                    width: 600,
+                    alignSelf: 'center',
+                    pt: 2,
+                  }}
+                >
                   <DRSRunCreatorSingleHolsterComponent
                     holster={i}
                     index={index}
@@ -190,9 +234,17 @@ export default function DRSRunHolsterCreatorComponent() {
             {
               runJson
                 ? (
-                  <Box width={600}>
+                  <Box sx={{
+                    width: 600,
+                  }}
+                  >
                     <Stack>
-                      <Typography pt={2}>Add to Holsters.json</Typography>
+                      <Typography sx={{
+                        pt: 2,
+                      }}
+                      >
+                        Add to Holsters.json
+                      </Typography>
                       <TextField
                         multiline
                         rows={12}
@@ -200,7 +252,12 @@ export default function DRSRunHolsterCreatorComponent() {
                         width={600}
                         fullWidth
                       />
-                      <Typography pt={2}>Add to HolsterMapping.json</Typography>
+                      <Typography sx={{
+                        pt: 2,
+                      }}
+                      >
+                        Add to HolsterMapping.json
+                      </Typography>
                       <TextField
                         multiline
                         rows={12}

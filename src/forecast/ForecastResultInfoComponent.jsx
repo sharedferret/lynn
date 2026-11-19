@@ -32,7 +32,12 @@ export default function ForecastResultInfoComponent({ result, isCollection }) {
       width: '65%', display: 'flex', alignItems: 'center', justifyContent: 'center',
     }}
     >
-      <Stack pb={1} pt={1}>
+      <Stack
+        sx={{
+          pb: 1,
+          pt: 1,
+        }}
+      >
         <Stack direction="row" spacing={2} sx={{ alignItems: 'center', justifyContent: 'center' }}>
           {isCollection
             ? (
@@ -59,7 +64,14 @@ export default function ForecastResultInfoComponent({ result, isCollection }) {
         <Box>
           {conflictText !== null
             ? (
-              <Stack direction="row" spacing={1} alignItems="end" justifyContent="center">
+              <Stack
+                direction="row"
+                spacing={1}
+                sx={{
+                  alignItems: 'end',
+                  justifyContent: 'center',
+                }}
+              >
                 <WarningAmberIcon />
                 <Typography variant="caption">{conflictText}</Typography>
               </Stack>

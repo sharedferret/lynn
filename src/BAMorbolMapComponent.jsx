@@ -4,7 +4,13 @@ import { Helmet } from 'react-helmet';
 
 export default function BAMorbolMapComponent() {
   return (
-    <Box flexGrow={1} height="100%" sx={{ pt: { xs: 14, md: 5 } }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        height: '100%',
+        pt: { xs: 14, md: 5 },
+      }}
+    >
       <Helmet bodyAttributes={{ style: 'background-color : #000' }}>
         <meta name="description" content="Morbol map for Baldesion Arsenal runs on the Primal data center" data-react-helmet="true" />
         <meta property="og:title" content="BA Morbol Map" data-react-helmet="true" />
@@ -23,7 +29,15 @@ export default function BAMorbolMapComponent() {
         <link rel="manifest" href="/site.webmanifest" />
         <title>BA Morbol Map - forays.info</title>
       </Helmet>
-      <Box maxWidth={1400} minWidth={800} height="100%" margin="auto" sx={{ backgroundColor: '#000' }}>
+      <Box
+        sx={{
+          maxWidth: 1400,
+          minWidth: 800,
+          height: '100%',
+          margin: 'auto',
+          backgroundColor: '#000',
+        }}
+      >
         <img src={`${process.env.PUBLIC_URL}/assets/morbolmap.jpg`} alt="BA Morbol Map" style={{ maxWidth: '100%' }} />
       </Box>
     </Box>

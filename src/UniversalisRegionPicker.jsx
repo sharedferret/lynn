@@ -242,7 +242,13 @@ export default function UniversalisRegionPicker() {
       const regionItems = [];
       regionItems.push(
         <MenuItem value={region.name}>
-          <Typography fontWeight={700} pt={2} style={{ textTransform: 'uppercase' }}>
+          <Typography
+            style={{ textTransform: 'uppercase' }}
+            sx={{
+              fontWeight: 700,
+              pt: 2,
+            }}
+          >
             {region.name}
           </Typography>
         </MenuItem>,
@@ -253,7 +259,10 @@ export default function UniversalisRegionPicker() {
           const dcItems = [];
           dcItems.push(
             <MenuItem value={dc.name}>
-              <Typography fontWeight={700}>
+              <Typography sx={{
+                fontWeight: 700,
+              }}
+              >
                 {dc.name}
               </Typography>
             </MenuItem>,
@@ -261,7 +270,12 @@ export default function UniversalisRegionPicker() {
           dcItems.push(
             ...dc.servers.map((server) => (
               <MenuItem value={server}>
-                <Typography pl={1}>{server}</Typography>
+                <Typography sx={{
+                  pl: 1,
+                }}
+                >
+                  {server}
+                </Typography>
               </MenuItem>
             )),
           );

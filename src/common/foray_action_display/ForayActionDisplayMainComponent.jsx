@@ -115,15 +115,34 @@ export default function ForayActionDisplayMainComponent({ inputAction, forayName
   return (
     <Box
       component="main"
-      margin="auto"
-      sx={{ flexGrow: 1, pt: { xs: 14, md: 5 } }}
+      sx={{
+        margin: 'auto',
+        flexGrow: 1,
+        pt: { xs: 14, md: 5 },
+      }}
     >
       <Container maxWidth="lg">
-        <Box p={3}>
-          <Stack spacing={4} minHeight={100} p={1} alignItems="center">
+        <Box sx={{
+          p: 3,
+        }}
+        >
+          <Stack
+            spacing={4}
+            sx={{
+              minHeight: 100,
+              p: 1,
+              alignItems: 'center',
+            }}
+          >
             {/* Title */}
             <Box>
-              <Typography fontWeight={700} variant="h4" textAlign="start">
+              <Typography
+                variant="h4"
+                sx={{
+                  fontWeight: 700,
+                  textAlign: 'start',
+                }}
+              >
                 {forayActionDisplaySettings.title}
               </Typography>
             </Box>
@@ -146,11 +165,22 @@ export default function ForayActionDisplayMainComponent({ inputAction, forayName
             <Stack
               direction={{ xs: 'column', sm: 'row' }}
               spacing={2}
-              alignItems="center"
-              sx={{ width: '100%' }}
+              sx={{
+                alignItems: 'center',
+                width: '100%',
+              }}
             >
-              <Box flexGrow={1}>
-                <Typography fontWeight={600} variant="h6" textAlign="right">
+              <Box sx={{
+                flexGrow: 1,
+              }}
+              >
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 600,
+                    textAlign: 'right',
+                  }}
+                >
                   {forayActionDisplaySettings.actionSelectorLabel}
                   :
                 </Typography>
@@ -159,7 +189,10 @@ export default function ForayActionDisplayMainComponent({ inputAction, forayName
               <Box sx={{ flexGrow: 1, maxWidth: 400 }}>
                 { getForayActionSelectorComponent() }
               </Box>
-              <Box flexGrow={1} />
+              <Box sx={{
+                flexGrow: 1,
+              }}
+              />
             </Stack>
 
             <Divider sx={{ width: '50%', margin: '0 auto', mb: 3 }} />

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { v4 as uuidv4 } from 'uuid';
 import universalisPriceHelperInstance from '../acquisition/UniversalisPriceHelper';
 import EurekaLogosActionHelper from './lib/EurekaLogosActionHelper';
 import EurekaLogogramDataComponent from './EurekaLogogramDataComponent';
@@ -48,20 +47,41 @@ export default function EurekaLogosActionHelperDataComponent(
   }
 
   return (
-    <Stack spacing={2} p={1} alignItems="flex-start" width={1000}>
+    <Stack
+      spacing={2}
+      sx={{
+        p: 1,
+        alignItems: 'flex-start',
+        width: 1000,
+      }}
+    >
       <EurekaLogosActionInformationComponent
         actionData={actionData}
         logosAction={logosAction}
       />
       <Divider variant="middle" />
-      <Typography fontWeight={700} variant="h5">Recipes</Typography>
+      <Typography
+        variant="h5"
+        sx={{
+          fontWeight: 700,
+        }}
+      >
+        Recipes
+      </Typography>
       <EurekaLogosActionRecipeSelectorComponent
         recipes={actionData.recipes}
         selectedRecipe={selectedRecipe}
         handleRecipeUpdate={handleRecipeUpdate}
       />
       <Divider />
-      <Typography fontWeight={700} variant="h5">Logograms Needed</Typography>
+      <Typography
+        variant="h5"
+        sx={{
+          fontWeight: 700,
+        }}
+      >
+        Logograms Needed
+      </Typography>
       <Stack spacing={2} divider={<Divider variant="middle" />}>
         {
           selectedRecipe ? selectedRecipe.map((i) => {
@@ -74,7 +94,7 @@ export default function EurekaLogosActionHelperDataComponent(
                 mneme={i}
                 priceData={actionPriceData ? actionPriceData[mnemeData.logogram] : null}
                 lastUpdated={lastUpdated}
-                key={uuidv4()}
+                key={crypto.randomUUID()}
               />
             );
           })

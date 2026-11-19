@@ -123,7 +123,13 @@ export default function ForecastResultsBodyComponent({ filter }) {
           )
           : null
       }
-      <Stack direction={{ md: 'row' }} spacing={2} justifyContent="center">
+      <Stack
+        direction={{ md: 'row' }}
+        spacing={2}
+        sx={{
+          justifyContent: 'center',
+        }}
+      >
         <ForecastResultsDisplayComponent
           type="Upcoming Results"
           filter={forecastFilter}
@@ -142,6 +148,5 @@ export default function ForecastResultsBodyComponent({ filter }) {
         }
       </Stack>
     </Stack>
-
   );
 }

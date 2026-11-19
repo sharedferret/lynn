@@ -14,7 +14,13 @@ export default function ActionAcquisitionMethodReflectCard({ methodData, fragmen
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
-          <Stack direction="row" alignItems="center" spacing={2}>
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/lostactions/Lost_Reflect.jpg`}
               width={36}
@@ -23,7 +29,10 @@ export default function ActionAcquisitionMethodReflectCard({ methodData, fragmen
             />
             <Typography variant="h5">Reflect</Typography>
           </Stack>
-          <Box py={1}>
+          <Box sx={{
+            py: 1,
+          }}
+          >
             <Divider variant="middle" />
           </Box>
           <Typography>{map}</Typography>
@@ -32,12 +41,21 @@ export default function ActionAcquisitionMethodReflectCard({ methodData, fragmen
             {' '}
             {methodData.zone}
           </Typography>
-          <Box py={1}>
+          <Box sx={{
+            py: 1,
+          }}
+          >
             <Divider variant="middle" />
           </Box>
           {methodData.mobs.map((i) => (
             <Stack key={`reflect-${i.mob}`}>
-              <Stack direction="row" alignItems="center" spacing={1}>
+              <Stack
+                direction="row"
+                spacing={1}
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
                 <img
                   src={`${process.env.PUBLIC_URL}/assets/icons/${i.icon}`}
                   width={24}
@@ -52,9 +70,20 @@ export default function ActionAcquisitionMethodReflectCard({ methodData, fragmen
                 />
                 <Typography>{i.mob}</Typography>
               </Stack>
-              <Stack direction="row" alignItems="center">
-                <Box width={48} />
-                <Typography fontStyle="italic">
+              <Stack
+                direction="row"
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
+                <Box sx={{
+                  width: 48,
+                }}
+                />
+                <Typography sx={{
+                  fontStyle: 'italic',
+                }}
+                >
                   during
                   {' '}
                   {i.weather}
@@ -76,7 +105,13 @@ export default function ActionAcquisitionMethodReflectCard({ methodData, fragmen
     return (
       <Card sx={{ minWidth: 275, minHeight: 300 }}>
         <CardContent>
-          <Stack direction="row" alignItems="center" spacing={2}>
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/logosactions/reflect.png`}
               width={36}
@@ -85,16 +120,27 @@ export default function ActionAcquisitionMethodReflectCard({ methodData, fragmen
             />
             <Typography variant="h5">Reflect</Typography>
           </Stack>
-          <Box py={1}>
+          <Box sx={{
+            py: 1,
+          }}
+          >
             <Divider variant="middle" />
           </Box>
           <Typography>{map}</Typography>
-          <Box py={1}>
+          <Box sx={{
+            py: 1,
+          }}
+          >
             <Divider variant="middle" />
           </Box>
           {methodData.mobs.map((i) => (
             <Stack key={`reflect-${i.mob}`}>
-              <Stack direction="row" alignItems="center">
+              <Stack
+                direction="row"
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
                 <Typography>
                   Lv
                   {i.level}
@@ -107,9 +153,20 @@ export default function ActionAcquisitionMethodReflectCard({ methodData, fragmen
                 />
                 <Typography>{i.mob}</Typography>
               </Stack>
-              <Stack direction="row" alignItems="center">
-                <Box width={48} />
-                <Typography fontStyle="italic">
+              <Stack
+                direction="row"
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
+                <Box sx={{
+                  width: 48,
+                }}
+                />
+                <Typography sx={{
+                  fontStyle: 'italic',
+                }}
+                >
                   during
                   {' '}
                   {i.weather}

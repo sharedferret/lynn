@@ -15,7 +15,14 @@ export default function BAMainContentComponent({
 
   return (
     <Stack>
-      <Typography variant="h4" fontWeight={700}>BA Logos Action Helper</Typography>
+      <Typography
+        variant="h4"
+        sx={{
+          fontWeight: 700,
+        }}
+      >
+        BA Logos Action Helper
+      </Typography>
       <BANewLogosRecommenderWorkflow
         holster={holster}
         encodedHolster={encodedHolster}
